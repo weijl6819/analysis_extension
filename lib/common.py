@@ -14,6 +14,7 @@ def zip2filelist(filepath=""):
     with open(filepath, "r") as zip_ref:
         return zip_ref.namelist()
 
+@log("execute")
 def readFile2txt(filename=""):
     with open(filename, "r") as rf:
         return rf.read()
