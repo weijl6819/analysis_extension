@@ -1,0 +1,30 @@
+<section id="collection-edit" class="editor">
+    {{#if data.collection.image }}
+    <div class="image-container min-height">
+        <img src="{{ data.collection.image }}">
+    </div>
+    {{/if}}
+    <form id="edit-form" action="#">
+        <div class="form-field form-field-id-name">
+            <div class="form-error-display" ></div>
+            <label for="name" class="field-label">Name</label>
+            <input type="text" id="folder-name" class="form-field" maxlength="40" value="{{ data.collection.name }}"  />
+        </div>
+        <div class="form-field form-field-id-category">
+            <div class="form-error-display" ></div>
+            <label for="category" class="field-label">Category</label>
+            <select id="collection_category" class="cs-select cs-skin-slide" data-placeholder="Choose a Category...">
+                 <option value="" disabled selected></option>
+                {{#each data.categories as |category| }}
+                    <option value="{{ category.id }}" {{#compare category.id ../data.collection.category }}  selected {{/compare }} >{{ category.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div class="form-field form-field-button">
+            <button type="button" class="form-field aw-new-folder" ><span class="bt-content">{{ data.management }}</span><div class="updating-spinner"></div></button>
+            <a class="form-cancel-btn" >Cancel</a>
+            {{#if data.formTypeEdit }}<a class="form-delete-btn aw-delete-collection" >Delete</a>{{/if}}
+        </div>
+    </form>
+
+</section>

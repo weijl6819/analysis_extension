@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+                <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+                    <link href="css/cite.css" rel="stylesheet" type="text/css" />
+                <link href="css/custom.css" rel="stylesheet" type="text/css" />
+                <link href="css/jquery.alerts.css" rel="stylesheet" type="text/css" />
+                <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery-1.8.2.min.js"></script>
+                <script src="js/utilities.js"></script>
+                <script src="js/common.js"></script>
+	</head>
+	<body>
+		<div class="cm-wrapper">
+			<button class="close-btn btn">×</button>
+			<header>
+                            <h1>CiteMaker | CiteWeb</h1>
+			</header>
+                        <form name="styles" id="styles">
+                        <ul style="padding-top: 10px;padding-left: 10px;" class="cite-styles">
+                            <li><input type="checkbox" class="stylechk selected" checked name="styleGrp" id="style-harvard" data-style="HARVARD" style="position: absolute" /> <b style="padding-left: 16px;">Harvard International</b></li>
+                            
+			</ul>
+                            <ul style="padding-left: 10px;" class="cite-styles">
+                                <li><input type="checkbox" name="styleGrp" class="stylechk" id="style-worldcat" data-style="worldcat" style="position: absolute" /> <b style="padding-left: 16px;">ISBN Search</b></li>
+                            </ul>
+                            <ul style="padding-bottom: 10px;padding-left: 10px;border-bottom: 1px solid #e1e1e1;" class="cite-styles1">
+                                <li><input type="checkbox" style="position: absolute" id="cmTablet" /> <b style="padding-left: 16px;">CiteMaker Tablet</b></li>
+                            </ul>
+                            
+                            
+                        </form>
+			<div id="citePart">
+			<div class="content1">
+                            <div id="userLoginDiv">
+                                
+                            </div>
+				<div id="spinner">
+					<img src="images/spinner.gif" />
+				</div>
+				<div id="failed-wrapper">
+					<p></p>
+				</div>
+                        </div>
+                            <div id="result-wrapper">
+				
+                                
+				</div>
+                            <div class="content">
+                            <div id="worldcat-searchdiv" class="row" style="display: none">
+                                <div class="col-xs-12">
+                <div style="padding-bottom:10px;float:right"><a href="#" class="closeWCBtn"><i class="fa fa-times" style="color: blue;" aria-hidden="true"></i></a></div>
+            </div>
+                                <div id="worldcat-searchdiv-inner">
+                                    
+                                </div>
+                            </div>
+                            
+                            <div id="subscribeDiv" class="row" style="display: none">
+                                <div class="col-xs-12">
+                <div style="padding-bottom:10px;float:right"><a href="#" id="closeSubscribeBtn"><i class="fa fa-times" style="color: blue;" aria-hidden="true"></i></a></div>
+            </div>
+                                <div id="subscribeDiv-inner">
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="previewcitation" style="display: none"></div>
+                            <div id="login_register_panel" style="display: none">
+                                <div class="col-xs-12">
+                <div style="padding-bottom:10px;float:right"><a href="#" id="cancelLoginRegister"><i class="fa fa-times" style="color: blue;" aria-hidden="true"></i></a></div>
+            </div>
+                             <p style="height:auto;margin-bottom: 20px;text-align: center">This function is available for registered users only.</p>
+                                <form method="get" role="form" class="form-horizontal">
+                            
+                               <div class="form-group">
+                                    <div class="col-xs-2"></div>
+                                    <div class="col-xs-4">
+                                        <input type="button" value="Login"  name="login" class="form-control btn savebtn inline30 loginBtn">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="button" value="Register"  name="login" class="form-control btn savebtn inline30 registerBtn">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                            <div id="login_panel" style="display: none">
+                                <div class="col-xs-12">
+                <div style="padding-bottom:10px;float:right"><a href="#" id="cancelLogin"><i class="fa fa-times" style="color: blue;" aria-hidden="true"></i></a></div>
+            </div>
+                                <div class="inline23" style="padding-bottom: 10px;">To register <a href="#" id="registerLink">Click Here</a></div>
+                                
+                                <div id="errPL" class="inline26"></div>
+                                <form method="get" id="siteloklogin" name="siteloklogin" role="form" autocomplete="off" class="form-horizontal"><!--name="myform"-->
+                            
+                                <input type="hidden" value="afterlogin1.php" id="page" name="page">
+<input type="hidden" value="1" name="loginformused">
+<input type="hidden" value="" name="forgotpassword">
+                                <div class="form-group">
+                                <label class="col-xs-4 control-label" for="username">E-mail</label>
+                                <div class="col-xs-8">
+                                    <input type="text" value="" tabindex="11" id="username" name="username" autocomplete="off" class="form-control">
+                                </div>
+                               </div>
+                                <div class="form-group">
+                                 <label class="col-xs-4 control-label">Password</label>
+                                 <div class="col-xs-8">
+                                     <input type="password" value="" tabindex="12" id="password" name="password" autocomplete="off" class="form-control">
+                                 </div>
+                               </div>
+                                <div class="form-group">
+    <label class="col-xs-4"></label>
+    <div class="col-xs-8">
+        <a href="#" id="forgotPwd">Forgot your password?</a>
+    </div>
+</div>  
+                                <div class="form-group">
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-4" >
+                                        <input type="button" style="margin-left: 16px;" value="Login" id="login" name="login" class="form-control btn savebtn inline30">
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <span style="font-style: italic;text-align: center;margin-left: 3px;">or</span>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <a href="#" id="signin"><img src="images/googlesignin.png" style="height: 30px;" /></a>
+                                    </div>
+                                </div>
+                               
+                            </form>
+                            </div>
+                            <div id="expired_panel" style="display: none">
+                                <div class="col-xs-12">
+                <div style="padding-bottom:10px;float:right"><a href="#" id="closeExpBtn"><i class="fa fa-times" style="color: blue;" aria-hidden="true"></i></a></div>
+            </div>
+                                <div id="expired_inner_panel">
+                                    
+                                </div>
+                            </div>
+                            <div id="registerPanel" style="display: none">
+                                <div class="col-xs-12">
+                <div style="padding-bottom:10px;float:right"><a href="#" id="cancelRegister"><i class="fa fa-times" style="color: blue;" aria-hidden="true"></i></a></div>
+            </div>
+                                <div id="registerPanel-inner"></div>
+                            </div>
+                            <div id="saveFileDiv" style="display: none">
+                                <div  class="save-as-gap">
+                                    
+                                    <div id="fileSaveContainer">
+                                        <div id="fileSavePromptDiv"><div class="alert-left-indent">1.</div><b>Create Subject Folder</b>: optional.<br><input type="text" size="30" id="popup_prompt" placeholder="Subject Name" style="width: 314px;"></div>
+                                        <div id="filenames">                                
+                               
+                                        </div></div>
+                                
+                                    <div id="popup_panel">
+                                        
+                                        
+                                        <input type="button" class="btn savebtn inline30" value="&nbsp;Save&nbsp;" id="saveCitationFileBtn"> 
+                                        <input type="button" class="btn savebtn inline30" value="&nbsp;Back&nbsp;" id="backBtn" style="display: none">
+                                        
+                                        <input type="button" class="btn savebtn inline30 fileSaveCancel" value="Cancel"></div>
+                                    <br/>
+                                </div>
+                            </div>
+                            
+                            <div id="openedCitation" style="display: none">
+                                <div>
+                                    <div id="openedCitationInner">
+                                        
+                                    </div>
+                                    <div id="popup_panel">
+                                        
+                                        <input type="button" class="btn savebtn inline30" value="&nbsp;Copy&nbsp;" id="copyBtnBtm"> 
+                                        <a class="btn savebtn inline30 poplight3" rel="emailSec4" id="emailBtn" style="color: #333">&nbsp;Email&nbsp;</a>
+                                        <input type="button" class="btn savebtn inline30" value="&nbsp;Save As&nbsp;" id="saveAsCtBtn">
+                                        <input type="button" class="btn savebtn inline30" value="&nbsp;Delete&nbsp;" id="deleteBtn">
+                                        <input type="button" class="btn savebtn inline30 backToFlLst" value="&nbsp;Back&nbsp;">
+                                    <br/>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div id="fileListDiv" style="display: none">
+                                <div>
+                                    <div id="fileFolderList">
+                                        
+                                    </div>
+                                    <div id="footerPanelFl">
+                                        <div id="popup_panel">
+                                            <input type="button" class="btn savebtn inline30" value="&nbsp;Open&nbsp;" id="openSavedCiteBtn">
+                                            <input type="button" class="btn savebtn inline30 addFldr" value="&nbsp;+ Folder&nbsp;" id="folderBtnFl">
+                                            <input type="button" class="btn savebtn inline30" value="&nbsp;Save As&nbsp;" id="saveAsFl">
+                                            <input type="button" class="btn savebtn inline30" value="&nbsp;Delete&nbsp;" id="deleteBtnFl">
+                                        <input type="button" class="btn savebtn inline30 fileSaveCancel" value="&nbsp;Back&nbsp;">
+                                        </div>
+                                    </div>
+                                    <div id="footerPanelFo" style="display: none;">
+                                        <div id="popup_panel">
+                                            <input type="button" class="btn savebtn inline30" value="&nbsp;Open&nbsp;" id="openBtnFo">
+                                            <input type="button" class="btn savebtn inline30 addFldr" value="&nbsp;+ Folder&nbsp;" id="folderBtnFo">
+                                            <input type="button" class="btn savebtn inline30" value="&nbsp;Save As&nbsp;" id="saveAsFo">
+                                            <input type="button" class="btn savebtn inline30" value="&nbsp;Delete&nbsp;" id="deleteBtnFo">
+                                        <input type="button" class="btn savebtn inline30 fileSaveCancel" value="&nbsp;Back&nbsp;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div id="createFolderDiv" style="display: none;">
+                                
+                                <div>Enter Subject Name.</div>
+                                    <input placeholder="Subject Name" maxlength="30" required="" size="30" id="popup_prompt" type="text">
+                                   <br />
+                                   <br />
+                                   <div>Enter a Filename.</div>
+                                        <input size="30" id="popup_prompt_file" placeholder="Default_Citations" style="margin-top:5px;margin:.5em 0em;" value="" type="text">
+                                        
+                                  <div>
+                                        <div id="popup_panel">
+                                            <input type="button" class="btn savebtn inline30" value="&nbsp;Save&nbsp;" id="saveFolderBtn">
+                                        <input type="button" class="btn savebtn inline30 backToFlLst" value="&nbsp;Cancel&nbsp;">
+                                        </div>
+                                    </div>
+                           
+                            </div>
+                            
+                            
+                            <div id="saveAsFolderDiv" style="display: none">
+                                <div>
+                                Enter Subject Name.
+                                </div>
+                                    <input placeholder="Subject Name" required="" maxlength="30" size="30" id="popup_prompt" type="text">
+                                    
+                                        <div id="popup_panel">
+                                            <input type="button" class="btn savebtn inline30" value="&nbsp;Save&nbsp;" id="duplicateFolderBtn">
+                                            <input type="button" class="btn savebtn inline30 backToFlLst" value="&nbsp;Cancel&nbsp;">
+                                        </div>
+                                    
+                                
+                            </div>
+                            
+                            
+                            
+                            <div id="saveAsFileDiv" class="save-as-gap" style="display: none">
+                                <div>
+                                <div class="alert-left-indent">1.</div><b>Create Subject Folder</b>: optional.
+                                </div>
+                                <input placeholder="Subject Name" maxlength="30" size="30" id="popup_prompt" type="text">
+                                
+                                <div id="popup_panel">
+                                        
+                                        
+                                        <input type="button" class="btn savebtn inline30" value="&nbsp;Save&nbsp;" id="duplicatFileBtn"> 
+                                        
+                                        <input type="button" class="btn savebtn inline30 backToFlLst" value="Cancel"></div>
+                                   </div>
+                            
+                            <div id="saveAsCitDiv" class="save-as-gap" style="display: none">
+                                <div>
+                                <div class="alert-left-indent">1.</div><b>Create Subject Folder</b>: optional.
+                                </div>
+                                <input placeholder="Subject Name" maxlength="30" size="30" id="popup_prompt" type="text">
+                                
+                                <div id="popup_panel">
+                                        
+                                        
+                                        <input type="button" class="btn savebtn inline30" value="&nbsp;Save&nbsp;" id="duplicatCitaBtn"> 
+                                        
+                                        <input type="button" class="btn savebtn inline30" id="duplicatCitaCancel" value="Cancel"></div>
+                                   </div>
+                            
+			</div>
+                        </div>
+                        <div id="libForm" style="display: none;">
+                            <div class="form-group msgBg" style="margin-bottom: 20px;padding-top: 0px;margin-top: 10px;padding-left: 10px;padding-right: 10px;" id="journalTtlMsgDiv">
+                                    <div class="row">
+            <div class="col-xs-12">
+                <div style="float:right"><a href="#" class="closeLibBtn"><i class="fa fa-times" style="color: blue;" aria-hidden="true"></i></a></div>
+            </div>
+        </div>
+                <p>Please complete the form below to enquire about a library subscription to CiteMaker.</p></div>
+                            <div class="content">
+                                
+                                
+                                <form id="libform" class="cssform" name="libform" method="POST" action="" autocomplete="off" enctype="multipart/form-data">
+                                
+                               
+
+                                <div class="row" style="padding-top: 14px !important">
+                                           <label class="col-xs-4 control-label">Name</label>
+                                           <div class="col-xs-8">
+                                               <input type="text" id="name" autocomplete="off" value="" name="Name"/>
+                                           </div>
+                                    </div>
+                                <div class="row">
+                                    <label class="col-xs-4 control-label">Your Role</label>
+                                    <div class="col-xs-8">
+                                        <input type="text" id="role" value="" autocomplete="off" name="role"/>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-xs-4 control-label">Institution</label>
+                                    <div class="col-xs-8">
+                                        <input type="text" id="institution" value="" autocomplete="off" name="institution" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4"></div>
+                                    <div class="col-xs-4">
+                                        <input type="checkbox" value="school" class="institutiontype" name="institutiontype[]" id="school" /> 
+                                        school 
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="checkbox" value="college" name="institutiontype[]" class="institutiontype" id="college" /> 
+                                        college 
+                                    </div>
+                                </div>
+                                       <div class="row">
+                                           <div class="col-xs-4"></div>
+                                    <div class="col-xs-4">
+                                        <input type="checkbox" value="university" name="institutiontype[]" class="institutiontype" id="university" /> university
+                                    </div>
+                                      <div class="col-xs-4">     
+                                        <input type="checkbox" value="other" name="institutiontype[]" class="institutiontype" id="other" /> 
+                                        other 
+                                      </div>
+                                       </div>
+                                <div class="row" style="margin-top: 10px;">
+                                    
+                                        <label class="col-xs-4 control-label">Country</label>
+                                        <div class="col-xs-8">
+                                            <select name="country" id="country">
+                                        <option value="">Please Select</option>
+                                        <option value="Australia" >
+                                        Australia</option>
+                                        <option value="Canada" >
+                                        Canada</option>
+                                        <option value="HongKong" >Hong Kong</option>
+                                        <option value="Ireland" >Ireland</option>
+                                        <option value="NewZealand">New Zealand</option>
+                                        <option value="UnitedKingdom" >United Kingdom</option>
+                                        <option value="USA" >United states of America</option>
+                                        <option value="Africas" >Other – Africas</option>
+                                        <option value="Asia" >Other – Asia</option>
+                                        <option value="Europe" >Other – Europe</option>
+                                        <option value="MiddleEast" >Other – Middle East</option>
+                                                </select>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                    <label class="col-xs-4 control-label">Faculty
+                                        </label>
+                                    <div class="col-xs-8">
+                                        <input type="text" id="department" value="" autocomplete="off" name="department" />
+                                    </div>
+                                </div>
+                                        <div class="row">
+                                            <label class="col-xs-4 control-label">Phone Number</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" id="phone" value="" autocomplete="off" name="phone"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label class="col-xs-4 control-label">Email</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" id="email" value="" autocomplete="off" name="email" />
+                                            </div>
+                                        </div>
+
+                                <div class="row"><label class="col-xs-4">Referencing Style</label>
+                                <div class="col-xs-4">
+                                        <input type="checkbox" value="APA" class="referencingstyle" name="referencingstyle[]" id="apa"/> 
+                                        APA </div>
+                                           
+                                        <div class="col-xs-4">
+                                        <input type="checkbox" value="Harvard" class="referencingstyle" name="referencingstyle[]" id="harvard" /> 
+                                        Harvard 
+                                        </div>
+                                </div>
+                                       
+                                        <div class="row">
+                                            <div class="col-xs-4"></div>
+                                    <div class="col-xs-4">
+                                        
+                                        <input type="checkbox" value="MLA" class="referencingstyle" name="referencingstyle[]" id="mla" /> MLA </div>
+                                        <div class="col-xs-4">
+                                        <input type="checkbox" value="Footnoting" class="referencingstyle" name="referencingstyle[]" id="footnoting" /> 
+                                        Footnoting
+                                        </div>
+                                      </div>
+
+                                <div class="row" style="margin-top: 10px;">
+                                            <label class="col-xs-4 control-label">Library URL</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" id="library_website" autocomplete="off" value="" name="library_website" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label class="col-xs-4 control-label">Institution URL</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" id="institute_website" value="" autocomplete="off" name="institute_website" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <label class="col-xs-4 control-label">Number of Students</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" id="student_number" value="" autocomplete="off" name="student_number" />
+                                            </div>
+                                        </div>
+                                
+                                <div class="row">
+                       <div class="col-xs-3" style="text-align: center"></div>
+                       <div class="col-xs-3" style="text-align: center">
+                           <input type="button" value="Submit" name="submit" id="libFormSubmit" class="form-control btn savebtn inline30"> </div> 
+                           <div class="col-xs-3" style="text-align: center">
+                               <input type="button" value="Cancel" class="form-control btn savebtn closeLibBtn inline30">
+                                    </div>
+                                </div>
+                                <input type="reset" value="reset" id="libFormRst" style="display: none;" />
+					</form>
+                            </div>
+                        </div>
+                        
+                        
+			<footer>
+                            <p><a title="Save" id="saveBtnFoot" href="#" style="color: blue;"><i class="fa fa-floppy-o" aria-hidden="true" style="color: blue;"></i></a> Save your citations into reference lists.</p>
+                            <p style="margin-top: 10px;"><a id="libEnquiries" href="#"><i class="fa fa-book" style="color: blue;" aria-hidden="true"></i> Library Enquiries.</a> CiteMaker Bibliography Maker <a href="http://www.citemaker.com/students/apa/" target="_blank">CiteMaker.com</a></p>
+			</footer>
+		</div>
+            
+            <div id='emailSec1ext' class='popup_block' style='display:none;font-size: 1em !important;'>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<span style='color: black; line-height: 150%;' id='emailTxt'>
+
+				Enter your e-mail address in the field below:</span><br>
+
+				<input type='text' id='emailAddr1ext' name='emailAddr1ext' style='width:257px;'>
+
+				<input type='hidden' id='emailedData5ext' name='emailedData5ext' />
+
+				<input type='submit' id='sendEmailBtnext' value='Send'> 
+
+			 </div>
+            <span id="myCopySpan"></span>
+           <a title="shopify site analytics"
+href="http://statcounter.com/shopify/" target="_blank"><img
+src="http://c.statcounter.com/10974616/0/90de33ff/1/"
+alt="shopify site analytics" style="border:none;"></a>
+		<script src="js/jquery.selectText.js"></script>
+                <script src="js/identity.js"></script>
+		<script src="js/cite.js"></script>
+                <script src="js/custom.js"></script>
+                <script src="js/gen_validatorv31.js"></script>
+                <script src="js/jquery.alerts.js"></script>
+	</body>
+</html>

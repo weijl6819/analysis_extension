@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"> 
+<html lang="en"> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" /> 
+    <title>Find and Replace - Chrome Editor</title> 
+    <script  type="text/javascript">
+	function findAndReplace(searchText, replacement, searchNode) {
+    if (!searchText || typeof replacement === 'undefined') {
+        // Throw error here if you want...
+        return;
+    }
+    var regex = typeof searchText === 'string' ?
+                new RegExp(searchText, 'g') : searchText,
+        childNodes = (searchNode || document.body).childNodes,
+        cnLength = childNodes.length,
+        excludes = 'html,head,style,title,link,meta,script,object,iframe';
+    while (cnLength--) {
+        var currentNode = childNodes[cnLength];
+        if (currentNode.nodeType === 1 &&
+            (excludes + ',').indexOf(currentNode.nodeName.toLowerCase() + ',') === -1) {
+            arguments.callee(searchText, replacement, currentNode);
+        }
+        if (currentNode.nodeType !== 3 || !regex.test(currentNode.data) ) {
+            continue;
+        }
+        var parent = currentNode.parentNode,
+            frag = (function(){
+                var html = currentNode.data.replace(regex, replacement),
+                    wrap = document.createElement('div'),
+                    frag = document.createDocumentFragment();
+                wrap.innerHTML = html;
+                while (wrap.firstChild) {
+                    frag.appendChild(wrap.firstChild);
+                }
+                return frag;
+            })();
+        parent.insertBefore(frag, currentNode);
+        parent.removeChild(currentNode);
+    }
+}
+	
+	</script> 
+    <style type="text/css"> 
+
+        span.highlight {
+            background: red;
+            color: white;
+        }
+    </style> 
+</head> 
+<body> 
+
+    <div></div> 
+    <form id="demo"><input id="sText" placeholder="find" value="text" /> <input id="rText" placeholder="replace" value="asd"/><button>Go!</button></form> 
+   
+    
+    <script type="text/javascript"> 
+    
+        document.getElementById('demo').onsubmit = function() {
+            findAndReplace(document.getElementById('sText').value, function(text){
+                return '<span class="highlight">' + document.getElementById('rText').value + '</span>';
+            });
+            return false;
+        };
+        
+    </script> 
+</body> 
+</html> 

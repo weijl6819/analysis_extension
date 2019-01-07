@@ -1,0 +1,74 @@
+@import "~less/variables.less";
+@import "../../less/cleanslate.less";
+#__wikibuy__ .__wikibuy {
+  &.__onTop {
+    position: relative;
+    z-index: 2147483647;
+  }
+  @import "../../less/global.less";
+  @import "../../less/icon-font.less";
+  .wb-SiteHub {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 360px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.05);
+    border: 1px solid @lightGray;
+    display: none;
+    border-radius: 6px;
+    &.visible {
+      display: block;
+    }
+    &.suspended {
+      display: block;
+      .container {
+        min-height: auto;
+      }
+    }
+    .header {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        .defaultBold;
+        color: @midnight;
+      }
+      .w-icon-logo {
+        height: 40px;
+        width: 60px;
+        background-position: center;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: none;
+        svg {
+          fill: @palmetto;
+          width: 36px;
+        }
+      }
+      .icon-x {
+        height: 40px;
+        width: 60px;
+        color: @gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        opacity: 1;
+        text-shadow: none;
+        float: none;
+      }
+    }
+    .container {
+      min-height: 300px;
+      max-height: 600px;
+      overflow: auto;
+    }
+    .store-content-data {
+      margin-top: 10px;
+    }
+  }
+}

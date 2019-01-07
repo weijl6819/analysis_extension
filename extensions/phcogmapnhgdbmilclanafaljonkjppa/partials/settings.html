@@ -1,0 +1,32 @@
+<link ng-if="isThemeDark(gameData.theme)" href="css/bootstrap.dark.min.css" rel="stylesheet" media="screen">
+<link ng-if="isThemeBlue(gameData.theme)" href="css/bootstrap.blue.min.css" rel="stylesheet" media="screen">
+
+<center><div class="alert alert-success" id="notifyBox" role="alert">Settings Updated</div></center>
+
+<form>
+	<div class="form-group">
+		<label for="themeSelect" class="col-sm-2 control-label">Team Theme</label>
+		<div class="field">
+			<select class="form-control" id="themeSelect">
+				<option value="{{gameData.theme}}">{{gameData.theme}}</option>
+				<option ng-if="isSelectedTheme('Light')" value="Light">Light</option>
+				<option ng-if="isSelectedTheme('Dark')" value="Dark">Dark</option>
+				<option ng-if="isSelectedTheme('Blue')" value="Blue">Blue</option>
+			</select>
+		</div>
+		<br/ >
+		<label for="themeSelect" class="col-sm-2 control-label">Favorite Team</label>
+		<div class="field">
+			<select class="form-control" id="favoriteSelect">
+				<option>{{favoriteTeam}}</option>
+				<option ng-if="isFavoriteTeam('None')">None</option>
+				<option ng-repeat="team in teamList"  ng-if="isFavoriteTeam(team)">{{team}}</option>
+			</select>
+		</div>
+	</div>
+	<div class="field" ng-click="saveSettings()">
+		<button type="submit" class="btn btn-default">Save</button>
+	</div>
+
+
+</form>

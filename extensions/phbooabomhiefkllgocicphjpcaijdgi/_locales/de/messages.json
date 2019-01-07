@@ -1,0 +1,50 @@
+{
+    "name":
+    {
+        "message":"WebTop – schnelles Einloggen Tool"
+    },
+    "description":
+    {
+        "message":"Schnelle Autorisierung mit einem Mausklick für WebTop. WebTop ist ein Desktop mit der Zusammenstellung von Webanwendungen."
+    },
+    "register":
+    {
+        "message":"Anmeldung"
+    },
+    "email":
+    {
+        "message":"E-Mail"
+    },
+    "password":
+    {
+        "message":"Passwort"
+    },
+    "forgot":
+    {
+        "message":"Vergessen?"
+    },
+    "save":
+    {
+        "message":"Speichern"
+    },
+    "login_error":
+    {
+        "message":"Autorisierungsfehler"
+    },
+    "enter_login":
+    {
+        "message":"Geben Sie Ihre E-Mail und Passwort ein"
+    },
+    "data_saved":
+    {
+        "message":"Angaben sind gespeichert"
+    },
+    "please_wait":
+    {
+        "message":"Warten Sie bitte"
+    },
+    "remind_link":
+    {
+        "message":"http://uid.me/remind/?l=de"
+    }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>WIU Libraries Research Panel</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body style="width:500px">
+	<header>
+	</header>
+
+		<p style="font:18px bold, serif;font-weight:900;color:#FFCC00;background-color:#663399;vertical-align:middle;border-radius:0px 0px 0px 0px;padding:5px 3px 3px 3px; margin:0px 0px 0px 0px;">WIU Libraries Research Panel</p>
+<center>	
+	<div style="font:bold;color:#000000;background-color:#FFCC00;vertical-align:middle;padding:1px 3px 1px 3px; margin:0 0px 0 0px;">
+		<a href="http://www.wiu.edu/libraries/" target="_blank"><i class="fa fa-university" style="font-size:11px;vertical-align:middle;padding:3px 18px 3px 0"> Home</i></a>
+		<a href="http://www.wiu.edu/libraries/info/hours/" target="_blank"><i class="fa fa-clock-o" style="font-size:11px;vertical-align:middle;padding:3px 18px 3px 0"> Hours</i></a>
+		<a href="http://www.wiu.edu/libraries/help/" target="_blank"><i class="fa fa-comment" style="font-size:11px;vertical-align:middle;padding:3px 18px 3px 0"> Ask a Librarian</i></a>
+		<a href="http://www.wiu.edu/libraries/instruction/" target="_blank"><i class="fa fa-info-circle" style="font-size:11px;vertical-align:middle;padding:3px 18px 3px 0"> Instruction</i></a>
+		<a href="http://www.wiu.edu/library/direct/?MyAccount" target="_blank"><i class="fa fa-id-card-o" style="font-size:11px;vertical-align:middle;padding:3px 0px 3px 10px"> MyAccount</i></a>
+	</div>	
+</center>
+	
+
+<section>		
+		<div style="background-color:#DCDCDC; padding:5px 3px 5px 3px; margin:0 0px 5px 0px;">
+		<form id="searchbox">
+		<label id="searchtag" value="Search">Search</label>
+			<select id="chosendb" name="chosendb">
+				<option title="WIU Books, DVDs and More (Keyword)" value="westcat" />WestCat Library Catalog</option>  
+				<option title="WestCat: Title Words" value="westcat-title" /> &nbsp; --Title Words</option>
+				<option title="WestCat: Author Words" value="westcat-author" /> &nbsp; --Author Words</option>
+				<option title="WestCat: LC Subject Headings" value="westcat-subject" /> &nbsp; --Subject Headings</option>
+				<option>---------------</option>
+				<option title="Find Print/Fulltext Journals" value="phl" />WIU Journals/E-Journals (PHL)</option>
+				<option>---------------</option>
+				<option title="State/National Catalogs" value="worldcat-org" />Other Catalogs:</option>
+				<option title="Search WestCat via VuFind" value="vu-westcat" /> &nbsp; --WestCat (VuFind version)</option>
+				<option title="Search IL Libraries" value="i-share" /> &nbsp; --I-Share (Statewide Catalog)</option>
+				<option title="Search Global Libraries" value="worldcat-org" /> &nbsp; --WorldCat (Intl. Catalog)</option>
+				<option>---------------</option>
+				<option title="Multi-Disciplinary Search" value="ebsco-ASP" />Full-Text Articles:</option>
+				<option title="Multi-Disciplinary Search" value="ebsco-ASP" /> &nbsp; --Academic Search Complete</option>
+				<option title="via EBSCO" value="ebsco-gensources" /> &nbsp; --General/News Sources</option>
+				<option title="via EBSCO" value="ebsco-allsources" /> &nbsp; --Across 30+ Databases</option>
+				<option title="Search Academic Resources" value="google-scholar" />Google Scholar</option>
+				<option title="Search Websites" value="google" />Google</option>
+				<option>---------------</option>
+				<option title="Find a Definition (OED)" value="oed-search" />Oxford English Dictionary (OED)</option>
+                <option>---------------</option>
+                <option title="Find a Definition (Dictionary.com)" value="dictionary" />A Dictionary</option>
+				<option title="Find a Synonym (Thesaurus.com)" value="thesauri" />A Thesaurus</option>
+				<option>---------------</option>				
+				<option title="Pages on the WIU Libraries Website" value="libweb-search" />WIU Libraries Webpages</option>
+				<option title="Websites Selected by WIU Reference Librarians" value="reftools" />RefTools (Reference Sites)</option>
+				<option>---------------</option>
+				<option title="Pages on the WIU Website" value="wiuweb-search" />WIU Webpages</option>
+                <option>---------------</option>
+                <option title="Enter PURL in Search Box; transforms a &quot;permanent URL&quot; (PURL) article link you obtain from a library subscription database, making it available to WIU users both on/off campus." value="converter" />Article Link Converter (WIU)</option>
+			</select>
+			<label id="for" value="for:" />for:</label>
+       
+			<input type="text" id="wiusearchbox" minwidth="200" width="300" />
+
+			<button type="submit" id="mainsearch">
+			<img src="icons/ppv_search.png" style="vertical-align:middle" width="14" height="14" alt="Submit" />
+			</button>
+		</form>
+		</div>
+
+	</section>
+<br>
+<center>
+
+<div>
+	<form id="research">
+	<select id="resTools">
+		<option value="" selected>Research Tools...</option>
+		<optgroup value="" label="FIND ARTICLES" value="databases">Find Articles</optgroup>
+		<optgroup value="" label=" &nbsp; &nbsp; &nbsp; &#34;Top 4&#34; General Databases:">
+		<option value="http://www.wiu.edu/library/direct/?EAI"> &nbsp; &nbsp; • InfoTrac (Expanded Academic Index)</li></li>
+		<option value="http://www.wiu.edu/library/direct/?ASP"> &nbsp; &nbsp; • Academic Search Complete</option>
+		<option value="http://www.wiu.edu/library/direct/?OVRC"> &nbsp; &nbsp; • Opposing Viewpoints</option>
+		<option value="http://www.wiu.edu/library/direct/?NewsBank"> &nbsp; &nbsp; • Access World News (newspapers)</option>
+		</optgroup>
+
+		<option>---------------</option>
+		<option value="http://www.wiu.edu/libraries/databases/"> &nbsp; &nbsp; &nbsp; &nbsp; • ALL Databases (A-Z)</option>
+		<option value="http://www.wiu.edu/libraries/databases/index.php?showsubj=1"> &nbsp; &nbsp; &nbsp; &nbsp; • Databases by Subject</option>
+		<option value="http://www.wiu.edu/libraries/databases/index.php?subjid=44&showonesubj=1&submitf=Go"> &nbsp; &nbsp; &nbsp; &nbsp; • Newspaper Databases</option> 
+
+		<option>---------------</option>
+
+		<optgroup label="FIND A JOURNAL" </optgroup>	
+		<option value="http://sfx.carli.illinois.edu/sfxwiu/az"> &nbsp; &nbsp; • Periodicals Holdings List (WIU)</option>
+		</optgroup>
+		<option>---------------</option>
+		<optgroup label="FIND BOOKS, DVDs &amp; MORE (Catalogs):">	
+		<option value="http://www.wiu.edu/library/direct/?WESTCAT"> &nbsp; &nbsp; • WestCat (WIU Library Catalog)</option>
+		<option value="http://www.wiu.edu/library/direct/?ISHARE"> &nbsp; &nbsp; • I-Share (IL Academic/Research Libs.)</option>
+		<option value="http://www.wiu.edu/library/direct/?WCAT"> &nbsp; &nbsp; • WorldCat (U.S./Intl. Libraries)</option>
+		<option value="http://www.wiu.edu/libraries/catalogs"> &nbsp; &nbsp; • More...</option>
+		</optgroup>	
+		<option>---------------</option>
+		<optgroup label="FIND...">
+		<option value="http://www.wiu.edu/libraries/reference/reftools/"> &nbsp; &nbsp; • Gov/Legal Info &amp; Maps</option>
+		<option value="http://www.wiu.edu/libraries/collections/"> &nbsp; &nbsp; • Library Special Collections</option>
+		<option> &nbsp; &nbsp; &nbsp; ---------------</option>
+		<option value="http://wiu.libguides.com/CitingSources"> &nbsp; &nbsp; • Citation Styles</option>
+		<option> &nbsp; &nbsp; &nbsp; ---------------</option>
+		<option value="http://www.wiu.edu/library/direct/?CHE"> &nbsp; &nbsp; • Chronicle of Higher Education</option>
+		<option value="http://www.wiu.edu/library/direct/?CHE"> &nbsp; &nbsp; • Oxford English Dictionary</option>
+		<option> &nbsp; &nbsp; &nbsp; ---------------</option>
+		<option value="http://www.wiu.edu/libraries/infosysdig/researchToolsWidgets.php"> &nbsp; &nbsp; • WIULibs: Research Tools &amp; Widgets</option>
+		</optgroup>	
+	</select>	
+	<button type="button" id="goresTools"> Go</button>
+	</form>
+</div>
+<br>
+
+	<a href="http://www.wiu.edu/library/direct/?ILLiad" target="_blank"><i class="fa fa-file-pdf-o" style="font-size:14px;vertical-align:middle;padding:3px 10px 8px 10px"> ILLiad</i></a>
+	<a href="http://www.wiu.edu/library/direct/?ERES" target="_blank"><i class="fa fa-download" style="font-size:14px;vertical-align:middle;padding:3px 10px 8px 10px"> E-Reserve</i></a>
+	<a href="http://wiu.libguides.com/sb.php?subject_id=12783" target="_blank"><i class="fa fa-cubes" style="font-size:14px;vertical-align:middle;padding:3px 15px 8px 10px"> Class Guides</i></a>
+	<a href="http://www.wiu.edu/libraries/reference/reftools/" target="_blank"><i class="fa fa-wrench" style="font-size:14px;vertical-align:middle;padding:3px 10px 8px 10px"> Ref Tools</i></a>
+
+</center>
+<br/>
+<hr>
+
+	<div id="container">
+		<div class="inlineLeft">
+		<form id="atozform" style="display:inline-block;">
+		<select id="atoz">
+			<option value="">Libraries A-Z</option>
+			<optgroup label="A">
+			<option value="info/">About the Libraries</option>
+			<option value="access_services/">Access Services</option>
+			<option value="acquisitions_cataloging/">Acquisitions/Cataloging</option>
+			<option value="alumni/">Alumni</option>
+			<option value="administration/">Administration</option>
+			<option value="archives/">Archives &amp; Special Collections</option>
+			<option value="wiu_authors/">Author Recognition Event</option>
+			<optgroup label="B">
+			<option value="archives/icarian_center/">Baxter-Snyder Center for Icarian...</option>
+			<option value="news/2010s/2016/online_booksale.php">Book Sale</option> (now online!)</li>
+			<option value="catalogs/bookLocationGuide.php">Book Stacks Map</option>
+				<optgroup label=" &nbsp;&nbsp; Branches">
+				<option value="curriculum_library/"> &nbsp; &nbsp; • Curriculum Library</option>
+				<option value="info/malpassLibrary.php"> &nbsp; &nbsp; • Leslie F. Malpass Library (Main)</option>
+				<option value="music_library/"> &nbsp; &nbsp; • Music Library</option>
+				<option value="http://www.wiu.edu/qc/library/"> &nbsp; &nbsp; • WIU Quad Cities Library</option>
+				</optgroup>
+			</optgroup>
+			<optgroup label="C"> C</option>
+			<option value="http://carli.illinois.edu/">CARLI</option>
+			<option value="acquisitions_cataloging/">Cataloging</option>
+			<option value="catalogs/">Catalogs (WestCat, I-Share...)</option>
+			<option value="archives/hancockHistory.php">Center for Hancock County History</option>
+			<option value="access_services/">Circulation</option>
+			<option value="http://wiu.libguides.com/cat.php?cid=4859">Class Guides (Tutorials)</option>
+			<option value="collection_development/">Collection Development</option>
+			<option value="collections/">Collections</option>
+			<option value="help/">Comments &amp; Suggestions</option>
+			<option value="digital_commons/">Computer Services (Library)</option>
+			<option value="info/computingWi-FiAccess.php">Computing/WiFi Access</option>
+			<option value="curriculum_library/">Curriculum Library</option>
+			</optgroup>
+			<optgroup label="D"/> D</option>
+			<option value="databases/">Databases (EconLit, JSTOR...)</option>
+			<option value="dean/">Dean of Libraries</option>
+			<option value="administration/development/">Development/Gifts</option>
+			<option value="digital_commons/">Digital Commons</option>
+			<option value="digitization/">Digitization</option>
+			<option value="info/facultyStaffDirectory.php">Directory (Library Faculty/Staff)</option>
+			<option value="services/distance_education/">Distance Education Services</option>
+			</optgroup>
+			<optgroup label="E"> E</option>
+			<option value="electronic_resources/">Electronic Resources</option>
+			<option value="administration/documents/emergency_planning/2014_LibraryEmergencyPlan.pdf">Emergency Action Plan</option>
+			<option value="administration/employment.php">Employment</option>
+			</optgroup>
+			<optgroup label="F"> F</option>
+			<option value="info/facilitiesCollections.php">Facilities</option>
+			<option value="info/facultyStaffDirectory.php">Faculty/Staff Directory (Library)</option>
+			<option value="services/facultyServices.php">Faculty Services</option>
+			<option value="https://www.wiu.edu/library/forms/reference/question/">FORM: Ask a Librarian</option>
+			<option value="https://www.wiu.edu/librarysecure/forms/admin/group_study.php">FORM: Group Study Request</option>
+			<option value="instruction/request.php">FORM: Instruction Request (Faculty)</option>
+			<option value="instruction/request.php">FORM: High School Visit Request</option>
+			<option value="https://www.wiu.edu/librarysecure/forms/access_services/reserve_media.php">FORM: Media Reservation (Faculty)</option>
+			<option value="https://www.wiu.edu/librarysecure/forms/acqcat/acqcat_errorform.php">FORM: Report a WestCat Error</option>
+			<option value="https://www.wiu.edu/librarysecure/forms/admin/stuworker.php">FORM: Student Employment</option>
+			</optgroup>
+			<optgroup label="G"> G</option>
+			<option value="events/gaming/">Gaming Collection</option>
+			<option value="administration/development/">Gifts to the Libraries</option>
+			<option value="govpubs/">Government/Legal Information</option>
+			</optgroup>
+			<optgroup label="H"> H</option>
+			<option value="info/askLibrarian.php">Help</option>
+			<option value="info/hours/">Hours</option>
+			</optgroup>
+			<optgroup label="I"> I</option>
+			<option value="information_systems/">Information Systems</option>
+			<option value="instruction/">Instruction</option>
+			<option value="interlibrary_loan/">Interlibrary Loan (ILL)</option>
+			<option value="https://i-share.carli.illinois.edu/">I-Share Catalog</option>
+			</optgroup>
+			<optgroup label="J"> J</option>
+			<option value="administration/employment.php">Jobs</option>
+			</optgroup>
+			<optgroup label="L"> L</option>
+			<option value="info/learningSpaces.php">Learning Spaces</option>
+			<option value="info/learningSpaces.php">LibGuides (Class Guides)</option>
+			<option value="catalogs/">Library Catalogs</option>
+			<option value="collections/">Library Collections</option>
+			<option value="digital_commons/">Library Computer Services</option>
+			<option value="databases/">Library Databases</option>
+			<option value="administration/development/">Library Giving</option>
+			<option value="info/hours/">Library Hours</option>
+			<option value="liaisons/">Library Liaison Program</option>
+			<option value="news/">Library News</option>
+			<option value="administration/policies/">Library Policies</option>
+			<option value="library_support_services/">Library Support Services</option>
+			<option value="databases/persistent_links/linkConverter.php">Link Converter</option>
+			<option value="info/mapsDirectionsParking.php">Location/Parking</option>
+			</optgroup>
+			<optgroup label="M"> M</option>
+			<option value="info/malpassLibrary.php">Malpass Library</option>
+			<option value="govpubs/map_collection/">Map Collection</option>
+			<option value="info/mapsDirectionsParking.php">Maps/Directions/Parking</option>
+			<option value="info/mission.php">Mission (WIU Libraries)</option>
+			<option value="music_library/">Music Library</option>
+			</optgroup>
+			<optgroup label="N"> N</option>
+			<option value="news/">News</option>
+			</optgroup>
+			<optgroup label="P"> P</option>
+			<option value="info/mapsDirectionsParking.php">Parking</option>
+			<option value="library/phl/">Periodicals Holdings List</option>
+			<option value="databases/persistent_links/">Persistent Links (to articles)</option>
+			<option value="collections/petersen/">Petersen Ornithology Collection</option>
+			<option value="physical_sciences_library/">Physical Sciences Library</option>
+			<option value="administration/policies/">Policies</option>
+			</optgroup>
+			<optgroup label="Q"> Q</option>
+			<option value="https://www.wiu.edu/library/forms/comments/">Questions/Help</option>
+			<option value="qc/library/">Quad Cities Library</option>
+			</optgroup>
+			<optgroup label="R"> R</option>
+			<option value="services/distance_education/reciprocalBorrowing.php">Reciprocal Borrowing</option>
+			<option value="reference/">Reference</option>
+			<option value="information_systems/researchToolsWidgets.php">Research Panel</option>
+			<option value="interlibrary_loan/">Reserve</option>
+			</optgroup>
+			<optgroup label="S"> S</option>
+			<option value="administration/employment.php">Student Employment Application</option>
+			</optgroup>
+			<optgroup label="T"> T</option>
+			<option value="info/thisAndThat.php">This &amp; That</option> (General Information)</li>
+			<option value="info/tollFreeNumber.php">Toll Free Number</option>
+			</optgroup>
+			<optgroup label="U"> U</option>
+			<optgroup label="&nbsp;&nbsp; Units">
+				<option value="access_services/"> &nbsp; &nbsp; • Access Services (Circulation)</option>
+				<option value="acquisitions_cataloging/"> &nbsp; &nbsp; • Acquisitions/Cataloging</option>
+				<option value="administration/"> &nbsp; &nbsp; • Administration</option>
+				<option value="archives/"> &nbsp; &nbsp; • Archives &amp; Special Collections</option>
+				<option value="collection_development/"> &nbsp; &nbsp; • Collection Development</option>
+				<option value="digital_commons/"> &nbsp; &nbsp; • Digital Commons/LCS</option>
+				<option value="electronic_resources/"> &nbsp; &nbsp; • Electronic Resources</option>
+				<option value="govpubs/"> &nbsp; &nbsp; • Gov't &amp; Legal Information</option>
+				<option value="information_systems/"> &nbsp; &nbsp; • Info Systems &amp; Digitization</option>
+				<option value="interlibrary_loan/"> &nbsp; &nbsp; • Interlibrary Loan</option>
+				<option value="reference/"> &nbsp; &nbsp; • Reference</option>
+				<option value="reference/"> &nbsp; &nbsp; • Reserves</option>
+				</optgroup>
+			</optgroup>
+				<optgroup label="V" > V</option>
+			<option value="info/virtualToursExhibitsCollections.php">Virtual Tours/Exhibits</option>
+			</optgroup>
+			<optgroup label="W" > W</option>
+			<option value="catalogs/">WestCat (Library Catalog)</option>
+			<option value="web_resources/generalLinks.php">Web Resources (General Links)</option>
+			<option value="wiu_authors/">WIU Authors Database/Recognition</option>
+			<option value="qc/library/">WIU-Quad Cities Library</option>
+		</select>
+		<button type="button" id="goatoz" value="goatoz"> Go</button>
+		</form>
+		</div>
+
+		<div>
+		<button type="button" id="opts" class="fa fa-cog"> Options</button>
+		</div>
+	</div>
+
+	<div id="container2">
+	<div class="inlineCenter">
+		<form id="mywiuform">
+		<select id="mywiuopt">
+			<option value="http://www.wiu.edu/">WIU Home</option>
+			<option value="http://www.wiu.edu/email">Email</option>
+			<option value="http://westernonline.wiu.edu/">WesternOnline</option>
+			<option value="http://www.wiu.edu/stars/">STARS</option>
+			<option value="http://wiup.wiu.edu/">WIUP</option>
+			<option value="http://www.wiu.edu/purplepost">Purple Post</option>
+			<option value="http://www.wiu.edu/guava/">Guava</option>
+			<option value="http://www.wiu.edu/libraries/">WIU Libraries</option>
+		</select>
+		<button type="button" id="gomywiuopt"> Go</button>
+		</form>
+	</div>
+	</div>
+	<footer>
+	</footer>
+	<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>

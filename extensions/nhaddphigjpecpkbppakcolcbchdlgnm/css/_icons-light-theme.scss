@@ -1,0 +1,25 @@
+.icon {
+    display: inline-block; width: 20px; height: 20px;
+
+    &.icon-links      { background: url(#{$imgsDir}/light-theme/links.svg)      center / contain no-repeat; }
+    &.icon-apps       { background: url(#{$imgsDir}/light-theme/apps.svg)       center / contain no-repeat; }
+    &.icon-more       { background: url(#{$imgsDir}/light-theme/more.svg)       center / contain no-repeat; }
+    &.icon-links2     { background: url(#{$imgsDir}/light-theme/links2.svg)     center / contain no-repeat; }
+    &.icon-todos      { background: url(#{$imgsDir}/light-theme/todos.svg)      center / contain no-repeat; }
+    &.icon-notes      { background: url(#{$imgsDir}/light-theme/notes.svg)      center / contain no-repeat; }
+    &.icon-edit       { background: url(#{$imgsDir}/light-theme/edit.svg)       center / contain no-repeat; }
+    &.icon-photos     { background: url(#{$imgsDir}/light-theme/photos.svg)     center / contain no-repeat; }
+    &.icon-gallery    { background: url(#{$imgsDir}/light-theme/gallery.svg)    center / contain no-repeat; }
+    &.icon-new-window { background: url(#{$imgsDir}/light-theme/new-window.svg) center / contain no-repeat; }
+    &.icon-colors     { background: url(#{$imgsDir}/light-theme/colors.svg)     center / contain no-repeat; }
+    &.icon-private    { background: url(#{$imgsDir}/light-theme/private.svg)    center / contain no-repeat; }
+    &.icon-close      { background: url(#{$imgsDir}/light-theme/close.svg)      center / contain no-repeat; }
+    &.icon-refresh    { background: url(#{$imgsDir}/light-theme/refresh.svg)    center / contain no-repeat; }
+    &.icon-upload     { background: url(#{$imgsDir}/light-theme/upload.svg)     center / contain no-repeat; }
+    &.icon-save       { background: url(#{$imgsDir}/light-theme/save.svg)       center / contain no-repeat; }
+    &.icon-search     { background: url(#{$imgsDir}/light-theme/search.png)     center / contain no-repeat; }
+    &.icon-trash      { background: url(#{$imgsDir}/light-theme/trash.svg)      center / contain no-repeat; }
+    &.icon-video      { background: url(#{$imgsDir}/light-theme/video.svg)      center / contain no-repeat; }
+    &.icon-plus       { background: url(#{$imgsDir}/light-theme/plus.svg)       center / contain no-repeat; }
+    &.icon-star       { background: url(#{$imgsDir}/light-theme/star.svg)       center / contain no-repeat; }
+}

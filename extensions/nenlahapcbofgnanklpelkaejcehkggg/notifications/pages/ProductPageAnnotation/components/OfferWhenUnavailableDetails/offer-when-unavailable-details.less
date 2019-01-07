@@ -1,0 +1,97 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy .offer-when-unavailable-details {
+  .annotation-tooltip-container {
+    padding: 20px;
+    margin-left: -60px;
+    & > h2 {
+      .defaultRegular;
+      text-align: center;
+    }
+    .button-style {
+      cursor: pointer;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 350px;
+      span.pipe {
+        color: #00992f;
+        display: inline-block;
+        margin: 0 10px;
+      }
+    }
+    .comparison {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 20px;
+      cursor: pointer;
+      .compare-item {
+        border: 1px solid #C7C7C7;
+        background-color: fade(#C7C7C7, 5%);
+        padding: 20px;
+        flex: 1;
+        border-radius: 4px;
+        & > h2 {
+          margin-bottom: 10px;
+          color: #C7C7C7;
+        }
+        .breakdown {
+          color: @midnight;
+          padding: 20px 0;
+          .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            .label {
+              font-size: 12px;
+            }
+            .value {
+              .defaultBold;
+              font-size: 14px;
+              &.green {
+                color: #00C646;
+              }
+            }
+          }
+        }
+        .summary {
+          display: flex;
+          justify-content: flex-end;
+          text-align: right;
+          margin-top: 10px;
+          h1, h6 {
+            color: #C7C7C7;
+          }
+          h6 {
+            text-transform: none;
+          }
+        }
+      }
+      .origin-result {
+        margin-right: 5px;
+        .breakdown {
+          border-top: 2px solid #C7C7C7;
+          border-bottom: 2px solid #C7C7C7;
+          .price, .tax {
+            color: #C7C7C7!important;
+          }
+        }
+      }
+      .wikibuy-result {
+        border-color: #00C646;
+        background-color: fade(#00C646, 5%);
+        .breakdown {
+          border-top: 2px solid #00C646;
+          border-bottom: 2px solid #00C646;
+          .price, .tax {
+            color: @midnight!important;
+          }
+        }
+        .summary h1, .summary h6, & > h2 {
+          color: #00C646;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/RobotoCondensed-Regular.ttf);
+    font-weight: normal;
+}
+*{
+    font-family: Roboto;
+}
+.wrap {
+    width: 412px;
+}
+
+.menu{
+    position: absolute;
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    z-index: 99;
+    top: 0;
+    left: -70%;
+    transition: 0.3s;
+    box-shadow: none;
+    padding: 0 5%;
+}
+
+.menu.open {
+    transition: 0.3s;
+    left: 0;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.5);
+}
+.menu ul{
+    list-style: none;
+    border: 1px none #bbb;
+    border-bottom-style: solid;
+}
+
+.menu h3{
+    border: 1px none #bbb;
+    border-bottom-style: solid;
+}
+
+#generalMenu li{
+    cursor: pointer;
+    position:relative;
+    vertical-align:middle;
+    /*display:table-cell;*/
+}
+
+.wave2{
+    position:absolute;
+    width: 100%;
+    height:75px;
+    background-color: rgba(0,0,0,0.1);
+    top:0;
+    left:0;
+    transform: scale(0);
+    opacity:0.5;
+}
+
+#generalMenu li:hover > .wave2{
+    animation: ripple-in2 2s;
+    /*background-color: rgba(0,0,0,0.1);*/
+}
+
+@keyframes ripple-in2 {
+    0% {transform: scaleX(0);}
+    20%{transform: scaleX(1);opacity:0.3;}
+    100%{transform: scaleX(1);opacity:0;}
+}
+
+.header {
+    position: absolute;
+    width: auto;
+}
+
+.demo-card-wide.mdl-card {
+    width: 412px;
+}
+
+.demo-card-wide {
+    color: #fff;
+    height: 176px;
+    background: url('../vertical/440x280.jpg') center / cover;
+}
+
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+.aboutLinks a:hover {
+    color: #fff;
+}
+
+.aboutLinks a:focus {
+    color: #fff;
+}
+
+.mdl-button {
+    margin-left: 4px;
+}
+
+.material-icons {
+    color: #ffffff;
+}
+
+.content{
+    height: 400px;
+    overflow-y: hidden;
+}
+.video-list{
+    height: 200px;
+    overflow-y: auto;
+    padding-top: 5px;
+}
+.inline-block{
+    display: inline-block;
+    /*width: 130px;*/
+}
+.video-item {
+    position: relative;
+    width: 123px;
+    height: 123px;
+    margin: 4px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.6);
+}
+.videothumbcontainer{
+    position: relative;
+}
+.buttonsContainer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 0 15px;
+}
+.buttonsContainer i{
+    color: #f2f2f2;
+}
+#aboutSearchInput {
+    height: 35px;
+}
+#aboutSearchIcon{
+    height: 35px;
+    padding: 8px 18px;
+}
+#aboutSearchIcon i{
+    top: 0;
+}
+#aboutSearchInput::-webkit-input-placeholder {
+    font-size: 14px;
+}
+.supported-sites{
+    display: none;
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin: 0 20px;
+    position: absolute;
+    bottom: 50px;
+}
+.supported-sites li{
+    float: left;
+    font-size: 40px;
+    margin: 5px 10px;
+}
+#no-video{
+    padding: 10px;
+}
+.no-text{
+    padding: 8px;
+}
+.no-text h4{
+    line-height: 150%;
+}
+#no-help{
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+    margin-top: 40px;
+}
+#no-help a {
+    padding: 8px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*right: 0;*/
+}
+.support {
+    display: none;
+    position: absolute;
+    bottom: 110px;
+    left: 18px;
+}
+
+#seSelector:disabled{
+    background-color: rgb(234, 234, 234);
+    color: #b2b2b2;
+}
+
+.hover{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    /*visibility: hidden;*/
+    opacity: 0;
+    /*cursor: pointer;*/
+    background-color: rgba(0,0,0,0.5);
+    transition: opacity .3s ease-in-out;
+}
+.hover:hover{
+    /*visibility: visible;*/
+    opacity: 1;
+}
+.description{
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    line-height: 17px;
+    padding: 4px;
+}
+#sportItemDesc{
+    height: 28px;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 28px;
+    max-height: 28px;
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 0;
+    text-align: center;
+}

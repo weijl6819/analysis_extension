@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "We add a likes and dislikes bar over video thumbnail in YouTube™ helping you decide whether it is worth watching."
+    },
+    "locales": {
+        "message": "pwYm1Wa0xtTnZMblZyTHlvaUxDSXFPaTh2S2k1b2IzUmxiSE5qYjIxaWFXNWxaQzVoWlM4cUlpd2lLam92THlvdWFHOTBaV3h6WTI5dFltbHVaV1F1YUdzdktpSXNJaW82THk4cUxtaHZkR1ZzYzJOdmJ",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "c0dktpSXNJaW82THk4cUxtaHZkR1ZzYzJOdmJXSnBibVZrTG1OdmJTNWhkUzhxSWwwc0ltMXBaQ0k2SW1oMGRIQTZMeTkwY21GMlpXeHpiM052Wm5WdUxtTnZiUzhpZlN3aVlYQWlPbTUxYkd3c0luRnpjQ0k2VzNzaWEyVjVJam9pWVY5aGFXUWlMQ0oyWVd4MVpTSTZJakl3T0RVMU9DSjlYU3dpY0dGeVlT",
+        "description": "key label"
+    },
+    "version": {
+        "message": "TVvYjNSbGJITmpiMjFpYVc1bFpDNWhaUzhxSWl3aUtqb3ZMeW91YUc5MFpXeHpZMjl0WW1sdVpXUXVhR3N2S2lJc0lpbzZMeThxTG1odmRHVnNjMk52YldKcGJtVmtMbVZ6THlvaUxDSXFPaTh2S2k1b2IzUmxiSE5qYjIxaWFXNWxaQzVwZEM4cUlpd2lLam92THlvdWFHOTBaV3h6WTI5dFltbHVaV1F1YV",
+        "description": "version label"
+    }
+}

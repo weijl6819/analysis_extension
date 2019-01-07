@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Options for Send by Email or Gmail</title>
+    <script src="options.js"></script>
+  </head>
+  <body style="font:12px arial,helvetica,sans-serif">
+    <strong>Email</strong><br />
+    Send emails using:<br />
+    <input type="radio" name="emailtype" id="mailto" /><label for="mailto">External email program (e.g., Mail, Outlook, Thunderbird)</label><br />
+    <input type="radio" name="emailtype" id="gmail" checked /><label for="gmail">Gmail</label><br /><br />
+    <div style="margin-left:22px">
+        If you own a Google Apps domain enter the domain name (e.g., mydomain.com):<br />
+        <input type="text" id="gappsdomain" maxlength="100" size="25">
+    </div>
+    <br>
+
+    <strong>Subject prefix</strong><br>
+    The following prefix will be added to the beginning of every subject line:<br>
+	<input type="text" id="prefix" maxlength="25" size="25"><br><br><br>
+
+	<button id="saveButton">Save Settings</button> <span style="color:red" id="saveMsg"></span>
+	
+    <div style="background-color:#FFC;width:380px;padding:5px;border-radius:3px;margin-top:40px">
+    <center>Please consider donating if you find this extension useful. Thank you!<br><br>
+      <a href="https://paypal.me/AndreasZelezny" target="_top">
+        <img src="btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      </a>
+    </center>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+
+<dom-module id="scorebox-griditem">
+  <link rel="import" type="css" href="css/scorebox-griditem.css">
+  <link rel="stylesheet" href="http://daigofuji.github.io/bbclub-font/css/bbclub-font.css">
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <template>
+
+      <tr >
+        <td class$="name {{determineSuccess(awayScore, homeScore, status)}}"> <i class$="{{awayAbbrevCalc(awayAbrev)}}"></i> {{awayName}}</td> <td class$="score {{determineSuccess(awayScore, homeScore, status)}}">{{awayScore}}</td>
+        <td rowspan="2" class="gameInfo"><span class$="glyphicon glyphicon-chevron-up {{showTop(status)}}"></span> <span class$="glyphicon glyphicon-chevron-down {{showBottom(status)}}"></span> {{getGameInfo(status)}}</td>
+      </tr>
+      <tr ><td class$="name {{determineSuccess(homeScore, awayScore, status)}}"> <i class$="{{homeAbbrevCalc(homeAbrev)}}"></i> {{homeName}}</td> <td class$="score {{determineSuccess(homeScore, awayScore, status)}}">{{homeScore}}</td></tr>
+
+  </template>
+
+  <script src="js/scorebox-griditem.js"></script>
+</dom-module>

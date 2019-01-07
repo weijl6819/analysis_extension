@@ -1,0 +1,22 @@
+body {
+  padding-top: 20%;
+  padding-bottom: 20px;
+  background: url('paper.jpg');
+  font-family: 'Special Elite', cursive;
+  font-size: 150%;
+}
+
+.centered {
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signature {
+  float: right;
+}
+
+small {
+  color: #b3b3b3;
+}

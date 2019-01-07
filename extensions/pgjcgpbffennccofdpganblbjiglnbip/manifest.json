@@ -1,0 +1,15 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+	"name": "Listen on Repeat Youtube Video Repeater",
+	"version": "1.1",
+	"manifest_version": 2,
+	"description": "Puts any Youtube Videos on Repeat",
+	"permissions": ["tabs"],
+	"browser_action": {
+		"default_title": "Repeat this video",
+		"default_icon": "repeat.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	}
+}

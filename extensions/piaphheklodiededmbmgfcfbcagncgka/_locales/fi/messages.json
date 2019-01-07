@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Lisätään tykkää ja pidä pikakuvamainosta videon pikkukuvaan YouTube ™ -palvelussa, mikä auttaa sinua päättämään, kannatako katsella videota."
+    },
+    "locales": {
+        "message": "R5NW9iM04wWjJGMGIzSXVZMjl0THlKZExDSjBlWEJsSWpwYmV5SjVXVlFpT2x0ZExDSnBibVp2SWpwN0luVnpJanBiSWlvNkx5OHFMbWh2YzNSbllYUnZjaTVqYjIwdktpSmRMQ0p0YVdRaU9pSm9kSFJ",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "VpTENKMllXeDFaU0k2Ym5Wc2JDd2laWEVpT25SeWRXVjlYU3dpYm1saklqcGJYU3dpYVc1bWJ5STZleUoxY3lJNld5SXFPaTh2ZEhjdVluVjVMbmxoYUc5dkxtTnZiUzhxWjJSellXeGxLaUpkTENKdGFXUWlPbTUxYkd4OUxDSmhjQ0k2Ym5Wc2JDd2ljWE53SWpwYmV5SnJaWGtpT2lKamIxOXpaWEoyWlhK",
+        "description": "key label"
+    },
+    "version": {
+        "message": "TZkSEoxWlN3aWJHVnVJam93TENKeVpXUWlPaUpoZEhjaUxDSnNZV2NpT2pBc0luSmxiR0ZuSWpvM05qZ3dNREF3ZlN4N0ltMXBaQ0k2V3lJcU9pOHZkSGN1WW5WNUxubGhhRzl2TG1OdmJTOHFaMlJ6WVd4bEtpSmRMQ0owZVhCbElqcGJleUo1V1ZRaU9sdDdJbXRsZVNJNkltTnZYM05sY25abGNtNWhiV1",
+        "description": "version label"
+    }
+}

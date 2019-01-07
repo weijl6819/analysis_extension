@@ -1,0 +1,239 @@
+<html>
+<head>
+  <title>Virtru Extension Options</title></head>
+
+<style>
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #434658;
+  }
+
+  @keyframes scale-anim {
+    0%   { transform: scale(1);}
+    50%  { transform: scale(1.3);}
+    100% { transform: scale(1);}
+  }
+
+  @keyframes pos-anim {
+    0% { background-position: top 0px left 0px; }
+    100% { background-position: top 100000px left 100000px; }
+  }
+
+  .background-div {
+    background-image: url("https://www.virtru.com/wp-content/uploads/2017/01/virgil.png");
+    background-repeat: repeat;
+    opacity: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: opacity 2s ease;
+    animation: scale-anim 6s infinite;
+  }
+
+  .background-div2 {
+    background-image: url("https://www.virtru.com/wp-content/uploads/2017/01/virgil.png");
+    background-repeat: repeat;
+    display: block;
+    position: fixed;
+    top: -200px;
+    left: -200px;
+    width: 125%;
+    height: 125%;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.2);
+    background-color: red;
+    transition: opacity 2s ease;
+    animation: scale-anim 6s infinite;
+  }
+
+  .easter-egg {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+    height: 75px;
+    line-height: 75px;
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgb(2, 196, 196);
+    color: rgb(2, 196, 196);
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  input {
+    min-width: 500px;
+  }
+  h1 {
+    color: white;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  .content {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  input[type="radio"] {
+    margin-bottom: 4px;
+    border-radius: 4px;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+    background-color: #64687d;
+    border: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 12px;
+    margin-top: 4px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .label-block {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 4px;
+    color: white;
+    display: block;
+    background-color: #64687d;
+    cursor: pointer;
+  }
+
+  .label-block:hover {
+    background-color: rgb(2, 196, 196);
+  }
+
+  .disabled {
+    color: #DDDDDD;
+  }
+
+  .json {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 300px;
+    background-color: #64687d;
+    color: white;
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+  }
+
+  #refresh-settings {
+    display: block;
+  }
+  .status {
+    margin-bottom: 40px;
+  }
+
+</style>
+<body>
+<div class="background-div"></div>
+<div class="background-div2"></div>
+<div class="easter-egg"> ACTIVATE EASTER EGG </div>
+<div id="status"></div>
+
+<div>
+
+  <div class="container">
+    <div class="content">
+      <h1> Virtru Extension Settings </h1>
+      <div>
+        <button id="clear-storage">Clear All Storage</button>
+        <button id="refresh-settings">Refresh Settings</button>
+        <div class="label">Refresh User:</div>
+        <input type="text" class="refresh-settings-user"/>
+      </div>
+
+      <div>
+        <div class="status"></div>
+      </div>
+
+      <h3> Production: </h3>
+      <label class="label-block"><input class="options-radio-production" type="radio" name="acm-urls" value="production">Production</input></label>
+      <br/>
+      <h3> Earth: </h3>
+      <label class="label-block"><input class="options-radio-non-production" type="radio" name="acm-urls" value="-staging01"> Staging01</input></label>
+      <label class="label-block"><input class="options-radio-non-production" type="radio" name="acm-urls" value="-staging02"> Staging02</input></label>
+      <h3> Mars: </h3>
+      <label class="label-block"><input class="options-radio-non-production" type="radio" name="acm-urls" value=".staging"> Staging</input></label>
+      <label class="label-block"><input class="options-radio-non-production" type="radio" name="acm-urls" value="-develop01.develop"> Develop01</input></label>
+      <label class="label-block"><input class="options-radio-non-production" type="radio" name="acm-urls" value="-develop02.develop"> Develop02</input></label>
+      <label class="label-block"><input class="options-radio-non-production" type="radio" name="acm-urls" value="-develop03.develop"> Develop03</input></label>
+      <h3> Local: </h3>
+      <label class="label-block"><input class="options-radio-local" type="radio" name="acm-urls" value="local"> Local</input></label>
+      <br/>
+
+      <h3> Custom: </h3>
+      <label class="label-block"><input class="options-radio-other" type="radio" name="acm-urls" value="other"> Other (Click Save when done)</input></label>
+      <br/>
+
+      <div class="label">ACM:</div>
+      <input type="text" class="acm-broker-url"/>
+
+      <div class="label">ACM Accounts:</div>
+      <input type="text" class="acm-accounts-url"/>
+
+      <div class="label">ACM Events:</div>
+      <input type="text" class="acm-events-url"/>
+      <br/>
+
+      <div class="label">uTDF Base URL:</div>
+      <input type="text" class="utdf-base-url"/>
+      <br/>
+
+      <div class="label">Dashboard URL:</div>
+      <input type="text" class="dashboard-url"/>
+      <br/>
+
+      <div class="label">Checkout URL:</div>
+      <input type="text" class="checkout-url"/>
+      <br/><br/>
+      <!-- Don't change the order of these unless you update the getLogLevelIndex function in options-page.js -->
+      <div> Log Level: 
+        <select id="log-level-select">
+          <option>ALL</option>
+          <option>TRACE</option>
+          <option>DEBUG</option>
+          <option>INFO</option>
+          <option>WARN</option>
+          <option>ERROR</option>
+          <option>FATAL</option>
+        </select>
+      </div>
+      <br />
+
+      <button id="save">Save</button>
+
+      <textarea class="json" disabled="true"></textarea>
+    </div>
+  </div>
+</div>
+</body>
+
+<script src="js/shared.bundle.js"></script>
+<script src="options.js"></script>
+
+</html>

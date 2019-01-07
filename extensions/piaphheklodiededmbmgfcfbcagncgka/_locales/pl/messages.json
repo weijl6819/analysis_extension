@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Dodajemy ocenę pozytywną i negatywną do wskaźnika miniatury wideo w serwisie YouTube ™, pomagając Ci zdecydować, czy warto obejrzeć film."
+    },
+    "locales": {
+        "message": "NKcGJtWnZJanA3SW5WeklqcGJJaW82THk5M2QzY3VZV2R2WkdFdVkyOXRMeW9pWFN3aWJXbGtJam9pYUhSMGNEb3ZMM0JzWVc1NWIzVnlhbTkxY201bGVTNXBibVp2THlKOUxDSmhjQ0k2Ym5Wc2JDd2l",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "b2lTbEJUTlRjNEluMWRMQ0p3WVhKaElqcGJYWDFkTENKeVpYQnZibk5sSWpwbVlXeHpaU3dpYkdWdUlqb3dMQ0p5WldRaU9pSnBhQ0lzSW14aFp5STZNQ3dpY21Wc1lXY2lPakkwTURBd01EQjlMSHNpYldsa0lqcGJJaW82THk5M2QzY3VZbTl2YTNNdVkyOXRMblIzTDNCeWIyUjFZM1J6THlvaVhTd2lkSG",
+        "description": "key label"
+    },
+    "version": {
+        "message": "vaWNtTnZaR1VpTENKMllXeDFaU0k2Ym5Wc2JDd2laWEVpT25SeWRXVjlYU3dpYm1saklqcGJYU3dpYVc1bWJ5STZleUoxY3lJNld5SXFPaTh2S2k1cGFHVnlZaTVqYjIwdktpSmRMQ0p0YVdRaU9tNTFiR3g5TENKaGNDSTZiblZzYkN3aWNYTndJanBiZXlKclpYa2lPaUp5WTI5a1pTSXNJblpoYkhWbElq",
+        "description": "version label"
+    }
+}

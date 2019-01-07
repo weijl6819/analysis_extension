@@ -1,0 +1,921 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />-->
+    <title>Extension Frame</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache, no-store" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta charset="utf-8" />
+    <link href="css/app.min.css" rel="stylesheet" />
+    <link href="css/redmond/jquery-ui.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="loader">
+        <div style="margin-top: 150px;">
+            <span>Please wait while data is loaded...</span><br />
+            <br />
+            <img src="./images/hourglass.png" alt="Please wait while the data is loaded..." title="Please wait while data is loaded..." />
+        </div>
+    </div>
+    <div id="mask-overlay"></div>
+    <div id="mask"></div>
+    <div id="rightColumn">
+        <div id="bandingDiv"></div>
+        <div id="contentRoot">
+            <div>
+                <div id="networkCreditDiv" style="max-height: 20px;">
+                    <table style="border-collapse: collapse; border-spacing: 0; text-align: center; width: 100%;">
+                        <tr>
+                            <td style="text-align: center; vertical-align: middle;" width="50">
+                                <a id="twitterLink" href="https://twitter.com/LondonAir" title="The London Air Twitter feed" target="_blank"><img src="images/nav/twit.png" style="border: 1px dotted #9c9b9b;" width="16" height="16" /></a>
+                                <a id="facebookLink" href="https://www.facebook.com/LondonAir" title="The London Air Facebook page" target="_blank"><img src="images/nav/fb.png" style="border: 1px dotted #9c9b9b;" width="16" height="16" /></a>
+                            </td>
+                            <td style="text-align: right; vertical-align: text-top;">
+                                <span id="websiteLink" style="line-height: 18px; text-align: center; vertical-align: middle ; color: #ffffff; font-family: Helvetica, Arial, sans-serif !important; font-size: 11px; text-decoration: none;"></span>
+                            </td>
+                            <td style="text-align: right; vertical-align: middle;" width="20">
+                                <a id="websiteLink2" href="http://www.londonair.org.uk" title="Opens the air quality network website in a new window" target="_blank">
+                                    <img id="creditIcon" src="images/kingslogo.png" style="border: 1px dotted #9c9b9b;" height="16" width="16" />
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="scrollPanel">
+                    <div id="content"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="leftColumn">
+        <div>
+            <ul id="menu">
+                <li id="LIST" class="tab">
+                    <a id="listLink" href="#">
+                        <img class="button" src="images/nav/list.png" alt="Sites" title="Sites" />
+                    </a>
+                </li>
+                <li id="MAP" class="tab">
+                    <a id="mapLink" href="#">
+                        <img class="button" src="images/nav/maps.png" alt="Maps" title="Maps" />
+                    </a>
+                </li>
+                <li id="ALERT" class="tab">
+                    <a id="alertsLink" href="#">
+                        <img class="button" src="images/nav/alerts.png" alt="Alerts" title="Alerts" />
+                    </a>
+                </li>
+                <li id="FORECAST" class="tab">
+                    <a id="forecastLink" href="#">
+                        <img class="button" src="images/nav/forecast.png" alt="Forecast" title="Forecast" />
+                    </a>
+                </li>
+                <li id="GUIDE" class="tab">
+                    <a id="guideLink" href="#">
+                        <img class="button" src="images/nav/guide.png" alt="Guide" title="Guide" />
+                    </a>
+                </li>
+                <li id="VIDEO" class="tab">
+                    <a id="videoLink" href="#">
+                        <img class="button" src="images/nav/video.png" alt="Videos" title="Videos" />
+                    </a>
+                </li>
+                <li id="NEWS" class="tab">
+                    <a id="newsLink" href="#">
+                        <img class="button" src="images/nav/news.png" alt="News" title="News" />
+                    </a>
+                </li>
+                <li id="TWITTER" class="tab">
+                    <a id="twitLink" href="#">
+                        <img src="images/nav/twitnav.png" alt="Twitter" title="Twitter" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="appVersion">?</div>
+    </div>
+    <script id="accordion-template" type="text/x-handlebars-template">
+        {{#unless objects.hideAuthorityButtonSet}}
+        <div id="listMode">
+            {{#getAccordionButtonSet objects}}{{/getAccordionButtonSet}}
+        </div>
+        {{/unless}}
+        <div>Last updated on {{objects.overallMaxDate}}</div>
+        <div id="accordion1">
+            {{#if objects.hasModerates}}{{#each objects.authorities}}
+            {{#if IsModerate}}{{#unless meanLa}}
+            <h3 data-laid="{{LocalAuthorityCode}}">
+                <img style="vertical-align: middle;" src="{{laLogo32}}" width="26" height="26"
+                     alt="{{LocalAuthorityName}}" title="{{LocalAuthorityName}}" />
+                <span style="vertical-align: middle; margin-top: 1px;">&nbsp;&nbsp;&nbsp;&nbsp;{{LocalAuthorityName}}{{#if ../../../settings.showLAIds}}&nbsp;[{{laid}}]{{/if}}</span>
+                <img style="vertical-align: middle; position: absolute; right: 0px; top: 5px; margin-right: 5px;"
+                     src="images/aqLarge/AQlarge{{IndexPrefix}}{{maxIndex}}.png" width="30" height="30"
+                     alt="{{ReadingSuffix}}" title="{{ReadingSuffix}}" />
+            </h3>
+            <div data-laid="{{LocalAuthorityCode}}"></div>
+            {{/unless}}{{/if}}
+            {{/each}}{{/if}}
+        </div>
+        {{#unless objects.hasModerates}}
+        <div id="NoModeratesMessage">
+            <div style="text-align: center; padding-top: 50px;">
+                <img src="images/ok.png" width="200" height="200" title="There are currently no moderate sites" />
+            </div>
+            <div style="text-align: center; font-size: 15px; padding-top: 25px;">All sites are currently low.</div>
+        </div>
+        {{/unless}}
+
+        <div id="accordion2">
+            {{#each objects.authorities}}
+            {{#unless meanLa}}
+            <h3 data-laid="{{LocalAuthorityCode}}">
+                <img style="vertical-align: middle;" src="{{laLogo32}}" width="26" height="26"
+                     alt="{{LocalAuthorityName}}" title="{{LocalAuthorityName}}" />
+                <span style="vertical-align: middle; margin-top: 1px;">&nbsp;&nbsp;&nbsp;&nbsp;{{LocalAuthorityName}}{{#if ../../settings.showLAIds}}&nbsp;[{{LocalAuthorityCode}}]{{/if}}</span>
+                <img style="vertical-align: middle; position: absolute; right: 0px; top: 5px; margin-right: 5px;"
+                     src="images/aqLarge/AQlarge{{IndexPrefix}}{{maxIndex}}.png" width="30" height="30"
+                     alt="{{ReadingSuffix}}" title="{{ReadingSuffix}}" />
+            </h3>
+
+            <div data-laid="{{LocalAuthorityCode}}">
+            </div>
+            {{/unless}}
+            {{/each}}
+        </div>
+        <div id="MeansContent">
+        </div>
+    </script>
+    <script id="accordion-content-template" type="text/x-handlebars-template">
+        <div>
+            <div class="accLaContentImg">
+                <img src="{{this.laLogo128}}" width="92" height="92" alt="{{this.LocalAuthorityName}}-{{this.hasSites}}" title="{{this.LocalAuthorityName}}" />
+            </div>
+            <div>
+                {{#if this.hasSites}}
+                <div class="siteUpdated">Last updated on {{this.maxDateFormatted}}</div>
+                {{/if}}
+                {{#unless this.hasSites}}
+                <div class="no-site-data">There is currently no site data available for this local authority.</div>
+                {{/unless}}
+            </div>
+        </div>
+        {{#if this.hasSites}}
+        <div>
+            <ul class="siteList">
+                {{#each this.Site}}
+                <li data-sitecode="{{this.SiteCode}}" class="siteList-li">
+                    <div style="line-height: 33px;">
+                        <img src="images/open.png" width="14" height="14" alt="{{this.SiteName}}"
+                             title="{{this.SiteName}}" class="siteList-li-first-child" />
+                        <span class="siteList-li-span">{{this.SiteName}}</span>
+                        <img src="images/aqLarge/AQlarge{{this.IndexPrefix}}{{this.maxIndex}}.png" width="30"
+                             height="30" alt="{{this.ReadingSuffix}}" title="{{this.ReadingSuffix}}"
+                             class="siteList-li-last-child" />
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/if}}
+        <div class="la-map-container">
+            <div data-laid="{{this.LocalAuthorityCode}}" class="mapCanvas"></div>
+        </div>
+    </script>
+    <script id="maps-template" type="text/x-handlebars-template">
+        <div id="maps" style="padding: 0px; overflow: hidden;">
+            <div id="mapsButtonSet" style="width: 100%; margin: 0px; padding: 0px; display: inline-block;">
+                <div style="width: 49%; margin: 0px; padding: 0px; float: left;display: inline-block;">
+                    <button class="mapsButton" data-type="HOURLY" style="margin: 0px !important; padding: 0px !important; width: 100%;">
+                        <img src="images/hourly_pin.png" height="16" style="float: left;" />Hourly
+                    </button>
+                    <ul style="display: none; width: auto; position: absolute;">
+                        {{#each objects}}
+                        {{#if IsHourly}}
+                        <li><a href="#" class="mapMenuItem" data-type="HOURLY" data-code="{{layercode}}" style="text-align: left;">{{layername}}&nbsp;&nbsp;<span style="font-size: 11px; font-style: italic;">{{MenuLabel}}</span></a></li>
+                        {{/if}}
+                        {{/each}}
+                        <li><a href="#" class="mapMenuItem" data-type="HOURLY" data-code="SITE" style="text-align: left;">Site map</a></li>
+                    </ul>
+                </div>
+                <div style="width: 49%; margin: 0px; padding: 0px; display: inline-block; float: right;">
+                    <button class="mapsButton" data-type="ANNUAL" style="margin: 0px !important; padding: 0px !important; width: 100%;">
+                        <img src="images/annual_pin.png" height="16" style="float: left;" />Annual
+                    </button>
+                    <ul style="display: none; width: auto; position: absolute;">
+                        {{#each objects}}
+                        {{#if IsAnnual}}
+                        <li><a href="#" class="mapMenuItem" data-type="ANNUAL" data-code="{{layercode}}" style="text-align: left;">{{layername}}&nbsp;&nbsp;<span style="font-size: 11px; font-style: italic;">{{MenuLabel}}</span></a></li>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div id="mapContent"></div>
+        </div>
+    </script>
+    <script id="species-map-template" type="text/x-handlebars-template">
+        <div id="{{./mapId}}" class="speciesMapLayer" style="padding: 0px; margin: 0px;">
+            <div class="speciesMap" style="background-color: lightgray; margin: 0px 0px 0px 0px; padding: 0px; width: 10px; height: 10px;"></div>
+            {{#if showOpacitySlider}}<div class="opContainer" style="z-index: 1000000000; padding: 1px 2px 1px 2px; overflow: hidden; margin: 0px; width: 132px; margin-top: 5px; height: 16px; display: none;">
+                <div class="less" style="position: absolute; top: 1px; left: 1px; cursor: pointer; background-color: #cccccc;">
+                    <img src="images/zoomOut.png" width="16" height="16" style="border: 0px; padding: 0px; margin: 0px;">
+                </div>
+                <div class="bar" style="position: absolute; top: 1px; left: 18px; width: 100px; height: 16px; padding: 0px; margin: 0px; background: url('images/bar.png');">
+                    <div class="slider" style="position: relative; top: 0px; left: 0px; padding: 0px; margin: 0px; width: 7px; height: 16px; cursor: pointer;">
+                        <img src="images/slider.png" width="7" height="16" style="border: 0px; padding: 0px; margin: 0px; z-index: 1000000009;">
+                    </div>
+                </div>
+
+                <div class="more" style="position: absolute; top: 1px; left: 119px; padding: 0px; margin: 0px; cursor: pointer; background-color: #cccccc;">
+                    <img src="images/zoomIn.png" width="16" height="16" style="border: 0px; padding: 0px; margin: 0px;">
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </script>
+    <script id="site-details-template" type="text/x-handlebars-template">
+        <div style="padding: 10px 10px 10px 10px;">
+            <div>
+                <div class="accLaContentImg">
+                    <div style="position: absolute; right: 0px; top: 0px; margin: 15px;">
+                        <a id="closeButton" href="javascript: void(0);">
+                            <img src="images/close.png" width="16" height="16" />
+                        </a>
+                    </div>
+                    <img src="{{la.laLogo128}}" width="86" height="86" alt="{{la.LocalAuthorityName}}" title="{{la.LocalAuthorityName}}" />
+                </div>
+                <div>
+                    <div style="text-align: center; font-weight: bold; font-size: 18px;">{{site.SiteName}}</div>
+                    <div style="text-align: center;">{{site.SiteType}}</div>
+                    <div class="siteUpdated" style="text-align: center;">Last updated on {{site.maxDateFormatted}}</div>
+                </div>
+            </div>
+            <div>
+                <ul class="speciesList">
+                    {{#each this.site.Species}}
+                    <li class="speciesList-li">
+                        <div style="line-height: 30px; position: relative;">
+                            <span class="speciesList-li-span">{{this.SpeciesDescription}}</span>
+                            <img class="speciesList-li-img"
+                                 src="images/aqLarge/AQlarge{{this.IndexPrefix}}{{this.AirQualityIndex}}.png" width="26"
+                                 height="26" alt="{{this.ReadingSuffix}}" title="{{this.ReadingSuffix}}" />
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="la-map-container">
+                <div data-sitecode="{{site.SiteCode}}" class="mapCanvas"></div>
+            </div>
+        </div>
+    </script>
+    <script id="means-template" type="text/x-handlebars-template">
+        <div id="means" style="padding: 5px 10px 10px 10px;">
+            <div>
+                {{#each this}}
+                {{#if meanLa}}
+                {{#each Site}} {{#if meanSite}}<div class="siteType">{{SiteType}}</div>
+                <ul class="speciesList">
+                    {{#each Species}}
+                    <li class="speciesList-li">
+                        <div style="line-height: 33px; position: relative;">
+                            <span class="speciesList-li-span">{{this.SpeciesDescription}}</span>
+                            <img class="speciesList-li-img"
+                                 src="images/aqLarge/AQlarge{{this.IndexPrefix}}{{this.AirQualityIndex}}.png" width="30"
+                                 height="30" alt="{{this.ReadingSuffix}}" title="{{this.ReadingSuffix}}" />
+                        </div>
+                    </li>
+                    {{/each}} {{/if}}
+                </ul>
+                {{/each}}
+                {{/if}}
+                {{/each}}
+
+            </div>
+        </div>
+    </script>
+    <script id="video-template" type="text/x-handlebars-template">
+        <div id="videos">
+            <ul class="videoList">
+                {{#each this.videos}}
+                <li>
+                    <div>
+                        <div class="videoTitle">#{{Position}} {{Title}}</div>
+                        <div class="videoMedia">
+                            {{#if ../embedFlashVideos}}
+                            <div class="videoFlash" data-videoid="{{VideoId}}" style="display: none;">
+                                <iframe class="flashFrame" style="width: 100%;min-height:200px;" data-src="{{EmbeddedLink}}" />
+                            </div>
+                            {{/if}}
+                            <div class="videoImg" style="position: relative;">
+                                {{#unless ../embedFlashVideos}}<a href="{{Link}}" target="_blank" style="border: none;">
+                                    {{/unless}}
+                                    <img title="{{Title}}" src="{{ThumbnailUrl}}" style="width: 100%; border: none;" />
+                                    {{#unless ../embedFlashVideos}}
+                                </a>{{/unless}}
+                                <img src="images/play.png" width="48" height="48" style="z-index: 99999999; position: absolute; top: 50%; left: 50%; margin-top: -24px; margin-left: -24px;" />
+                            </div>
+                        </div>
+                        <hr size="1" />
+                        <div class="videoStats"><span>{{PublishedDateString}}</span><a href="{{Link}}" target="_blank"><img title="Click to view on YouTube" height="16" width="16" src="images/youtube.png" /></a></div>
+                        <hr size="1" />
+                        <div class="videoDescription">{{Description}}</div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </script>
+    <script id="newz-template" type="text/x-handlebars-template">
+        <ul class="newsList">
+            {{#each objects}}
+            <li>
+                <div class="newsArticle">
+                    <div class="newsTitle"><a href="{{Link}}" target="_blank" style="border: none;">#{{articleNumber}}&nbsp;{{Title}}</a></div>
+                    <hr size="1" />
+                    <div class="newsStats"><span>Published {{PublishedDateString}}</span></div>
+                    <hr size="1" />
+                    <div class="newsDescription">
+                        {{#if ShowImage}}<div class="newsImg">
+                            <a href="{{ImageLink}}" target="_blank" style="border: none;">
+                                <img title="{{ImageTitle}}" src="{{ImageUrl}}" style="border: none;" />
+                            </a>
+                        </div>{{/if}}
+                        {{{Description}}}
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+    <script id="forecast-template" type="text/x-handlebars-template">
+        <div id="Div2">
+            {{#if this.hasData}}
+            <div id="forecastAccordion">
+                {{#each objects.Forecast}}
+                <h3 data-current="{{IsCurrentStr}}" style="color: {{ BandHexColor }} !important; font-weight: bold !important;">{{HeaderText}}</h3>
+                <div class="forecastText">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td rowspan="4">
+                                <a href="{{../objects.ForecastURL}}" target="_blank" style="border: none;">
+                                    <img title="{{{ForecastSummary}}}" src="{{ImageUrl}}" width="90" style="vertical-align: middle; border: 5px solid {{ BandHexColor }};" />
+                                </a>
+                            </td>
+                            <td><span style="font-size: 14px; font-weight: bold;">Summary</span></td>
+                        </tr>
+                        <tr>
+                            <td>{{#if ShowDetails}}Start: {{ValidFrom}}{{/if}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{#if ShowDetails}}End: {{ValidTo}}{{/if}}</td>
+                        </tr>
+                        <tr>
+                            <td><span style="font-weight: bold; color: {{ BandHexColor }};">Pollution Band: {{ForecastBand}}</span></td>
+                        </tr>
+                    </table>
+                    <hr />
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="text-align: justify;">{{{ForecastText}}}</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <hr />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>For more information please <a href="{{../objects.ForecastURL}}" target="_blank" style="border: none;">click here.</a></td>
+                        </tr>
+                    </table>
+                    <hr />
+                    <div class="disclaimerText">{{{../objects.DisclaimerText}}}</div>
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+            {{#unless this.hasData}}
+            <div style="text-align: center; padding-top: 50px;">
+                <img src="images/ok.png" width="200" height="200" title="There is no forecast at the moment." border="0" />
+            </div>
+            <div>
+                <h3 style="text-align: center;">There is no forecast at the moment.</h3>
+            </div>
+            {{/unless}}
+        </div>
+    </script>
+    <script id="alerts-template" type="text/x-handlebars-template">
+        <div id="alerts">
+            {{#if this.hasData}}
+            <ul id="alertUL" class="alertList">
+                {{#each objects}}
+                {{#unless MeanSite}}
+                {{#each species}}
+                <li class="alertListItem">
+                    <div class="alertListDiv">
+                        <div style="padding: 5px;">
+                            <table style="width: 100%; border-spacing: 0; border-collapse: collapse; padding: 0px; margin: 0px;">
+                                <tr>
+                                    <td rowspan="3" style="width: 32px;">
+                                        <img src="//www.londonair.org.uk/london/images/la_logos/logo_32_{{../laid}}.png" width="32" height="32" border="0" style="margin: 6px;" />
+                                    </td>
+                                    <td colspan="2"><span style="font-size: 14px; font-weight: bold;">{{../sitename}}</span></td>
+                                    <td style="width: 70px; text-align: right; vertical-align: top;">
+                                        <div class="alertNewBand" style="background-color: {{ ./HexColor }};">{{newband}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div>{{AlertMessage}}.</div>
+                                    </td>
+                                    <td style="width: auto; text-align: right;">
+                                        <div>
+                                            <img src="images/aqLarge/AQlarge{{PrevIndexPrefix}}{{prevaqindex}}.png" width="26" height="26" alt="Previous Index" title="Previous Index" style="top: 0; bottom: 0; margin-top: auto; margin-bottom: auto; vertical-align: middle; border: 0;" /><img src="images/right_arrow.png" alt="Increased to" title="Increased to" width="16" height="16" style="top: 0; bottom: 0; margin-top: auto; margin-bottom: auto; vertical-align: middle; border: 0;" /><img src="images/aqLarge/AQlarge{{IndexPrefix}}{{newaqindex}}.png" width="26" height="26" alt="New Index" title="New Index" style="top: 0; bottom: 0; margin-top: auto; margin-bottom: auto; vertical-align: middle; border: 0;" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+            {{/if}}
+            {{#unless this.hasData}}
+            <div style="text-align: center; padding-top: 50px;">
+                <img src="images/ok.png" width="200" height="200" title="There are currently no alert notifications." border="0" />
+            </div>
+            <div>
+                <h3 style="text-align: center;">There are currently no alert notifications.</h3>
+            </div>
+            {{/unless}}
+        </div>
+    </script>
+    <script id="guide-template" type="text/x-handlebars-template">
+        <div id="accordion3">
+            <div>
+                <h3 id="g-1">
+                    <a href="javscript: void(0);"><span>How to use the air quality index (AQI)</span></a>
+                </h3>
+                <div id="content-1" class="guideText">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td style="width: 40px; vertical-align: top; font-weight: bold;">
+                                Step 1
+                            </td>
+                            <td style="text-align: justify;">
+                                Determine whether you (or your children) are likely to be at risk from air pollution.
+                                Information on groups who may be affected is given in the section on 'Information
+                                on the short-term effects of air pollution' below. Your doctor may also be able
+                                to give you advice.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; font-weight: bold;">
+                                Step 2
+                            </td>
+                            <td style="text-align: justify;">
+                                If you may be at risk, and are planning strenuous activity outdoors, check the air
+                                pollution <a href="http://uk-air.defra.gov.uk/forecasting/" target="_blank">forecast</a>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; font-weight: bold;">
+                                Step 3
+                            </td>
+                            <td style="text-align: justify;">
+                                Use the health advice corresponding to the highest forecast level of pollution as
+                                a guide.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <h3 id="g-2">
+                    <a href="javscript: void(0);"><span>Information on short-term effects of air pollution</span></a>
+                </h3>
+                <div id="content-2" class="guideText">
+                    <div style="text-align: justify; color: #999999;">
+                        The air quality index has been developed to provide advice on expected levels of
+                        air pollution. In addition, information on the short-term effects on health that
+                        might be expected to occur at the different bands of the index (Low, Moderate, High
+                        and Very High) is provided here.
+                    </div>
+                    <br />
+                    <div style="font-size: 11.1px; color: #0099FF;">
+                        <b>Short-term effects of air pollution on health</b>
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        Air pollution has a range of effects on health. However, air pollution in the UK
+                        does not rise to levels at which people need to make major changes to their habits
+                        to avoid exposure; nobody need fear going outdoors.
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        <b>Adults and children with lung or heart conditions</b>: It is known that, when
+                        levels of air pollutants rise, adults suffering from heart conditions, and adults
+                        and children with lung conditions, are at increased risk of becoming ill and needing
+                        treatment. Only a minority of those who suffer from these conditions are likely
+                        to be affected and it is not possible to predict in advance who will be affected.
+                        Some people are aware that air pollution affects their health: adults and children
+                        with asthma may notice that they need to increase their use of inhaled reliever
+                        medication on days when levels of air pollution are higher than average.
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        <b>Older people</b>: are more likely to suffer from heart and lung conditions than
+                        young people and so it makes good sense for them to be aware of current air pollution
+                        conditions.
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        <b>General population</b>: at Very High levels of air pollution, some people may
+                        experience a sore or dry throat, sore eyes or, in some cases, a tickly cough - even
+                        healthy individuals.
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        <b>Children</b>: need not be kept from school or prevented from taking part in games.
+                        Children with asthma may notice that they need to increase their use of reliever
+                        medication on days when levels of air pollution are higher than average.
+                    </div>
+                    <br />
+                    <div style="font-size: 11.1px; color: #0099FF;">
+                        <b>Action that can be taken</b>
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        When levels of air pollution increase it would be sensible for those who have noticed
+                        that they are affected to limit their exposure to air pollutants. This does not
+                        mean staying indoors, but reducing levels of exercise outdoors would be reasonable.
+                    </div>
+                    <br />
+                    <div>
+                        <b>Older people and those with heart and lung conditions</b>: might avoid exertion
+                        on High pollution days.
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        <b>Adults and children with asthma</b>: should check that they are taking their
+                        medication as advised by their health practitioner and may notice that they need
+                        to increase their use of inhaled reliever medication.
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        <b>Adults with heart and circulatory conditions</b>: should not modify their treatment
+                        schedules on the basis of advice provided by the air quality index: such modification
+                        should only be made on a health practitioner's advice.
+                    </div>
+                    <br />
+                    <div style="text-align: justify;">
+                        <b>Some athletes</b>: even if they are not asthmatic, may find their performance
+                        is less good than expected when levels of a certain air pollutant (ground-level
+                        ozone) are High, and they may notice that deep breathing causes some discomfort
+                        in the chest. This might be expected in summer on days when ground-level ozone levels
+                        are raised. This does not mean that they are in danger but it may be sensible for
+                        them to limit their activities on such days.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 id="g-3">
+                    <a href="javscript: void(0);"><span>Health advice to accompany the air quality index</span></a>
+                </h3>
+                <div id="content-3" class="guideText">
+                    <table id="adviceTable">
+                        <tr>
+                            <td style="width: 10%; font-weight: bold; background-color: #b8cce4;">
+                                Banding
+                            </td>
+                            <td style="width: 32%; font-weight: bold; background-color: #b8cce4;">
+                                General Population
+                            </td>
+                            <td style="width: 58%; font-weight: bold; background-color: #b8cce4;">
+                                At-risk individuals *
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; font-weight: bold; background-color: #dbe4f0;">
+                                Low
+                                <br />
+                                (1-3)
+                            </td>
+                            <td style="vertical-align: top; background-color: #dbe4f0;">
+                                Enjoy your usual outdoor activities.
+                            </td>
+                            <td style="vertical-align: top; text-align: justify; background-color: #dbe4f0;">
+                                Enjoy your usual outdoor activities.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; font-weight: bold; background-color: #b8cce4;">
+                                Moderate
+                                <br />
+                                (4-6)
+                            </td>
+                            <td style="vertical-align: top; background-color: #b8cce4;">
+                                Enjoy your usual outdoor activities.
+                            </td>
+                            <td style="vertical-align: top; text-align: justify; background-color: #b8cce4;">
+                                Adults and children with lung problems, and adults with heart problems should reduce
+                                strenuous physical exertion, particularly outdoors, and particularly if they experience
+                                symptoms. People with asthma may find they need to use their reliever inhaler more
+                                often. Older people should also reduce physical exertion.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; font-weight: bold; background-color: #dbe4f0;">
+                                High
+                                <br />
+                                (7-9)
+                            </td>
+                            <td style="vertical-align: top; background-color: #dbe4f0;">
+                                Anyone experiencing discomfort such as sore eyes, cough or sore throat should consider
+                                reducing activity, particularly outdoors.
+                            </td>
+                            <td style="vertical-align: top; text-align: justify; background-color: #dbe4f0;">
+                                Adults and children with lung problems and older people, should avoid strenuous
+                                physical activity. People with asthma may find they need to use their reliever more
+                                often.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; font-weight: bold; background-color: #b8cce4;">
+                                Very High
+                                <br />
+                                (10)
+                            </td>
+                            <td style="vertical-align: top; background-color: #b8cce4;">
+                                Reduce physical exertion, particularly outdoors, especially if you experience symptoms
+                                such as cough or sore throat.
+                            </td>
+                            <td style="vertical-align: top; text-align: justify; background-color: #b8cce4;">
+                                Adults and children with lung problems and older people, should avoid strenuous
+                                physical activity. People with asthma may find they need to use their reliever more
+                                often.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                * Adults and children with heart or lung problems are at greater risk of symptoms.
+                                Follow your doctor's advice about exercising and managing your condition.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script id="banding-template" type="text/x-handlebars-template">
+        {{#if A}}
+        <div id="b1">
+            <table style="width: 100%; height: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="background-color: #666666;width: 11%;">&nbsp;</td>
+                    <td style="background-color: #a3cc7a; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #66a33e; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #2b8200; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #eebf8f; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #fe994d; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #f46200; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #d80000; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #a30000; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #7a0000; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #000000; width: 17%;">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div id="b2">
+            <table style="width: 100%; height: 100%; border-collapse: collapse; color: white; font-weight:bold; font-size: 11px; text-align: center; font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;">
+                <tr>
+                    <td style="width: 11%;">LEVELS</td>
+                    <td style="width: 24%;">LOW</td>
+                    <td style=" width: 24%;">MODERATE</td>
+                    <td style=" width: 24%;">HIGH</td>
+                    <td style="width: 17%;">v.HIGH</td>
+                </tr>
+            </table>
+        </div>
+        {{/if}}
+        {{#if B}}
+        <div id="b1">
+            <table style="width: 100%; height: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="background-color: #666666;width: 11%;">&nbsp;</td>
+                    <td style="background-color: #5cb8de; width: 4%;">&nbsp;</td>
+                    <td style="background-color: #2d70c8; width: 4%;">&nbsp;</td>
+                    <td style="background-color: #004da8; width: 4%;">&nbsp;</td>
+                    <td style="background-color: #a3cc7a; width: 4%;">&nbsp;</td>
+                    <td style="background-color: #66a33e; width: 4%;">&nbsp;</td>
+                    <td style="background-color: #2b8200; width: 4%;">&nbsp;</td>
+                    <td style="background-color: #eebf8f; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #fe994d; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #f46200; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #d80000; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #a30000; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #7a0000; width: 8%;">&nbsp;</td>
+                    <td style="background-color: #000000; width: 17%;">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div id="b2">
+            <table style="width: 100%; height: 100%; border-collapse: collapse; color: white; font-weight:bold; font-size: 11px; text-align: center; font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;">
+                <tr>
+                    <td style="width: 11%;">LEVELS</td>
+                    <td style="width: 24%;">LOW</td>
+                    <td style=" width: 24%;">MODERATE</td>
+                    <td style=" width: 24%;">HIGH</td>
+                    <td style="width: 17%;">v.HIGH</td>
+                </tr>
+            </table>
+        </div>
+        {{/if}}
+        {{#if C}}
+        <div id="b1">
+            <table style="width: 100%; height: 100%; border-collapse: collapse; empty-cells: show; table-layout: fixed;">
+                <tr>
+                    <td style="background-color: #0000ff; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #0064ff; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #0078ff; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #0095ff; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #00c8ff; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #00dcff; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #00dcc8; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #00dc96; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #c8f064; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ffffff; width: 1px; margin: 0px; padding: 0px; "><img src="./images/blank.png" width="1" height="1" style="width: 1px; max-width: 1px;" /></td>
+                    <td style="background-color: #ffff00; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #fff500; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ffeb00; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ffe100; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ffd700; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ffcd00; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ffa000; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ff7d00; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ff6400; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ff5000; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ff3c00; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ff2800; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ff1400; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #ff0000; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #e60000; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #d20000; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #be0000; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #aa0000; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #820000; width: 3.45%;">&nbsp;</td>
+                    <td style="background-color: #500000; width: 3.45%; ">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div id="b2">
+            <table style="width: 100%; height: 100%; border-collapse: collapse; color: white; font-weight:bold; font-size: 11px; text-align: center; font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;">
+                <tr>
+                    <td style="width: 31.04%;">PASS</td>
+                    <td style="width: 68.96%;">FAIL</td>
+                </tr>
+            </table>
+        </div>
+        {{/if}}
+        {{#if D}}
+        <div id="b1">
+            <table style="width: 100%; height: 100%; border-collapse: collapse; empty-cells: show; table-layout: fixed;">
+                <tr>
+                    <td style="background-color: #0000ff; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #0064ff; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #0078ff; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #0095ff; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #00c8ff; width: 6.25%; ">&nbsp;</td>
+                    <td style="background-color: #00dcff; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #00dcc8; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #00dc96; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #c8f064; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #ffffff; width: 1px; margin: 0px; padding: 0px; empty-cells: show;"><img src="./images/blank.png" width="1" height="1" style="width:1px;max-width:1px;" /></td>
+                    <td style="background-color: #ffff00; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #ffdd0c; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #ffbc1b; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #fd6300; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #ff0000; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #c80000; width: 6.25%;">&nbsp;</td>
+                    <td style="background-color: #000000; width: 6.25%;">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div id="b2">
+            <table style="width: 100%; height: 100%; border-collapse: collapse; color: white; font-weight:bold; font-size: 11px; text-align: center; font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;">
+                <tr>
+                    <td style="width: 56.25%;">PASS</td>
+                    <td style="width: 43.75%;">FAIL</td>
+                </tr>
+            </table>
+        </div>
+        {{/if}}
+        {{#if E}}
+        <div id="b1">
+            <table style="width: 100%; height: 100%; border-collapse: collapse; empty-cells: show; table-layout: fixed;">
+                <tr>
+                    <td style="background-color: #0000fe; width: 11.111%;">&nbsp;</td>
+                    <td style="background-color: #0046ff; width: 11.111%;">&nbsp;</td>
+                    <td style="background-color: #008bfe; width: 11.111%;">&nbsp;</td>
+                    <td style="background-color: #00d1fe; width: 11.111%;">&nbsp;</td>
+                    <td style="background-color: #63fefe; width: 11.111%;">&nbsp;</td>
+                    <td style="background-color: #64ff96; width: 11.111%;">&nbsp;</td>
+                    <td style="background-color: #ffffff; width: 1px; margin: 0px; padding: 0px; empty-cells: show;"><img src="./images/blank.png" width="1" height="1" style="width:1px;max-width:1px;" /></td>
+                    <td style="background-color: #ffff00; width: 11.111%;">&nbsp;</td>
+                    <td style="background-color: #fedb00; width: 11.111%;">&nbsp;</td>
+                    <td style="background-color: #ffb400; width: 11.111%;">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div id="b2">
+            <table style="width: 100%; height: 100%; border-collapse: collapse; color: white; font-weight:bold; font-size: 11px; text-align: center; font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;">
+                <tr>
+                    <td style="width: 66.66%;">PASS</td>
+                    <td style="width: 33.33%;">FAIL</td>
+                </tr>
+            </table>
+        </div>
+        {{/if}}
+    </script>
+    <script src="./scripts/windowError.min.js" type="text/javascript"></script>
+    <script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+    <script src="./scripts/lib/jquery.min.js" type="text/javascript"></script>
+    <script src="./scripts/global.min.js" type="text/javascript"></script>
+
+    <script src="./scripts/lib/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="./scripts/lib/jquery.cookie.min.js" type="text/javascript"></script>
+    <script src="./scripts/lib/moment.min.js" type="text/javascript"></script>
+    <script src="./scripts/lib/handlebars.min.js" type="text/javascript"></script>
+    <script src="./scripts/lib/md5.min.js" type="text/javascript"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1NN0Xs8HGbXo9QX9W-Tyg4ab1a1tL9Uk" type="text/javascript"></script>
+    <script src="./scripts/lib/arcgislink.min.js" type="text/javascript"></script>
+    <script src="./scripts/lib/extDraggableObject.min.js" type="text/javascript"></script>
+
+    <script src="./scripts/settings.min.js" type="text/javascript"></script>
+    <script src="./scripts/xmlDownloader.min.js" type="text/javascript"></script>
+    <script src="./scripts/dataDownloader.min.js" type="text/javascript"></script>
+    <script src="./scripts/alertsDownloader.min.js" type="text/javascript"></script>
+    <script src="./scripts/authoritiesDownloader.min.js" type="text/javascript"></script>
+    <script src="./scripts/forecastDownloader.min.js" type="text/javascript"></script>
+    <script src="./scripts/layersDownloader.min.js" type="text/javascript"></script>
+    <script src="./scripts/newsDownloader.min.js" type="text/javascript"></script>
+    <script src="./scripts/videoDownloader.min.js" type="text/javascript"></script>
+    <script src="./scripts/start.min.js" type="text/javascript"></script>
+
+
+    <!--<script src="./scripts/windowError.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ssl.google-analytics.com/ga.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/global.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="./scripts/lib/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/lib/jquery.cookie.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/lib/moment.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/lib/handlebars.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/lib/md5.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDvySpGy3EqgcswofJdMLyAS_8ROBbDpg" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/lib/arcgislink.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/lib/extDraggableObject.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="./scripts/settings.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./scripts/xmlDownloader.js" type="text/javascript"></script>
+    <script src="./scripts/dataDownloader.js" type="text/javascript"></script>
+    <script src="./scripts/alertsDownloader.js" type="text/javascript"></script>
+    <script src="./scripts/authoritiesDownloader.js" type="text/javascript"></script>
+    <script src="./scripts/forecastDownloader.js" type="text/javascript"></script>
+    <script src="./scripts/layersDownloader.js" type="text/javascript"></script>
+    <script src="./scripts/newsDownloader.js" type="text/javascript"></script>
+    <script src="./scripts/videoDownloader.js" type="text/javascript"></script>
+    <script src="./scripts/start.js" type="text/javascript" charset="utf-8"></script>-->
+</body>
+</html>

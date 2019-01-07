@@ -1,0 +1,1 @@
+var getBrowserApi=function(){return"undefined"!=typeof browser?browser:chrome},browserApi=getBrowserApi(),title=browserApi.i18n.getMessage("newTab_title");document.title=title;

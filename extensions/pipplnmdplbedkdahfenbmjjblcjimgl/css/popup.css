@@ -1,0 +1,118 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:arial,tahoma,verdana;
+}
+
+html,body,#main{
+  width:700px;
+  height:600px;
+  overflow: hidden;
+}
+
+body{
+  font-size:12px;
+  color:#444;
+}
+
+h1{
+  font-size:16px;
+}
+
+h2{
+  font-size:14px;
+  padding:0 0 5px 0;
+}
+
+h3{
+  font-size:12px;
+  padding:0 0 5px 0;
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.clear{
+  display: block;
+  clear: both;
+  height:0;
+  line-height:0;
+  font-size: 0;
+  overflow: hidden;
+}
+
+#main{
+  background:#fff;
+}
+
+/* GALLERY */
+
+#gallery{
+  width:694px;
+  height:558px;
+  padding:3px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#gallery .item{
+  float:left;
+  width:208px;
+  height:208px;
+  padding:5px;
+  margin:4px;
+  border:solid 1px #ccc;
+  display:block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  background-color:#FFFFE6;
+}
+
+#gallery .item .image{
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width:208px;
+  max-height:208px;
+}
+
+#gallery .item .delete{
+  background-color:#FFFE87;
+  position: absolute;
+  right:1px;
+  top:1px;
+  cursor: pointer;
+}
+
+#gallery .item .delete:hover{
+  background-color:#FFEA00;
+}
+
+/* SHARE */
+
+#share{
+  padding:10px;
+  text-align: center;
+}
+
+#share .item{
+  display:inline-block;
+  width:70px;
+  overflow: hidden;
+  text-align: left;
+}
+
+#share .item.fb_share{
+  width:63px;
+}

@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Fluxo incrível",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Jogo divertido e viciante. Ligue correspondência lâmpadas de mesma cor com corrente elétrica para criar fluxo.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

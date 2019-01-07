@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "ฉายไฟ",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up เป็นเกมปริศนาที่เรียบง่าย แต่เสพติดสูง แต่ เชื่อมต่อสีที่ตรงกันกับท่อเพื่อสร้างกระแสเรืองแสง",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

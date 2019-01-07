@@ -1,0 +1,147 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      input {
+        margin-top: 7px;
+        margin-right: 8px;
+      }
+    }
+    .flex {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .search {
+      width: 100%;
+      min-height: 40px;
+      height: 40px;
+      position: relative;
+      margin: 10px 0 10px;
+      &.overlay {
+        .flex {
+          max-width: 83px;
+          margin-left: 18px;
+          position: absolute;
+          right: 7px;
+          top: 13px;
+          align-items: end;
+          label {
+            font-size: 14px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            color: #adb9bf;
+          }
+          #select-all {
+            width: 20px;
+
+          }
+        }
+      }
+      .icon-search {
+        position: absolute;
+        left: 2px;
+        font-size: 19px;
+        top: 9px;
+        color: @graphite;
+      }
+      .invite-all {
+        position: absolute;
+        right: 28px;
+        top: 9px;
+      }
+      .loader {
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        left: auto;
+      }
+      input.search-input {
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: 0;
+        padding: 0 101px 0 30px;
+        -webkit-appearance: none;
+        border-radius: 0;
+        border-bottom: 1px solid @lightGrey;
+        font-size: 16px;
+        color: @graphite;
+        @media (max-width: 480px) {
+          padding: 0 0px 0 30px;
+        }
+      }
+    }
+    .flex {
+      width: 100%;
+    }
+    .contacts {
+      overflow-y: auto;
+      background-color: #fff;
+      height: 211px;
+      border-bottom: 2px solid @aluminum;
+      li {
+        display: flex;
+        border-bottom: 1px solid @lightGrey;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.2s ease;
+        cursor: auto;
+        label {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 12px 0;
+          cursor: pointer;
+          @media (max-width: 480px) {
+            width: 90%;
+          }
+        }
+        .one, .two {
+          max-width: 200px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          flex: 1;
+        }
+        .two {
+          text-align: right;
+        }
+        h5 {
+          max-width: 190px;
+        }
+        h3 {
+          line-height: 18px;
+          max-width: 200px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          &.email {
+            color: @graphite;
+          }
+        }
+      }
+    }
+    footer {
+      margin-top: 30px;
+      padding: 0;
+      background-color: transparent;
+      button {
+        min-width: 210px;
+        .icon-circle-check {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 8px;
+          padding-top: 2px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

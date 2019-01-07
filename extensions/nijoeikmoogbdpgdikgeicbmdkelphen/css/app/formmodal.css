@@ -1,0 +1,171 @@
+/* ---------------------------------------------------------- */
+.modalfade {
+	z-index: 999;
+	background: #e5e5e5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .80;
+}
+.modals-form {
+    z-index: 9999;
+    position: fixed;
+    top: calc(50% - 100px);
+    left: calc(50% - 200px);
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+    min-width: 400px;
+    min-height: 200px;
+}   
+.modals-form .modals-form-header  {
+	position: relative;
+	padding: 8px 10px;
+    text-align: center;
+    background-color: #eeeeee;
+    background-image: -moz-linear-gradient(#fafafa, #eee);
+    background-image: -webkit-linear-gradient(#fafafa, #eee);
+    background-image: linear-gradient(#fafafa, #eee);
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #ddd;
+}
+.modals-form .modals-form-title  {
+	font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 0 1px 0 #fff;
+}
+.modals-form .modals-form-close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 16px;
+	height: 16px;
+	background: url(/images/app/clear.png) no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+.modals-form .modals-form-message {
+	position: relative;
+    width: 100%;
+    min-height: 120px;
+}
+.modals-form .modals-form-message-text {
+	position: relative;
+	padding-top: 50px;
+    text-align: center;
+}
+.modals-form .modals-form-message-text span {
+	font-size: 14px;
+    font-weight: bold;
+
+}
+.modals-form .modals-form-checkbox {
+    position: relative;
+    text-align: center;
+}
+.modals-form .modals-form-checkbox fieldset {
+    border: 0;
+}
+.modals-form .modals-form-checkbox input {
+    vertical-align: middle;
+}
+.modals-form .modals-form-checkbox span {
+    vertical-align: middle;
+}
+.modals-form .modals-form-action {
+	width: 100%;
+    height: 40px;
+}
+.modals-form .modals-form-action-buttons {
+	width: 230px;
+    height: auto;
+    margin: 0 auto;
+}
+.modals-form .modals-form-action-buttons .button {
+	width: 100px;
+    height: 30px;	
+}
+.modals-form .modals-form-action-buttons .modals-form-action-apply {
+	margin-right: 25px;
+}
+.modals-form .modals-form-action-buttons .modals-form-action-cancel {
+
+}
+.search_category_button_form {
+    border-radius: 0;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    width: 250px;
+    height: 100%;
+    margin: 0 6px 0 0;
+    font-size: 1rem;
+    white-space: normal;
+}   
+.search_category_button_wrapped {
+    box-sizing: border-box;
+    position: relative;
+    height: 100px;
+    padding: 10px;
+    color: #292f33;
+    background-color: #f5f8fa;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.search_category_button_action {
+
+}
+.search_category_button_wrapped .button{
+    display: block;
+    height: 36px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.search_category_button_action .category-message-add {
+    display: none;
+    text-align: center;
+}
+.search_category_button_action .category-button-add {
+    
+}
+.search_category_button_action .category-button-back {
+    
+}
+/* --------------------------   message  -------------------- */
+.message-form {
+    z-index: 9999;
+    position: fixed;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+    min-width: 400px;
+    min-height: 40px;
+}   
+.message-form .message-form-message {
+    position: relative;
+    width: 100%;
+}
+.message-form .message-form-message-text {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+}
+.message-form .message-form-message-text span {
+    font-size: 14px;
+    font-weight: bold;
+
+}

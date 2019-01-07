@@ -1,0 +1,17 @@
+{
+   "appAlertPopup": {
+      "message": "La solicitud debe ser más de 2 caracteres"
+   },
+   "appButtonDesc": {
+      "message": "Búsqueda De Archivos Torrent"
+   },
+   "appDesc": {
+      "message": "Búsqueda fácil y rápida de libros, música, videos en torrents."
+   },
+   "appName": {
+      "message": "Pirate bay direct download"
+   },
+   "appPlaceholderPopup": {
+      "message": "Buscar torrents"
+   }
+}

@@ -1,0 +1,68 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy {
+  .loader {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 9998;
+    justify-content: center;
+    text-align: center;
+    line-height: normal;
+    white-space: nowrap;
+    &.left {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+      .spin {
+        margin-right: 7px;
+      }
+    }
+    &.right {
+      flex-direction: row-reverse;
+      align-items: center;
+      flex-wrap: nowrap;
+      .spin {
+        margin-left: 7px;
+      }
+    }
+    .spin {
+      animation: rotating 1.4s infinite;
+      color: @sea;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    span {
+      display: inline-block;
+    }
+    h2 {
+      color: #798c97;
+      padding-top: 5px;
+    }
+  }
+
+  .loader-container {
+    position: relative;
+    .loader:not(.ignore-container) {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  @keyframes rotating {
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+}

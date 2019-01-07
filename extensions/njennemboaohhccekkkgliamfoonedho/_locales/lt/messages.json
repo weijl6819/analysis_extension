@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Nutvieksti",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up yra paprastas, bet, bet labai priklausomybę puzzle žaidimas. Prijunkite tinkančių spalvų su vamzdžio sukurti švyti srautą.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

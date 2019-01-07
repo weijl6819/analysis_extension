@@ -1,0 +1,508 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8"/>
+    <title>Voice In Settings</title>
+    <style>
+/* latin-ext */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(https://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5ojoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(https://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5hampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* Sans Open */
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/LWCjsQkB6EMdfHrEVqA1KRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/xozscpT2726on7jbcb_pAhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/59ZRklaO5bWGqF5A9baEERJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* Droid Mono */
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01mxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5URJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/LWCjsQkB6EMdfHrEVqA1KRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/xozscpT2726on7jbcb_pAhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/59ZRklaO5bWGqF5A9baEERJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+    font-family: 'Droid Sans Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Droid Sans Mono'), local('DroidSansMono'), url(https://fonts.gstatic.com/s/droidsansmono/v7/ns-m2xQYezAtqh7ai59hJYdJ2JT0J65PSe7wdxAnx_I.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Open+Sans", "Century Gothic", "Apple Gothic", sans-serif;
+    background-color: white;
+    font-size: 100%;
+}
+h1, h2, p {
+    text-align: center;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: normal;
+}
+
+h2 {
+    line-height: 160%;
+}
+#center_screen {
+    width: 80%;
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 150%;
+}
+#logo {
+    display: inline-block;
+    height: 128px;
+}
+#logo img {
+    height: 100%;
+}
+#footer {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#footer_menu {
+    text-align: center;
+    width: 100%;
+}
+#footer_menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#footer_menu a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+#languageLinks a {
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 0 2px;
+    border-radius: 20px;
+    font-weight: normal;
+    color: green;
+}
+
+#footer_menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+.share {
+    height: 50px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: none;
+}
+
+.buy_button {
+    font-size: large;
+    color: black;
+    background: lightgreen;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.buy_button:hover {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.cool-style {
+  font-family: "Josefin Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+}
+
+.btn-success {
+    color: #ffffff;
+    background-color: #3fb618;
+    border-color: #3fb618;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 10px 18px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-success:hover {
+    color: #ffffff;
+    background-color: #2f8912;
+    border-color: #2c8011;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:active, a:hover, select {
+    outline: none;
+}
+
+.form-control {
+    height: 43px;
+    padding: 10px 18px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.multiline-footer {
+  background: #f9f9f9;
+  margin: 30px 0 0;
+  padding: 0;
+  border-top: 1px solid #f2f2f2;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+}
+
+.multiline-footer .mainnavigation-row {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.multiline-footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.multiline-footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 2px;
+}
+
+.multiline-footer .mainnavigation-row ul li a {
+  color: #999;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.multiline-footer a, .multiline-footer p {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #0d0d0d;
+  margin: 0;
+}
+
+.multiline-footer .copyright-row {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.multiline-footer .copyright-row .copyright {
+  color: #999;
+}
+
+.multiline-footer .mainnavigation-row ul li a:hover
+{
+  border-color: #000;
+  color: #000;
+}
+
+@media (min-width: 1200px) {
+.container {
+    width: 1170px;
+}
+}
+
+@media (min-width: 992px) {
+.container {
+    width: 970px;
+}
+}
+
+@media (min-width: 768px) {
+.container {
+    width: 750px;
+}
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa-chrome:before {
+  content: "\f268";
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+.fa-microphone:before {
+  content: "\f130";
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+    </style>
+</head>
+
+  <body>
+    <div id="center_screen">
+        <h1 class='cool-style'>Voice In Plus</h1>
+        <a href="https://dictanote.co" target="_blank">
+            <h3 class='cool-style'>By Dictanote</h3>
+        </a>
+        <div id="logo"><img src='images/icon144.png'></div>
+        <br>
+        <div id="permissions_container">
+          <p>Please grant microphone permissions, so you can start dictating.
+            <br><br>
+            <button class='btn btn-success' id="invoke_permission">Allow microphone access</button>
+          </p>
+        </div>
+
+        <div id="language_container">
+          <p>Select your dictation language</p>
+          <select class='form-control' id="select_language"></select>
+        </div>
+
+        <br>
+        <h2 class='cool-style'>Before you start</h2>
+        <p>(1) Allow microphone permissions when asked, </p>
+        <img class='shadowimg' src="images/instructions_allow.png">
+        <p>Or click on the video camera icon in the address bar if not asked.</p>
+        <p>(2) Select dictation language from the select box above. To switch language, come back to this page (bookmark if necessary)</p>
+        <p>(3) First time only: restart Chrome.</p>
+
+        <br>
+        <h2 class='cool-style'>The 2 Buttons You Need to Know</h2>
+        <p>VoiceIn adds 2 buttons to your Chrome. They can be used to both start and stop voice recognition.</p>
+        <p>(1) Microphone button right to the Chrome's address bar.</p>
+        <img class='shadowimg' src="images/instructions_mic_button.png">
+        <p>(2) In any text-field, right-click on the mouse, and then, in the drop-down menu: "Start / Stop Recording"</p>
+        <img src="images/instructions_context_menu.png">
+
+        <br><br>
+        <h2 class='cool-style'>To start or stop voice recognition</h2>
+        <p>Place the caret in a text-field you want to type in, and click on one of the 2 buttons introduced above. The microphone button next to the address bar will turn red. Start dictating. <br>That's all. No more typing! As simple as that.</p>
+
+        <br>
+        <h2 class='cool-style'>Note: Different Behaviour on Facebook</h2>
+        <p>On facebook, and some other specific websites, you might need to manually type in Space (using your keyboard) and only then start dictation. This is because facebook expects user's keyboard input.</p>
+
+        <br><br>
+
+
+        <h2 class='cool-style'>Please Share</h2>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://chrome.google.com/webstore/detail/voicein-voice-typing/pjnefijmagpdjfhhkpljicbbpicelgko"
+             target="_blank">
+            <img src="images/facebook_share.png" alt='Share on Facebook' class='share'>
+        </a>
+    </div>
+    <br><br>
+
+    <footer class="multiline-footer" style="margin-bottom: 0px;">
+      <div class="container">
+        <div class="row mainnavigation-row">
+          <div class="col-md-12 text-center">
+            <ul>
+              <li><a href="https://support.dictanote.co">Help Center</a></li>
+              <li><a href="https://dictanote.co/terms/">Terms</a></li>
+              <li><a href="https://dictanote.co/privacy/">Privacy</a></li>
+              <li><a href="https://dictanote.co/">Go To Dictanote</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row socials-row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <ul class="share-buttons socials">
+              <li><a href="https://chrome.google.com/webstore/detail/voicein-voice-typing/pjnefijmagpdjfhhkpljicbbpicelgko" target="_blank"><i class="fa fa-chrome"></i></a></li>
+              <li><a href="https://www.facebook.com/DictanoteApp/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="mailto:support@dictanote.co"><i class="fa fa-envelope-o"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row copyright-row"><div class="col-md-12 col-sm-12 text-center"><span class="copyright">© 2017 Dictanote</span></div></div>
+      </div>
+    </footer>
+    <script src="js/askforpermissions.js"></script>
+  </body>
+</html>

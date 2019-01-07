@@ -1,0 +1,57 @@
+.notes-view {
+    display: flex; height: 100%;
+
+    .left-part {
+        position: relative;
+        width: 350px; border-right: 1px solid $main-view-inner-bd;
+        padding: 20px 20px 100px 40px;
+    }
+    .right-part {
+        width: calc(100% - 350px); position: relative; padding: 20px 30px;
+        .note-time { text-align: center; line-height: 20px; font-size: 12px; color: #b3b3b3; }
+    }
+    .notes-box {
+        height: 100%; overflow: auto;
+
+        .note {
+            display: flex; align-items: center; padding: 10px; margin-bottom: 5px;
+            transition: all .3s; cursor: pointer;
+
+            .note-title-box { width: 94%; }
+            .note-title {
+                width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+                margin-bottom: 10px;
+            }
+            .note-time { font-size: 12px; color: #b3b3b3; }
+            .icon {
+                height: 20px; opacity: 0;
+                &:hover { transition: all .3s; opacity: .8; cursor: pointer; }
+            }
+
+            &:hover {
+                background: #ebebeb;
+                .icon { opacity: 1; }
+            }
+            &.a { background: #f8ebb6; }
+        }
+    }
+    .add-btn {
+        position: absolute; bottom: 30px; left: 50%; margin-left: -30%;
+        background: $main-modal-btn-bg; border: none;
+        width: 60%; height: 40px; color: #fff;
+    }
+    textarea {
+        width: 100%; height: calc(100% - 20px); resize: none;
+        background: transparent; border: none;
+        line-height: 1.8; font-size: 12px;
+    }
+    .save-btn {
+        position: absolute; bottom: 40px; right: 70px;
+        background: #5066af; color: #fff; border: none;
+        width: 100px; height: 50px;
+        display: flex; align-items: center; justify-content: center;
+
+        .icon { height: 20px; }
+    }
+    .empty-text { text-align: center; padding: 10px; }
+}

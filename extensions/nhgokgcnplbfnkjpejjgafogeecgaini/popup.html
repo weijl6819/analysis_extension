@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+    <title>Set Page Color Popup</title>
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/Popup.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0px;
+            padding: 0px;
+            background: white;
+        }
+
+        h3 {
+            margin: 3px 0;
+        }
+
+        div, .entry {
+            text-align: center;
+            padding: 1px 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            width: 98%;
+            margin: 1px;
+            text-align: left;
+            /*overflow:auto;*/
+        }
+
+        .entry {
+            /*background: #FFF1E0;*/
+            background: white;
+            /*margin-bottom:20px;*/
+            /*border-bottom: 2px solid #787878;*/
+        }
+
+            .entry:hover {
+                background: #E2E2DC;
+            }
+
+        .entry-feed-link {
+            color: black;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+            .entry-feed-link :hover {
+                color: #00BFF3;
+            }
+
+        /*content styling */
+        .feedEntryContent {
+            text-align: left;
+            font-size: 12px;
+            vertical-align: top;
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        #feedSubtitleText {
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .lastUpdated {
+            margin: 0;
+            padding: 3px 0;
+        }
+
+        .content-image {
+            hspace: 4px;
+            float: left;
+            margin-right: 5px;
+            margin-top: 3px;
+            width: 100px;
+            height: auto !important;
+        }
+
+        .news-new-message {
+            display: inline-block;
+            color: white;
+            background: #d00d00;
+            padding: 2px 7px 2px;
+            border-radius: 5px;
+            margin: 0 4px 5px 0;
+            font-size: 10px;
+            text-transform: uppercase;
+            width: 21px;
+        }
+
+        .view-all-link a {
+            margin: 20px;
+            text-decoration: none;
+            cursor: pointer;
+            color: #00BFF3;
+        }
+
+            .view-all-link :hover {
+                color: #000 !important;
+            }
+    </style>
+</head>
+<body>
+    <!--reference html-->
+    <!--<div id="feedTitle">
+        <a id="feedTitleLink">
+            <img id="feedTitleImage" src="http://www.naturalnews.com/images/NaturalNews-Logo-280x60.gif" />
+        </a>
+        <div id="feedTitleContainer">
+            <h1 id="feedTitleText" base="http://www.naturalnews.com/rss.xml">NaturalNews.com</h1>
+            <h2 id="feedSubtitleText" base="http://www.naturalnews.com/rss.xml">Independent News on Natural Health and the World</h2>
+        </div>
+    </div>
+    <div id="feedContent">
+        <div class="entry">
+            <h3>
+                <a href="http://www.naturalnews.com/046566_autism_MMR_vaccine_CDC_whistleblower.html"><span base="http://www.naturalnews.com/rss.xml">CDC whistleblower confesses to publishing fraudulent data to obfuscate link between vaccines and autism</span></a>
+                <div class="lastUpdated">August 22, 2014 11:30 AM</div>
+            </h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Babies/Baby-Doctor-Inject-Vaccine-Syringe.jpg" /></td><td valign="top">(NaturalNews) A medical conspiracy of epic proportions stands to bring down the entire vaccine house of cards following the revelation that the U.S. Centers for Disease Control and Prevention (CDC) censored key data linking the MMR vaccine to autism. A top CDC researcher-turned-whistleblower...</td></tr></tbody></table></div>
+        </div><div style="clear: both;"></div>
+
+        <div class="entry"><h3><a href="http://www.naturalnews.com/046565_chicken_nuggets_food_recall_plastic_pieces.html"><span base="http://www.naturalnews.com/rss.xml">15,000 pounds of chicken nuggets recalled after customers complain about pieces of plastic</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Food/Chicken-Nuggets.jpg" /></td><td valign="top">(NaturalNews) On Wednesday, August 8, Applegate Natural and Organic Meats voluntarily issued a recall for "Applegate Naturals Chicken Nuggets" with the "Best Before" date of February 5, 2015, according to a report by United Press International.More than 15,000 pounds were yanked...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046564_cancer_warning_signs_symptoms.html"><span base="http://www.naturalnews.com/rss.xml">8 ways to recognize cancer earlier without harmful medical testing</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Cancer/Woman-Breast-Cancer-Diagnosis-Cry.jpg" /></td><td valign="top">(NaturalNews) With all the high tech screenings, procedures, drugs, and research, one would have to think that the "war on cancer" would be seeing some forms of success. Yet, men still have a slightly less than 1 in 2 lifetime risk of developing cancer, and for women, the risk is...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046563_DuPont_environmental_contamination_munitions_plant.html"><span base="http://www.naturalnews.com/rss.xml">DuPont asks government to ignore cleanup standards after profiting off munitions plant and contaminating environment with carcinogens</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Radiation/Danger-Sign-Hazardous-Chemicals.jpg" /></td><td valign="top">(NaturalNews) The people of Pompton Lakes, a lakeside community in New Jersey just 20 miles northwest of Midtown Manhattan, have suffered long enough. Three rivers run through the town of nearly 12,000, including the Wanaque, providing many outdoor activities for the folks residing...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046562_organic_food_brand_names_USDA.html"><span base="http://www.naturalnews.com/rss.xml">USDA announces crack-down on companies deceptively using 'organic' in brand names</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Food/Woman-Shop-Organic-Greens-Vegetables-Market-Grocery.jpg" /></td><td valign="top">(NaturalNews) It's a Wild West in the organic market, with some companies acting deceptively, using "organic" in their brand name when in reality their food products aren't all certified by a third party. Consumers are quick to give up on healthy food and supplements, because it's...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046561_blueberries_flavor_health_benefits.html"><span base="http://www.naturalnews.com/rss.xml">Most people prefer blueberries' flavor over their health benefits, according to study</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Food/Blueberries-In-A-White-Bowl.jpg" /></td><td valign="top">(NaturalNews) Despite a recent study showing that most people prefer eating blueberries more for their delicious taste than for their health benefits, the fact remains that, regardless of the reason behind the consumption, they're a fruit well worth enjoying. (1)In the study,...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046560_infectious_bacteria_resistance_hospitals.html"><span base="http://www.naturalnews.com/rss.xml">Life-threatening, infectious bacteria develop resistance to antiseptic used in hospital baths</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Science/Bacteria-Virus.jpg" /></td><td valign="top">(NaturalNews) An interventional measure that some hospitals have put in place to combat the rise of drug-resistant "superbugs" is actually causing more of them to emerge, suggests a new study published in the journal Infection Control &amp; Hospital Epidemiology. So-called antiseptic...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046559_GMO_studies_biotech_National_Research_Council.html"><span base="http://www.naturalnews.com/rss.xml">National Research Council fails to design serious GMO study capable of answering biotech safety questions</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Money/Gmo-Money.jpg" /></td><td valign="top">(NaturalNews) Dr. Marcia Ishii-Eiteman, Senior Scientist at Pesticide Action Network, was recently notified by the National Academy of Sciences that the National Research Council (NRC) was assembling a provisional committee of experts tasked to complete a new, novel study on genetically...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046558_dill_health_benefits_healthy_herbs.html"><span base="http://www.naturalnews.com/rss.xml">Top health benefits of dill</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/articles/dill.jpg" /></td><td valign="top">(NaturalNews) Dill is a common herb that is often added to many main dishes. Dill weed is a member of a unique family of herbs that uses both the seeds and the leaves as a means of seasoning. Dill seeds are similar in taste and appearance to caraway seeds. The flavor and aroma of...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046557_eye_health_vision_macular_degeneration.html"><span base="http://www.naturalnews.com/rss.xml">Eating more of these 5 foods can help improve your eye health</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Food/Eggs-In-A-Bowl.jpg" /></td><td valign="top">(NaturalNews) Vision is one of mankind's most valued senses. Unfortunately, for many it's susceptible to extremely degenerative conditions. In the United States alone, nearly $7 billion is spent to treat cataracts, affecting about 22 million Americans over the age of 40.Approximately...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046556_fruit_production_vegetables_global_nutrition.html"><span base="http://www.naturalnews.com/rss.xml">Increasing global fruit and vegetable production by 22% could save 1.7 million lives annually</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Food/Assorted-Fruits-Vegetables-Food.jpg" /></td><td valign="top">(NaturalNews) Commodity crops like GMO corn and soybeans dominate most of the agriculture production in America today. For instance, when one travels during the summer months through a state like Illinois, they begin to realize that biodiversity of crop production is practically dead...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046555_fruit_tree_hybridization_grafting.html"><span base="http://www.naturalnews.com/rss.xml">Artist creates amazing multicolored tree that produces 40 types of fruit</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Food/Woman-Picking-Fruit-Tree-Pears-Nature.jpg" /></td><td valign="top">(NaturalNews) Imagine picking 40 different types of fruit from a single tree. This is precisely the goal of New York-based sculptor and artist Sam Van Aken. The Tree of 40 Fruit can simultaneously produce apricots, almonds, nectarines, peaches, plums and cherries.Van Aken started...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046554_parasitic_plants_RNA_genetic_communication.html"><span base="http://www.naturalnews.com/rss.xml">Vampire plants inject their prey with RNA</span></a><div class="lastUpdated">August 22, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Nature/Green-Jungle-Nature-Leaves-Plants.jpg" /></td><td valign="top">(NaturalNews) A scientist from Virginia Tech University has found a potentially new form of plant communication, one that permits them to share an extraordinary amount of genetic information with each other.According to a press release by the university, the finding by Jim Westwood...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046553_MMR_vaccines_scientific_fraud_criminal_corruption.html"><span base="http://www.naturalnews.com/rss.xml">CDC refuses to turn over documents to Congress: Evidence linking MMR vaccines to autism intentionally withheld from investigators</span></a><div class="lastUpdated">August 21, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Misc/CDC-Locked-Briefcase-Government.jpg" /></td><td valign="top">(NaturalNews) News has been rapidly exploding across the "truth media" regarding the CDC whistleblower who is now making shocking revelations: The CDC's own research found that MMR vaccines caused autism in African-American children, and the agency knowingly buried this evidence to...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046552_MMR_vaccine_autism_CDC_whistleblower.html"><span base="http://www.naturalnews.com/rss.xml">Whistleblower goes public: CDC buried data showing vaccines increase risk of autism by 340%</span></a><div class="lastUpdated">August 21, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Babies/Baby-Vaccine.jpg" /></td><td valign="top">(NaturalNews) A top scientist and researcher for the Centers for Disease Control and Prevention had a key role in helping Dr. Brian Hooker of the Focus Autism Foundation uncover manipulated data from the agency that obscured a higher incidence of autism in African American boys.As...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046551_triclosan_Colgate_FDA.html"><span base="http://www.naturalnews.com/rss.xml">FDA conspired with Colgate to bury evidence of triclosan harm</span></a><div class="lastUpdated">August 21, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Objects/Toothbrush-Toothpaste-Close-up.jpg" /></td><td valign="top">(NaturalNews) If you use conventional toothpaste, you could be brushing your teeth with a chemical linked to endocrine disruption, cancer, infertility and a host of other health problems. A recent Freedom of Information Act (FOIA) lawsuit has revealed that the Colgate-Palmolive Co...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046550_tattoo_ink_toxic_ingredients_government_regulation.html"><span base="http://www.naturalnews.com/rss.xml">Tattoo ink poisoning Americans</span></a><div class="lastUpdated">August 21, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Women/Woman-Pain-Tattoo-Needle-Ink.jpg" /></td><td valign="top">(NaturalNews) If you're reading this, there's a good chance that you have a tattoo. After all, nearly half of the population has decided at some point in their life that it was a good idea to permanently ink an image, or special symbol, onto their skin. Many hold no regrets when it...</td></tr></tbody></table></div></div><div style="clear: both;"></div><div class="entry"><h3><a href="http://www.naturalnews.com/046549_chanca_piedra_gall_stones_shatter_stone_herb.html"><span base="http://www.naturalnews.com/rss.xml">Shatter stone herb cleanses liver, dissolves kidney and gallbladder stones</span></a><div class="lastUpdated">August 21, 2014 11:30 AM</div></h3><div base="http://www.naturalnews.com/rss.xml" class="feedEntryContent"><table xml:base="http://www.naturalnews.com/rss.xml"><tbody><tr><td><img width="140" height="76" src="http://www.naturalnews.com/gallery/640/Medical/Liver.jpg" /></td><td valign="top">(NaturalNews) If you struggle with kidney stones, or feel your liver could use a tune-up, a small Amazonian berry offers a powerful solution. A popular herb in Traditional Chinese Medicine, and a favorite of naturopaths worldwide, Phyllanthyus niruri (chanca piedra or "shatter stone...</td></tr></tbody></table></div></div><div style="clear: both;"></div>
+    </div>-->
+    <!--dynamic html-->
+    <div id="feedTitle" style="width:300px">
+        <a target="_blank" style="text-decoration:none; align-content:center; width:98%" id="feedTitleLink" href="http://www.naturalnews.com">
+            <img width="285" src="Images/Logo-April-2014.gif" id="feedTitleImage" />
+        </a>
+        <div id="feedTitleContainer">
+            <h1 style="display:none" id="feedTitleText"></h1>
+            <h2 style="display:none" id="feedSubtitleText"></h2>
+        </div>
+    </div>
+    <div style="height:500px; overflow:auto;">
+        <div id="feedContent">
+        </div>
+        <p class="view-all-link">
+            <a target="_blank" href="http://www.naturalnews.com" style="font-size:13px;">
+                View all headlines at NaturalNews.com
+            </a>
+        </p>
+    </div>
+</body>
+</html>

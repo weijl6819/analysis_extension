@@ -1,0 +1,415 @@
+/********************************
+MAIN
+********************************/
+
+/*FONT*/
+
+@font-face {
+    font-family: "Avenir Next LT Pro Demi";
+    src: url("/assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+}
+
+/*GENERAL*/
+
+body {
+	margin: 0;
+	padding: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+	background-color: #0c0c0d;
+  font-family: "Avenir Next LT Pro Demi";
+  color: #737986;
+}
+
+h1, h4, h5, h6 {
+  letter-spacing: 1px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 24px;
+  padding-top: 7px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 24px;
+}
+
+button {
+  font-family: "Avenir Next LT Pro Demi";
+  color: #737986;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.fade {
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+
+/********************************
+SIDEBAR - COMMON
+********************************/
+
+#sidebar {
+  display: none;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #121213;
+  overflow-x: hidden;
+  padding-top: 60px;
+  color: #737986;
+  font-size: 16px;
+}
+
+#closeSidebar {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  margin: 0px;
+  font-size: 36px !important;
+  cursor: pointer;
+}
+
+#closeSidebar:hover {
+	color: #babebb;
+}
+
+/********************************
+SIDEBAR - WORKSPACE
+********************************/
+
+#workspaceForm {
+  height: auto;
+  width: 250px;
+  padding: 25px;
+}
+
+#workspaceForm h4 {
+  text-align: center;
+}
+
+#workspaceForm h5 {
+  margin-top: 15px;
+}
+
+#workspaceForm h6 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#workspaceForm input {
+  margin-bottom: 5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid #737986;
+  width: 220px;
+  font-family: "Avenir Next LT Pro Demi";
+  font-size: 12px;
+  color: #737986;
+	text-transform: uppercase;
+}
+
+/*BUTTONS*/
+
+.removeTab {
+  background: transparent;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.removeTab:hover {
+	color: #babebb;
+}
+
+.addTabButton {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+  background: transparent;
+  border: none;
+  color: #737986;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.addTabButton:hover {
+  color: #babebb;
+}
+
+#sidebarButtons {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.sidebarButton {
+	display: block;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+	margin: 10px auto;
+}
+
+#saveWorkspace {
+	height: 40px;
+	width: 100px;
+	font-size: 12px;
+	background-color: #0a0a0b;
+	color: #737986;
+}
+
+#saveWorkspace:hover {
+	background-color: #050506;
+	color: #8a92a2;
+}
+
+#deleteWorkspace {
+	display: none;
+	height: 30px;
+	width: 60px;
+	font-size: 10px;
+  background-color: #421616;
+  color: #737986;
+}
+
+#deleteWorkspace:hover {
+	background-color: #3c1313;
+	color: #8a92a2;
+}
+
+/********************************
+VIEW - COMMON
+********************************/
+
+#main {
+	margin: 100px auto;
+  height: auto;
+  width: 660px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.indexContainer {
+  width: 640px;
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    width: 500px;
+  }
+
+  .indexContainer {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #main {
+    width: 340px;
+  }
+
+  .indexContainer {
+    width: 320px;
+  }
+}
+
+.headerButton {
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 0px;
+  margin: 0px 5px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.activeButton {
+	color: #ffffff;
+}
+
+.headerButton:hover {
+	color:#babebb;
+}
+
+/********************************
+VIEW - WORKSPACE
+********************************/
+
+#workspacesContainer {
+	display: block;
+	padding: 10px;
+  height: 120px;
+  margin-bottom: 20px;
+  overflow: hidden;
+	background-color: #070708;
+	border-radius: 10px;
+}
+
+#workspacesHeader {
+  height: 40px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#workspacesHeader h1 {
+  display: block;
+}
+
+#workspaceTitle {
+	margin: 0 auto;
+	width: 180px;
+	cursor: pointer;
+}
+
+#workspaceTitle:hover {
+	color: #babebb;
+}
+
+#no_workspaces {
+	margin: 30px auto;
+	width: 300px;
+	opacity: 0.6;
+	text-align: center;
+}
+
+#workspaces {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+	width: auto;
+  height: 210px;
+  padding: 0px 0px 50px 0px;
+	margin: 0;
+}
+
+#workspaces li {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.placeholder {
+  height: 60px;
+  width: 160px;
+	float: left;
+}
+
+.workspace {
+	border-radius: 10px;
+  padding: 4px 0 0 0;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  position: static;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+	vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  color: #737986;
+  background-color: #0d0d0f;
+	border: 0px solid #000000;
+	cursor: pointer;
+}
+
+.workspace:hover {
+	background-color: #111113;
+	color: #8a92a2;
+}
+
+#workspacesBackButton {
+  display: none;
+}
+
+#organizeWorkspacesButton {
+  display: none;
+}
+
+#workspacesDoneButton {
+	display: none;
+}
+
+.workspaceName {
+  margin: 0px;
+  width: 140px;
+	height: auto;
+  padding: 0px 5px;
+  word-wrap: break-word;;
+  white-space: normal;
+}
+
+#workspaceError {
+  color: #ff4d4d;
+  text-align: center;
+  font-size: 12px;
+}
+
+#workspaceSuccess {
+  color: #66cc66;
+  text-align: center;
+  font-size: 12px;
+}
+
+#helperMessageContainer {
+	display: none;
+	text-align: center;
+	padding: 5px 15px;
+	height: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	position: absolute;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 14px;
+	opacity: 1;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/********************************
+VIEW - WEBSITES
+********************************/
+
+#websitesContainer {
+  height: 110px;
+  margin-bottom: 20px;
+}
+
+#websitesHeader {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+#websitesHeader h1 {
+  display: inline-block;
+  margin-left: 5px;
+}

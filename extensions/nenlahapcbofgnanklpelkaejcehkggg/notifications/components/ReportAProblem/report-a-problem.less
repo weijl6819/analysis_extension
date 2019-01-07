@@ -1,0 +1,95 @@
+
+
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy .report-a-problem {
+  padding: 0 20px;
+  padding-top: 19px;
+  opacity: 0;
+  transform: translate3D(0,0,0);
+  animation: fadeInTranslate 800ms ease forwards;
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  height: auto;
+  background: #FAFAFA;
+  z-index: 2;
+  h4, h5, button {
+    opacity: 0;
+    animation: fadeIn 800ms ease forwards;
+  }
+  h6, h5 {
+    margin: 4px 0px 20px;
+  }
+  .native-select-wrapper, select {
+    width: 100%;
+    &#invalid-select-options {
+      color: @silver !important;
+    }
+  }
+
+  button.primary-btn-large {
+    font-size: 14px !important;
+    height: 40px !important;
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .problem-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    textarea {
+      min-height: 70px;
+      max-height: 150px;
+      max-width: 317px;
+      min-width: 100%;
+    }
+    form textarea, form input, select {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      font-size: 13px;
+      width: 100%;
+    }
+    form {
+      position: relative;
+      width: 100%;
+      margin-top: 13px;
+      input, textarea {
+        margin-bottom: 13px;
+      }
+      &.code {
+        button.primary-btn-large {
+          margin-top: 0px;
+          width: 59px;
+          height: 30px;
+          min-width: 0;
+          line-height: 20px;
+          font-size: 14px;
+          padding: 0px;
+          position: absolute;
+          right: 7px;
+          top: 6px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  @keyframes fadeInTranslate {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -5px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

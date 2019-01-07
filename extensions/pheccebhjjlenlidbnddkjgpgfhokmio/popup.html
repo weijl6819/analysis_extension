@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+.menu{
+  height:22px;
+  padding:2px 4px;
+}
+.menu:hover{
+  background-color:#e3f2fd;
+}
+.ml{
+  margin-left:20px;
+}
+.inactive{
+  color:GrayText;
+}
+.newMsg{
+  font-weight:bold;
+}
+.error{
+  color:red;
+}
+
+.icon{
+  flex: 0 0 16px;
+  height:16px;
+  margin-right:4px;
+  background-size:16px;
+}
+.acc {
+  flex: 1 1 auto;
+  min-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.num{
+  text-align:right;
+}
+.inactive .icon{
+  opacity:0.3;
+}
+.flex{
+  display:flex;
+  align-items:center;
+}
+#loga{
+  text-decoration:none;
+  color: inherit;
+  cursor: default;
+}
+</style>
+<script type="text/javascript" src="exlib/common.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body style="width:260px;cursor:default;-webkit-user-select:none;">
+<div id="dashboard" class="menu ml" i18n-content="dashboard">Dashboard</div>
+<div id="chk" class="menu ml" i18n-content="refresh">Refresh</div>
+<hr size="1"/>
+<div id="accounts" style="overflow:auto;">
+</div>
+<script type="text/javascript" src="exlib/i18n.js"></script>
+</body>
+</html>

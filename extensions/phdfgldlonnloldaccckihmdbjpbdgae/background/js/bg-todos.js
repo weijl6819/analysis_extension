@@ -1,0 +1,1 @@
+"use strict";var bgTodos={init:function(){var i=[];infinity.init("infinity-todos",i),infinity.onMessage("todosChange",function(i){infinity.setting("toDoNumber",i),infinity.sendMessage("todoChanged"),infinity.doSyncData()})}};

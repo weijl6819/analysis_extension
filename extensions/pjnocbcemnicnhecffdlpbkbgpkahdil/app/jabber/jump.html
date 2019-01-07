@@ -1,0 +1,49 @@
+﻿ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <script type="text/javascript">
+    (function jumpTo()
+    {
+      var w = 260;
+      var h = 400;
+      var l = (screen.width/2)  - (w/2);
+      var t = (screen.height/2) - (h/2);
+      var wnd = window.open("host.html?v=" + Date.now(), "ILINKHOST", "height=" + h + ",width=" + w + ",top=" + t + ",left=" + l + ",location=no,menubar=no,toolbar=no,status=no");
+      if (!wnd)
+        return window.open("host.html", "_self");
+
+      function poll() {
+        console.log(document.body.className);
+        if (!document.body.className)
+          document.body.className = "loaded";
+        if (wnd.screenX)
+        {
+          wnd.onload = null;
+          return window.open("../common/close.html", "_self");
+        }
+        setTimeout(poll, 100);
+      };
+      wnd.addEventListener("load", poll);
+    })();
+  </script>
+  <style>
+    div
+    {
+      text-align: center;
+      font-family: Tahoma;
+      font-size: 12pt;
+      display: none;
+    }
+    .loaded div
+    {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    iLink popup page appears to be blocked. Please ajust popup block settings in browser address bar.
+  </div>
+</body>
+</html>

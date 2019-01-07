@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link href='https://fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../css/views.css">
+    <title>Authenticate</title>
+    <script src="../../js/ext/jquery-1.11.3.min.js"></script>
+    <script src="../../js/google-auth.js"></script>
+    <script src="../../js/facebook-auth.js"></script>
+    <script src="../../js/cni-auth.js"></script>
+    <script src="../../js/register.js"></script>
+    <script src="../../js/forgot-password.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/authentication.js"></script>
+</head>
+<body>
+<div class="d-logo">
+    <img src="../../img/logo_icon_and_title.svg" align="middle"/>
+</div>
+<div class="d-form">
+    <form id="f-authentication" class="f-form">
+        <fieldset>
+            <div id="d-message" class="d-message"></div>
+
+            <div id="d-logged-in" hidden>
+                <div class="d-form-field">
+                    <img src="../../img/person-logged.png">
+                </div>
+                <div class="d-form-field">
+                    You won't leave us, will you?
+                </div>
+                <div class="d-form-field">
+                    <button id="logOut" type="button" class="b-submit" title="Log out!">LOG OUT</button>
+                </div>
+            </div>
+            <div id="d-login-method">
+                <div class="d-form-field">
+                    <button id="signInWithFacebook" style="border: 0; background: transparent" type="button"
+                            title="Log in via Facebook!">
+                        <img src="../../img/btn-facebook.png" width="300" height="42" alt="submit"/>
+                    </button>
+                </div>
+                <div class="d-form-field">
+                    <button id="signInWithGoogle" style="border: 0; background: transparent" type="button"
+                            title="Log in via Google!">
+                        <img src="../../img/btn-google.png" width="300" height="42" alt="submit"/>
+                    </button>
+                </div>
+                <div id="loginViaNewzBerg">
+                    <div class="d-form-field">
+                        <input id="i-txt-login" placeholder="login" type="text" class="i-form-field" name="fname">
+                    </div>
+                    <div class="d-form-field">
+                        <input id="i-txt-password" placeholder="password" type="password" class="i-form-field"
+                               name="lname"><br>
+                    </div>
+                    <div class="d-form-field">
+                        <button id="signInWithCni" type="submit" class="b-submit" title="Log in via email!">SIGN IN
+                        </button>
+                    </div>
+                    <div class="d-form-field">
+                        <button id="register" type="button" class="b-button" title="Register!">REGISTER</button>
+                    </div>
+                    <div class="d-form-field">
+                        <a id="forgotPassword" href="#">forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

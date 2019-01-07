@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Світитися",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up є простим, але, але дуже захоплююча гра-головоломка. Підключіть відповідні кольори з трубою для створення світіння потік.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

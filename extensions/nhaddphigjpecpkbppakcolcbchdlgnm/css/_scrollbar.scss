@@ -1,0 +1,6 @@
+/*_____scrollbar______________________________________________________________________________________________________*/
+::-webkit-scrollbar-button { background-repeat: no-repeat; width: 0; height: 0; }
+::-webkit-scrollbar-track { background-color: #ecedee; opacity: .5; }
+::-webkit-scrollbar-thumb { border-radius: 50px; background-color: #949494; opacity: .5; }
+::-webkit-scrollbar-thumb:hover { background-color: #2f4050; }
+::-webkit-scrollbar { width: 0; height: 0; }

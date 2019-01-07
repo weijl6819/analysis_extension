@@ -1,0 +1,269 @@
+.DL-1c{
+  position:relative;
+  display: inline-block;
+}
+.DL-1c .DL-container{
+  font-size:.9em;
+  font-size: max(.75em, 10px);
+  position: absolute;
+  right:0;
+  left:0;
+  top:-1.2em;
+  display:none;
+  align-items:flex-start;
+  justify-content: center;
+  transition: all 400ms;
+  opacity: 0;
+}
+.DL-1c:hover .DL-container{
+  display:flex;
+  opacity: 1;
+  -webkit-animation: wait-transition 200ms 300ms both;
+  animation: wait-transition 200ms 300ms both;
+}
+.DL-1c .DL-container .DL-logo{
+  background: rgb(38, 78, 112);
+  padding:0 .1em;
+  width: 1.4em;
+  height: 1.4em;
+}
+.DL-1c .DL-container .DL-button-group{
+  margin-bottom: .33em;
+  max-width: 1.6em;
+  position: relative;
+}
+.DL-1c .DL-container .DL-button{
+  background: #FFF;
+  cursor:pointer;
+  outline: none;
+  font-weight: 500;
+  color: rgb(38, 78, 112);
+  background: white;
+  transition:max-width 400ms;
+  font-size: 1em;
+  padding:0 .4em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  top:0;
+  bottom:0;
+  border: 1px solid #1D3C55;
+  max-width: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+.DL-1c .DL-container .DL-button:first-child{
+  right:1.5em;
+}
+.DL-1c .DL-container .DL-button:last-child{
+  left:1.5em;
+}
+.DL-1c .DL-container .DL-button-group:hover .DL-button{
+  max-width: 100vh;
+  opacity: 1;
+}
+.DL-1c .DL-container .DL-button:hover,
+.DL-1c .DL-container .DL-button:focus{
+    background: #F4F4F4;
+    color: rgb(38, 78, 112);
+}
+.DL-1c .DL-container .DL-button:disabled,
+.DL-1c .DL-container .DL-button:disabled:hover{
+  cursor:not-allowed;
+  background: #F4F4F4;
+  color: rgba(38, 78, 112, .7);
+}
+.DL-1c .DL-container .DL-button:disabled::before{
+  /* https://github.com/jgthms/bulma */
+  -webkit-animation: spinAround .8s infinite linear;
+  animation: spinAround .8s infinite linear;
+  border: 2px solid rgba(0,0,0, .4);
+  border-radius: 290486px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  /*display: block;*/
+  display: flex;
+  height: .6em;
+  position: relative;
+  width: .6em;
+  margin-right:.5rem;
+}
+.DL-1c .DL-container .DL-button:first-child{
+  border-radius: 2px 0 0 2px;
+}
+.DL-1c .DL-container .DL-button:last-child{
+  border-radius: 0 2px 2px 0;
+  /*border-right: 1px solid #1D3C55;*/
+}
+
+@keyframes wait-transition {
+  0% {
+    opacity: 0;
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    display: flex;
+  }
+}
+@-webkit-keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+@keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+.DL-extension-container{
+  position:fixed !important;
+  top:0;
+  left:0;
+  z-index:999999999999;
+  font-family: "Arial", Sans-serif;
+  font-size:12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+  color:rgba(0,0,0,.75);
+}
+.DL-extension-notification{
+  position:relative;
+  background:white;
+  border:1px solid #ddd;
+  margin:4px;
+  width:280px;
+}
+.DL-extension-animated .DL-extension-notification{
+  animation: DL-extension-slide 400ms ease-out forwards;
+}
+.DL-extension-title{
+  word-spacing:0.5px;
+  font-weight:bold;
+  font-size:13px;
+  color:rgba(0,0,0,.9);
+}
+.DL-extension-button-title{
+  font-weight:bold;
+  font-size:12px;
+  color:rgba(0,0,0,.85);
+}
+.DL-extension-contextMessage{
+  color:rgba(0,0,0,.6);
+  font-size:11px;
+  white-space: nowrap;
+}
+.DL-extension-message{
+  white-space: nowrap;
+}
+.DL-extension-icon{
+  width:60px;
+  height:60px;
+  float:left;
+}
+.DL-extension-icon img{
+  max-width:60px;
+  max-height:60px;
+}
+.DL-extension-fix{
+  clear: both;
+}
+.DL-extension-texts{
+  float:left;
+  width:216px;
+  min-height:60px;
+  flex-direction:column;
+  display:flex;
+  justify-content: center;
+  overflow:hidden;
+}
+.DL-extension-texts > div{
+  padding:0 4px;
+  margin:1px 0;
+}
+.DL-extension-texts > div:first-child{
+  margin-top: 4px;
+}
+.DL-extension-texts > div:last-child{
+  margin-bottom: 4px;
+}
+.DL-extension-button{
+  border-top:1px solid rgba(0,0,0,.1);
+  padding:6px;
+  white-space: nowrap;
+  flex-wrap:nowrap;
+  overflow:hidden;
+  cursor:pointer;
+  flex-direction:row;
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+}
+.DL-extension-button > div{
+  padding:0 2px;
+}
+.DL-extension-button:hover{
+  background:rgba(0,0,0,.03);
+}
+.DL-extension-button-icon{
+  display:inline-block;
+  width:16px;
+  height:16px;
+  margin-right:4px;
+}
+.DL-extension-button-icon img{
+  max-width:16px;
+  max-height:16px;
+}
+.DL-extension-progress{
+  position:absolute;
+  top:0;
+  right:0;
+  width:219px;
+}
+.DL-extension-progress-value{
+  background-color:#00506d;
+  height:3px;
+  opacity:.9;
+  transition:width 500ms;
+  width:0%;
+}
+.DL-extension-close {
+  font-size:16px;
+  content:'x';
+  position:absolute;
+  top:0;
+  right:0;
+  margin:0;
+  width:17px;
+  height:17px;
+  text-align:center;
+  cursor:pointer;
+  border-radius:50%;
+  border:1px solid transparent;
+  opacity:.7;
+}
+.DL-extension-close:hover{
+  border:1px solid #ddd;
+  background:white;
+  opacity:1;
+}
+@keyframes DL-extension-slide {
+  from {left:-260px;}
+  to { left:0}
+}

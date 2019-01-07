@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="Extended">
+
+<head>
+	<meta charset="utf-8">
+	<title>Dar permisos adicionales</title>
+	<script src="../script/angular.min.js"></script>
+	<script src="../script/jquery.min.js"></script>
+	<script src="../script/Extended.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+	<link href="../css/Extended.css" rel="stylesheet" type="text/css">
+</head>
+
+<body ng-controller="BodyController">
+
+	<div class="headExt">
+		<div class="headText">¿Deseas dar permisos para acceder a {{urlExtra}}?</div>
+	</div>
+	<div class="content">
+		<p>{{Senal}} está alojado en {{urlExtra}} y la Extensión de "MonkiBu TV y Radios Online" no tiene los permisos necesarios para hacer funcionar correctamente la señal.</p>
+		<p>Dale a la extensión el permiso necesario y podrás disfrutar de la señal sin publicidad y con una mejorada visualización.</p>
+		<p class="center">Si estas de acuerdo presiona el siguiente botón.</p>
+		<div class="Botones">
+			<div class="Agree">{{Agree}}</div>
+			<div class="Disagree">{{NoAgree}}</div>
+		</div>
+		<p class="negrito">Si tienes dudas, consulta esta sección de preguntas frecuentes.</p>
+		<p class="negrito">¿Que significa ampliar los permisos?</p>
+		<p>Significa que bajo tu autorización, la Extensión "MonkiBu TV y Radios Online" podrá acceder al sitio original de la señal para inyectar un código que bloquee la mala publicidad y mejore la visualización. Este permiso es solicitado una sola vez.</p>
+
+		<p class="negrito">¿La Extensión solicitará siempre permisos para nuevas URLs?</p>
+		<p>Si, la extensión solicitará permisos para acceder a determinados sitios siempre que no se haya permitido antes y sea necesario, esto sirve para el correcto funcionamiento de la extensión y sus señales.</p>
+		<p class="negrito">¿La Extensión MonkiBu TV y Radios Online recopila alguna información personal?</p>
+		<p><strong class="negrito">NO</strong>, MonkiBu y sus desarrolladores no obtendrán bajo <strong class="negrito">ningún</strong> punto de vista información sensible, contraseñas y contenido personal tuyo. No accederá a tus correos ni redes sociales. Mucho menos venderemos tus datos. (Esto en realidad no nos interesa en lo mas mínimo, solo queremos que veas buena TV).
+		</p>
+		<p class="negrito">¿A que sitios tiene acceso la extensión MonkiBu actualmente?</p>
+		<p>Hasta el momento la extensión tiene acceso a las siguientes paginas.</p>
+		<ul class="listaPermisos">
+			<li ng-repeat="P in Permisos">{{P}}</li>
+		</ul>
+		<p class="negrito">Aun tengo dudas...</p>
+		<p>Si aun tienes dudas con respecto a esto, no acepte y consúltame al siguiente mail soporte@juicedev.me y responderé tu duda a la brevedad... =)</p>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy {
+  &.__onTop {
+    position: relative;
+    z-index: 2147483647;
+  }
+  @import "../../less/global.less";
+  @import "../../less/icon-font.less";
+  .logo {
+    flex-shrink: 0;
+    cursor: pointer;
+    background-image: url('https://cdn.ivaws.com/wikibuy-assets/images/wikibuy_logo.png');
+    background-size: 120px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 30px;
+    &.small {
+      background-size: 100px;
+    }
+    &.center {
+      display: block;
+      margin: 0 auto;
+      justify-self: center;
+    }
+  }
+  .wbext-tertiary-link-lighter, .tertiary-link-lighter {
+    color: #737373;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      color: #999;
+    }
+  }
+}

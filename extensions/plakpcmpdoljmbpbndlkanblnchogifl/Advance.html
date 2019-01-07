@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title locale="extName2"></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/advanced.css">	
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.alphanumeric.js"></script>
+	<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="js/noty/jquery.noty.js"></script>
+	<script type="text/javascript" src="js/noty/layouts/center.js"></script>
+	<script type="text/javascript" src="js/noty/themes/default.js"></script>	
+    <script src="js/advanced.js"></script>
+  </head>
+<body>
+	<form action="" method="post" name="myForm" id="myForm"></form>
+	<div class="main" style="display:none;">
+	  <div class="wrapper">
+		<div >
+		  <!--Body content-->
+			<div id="SettingForm" class="swMain">
+			
+			  <div class="settingContainer" >   
+				<div id="settingHead">
+				  <h1 class="StepTitle">   <l locale="Advanced_Download"></l></h1>
+				</div>
+
+				<div id="settingBody">
+					<div id="settingBodyInner">
+						 
+					  <ul id="settingList">
+						<li>
+							<label  ></label>
+						  <input type="radio" name="dlType" value="adc" checked> <l locale="CDC_DOWNLOAD_ADC_LABEL"></l>  &nbsp;&nbsp; <input style="margin-left: 30px;" type="radio" name="dlType" value="takeasy"> <l locale="CDC_DOWNLOAD_TAKEASY_LABEL"></l>  
+						</li>
+						<li>
+						  <label for="URLInput" ><l locale="CDC_URL"></l>:</label>
+						  <input id="URLInput" class="settingInput" type="text" maxlength="30" /> 
+						</li>
+						<li>					  
+						  <label for="userID"  ><l locale="CDC_ACCOUNT"></l>:</label>
+						  <input id="userID" class="settingInput" maxlength="30" type="text" /><br/>
+						</li>
+						<li>					  
+						  <label for="Password"  ><l locale="CDC_PASSWORD"></l>:</label>
+						  <input id="Password" class="settingInput" maxlength="30" type="password" />
+						</li>
+						</ul>
+						  <div class="button-group">
+							  <a class="btn myBtn"  name="cancel" status="normal" href="#" data-dismiss="modal"><i class="icon-cancel" ></i> <l locale="CDC_CANCEL"></l></a>
+							  <a class="btn myBtn"  name="add"  href="#"><i class="icon-add"></i> <l locale="CDC_ADD"></l></a>
+						  </div>
+						  <div id="connectStatusDiv"></div>
+					  </div>
+				 </div>
+			  </div>
+
+
+			</div>	
+		</div>
+
+		
+	  </div>
+	</div> 
+
+<!-- modals -->
+<div id="messageModal" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 class="messageHeader"></h3>
+  </div>
+  <div class="modal-body">
+    <p class="messageContent"></p>
+  </div>
+</div>	
+	
+</body>
+</html>

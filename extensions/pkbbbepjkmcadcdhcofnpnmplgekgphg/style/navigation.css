@@ -1,0 +1,657 @@
+.navbar-collapse{
+  width:422px;
+  position: absolute;
+  top: -17px;
+  right:-10px;
+  height: 100.5vh;
+}
+.navbar-collapse.collapsing {
+    -webkit-transition: right 0.5s ease;
+    -o-transition: right 0.5s ease;
+    -moz-transition: right 0.5s ease;
+    transition: right 0.5s ease;
+    right: -422px;
+}
+#navbarSupportedContent.show {
+    -webkit-transition: right 0.5s ease-out;
+    -o-transition: right 0.5s ease-out;
+    -moz-transition: right 0.5s ease-out;
+    transition: right 0.5s ease-out;
+}
+.nav-item{
+  text-align: center;
+}
+.nav-item span{
+  color: #696969;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+}
+.nav-item span:hover{
+  color: #ffffff;
+}
+span.active{
+  color:white;
+}
+button:focus{
+  outline: none !important;
+}
+.navigation{
+  z-index: 1001;
+  display: inline;
+  cursor: pointer;
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+.navbar-toggler{
+  border:none;
+  margin-top: 5px;
+}
+#close_nav{
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  width: 30px;
+  cursor: pointer;
+}
+span.active::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  right:50%;
+  top:34px;
+  transform: translateX(50%);
+  border: 7px solid black;
+  border-color: #2a2d2e #2a2d2e transparent transparent ;
+  transform: rotate(135deg);
+  box-shadow: 1px -1px 0 1px #202223;
+  z-index:1002;
+}
+#navigation{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color:white;
+  z-index: 1002;
+}
+#nav_header{
+  margin-top: 68px;
+  height:61px;
+  background-color: #2a2d2e;
+  border: 1px solid #202223;
+}
+#help{
+  width:100%;
+  color: #aaaaaa;
+  font-family: Roboto;
+  font-size: 13px;
+  z-index: 1001;
+}
+#navbarSupportedContent{
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0px 1px 8px rgba(255,255,255,0.2);
+}
+#settings{
+  z-index:1001;
+  display: flex;
+  height:502px;
+  width:100%;
+  box-sizing: border-box;
+}
+
+#first {
+  z-index: 1001;
+  width:100%;
+  max-height: 80vh;
+}
+
+p{
+  display: inline;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  margin-bottom: 13px;
+}
+.toggle{
+  display: inline;
+  cursor:pointer;
+  height:30px;
+  margin-top: -5px;
+}
+.outer{
+  border-bottom: 1px solid #666666;
+  width: 378px;
+}
+#outerSlide{
+  margin-top: 11px;
+  padding-bottom: 20px!important;
+}
+#divSlide{
+  margin-left: 6px;
+  margin-right: -10px;
+}
+#outer_interval{
+  margin-left: 0px;
+  border-radius: 6px;
+  padding: 5px;
+  width: 380px;
+  background-color: transparent;
+  border: solid 1px #7c7c7c;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  display: block;
+  cursor: pointer;
+}
+#interval {
+  text-align: left;
+  display: inline-block;
+}
+#outerWeath{
+  padding-bottom: 20px!important;
+}
+#options{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 378px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top:255px;
+  left:22px;
+  z-index:1500;
+}
+.option{
+  margin: 2px;
+  padding-left: 17px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: block;
+  font-size: 13px;
+}
+.option:hover{
+  background-color: #11abeb;
+  color: white!important;
+  cursor: pointer;
+}
+.option img{
+  height: 18px;
+  width: 24px;
+  position: absolute;
+  right: 17px;
+  display: none;
+}
+.arrow-down-2{
+  position: relative;
+  left: 10px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  display: inline;
+  border-top: 5px solid #7c7c7c;
+}
+.arrow-down{
+  position: relative;
+  top:10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  display: inline;
+  border-top: 5px solid #ffffff;
+}
+
+/*-------------------------------------
+weather
+-----------------------------------__*/
+#divWeath{
+  padding-top: 15px;
+  margin-right: -10px;
+  margin-left: 6px;
+}
+#divPos{
+  margin-right: -10px;
+  margin-left: 6px;
+}
+#divInput{
+  margin-right: -20px;
+  margin-left: 6px;
+}
+#city{
+  width: 200px;
+  padding-left: 7px;
+  /* for animation when triggered to choose wheater */
+  -webkit-animation-duration: 6s;
+  -webkit-animation-iteration-count: 1;
+}
+@-webkit-keyframes glow {
+  from {border-color: rgba(255,255,255, 0.5); -webkit-box-shadow: 0 0 0px #fff; }
+  60% {border-color: rgba(255,255,255, 1.0); -webkit-box-shadow: 0 0 22px #fff; }
+  to {border-color: rgba(255,255,255, 0.5); -webkit-box-shadow: 0 0 0px #fff; }
+}
+
+#weathSub{
+  display: inline;
+  padding:8px 11px;
+  width: 69px;
+  margin-top: 0px;
+}
+
+.c_active{
+  background-color: #ffffff;
+}
+.country{
+  left: 10px;
+  margin-top: 5px;
+}
+#weathCheckStatic{
+  padding-top: 8px;
+  margin-left: 6px;
+  display:inline-block;
+}
+#weatherCheck{
+  display: inline-block;
+  font-weight: bold;
+}
+#weathRequestBlocked{
+  display:inline-block;
+  margin-left: 6px;
+}
+/*-------------------------------------------
+Themes
+-------------------------------------------*/
+#divThemes{
+  padding-top: 14px;
+  margin-right: -10px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+#season{
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.seasons img{
+  display:inline;
+  width: 14px;
+  margin-bottom:10px;
+  margin-right: 15px;
+}
+.seasons span{
+  position: absolute;
+  width: 170px;
+  font-weight:300;
+}
+.check{
+  cursor: pointer;
+}
+#w{
+  margin-bottom: 0px;
+}
+
+/*------------------------------------
+visibility searchbar and time and general design
+-------------------------------------*/
+
+#div_search{
+  padding-top: 14px;
+  margin-right: -10px;
+  margin-left: 6px;
+  cursor: pointer;
+  color: #ffffff;
+}
+#div_time{
+  padding-top: 14px;
+  margin-right: -10px;
+  margin-left: 6px;
+  cursor: pointer;
+  color: #ffffff;
+}
+#template_v{
+  width: 274px;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 13px;
+  cursor: pointer;
+  color: #11aae9;
+}
+#template_v:hover{
+  color: #5bc0da;
+}
+/*-------------------------------------
+FAQ
+---------------------------------------*/
+#faq_content{
+  margin: 0px 10px 20px 15px;
+  padding-right: 10px;
+  height: auto;
+  overflow-y: scroll;
+  font-family: Roboto;
+  font-weight: 300;
+  color: #ffffff;
+  position: absolute;
+  top:180px;
+  bottom:15px;
+}
+#faq_content h3{
+  font-family: Roboto;
+  font-weight: 450;
+  font-size: 16px;
+  margin-top: 10px;
+}
+/*--------------------------------------------------------------
+navigation: youtube section
+--------------------------------------------------------------*/
+#video{
+  color: white;
+  font-family: Roboto;
+}
+
+#yheading{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 13px;
+  color: rgba(246, 241, 238, 0.99);
+}
+
+#vinput{
+ margin-left: 20px;
+ margin-top: 8px;
+ width: 282px;
+}
+
+#v::-webkit-input-placeholder{
+  padding-left: 12px;
+  font-size: 13px;
+  font-family: Roboto;
+  padding-top: 11px;
+  padding-bottom: 10px
+}
+#submit2{
+  margin-left: 20px;
+}
+#stopVideo{
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 13px;
+  cursor: pointer;
+  color: #0792b5;
+}
+#stopVideo:hover{
+  color: #ffffff;
+}
+#dashed_line{
+    height:0px;
+    border-bottom: 1px dashed #666666;
+}
+
+.suggestion{
+  width: 350px;
+  border-bottom: 1px solid #666666;
+  font-size: 13px;
+  margin-left: 20px;
+  padding-left: 13px;
+  font-weight: 300;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  cursor: pointer;
+  color:rgba(255,255,255,0.9);
+}
+#sugg_desc{
+  cursor: default;
+}
+.suggestion img {
+  margin-right: 10px;
+  height: 10px;
+  width:15px;
+}
+/*--------------------------------------------------------------
+navigation: quicklinks section
+--------------------------------------------------------------*/
+#cquicklinks{
+  margin-left: 15px;
+}
+#qheading{
+  margin-left: 6px;
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 13px;
+  color: rgba(246, 241, 238, 0.99);
+}
+#quicklink{
+  margin-left: 6px;
+  margin-top: 8px;
+}
+
+.labelQuick{
+  margin-left: 25px;
+}
+
+#quicklinks{
+  margin-bottom: 15px;
+  margin-left: 17px;
+}
+/*-------------------------------------------------
+navigation: most visited
+-------------------------------------------------*/
+
+.sites{
+  color: white;
+  font-size: 15px;
+  margin-left: 15px;
+  padding: 10px;
+}
+.sites a{
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: 300;
+}
+#sites{
+  margin-top: 5px;
+  overflow: scroll;
+  position: absolute;
+  top:180px;
+  bottom:15px;
+  margin-right: 10px;
+  padding-right: 10px;
+  width: 395px;
+}
+
+#innerSettings{
+  flex-flow: column;
+  height:100%;
+  width:100%;
+  color: white;
+}
+
+div.tab {
+    overflow: hidden;
+    background-color: #36383a;
+    height:51px;
+    border-bottom: 1px solid #666666;
+}
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s;
+    color: #969696;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  color: #cccccc;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+
+}
+/*------------------------------------------------------
+inner section of settings
+------------------------------------------------------*/
+
+.input{
+  padding:3px;
+  background-color: rgba(0,0,0, 0.2);
+  border: 1px solid rgba(255,255,255, 0.5);
+  color:white;
+  height: 34px;
+  width: 350px;
+  font-weight: 400;
+}
+.input::-webkit-input-placeholder{
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+  color: #8e8e8e;
+  padding-left: 5px;
+}
+.submit{
+  margin-left: 6px;
+  margin-top:8px;
+  width: 350px;
+  background-color: #11abeb;
+  opacity: 0.9;
+  font-family: Roboto;
+  font-size: 13px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  padding-top: 11px;
+  padding-bottom:10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.submit:hover{
+  background-color: #0073a2;
+}
+#youtube{
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 15px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+#background{
+  position: absolute;
+  top: 183px;
+  bottom: 50px;
+}
+#row_fav_img{
+  margin: 15px 30px 0px 15px;
+}
+#backgrounds{
+  display: inline-block;
+  overflow-y: scroll;
+  width: auto;
+  margin-top: 5px;
+  margin-left:10px;
+  margin-right: 28px;
+  position: absolute;
+  top:45px;
+  bottom:20px;
+}
+#clear{
+  width: 100%;
+  margin-top: 13px;
+
+}
+#clear_images{
+  color: #11aae9;
+  cursor: pointer;
+  bottom: -25px;
+  position: absolute;
+  left:50%;
+  font-weight: 300;
+  transform: translateX(-50%);
+  margin-left: -15px;
+  font-size: 14px;
+}
+#clear_images:hover{
+  color: #5bc0da;
+}
+
+
+/*Style changing Image*/
+.change{
+  cursor: pointer;
+  object-fit: cover;
+  display: inline;
+  color: white;
+  margin: 2px;
+  height: 118px;
+  width: 118px;
+}
+.chosen{
+  border: solid 2px #11abeb;
+}
+
+/*--------------------------------------------------------------
+Style of checkboxes
+--------------------------------------------------------------*/
+.checkbox {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  display:inline-block;
+  margin-top: 10px;
+}
+.checkbox label{
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-linear-gradient(top, #222 0%, #45484d 100%);
+  border-radius: 4px;
+  border-color: rgba(0,0,0,0.5);
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+}
+.checkbox label::after {
+  content: '';
+  width: 7px;
+  height: 3px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border: 3px solid #fcfff4;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+.checkbox label:hover::after {
+  opacity: 0.3;
+}
+.checkbox input[type=checkbox] {
+  display: none;
+}

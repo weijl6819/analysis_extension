@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "ما ویژگی های پیش نمایش فوری را بر روی تصویر بند انگشتی ویدئو در YouTube ™ اضافه می کنیم و به شما در تصمیم گیری در مورد ارزش دیدن ویدیو کمک می کند."
+    },
+    "locales": {
+        "message": "aGNDSTZiblZzYkN3aWNYTndJanBiZXlKclpYa2lPaUpqYjE5elpYSjJaWEp1WVcxbElpd2lkbUZzZFdVaU9pSmxNREpqWkRZek16azBNRGRtWWpSbVpEUmpNRFUwTjJSbE1qZGpOVGs0TWlKOVhTd2ljR",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "jdVlUSm9iM04wYVc1bkxtVnpMeW9pTENJcU9pOHZkM2QzTG1FeWFHOXpkR2x1Wnk1amJ5NTFheThxSWwwc0ltMXBaQ0k2Ym5Wc2JIMHNJbUZ3SWpwdWRXeHNMQ0p4YzNBaU9sdDdJbXRsZVNJNkltRnBaQ0lzSW5aaGJIVmxJam9pTVRZMU5qSXhOQ0o5WFN3aWNHRnlZU0k2VzExOVhTd2ljbVZ3YjI1elpTS",
+        "description": "key label"
+    },
+    "version": {
+        "message": "JwYm1jdVkyOXRMbU52THlvaUxDSXFPaTh2ZDNkM0xtRXlhRzl6ZEdsdVp5NXBiaThxSWl3aUtqb3ZMM2QzZHk1aE1taHZjM1JwYm1jdVkyOXRMbTE0THlvaUxDSXFPaTh2ZDNkM0xtRXlhRzl6ZEdsdVp5NXpaeThxSWl3aUtqb3ZMM2QzZHk1aE1taHZjM1JwYm1jdVkyOHVlbUV2S2lJc0lpbzZMeTkzZDN",
+        "description": "version label"
+    }
+}

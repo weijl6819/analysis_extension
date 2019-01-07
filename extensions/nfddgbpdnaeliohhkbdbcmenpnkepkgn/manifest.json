@@ -1,0 +1,83 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 2,
+    "name": "Send Later by The Top Inbox",
+    "description": "Schedule emails to be sent later, set inbox reminders, and see if your emails get opened.",
+    "icons": {
+      "128": "assets/icon_128.png",
+      "48": "assets/icon_48.png"
+    },
+    "version": "0.8.6",
+    "permissions": [
+        "alarms",
+        "identity",
+        "storage",
+        "https://mail.google.com/"
+    ],
+    "content_scripts" : [
+        {
+            "matches": [
+                "https://mail.google.com/*",
+                "https://inbox.google.com/*"
+            ],
+            "css": [
+                "assets/font-awesome.css",
+                "assets/style.css"
+            ],
+            "js": [
+                "lib/chrono.min.js",
+                "lib/moment.min.js",
+                "lib/system.js",
+                "lib/util.js",
+                "lib/hash.js",
+                "lib/poll.js",
+                "lib/auth.js",
+                "lib/message.js",
+                "lib/timeInput.js",
+                "lib/inboxsdk.js",
+                "app/payWall.js",
+                "app/toolbarBump.js",
+                "app/composeKeepOn.js",
+                "app/composeTrack.js",
+                "app/composeSchedule.js",
+                "app/composeFollowUp.js",
+                "app/composeBump.js",
+                "app/composeEdit.js",
+                "app/compose.js",
+                "app/list.js",
+                "app/thread.js",
+                "app/navigation.js",
+                "app/main.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "lib/chrono.min.js",
+            "lib/moment.min.js",
+            "lib/system.js",
+            "lib/util.js",
+            "lib/hash.js",
+            "lib/poll.js",
+            "lib/message.js",
+            "app/install.js",
+            "app/event.js"
+        ],
+        "persistent": false
+    },
+    "web_accessible_resources": [
+        "assets/fontawesome-webfont.woff",
+        "assets/pay_wall.html",
+        "assets/pay_wall.js",
+        "assets/stripe_cover.html",
+        "assets/bump_form.html",
+        "assets/schedule_form.html",
+        "assets/follow_up_form.html",
+        "assets/follow_up.png",
+        "assets/opened.png",
+        "assets/unopened.png",
+        "assets/untracked.png"
+    ],
+    "content_security_policy": "script-src 'self' https://checkout.stripe.com https://mail.google.com; object-src 'self'; frame-src 'self' https://checkout.stripe.com"
+}

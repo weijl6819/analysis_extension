@@ -1,0 +1,60 @@
+
+
+<!-------- Toolbar Wrapper--------->
+<div class="cp-toolbar-wrapper cp-toolbar-wrapper-page">
+  <div class="cp-toolbar cp-toolbar-note">
+
+    <div class="cp-toolbar-tool-box cp-toolbar-tool-box-page-favicon">
+      <img ng-if="homeCtrl.isEditMode" class="cp-toolbar-favicon cp-no-border" src={{homeCtrl.getFavicon(homeCtrl.activeNote.properties.url)}} ng-click="homeCtrl.goToPage(homeCtrl.activeNote.properties.url)">
+    </div>
+
+    <div class="cp-toolbar-tool-box cp-toolbar-tool-box-tags cp-no-border" ng-click="homeCtrl.showPageTags(homeCtrl.activeNote)">
+      <img class="cp-toolbar-tool-box-icon" src="../app/icons/tags-purple.png">
+      <div class="cp-toolbar-tool-box-separator"> + </div>
+    </div>
+
+    <div class="cp-toolbar-tool-box cp-toolbar-tool-box-add cp-no-border" ng-click="homeCtrl.addItemToPage(homeCtrl.activeNote, {})">
+      <img class="cp-toolbar-tool-box-icon " src="../app/icons/note-purple.png">
+      <div class="cp-toolbar-tool-box-separator"> + </div>
+    </div>
+
+  </div>
+</div>
+<!-------- END OF Toolbar Wrapper--------->
+
+<!-------------- Tags Area ------------>
+<div ng-if="homeCtrl.activeNote.showTags" class="cp-page-tags-wrapper">
+  <div class="cp-page-tags">
+    <md-chips
+        md-autocomplete-snap
+        ng-model="homeCtrl.activeNote.properties.tags"
+        md-on-append="homeCtrl.newTagAppend($chip)">
+      <md-autocomplete
+          md-input-name="autocompleteField"
+          md-selected-item="homeCtrl.selectedItem"
+          md-search-text="homeCtrl.searchTagsText"
+          md-items="tag in homeCtrl.tagsQuerySearch(homeCtrl.searchTagsText)"
+          md-item-text="tag.text"
+          placeholder="+Tags"
+          secondary-placeholder="+Tag">
+        <md-item-template>
+          <span md-highlight-text="homeCtrl.searchTagsText">{{tag.text}}</span>
+        </md-item-template>
+      </md-autocomplete>
+      <md-chip-template>
+        <span>{{$chip.text}}</span>
+      </md-chip-template>
+    </md-chips>
+    <br/>
+  </div>
+</div>
+<!-------------- End of Tags Area ------------>
+
+<div class="cp-page-content-wrapper flex">
+  <div class="cp-page-title-wrapper">
+    <p class="cp-page-title">{{homeCtrl.activeNote.properties.pageTitle |truncate:90}}</p>
+  </div>
+
+  <cp-clips-list></cp-clips-list>
+
+</div>

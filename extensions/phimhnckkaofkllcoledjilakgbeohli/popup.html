@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="MonkiBuExtension" ng-csp>
+
+<head>
+	<title>TV de Chile</title>
+	<meta charset="utf-8">
+	<meta name="twitter:widgets:csp" content="on">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="script/jquery.min.js"></script>
+	<script type="text/javascript" src="script/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="script/angular.min.js"></script>
+	<script type="text/javascript" src="script/moment.min.js"></script>
+</head>
+
+<body ng-controller="BodyControl">
+	<div class="head">
+		<div class="logo"></div>
+		<div class="titulo">Televisión de {{Pais}} Online</div>
+	</div>
+	<div class="alert" ng-if="Error">{{Alerta}}</div>
+	<div class="extraCanal" ng-if="ExtraExist">
+		<div ng-click="OpenExtra()" ng-repeat="Canal in Extra | orderBy: 'n'" class="extra" style="{{Canal.c}}" title="{{Canal.n}}">
+			<span></span>
+		</div>
+	</div>
+	<div class="loading" ng-class="{'hide': ready}">Cargando...</div>
+	<div class="columna senal" id="a">
+		<div ng-click="OpenCanal()" class="canales" ng-repeat="Canal in Canales | orderBy: 'prioridad'" ng-if="Canal.columna == 0" style="{{Canal.css}}" ng-attr-id="{{Canal.senal}}" title="{{Canal.nombre}}"><span></span>
+		</div>
+	</div>
+	<div class="columna senal" id="b">
+		<div ng-click="OpenCanal()" class="canales" ng-repeat="Canal in Canales | orderBy: 'prioridad'" ng-if="Canal.columna == 1" style="{{Canal.css}}" ng-attr-id="{{Canal.senal}}" title="{{Canal.nombre}}"><span></span>
+		</div>
+	</div>
+	<div class="columna senal" id="c">
+		<div ng-click="OpenCanal()" class="canales" ng-repeat="Canal in Canales | orderBy: ['pais', 'nombre']" ng-if="Canal.columna == 2" style="{{Canal.css}}" ng-attr-id="{{Canal.senal}}" title="{{Canal.nombre}}"><span></span>
+			<br>
+		</div>
+	</div>
+	<div class="fbPage">
+		<iframe class="fbFrame"></iframe>
+	</div>
+	<div class="BotonesExtras">
+		<div class="boton" id="Radio">
+			<div>Radios</div>
+		</div>
+		<div class="boton" id="Mosaico">
+			<div>Mosaico</div>
+		</div>
+	</div>
+
+	<div class="BotonesSociales">
+		<a href="#">
+			<div class="twitter">
+				<div class="count">Tweet!</div>
+			</div>
+		</a>
+		<a href="#">
+			<div class="gplus">
+				<div class="count">+1</div>
+			</div>
+		</a>
+		<a href="#">
+			<div class="facebook">
+				<div class="count">Like!</div>
+			</div>
+		</a>
+		<!--<div class="programacion"></div>-->
+	</div>
+	<div class="noDispAviso">* Señal no esta disponible ahora, es probable que vuelva en unos minutos...</div>
+	<div id="fondo">
+		<a id="Disclaimer">Disclaimer</a> | <a id="Changelog">Changelog</a> | <a id="Ayuda">¿Problemas técnicos?</a> | <a id="Privacidad">Privacidad</a>
+	</div>
+	<script type="text/javascript" src="script/popup.v2.js"></script>
+</body>
+
+</html>

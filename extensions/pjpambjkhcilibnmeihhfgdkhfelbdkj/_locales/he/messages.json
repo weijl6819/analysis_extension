@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "מגעים"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "פתח מגעים Google שלך בקופץ שימושית."
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "הגדרות"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "גודל של חלון קופץ"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "רוחב"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "גובה"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "שמור"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "הציל"
+   }
+}

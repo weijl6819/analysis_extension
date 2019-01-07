@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Proxy felfüggesztése. Böngésszen az interneten a gyors és korlátlan VPN-szolgáltatással a Chrome számára. A tiltott webhelyek megnyitása a legjobb ingyenes proxyval a virtuális magánhálózathoz."
+   },
+   "appName": {
+      "message": "A legjobb ingyenes VPN a Chrome számára a DotVPN-nél"
+   },
+   "appShortName": {
+      "message": "DotVPN"
+   }
+}

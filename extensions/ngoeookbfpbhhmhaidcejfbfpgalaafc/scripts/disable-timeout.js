@@ -1,0 +1,1 @@
+!function(){window.setInterval=function(){console.log("interval")},window.setTimeoutALP=window.setTimeout,window.setTimeout=function(){console.log("timeout")}}();

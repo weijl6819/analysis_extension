@@ -1,0 +1,21 @@
+<div class='overlay'>
+	<div class='dialog'>
+		<div class='dialog-content'>
+			<div class='dialog-data'>
+				<div class='text'><%= message %></div>
+
+				<div class='inputs'>
+					<% if(locals.cancel) { %>
+						<input class='button weak' type='button' name='no' value='Cancel'>
+					<% } %>
+
+					<input class='button' type='button' name='yes' value='OK'>
+				</div>
+
+				<div class='clear'></div>
+			</div>
+			
+			<div class='clear'></div>
+		</div>
+	</div>
+</div>

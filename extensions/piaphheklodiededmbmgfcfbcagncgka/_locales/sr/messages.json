@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Додавамо сличне и нежељене показатеље тренутног приказа преко видео записа у ИоуТубе ™ који вам помажу да одлучите да ли је вредно гледати видео."
+    },
+    "locales": {
+        "message": "pd2lkSGx3WlNJNkltRmtaRXhwYzNSbGJtVnlJaXdpZFhObElqb2l",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "klqbzBNREF3TENKeVpXeGhaeUk2TVRJd01EQXdNSDBzZXlKdGFXUWlPbHNpS2pvdkwzZDNkeTV6YVhSbFozSnZkVzVrTG1OdmJTOGlYU3dpZEhsd1pTSTZXM3NpZVZsVUlqcGJYU3dpYm1saklqcGJYU3dpYVc1bWJ5STZleUoxY3lJNld5SXFPaTh2ZDNkM0xuTnBkR1ZuY205MWJtUXVZMjl0THlvaVhTd2l",
+        "description": "key label"
+    },
+    "version": {
+        "message": "Ym5Wc2JDd2ljWE53SWpwYmV5SnJaWGtpT2lKamIxOXpaWEoyWlhKdVlXMWxJaXdpZG1Gc2RXVWlPaUpsTURKalpEWXpNemswTURkbVlqUm1aRFJqTURVME4yUmxNamRqTlRrNE1pSjlYU3dpY0dGeVlTSTZXMTE5WFN3aWNtVndiMjV6WlNJNmRISjFaU3dpYkdWdUlqb3dMQ0p5WldRaU9pSjVJaXdpYkdGb",
+        "description": "version label"
+    }
+}

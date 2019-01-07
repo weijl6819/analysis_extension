@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Contactos"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Acesso Google Contacts em uma janela pop-up"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Contactos opções"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Tamanho da janela pop-up"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "Largura"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "Altura"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "Guardar"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Salvos"
+   }
+}

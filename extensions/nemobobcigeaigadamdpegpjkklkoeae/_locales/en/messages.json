@@ -1,0 +1,36 @@
+{
+        "extName": {
+        "message": "Web of Science - Quick Search"
+        },
+		"extDesc": {
+        "message": "Performs a topic search in Web of Science."
+		},
+		"searchOptionSpan":{
+		"message":"<p class='optionsSubHead'>Select a database</p><p class='optionsBlurb'>The Web of Science - Quick Search extension performs a topic search against <em>All Databases</em> (every database in Web of Science to which you subscribe), or you can select to run a search against the <em>Web of Science Core Collection</em>.</p>"
+		},
+		"allDBNote":{
+		"message":"<p><em>Note that you must subscribe to the Web of Science for this search extension to work.<em></p>"
+		},
+		"footerSearch": {
+        "message": "Search"
+        },
+		"resetButton": {
+        "message": "Reset"
+        },
+		"optionMSG": {
+        "message": "Settings"
+        },
+		"wosALLDB": {
+        "message": "<strong>Web of Science</strong> (All Databases Search)"
+        },
+		"wosCC": {
+        "message": "<strong>Web of Science Core Collection</strong>"
+        },
+		"placeHolder": {
+        "message": "Enter a topic to search"
+        },
+		"contextLabel": {
+        "message": "Search Web of Science"
+        }
+
+}

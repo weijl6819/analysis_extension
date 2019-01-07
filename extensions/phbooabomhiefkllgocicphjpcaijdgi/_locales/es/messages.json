@@ -1,0 +1,50 @@
+﻿{
+    "name":
+    {
+        "message":"WebTop – herramienta de acceso rápido"
+    },
+    "description":
+    {
+        "message":"Acceso rápido con ayuda de un sólo clic para WebTop. WebTop es el escritorio con el conjunto de aplicaciones."
+    },
+    "register":
+    {
+        "message":"Registrarse"
+    },
+    "email":
+    {
+        "message":"Dirección de e-mail"
+    },
+    "password":
+    {
+        "message":"Contraseña"
+    },
+    "forgot":
+    {
+        "message":"¿Olvidó?"
+    },
+    "save":
+    {
+        "message":"Guardar"
+    },
+    "login_error":
+    {
+        "message":"Error de entrada"
+    },
+    "enter_login":
+    {
+        "message":"Introduzca la dirección de correo electrónico y la contraseña"
+    },
+    "data_saved":
+    {
+        "message":"Datos están guardados"
+    },
+    "please_wait":
+    {
+        "message":"Espere, por favor"
+    },
+    "remind_link":
+    {
+        "message":"http://uid.me/remind/?l=es"
+    }
+}

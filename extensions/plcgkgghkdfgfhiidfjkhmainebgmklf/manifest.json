@@ -1,0 +1,23 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+   "manifest_version": 2,
+   "name": "Send Link by Email or Gmail",
+   "description": "Share web pages, images, links, or text selections by email or Gmail.",
+   "version": "2.0.1",
+   "browser_action": {
+      "default_icon": "email-4-19.png",
+      "default_title": "Email Link"
+   },
+   "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+   },
+   "options_page": "options.html",
+   "icons": {
+	  "16": "email-4-16.png",
+	  "48": "email-4-48.png",
+	  "128": "email-4-128.png"
+   },
+   "permissions": [ "contextMenus", "activeTab" ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": {
+    "message": "Safe Site de Scanguard"
+  },
+  "browserAction_defaultTitle": {
+    "message": "Suite de sécurité"
+  },
+  "shortName": {
+    "message": "Naviguez sur le Web à l'aide de l'outil Safe Site de Scanguard"
+  },
+  "description": {
+    "message": "Safe Site permet de bloquer les URL nuisibles et malveillantes pour améliorer votre expérience Internet et vous protéger."
+  },
+  "chromeSettingsOverrides_searchProvider_name": {
+    "message": "Safe Search de Scanguard"
+  },
+  "newTab_title": {
+    "message": "Tableau de bord de Scanguard"
+  },
+  "urlScanner_tooltipTitle": {
+    "message": "Informations sur la sécurité de Web Shield :"
+  },
+  "urlScanner_categoryLabel": {
+    "message": "Catégorie :"
+  },
+  "urlScanner_threatLabel": {
+    "message": "Menace :"
+  },
+  "urlScanner_poweredByText": {
+    "message": "Optimisé par"
+  },
+  "warningPage_title": {
+    "message": "AVERTISSEMENT ! Ce site pourrait nuire à votre système."
+  },
+  "warningPage_subTitle": {
+    "message": "Ne vous inquiétez pas, nous l'avons bloqué pour votre protection."
+  },
+  "warningPage_categoryLabel": {
+    "message": "Catégorie"
+  },
+  "warningPage_categoryName_SAFE": {
+    "message": "Aucune menace"
+  },
+  "warningPage_categoryName_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Inconnu"
+  },
+  "warningPage_categoryDescription_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Ce site Web est potentiellement dangereux.  Sur ce site, les personnes malveillantes peuvent vous inciter à faire quelque chose de dangereux susceptible de compromettre votre sécurité."
+  },
+  "warningPage_categoryName_VIRUSINFECTED": {
+    "message": "Virus"
+  },
+  "warningPage_categoryDescription_VIRUSINFECTED": {
+    "message": "Ce site Web a un contenu trompeur.  Sur ce site, les personnes malveillantes peuvent vous inciter à faire quelque chose de dangereux susceptible de compromettre votre sécurité."
+  },
+  "warningPage_categoryName_SPYWARE": {
+    "message": "Logiciel espion"
+  },
+  "warningPage_categoryDescription_SPYWARE": {
+    "message": "Ce site Web a un contenu trompeur.  Sur ce site, les personnes malveillantes peuvent vous inciter à faire quelque chose de dangereux susceptible de compromettre votre sécurité."
+  },
+  "warningPage_categoryName_PHISHING": {
+    "message": "Hameçonnage"
+  },
+  "warningPage_categoryDescription_PHISHING": {
+    "message": "Ce site Web a un contenu trompeur.  Sur ce site, les personnes malveillantes peuvent vous inciter à faire quelque chose de dangereux susceptible de compromettre votre sécurité."
+  },
+  "warningPage_categoryName_MALWARE": {
+    "message": "Logiciel malveillant"
+  },
+  "warningPage_categoryDescription_MALWARE": {
+    "message": "Ce site Web a un contenu trompeur et un contenu malveillant  Sur ce site, les personnes malveillantes peuvent vous inciter à faire quelque chose de dangereux susceptible de compromettre votre sécurité."
+  },
+  "warningPage_categoryName_SOCIAL_ENGINEERING": {
+    "message": "Piratage psychologique"
+  },
+  "warningPage_categoryDescription_SOCIAL_ENGINEERING": {
+    "message": "Ce site Web a un contenu trompeur.  Sur ce site, les personnes malveillantes peuvent vous inciter à faire quelque chose de dangereux susceptible de compromettre votre sécurité."
+  },
+  "warningPage_categoryName_UNWANTED_SOFTWARE": {
+    "message": "Logiciel indésirable"
+  },
+  "warningPage_categoryDescription_UNWANTED_SOFTWARE": {
+    "message": "Ce site Web contient un logiciel indésirable.  Ce programme contient probablement des logiciels de publicité, des logiciels espions ou présente d'autres comportements intrusifs et malveillants."
+  },
+  "warningPage_categoryName_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Application dangereuse"
+  },
+  "warningPage_categoryDescription_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Ce site Web contient un logiciel indésirable.  Ce programme contient probablement des logiciels de publicité, des logiciels espions ou présente d'autres comportements intrusifs et malveillants."
+  },
+  "warningPage_backToSafety": {
+    "message": "Retour à la sécurité"
+  },
+  "warningPage_visitWebsite": {
+    "message": "Visitez le site Web"
+  },
+  "warningPage_whitelistText": {
+    "message": "Je fais confiance à ce site, ne le marquez plus !"
+  }
+}

@@ -1,0 +1,36 @@
+{
+        "extName": {
+        "message": "Web of Science - Pesquisa rápida"
+        },
+		"extDesc": {
+        "message": "Realiza uma pesquisa por tópico na Web of Science"
+		},
+		"searchOptionSpan":{
+		"message":"<p class='optionsSubHead'>Escolha uma base de dados</p><p class='optionsBlurb'>A extensão Web of Science - Pesquisa Rápida realiza uma pesquisa por tópico em <em>Todas as bases de dados </em>(todas as bases de dados disponíveis na sua subscrição Web of Science), ou pode escolher pesquisar apenas na <em>Colecção Principal Web of Science</em>.</p>"
+		},
+		"allDBNote":{
+		"message":"<p><em>Deverá ter uma subscrição do Web of Science para que esta extensão funcione.<em></p>"
+		},
+		"footerSearch": {
+        "message": "Procurar"
+        },
+		"resetButton": {
+        "message": "Limpar campo"
+        },
+		"optionMSG": {
+        "message": "Definições"
+        },
+		"wosALLDB": {
+        "message": "<strong>Web of Science</strong> (Todas as bases de dados)"
+        },
+		"wosCC": {
+        "message": "<strong>Colecção Principal da Web of Science</strong>"
+        },
+		"placeHolder": {
+        "message": "Insira um tópico a pesquisar"
+        },
+		"contextLabel": {
+        "message": "Procurar Web of Science"
+        }
+
+}

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="X-NoPhoneParse" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="128x128" href="../../img/jabber/128.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="../../img/jabber/128.png">
+ <!-- <link rel="shortcut icon" sizes="196x196" href="nice-highres.png">
+  <link rel="apple-touch-icon-precomposed" sizes="128x128" href="niceicon.png">
+ -->
+
+  <script src="../bootstrap/bootstrap.js"></script>
+  <style>
+    html, body
+    {
+      overflow: hidden;
+    }
+    #engine
+    {
+      display: none;
+    }
+    #view
+    {
+      width:  100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+  <script>
+  window.addEventListener("load", function ()
+  {
+    var wnd = JSON.parse(localStorage["appWnd"] || "{}");
+    if (wnd["name"] != window.name)
+    {
+      if (wnd["name"])// && (Date.now() - wnd["last"] < 1000))
+        window.open(location.href + "#", wnd["name"]).close();
+    }
+    if (!window.name)
+      window.name = "W" + Date.now();
+    (function updateWnd() {
+      localStorage["appWnd"] = JSON.stringify({ "name": window.name, "last": Date.now() });
+      setTimeout(updateWnd, 500);
+    })();
+  });
+  </script>
+  <link href="../../css/base.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <iframe src="background.html?a=1" id="engine"></iframe>
+  <iframe src="app.html?a=2" id="view"></iframe>
+</body>
+</html>

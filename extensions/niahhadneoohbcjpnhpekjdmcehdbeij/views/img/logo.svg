@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="172" viewBox="0 0 288 172">
+    <defs>
+        <radialGradient cx="73.5" cy="45.9" fx="73.4594703%" fy="45.8789062%" r="91.2" id="radialGradient-1">
+            <stop stop-color="#ADD0E8" offset="0%"/>
+            <stop stop-color="#C5E1EF" offset="100%"/>
+        </radialGradient>
+        <radialGradient cx="64.3" cy="25.8" fx="64.2871094%" fy="25.7720588%" r="97" id="radialGradient-2">
+            <stop stop-color="#C5E1EF" offset="0%"/>
+            <stop stop-color="#A3C8E1" offset="100%"/>
+            <stop stop-color="#A2C7E0" offset="100%"/>
+        </radialGradient>
+        <radialGradient cx="70.9" cy="41.8" fx="70.9072266%" fy="41.8422965%" r="90.5" id="radialGradient-3">
+            <stop stop-color="#95B8E0" offset="0%"/>
+            <stop stop-color="#6688CF" offset="100%"/>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" fill="none">
+        <g id="Vector" transform="translate(0 -1)">
+            <polygon id="Right-Triangle" points="208 33 288 173 128 173" fill="url(#radialGradient-1)"/>
+            <polygon id="Left-Triangle" points="50 88 100 173 0 173" fill="url(#radialGradient-2)"/>
+            <g id="Middle-Triangle" transform="translate(37 0)">
+                <polygon points="99 1 198 173 0 173" fill="url(#radialGradient-3)"/>
+                <polygon id="Middle-Triangle---Top" points="74 44.3 86.6 66.4 101.3 42.3 109.7 55.4 119.7 37 99 0.9"
+                         fill="#BBDAEA"/>
+            </g>
+        </g>
+    </g>
+</svg>

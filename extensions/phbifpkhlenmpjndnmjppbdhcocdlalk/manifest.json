@@ -1,0 +1,60 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Followr",
+  "version": "1.3.0",
+  "manifest_version": 2,
+  "description": "A no-frills chrome extension to gain followers on twitter through tasteful automation.",
+  "homepage_url": "http://ztratar.github.io/followr/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+	"pages": [
+      "src/bg/background.html",
+      "src/tutorial/tutorial.html"
+	],
+    "scripts": [
+      "src/inject/underscore.js",
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "browser action demo",
+    "default_popup": "options.html"
+  },
+  "permissions": [
+	"storage",
+	"unlimitedStorage",
+    "http://twitter.com/*",
+    "https://twitter.com/*"
+  ],
+  "web_accessible_resources": [
+	"img/loader.gif",
+    "src/inject/jquery.min.map",
+	"src/inject/underscore-min.map"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+		"http://twitter.com/*",
+		"https://twitter.com/*"
+      ],
+      "css": [
+		"css/general.css",
+        "css/style.css"
+      ],
+      "js": [
+        "src/inject/jquery.js",
+        "src/inject/underscore.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ],
+  "options_page": "options.html",
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'"
+}

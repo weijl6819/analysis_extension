@@ -1,0 +1,49 @@
+.fetching-related-google--mod-hidden,
+[class*=hide-view] {
+  display: none !important;
+}
+.fetching-related-google--list-container {
+  margin: 5px 0 15px -10px;
+  border-color: #eeeeee;
+  border-style: solid;
+}
+.fetching-related-google--list-container legend {
+  color: #777777;
+}
+.fetching-related-google--list-container .fetching-related-google--list {
+  width: 528px;
+  margin-bottom: 5px;
+}
+.fetching-related-google--list-container .fetching-related-google--list .fetching-related-google--container {
+  margin-bottom: 15px;
+}
+.fetching-related-google--list-container .fetching-related-google--list .fetching-related-google--container:last-child {
+  margin-bottom: 0 !important;
+}
+.fetching-related-google--list-container .fetching-related-google--list .fetching-related-google--container .fetching-related-google--title {
+  display: block;
+  max-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.fetching-related-google--list-container .fetching-related-google--list .fetching-related-google--container .fetching-related-google--url {
+  display: block;
+  max-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.fetching-related-google--list-container .fetching-related-google--list .fetching-related-google--container .fetching-related-google--description {
+  display: block;
+  max-height: 36px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

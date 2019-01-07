@@ -1,0 +1,43 @@
+.social-facebook { background: #3b5998 !important; }
+.social-twitter { background: #4099ff !important; }
+.social-pinterest { background: #bd081c !important; }
+.social-button {
+  color: white;
+  display: inline-block;
+  margin: 0 0.25rem;
+  padding: 0.5rem;
+  width: 2.25rem;
+
+  i.fa {
+    font-size: 1rem;
+  }
+}
+
+#auth-form {
+  i {
+    font-size: 0.8rem;
+  }
+
+  input.ng-invalid { background: $maybe-no; }
+  input.ng-valid { background: $maybe-yes; }
+  input.ng-empty { background: none; }
+
+  &.ng-invalid .guidelines {
+    display: block;
+  }
+
+  .guidelines {
+    display: none;
+  }
+}
+
+#auth-modal,
+.share {
+  .links-container {
+    display: none;
+  }
+
+  img {
+    max-width: 10rem;
+  }
+}

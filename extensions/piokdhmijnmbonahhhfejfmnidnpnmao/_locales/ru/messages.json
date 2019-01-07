@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Переключатель Youtube™ на HD позволит вам выбрать качество воспроизведения видео на Youtube™."
+   },
+   "appName": {
+      "message": "Переключатель Youtube™ на HD"
+   },
+   "popupTitle":{
+   	"message": "Качество видео на youtube.com"
+   }
+}

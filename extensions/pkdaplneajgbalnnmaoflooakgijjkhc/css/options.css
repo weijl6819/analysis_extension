@@ -1,0 +1,105 @@
+body {
+  background-color: #F1F3FA !important;
+  font-size:12pt!important;
+}
+
+.container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: solid 2px #4B45DA;
+  margin-bottom: 1em;
+}
+
+.footer {
+  margin-top: 2em;
+  border-bottom: solid 2px #E4E4E4;
+}
+
+.spacer {
+  margin-top: 2em;
+}
+
+#status {
+  position: absolute;
+  width: 70%;
+  z-index: 10;
+}
+
+hr {
+  border: 0;
+  height:1px;
+  margin-bottom:15px;
+  color: #E4E4E4;
+  background-color: #E4E4E4;
+}
+
+h3, h4 {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 24pt;
+  color: #999999;
+}
+
+h4 {
+  color: #4B45DA;
+}
+
+.modules {
+  display: flex;
+}
+
+.module-left {
+  padding: 20px;
+  background: #fff;
+  margin-right: 2em;
+}
+
+.module-right {
+  padding: 20px;
+  background: #fff;
+}
+
+/**
+ * Account
+ */
+
+#account {
+  width: 40%;
+}
+
+/**
+ * Preferences
+ */
+
+#preferences {
+  width: 60%;
+}
+
+label {
+  display: block;
+  margin: 1em 0 0.5em 0;
+}
+
+select {
+  width: 50%;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  margin-bottom: 15px;
+  padding: 0.5em;
+  border: solid 1px #e5e5e5;
+  font-size: inherit;
+}
+
+#loader {
+  margin: 1em 0;
+}

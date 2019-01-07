@@ -1,0 +1,42 @@
+@import "~less/variables.less";
+.auto-complete-wrapper {
+    position: absolute;
+    bottom: -162px;
+    left: 0;
+    right: 0;
+    height: 163px;
+    z-index: 2;
+    overflow-y: scroll;
+    background-color: #fff;
+    border: 1px solid @lightGrey;
+   .auto-complete {
+    height: 100%;
+    width: 100%;
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      width: 100%;
+      padding: 15px;
+      border-bottom: 1px solid @lightGrey;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      h3 {
+        color: @midnight;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: left;
+        &.email {
+          color: @midnight;
+        }
+      }
+      &.active {
+        background-color: @lightGrey;
+      }
+    }
+  }
+}

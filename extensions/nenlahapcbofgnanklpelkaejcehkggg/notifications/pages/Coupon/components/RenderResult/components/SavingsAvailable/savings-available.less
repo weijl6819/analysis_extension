@@ -1,0 +1,153 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy {
+  .savings-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    h2 {
+      padding-top: 18px;
+      font-size: 28px;
+    }
+    h6.center {
+      text-align: center;
+    }
+    .view-codes-link-wrapper {
+      text-align: center;
+      h6 {
+        display: inline-block;
+        transition: all 0.3s ease;
+        vertical-align: top;
+        padding-top: 3px;
+        &.clickable {
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+          &:active {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    .center-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .savings-breakdown {
+        border-bottom: 1px solid #F4F4F4;
+        border-top: 1px solid #F4F4F4;
+        padding: 25px 0;
+        width: 100%;
+        margin-top: -20px;
+        &.flex-center {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          padding-bottom: 23px;
+          .code-scroll-container {
+            max-height: 145px;
+            overflow: scroll;
+          }
+        }
+        &.reward {
+          border-top: none;
+          margin-bottom: 20px;
+        }
+        h3 {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .antialiased {
+        -webkit-font-smoothing: antialiased;
+        padding-bottom: 5px;
+        color: @silver;
+      }
+      
+    }
+    .dismiss-notif {
+      text-align: center;
+    }
+    .view-codes { 
+      position: absolute;
+      background: #fff;
+      left: 0;
+      right: 0;
+      top: 136px;
+      bottom: 60px;
+      overflow: scroll;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      animation: CouponfadeIn 300ms ease forwards;
+      z-index: 1;
+    }
+    ::-webkit-scrollbar { 
+      display: none; 
+    }
+    .coupon-list-item-container {
+      opacity: 0;
+      padding: 1px;
+      animation: CouponfadeIn 300ms ease forwards;
+      margin-bottom: 8px;
+      .code {
+        padding: 5px 12px;
+        border-radius: 3px;
+        display: table;
+        background: rgba(1, 192, 73, 0.10);
+        opacity: 1;
+        transition: all 0.3s ease;
+        color: @palmetto;
+        border: 1px solid @palmetto;
+        font-size: 14px;
+        cursor: pointer;
+        position: relative;
+        .copied-state {
+          position: absolute;
+        }
+        .hidden {
+          display: none;
+        }
+        .copied-text {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      &.copied {
+        .code {
+          background: rgba(159, 159, 159, 0.1);
+          color: @silver;
+          border: 1px solid transparent;
+        }
+        .hidden {
+          display: block;
+          visibility: hidden;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@keyframes CouponfadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

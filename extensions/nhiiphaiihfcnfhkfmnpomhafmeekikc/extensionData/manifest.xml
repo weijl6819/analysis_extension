@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CrAppInfo>
+  <Ver>30</Ver>
+  <ShortName>ChatterBox</ShortName>
+  <Description>Comment on any website</Description>
+  <PublisherName>Dan Herbert</PublisherName>
+  <HomePageLink>NA</HomePageLink>
+  <JSLink>https://w9u6a2p6.ssl.hwcdn.net/plugin/apps/72085/js/na/ch/app_code.js</JSLink>
+  <GroupID>0</GroupID>
+  <Domain>NA</Domain>
+  <RunInIframe>false</RunInIframe>
+  <ThanksURL>NA</ThanksURL>
+  <EmailSignature>NA</EmailSignature>
+  <SettingsURL>NA</SettingsURL>
+  <CertifiedInstall>NA</CertifiedInstall>
+  <ExposeSites>NA</ExposeSites>
+  <RemoteFBApiURL>NA</RemoteFBApiURL>
+  <DisableIE>true</DisableIE>
+  <DisableFF>true</DisableFF>
+  <EnableSearchIE>false</EnableSearchIE>
+  <EnableSearchFF>false</EnableSearchFF>
+  <AddressbarIE>NA</AddressbarIE>
+  <AddressbarFF>NA</AddressbarFF>
+  <AddressbarFFEnhanced>NA</AddressbarFFEnhanced>
+  <AddressbarCR>NA</AddressbarCR>
+  <NewTabURL>NA</NewTabURL>
+  <NewTabEmbed>NA</NewTabEmbed>
+  <OpenSearchURL>NA</OpenSearchURL>
+  <BackgroundJS>https://w9u6a2p6.ssl.hwcdn.net/plugin/apps/72085/bg/na/ch/bg_code.js</BackgroundJS>
+  <BackgroundVer>7</BackgroundVer>
+  <Manifest>NA</Manifest>
+  <ChangePrevious>false</ChangePrevious>
+  <UpdateInterval>360</UpdateInterval>
+  <SetNewTabFF>false</SetNewTabFF>
+  <SetNewTabIE>false</SetNewTabIE>
+  <PluginsUrl>https://w9u6a2p6.ssl.hwcdn.net/plugin/apps/72085/plugins/na/ch/plugins.json</PluginsUrl>
+  <PluginsVer>3</PluginsVer>
+  <PublisherId>34430</PublisherId>
+  <FbAppId>NA</FbAppId>
+  <ModeType>production</ModeType>
+  <IeButtonEnabled>true</IeButtonEnabled>
+  <UninstallerOfferUrl>NA</UninstallerOfferUrl>
+  <UninstallerOfferAction>NA</UninstallerOfferAction>
+</CrAppInfo>

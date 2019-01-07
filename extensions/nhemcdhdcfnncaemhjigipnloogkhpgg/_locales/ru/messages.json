@@ -1,0 +1,8 @@
+{
+    "chrome_extension_name": {
+        "message": "if ipv6"
+    },
+    "chrome_extension_description": {
+        "message": "Расширение проверяет по какой версии ip открыт сайт в данный момент. Помогает проверить работоспособность ipv6"
+    }
+}

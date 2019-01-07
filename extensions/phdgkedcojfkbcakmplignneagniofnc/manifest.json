@@ -1,0 +1,11 @@
+{"icons": {"128": "128-icons.png"}, 
+"description": "Get Accurate Weather, FNAF Five Nights At Freddy's 4K Wallpapers, Clock, Time, Date And More With Five Nights At Freddy's New Tab", 
+"manifest_version": 2, 
+"default_locale": "en", 
+"background": {"scripts": ["back_js.js"]}, 
+"chrome_url_overrides": {"newtab": "new_home.html"}, 
+"version": "2.3.4", 
+"name": "__MSG_headNew__", 
+"update_url": "https://clients2.google.com/service/update2/crx", 
+"browser_action": {"default_icon": "128-icons.png", 
+"default_title": "FNAF Five Nights At Freddy's Themes - New Tab"}}

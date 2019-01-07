@@ -1,0 +1,11 @@
+{
+   "chrome_extension_description": {
+      "message": "Esta ampliación pone de relieve las palabras clave de búsqueda de Google en páginas web."
+   },
+   "chrome_extension_name": {
+      "message": "Palabras clave para  enfatizar"
+   },
+   "chrome_extension_title": {
+      "message": "Palabras clave para  enfatizar"
+   }
+}

@@ -1,0 +1,168 @@
+{
+  "extensionDescription": {"message":"Downloader & Seedbox. Premium link generator and torrent downloading."},
+
+  "plural":{
+    "message":"s",
+    "description": "Plural of words with plural placeholder"
+  },
+
+  "month":{
+    "message":"Month$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Month|Months"
+      }
+    }
+  },
+  "week":{
+    "message":"Week$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Week|Weeks"
+      }
+    }
+  },
+  "day":{
+    "message":"Day$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Day|Days"
+      }
+    }
+  },
+  "hour":{
+    "message":"Hour$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Hour|Hours"
+      }
+    }
+  },
+  "minute":{
+    "message":"Minute$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Minute|Minutes"
+      }
+    }
+  },
+  "second":{
+    "message":"Second$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Second|Seconds"
+      }
+    }
+  },
+
+  "error":{"message":"Error"},
+  "send_progress": {"message":"Sending in progress"},
+  "added_success": {"message":"Successfully added"},
+  "copied_to_clipboard":{"message":"Copied into clipboard"},
+  "send_to_seedbox":{"message": "Send to seedbox"},
+  "debrid_with_debridlink":{"message": "Download with Debrid-Link"},
+  "watch_with_debridlink":{"message": "Watch with Debrid-Link"},
+  "debrid_and_copy": {"message": "Generate and copy into clipboard"},
+  "check_or_uncheck_all": {"message": "Check / uncheck all"},
+
+  "downloader": {"message":"Downloader"},
+  "account":{"message": "Account"},
+  "settings":{"message": "Settings"},
+  "reportBug":{"message": "Report a bug"},
+
+  "download":{"message":"Download"},
+  "watch":{"message": "Watch"},
+  "generate":{"message":"Generating ..."},
+  "generated":{"message":"Generated"},
+  "startTranscoding":{"message":"Start transcoding ..."},
+  "generate_links_progress":{"message":"Generating link(s) ..."},
+  "links": {"message": "Link(s)"},
+  "download_all":{"message":"Download all"},
+  "back":{"message":"Back"},
+  "start_downloads": {"message": "Start download(s)"},
+
+  "account_infos": {"message": "Account infos"},
+  "account_user":{"message":"Pseudo"},
+  "account_type":{"message":"Account type"},
+  "account_upgrade": {"message":"Upgrade account"},
+  "account_logout":{"message":"Logout"},
+
+  "downloader_detect_link":{"message":"Detection of links"},
+  "downloader_no_link_page":{"message": "No links found on the page"},
+  "check_all":{"message":"Check all"},
+  "download_checked":{"message": "Download all checked"},
+  "downloader_old_links": {"message": "Recent link(s)"},
+  "downloader_no_old_links": {"message": "No recent link found"},
+  "downloader_type_host": {
+    "message":"File host$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"File host|File hosts"
+      }
+    }
+  },
+  "downloader_type_stream": {"message": "Streaming"},
+  "downloader_type_protect": {
+    "message":"Protector$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Protector|Protectors"
+      }
+    }
+  },
+
+  "your_torrents":{"message":"Your torrents"},
+  "load_progress":{"message":"Loading in progress ..."},
+  "files": {"message": "File(s)"},
+  "downloading": {"message": "Downloading"},
+
+  "settings_addon":{"message":"Settings"},
+  "settings_general":{"message":"General"},
+  "settings_right_click_debrid":{"message":"Suggest to download the link when right click"},
+  "settings_one_click_link": {"message": "Suggest to download or watch when hover links"},
+  "settings_right_click_stream":{"message":"Suggest to watch the link when right click"},
+  "settings_one_click_iframe": {"message": "Replace embed players"},
+  "settings_right_click_copy":{"message":"Suggest to copy generated link into clipboard when right click"},
+  "settings_download_browser":{"message":"Download files with the browser download manager"},
+  "settings_download_auto_close":{"message":"Auto close new tab opened when download. (Under test, can be unstable)"},
+  "settings_detect_link_page":{"message":"Find links in page"},
+  "settings_detect_link_tab":{"message":"Find link in current tab"},
+  "settings_download_file":{"message":"Download files after generated"},
+  "settings_notif_add_torrent":{"message":"Display notification when you download torrent to add it in the seedbox"},
+  "settings_hosts_detection": {"message": "Hosts detection"},
+  "settings_hosts_detection_infos": {"message": "Select the hosts to detect:"},
+
+  "plugin_updated":{"message":"Plugin updated"},
+  "plugin_view_changelog":{"message": "Read changelog"},
+
+  "badLink": {"message": "The link is not supported"},
+  "notDebrid": {"message": "The file is not generated"},
+  "fileNotFound": {"message": "The file is not found on the host"},
+  "badFileUrl": {"message": "The url format is not valid"},
+  "hostNotValid": {"message": "Host does not seem to be supported"},
+  "disabledHost": {"message": "This host is under maintenance"},
+  "noGetFilename": {"message": "Unable to receive filename"},
+  "notFreeHost": {"message": "This host is not available with free account."},
+  "notGetTorrentFile": {"message": "Unable to receive torrent file"},
+  "badTorrentFile": {"message": "This file is not a torrent file"},
+  "notAddTorrent": {"message": "Unable to add torrent."},
+  "notPts": {"message": "You don't have enough points on your account"},
+  "duplicateTorrent": {"message": "This torrent is already added"},
+  "needPremium": {"message": "You need to upgrade your account to access this functionality"},
+  "badToken": {"message": "You must be logged."},
+  "maxLink": {"message": "You have added too many links. Please wait 24H"},
+  "maxLinkHost": {"message": "Maximum number of links reached for this host today"},
+  "freeServerOverload": {"message": "The free user servers are overloaded. Please retry in few minutes"},
+  "serverNotAllowed": {"message": "Dedicated servers are not allowed. Contact us"},
+  "disabledServerHost": {"message": "This host is not available from a VPN. Contact us"},
+  "maxFilesTorrent": {"message": "Too many files on this torrent"},
+  "noMediaInSelection": {"message": "Selected files are invalid to stream. Must be downloaded."}
+}

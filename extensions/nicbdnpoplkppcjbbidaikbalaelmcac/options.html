@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/options.css" />
+<title>YubNubEx – Options</title>
+</head>
+
+<body>
+	<img src="img/YubNubExFullLogo.png" />
+
+	<h2>Local saved commands</h2>
+	<div id="options-view">
+		<table>
+			<thead>
+				<tr><th>Alias</th><th>Command</th><th></th></tr>
+			</thead>
+
+			<tbody id="commands-table">
+			</tbody>
+			<tbody>
+				<tr>
+					<td><input id="new-cmd-trigger" type="text" /></td>
+					<td class="cmd-exec"><input id="new-cmd-exec" type="text" /></td>
+					<td><button id="save-new-cmd">Add New</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br />
+		<button id="clear-all-cmds">Clear all commands</button>
+	</div>
+</body>
+
+
+<script type="text/template" id="command-template">
+	<td><%- trigger %></td>
+	<td class="cmd-exec"><%- exec %></td>
+	<td><button class="remove-cmd">Remove</button></td>
+</script>
+<script src="js/jslib/jquery-1.9.1.js"></script>
+<script src="js/jslib/underscore.js"></script>
+<script src="js/jslib/backbone.js"></script>
+<script src="js/jslib/backbone.chromestorage.js"></script>
+<script src="js/commandModel.js"></script>
+<script src="js/optionsView.js"></script>
+
+</html>

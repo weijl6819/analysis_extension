@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coinbag popup</title>
+    <link rel="stylesheet" href="css/selectivity-jquery.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <!--<script defer src="javascript/libs/fontawesome-all.min.js"></script>-->
+</head>
+<body>
+<script type="x-template" id="no-item-tmp">
+    <div class="no-item">
+
+    </div>
+</script>
+<script type="x-template" id="list-item-tmp">
+    <div class="list-item">
+        <div class="name">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="symbol"></div>
+            <div class="full-name"></div>
+        </div>
+        <div class="price"></div>
+        <div class="market-cap"></div>
+        <div class="price-graph">
+            <div class="change"></div>
+            <div class="graph-div"></div>
+        </div>
+        <div class="action-area">
+            <div class="action-btn watch watch-btn" title="Add to Watchlist"></div>
+            <!--<div class="action-toggle-btn">-->
+            <!--<div class="dots">-->
+            <!--<div class="dot"></div>-->
+            <!--<div class="dot"></div>-->
+            <!--<div class="dot"></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="action-panel">-->
+            <!--<div class="add-btn-wrapper">-->
+            <!--<div class="action-btn add-btn" title="Add to My coins"></div>-->
+            <!--<div class="add-input">-->
+            <!--<input type="text" placeholder="Coin Number">-->
+            <!--<div class="add-input-action-btn add-input-btn"></div>-->
+            <!--<div class="add-input-action-btn add-input-cancel-btn"></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="action-btn watch watch-btn" title="Add to Watchlist"></div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</script>
+
+<script type="x-template" id="capital-history-item-tmp">
+<div class="capital-history-item">
+   <div class="type"></div>
+    <div class="amount"></div>
+    <div class="time"></div>
+</div>
+</script>
+
+<script type="x-template" id="guide-add-coin-item-tmp">
+<div class="guide-add-coin-item">
+    <div class="name">
+        <div class="symbol"></div>
+        <div class="full-name"></div>
+    </div>
+    <div class="num"></div>
+</div>
+</script>
+
+<script type="x-template" id="manage-list-item-tmp">
+    <div class="list-item manage">
+        <div class="name">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="symbol"></div>
+            <div class="full-name"></div>
+        </div>
+        <div class="price"></div>
+        <div class="num">
+
+        </div>
+        <div class="action-area">
+           <div class="action-btn edit"></div>
+            <!--<div class="action-btn remove"></div>-->
+        </div>
+    </div>
+</script>
+<script type="x-template" id="loading-tmp">
+    <div class="loading">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+</script>
+<script type="x-template" id="item-loading-tmp">
+    <div class="item-loading">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+</script>
+<script type="x-template" id="country-code-item-tmp">
+    <div class="country-code-item">
+        <div class="country-name"></div>
+        <div class="country-num"></div>
+    </div>
+</script>
+
+
+<script type="x-template" id="add-coin-item-tmp">
+
+    <div class="list-item add active">
+        <div class="name">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="symbol"></div>
+            <div class="full-name"></div>
+        </div>
+        <div class="price"></div>
+        <div class="action-area">
+            <div class="action-panel owned">
+                <div class="add-btn-wrapper">
+                    <div class="action-btn add-btn" title="Add to My coins"></div>
+                    <div class="add-input">
+                        <input type="text" tabindex="-1" placeholder="Coin Number">
+                        <div class="add-input-btn"></div>
+                        <div class="add-input-cancel-btn"></div>
+                    </div>
+                </div>
+                <div class="show-num">0.89</div>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+<script type="x-template" id="owned-coin-item-tmp">
+    <div class="list-item owned">
+        <div class="name">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="symbol"></div>
+            <div class="full-name"></div>
+        </div>
+        <div class="price-num">
+            <div class="price"></div>
+            <div class="num"></div>
+        </div>
+        <div class="total-value">
+
+        </div>
+        <div class="price-graph">
+            <div class="change"></div>
+            <div class="graph-div"></div>
+        </div>
+        <div class="action-area">
+            <!--<div class="action-btn remove" title="Remove from Owned Coins"></div>-->
+            <!--<div class="action-toggle-btn">-->
+            <!--<div class="dots">-->
+            <!--<div class="dot"></div>-->
+            <!--<div class="dot"></div>-->
+            <!--<div class="dot"></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="action-panel">-->
+            <!--<div class="add-btn-wrapper">-->
+            <!--<div class="add-input">-->
+            <!--<input type="text" tabindex="-1" placeholder="Coin Number">-->
+            <!--<div class="add-input-action-btn add-input-btn"></div>-->
+            <!--<div class="add-input-action-btn add-input-cancel-btn"></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</script>
+
+<script type="x-template" id="watch-coin-item-tmp">
+    <div class="list-item watch">
+        <div class="name">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="symbol"></div>
+            <div class="full-name"></div>
+        </div>
+        <div class="price"></div>
+        <div class="market-cap"></div>
+        <div class="price-graph">
+            <div class="change"></div>
+            <div class="graph-div"></div>
+        </div>
+        <div class="action-area">
+            <div class="action-btn remove" title="Remove from Watchlist"></div>
+            <!--<div class="action-toggle-btn">-->
+            <!--<div class="dots">-->
+            <!--<div class="dot"></div>-->
+            <!--<div class="dot"></div>-->
+            <!--<div class="dot"></div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="action-panel">-->
+            <!--<div class="add-btn-wrapper">-->
+            <!--&lt;!&ndash;<div class="action-btn add-btn" title="Add to My coins"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="add-input">&ndash;&gt;-->
+            <!--&lt;!&ndash;<input type="text" placeholder="Coin Number">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="add-input-btn"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="add-input-cancel-btn"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+</script>
+<div class="modal-wrapper" id="modal-wrapper">
+    <div class="modal">
+        <div class="modal-close" id="modal-close">+</div>
+        <div class="modal-content" id="add-init-coin">
+            <div class="modal-head">Add a coin</div>
+            <div class="modal-inner-content">
+                <div class="modal-input select">
+                    <div class="modal-input-label">Coin</div>
+                    <div id="add-init-coin-select" class="modal-select"></div>
+                    <!--<input tabindex="-1" type="text" placeholder="Coin name" id="add-init-coin-input">-->
+                    <div class="arrow"></div>
+                </div>
+                <div class="modal-input">
+                    <div class="modal-input-label">Amount</div>
+                    <input tabindex="-1" type="text" placeholder="0.00" id="add-init-amount-input">
+                </div>
+
+                <div class="modal-btn-area">
+                    <div class="modal-btn" id="add-init-save">
+                        Add
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content" id="add-manage-coin">
+            <div class="modal-head">Add a coin</div>
+            <div class="modal-inner-content">
+                <div class="modal-input select">
+                    <div class="modal-input-label">Coin</div>
+                    <div id="add-manage-coin-select" class="modal-select"></div>
+                    <!--<input tabindex="-1" type="text" placeholder="Coin name" id="add-init-coin-input">-->
+                    <div class="arrow"></div>
+                </div>
+                <div class="modal-input">
+                    <div class="modal-input-label">Amount</div>
+                    <input tabindex="-1" type="number" placeholder="0.00" id="add-manage-amount-input">
+                </div>
+
+                <div class="modal-btn-area">
+                    <div class="modal-btn" id="add-manage-save">
+                        Add
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content" id="edit-coin">
+            <div class="modal-head">Edit <span id="edit-coin-name"></span> Amount</div>
+            <div class="modal-inner-content">
+                <div class="modal-input">
+                    <div class="modal-input-label">Amount</div>
+                    <input tabindex="-1" type="number" placeholder="0.00" id="edit-input">
+                </div>
+
+                <div class="modal-btn-area">
+                    <div class="modal-btn" id="edit-coin-save">
+                        Save
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-content" id="add-transfer">
+            <div class="modal-head">Add a transfer</div>
+            <div class="modal-inner-content">
+                <div class="modal-input">
+                    <label for="transfer-in" class="modal-radio invest">
+                        <input value="in" type="radio" checked name="in-out" id="transfer-in">
+                        Invest
+                        <b></b>
+                    </label>
+                    <label for="transfer-out" class="modal-radio cash-out">
+                        <input value="out" type="radio" name="in-out" id="transfer-out">
+                        Cash out
+                        <b></b>
+                    </label>
+                </div>
+                <div class="modal-input">
+                    <div class="modal-input-label">Amount</div>
+                    <input tabindex="-1" type="number" placeholder="0.00" id="transfer-amount-input">
+                </div>
+                <div class="modal-input">
+                    <div class="modal-input-label">Time</div>
+                    <input tabindex="-1" type="text" placeholder="Select a time" id="transfer-time-input">
+                </div>
+                <div class="modal-btn-area">
+                    <div class="modal-btn" id="add-transfer-save">
+                        Save
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="notify" id="notify">
+</div>
+<div class="container">
+    <div class="container-inner" id="container-inner">
+
+        <div class="main-area">
+            <div class="switch">
+                <div class="switch-item" data-tab="my-coins">
+                    My Coins
+                </div>
+                <div class="switch-item active" data-tab="all-coins">
+                    All Coins
+                </div>
+                <div class="user-area">
+                    <div class="username" id="username"></div>
+                    <ul class="user-menu">
+                        <li id="sign-out">Log out</li>
+                    </ul>
+                </div>
+                <div class="sign-in-area">
+                    <div class="sign-in-btn" id="sign-up-btn">Sign Up</div>
+                    <div class="sign-in-btn-sep">|</div>
+                    <div class="sign-in-btn" id="sign-in-btn">Log In</div>
+                </div>
+                <div class="feedback-btn" id="feedback-btn">Feedback</div>
+            </div>
+            <div class="tab-area" id="my-coins-area">
+                <div class="inner-container">
+                    <div class="loading">
+                        <div class="spinner">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                        </div>
+                    </div>
+                    <div class="no-coin">
+                        <div class="add-coin-btn">
+                            + Add Coins
+                        </div>
+                    </div>
+
+                    <div class="my-coin-info">
+                        <div class="total" id="total">
+                            <span class="total-num">US$0</span>
+
+                            <span class="total-change">
+                                <span class="change"></span>
+                                <span class="time"></span>
+                            </span>
+                        </div>
+                        <div class="total-graph" id="total-graph"></div>
+                        <div class="graph-switch">
+                            <div class="graph-switch-item active" data-type='24h'>24H</div>
+                            <div class="graph-switch-item" data-type='7d'>7D</div>
+                            <div class="graph-switch-item" data-type='1m'>1M</div>
+                            <div class="graph-switch-item" data-type='3m'>3M</div>
+                            <div class="graph-switch-item" data-type='1y'>1Y</div>
+                            <div class="graph-switch-item" data-type='all'>ALL</div>
+                        </div>
+                    </div>
+                    <div class="manage-btn" id="manage-btn">Manage Portfolio</div>
+                    <div class="my-coin-container">
+                        <div class="sub-title">
+                            <div class="icon owned"></div>
+                            Owned Coins
+
+                            <!--<div class="add-to-list-btn">-->
+                            <!--+-->
+                            <!--</div>-->
+                        </div>
+                        <div class="sub-container owned-coin-container">
+
+                        </div>
+                        <div class="sub-title">
+                            <div class="icon watch"></div>
+                            Watchlist
+                            <!--<div class="add-to-list-btn">-->
+                            <!--+-->
+                            <!--</div>-->
+                        </div>
+                        <div class="sub-container watchlist-container">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-area" id="all-coins-area">
+                <div class="search-bar">
+                    <div class="search-inner">
+                        <div class="search-icon"></div>
+                        <input type="text" tabindex="-1" placeholder="Search for coins" id="search-all-coins">
+                    </div>
+
+                </div>
+                <div class="coin-list">
+                    <div class="list-item list-header">
+                        <div class="name">Name</div>
+                        <div class="price">Price (USD)</div>
+                        <div class="market-cap">Market Cap</div>
+                        <div class="price-graph">24H Change</div>
+                    </div>
+                    <div class="list-container" id="list-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-area">
+            <div class="login-area">
+                <div class="tip-box"></div>
+                <div class="top-bar">
+                    <div class="logo"></div>
+                    <!--<div class="name">COINBAG</div>-->
+                    <div class="back"></div>
+                </div>
+                <div class="title">Log In</div>
+                <div class="sign-in-form">
+                    <div class="form-input phone-number" id="sign-in-phone-number-input">
+                        <div class="input-box">
+                            <div class="icon"></div>
+                            <div class="phone-code-wrapper">
+                                <label class="phone-code-label" id="sign-in-phone-code-label" for="sign-in-phone-code"></label>
+                                <input type="text" tabindex="-1" class="phone-code-input" id="sign-in-phone-code">
+                                <!--<b></b>-->
+                            </div>
+                            <!--<div class="form-input-sep">|</div>-->
+                            <input tabindex="1" type="text" class="phone-input" id="phone-input" placeholder="Phone Number">
+                        </div>
+                        <div class="suggestion-box" id="country-code-suggestion">
+                            <div class="suggestion-box-prior"></div>
+                            <div class="suggestion-box-normal"></div>
+                        </div>
+                    </div>
+                    <div class="form-input password">
+                        <div class="input-box">
+                            <div class="icon"></div>
+                            <input type="password" tabindex="2" id="password-input" placeholder="Password">
+                            <div class="show-password" id="show-password"></div>
+                        </div>
+                    </div>
+
+                    <div class="sign-btn disabled" id="sign-in">
+                        Log In
+                    </div>
+                </div>
+            </div>
+            <div class="sign-up-area">
+                <div class="tip-box"></div>
+                <div class="top-bar">
+                    <div class="logo"></div>
+                    <!--<div class="name">COINBAG</div>-->
+                    <div class="back"></div>
+                </div>
+                <div class="title">Sign Up</div>
+                <div class="sign-in-form" id="sign-up-form">
+                    <div class="form-input username">
+                        <div class="input-box">
+                            <div class="icon"></div>
+                            <input type="text" tabindex="1" placeholder="Nickname" class="username" id="sign-up-username">
+                        </div>
+                    </div>
+                    <div class="form-input phone-number" id="sign-up-phone-number-input">
+                        <div class="input-box">
+                            <div class="icon"></div>
+                            <div class="phone-code-wrapper">
+                                <label class="phone-code-label" id="sign-up-phone-code-label" for="sign-up-phone-code"></label>
+                                <input type="text" tabindex="-1" class="phone-code-input" id="sign-up-phone-code">
+                                <!--<b></b>-->
+                            </div>
+                            <!--<div class="form-input-sep">|</div>-->
+                            <input tabindex="2" type="text" class="phone-input" id="sign-up-phone-input" placeholder="Phone Number">
+                        </div>
+                        <div class="suggestion-box" id="country-code-suggestion">
+                            <div class="suggestion-box-prior"></div>
+                            <div class="suggestion-box-normal"></div>
+                        </div>
+                    </div>
+                    <div class="form-input secure-code">
+                        <div class="input-box">
+                            <div class="icon"></div>
+                            <input type="text" tabindex="3" class="" id="secure-code-input" placeholder="Secure Code">
+                            <div class="send-btn" id="secure-code-send">Send</div>
+                            <div class="secure-time-count" id="secure-time-count"></div>
+                        </div>
+                    </div>
+                    <div class="form-input password">
+                        <div class="input-box">
+                            <div class="icon"></div>
+                            <input type="password" tabindex="4" id="sign-up-password-input" placeholder="Password">
+                            <div class="show-password" id="show-password"></div>
+                        </div>
+                    </div>
+
+                    <div class="sign-btn disabled" id="sign-up">
+                        Sign Up
+                    </div>
+                </div>
+            </div>
+            <div class="add-area">
+                <div class="top-bar">
+                    <div class="search-wrapper">
+                        <div class="search-bar">
+                            <div class="search-inner">
+                                <div class="search-icon"></div>
+                                <input tabindex="-1" type="text" placeholder="Search for coins" id="search-add-coins">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="back"></div>
+                </div>
+                <div class="item-container" id="item-container">
+
+                </div>
+            </div>
+            <div class="manage-area">
+                <div class="top-bar">
+                    <div class="top-bar">
+                        Manage Portfolio
+                        <div class="back"></div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="guide" id="guide" data-step="0">
+                        <div class="step-container" id="step-container" >
+                            <div class="step step-0">
+                                <div class="init-portfolio-btn" id="init-portfolio-btn">
+                                    Initialize Portfolio
+                                </div>
+                            </div>
+                            <div class="step step-1">
+                                <div class="ques">
+                                    <p>How much did you invest in?</p>
+                                    <div class="input-box">
+
+                                        $<input tabindex="-1" type="number" id="guide-invest" value="0">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="step step-2">
+                                <div class="ques">
+                                    <p>How much did you cash out?</p>
+                                    <div class="input-box">
+
+                                        $<input tabindex="-1" type="number" id="guide-cash-out" value="0">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="step step-3">
+                                <div class="ques">
+                                    <p>What coins are you holding now?</p>
+                                </div>
+                                <div class="guide-add-coin-container">
+
+                                </div>
+                                <div class="init-portfolio-btn" id="init-add-btn">
+                                   + Add coins
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-area">
+                            <div class="prev-btn">Previous</div>
+                            <div class="next-btn">Next</div>
+                            <div class="finish-btn" id="guide-finish">Finish</div>
+                        </div>
+                    </div>
+                    <div class="main" id="manage-main">
+                        <div class="tab-list">
+                            <div class="tab-list-item active" data-tab="assets">
+                                Assets
+                            </div>
+                            <div class="tab-list-item" data-tab="in-out">
+                                In&Out
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <div class="tab-item active" data-tab="assets">
+                                <div class="add-manage-btn" id="add-manage-coin-btn">+</div>
+                                <div class="total-asset">
+                                    Total asset value:
+                                    <span id="total-asset">$657548</span>
+                                </div>
+                                <div class="us-dollar">
+                                    <div class="name">
+                                        <div class="icon"></div>
+                                        US Dollar
+                                    </div>
+                                    <div class="value">
+                                        $287847
+                                    </div>
+                                    <div class="tip">
+                                        Stored in exchanges
+                                    </div>
+                                </div>
+                                <div class="manage-coin-container" id="manage-coin-container">
+
+                                </div>
+                            </div>
+                            <div class="tab-item" data-tab="in-out">
+                                <div class="add-manage-btn" id="add-cash">+</div>
+                                <div class="in-out-info">
+                                    <div class="block invest-block">
+                                        <div class="title">Invest</div>
+                                        <div class="value" id="invest-value">$38383</div>
+                                    </div>
+                                    <div class="block cash-out-block">
+                                        <div class="title">Cash out</div>
+                                        <div class="value" id="cash-out-value">$38383</div>
+                                    </div>
+                                </div>
+
+                                <div class="capital-history-container" id="capital-history-container">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="javascript/libs/jquery-3.2.1.min.js"></script>
+<script src="javascript/libs/moment.js"></script>
+<script src="javascript/libs/echarts.common.min.js"></script>
+<script src="javascript/libs/selectivity-jquery.min.js"></script>
+<script src="javascript/libs/datepicker.min.js"></script>
+<script src="javascript/popup.js"></script>
+</body>
+</html>

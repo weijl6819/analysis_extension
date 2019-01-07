@@ -1,0 +1,274 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+
+.of_search_btn
+{
+    float: right;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 19px;
+}
+
+.of_search_order_btn
+{
+    float: right;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 19px;
+}
+
+.of_view_order_btn
+{
+    float: right;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 19px;
+}
+
+.of_view_order_link
+{
+    float: right;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 19px;
+}
+
+.of_open_order_btn, .of_search_in_progress_btn
+{
+    float: right;
+    background: orange;
+    padding: 8px;
+    border: 1px solid #bc7f0f;
+    border-radius: 6px;
+    cursor: pointer;
+    line-height: 19px !important;
+    display: none;
+}
+
+.of_order_not_found_btn
+{
+    float: right;
+    padding: 8px;
+    border: 1px solid rgb(169, 68, 66);
+    border-radius: 6px;
+    line-height: 19px !important;
+
+}
+
+a.styleless, a.styleless:active, a.styleless:hover, a.styleless:visited, a.styleless:focus
+{
+    text-decoration: none;
+    color: black !important;
+}
+
+.of_loading_gif
+{
+    width: 30px;
+}
+
+.of_refresh_icon
+{
+    width: 16px;
+    margin-left: 3px;
+}
+
+#of_login_failed
+{
+    display: none;
+}
+
+.black_forced
+{
+    color: black !important;
+}
+
+.of_loader
+{
+    display: none;
+    text-align: center;
+}
+.of_loader img
+{
+    width: 16px;
+}
+
+.to_left
+{
+    width: 35%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.to_right
+{
+    width: 65%;
+    float: left;
+    padding: 10px;
+}
+
+.float_left_50
+{
+    float: left;
+    width: 50%;
+}
+
+.to_login
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.to_options
+{
+    margin: 20px 0;
+}
+
+.to_blue_input
+{
+/*    background: #76baf5 !important;*/
+/*    border: #2256b5 !important;*/
+    height: 38px !important;
+    width: 90%;
+}
+
+.to_login_btn_div
+{
+    text-align: right;
+    width: 40%;
+}
+
+#to_login_btn
+{
+    min-width: 100px;
+}
+
+.to_forgot
+{
+    text-align: center;
+}
+
+.to_options_link
+{
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 5px;
+    color: black;
+}
+
+.to_link_yellow
+{
+    background-color: #ffcc00;
+}
+
+.to_link_yellow_dark
+{
+    background-color: #ffcc33;
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 122, 183);
+    border-color: rgb(46, 109, 164);
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0px;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear;
+}
+
+.modal.in .modal-dialog {
+    transform: translate(0px, 0px);
+}
+
+.modal.fade .modal-dialog {
+    transform: translate(0px, -25%);
+    transition: transform 0.3s ease-out;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-image: initial;
+    border-radius: 6px;
+    outline: 0px;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-title {
+    line-height: 1.42857;
+    margin: 0px;
+}
+
+.modal-footer {
+    text-align: right;
+    padding: 15px;
+    border-top: 1px solid rgb(229, 229, 229);
+}
+
+a.to_options_link, a.to_options:visited, a.to_options:valid, a.to_options:hover, a.to_options:focus
+{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+#to_error, #to_success
+{
+    display: none;
+}
+
+#to_error .alert, #to_success .alert
+{
+    width: 90%;
+}

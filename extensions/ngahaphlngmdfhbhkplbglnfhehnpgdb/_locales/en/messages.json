@@ -1,0 +1,68 @@
+{
+    "ext_name": {
+	    "message": "Ads Blocker"
+    },
+	"ext_name_short": {
+	    "message": "AdsBlocker"
+    },
+    "ext_description": {
+	    "message": "Ads Blocker - blocks all annoying ads, malware and tracking."
+    },
+	"popup_vk_support": {
+	    "message": "Ads Blocker Support"
+    },
+	"popup_fb_support": {
+	    "message": "Support on Facebook"
+    },
+	"popup_on": {
+        "message": "Ads Blocker is enabled"
+    },
+	"popup_off": {
+        "message": "Ads Blocker is paused"
+    },
+	"email_support": {
+        "message": "E-mail support"
+    },	
+	"onInstalled_h1": {
+		"message": "Congratulations!"
+	},
+	"onInstalled_h2": {
+		"message": "You have installed the best extension for ad blocking"
+	},
+	"onInstalled_question": {
+		"message": "Still have questions?"
+	},
+	"onInstalled_support": {
+		"message": "Feel free to contact us on"
+	},
+	"onUpdated_h2": {
+		"message": "You have the latest version of the ad blocker extension"
+	},
+	"onShareded_h2": {
+		"message": "Thank you for choosing the best app for ad blocking"
+	},	
+	"feature_blockads": {
+		"message": "AdsBlocker blocks all ads including video ads, interstitial ads and floating ads, pop-ups, banners, advertisements and text ads."
+	},
+	"feature_blocktrack": {
+		"message": "AdsBlocker protects your personal data by blocking common third-party tracking systems, spyware and adware."
+	},
+	"feature_support": {
+		"message": "24/7 technical support in our groups on VK, Facebook and e-mail."
+	},
+	"onUpdated_happy": {
+		"message": "If you like our extension, help us to expand it!"	
+	},
+	"onUpdated_rate": {
+		"message": "Rate us with ⭐️⭐️⭐️⭐️⭐️ in Chrome Web Store:"	
+	},
+	"ask": {
+		"message": "Are you satisfied with our application?<br><br>"
+	},
+	"mail": {
+		"message": "Write your comments and suggestions to e-mail: support[@]adsblocker.ru"
+	},
+    "webstore": {
+        "message": "Give us a good rate on Web Store:<br><br>"
+    }	
+}

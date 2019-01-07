@@ -1,0 +1,30 @@
+<div class="styles-container">
+    <a href="{{collection.url}}" target="_blank">
+	<div class="content">
+		<div class="collection-thumbnail" style="background-image:url({{ collection.image }});" >
+		</div>
+		<div class="collection-info">
+		    <div class="title" >{{ collection.name }}</div>
+		    <div class="subtitle" >{{ collection.items_collected }} elements</div>
+		</div>
+	</div>
+	</a>
+	<div class="updating-spinner"></div>
+	<div class="toolbar" tabindex="0">
+		<div class="videocapture-button {{#if is_video_available }} aw-video-collection {{else}} disabled not-allowed{{/if}} ">
+				<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 13c0 .547.46 1 1 1 .336 0 .672-.227 1-.375L13.258 8c.273-.133.742-.406.742-1s-.47-.867-.742-1L2 .375C1.672.227 1.336 0 1 0 .46 0 0 .453 0 1v12z"/>
+				</svg>
+		</div>
+		<div class="edit-button aw-crop-collection">
+			<svg width="15" height="15" viewBox="0 0 1664 1664" xmlns="http://www.w3.org/2000/svg">
+				<path d="M557 1152h595V557l-595 595zm-45-45l595-595H512v595zm1152 77v192c0 9.334-3 17-9 23s-13.667 9-23 9h-224v224c0 9.334-3 17-9 23s-13.667 9-23 9h-192c-9.334 0-17-3-23-9s-9-13.666-9-23v-224H288c-9.334 0-17-3-23-9s-9-13.666-9-23V512H32c-9.334 0-17-3-23-9s-9-13.666-9-23V288c0-9.333 3-17 9-23s13.666-9 23-9h224V32c0-9.333 3-17 9-23s13.666-9 23-9h192c9.333 0 17 3 23 9s9 13.667 9 23v224h851L1609 9c6.666-6 14.333-9 23-9 8.666 0 16.333 3 23 9 6 6.667 9 14.334 9 23 0 8.667-3 16.334-9 23l-247 246v851h224c9.333 0 17 3 23 9s9 13.667 9 23z"/>
+			</svg>
+		</div>
+		<div class="screenshot-button aw-photo-collection">
+			<svg width="16" height="14" viewBox="0 0 24 21" xmlns="http://www.w3.org/2000/svg">
+				<path d="M21 3h-2.867L17.2 1c-.216-.498-1.075-1-1.826-1H8.76c-.752 0-1.612.502-1.827 1L6 3H3C.61 3 0 5 0 5v14s1.5 2 3 2h18l3-2V5s-.504-2-3-2zm-9 15c-3.313 0-6-2.686-6-6 0-3.313 2.687-6 6-6 3.314 0 6 2.687 6 6 0 3.314-2.686 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
+			</svg>
+		</div>
+	</div>
+</div>

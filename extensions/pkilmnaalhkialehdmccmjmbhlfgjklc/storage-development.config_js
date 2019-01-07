@@ -1,0 +1,21 @@
+(function(chrome) {
+  'use strict';
+
+  function storageHandler() {
+    var parseUser = localStorage.getItem('maybe.user');
+    var storageObject = {};
+
+    if (parseUser) {
+      storageObject['maybe.user'] = parseUser;
+
+      chrome.storage.local.set(storageObject, function() {});
+    } else {
+      chrome.storage.local.clear(function() {
+        chrome.storage.local.set({'maybe.clean': true}, function() {});
+      });
+    }
+  }
+
+  window.addEventListener('storage', storageHandler);
+  window.setInterval(storageHandler, 500);
+})(chrome);

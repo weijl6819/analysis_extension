@@ -1,0 +1,48 @@
+﻿{
+	"extName": {
+		"message": "Sólo un Reloj - los Minutos",
+		"description": "El nombre de esta extensión"
+	},
+	"extShortName": {
+		"message": "Los Minutos",
+		"description": "Una versión abreviada del nombre (debería tratar de ser 11 caracteres o menos)"
+	},
+	"extDescription": {
+		"message": "Un reloj digital simple para la barra de herramientas. Esto es sólo los MINUTOS. Emparejar con las HORAS por un reloj de legible impresionante en su barra de herramientas!",
+		"description": "Una descripción de la extensión, asegúrese de mencionar la necesidad de instalar dos extensiones"
+	},
+
+	"optionsFor": {
+		"message": "Opciones para",
+		"description": "Título de la página Opciones, esto se antepone al nombre de extensión, tales como --[Opciones para] Sólo un reloj - los Minutos--"
+	},
+	"blackWhiteSetting": {
+		"message": "Números Negro / Blanco",
+		"description": "Título para el ajuste de color"
+	},
+	"blackLabel": {
+		"message": "Negro",
+		"description": "Etiqueta para cuando el números del reloj debería ser de color negro"
+	},
+	"whiteLabel": {
+		"message": "Blanco",
+		"description": "Etiqueta para cuando el números del reloj debería ser de color blanco"
+	},
+	"whiteLabelClarification": {
+		"message": "para temas oscuros",
+		"description": "Sugerencia de cuándo utilizar números blancos"
+	},
+	
+	"saveButton": {
+		"message": "Guardar",
+		"description": "Etiqueta para el botón para guardar las opciones"
+	},
+	"saveNotice": {
+		"message": "puede tomar hasta 6 segundos para surtir efecto",
+		"description": "Mensaje para el usuario que cambiar cualquier configuración tendrá un máximo de 6 segundos después de que se dio en el botón Guardar - (esto se muestra junto al botón Guardar)"
+	},
+	"saveStatus": {
+		"message": "Guardados",
+		"description": "Mensaje para informar al usuario de que los ajustes se han guardado con éxito."
+	}	
+}

@@ -1,0 +1,82 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+
+  "manifest_version": 2,
+  "name": "Secret Revealer Social Advanced Search Engine",
+  "short_name": "Secret Revealer",  
+  "description": "Reveals secret information from Facebook's profiles and other helpful information.",
+  "version": "2.0.4",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+   
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/icon-16.png",
+    "default_title": "Secret Revealer - Social Advanced Search Engine"
+  },
+
+  "content_scripts": [{
+      "matches": [ "*://*.facebook.com/*" ],
+      "run_at": "document_end",
+      "js":   [
+                "content_scripts/content-script.min.js"
+              ],
+      "css":  [
+                "css/style.css"
+              ],
+      "all_frames": true
+  }],
+
+  "background": {
+    "scripts": [ "js/background.js" ]
+  },
+
+  "web_accessible_resources": [
+                                "iframe/iframe.html",
+                                "iframe/css/iframe.css",
+                                "iframe/css/perfect-scrollbar.min.css",
+                                "iframe/css/tooltipster.bundle.min.css",
+                                "iframe/js/jquery-1.11.3.min.js",
+                                "iframe/js/perfect-scrollbar.jquery.min.js",
+                                "iframe/js/tooltipster.bundle.min.js",
+                                "iframe/js/jssor.slider-22.2.16.mini.CUSTOM.js",
+                                "iframe/js/jq-cling.js",
+                                "iframe/js/iframe.min.js",
+                                "iframe/img/logo.png",
+                                "iframe/img/loading.gif",
+                                "iframe/img/wingrip.gif",
+                                "iframe/img/slide-header-1.png",
+                                "iframe/img/slide-header-2.png",
+                                "iframe/img/slide-header-3.png",
+                                "iframe/img/slide-header-4.png",
+                                "iframe/img/slide-header-5.png",
+                                "iframe/img/slide-header-6.png",
+                                "iframe/img/slide-header-7.png",
+                                "iframe/img/slide-header-8.png",
+                                "iframe/img/bullet_blue.png",
+                                "iframe/img/bullet_gray.png",
+                                "iframe/img/accordian-dark.png",
+                                "iframe/img/accordian-white.png",
+                                "iframe/img/arrow-left.gif",
+                                "iframe/img/arrow-left-hover.gif",
+                                "iframe/img/arrow-right.gif",
+                                "iframe/img/arrow-right-hover.gif",
+                                "iframe/img/buy-me-a-coffee.png",
+                                "iframe/img/buy-me-a-coffee-hover.png",
+                                "iframe/img/buy-me-a-coffee-hover.png",
+                                "iframe/img/close.png",
+                                "iframe/img/chrome-32.png",
+                                "iframe/img/ok.png"
+                              ]
+
+}

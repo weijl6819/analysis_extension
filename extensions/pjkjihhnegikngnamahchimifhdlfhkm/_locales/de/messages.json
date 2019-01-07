@@ -1,0 +1,9 @@
+﻿{
+  "extLocale"   : {"message" : "DE", "description" : ""},
+  "extNameFull" : {"message" : "Esna iLink Pro", "description" : "" },
+  "extNameDial" : {"message" : "Esna iLink", "description" : "" },
+  "extNameJabber" : {"message" : "Esna iLink für Cisco Jabber", "description" : "" },
+  "extNameAvaya" : {"message" : "Avaya Communicator für Web", "description" : "" },
+  "extName2600Office"  : {"message" : "Avaya Office", "description" : "" },
+  "extNameAura" : {"message" : "Avaya Equinox für Web", "description" : "" }
+}

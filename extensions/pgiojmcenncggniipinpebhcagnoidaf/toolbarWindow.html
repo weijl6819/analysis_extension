@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="toolbar.css" type="text/css" />
+        <script type="text/javascript" src="lib/jquery-1.7.1.js"></script>
+        <script type="text/javascript" src="lib/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="lib/jquery.ui.core.js"></script>
+        <script type="text/javascript" src="lib/jquery.ui.mouse.js"></script>
+        <script type="text/javascript" src="lib/jquery.ui.draggable.js"></script>
+        <script type="text/javascript" src="toolbarFunctions.js"></script>
+        <script type="text/javascript" src="events.js"></script>
+
+    </head>
+    <body id="extensionBody" >
+        <table id="tableWidth">
+            <tr>
+                <td>
+                    <button id="logoButton" ><img src='logos/logo.png' ></img></button>
+                </td>
+                <td>
+                    <select id="searchType" >
+                        <option value="google"><img src="logos/google_ico.png"/>google</option>
+                        <option value="bing"><img src="logos/bing_ico.png" />bing</option>
+                    </select>
+                    <input type="text" name="fname" class="textInput" id="searchText" ></input>
+                    <button id="sameTabSearchBtn" class="customizeButtons" ><img src='logos/search_icon.png'/ ></button>
+                    <button class="customizeButtons" id="searchNewTabId"  ><img  src='logos/search_icon2.png'/ ></button>                    
+                    <select id="searchListSelection" >                        
+                    </select>
+                </td>
+
+                <td>
+                    <span id="dragImagex">|</span>
+                </td>
+                <td>
+                    <button id="settingsButton"><img src="logos/settings.png" /></button>
+                </td>
+            </tr>
+        </table>
+        <div id="searchResults">
+
+        </div>        
+    </body>
+</html>

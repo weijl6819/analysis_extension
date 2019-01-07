@@ -1,0 +1,186 @@
+html {
+	height: 100%;
+}
+
+.tutorial {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.tutorial .center-wrap {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.tutorial #logo {
+	color: #c5c5c5;	
+	font-size: 68px;
+	letter-spacing: -2px;
+	margin: 0;
+}
+
+.tutorial #logo span {
+	font-style: setup;
+	font-weight: 400;
+	color: #ddd;
+}
+
+.tutorial .btn {
+	padding: 15px 50px 16px;
+}
+
+.tutorial ul {
+	display: block;
+	padding: 0;
+	margin: 20px 0 30px;
+	text-align: center;
+}
+
+.tutorial ul li {
+	display: inline-block;
+	width: 240px;
+	margin: 0 60px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.tutorial ul li img {
+	width 180px;
+	height: 180px;
+	display: inline-block;
+}
+
+.tutorial ul li p {
+	padding: 0 15px;
+}
+
+.tutorial h2 {
+	color: #1893ad;
+	font-size: 32px;
+	font-weight: 400;
+	font-family: 'Lato-Bold';
+}
+
+.tutorial .step-1 {
+	opacity: 1;
+	-webkit-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+
+	-webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+}
+
+.tutorial .step-1.hide {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.tutorial .step-2 {
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 157px;
+	right: 187px;
+	line-height: 20px;
+	font-size: 34px;
+	color: #398e9f;
+	font-family: 'Lato-Bold';
+	-webkit-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+
+	-webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+}
+
+.tutorial .step-2.show {
+	opacity: 1;
+	top: 147px;
+	right: 177px;
+}
+
+.tutorial .step-2 span img {
+	vertical-align: middle;
+	margin: 0 8px;
+}
+
+.tutorial .step-2 img.arrow {
+	position: fixed;
+	top: 46px;
+	right: 50px;
+	-webkit-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition: all .28s cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+
+	-webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+}
+
+.tutorial .step-2.show img.arrow {
+	top: 40px;
+	right: 44px;
+}
+
+@media (max-width: 1090px) {
+	.tutorial ul li {
+		margin: 0 40px;
+	}
+}
+
+@media (max-width: 970px) {
+	.tutorial ul li {
+		margin: 0 20px;
+	}
+}
+
+@media (max-width: 850px) {
+	.tutorial ul li {
+		-webkit-transform: scale(0.8);
+		margin: 0;
+	}	
+}
+
+@media (max-width: 730px) {
+	.tutorial {
+		padding: 60px 0 80px;
+	}
+
+	.tutorial #logo {
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		margin: 0;
+	}
+
+	.tutorial ul li p {
+		margin: 10px 0 0;
+		padding: 0 50px;
+	}
+
+	.tutorial ul li {
+		width: 100%;
+		margin: 0 0 40px 0;
+		-webkit-transform: scale(1);
+	}
+}
+
+@media (max-height: 575px) {
+	.tutorial .center-wrap ul {
+		margin: 5px 0 14px;
+	}
+}

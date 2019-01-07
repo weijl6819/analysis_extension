@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url("/static/OpenSans-Regular.ttf");
+}
+
+iframe, body, #mediaspace {
+	height: 100%;
+	width: 100%;
+	border: 0;
+	overflow: hidden;
+	margin: 0px;
+}
+#frame {
+	height: 100%;
+	width: 100%;
+	border: none;
+	position: absolute;
+	top: 0px;
+	z-index: 0;
+}
+#loading {
+	background: white url(../img/loading.gif) 50% no-repeat;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+#loading p {
+	margin: 10px 20px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	color: black;
+	text-align: center;
+}
+#loading #bottom {
+	position: absolute;
+	bottom: 10px;
+}
+body img {
+    display: none;
+}
+.screenshot {
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	background: url(../img/screenshot.png);
+	width: 50px;
+	border-top-left-radius: 5px;
+	right: 0;
+	background-size: 50px;
+}

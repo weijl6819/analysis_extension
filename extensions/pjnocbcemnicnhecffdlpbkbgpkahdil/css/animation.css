@@ -1,0 +1,39 @@
+﻿section.content > section
+{
+  left:               100%;
+  right:              auto;
+  width:              100%;
+  display:            block;
+}
+section.content > section.hiding
+{
+  left:               -100%;
+  display:            block!important;
+  transition:         left 0.25s ease-in;
+  -moz-transition:    left 0.25s ease-in; /* Firefox 4 */
+  -webkit-transition: left 0.25s ease-in; /* Safari and Chrome */
+  -o-transition:      left 0.25s ease-in; /* Opera */
+}
+section.content > section.selected
+{
+  left:               0px;
+  display:            block;
+  transition:         left 0.25s ease-out;
+  -moz-transition:    left 0.25s ease-out; /* Firefox 4 */
+  -webkit-transition: left 0.25s ease-out; /* Safari and Chrome */
+  -o-transition:      left 0.25s ease-out; /* Opera */
+}
+
+section.BACK > section
+{
+  left:               -100%;
+}
+section.BACK > section.hiding
+{
+  left:               100%;
+}
+
+section.content > section.hidden
+{
+  display:            none;
+}

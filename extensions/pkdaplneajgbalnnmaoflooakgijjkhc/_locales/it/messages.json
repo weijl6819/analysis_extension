@@ -1,0 +1,824 @@
+{
+  "_account" : {
+    "message" : "Account"
+  },
+  "_account_expired" : {
+    "message" : "L'account è scaduto. Contatta il tuo account manager per assistenza."
+  },
+  "_advanced_settings" : {
+    "message" : "Impostazioni avanzate"
+  },
+  "_audio_only" : {
+    "message" : "Entra come partecipante solo audio:"
+  },
+  "_cancel" : {
+    "message" : "Annulla"
+  },
+  "_congratulations" : {
+    "message" : "Complimenti!"
+  },
+  "_customize_header" : {
+    "message" : "Personalizza invito via e-mail"
+  },
+  "_customize_placeholder" : {
+    "message" : "Inserire un messaggio personalizzato da aggiungere all'invito via e-mail."
+  },
+  "_default_dialing" : {
+    "message" : "Composizione predefinita"
+  },
+  "_email" : {
+    "message" : "E-mail"
+  },
+  "_error_friendly" : {
+    "message" : "Spiacenti. Abbiamo perso la connessione con il server. Riprova."
+  },
+  "_error_invalid" : {
+    "message" : "Indirizzo e-mail o password non validi"
+  },
+  "_error_unknown" : {
+    "message" : "Errore sconosciuto"
+  },
+  "_extension_settings" : {
+    "message" : "Impostazioni per estensioni"
+  },
+  "_extension" : {
+    "message" : "estensione"
+  },
+  "_international_numbers" : {
+    "message" : "Numeri internazionali"
+  },
+  "_invite_email_subject" : {
+    "message" : "Fai clic per chiamare {Meeting_name} su Lifesize"
+  },
+  "_invite_email_body1" : {
+    "message" : "Sei stato invitato a chiamare {Meeting_name} su Lifesize.\n\nCollegati in video\n"
+  },
+  "_invite_email_passcode_protected" : {
+    "message" : "La riunione è riservata."
+  },
+  "_invite_email_enter_passcode" : {
+    "message" : "La riunione è riservata. Il codice di accesso da digitare è il seguente: {Passcode}"
+  },
+  "_invite_email_body2" : {
+    "message" : "Ti stai collegando da un sistema di sale riunioni Lifesize? Componi il numero {Extn} sul tastierino numerico.\n\nChiama al telefono\n"
+  },
+  "_invite_email_body3" : {
+    "message" : "Numeri aggiuntivi:\n{NumbersLink}"
+  },
+  "_invite_email_body4" : {
+    "message" : "Conferenze Lifesize con audio, web e video… tutto quello che ti serve per le riunioni. Provalo gratis su www.lifesize.com."
+  },
+  "_join_now" : {
+    "message" : "Entra tramite Chrome o Internet Explorer (v10+):"
+  },
+  "_lifesize_cloud" : {
+    "message" : "Lifesize Cloud"
+  },
+  "_login_success_info" : {
+    "message" : "L'estensione Lifesize è ora configurata e pronta per l'uso."
+  },
+  "_meet_on_lifesize" : {
+    "message" : "Pianifica con Lifesize"
+  },
+  "_meeting_invitation_greeting" : {
+    "message" : "Entra in {Meeting_name} su Lifesize Cloud."
+  },
+  "_passcode" : {
+    "message" : "Codice"
+  },
+  "_password" : {
+    "message" : "Password"
+  },
+  "_please_login" : {
+    "message" : "Fare clic sul pulsante dell'estensione Lifesize Cloud per accedere."
+  },
+  "_preferences" : {
+    "message" : "Preferenze"
+  },
+  "_save" : {
+    "message" : "Salva"
+  },
+  "_schedule_google" : {
+    "message" : "Pianifica in Google Calendar"
+  },
+  "_schedule_meeting" : {
+    "message" : "Pianifica meeting"
+  },
+  "_select_header" : {
+    "message" : "Seleziona un utente o una sala riunioni"
+  },
+  "_sign_in" : {
+    "message" : "Accedi"
+  },
+  "_sign_in_info" : {
+    "message" : "Accedi al tuo account Lifesize Cloud per completare l'impostazione dell'estensione."
+  },
+  "_sign_out" : {
+    "message" : "Disconnessione"
+  },
+  "_us" : {
+    "message" : "USA"
+  },
+  "_user_invitation_greeting" : {
+    "message" : "Chiama {Meeting_name} su Lifesize Cloud."
+  },
+  "_view_options" : {
+    "message" : "Visualizza le opzioni di composizione o installa l'app:"
+  },
+  "_country_code_AF" : {
+    "message" : "Afghanistan"
+  },
+  "_country_code_AL" : {
+    "message" : "Albania"
+  },
+  "_country_code_DZ" : {
+    "message" : "Algeria"
+  },
+  "_country_code_AS" : {
+    "message" : "Samoa Americane"
+  },
+  "_country_code_AD" : {
+    "message" : "Andorra"
+  },
+  "_country_code_AO" : {
+    "message" : "Angola"
+  },
+  "_country_code_AI" : {
+    "message" : "Anguilla"
+  },
+  "_country_code_AG" : {
+    "message" : "Antigua e Barbuda"
+  },
+  "_country_code_AR" : {
+    "message" : "Argentina"
+  },
+  "_country_code_AM" : {
+    "message" : "Armenia"
+  },
+  "_country_code_AW" : {
+    "message" : "Aruba"
+  },
+  "_country_code_AU" : {
+    "message" : "Australia"
+  },
+  "_country_code_AT" : {
+    "message" : "Austria"
+  },
+  "_country_code_AZ" : {
+    "message" : "Azerbaigian"
+  },
+  "_country_code_BS" : {
+    "message" : "Bahamas"
+  },
+  "_country_code_BH" : {
+    "message" : "Bahrain"
+  },
+  "_country_code_BD" : {
+    "message" : "Bangladesh"
+  },
+  "_country_code_BB" : {
+    "message" : "Barbados"
+  },
+  "_country_code_BY" : {
+    "message" : "Bielorussia"
+  },
+  "_country_code_BE" : {
+    "message" : "Belgio"
+  },
+  "_country_code_BZ" : {
+    "message" : "Belize"
+  },
+  "_country_code_BJ" : {
+    "message" : "Benin"
+  },
+  "_country_code_BM" : {
+    "message" : "Bermuda"
+  },
+  "_country_code_BT" : {
+    "message" : "Bhutan"
+  },
+  "_country_code_BO" : {
+    "message" : "Bolivia"
+  },
+  "_country_code_BA" : {
+    "message" : "Bosnia ed Erzegovina"
+  },
+  "_country_code_BW" : {
+    "message" : "Botswana"
+  },
+  "_country_code_BR" : {
+    "message" : "Brasile"
+  },
+  "_country_code_BN" : {
+    "message" : "Brunei"
+  },
+  "_country_code_BG" : {
+    "message" : "Bulgaria"
+  },
+  "_country_code_BF" : {
+    "message" : "Burkina Faso"
+  },
+  "_country_code_BI" : {
+    "message" : "Burundi"
+  },
+  "_country_code_KH" : {
+    "message" : "Cambogia"
+  },
+  "_country_code_CM" : {
+    "message" : "Camerun"
+  },
+  "_country_code_CA" : {
+    "message" : "Canada"
+  },
+  "_country_code_CV" : {
+    "message" : "Capo Verde"
+  },
+  "_country_code_KY" : {
+    "message" : "Isole Cayman"
+  },
+  "_country_code_CF" : {
+    "message" : "Repubblica Centrafricana"
+  },
+  "_country_code_TD" : {
+    "message" : "Ciad"
+  },
+  "_country_code_CL" : {
+    "message" : "Cile"
+  },
+  "_country_code_CN" : {
+    "message" : "Cina"
+  },
+  "_country_code_CX" : {
+    "message" : "Isola di Natale"
+  },
+  "_country_code_CC" : {
+    "message" : "Isole Cocos (Keeling)"
+  },
+  "_country_code_CO" : {
+    "message" : "Colombia"
+  },
+  "_country_code_KM" : {
+    "message" : "Comoros"
+  },
+  "_country_code_CG" : {
+    "message" : "Repubblica del Congo"
+  },
+  "_country_code_CD" : {
+    "message" : "Repubblica Democratica del Congo"
+  },
+  "_country_code_CK" : {
+    "message" : "Isole Cook"
+  },
+  "_country_code_CR" : {
+    "message" : "Costa Rica"
+  },
+  "_country_code_CI" : {
+    "message" : "Costa D'Avorio"
+  },
+  "_country_code_HR" : {
+    "message" : "Croazia"
+  },
+  "_country_code_CU" : {
+    "message" : "Cuba"
+  },
+  "_country_code_CY" : {
+    "message" : "Cipro"
+  },
+  "_country_code_CZ" : {
+    "message" : "Repubblica Ceca"
+  },
+  "_country_code_DK" : {
+    "message" : "Danimarca"
+  },
+  "_country_code_DJ" : {
+    "message" : "Gibuti"
+  },
+  "_country_code_DM" : {
+    "message" : "Dominica"
+  },
+  "_country_code_DO" : {
+    "message" : "Repubblica Dominicana"
+  },
+  "_country_code_EC" : {
+    "message" : "Ecuador"
+  },
+  "_country_code_EG" : {
+    "message" : "Egitto"
+  },
+  "_country_code_SV" : {
+    "message" : "El Salvador"
+  },
+  "_country_code_GQ" : {
+    "message" : "Guinea Equatoriale"
+  },
+  "_country_code_ER" : {
+    "message" : "Eritrea"
+  },
+  "_country_code_EE" : {
+    "message" : "Estonia"
+  },
+  "_country_code_ET" : {
+    "message" : "Etiopia"
+  },
+  "_country_code_EU" : {
+    "message" : "Unione Europea"
+  },
+  "_country_code_FK" : {
+    "message" : "Isole Falkland (Malvine)"
+  },
+  "_country_code_FO" : {
+    "message" : "Isole Faroe"
+  },
+  "_country_code_FJ" : {
+    "message" : "Fiji"
+  },
+  "_country_code_FI" : {
+    "message" : "Finlandia"
+  },
+  "_country_code_FR" : {
+    "message" : "Francia"
+  },
+  "_country_code_GF" : {
+    "message" : "Guiana Francese"
+  },
+  "_country_code_PF" : {
+    "message" : "Polinesia Francese"
+  },
+  "_country_code_GA" : {
+    "message" : "Gabon"
+  },
+  "_country_code_GM" : {
+    "message" : "Gambia"
+  },
+  "_country_code_GE" : {
+    "message" : "Georgia"
+  },
+  "_country_code_DE" : {
+    "message" : "Germania"
+  },
+  "_country_code_GH" : {
+    "message" : "Ghana"
+  },
+  "_country_code_GI" : {
+    "message" : "Gibilterra"
+  },
+  "_country_code_GR" : {
+    "message" : "Grecia"
+  },
+  "_country_code_GL" : {
+    "message" : "Groenlandia"
+  },
+  "_country_code_GD" : {
+    "message" : "Grenada"
+  },
+  "_country_code_GP" : {
+    "message" : "Guadalupa"
+  },
+  "_country_code_GU" : {
+    "message" : "Guam"
+  },
+  "_country_code_GT" : {
+    "message" : "Guatemala"
+  },
+  "_country_code_GG" : {
+    "message" : "Guernsey"
+  },
+  "_country_code_GN" : {
+    "message" : "Guinea"
+  },
+  "_country_code_GW" : {
+    "message" : "Guinea-Bissau"
+  },
+  "_country_code_GY" : {
+    "message" : "Guyana"
+  },
+  "_country_code_GZ" : {
+    "message" : "Striscia di Gaza"
+  },
+  "_country_code_HT" : {
+    "message" : "Haiti"
+  },
+  "_country_code_VA" : {
+    "message" : "Santa Sede (Città del Vaticano)"
+  },
+  "_country_code_HN" : {
+    "message" : "Honduras"
+  },
+  "_country_code_HK" : {
+    "message" : "Hong Kong"
+  },
+  "_country_code_HU" : {
+    "message" : "Ungheria"
+  },
+  "_country_code_IS" : {
+    "message" : "Islanda"
+  },
+  "_country_code_IN" : {
+    "message" : "India"
+  },
+  "_country_code_ID" : {
+    "message" : "Indonesia"
+  },
+  "_country_code_IQ" : {
+    "message" : "Iraq"
+  },
+  "_country_code_IE" : {
+    "message" : "Irlanda"
+  },
+  "_country_code_IM" : {
+    "message" : "Isola di Man"
+  },
+  "_country_code_IL" : {
+    "message" : "Israele"
+  },
+  "_country_code_IT" : {
+    "message" : "Italia"
+  },
+  "_country_code_JM" : {
+    "message" : "Giamaica"
+  },
+  "_country_code_JP" : {
+    "message" : "Giappone"
+  },
+  "_country_code_JE" : {
+    "message" : "Jersey"
+  },
+  "_country_code_JO" : {
+    "message" : "Giordania"
+  },
+  "_country_code_KZ" : {
+    "message" : "Kazakistan"
+  },
+  "_country_code_KE" : {
+    "message" : "Kenya"
+  },
+  "_country_code_KI" : {
+    "message" : "Kiribati"
+  },
+  "_country_code_KR" : {
+    "message" : "Corea del Sud"
+  },
+  "_country_code_KW" : {
+    "message" : "Kuwait"
+  },
+  "_country_code_KG" : {
+    "message" : "Kirghizistan"
+  },
+  "_country_code_LA" : {
+    "message" : "Laos"
+  },
+  "_country_code_LV" : {
+    "message" : "Lettonia"
+  },
+  "_country_code_LB" : {
+    "message" : "Libano"
+  },
+  "_country_code_LS" : {
+    "message" : "Lesotho"
+  },
+  "_country_code_LR" : {
+    "message" : "Liberia"
+  },
+  "_country_code_LY" : {
+    "message" : "Libia"
+  },
+  "_country_code_LI" : {
+    "message" : "Liechtenstein"
+  },
+  "_country_code_LT" : {
+    "message" : "Lituania"
+  },
+  "_country_code_LU" : {
+    "message" : "Lussemburgo"
+  },
+  "_country_code_MO" : {
+    "message" : "Macao"
+  },
+  "_country_code_MK" : {
+    "message" : "Macedonia"
+  },
+  "_country_code_MG" : {
+    "message" : "Madagascar"
+  },
+  "_country_code_MW" : {
+    "message" : "Malawi"
+  },
+  "_country_code_MY" : {
+    "message" : "Malesia"
+  },
+  "_country_code_MV" : {
+    "message" : "Maldive"
+  },
+  "_country_code_ML" : {
+    "message" : "Mali"
+  },
+  "_country_code_MT" : {
+    "message" : "Malta"
+  },
+  "_country_code_MH" : {
+    "message" : "Isole Marshall"
+  },
+  "_country_code_MQ" : {
+    "message" : "Martinica"
+  },
+  "_country_code_MR" : {
+    "message" : "Mauritania"
+  },
+  "_country_code_MU" : {
+    "message" : "Mauritius"
+  },
+  "_country_code_YT" : {
+    "message" : "Mayotte"
+  },
+  "_country_code_MX" : {
+    "message" : "Messico"
+  },
+  "_country_code_FM" : {
+    "message" : "Micronesia, Stati Federati di"
+  },
+  "_country_code_MD" : {
+    "message" : "Moldavia"
+  },
+  "_country_code_MC" : {
+    "message" : "Monaco"
+  },
+  "_country_code_MN" : {
+    "message" : "Mongolia"
+  },
+  "_country_code_ME" : {
+    "message" : "Montenegro"
+  },
+  "_country_code_MS" : {
+    "message" : "Montserrat"
+  },
+  "_country_code_MA" : {
+    "message" : "Marocco"
+  },
+  "_country_code_MZ" : {
+    "message" : "Mozambico"
+  },
+  "_country_code_MM" : {
+    "message" : "Myanmar"
+  },
+  "_country_code_NA" : {
+    "message" : "Namibia"
+  },
+  "_country_code_NR" : {
+    "message" : "Nauru"
+  },
+  "_country_code_NP" : {
+    "message" : "Nepal"
+  },
+  "_country_code_NL" : {
+    "message" : "Paesi Bassi"
+  },
+  "_country_code_NC" : {
+    "message" : "Nuova Caledonia"
+  },
+  "_country_code_NZ" : {
+    "message" : "Nuova Zelanda"
+  },
+  "_country_code_NI" : {
+    "message" : "Nicaragua"
+  },
+  "_country_code_NE" : {
+    "message" : "Niger"
+  },
+  "_country_code_NG" : {
+    "message" : "Nigeria"
+  },
+  "_country_code_NU" : {
+    "message" : "Niue"
+  },
+  "_country_code_NF" : {
+    "message" : "Isola Norfolk"
+  },
+  "_country_code_MP" : {
+    "message" : "Isole Marianne Settentrionali"
+  },
+  "_country_code_NO" : {
+    "message" : "Norvegia"
+  },
+  "_country_code_OM" : {
+    "message" : "Oman"
+  },
+  "_country_code_PK" : {
+    "message" : "Pakistan"
+  },
+  "_country_code_PW" : {
+    "message" : "Palau"
+  },
+  "_country_code_PA" : {
+    "message" : "Panama"
+  },
+  "_country_code_PG" : {
+    "message" : "Papua Nuova Guinea"
+  },
+  "_country_code_PY" : {
+    "message" : "Paraguay"
+  },
+  "_country_code_PE" : {
+    "message" : "Perù"
+  },
+  "_country_code_PH" : {
+    "message" : "Filippine"
+  },
+  "_country_code_PN" : {
+    "message" : "Isole Pitcairn"
+  },
+  "_country_code_PL" : {
+    "message" : "Polonia"
+  },
+  "_country_code_PT" : {
+    "message" : "Portogallo"
+  },
+  "_country_code_PR" : {
+    "message" : "Portorico"
+  },
+  "_country_code_QA" : {
+    "message" : "Qatar"
+  },
+  "_country_code_RE" : {
+    "message" : "Riunione"
+  },
+  "_country_code_RO" : {
+    "message" : "Romania"
+  },
+  "_country_code_RU" : {
+    "message" : "Russia"
+  },
+  "_country_code_RW" : {
+    "message" : "Ruanda"
+  },
+  "_country_code_SH" : {
+    "message" : "Sant'Elena"
+  },
+  "_country_code_KN" : {
+    "message" : "Saint Kitts e Nevis"
+  },
+  "_country_code_LC" : {
+    "message" : "Santa Lucia"
+  },
+  "_country_code_PM" : {
+    "message" : "Saint-Pierre e Miquelon"
+  },
+  "_country_code_VC" : {
+    "message" : "Saint Vincent e Grenadine"
+  },
+  "_country_code_WS" : {
+    "message" : "Samoa"
+  },
+  "_country_code_SM" : {
+    "message" : "San Marino"
+  },
+  "_country_code_ST" : {
+    "message" : "São Tomé e Principe"
+  },
+  "_country_code_SA" : {
+    "message" : "Arabia Saudita"
+  },
+  "_country_code_SN" : {
+    "message" : "Senegal"
+  },
+  "_country_code_RS" : {
+    "message" : "Serbia"
+  },
+  "_country_code_SC" : {
+    "message" : "Seychelles"
+  },
+  "_country_code_SL" : {
+    "message" : "Sierra Leone"
+  },
+  "_country_code_SG" : {
+    "message" : "Singapore"
+  },
+  "_country_code_SK" : {
+    "message" : "Slovacchia"
+  },
+  "_country_code_SI" : {
+    "message" : "Slovenia"
+  },
+  "_country_code_SB" : {
+    "message" : "Isole Salomone"
+  },
+  "_country_code_SO" : {
+    "message" : "Somalia"
+  },
+  "_country_code_ZA" : {
+    "message" : "Sud Africa"
+  },
+  "_country_code_ES" : {
+    "message" : "Spagna"
+  },
+  "_country_code_LK" : {
+    "message" : "Sri Lanka"
+  },
+  "_country_code_SD" : {
+    "message" : "Sudan"
+  },
+  "_country_code_SR" : {
+    "message" : "Suriname"
+  },
+  "_country_code_SJ" : {
+    "message" : "Svalbard"
+  },
+  "_country_code_SZ" : {
+    "message" : "Swaziland"
+  },
+  "_country_code_SE" : {
+    "message" : "Svezia"
+  },
+  "_country_code_CH" : {
+    "message" : "Svizzera"
+  },
+  "_country_code_TW" : {
+    "message" : "Taiwan"
+  },
+  "_country_code_TJ" : {
+    "message" : "Tagikistan"
+  },
+  "_country_code_TZ" : {
+    "message" : "Tanzania"
+  },
+  "_country_code_TH" : {
+    "message" : "Tailandia"
+  },
+  "_country_code_TL" : {
+    "message" : "Timor Est"
+  },
+  "_country_code_TG" : {
+    "message" : "Togo"
+  },
+  "_country_code_TK" : {
+    "message" : "Tokelau"
+  },
+  "_country_code_TO" : {
+    "message" : "Tonga"
+  },
+  "_country_code_TT" : {
+    "message" : "Trinidad e Tobago"
+  },
+  "_country_code_TN" : {
+    "message" : "Tunisia"
+  },
+  "_country_code_TR" : {
+    "message" : "Turchia"
+  },
+  "_country_code_TM" : {
+    "message" : "Turkmenistan"
+  },
+  "_country_code_TC" : {
+    "message" : "Isole Turks e Caicos"
+  },
+  "_country_code_TV" : {
+    "message" : "Tuvalu"
+  },
+  "_country_code_UG" : {
+    "message" : "Uganda"
+  },
+  "_country_code_UA" : {
+    "message" : "Ucraina"
+  },
+  "_country_code_AE" : {
+    "message" : "Emirati Arabi Uniti"
+  },
+  "_country_code_GB" : {
+    "message" : "Regno Unito"
+  },
+  "_country_code_US" : {
+    "message" : "Stati Uniti"
+  },
+  "_country_code_UY" : {
+    "message" : "Uruguay"
+  },
+  "_country_code_UZ" : {
+    "message" : "Uzbekistan"
+  },
+  "_country_code_VU" : {
+    "message" : "Vanuatu"
+  },
+  "_country_code_VE" : {
+    "message" : "Venezuela"
+  },
+  "_country_code_VN" : {
+    "message" : "Vietnam"
+  },
+  "_country_code_VG" : {
+    "message" : "Isole Vergini Britanniche"
+  },
+  "_country_code_VI" : {
+    "message" : "Isole Vergini"
+  },
+  "_country_code_EH" : {
+    "message" : "Sahara Occidentale"
+  },
+  "_country_code_YE" : {
+    "message" : "Yemen"
+  },
+  "_country_code_ZM" : {
+    "message" : "Zambia"
+  },
+  "_country_code_ZW" : {
+    "message" : "Zimbabwe"
+  }
+}

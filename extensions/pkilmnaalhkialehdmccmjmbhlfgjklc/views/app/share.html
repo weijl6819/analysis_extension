@@ -1,0 +1,91 @@
+<div class="row">
+  <article class="share column small-12">
+    <div class="text-center"><img src="/assets/images/logo.png" alt="Maybe*"/></div>
+    <section class="text-center" ng-if="vm.data.state === 'sign-in'">
+      <h4>Log in</h4>
+      <p>Add things to your Maybe* collections right from Chrome.</p>
+      <sign-in></sign-in>
+      <p style="margin-bottom: 0.5rem;"><a href="#" ng-click="vm.setState('password-forget')">Forgotten password?</a></p>
+      <p style="margin-bottom: 0.5rem;">New to Maybe*? <a href="#" ng-click="vm.setState('sign-up')">Sign up</a></p>
+    </section>
+    <section class="text-center" ng-if="vm.data.state === 'sign-up'">
+      <h4>Sign up</h4>
+      <p>Add things to your Maybe* collections right from Chrome.</p>
+      <sign-up></sign-up>
+      <p style="margin-bottom: 0.5rem;">Already have an account? <a href="#" ng-click="vm.setState('sign-in')">Log in</a></p>
+    </section>
+    <section class="text-center"  ng-if="vm.data.state === 'email-sent'">
+      <h4 class="text-center">Log in email sent</h4>
+      <p>Welcome to Maybe*. We have sent an email which will allow you to login. No password to forget!</p>
+      <p>Please check your email account and follow the instructions inside.</p>
+    </section>
+    <section class="text-center"  ng-if="vm.data.state === 'password-set'">
+      <h4>Thank you for signing up</h4>
+      <h5>Now lets get you logged in</h5>
+      <password-set email="vm.data.email"></password-set>
+    </section>
+    <section class="text-center"  ng-if="vm.data.state === 'password-forget'">
+      <h4>Reset password</h4>
+      <password-forget></password-forget>
+      <p><a href="#" ng-click="vm.setState('sign-in')">Go back</a></p>
+    </section>
+    <section class="text-center"  ng-if="vm.data.state === 'password-reset-sent'">
+      <h4>Password reset email sent</h4>
+      <p>We have sent an email which will allow you to reset your password.</p>
+      <p>Please check your email account and follow the instructions inside.</p>
+    </section>
+    <section class="text-center"  ng-if="vm.data.state === 'share'">
+      <h4>Add this item to Maybe*</h4>
+
+      <form ng-submit="vm.addToBasket(vm.data.shareData)" id="share-form" name="shareForm">
+        <textarea ng-model="vm.data.shareData.context" placeholder="Notes about the item"></textarea>
+
+        <p ng-if="vm.data.baskets.length > 0">
+          Which collection would you like to add this to
+        </p>
+        <p ng-if="vm.data.baskets.length === 0">
+          Create a collection to add this to
+        </p>
+        <select ng-if="vm.data.baskets.length > 0" ng-model="vm.data.shareData.basket" required>
+          <option value="">Select Collection</option>
+          <option value="{{basket}}" ng-repeat="basket in vm.data.baskets">{{basket.get('name')}}</option>
+          <option value="new">Create new</option>
+        </select>
+        <fieldset ng-if="vm.data.shareData.basket === 'new' || vm.data.baskets.length === 0">
+          <input type="text" ng-model="vm.data.shareData.basketName" placeholder="Collection name (e.g.: Birthday gifts)" required/>
+          <input type="text" ng-model="vm.data.shareData.basketContext" placeholder="How would you describe it"/>
+          <select name="privacy" ng-model="vm.data.shareData.basketPrivacy" ng-init="vm.data.shareData.basketPrivacy = 'Public'" id="privacy">
+            <option value="Public">Public</option>
+            <option value="Friends">Friends</option>
+            <option value="Secret">Secret</option>
+          </select>
+        </fieldset>
+        <button class="button medium float-center full-width" type="submit">Add</button>
+      </form>
+    </section>
+    <section class="text-center"  ng-if="vm.data.state === 'processing'">
+      <h4>Processing</h4>
+      <p>
+        We are processing your item. When it's ready, you'll find it in
+        <a href="{{vm.data.shareData.basketUrl}}" target="_blank">{{vm.data.shareData.basket.name}}</a>.
+        You may close this window.
+      </p>
+    </section>
+    <section class="text-center"  ng-if="vm.data.state === 'done'">
+      <h4>Saved</h4>
+      <p>
+        Done! You will find your newly saved item in
+        <a href="{{vm.data.shareData.basketUrl}}" target="_blank">{{vm.data.shareData.basket.name}}</a>.
+        Thank you for using Maybe*!
+      </p>
+    </section>
+    <section class="text-center"  ng-if="vm.data.state === 'error'">
+      <h4>An error has occurred</h4>
+      <p>
+        Something went wrong while trying to save the item to
+        <a href="{{vm.data.shareData.basketUrl}}" target="_blank">{{vm.data.shareData.basket.name}}</a>.
+        Please try again later.
+      </p>
+    </section>
+  </article>
+</div>

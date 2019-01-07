@@ -1,0 +1,49 @@
+<div class="top-decor-line"></div>
+
+<div class="cp-hello-bg">
+  <div class="cp-hello-wrapper">
+
+    <!--<cp-auth-header></cp-auth-header>-->
+    <div style="display:block; width: 100%; height: 100px"></div>
+
+    <div class="cp-hello-content">
+
+      <h1 id="cp-hello-hello">Hello</h1>
+
+      <h2 id="cp-hello-name">What's your name?</h2>
+
+      <div class="cp-hello-form-wrapper">
+        <div class="cp-hello-form">
+          <form name="userForm" accept-charset="utf-8">
+            <div class="md-block" style="height: 70px">
+              <input
+                     class="cp-hello-name-input" ng-model="authCtrl.userProvidedName"
+                     lc-enter="authCtrl.userProvidedNameEnter()">
+              <div class="cp-hello-name-arrow">
+                <img ng-if="authCtrl.userProvidedName.length > 1"
+                     ng-click="authCtrl.userProvidedNameEnter()"
+                     src="../app/icons/arrow-right-circular.png">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div ng-show="authCtrl.error" class="form-group cp-hello-secondary-action-wrapper cp-hello-secondary-action-wrapper-error">
+        <span>{{authCtrl.error}}</span>
+      </div>
+
+      <div ng-if="authCtrl.error"
+          class="form-group cp-hello-secondary-action-wrapper" style="margin-top: 20px">
+        <div class="cp-hello-secondary-action">
+          <p>Have An Account?</p>
+          <a ng-click="authCtrl.userSelectedClick({}, 'signin')">Log in</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+

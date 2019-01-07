@@ -1,0 +1,58 @@
+body {
+  background: #eee;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: medium;
+  margin: 0px;
+  background: #F9F9F9; }
+
+.headExt {
+  background: #E74C3C url(../static/error_2.png) 0px 50% no-repeat;
+  background-size: auto 40px;
+  color: #F9F9F9;
+  width: 100%;
+  z-index: 1;
+  height: 50px; }
+  .headExt .headText {
+    width: calc(100% - 135px);
+    float: left;
+    padding-left: 45px;
+    font-size: 20px;
+    line-height: 50px; }
+
+.content {
+  padding: 10px;
+  text-align: justify; }
+
+.Botones {
+  cursor: pointer;
+  display: flex;
+  margin: 20px; }
+  .Botones .Agree {
+    background: #03A9F4; }
+  .Botones .Disagree {
+    background: #E74C3C; }
+  .Botones .Agree,
+  .Botones .Disagree {
+    color: #FFF;
+    margin: 0 auto;
+    width: 170px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    float: left; }
+  .Botones .big {
+    width: 70% !important; }
+
+.listaPermisos {
+  height: 200px;
+  width: 300px;
+  overflow-y: scroll; }
+
+p {
+  margin: 0 0 10px 0; }
+  p.negrito {
+    font-weight: 400; }
+
+* {
+  box-sizing: border-box; }

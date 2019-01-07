@@ -1,0 +1,157 @@
+{
+  "bg": [
+    {
+      "name": "bg1",
+      "url": "/backgrounds/bg-1.jpg",
+      "desc": "bg1"
+    },
+    {
+      "name": "bg2",
+      "url": "/backgrounds/bg-2.jpg",
+      "desc": "bg2"
+    },
+    {
+      "name": "bg3",
+      "url": "/backgrounds/bg-3.jpeg",
+      "desc": "bg3"
+    },
+    {
+      "name": "bg4",
+      "url": "/backgrounds/bg-4.jpeg",
+      "desc": "bg14"
+    },
+    {
+      "name": "bg5",
+      "url": "/backgrounds/bg-5.jpeg",
+      "desc": "bg5"
+    },
+    {
+      "name": "bg6",
+      "url": "/backgrounds/bg-6.jpeg",
+      "desc": "bg6"
+    },
+    {
+      "name": "bg7",
+      "url": "/backgrounds/bg-7.jpeg",
+      "desc": "bg7"
+    },
+    {
+      "name": "bg8",
+      "url": "/backgrounds/bg-8.jpeg",
+      "desc": "bg8"
+    },
+    {
+      "name": "bg9",
+      "url": "/backgrounds/bg-9.jpg",
+      "desc": "bg9"
+    },
+    {
+      "name": "bg10",
+      "url": "/backgrounds/bg-10.jpg",
+      "desc": "bg10"
+    },
+    {
+      "name": "bg11",
+      "url": "/backgrounds/bg-11.jpg",
+      "desc": "bg11"
+    },
+    {
+      "name": "bg12",
+      "url": "/backgrounds/bg-12.jpg",
+      "desc": "bg12"
+    },
+    {
+      "name": "bg13",
+      "url": "/backgrounds/bg-13.jpg",
+      "desc": "bg13"
+    },
+    {
+      "name": "bg14",
+      "url": "/backgrounds/bg-14.jpg",
+      "desc": "bg14"
+    },
+    {
+      "name": "bg15",
+      "url": "/backgrounds/bg-15.jpg",
+      "desc": "bg15"
+    },
+    {
+      "name": "bg16",
+      "url": "/backgrounds/bg-16.jpg",
+      "desc": "bg16"
+    },
+    {
+      "name": "bg17",
+      "url": "/backgrounds/bg-17.jpg",
+      "desc": "bg17"
+    }
+  ],
+  "searchengine": [
+    {
+      "name": "Default",
+      "url": "http://mps.eanswers.com/search/?q=",
+      "desc": "Search using Private Search"
+    },{
+      "name": "Google",
+      "url": "https://www.google.com/search?q=",
+      "desc": "Search using Google"
+    },
+    {
+      "name": "Yahoo",
+      "url": "https://search.yahoo.com/search?p=",
+      "desc": "Search using Yahoo"
+    },
+    {
+      "name": "Bing",
+      "url": "https://www.bing.com/search?q=",
+      "desc": "Search using Bing"
+    }
+  ],
+  "topsite": [
+    {
+      "name": "Data Collection",
+      "url": "https://privacy.google.com/your-data.html",
+      "desc": "Understand what data Google collect on you."
+    },
+    {
+      "name": "Privacy Control",
+      "url": "https://privacy.google.com/take-control.html",
+      "desc": "You have the controls to manage your privacy."
+    },
+    {
+      "name": "Internet privacy",
+      "url": "https://en.wikipedia.org/wiki/Internet_privacy",
+      "desc": "Internet privacy by Wikipedia"
+    }
+  ,
+    {
+      "name": "Ten Ways to Protect Your Web Privacy",
+      "url": "https://www.lifewire.com/g00/protect-web-privacy-3901571?i10c.referrer=https%3A%2F%2Fwww.google.co.il%2F",
+      "desc": "Ten Ways to Protect Your Web Privacy"
+    }
+  ,
+    {
+      "name": "Prevent Tracking",
+      "url": "http://www.wikihow.com/Prevent-People-from-Tracking-You-on-the-Internet",
+      "desc": "Prevent People from Tracking You on the Internet"
+    }
+  ,
+    {
+      "name": "Understand Facebook Privacy",
+      "url": "http://www.trustedreviews.com/opinions/facebook-privacy-settings-protecting-what-you-care-about",
+      "desc": "Facebook Privacy Settings: A complete guide to keeping control"
+    }
+  ,
+    {
+      "name": "Facebook Privacy Settings",
+      "url": "https://www.facebook.com/help/325807937506242/",
+      "desc": "Facebook Privacy Settings"
+    }
+  ,
+    {
+      "name": "Internet Privacy Tips for Windows & Mac",
+      "url": "https://www.youtube.com/watch?v=bo2EwWqmhgo",
+      "desc": "Internet Privacy Tips for Windows & Mac"
+    }
+  ]
+}

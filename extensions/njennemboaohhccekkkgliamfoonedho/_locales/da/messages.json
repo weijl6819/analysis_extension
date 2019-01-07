@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Light Up",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up er en simpel endnu, men stærkt vanedannende puslespil. Tilslut matchende farver med rør for at oprette en glød flow.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

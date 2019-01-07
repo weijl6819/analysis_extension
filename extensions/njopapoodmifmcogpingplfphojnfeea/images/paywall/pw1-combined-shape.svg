@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="603" height="520" viewBox="0 0 603 520">
+    <defs>
+        <rect id="a" width="544" height="460" x=".615" rx="10"/>
+        <filter id="b" width="116.9%" x="-8.5%" y="-9.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="15"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.770142432 0 0 0 0 0.770142432 0 0 0 0 0.770142432 0 0 0 0.5 0"/>
+        </filter>
+        <linearGradient id="c" x1="50%" x2="15.331%" y1="0%" y2="71.394%">
+            <stop offset="0%" stop-color="#F3F3F3"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(29 28)">
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <g fill-rule="nonzero">
+            <use fill="#000" filter="url(#b)" xlink:href="#a"/>
+            <use fill="#FFF" xlink:href="#a"/>
+        </g>
+        <path fill="url(#c)" fill-rule="nonzero" d="M486.785 171.166l-10.216-6.384L511.652 136l-10.49 44.15-10.136-6.334-88.452 140.369-1.304 2.118-.022-.014-.014.022-2.104-1.325-49.892-30.703L222.56 483.206l-24.103 34.925-3.383-1.72 23.269-35.89 127.99-200.984 1.3-2.113.032.02.02-.032 2.093 1.332 49.877 30.694 87.13-138.272z" mask="url(#d)"/>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+.main-modal {
+    $modal-head-height: 60px;
+
+    width: calc(100vw - 50px); height: calc(100vh - 50px);
+    position: absolute; top: 25px; left: 25px; opacity: 0;
+    background: $main-modal-bg; transition: transform .3s, opacity 1s;
+    transform: translateY(-150%); will-change: transform;
+
+    &.show { transform: translateY(0); opacity: 1; }
+
+    .main-modal-head {
+        display: flex; align-items: center;
+        height: $modal-head-height; padding: 20px 40px; border-bottom: 1px solid $main-view-inner-bd;
+
+        .main-modal-menu {
+            display: flex; align-items: center;
+        }
+        .main-modal-menu-item {
+            display: flex; align-items: center; margin-right: 30px; user-select: none;
+            .icon { width: 14px; height: 14px; margin-right: 8px; }
+            .icon-notes { width: 12px; height: 12px; }
+
+            &:hover { transition: all .3s; opacity: .8; cursor: pointer; }
+        }
+        .main-modal-menu-item-text { color: $text-color; font-size: 12px; }
+        .icon-close {
+            position: absolute; top: 20px; right: 20px;
+
+            &:hover { transition: all .3s; opacity: .8; cursor: pointer; }
+        }
+    }
+    .main-modal-view {
+        height: calc(100vh - 50px - #{$modal-head-height}); overflow: auto;
+    }
+}

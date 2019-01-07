@@ -1,0 +1,824 @@
+{
+  "_account" : {
+    "message" : "アカウント"
+  },
+  "_account_expired" : {
+    "message" : "アカウントの使用期限が切れました。アカウントマネージャーにお問い合わせください。"
+  },
+  "_advanced_settings" : {
+    "message" : "詳細設定"
+  },
+  "_audio_only" : {
+    "message" : "音声のみで参加する："
+  },
+  "_cancel" : {
+    "message" : "キャンセル"
+  },
+  "_congratulations" : {
+    "message" : "おめでとうございます。"
+  },
+  "_customize_header" : {
+    "message" : "招待メールをカスタマイズ"
+  },
+  "_customize_placeholder" : {
+    "message" : "招待メールに追加するカスタムメッセージを入力してください。"
+  },
+  "_default_dialing" : {
+    "message" : "デフォルトのダイヤル方法"
+  },
+  "_email" : {
+    "message" : "電子メール"
+  },
+  "_error_friendly" : {
+    "message" : "申し訳ございません。サーバーへの接続が途切れました。再度お試しください。"
+  },
+  "_error_invalid" : {
+    "message" : "メールアドレスまたはパスワードが無効です"
+  },
+  "_error_unknown" : {
+    "message" : "エラーが発生しました。再度お試しください。"
+  },
+  "_extension_settings" : {
+    "message" : "拡張機能設定"
+  },
+  "_extension" : {
+    "message" : "内線番号"
+  },
+  "_international_numbers" : {
+    "message" : "国際電話番号"
+  },
+  "_invite_email_subject" : {
+    "message" : "クリックして Lifesize で {Meeting_name} に電話をかける"
+  },
+  "_invite_email_body1" : {
+    "message" : "Lifesize で {Meeting_name} に接続するための招待が届いています。\n\nビデオで接続\n"
+  },
+  "_invite_email_passcode_protected" : {
+    "message" : "会議はパスコードで保護されています。"
+  },
+  "_invite_email_enter_passcode" : {
+    "message" : "会議はパスコードで保護されています。参加には、このパスコードの入力が必要です：{Passcode}"
+  },
+  "_invite_email_body2" : {
+    "message" : "LifeSize 会議室システムからの接続ですか？キーパッドで {Extn} をダイヤルしてください。\n\n電話で接続する\n"
+  },
+  "_invite_email_body3" : {
+    "message" : "その他の番号：\n{NumbersLink}"
+  },
+  "_invite_email_body4" : {
+    "message" : "音声、ウェブ、ビデオ会議…すべて Lifesize におまかせください。www.lifesize.com にて無料でお試しください。"
+  },
+  "_join_now" : {
+    "message" : "Chrome または Internet Explorer（v. 10 以上）で今すぐ参加："
+  },
+  "_lifesize_cloud" : {
+    "message" : "Lifesize Cloud"
+  },
+  "_login_success_info" : {
+    "message" : "これで、Lifesize 拡張機能が設定され、使用する準備が整いました。"
+  },
+  "_meet_on_lifesize" : {
+    "message" : "Lifesize でスケジュール"
+  },
+  "_meeting_invitation_greeting" : {
+    "message" : "Lifesize Cloud で {Meeting_name} にご参加ください。"
+  },
+  "_passcode" : {
+    "message" : "パスコード"
+  },
+  "_password" : {
+    "message" : "パスワード"
+  },
+  "_please_login" : {
+    "message" : "ログインするには、Lifesize Cloud 拡張機能ボタンをクリックします。"
+  },
+  "_preferences" : {
+    "message" : "設定"
+  },
+  "_save" : {
+    "message" : "保存"
+  },
+  "_schedule_google" : {
+    "message" : "Google カレンダーでスケジュール"
+  },
+  "_schedule_meeting" : {
+    "message" : "会議をスケジュール"
+  },
+  "_select_header" : {
+    "message" : "ユーザーまたは会議室を選択"
+  },
+  "_sign_in" : {
+    "message" : "サインイン"
+  },
+  "_sign_in_info" : {
+    "message" : "拡張機能の設定を終了するには、Lifesize Cloud アカウントにサインインしてください。"
+  },
+  "_sign_out" : {
+    "message" : "サインアウト"
+  },
+  "_us" : {
+    "message" : "米国"
+  },
+  "_user_invitation_greeting" : {
+    "message" : "Lifesize Cloud で {Meeting_name} に接続してください。"
+  },
+  "_view_options" : {
+    "message" : "ダイヤルオプションを表示、またはアプリをインストール："
+  },
+  "_country_code_AF" : {
+    "message" : "アフガニスタン"
+  },
+  "_country_code_AL" : {
+    "message" : "アルバニア"
+  },
+  "_country_code_DZ" : {
+    "message" : "アルジェリア"
+  },
+  "_country_code_AS" : {
+    "message" : "米領サモア"
+  },
+  "_country_code_AD" : {
+    "message" : "アンドラ"
+  },
+  "_country_code_AO" : {
+    "message" : "アンゴラ"
+  },
+  "_country_code_AI" : {
+    "message" : "アングィラ"
+  },
+  "_country_code_AG" : {
+    "message" : "アンチグアバーブーダ"
+  },
+  "_country_code_AR" : {
+    "message" : "アルゼンチン"
+  },
+  "_country_code_AM" : {
+    "message" : "アルメニア"
+  },
+  "_country_code_AW" : {
+    "message" : "アルバ"
+  },
+  "_country_code_AU" : {
+    "message" : "オーストラリア"
+  },
+  "_country_code_AT" : {
+    "message" : "オーストリア"
+  },
+  "_country_code_AZ" : {
+    "message" : "アゼルバイジャン"
+  },
+  "_country_code_BS" : {
+    "message" : "バハマ"
+  },
+  "_country_code_BH" : {
+    "message" : "バーレーン"
+  },
+  "_country_code_BD" : {
+    "message" : "バングラデシュ"
+  },
+  "_country_code_BB" : {
+    "message" : "バルバドス"
+  },
+  "_country_code_BY" : {
+    "message" : "ベラルーシ"
+  },
+  "_country_code_BE" : {
+    "message" : "ベルギー"
+  },
+  "_country_code_BZ" : {
+    "message" : "ベリーズ"
+  },
+  "_country_code_BJ" : {
+    "message" : "ベニン"
+  },
+  "_country_code_BM" : {
+    "message" : "バミューダ"
+  },
+  "_country_code_BT" : {
+    "message" : "ブータン"
+  },
+  "_country_code_BO" : {
+    "message" : "ボリビア"
+  },
+  "_country_code_BA" : {
+    "message" : "ボスニア ヘルツェゴビナ"
+  },
+  "_country_code_BW" : {
+    "message" : "ボツワナ"
+  },
+  "_country_code_BR" : {
+    "message" : "ブラジル"
+  },
+  "_country_code_BN" : {
+    "message" : "ブルネイ"
+  },
+  "_country_code_BG" : {
+    "message" : "ブルガリア"
+  },
+  "_country_code_BF" : {
+    "message" : "ブルキナファソ"
+  },
+  "_country_code_BI" : {
+    "message" : "ブルンジ"
+  },
+  "_country_code_KH" : {
+    "message" : "カンボジア"
+  },
+  "_country_code_CM" : {
+    "message" : "カメルーン"
+  },
+  "_country_code_CA" : {
+    "message" : "カナダ"
+  },
+  "_country_code_CV" : {
+    "message" : "ケープ ベルデ"
+  },
+  "_country_code_KY" : {
+    "message" : "ケイマン諸島"
+  },
+  "_country_code_CF" : {
+    "message" : "中央アフリカ共和国"
+  },
+  "_country_code_TD" : {
+    "message" : "チャド"
+  },
+  "_country_code_CL" : {
+    "message" : "チリ"
+  },
+  "_country_code_CN" : {
+    "message" : "中国"
+  },
+  "_country_code_CX" : {
+    "message" : "クリスマス島"
+  },
+  "_country_code_CC" : {
+    "message" : "ココス（キーリング）諸島"
+  },
+  "_country_code_CO" : {
+    "message" : "コロンビア"
+  },
+  "_country_code_KM" : {
+    "message" : "コモロ"
+  },
+  "_country_code_CG" : {
+    "message" : "コンゴ共和国"
+  },
+  "_country_code_CD" : {
+    "message" : "コンゴ民主共和国"
+  },
+  "_country_code_CK" : {
+    "message" : "クック諸島"
+  },
+  "_country_code_CR" : {
+    "message" : "コスタリカ"
+  },
+  "_country_code_CI" : {
+    "message" : "コートジボワール"
+  },
+  "_country_code_HR" : {
+    "message" : "クロアチア"
+  },
+  "_country_code_CU" : {
+    "message" : "キューバ"
+  },
+  "_country_code_CY" : {
+    "message" : "キプロス"
+  },
+  "_country_code_CZ" : {
+    "message" : "チェコ共和国"
+  },
+  "_country_code_DK" : {
+    "message" : "デンマーク"
+  },
+  "_country_code_DJ" : {
+    "message" : "ジブチ"
+  },
+  "_country_code_DM" : {
+    "message" : "ドミニカ"
+  },
+  "_country_code_DO" : {
+    "message" : "ドミニカ共和国"
+  },
+  "_country_code_EC" : {
+    "message" : "エクアドル"
+  },
+  "_country_code_EG" : {
+    "message" : "エジプト"
+  },
+  "_country_code_SV" : {
+    "message" : "エルサルバドル"
+  },
+  "_country_code_GQ" : {
+    "message" : "赤道ギニア"
+  },
+  "_country_code_ER" : {
+    "message" : "エリトリア"
+  },
+  "_country_code_EE" : {
+    "message" : "エストニア"
+  },
+  "_country_code_ET" : {
+    "message" : "エチオピア"
+  },
+  "_country_code_EU" : {
+    "message" : "欧州連合"
+  },
+  "_country_code_FK" : {
+    "message" : "フォークランド諸島（マルビナス諸島）"
+  },
+  "_country_code_FO" : {
+    "message" : "フェロー諸島"
+  },
+  "_country_code_FJ" : {
+    "message" : "フィジー"
+  },
+  "_country_code_FI" : {
+    "message" : "フィンランド"
+  },
+  "_country_code_FR" : {
+    "message" : "フランス"
+  },
+  "_country_code_GF" : {
+    "message" : "仏領ギアナ"
+  },
+  "_country_code_PF" : {
+    "message" : "仏領ポリネシア"
+  },
+  "_country_code_GA" : {
+    "message" : "ガボン"
+  },
+  "_country_code_GM" : {
+    "message" : "ガンビア"
+  },
+  "_country_code_GE" : {
+    "message" : "ジョージア"
+  },
+  "_country_code_DE" : {
+    "message" : "ドイツ"
+  },
+  "_country_code_GH" : {
+    "message" : "ガーナ"
+  },
+  "_country_code_GI" : {
+    "message" : "ジブラルタル"
+  },
+  "_country_code_GR" : {
+    "message" : "ギリシャ"
+  },
+  "_country_code_GL" : {
+    "message" : "グリーンランド"
+  },
+  "_country_code_GD" : {
+    "message" : "グレナダ"
+  },
+  "_country_code_GP" : {
+    "message" : "グアドループ"
+  },
+  "_country_code_GU" : {
+    "message" : "グアム"
+  },
+  "_country_code_GT" : {
+    "message" : "グアテマラ"
+  },
+  "_country_code_GG" : {
+    "message" : "ガーンジー"
+  },
+  "_country_code_GN" : {
+    "message" : "ギニア"
+  },
+  "_country_code_GW" : {
+    "message" : "ギニアビサウ"
+  },
+  "_country_code_GY" : {
+    "message" : "ガイアナ"
+  },
+  "_country_code_GZ" : {
+    "message" : "ガザ地区"
+  },
+  "_country_code_HT" : {
+    "message" : "ハイチ"
+  },
+  "_country_code_VA" : {
+    "message" : "ローマ教皇庁（バチカン市国）"
+  },
+  "_country_code_HN" : {
+    "message" : "ホンジュラス"
+  },
+  "_country_code_HK" : {
+    "message" : "香港"
+  },
+  "_country_code_HU" : {
+    "message" : "ハンガリー"
+  },
+  "_country_code_IS" : {
+    "message" : "アイスランド"
+  },
+  "_country_code_IN" : {
+    "message" : "インド"
+  },
+  "_country_code_ID" : {
+    "message" : "インドネシア"
+  },
+  "_country_code_IQ" : {
+    "message" : "イラク"
+  },
+  "_country_code_IE" : {
+    "message" : "アイルランド"
+  },
+  "_country_code_IM" : {
+    "message" : "マン島"
+  },
+  "_country_code_IL" : {
+    "message" : "イスラエル"
+  },
+  "_country_code_IT" : {
+    "message" : "イタリア"
+  },
+  "_country_code_JM" : {
+    "message" : "ジャマイカ"
+  },
+  "_country_code_JP" : {
+    "message" : "日本"
+  },
+  "_country_code_JE" : {
+    "message" : "ジャージー"
+  },
+  "_country_code_JO" : {
+    "message" : "ヨルダン"
+  },
+  "_country_code_KZ" : {
+    "message" : "カザフスタン"
+  },
+  "_country_code_KE" : {
+    "message" : "ケニア"
+  },
+  "_country_code_KI" : {
+    "message" : "キリバス"
+  },
+  "_country_code_KR" : {
+    "message" : "韓国"
+  },
+  "_country_code_KW" : {
+    "message" : "クウェート"
+  },
+  "_country_code_KG" : {
+    "message" : "キルギスタン"
+  },
+  "_country_code_LA" : {
+    "message" : "ラオス"
+  },
+  "_country_code_LV" : {
+    "message" : "ラトビア"
+  },
+  "_country_code_LB" : {
+    "message" : "レバノン"
+  },
+  "_country_code_LS" : {
+    "message" : "レソト"
+  },
+  "_country_code_LR" : {
+    "message" : "リベリア"
+  },
+  "_country_code_LY" : {
+    "message" : "リビア"
+  },
+  "_country_code_LI" : {
+    "message" : "リヒテンシュタイン"
+  },
+  "_country_code_LT" : {
+    "message" : "リトアニア"
+  },
+  "_country_code_LU" : {
+    "message" : "ルクセンブルグ"
+  },
+  "_country_code_MO" : {
+    "message" : "マカオ"
+  },
+  "_country_code_MK" : {
+    "message" : "マケドニア"
+  },
+  "_country_code_MG" : {
+    "message" : "マダガスカル"
+  },
+  "_country_code_MW" : {
+    "message" : "マラウィ"
+  },
+  "_country_code_MY" : {
+    "message" : "マレーシア"
+  },
+  "_country_code_MV" : {
+    "message" : "モルディブ"
+  },
+  "_country_code_ML" : {
+    "message" : "マリ"
+  },
+  "_country_code_MT" : {
+    "message" : "マルタ"
+  },
+  "_country_code_MH" : {
+    "message" : "マーシャル諸島"
+  },
+  "_country_code_MQ" : {
+    "message" : "マルティニーク"
+  },
+  "_country_code_MR" : {
+    "message" : "モーリタニア"
+  },
+  "_country_code_MU" : {
+    "message" : "モーリシャス"
+  },
+  "_country_code_YT" : {
+    "message" : "マヨット"
+  },
+  "_country_code_MX" : {
+    "message" : "メキシコ"
+  },
+  "_country_code_FM" : {
+    "message" : "ミクロネシア連邦"
+  },
+  "_country_code_MD" : {
+    "message" : "モルドバ"
+  },
+  "_country_code_MC" : {
+    "message" : "モナコ"
+  },
+  "_country_code_MN" : {
+    "message" : "モンゴル"
+  },
+  "_country_code_ME" : {
+    "message" : "モンテネグロ"
+  },
+  "_country_code_MS" : {
+    "message" : "モントセラト"
+  },
+  "_country_code_MA" : {
+    "message" : "モロッコ"
+  },
+  "_country_code_MZ" : {
+    "message" : "モザンビーク"
+  },
+  "_country_code_MM" : {
+    "message" : "ミャンマー"
+  },
+  "_country_code_NA" : {
+    "message" : "ナミビア"
+  },
+  "_country_code_NR" : {
+    "message" : "ナウル"
+  },
+  "_country_code_NP" : {
+    "message" : "ネパール"
+  },
+  "_country_code_NL" : {
+    "message" : "オランダ"
+  },
+  "_country_code_NC" : {
+    "message" : "ニューカレドニア"
+  },
+  "_country_code_NZ" : {
+    "message" : "ニュージーランド"
+  },
+  "_country_code_NI" : {
+    "message" : "ニカラグア"
+  },
+  "_country_code_NE" : {
+    "message" : "ニジェール"
+  },
+  "_country_code_NG" : {
+    "message" : "ナイジェリア"
+  },
+  "_country_code_NU" : {
+    "message" : "ニウエ"
+  },
+  "_country_code_NF" : {
+    "message" : "ノーフォーク島"
+  },
+  "_country_code_MP" : {
+    "message" : "北マリアナ諸島"
+  },
+  "_country_code_NO" : {
+    "message" : "ノルウェー"
+  },
+  "_country_code_OM" : {
+    "message" : "オマーン"
+  },
+  "_country_code_PK" : {
+    "message" : "パキスタン"
+  },
+  "_country_code_PW" : {
+    "message" : "パラオ"
+  },
+  "_country_code_PA" : {
+    "message" : "パナマ"
+  },
+  "_country_code_PG" : {
+    "message" : "パプアニューギニア"
+  },
+  "_country_code_PY" : {
+    "message" : "パラグアイ"
+  },
+  "_country_code_PE" : {
+    "message" : "ペルー"
+  },
+  "_country_code_PH" : {
+    "message" : "フィリピン"
+  },
+  "_country_code_PN" : {
+    "message" : "ピトケアン諸島"
+  },
+  "_country_code_PL" : {
+    "message" : "ポーランド"
+  },
+  "_country_code_PT" : {
+    "message" : "ポルトガル"
+  },
+  "_country_code_PR" : {
+    "message" : "プエルトリコ"
+  },
+  "_country_code_QA" : {
+    "message" : "カタール"
+  },
+  "_country_code_RE" : {
+    "message" : "レユニオン"
+  },
+  "_country_code_RO" : {
+    "message" : "ルーマニア"
+  },
+  "_country_code_RU" : {
+    "message" : "ロシア"
+  },
+  "_country_code_RW" : {
+    "message" : "ルワンダ"
+  },
+  "_country_code_SH" : {
+    "message" : "セントヘレナ"
+  },
+  "_country_code_KN" : {
+    "message" : "セントキッツおよびネイビス島"
+  },
+  "_country_code_LC" : {
+    "message" : "セントルシア"
+  },
+  "_country_code_PM" : {
+    "message" : "サンピエールおよびミクロン島"
+  },
+  "_country_code_VC" : {
+    "message" : "セントビンセントおよびグレナディーン諸島"
+  },
+  "_country_code_WS" : {
+    "message" : "サモア"
+  },
+  "_country_code_SM" : {
+    "message" : "サンマリノ"
+  },
+  "_country_code_ST" : {
+    "message" : "サントメプリンシペ"
+  },
+  "_country_code_SA" : {
+    "message" : "サウジアラビア"
+  },
+  "_country_code_SN" : {
+    "message" : "セネガル"
+  },
+  "_country_code_RS" : {
+    "message" : "セルビア"
+  },
+  "_country_code_SC" : {
+    "message" : "セーシェル"
+  },
+  "_country_code_SL" : {
+    "message" : "シエラレオネ"
+  },
+  "_country_code_SG" : {
+    "message" : "シンガポール"
+  },
+  "_country_code_SK" : {
+    "message" : "スロバキア"
+  },
+  "_country_code_SI" : {
+    "message" : "スロベニア"
+  },
+  "_country_code_SB" : {
+    "message" : "ソロモン諸島"
+  },
+  "_country_code_SO" : {
+    "message" : "ソマリア"
+  },
+  "_country_code_ZA" : {
+    "message" : "南アフリカ共和国"
+  },
+  "_country_code_ES" : {
+    "message" : "スペイン"
+  },
+  "_country_code_LK" : {
+    "message" : "スリランカ"
+  },
+  "_country_code_SD" : {
+    "message" : "スーダン"
+  },
+  "_country_code_SR" : {
+    "message" : "スリナム"
+  },
+  "_country_code_SJ" : {
+    "message" : "スバールバル諸島"
+  },
+  "_country_code_SZ" : {
+    "message" : "スワジランド"
+  },
+  "_country_code_SE" : {
+    "message" : "スウェーデン"
+  },
+  "_country_code_CH" : {
+    "message" : "スイス"
+  },
+  "_country_code_TW" : {
+    "message" : "台湾"
+  },
+  "_country_code_TJ" : {
+    "message" : "タジキスタン"
+  },
+  "_country_code_TZ" : {
+    "message" : "タンザニア"
+  },
+  "_country_code_TH" : {
+    "message" : "タイ"
+  },
+  "_country_code_TL" : {
+    "message" : "東チモール"
+  },
+  "_country_code_TG" : {
+    "message" : "トーゴ"
+  },
+  "_country_code_TK" : {
+    "message" : "トケラウ"
+  },
+  "_country_code_TO" : {
+    "message" : "トンガ"
+  },
+  "_country_code_TT" : {
+    "message" : "トリニダード トバゴ"
+  },
+  "_country_code_TN" : {
+    "message" : "チュニジア"
+  },
+  "_country_code_TR" : {
+    "message" : "トルコ"
+  },
+  "_country_code_TM" : {
+    "message" : "トルクメニスタン"
+  },
+  "_country_code_TC" : {
+    "message" : "タークス カイコス諸島"
+  },
+  "_country_code_TV" : {
+    "message" : "ツバル"
+  },
+  "_country_code_UG" : {
+    "message" : "ウガンダ"
+  },
+  "_country_code_UA" : {
+    "message" : "ウクライナ"
+  },
+  "_country_code_AE" : {
+    "message" : "アラブ首長国連邦"
+  },
+  "_country_code_GB" : {
+    "message" : "イギリス"
+  },
+  "_country_code_US" : {
+    "message" : "アメリカ合衆国"
+  },
+  "_country_code_UY" : {
+    "message" : "ウルグアイ"
+  },
+  "_country_code_UZ" : {
+    "message" : "ウズベキスタン"
+  },
+  "_country_code_VU" : {
+    "message" : "バヌアツ"
+  },
+  "_country_code_VE" : {
+    "message" : "ベネズエラ"
+  },
+  "_country_code_VN" : {
+    "message" : "ベトナム"
+  },
+  "_country_code_VG" : {
+    "message" : "英領ヴァージン諸島"
+  },
+  "_country_code_VI" : {
+    "message" : "ヴァージン諸島"
+  },
+  "_country_code_EH" : {
+    "message" : "西サハラ"
+  },
+  "_country_code_YE" : {
+    "message" : "イエメン"
+  },
+  "_country_code_ZM" : {
+    "message" : "ザンビア"
+  },
+  "_country_code_ZW" : {
+    "message" : "ジンバブエ"
+  }
+}

@@ -1,0 +1,61 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy {
+	.cash-back-mini {
+		width: 284px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #01c049;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    top: 50px;
+    right: 0;
+    position: absolute;
+    min-height: 50px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    &.closed {
+    	transform: translate3d(85%,0,0) !important;
+    }
+    .cash-back-mini-wrapper {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	.logo-wrapper {
+    		max-width: 48px;
+    		flex-basis: 48px;
+    		border-right: 1px solid #00A224;
+				min-height: 37px;
+				display: flex;
+				align-items: center;
+    		svg {
+    			width: 35px;
+    		}
+    	}
+    	.content {
+    		flex: 1;
+    		padding-left: 17px;
+    		h2 {
+    			color: #fff;
+    			line-height: 23px;
+
+    		}
+    		h5 {
+    			color: #fff;
+    			opacity: 0.6;
+    		}
+    	}
+    }
+    .icon-x {
+			top: 4px;
+			right: 6px;
+			position: absolute;
+			color: #00771b;
+			font-size: 9px;
+			width: 20px;
+			height: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+    }
+	}   
+}

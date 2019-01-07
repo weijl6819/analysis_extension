@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<!--
+	Description: Farsight DNSDB Scout™ Dashboard
+	Author: Farsight Security, Inc.
+	Copyright: 2018 Farsight Security. All Rights Reserved.
+	License: Apache License, Version 2.0
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="images/fsi_scout_icon16.png"/>
+		<link rel="stylesheet" href="semantic.min.css">
+		<link rel="stylesheet" href="calendar.min.css">
+		<link rel="stylesheet" href="accordion.css">
+		<link rel="stylesheet" href="dashboard.css">
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="calendar.min.js"></script>
+		<script type="text/javascript" src="semantic.min.js"></script>
+		<script type="text/javascript" src="datatables.min.js"></script>
+		<script type="text/javascript" src="accordion.js"></script>
+
+		<title>Farsight DNSDB Scout</title>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<div id="headerBar" class="ui inverted menu">
+			<div class="ui container">
+				<div class="item">
+					<a href="dashboard.html">
+						<img class="logo-svg" src="images/dnsdb-scout-logo-w.svg">
+					</a>
+				</div>
+
+				<div class="right menu">
+					<div class="ui active inline loader" id="loading-spinner"></div>
+
+					<div class="ui quota-error" id="quota-error">
+						<div class="alert warning"><i class="icon exclamation triangle"></i>Invalid or no API key set.</div>
+					</div>
+
+					<div class="ui quota-days" id="quota-days">
+						<h2 class="ui center aligned orange header" id="quota-time"></h2>
+						<p id="quota-time-desc"></p>
+					</div>
+
+					<div class="ui quota-queries" id="quota-queries">
+						<h2 class="ui center aligned orange header" id="quota-quantity"></h2>
+						<p id="quota-quantity-desc"></p>
+					</div>
+
+					<div class="ui punycode-status" id="punycode-status">
+						<p>IDN/Punycode Status</p>
+						<p class="alert success" id="punycode-status-alert"><i class="icon check"></i>Checking Punycode Status...</p>
+					</div>
+
+					<div>
+						<a href="options.html" class="ui icon purple button" title="Go to Settings"><i class="cog icon"></i></a>
+						<a href="https://www.farsightsecurity.com/about-farsight-security/contacts/?referrer=Scout" class="link underline" target="_blank" title="Contact support via: support@farsightsecurity.com">Need help?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Header -->
+
+		<!-- Start Main Container. -->
+		<div class="main ui container">
+			<div class="ui top attached tabular menu">
+				<a class="item active" data-tab="search_tab" id="search_tab">DNSDB Search</a>
+				<a class="item" data-tab="recent_queries_tab" id="recent_queries_tab">Recent Queries</a>
+			</div>
+
+			<!-- DNSDB Search Content-->
+			<div class="ui bottom attached tab segment active" data-tab="search_tab" id="search_subtab">
+				<form class="ui form" id="dnsdb_crx_form" method="POST" autocomplete='on'>
+					<div class="ui grid">
+						<div class="eight wide column">
+							<div class="two fields">
+								<!-- Record Type -->
+								<div class="field" id="rrtype_field">
+									<label>Record Type</label>
+									<select class="ui search fluid dropdown" id="search_rrecord">
+										<option value="">Any</option>
+										<option value="A">A</option>
+										<option value="AAAA">AAAA</option>
+										<option value="AFSDB">AFSDB</option>
+										<option selected value="ANY">ANY</option>
+										<option value="ANY-DNSSEC">ANY-DNSSEC</option>
+										<option value="APL">APL</option>
+										<option value="CAA">CAA</option>
+										<option value="CDNSKEY">CDNSKEY</option>
+										<option value="CDS">CDS</option>
+										<option value="CERT">CERT</option>
+										<option value="CNAME">CNAME</option>
+										<option value="DHCID">DHCID</option>
+										<option value="DNAME">DNAME</option>
+										<option value="DNSKEY">DNSKEY</option>
+										<option value="DS">DS</option>
+										<option value="HIP">HIP</option>
+										<option value="KEY">KEY</option>
+										<option value="KX">KX</option>
+										<option value="LOC">LOC</option>
+										<option value="MX">MX</option>
+										<option value="NAPTR">NAPTR</option>
+										<option value="NS">NS</option>
+										<option value="NSEC">NSEC</option>
+										<option value="NSEC3">NSEC3</option>
+										<option value="NSEC3PARAM">NSEC3PARAM</option>
+										<option value="PTR">PTR</option>
+										<option value="RP">RP</option>
+										<option value="RRSIG">RRSIG</option>
+										<option value="SIG">SIG</option>
+										<option value="SOA">SOA</option>
+										<option value="SRV">SRV</option>
+										<option value="SSHFP">SSHFP</option>
+										<option value="TKEY">TKEY</option>
+										<option value="TLSA">TLSA</option>
+										<option value="TSIG">TSIG</option>
+										<option value="URI">URI</option>
+										<option value="TXT">TXT</option>
+									</select>
+								</div>
+
+								<div id="rrtype-info" class="flowing popup one wide inline item transition" data-content="ANY will match any RRtype except DNSSEC RRtypes. ANY-DNSSEC will only match the DNSSEC RRtypes." data-position="right center"><i class="info circle icon purple"></i></div>
+
+								<div class="field">
+									<!-- Limit -->
+									<label>Limit</label>
+									<select class="ui fluid dropdown selection" id="search_limit">
+										<option value="10" id="search_limit_10">10</option>
+										<option selected value="50" id="search_limit_50">50</option>
+										<option value="100" id="search_limit_100">100</option>
+										<option value="500" id="search_limit_500">500</option>
+										<option value="1000" id="search_limit_1000">1000</option>
+										<option value="2000" id="search_limit_2000">2000</option>
+										<option value="10000" id="search_limit_10000">Max</option>
+									</select>
+								</div>
+
+								<div id="limit-info" class="flowing popup one wide inline item transition" data-content="Max is 10,000 results. For more, try DNS Export or a commandline tool." data-position="right center"><i class="info circle icon purple"></i></div>
+							</div>
+
+							<!-- Time Fencing options -->
+							<div class="sixteen wide field">
+								<div class="ui accordion">
+									<span class="title" id="time-fencing-section">
+										<i class="plus square outline icon" id="time-fencing-section-icon"></i> Time Fencing (UTC)
+									</span>
+									<div class="content">
+										<div class="field">
+											<div class="inline fields">
+												<div class="field">
+													<div class="ui radio checkbox" id="time_last_before_radio">
+														<input type="radio" name="timefennelast" tabindex="0" class="hidden" id="time_last_before" value="time_last_before">
+														<label>Last Seen Before:</label>
+													</div>
+												</div>
+
+												<div class="field">
+													<div class="ui radio checkbox" id="time_last_after_radio">
+														<input type="radio" name="timefennelast" checked="true" tabindex="0" class="hidden" id="time_last_after" value="time_last_after">
+														<label>Last Seen After:</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="ui calendar" id="rangeend">
+												<div class="ui input left icon">
+													<i class="calendar icon"></i>
+													<input type="text" placeholder="End Date/Time" id="rangeendinput" title="">
+												</div>
+											</div>
+										</div>
+
+										<div class="field">
+											<div class="inline fields">
+												<div class="field">
+													<div class="ui radio checkbox" id="time_first_before_radio">
+														<br> <!-- TODO: What? -->
+														<input type="radio" name="timefencefirst" checked="true" tabindex="0" class="hidden" id="time_first_before" value="time_first_before">
+														<label>First Seen Before:</label>
+													</div>
+												</div>
+
+												<div class="field">
+													<div class="ui radio checkbox" id="time_first_after_radio">
+														<br> <!-- TODO: What? -->
+														<input type="radio" name="timefencefirst" tabindex="0" class="hidden" id="time_first_after" value="time_first_after">
+														<label>First Seen After:</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="ui calendar" id="rangestart">
+												<div class="ui input left icon">
+												<i class="calendar icon"></i>
+												<input type="text" placeholder="Start Date/Time" id="rangestartinput"> </div>
+											</div>
+										</div>
+
+										<button class="ui left floated mini red basic button" id="clear-timefencing" type="button">
+											<i class="trash icon"></i>
+											Clear
+										</button>
+
+										<div id="time-fence-info" class="flowing popup one wide item transition" data-content="Time Fencing is optional - empty fields will be ignored. These fields support unix time pasting."><i class="info circle icon purple"></i></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="eight wide column">
+							<!-- RRSet/RData -->
+							<div class="rrset-rdata ui top attached tabular menu">
+								<a class="item active" id="RRSet_tab" data-tab="RRSet_tab">RRSet</a>
+								<a class="item" id="RData_tab" data-tab="RData_tab">RData</a>
+							</div>
+
+							<!-- RRSet -->
+							<div class="rrset-rdata ui bottom attached tab segment active" data-tab="RRSet_tab" id="RRSet_subtab">
+								<div class="two fields">
+									<div class="field">
+										<label for="search_rrset_domain">Domain</label>
+										<input class="ui fluid field" placeholder="host.example.com" name='search_rrset_domain' id="search_rrset_domain" type="text">
+									</div>
+
+									<div class="field">
+										<label for="search_rrset_bailiwick">Bailiwick</label>
+										<input class="ui fluid field" placeholder="example.com" name='search_rrset_bailiwick' id="search_rrset_bailiwick" type="text">
+									</div>
+
+									<div id="bailiwick-info" class="flowing popup one wide inline item transition" data-content="A bailiwick is an enclosing zone for a nameserver that serves the RRset or the name of the zone containing the RRset." data-position="top center"><i class="info circle icon purple"></i></div>
+								</div>
+							</div>
+
+							<!-- RData -->
+							<div class="rrset-rdata ui bottom attached tab segment" data-tab="RData_tab" id="RData_subtab">
+								<div class="field">
+									<div class="inline fields">
+										<label for="input_mode">Input Mode:</label>
+
+										<!-- Do not re-order these radio buttons without changing the validation -->
+										<div class="field">
+											<div class="ui radio checkbox checked" id="form_rdata_rmode_name_checkbox">
+												<input type="radio" name="input_mode" id="form_rdata_rmode_name" checked="" tabindex="0" value="name">
+												<label>Name</label>
+											</div>
+										</div>
+
+										<div class="field">
+											<div class="ui radio checkbox" id="form_rdata_rmode_ip_checkbox">
+												<input type="radio" name="input_mode" id="form_rdata_rmode_ip" tabindex="0" value="ip">
+												<label>IP or Network</label>
+											</div>
+										</div>
+
+										<div class="field">
+											<div class="ui radio checkbox" id="form_rdata_rmode_raw_checkbox">
+												<input type="radio" name="input_mode" id="form_rdata_rmode_raw" tabindex="0" value="raw">
+												<label>Raw Hex</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="inline field">
+										<label>Record Data</label>
+										<input class="twelve wide field" placeholder="2001:db8:f51::6, 192.0.2.4" name='search_rdata_domain' id="search_rdata_domain" type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="sixteen wide column center aligned">
+							<div class="ui divider"></div>
+
+							<button class="ui button teal large" value="Submit" id="submit">Run Query</button>
+						</div>
+					</div>
+				</form>
+
+
+				<!-- Success and Error Messages. -->
+				<div class="ui message hidden" name="main-message" id="main-message">
+					<div name="main-message-response" id="main-message-response"></div>
+				</div>
+
+				<!--Results-->
+				<div class="ui container" id="results-table-container">
+					<div class="ui grid">
+						<div class="sixteen wide column right aligned">
+							<button class="mini ui button green" id="export_CSV">Export as CSV</button>
+							<button class="mini ui button purple" id="export_JSON">Export as JSON</button>
+							<a href="https://api.dnsdb.info/?referrer=Scout" target="_blank" rel="noopener" title="Would you like to learn more about DNSDB and it's API? Click to open the DNSDB API documentation.">
+								<button class="ui right floated blue mini button" type="button">API Docs</button>
+							</a>
+						</div>
+					</div>
+
+					<div id="results-table-div">
+						<table id="results-table" class="ui sortable selectable padded table">
+							<thead>
+								<tr>
+									<th>Time Last Seen</th>
+									<th>Time First Seen</th>
+									<th>Count</th>
+									<th>Bailiwick</th>
+									<th>RRname</th>
+									<th>RRtype</th>
+									<th>Rdata</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- Recent Queries Content-->
+			<div class="ui bottom attached tab segment" data-tab="recent_queries_tab" id="recent_queries_subtab">
+				<!-- History Table Area -->
+				<div class="ui grid">
+					<div class="sixteen wide column right aligned">
+						<button class="ui basic mini red button" id="history-table-clear" type="button">
+							<i class="trash icon"></i>
+							Clear Recent Query History
+						</button>
+
+						<div class="ui divider"></div>
+					</div>
+				</div>
+
+				<div id="history-table-section-segment-content">
+					<table id="history-table" class="ui sortable selectable table">
+						<thead>
+							<tr>
+								<th>Re-Run</th>
+								<th>Date</th>
+								<th>Status</th>
+								<th>Type</th>
+								<th>Request</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- End Main Container. -->
+	</body>
+
+	<div id="footer">
+		© 2018 by Farsight Security, Inc.
+		<br>
+		Use of this tool is governed by your DNSDB API Key License Agreement and Farsight Security Terms of Use.
+	</div>
+
+	<script src="./punycode.js"></script>
+	<script src="./dashboard.js"></script>
+</html>

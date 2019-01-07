@@ -1,0 +1,103 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy {
+  .link-card-prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+    .link-card-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      h5 {
+        text-align: center;
+        padding: 4px 20px 14px;
+      }
+      button {
+        margin-top: 15px;
+        font-size: 14px !important;
+        height: 40px !important;
+      }
+    }
+
+    &.new {
+      .content {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        h4 {
+          padding: 0 55px;
+          font-size: 22px;
+          line-height: 32px;
+          text-align: center;
+          color: #03aa42;
+        }
+        h5 {
+          padding: 0 35px;
+          margin-top: 10px;        
+        }
+        button {
+          margin: 0 auto;
+          display: block;
+          margin-top: 20px;
+        }
+        
+      }
+      .background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #f0f9fc;
+        .illustration-wrapper {
+          position: absolute;          
+          bottom: 0;
+          height: 200px;
+          right: 0;
+          left: 0;
+        }
+        .illustration {          
+          margin: 0 auto;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 10px;
+          width: 76%;
+          background-position: bottom center;
+          background-image: url("https://cdn.ivaws.com/wikibuy-assets/images/link-your-card-1.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        .table {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0px;
+          height:  20px;
+          background: #889ba1;
+        }
+        .confetti {
+          height: 161px;
+          background-position: bottom center;
+          background-image: url("https://cdn.ivaws.com/wikibuy-assets/images/link-card-confetti.png");
+          background-size: 100% 106%;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: 10px;
+          right: 10px;
+          bottom: 15px;
+          border-top-left-radius: 90px;
+          border-top-right-radius: 90px;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

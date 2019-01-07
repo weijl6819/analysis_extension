@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html style=''>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style media="screen">
+    .group-list {
+      list-style: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      padding-left: 15px;
+      padding-right: 30px;
+    }
+
+    .unfollow {
+      background: white !important;
+      color: black !important;
+      border: 1px solid black !important;
+    }
+
+    .group-list li {
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 10px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .group-list li a {
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      float: left;
+      width: 80%;
+    }
+
+    .group-list li button {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.87);
+      background: rgb(63, 81, 181);
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      min-height: 36px;
+      min-width: 88px;
+      line-height: 36px;
+      vertical-align: middle;
+      align-items: center;
+      text-align: center;
+      border-radius: 3px;
+      box-sizing: border-box;
+      border: 0;
+      padding: 0 6px;
+      margin: 6px 8px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      font-style: inherit;
+      font-variant: inherit;
+      font-family: inherit;
+      text-decoration: none;
+      overflow: hidden;
+      letter-spacing: .01em;
+      transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), background-color .4s cubic-bezier(.25, .8, .25, 1);
+      float: right;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .link {
+      color: #165ba8 !important;
+    }
+
+    .text {
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+    }
+
+    .text-none {
+      text-decoration: none;
+    }
+
+    .m-t-15 {
+      margin-top: 15px;
+    }
+
+    .m-b-30 {
+      margin-bottom: 30px;
+    }
+
+    .navigate {
+      background: #2780e3;
+      padding: 10px;
+      border-radius: 6px;
+      color: white;
+    }
+
+    .disabled {
+      pointer-events: none;
+      opacity: .65;
+    }
+
+    #myInput {
+      background-image: url('https://www.w3schools.com/css/searchicon.png');
+      background-position: 10px 12px;
+      background-repeat: no-repeat;
+      width: 87%;
+      border-radius: 10px;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+      margin-left: 15px;
+    }
+  </style>
+  <script src='popup.js'></script>
+</head>
+
+<body style="width:650px;">
+
+  <h2 class="text-center" id="grps">Groups</h2>
+  <div class="text-center">
+    <img src="groups.png" height="80" width="80" alt="">
+  </div>
+  <div class="text m-t-15 m-b-30" id='message'>Getting Groups....</div>
+  <input type="text" style="display:none;" id="myInput" placeholder="Search for groups..">
+  <ul class="group-list" id="group"></ul>
+</body>
+
+</html>

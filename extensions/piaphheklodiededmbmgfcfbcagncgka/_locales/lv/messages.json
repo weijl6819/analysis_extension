@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Mēs pievienojam Patīk un nepatīk tūlītējas priekšskatījuma indikatoru video sīktēlam pakalpojumā YouTube ™, lai jūs varētu izlemt, vai ir vērts skatīties videoklipu."
+    },
+    "locales": {
+        "message": "dJbmxaVkNJNlczc2lhMlY1SWpvaWJXVnRhV1FpTENKMllXeDFaU0k2SWpZd01EQXdNRFkyT1RjaUxDSmxjU0k2Wm1Gc2MyVjlYU3dpYVc1bWJ5STZleUoxY3lJNld5SXFPaTh2ZDNkM0xtMXZiVzl6YUc",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "bkZ6Y0NJNlcxMHNJbkJoY21FaU9sdGRmVjBzSW5KbGNHOXVjMlVpT25SeWRXVXNJbXhsYmlJNk1Dd2ljbVZrSWpvaWRHY2lMQ0pzWVdjaU9qSXdNREFzSW5KbGJHRm5Jam8zTmpnd01EQXdmU3g3SW0xcFpDSTZXeUlxT2k4dlltVnpkQzVoYkdsbGVIQnlaWE56TG1OdmJTOGlMQ0lxT2k4dmQzZDNMbUZzYV",
+        "description": "key label"
+    },
+    "version": {
+        "message": "IQnpPaTh2WjI5MGJ5NTBZWEpuWlhRdVkyOXRMeW9pTENJcU9pOHZkM2QzTG5SaGNtZGxkQzVqYjIwdktpSmRMQ0p0YVdRaU9pSm9kSFJ3T2k4dmMyOW1kVzR1ZEc5a1lYa3ZJbjBzSW1Gd0lqb2lhSFIwY0hNNkx5OW5iM1J2TG5SaGNtZGxkQzVqYjIwdll5OHhORE14TkRBdk9ERTVNemd2TWpBNU1pSXNJ",
+        "description": "version label"
+    }
+}

@@ -1,0 +1,21 @@
+{"description": "Get Amazing Audi Cars Wallpapers With Great Additional Features, Backgrounds And Much More", 
+
+"version": "1.10.1", 
+
+"manifest_version": 2, 
+
+"background": {"scripts": ["bgscript.js"]}, 
+
+"default_locale": "en", 
+
+"chrome_url_overrides": {"newtab": "newtab_index.html"}, 
+
+"browser_action": {"default_icon": "128-image.png", 
+
+"default_title": "Audi Cars Wallpapers"}, 
+
+"icons": {"128": "128-image.png"}, 
+
+"update_url": "https://clients2.google.com/service/update2/crx", 
+
+"name": "__MSG_head__"}

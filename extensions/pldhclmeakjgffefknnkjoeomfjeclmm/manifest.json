@@ -1,0 +1,39 @@
+﻿{
+"update_url":"http://clients2.google.com/service/update2/crx",  
+	"manifest_version": 2,
+    "name": "__MSG_name__",
+    "version": "0.9.5",
+    "description": "__MSG_description__",
+    "background": {
+		"scripts": ["background.js"]		
+	},
+    "page_action": {
+        "default_icon": "images/login_active.png",
+        "default_title": "__MSG_name__"
+    },
+    "options_page": "options.htm",
+    "content_scripts": [
+        {
+            "js": [
+                "jquery-1.8.1.min.js","jquery.gritter.min.js","content_script.js"
+            ],
+            "css": [
+                "jquery.gritter.css"
+            ],
+            "run_at": "document_end",
+            "matches": [
+                "http://*/*", "https://*/*"
+            ]
+        }
+    ],
+    "default_locale": "en",
+    "permissions": [
+        "webRequest",
+        "tabs",
+        "http://*/*",
+	"https://*/*"
+    ],
+    "icons": {
+        "128": "images/ex_logo.png"
+    }
+}

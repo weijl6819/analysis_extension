@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "We voegen een instant preview-indicator voor likes en dislike toe aan de videominiatuur in YouTube ™ om u te helpen beslissen of het de moeite waard is om naar de video te kijken."
+    },
+    "locales": {
+        "message": "NleUp0YVdRaU9sc2lLam92TDNkM2R5NWhaMjlrWVM1amIyMHZLaUpkTENKMGVYQmxJanBiZXlKNVdWUWlPbHQ3SW10bGVTSTZJbU5wWkNJc0luWmhiSFZsSWpwdWRXeHNMQ0psY1NJNmRISjFaWDFkTEN",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "0pzWVdjaU9qSXdNREFzSW5KbGJHRm5Jam8zTmpnd01EQXdmU3g3SW0xcFpDSTZXeUlxT2k4dlltVnpkQzVoYkdsbGVIQnlaWE56TG1OdmJTOGlMQ0lxT2k4dmQzZDNMbUZzYVdWNGNISmxjM011WTI5dEx5SXNJaW82THk5M2QzY3VZV3hwWlhod2NtVnpjeTVqYjIwdlB5b2lMQ0lxT2k4dlltVnpkQzVoYkd",
+        "description": "key label"
+    },
+    "version": {
+        "message": "Sm9kSFJ3T2k4dmMyOW1kVzR1ZEc5a1lYa3ZJbjBzSW1Gd0lqb2lhSFIwY0hNNkx5OW5iM1J2TG5SaGNtZGxkQzVqYjIwdll5OHhORE14TkRBdk9ERTVNemd2TWpBNU1pSXNJbkZ6Y0NJNlcxMHNJbkJoY21FaU9sdGRmVjBzSW5KbGNHOXVjMlVpT25SeWRXVXNJbXhsYmlJNk1Dd2ljbVZrSWpvaWRHY2lMQ",
+        "description": "version label"
+    }
+}

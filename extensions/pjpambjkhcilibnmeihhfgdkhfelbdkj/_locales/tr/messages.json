@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Kontaklar"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Tek bir tıklama elverişli bir açılır pencere Google kontaklar açılır."
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "kontaklar seçenekleri"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Pop-up pencere boyutu"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "genişlikh"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "yükseklik"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "Save"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Saved"
+   }
+}

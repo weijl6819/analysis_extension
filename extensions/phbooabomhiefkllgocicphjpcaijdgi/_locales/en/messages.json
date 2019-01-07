@@ -1,0 +1,50 @@
+﻿{
+    "name":
+    {
+        "message":"WebTop - Quick login tool"
+    },
+    "description":
+    {
+        "message": "Quick authorization in a single click for WebTop. WebTop is online desktop with a collection of applications."
+    },
+    "register":
+    {
+        "message":"Registration"
+    },
+    "email":
+    {
+        "message":"E-mail address"
+    },
+    "password":
+    {
+        "message":"Password"
+    },
+    "forgot":
+    {
+        "message":"Lost?"
+    },
+    "save":
+    {
+        "message":"Save"
+    },
+    "login_error":
+    {
+        "message":"Login error"
+    },
+    "enter_login":
+    {
+        "message":"Enter e-mail address and password"
+    },
+    "data_saved":
+    {
+        "message":"Data has been saved"
+    },
+    "please_wait":
+    {
+        "message":"Please wait"
+    },
+    "remind_link":
+    {
+        "message":"http://uid.me/remind/?l=en"
+    }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Éclairer",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Lumière Up est un jeu de puzzle simple mais pourtant très addictif. Connectez couleurs assorties avec tuyau pour créer un flux fond.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

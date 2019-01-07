@@ -1,0 +1,297 @@
+[class='emote 4Head'] {
+     background-image: url("4Head.png");
+     width: 22px;
+     height: 30px;
+}
+ .emote.AYAYA {
+     background-image: url("AYAYA.png");
+     width: 28px;
+     height: 27px;
+}
+ .emote.ApeHands {
+     background-image: url("ApeHands.png");
+     width: 30px;
+     height: 30px;
+}
+ .emote.BOGGED {
+     background-image: url("BOGGED.png");
+     width: 32px;
+     height: 32px;
+}
+ .emote.BabyRage {
+     background-image: url("BabyRage.png");
+     width: 28px;
+     height: 28px;
+}
+ .emote.CUX {
+     background-image: url("CUX.png");
+     width: 76px;
+     height: 30px;
+}
+ .emote.ComfyAYA {
+     background-image: url("ComfyAYA.png");
+     width: 32px;
+     height: 32px;
+}
+ .emote.ComfyDog {
+     background-image: url("ComfyDog.png");
+     width: 34px;
+     height: 32px;
+}
+ .emote.ComfyFerret {
+     background-image: url("ComfyFerret.png");
+     width: 30px;
+     height: 30px;
+}
+ .emote.DESBRO {
+     background-image: url("DESBRO.png");
+     width: 28px;
+     height: 30px;
+}
+ .emote.DansGame {
+     background-image: url("DansGame.png");
+     width: 24px;
+     height: 31px;
+}
+ .emote.ECH {
+     background-image: url("ECH.png");
+     width: 28px;
+     height: 28px;
+}
+ .emote.EleGiggle {
+     background-image: url("EleGiggle.png");
+     width: 28px;
+     height: 28px;
+}
+ .emote.FeelsGimiMan {
+     background-image: url("FeelsGimiMan.png");
+     width: 32px;
+     height: 32px;
+}
+ .emote.FeelsWeirdMan {
+     background-image: url("FeelsWeirdMan.png");
+     width: 32px;
+     height: 32px;
+}
+ .emote.ITSRAWWW {
+     background-image: url("ITSRAWWW.png");
+     width: 25px;
+     height: 30px;
+}
+ .emote.Kreygasm {
+     background-image: url("Kreygasm.png");
+     width: 21px;
+     height: 28px;
+}
+ .emote.MingLee {
+     background-image: url("MingLee.png");
+     width: 30px;
+     height: 30px;
+}
+ .emote.NiceMeMe {
+     background-image: url("NiceMeMe.png");
+     width: 27px;
+     height: 30px;
+}
+ .emote.NotLikeThis {
+     background-image: url("NotLikeThis.png");
+     width: 30px;
+     height: 30px;
+}
+ .emote.OMEGALUL {
+     background-image: url("OMEGALUL.png");
+     width: 31px;
+     height: 32px;
+}
+ .emote.PJSalt {
+     background-image: url("PJSalt.png");
+     width: 36px;
+     height: 30px;
+}
+ .emote.POGGERS {
+     background-image: url("POGGERS.png");
+     width: 30px;
+     height: 30px;
+}
+ .emote.PepOk {
+     background-image: url("PepOk.png");
+     width: 30px;
+     height: 30px;
+}
+ .emote.PepeHands {
+     background-image: url("PepeHands.png");
+     width: 30px;
+     height: 30px;
+}
+ .emote.PepoComfy {
+     background-image: url("PepoComfy.png");
+     width: 32px;
+     height: 30px;
+}
+ .emote.PepoWant {
+     background-image: url("PepoWant.png");
+     width: 38px;
+     height: 32px;
+}
+ .emote.PogChamp {
+     background-image: url("PogChamp.png");
+     width: 23px;
+     height: 30px;
+}
+ .emote.ResidentSleeper {
+     background-image: url("ResidentSleeper.png");
+     width: 28px;
+     height: 28px;
+}
+ .emote.Riperino {
+     background-image: url("Riperino.png");
+     width: 28px;
+     height: 28px;
+}
+ .emote.SMOrc {
+     background-image: url("SMOrc.png");
+     width: 32px;
+     height: 32px;
+}
+ .emote.SOY {
+     background-image: url("SOY.png");
+     width: 32px;
+     height: 30px;
+}
+ .emote.TooSpicy {
+     background-image: url("TooSpicy.png");
+     width: 23px;
+     height: 30px;
+}
+ .emote.WEOW {
+     background-image: url("WEOW.png");
+     width: 28px;
+     height: 28px;
+}
+ .emote.monkaSMEGA {
+     background-image: url("monkaSMEGA.png");
+     width: 32px;
+     height: 32px;
+}
+ .emote.NOBULLY:hover {
+     -webkit-filter: invert(100%);
+     filter: invert(100%);
+}
+ .emote.ITSRAWWW:hover {
+     animation: ITSRAWWW-hover 100ms infinite;
+}
+ @keyframes ITSRAWWW {
+     from {
+         left: 0;
+    }
+     to {
+         left: 2px;
+    }
+}
+ @keyframes ITSRAWWW-hover {
+     from {
+         left: 0;
+    }
+     to {
+         left: 2px;
+    }
+}
+ .emote.RaveDoge {
+     width: 44px;
+     height: 30px;
+     background: url('../emoticons-animated/RaveDoge.gif');
+}
+ .emote.SourPls {
+     width: 32px;
+     height: 32px;
+     background: url('../emoticons-animated/SourPls.gif');
+}
+ .emote.CuckCrab {
+     width: 32px;
+     height: 30px;
+     background: url('../emoticons-animated/CuckCrab.gif');
+}
+ @keyframes MiyanoHype-anim {
+     100% {
+         background-position: -320px;
+    }
+}
+ .emote.MiyanoHype {
+     width: 32px;
+     height: 32px;
+     background: url('../emoticons-animated/MiyanoHype.png') left center;
+     animation: MiyanoHype-anim 800ms steps(10) 3;
+}
+ .emote.MiyanoHype:hover {
+     animation: MiyanoHype-anim 800ms steps(10) infinite;
+}
+ @keyframes Clap-anim {
+     100% {
+         background-position: -64px;
+    }
+}
+ .emote.Clap {
+     width: 32px;
+     height: 32px;
+     background: url('../emoticons-animated/Clap.png') left center;
+     animation: Clap-anim 400ms steps(2) 5;
+}
+ .emote.Clap:hover {
+     animation: Clap-anim 400ms steps(2) infinite;
+}
+ @keyframes COGGERS-anim {
+     100% {
+         background-position: -1920px;
+    }
+}
+ .emote.COGGERS {
+     width: 32px;
+     height: 32px;
+     background: url('../emoticons-animated/COGGERS.png') left center;
+     animation: COGGERS-anim 800ms steps(60) 2;
+}
+ .emote.COGGERS:hover {
+     animation: COGGERS-anim 800ms steps(60) infinite;
+}
+.msg-chat .emote.ComfyAYA{margin-top: -32px;top: 7px;}
+.msg-chat .emote.ComfyFerret{margin-top: -32px;top: 7px;}
+.msg-chat .emote.SOY{margin-top: -30px;top: 7px;}
+.msg-chat .emote.RaveDoge{margin-top: -30px;top: 7px;}
+.msg-chat .emote.SourPls{margin-top: -30px;top: 7px;}
+.msg-chat .emote.CuckCrab{margin-top: -30px;top: 7px;}
+.msg-chat .emote.MiyanoHype{margin-top: -32px;top: 7px;}
+.msg-chat .emote.ECH{margin-top: -28px;top: 7px;}
+.msg-chat .emote.MingLee{margin-top: -30px;top: 7px;}
+.msg-chat .emote.DESBRO{margin-top: -30px;top: 7px;}
+.msg-chat .emote.TooSpicy{margin-top: -30px;top: 7px;}
+.msg-chat .emote.NiceMeMe{margin-top: -30px;top: 7px;}
+.msg-chat .emote.CUX{margin-top: -30px;top: 7px;}
+.msg-chat .emote.ITSRAWWW{margin-top: -30px;top: 7px;}
+.msg-chat .emote.Riperino{margin-top: -30px;top: 7px;}
+.msg-chat .emote.WEOW{margin-top: -30px;top: 7px;}
+.msg-chat [class='emote 4Head']{margin-top: -30px;top: 7px;}
+.msg-chat .emote.BabyRage{margin-top: -28px;top: 7px;}
+.msg-chat .emote.DansGame{margin-top: -28px;top: 7px;}
+.msg-chat .emote.EleGiggle{margin-top: -28px;top: 7px;}
+.msg-chat .emote.Kreygasm{margin-top: -28px;top: 7px;}
+.msg-chat .emote.PJSalt{margin-top: -30px;top: 7px;}
+.msg-chat .emote.PogChamp{margin-top: -30px;top: 7px;}
+.msg-chat .emote.ResidentSleeper{margin-top: -30px;top: 7px;}
+.msg-chat .emote.SMOrc{margin-top: -32px;top: 7px;}
+.msg-chat .emote.NotLikeThis{margin-top: -30px;top: 7px;}
+.msg-chat .emote.POGGERS{margin-top: -30px;top: 7px;}
+.msg-chat .emote.AYAYA{margin-top: -30px;top: 7px;}
+.msg-chat .emote.PepOk{margin-top: -30px;top: 7px;}
+.msg-chat .emote.PepoComfy{margin-top: -30px;top: 7px;}
+.msg-chat .emote.PepoWant{margin-top: -30px;top: 7px;}
+.msg-chat .emote.PepeHands{margin-top: -30px;top: 7px;}
+.msg-chat .emote.BOGGED{margin-top: -28px;top: 7px;}
+.msg-chat .emote.ApeHands{margin-top: -30px;top: 7px;}
+.msg-chat .emote.OMEGALUL{margin-top: -30px;top: 7px;}
+.msg-chat .emote.COGGERS{margin-top: -30px;top: 7px;}
+.msg-chat .emote.PepoWant{margin-top: -30px;top: 7px;}
+.msg-chat .emote.Clap{margin-top: -30px;top: 7px;}
+.msg-chat .emote.FeelsWeirdMan{margin-top: -32px;top: 7px;}
+.msg-chat .emote.monkaSMEGA{margin-top: -30px;top: 7px;}
+.msg-chat .emote.ComfyDog{margin-top: -32px;top: 7px;}
+.msg-chat .emote.FeelsGimiMan{margin-top: -32px;top: 7px;}

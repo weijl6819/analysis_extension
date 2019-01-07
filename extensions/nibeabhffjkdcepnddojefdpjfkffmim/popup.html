@@ -1,0 +1,77 @@
+<style>
+table {
+	overflow-x:hidden;
+	font-family: arial;
+	font-size: 13px;
+	border-width: 3px;
+	border-spacing: ;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: #EFEEEE;
+}
+table.p {
+	width: 90px;
+	background-color: #f8f8f8;
+}
+a {
+	text-decoration:none;
+	cursor: pointer;
+}
+a.l {
+	color: white;
+	font-weight:bolder;
+}
+a.c {
+	color: white;
+}
+a.s {
+	color: black;
+}
+tr.head {
+	background-color: #484848;
+	color: white;
+}
+td {
+	text-align:center;
+}
+td.l {
+	text-align:left;
+}
+td.r {
+	text-align:right;
+	font-weight:bold;
+}
+td.c0 {
+	vertical-align:top;
+	width: 100px;
+}
+td.c1 {
+	text-align:left;
+	vertical-align:top;
+}
+td.c2 {
+	vertical-align:bottom;
+}
+select {
+	font-family:monospace;
+}
+</style>
+<table cellpadding="3">
+<tr>
+ <td class="c0" rowspan="2"><select id="cur" onChange="save()" size="6"></select></td>
+ <td class="c1"><table class="p">
+ <tr><td>Bid:<td class="r" id="bid">
+ <tr><td>~&nbsp;<td class="r" id="avg">
+ <tr><td>Ask:<td class="r" id="ask">
+ <tr class="head" height="20"><td colspan="2"><a id="chart" title="Open a chart with historical data" class="c">see chart</a>
+ </table>
+<tr>
+ <td class="c2"><a id="resort" class="s" title="Sort currencies by the first/second one">sort otherwise</a>
+ </td>
+</tr>
+<tr class="head">
+ <td align="center" colspan="2">powered by <a id="forex" class="l" title="Visit www.forex.com">www.forex.com</a></td>
+</tr>
+</table>
+<script src="popup.js"></script>

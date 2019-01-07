@@ -1,0 +1,576 @@
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url(http://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url(http://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxMIzIFKw.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url(http://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url(http://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxIIzI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(http://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(http://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(http://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url(http://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url(http://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+#vlc-player {
+  width: 500px;
+  height: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 300;
+  color: #4d4d4d;
+  position: relative; }
+  #vlc-player ::-webkit-scrollbar-button {
+    background-repeat: no-repeat;
+    width: 0;
+    height: 0; }
+  #vlc-player ::-webkit-scrollbar-track {
+    background-color: #ecedee;
+    opacity: .5; }
+  #vlc-player ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #949494;
+    opacity: .5; }
+  #vlc-player ::-webkit-scrollbar-thumb:hover {
+    background-color: #2f4050; }
+  #vlc-player ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px; }
+  #vlc-player * {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    box-sizing: border-box; }
+  #vlc-player.vlc-btns-with-hover .vlc-video-li .vlc-btns {
+    display: none; }
+  #vlc-player.vlc-btns-with-hover .vlc-video-li .vlc-title {
+    width: calc(100% - 20px); }
+  #vlc-player.vlc-btns-with-hover .vlc-video-li:hover .vlc-btns {
+    display: block; }
+  #vlc-player.vlc-btns-with-hover .vlc-video-li:hover .vlc-title {
+    width: calc(100% - 125px); }
+  #vlc-player.vlc-dark-mode {
+    background: #191919;
+    color: #989898; }
+    #vlc-player.vlc-dark-mode .vlc-text-placeholder {
+      background: #000;
+      color: #989898; }
+    #vlc-player.vlc-dark-mode #vlc-header {
+      background: #191919;
+      border-bottom: 1px solid #000; }
+    #vlc-player.vlc-dark-mode .vlc-modal-overlay .vlc-modal {
+      background: #191919; }
+    #vlc-player.vlc-dark-mode ul.vlc-videos-ul li.vlc-video-li:hover {
+      background: #292929; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls {
+      background: #191919; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-btn {
+      opacity: .6; }
+      #vlc-player.vlc-dark-mode #vlc-player-controls .yt-btn.vlc-active {
+        opacity: 1; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-btn-play {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/play2-d.png) center/contain no-repeat;
+      opacity: 1; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-btn-pause {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/pause-d.png) center/contain no-repeat;
+      opacity: 1; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-btn-prev {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/back-d.png) center/50% no-repeat;
+      opacity: 1; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-btn-next {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/next-d.png) center/50% no-repeat;
+      opacity: 1; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-btn-random {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/random-d.png) center/50% no-repeat; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-btn-repeat {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/repeat-d.png) center/50% no-repeat; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-range::-webkit-slider-thumb {
+      background: #faab50; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-range::-webkit-slider-runnable-track {
+      background: #000; }
+    #vlc-player.vlc-dark-mode #vlc-player-controls .yt-range:focus::-webkit-slider-runnable-track {
+      background: #000; }
+  #vlc-player .vlc-variant-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #vlc-player .vlc-variant-input input {
+      display: none; }
+    #vlc-player .vlc-variant-input .vlc-name {
+      user-select: none; }
+    #vlc-player .vlc-variant-input .vlc-circle {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #f99f37;
+      border-radius: 50%;
+      margin-right: 10px; }
+      #vlc-player .vlc-variant-input .vlc-circle .vlc-fill {
+        display: none;
+        margin: 2px;
+        width: 14px;
+        height: 14px;
+        background: #f99f37;
+        border-radius: 50%; }
+    #vlc-player .vlc-variant-input input:checked ~ .vlc-circle .vlc-fill {
+      display: block; }
+  #vlc-player .vlc-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; }
+    #vlc-player .vlc-icon.vlc-play {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/play.png) center/80% no-repeat; }
+    #vlc-player .vlc-icon.vlc-download {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/download.svg) center/contain no-repeat; }
+    #vlc-player .vlc-icon.vlc-done {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/done.svg) center/contain no-repeat; }
+    #vlc-player .vlc-icon.vlc-link {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/link.svg) center/contain no-repeat; }
+    #vlc-player .vlc-icon.vlc-edit {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/edit.svg) center/contain no-repeat; }
+    #vlc-player .vlc-icon.vlc-remove {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/remove.svg) center/contain no-repeat; }
+    #vlc-player .vlc-icon:hover {
+      transition: all .3s;
+      opacity: .7;
+      cursor: pointer; }
+  #vlc-player .vlc-text-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 100px;
+    background: #fbfbfb; }
+    #vlc-player .vlc-text-placeholder span {
+      font-size: 14px;
+      line-height: 2;
+      text-align: center; }
+  #vlc-player .vlc-video-box {
+    position: relative;
+    text-align: center; }
+    #vlc-player .vlc-video-box .vlc-video-close-icon {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      -webkit-mask: url(chrome-extension://__MSG_@@extension_id__/img/remove.svg) center/contain no-repeat;
+      background: #f99f37;
+      cursor: pointer;
+      transition: all 200ms;
+      z-index: 100; }
+      #vlc-player .vlc-video-box .vlc-video-close-icon:hover {
+        opacity: .7; }
+    #vlc-player .vlc-video-box video.vlc-video {
+      max-width: 100%;
+      width: 100%;
+      margin: auto;
+      display: inline-block; }
+  #vlc-player ul.vlc-videos-ul {
+    padding: 20px 0; }
+    #vlc-player ul.vlc-videos-ul li.vlc-video-li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      height: 40px; }
+      #vlc-player ul.vlc-videos-ul li.vlc-video-li:hover {
+        transition: all .3s;
+        background: #fbfbfb; }
+      #vlc-player ul.vlc-videos-ul li.vlc-video-li.vlc-active {
+        color: #f99f37; }
+    #vlc-player ul.vlc-videos-ul .vlc-title {
+      width: calc(100% - 150px);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  #vlc-player #vlc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background: #fbfbfb;
+    color: #f99f37;
+    border-bottom: 1px solid #e7e7e7; }
+    #vlc-player #vlc-header .vlc-logo-box {
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+      #vlc-player #vlc-header .vlc-logo-box .vlc-logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        background: url(chrome-extension://__MSG_@@extension_id__/img/logo.png) center/contain no-repeat; }
+      #vlc-player #vlc-header .vlc-logo-box .vlc-logo-title {
+        font-size: 12px; }
+    #vlc-player #vlc-header .vlc-menu {
+      display: flex;
+      align-items: center; }
+      #vlc-player #vlc-header .vlc-menu .vlc-menu-link {
+        width: 100px;
+        text-align: center;
+        margin: 0 10px;
+        user-select: none;
+        font-size: 12px;
+        background: #f99f37;
+        color: #fff;
+        padding: 7px;
+        border-radius: 4px; }
+        #vlc-player #vlc-header .vlc-menu .vlc-menu-link:hover {
+          transition: all .3s;
+          opacity: .6;
+          cursor: pointer; }
+      #vlc-player #vlc-header .vlc-menu .vlc-setting-icon {
+        display: inline-block;
+        width: 20px;
+        height: 30px;
+        margin-left: 5px;
+        background: url(chrome-extension://__MSG_@@extension_id__/img/more_vert.svg) center/contain no-repeat; }
+        #vlc-player #vlc-header .vlc-menu .vlc-setting-icon:hover {
+          transition: all .3s;
+          opacity: .6;
+          cursor: pointer; }
+  #vlc-player #vlc-main {
+    padding: 10px; }
+  #vlc-player #vlc-welcome-view {
+    padding: 40px 0;
+    text-align: center; }
+    #vlc-player #vlc-welcome-view .vlc-img {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 20px;
+      background: url(chrome-extension://__MSG_@@extension_id__/img/logo.png) center/contain no-repeat; }
+    #vlc-player #vlc-welcome-view .vlc-caption {
+      color: #f99f37;
+      margin: 20px 0;
+      padding: 0 120px;
+      font-size: 22px;
+      line-height: 36px; }
+    #vlc-player #vlc-welcome-view .vlc-text {
+      line-height: 2;
+      padding: 0 40px; }
+  #vlc-player #vlc-player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px 10px;
+    margin-bottom: 20px; }
+    #vlc-player #vlc-player-controls .yt-btn {
+      width: 30px;
+      height: 40px;
+      opacity: .4; }
+      #vlc-player #vlc-player-controls .yt-btn:hover {
+        transition: all .3s;
+        cursor: pointer;
+        opacity: .6; }
+      #vlc-player #vlc-player-controls .yt-btn.vlc-active {
+        opacity: 1; }
+    #vlc-player #vlc-player-controls .yt-btn-play {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/play2.png) center/contain no-repeat; }
+    #vlc-player #vlc-player-controls .yt-btn-pause {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/pause.png) center/contain no-repeat; }
+    #vlc-player #vlc-player-controls .yt-btn-prev {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/back.png) center/50% no-repeat; }
+    #vlc-player #vlc-player-controls .yt-btn-next {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/next.png) center/50% no-repeat; }
+    #vlc-player #vlc-player-controls .yt-btn-random {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/random.png) center/50% no-repeat; }
+    #vlc-player #vlc-player-controls .yt-btn-repeat {
+      background: url(chrome-extension://__MSG_@@extension_id__/img/repeat.png) center/50% no-repeat; }
+    #vlc-player #vlc-player-controls .yt-range {
+      -webkit-appearance: none;
+      width: 30%;
+      background: transparent;
+      margin-left: 90px;
+      margin-right: 30px; }
+      #vlc-player #vlc-player-controls .yt-range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background: #faab50;
+        cursor: pointer;
+        margin-top: -4px; }
+      #vlc-player #vlc-player-controls .yt-range::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        cursor: pointer;
+        background: #f7f7f7;
+        border-radius: 5px; }
+      #vlc-player #vlc-player-controls .yt-range:focus {
+        outline: none; }
+        #vlc-player #vlc-player-controls .yt-range:focus::-webkit-slider-runnable-track {
+          background: #ebebeb; }
+  #vlc-player #vlc-videos-on-page-view ul.vlc-videos-ul .vlc-title {
+    width: calc(100% - 170px); }
+  #vlc-player #vlc-videos-on-page-view ul.vlc-videos-ul .vlc-btns {
+    display: flex;
+    align-items: center; }
+  #vlc-player #vlc-videos-on-page-view ul.vlc-videos-ul .vlc-btn {
+    display: inline-block;
+    width: 110px;
+    line-height: 25px;
+    font-size: 12px;
+    margin-left: 5px;
+    border-radius: 3px;
+    text-align: center;
+    user-select: none;
+    color: #fff;
+    background: #f99f37;
+    border: 1px solid #e17a20; }
+    #vlc-player #vlc-videos-on-page-view ul.vlc-videos-ul .vlc-btn:hover {
+      transition: all .3s;
+      opacity: .7;
+      cursor: pointer; }
+  #vlc-player #vlc-videos-on-page-view ul.vlc-videos-ul .vlc-added-btn {
+    opacity: .5; }
+    #vlc-player #vlc-videos-on-page-view ul.vlc-videos-ul .vlc-added-btn:hover {
+      opacity: .5; }
+  #vlc-player #vlc-video-not-found-view {
+    padding: 40px 0;
+    text-align: center; }
+    #vlc-player #vlc-video-not-found-view .vlc-img {
+      width: 100%;
+      height: 150px;
+      margin-bottom: 20px;
+      background: url(chrome-extension://__MSG_@@extension_id__/img/videos-not-found.png) center/contain no-repeat; }
+    #vlc-player #vlc-video-not-found-view .vlc-caption {
+      color: #f99f37;
+      margin: 20px 0;
+      padding: 0 120px;
+      font-size: 16px;
+      line-height: 30px; }
+  #vlc-player #vlc-settings-view {
+    padding: 0 60px; }
+    #vlc-player #vlc-settings-view .vlc-title {
+      color: #f99f37;
+      font-size: 18px;
+      line-height: 3;
+      margin-left: -50px; }
+    #vlc-player #vlc-settings-view .vlc-settings-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    #vlc-player #vlc-settings-view .vlc-img {
+      width: 80px;
+      height: 70px; }
+      #vlc-player #vlc-settings-view .vlc-img.vlc-popup {
+        background: url(chrome-extension://__MSG_@@extension_id__/img/mode-1.png) center/contain no-repeat; }
+      #vlc-player #vlc-settings-view .vlc-img.vlc-sidebar {
+        background: url(chrome-extension://__MSG_@@extension_id__/img/mode-2.png) center/contain no-repeat; }
+      #vlc-player #vlc-settings-view .vlc-img.vlc-window {
+        background: url(chrome-extension://__MSG_@@extension_id__/img/mode-3.png) center/contain no-repeat; }
+    #vlc-player #vlc-settings-view hr {
+      margin: 20px 0;
+      opacity: .5; }
+  #vlc-player .vlc-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1099;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #vlc-player .vlc-modal-overlay .vlc-modal {
+      width: 300px;
+      background: #fff;
+      position: relative;
+      border-radius: 0;
+      z-index: 1100; }
+      #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-header {
+        padding: 15px 20px;
+        background: #f99f37;
+        color: #fff;
+        text-align: left;
+        font-weight: bold;
+        border-radius: 0; }
+      #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-close-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        -webkit-mask: url(chrome-extension://__MSG_@@extension_id__/img/remove.svg) center center/contain no-repeat;
+        background: #fff;
+        cursor: pointer;
+        transition: all 200ms; }
+        #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-close-icon:hover {
+          background: #333; }
+      #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-body {
+        padding: 10px 20px 5px; }
+        #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-body .vlc-input-box {
+          margin-bottom: 15px; }
+          #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-body .vlc-input-box label {
+            display: block;
+            color: #fff;
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: left; }
+          #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-body .vlc-input-box input {
+            display: block;
+            width: 100%;
+            background: #cdcdcd;
+            padding: 5px;
+            outline: none;
+            border: none;
+            border-radius: 0;
+            line-height: 1;
+            height: auto;
+            color: #000;
+            text-align: left; }
+      #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-footer {
+        padding: 0 20px 20px;
+        display: flex;
+        justify-content: flex-end; }
+        #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-footer .vlc-modal-btn {
+          display: inline-block;
+          width: 80px;
+          padding: 9px 0;
+          background: #cdcdcd;
+          transition: all 200ms;
+          border: none;
+          margin-left: 5px;
+          outline: none;
+          border-radius: 0;
+          cursor: pointer; }
+          #vlc-player .vlc-modal-overlay .vlc-modal .vlc-modal-footer .vlc-modal-btn:hover {
+            background: #333;
+            color: #fff; }
+      #vlc-player .vlc-modal-overlay .vlc-modal.vlc-remove-modal .vlc-modal-body {
+        padding: 20px;
+        font-size: 16px; }
+      #vlc-player .vlc-modal-overlay .vlc-modal.vlc-form-modal {
+        width: 400px; }
+
+/*# sourceMappingURL=app.css.map */

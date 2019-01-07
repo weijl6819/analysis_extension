@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="script.js"></script>
+<style>
+html, body {
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 430px;
+	height: 175px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
+	text-align: center;
+	background: white;
+}
+
+#cont {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	-webkit-transition: height 150ms linear;
+}
+
+body.first_run #first_run {
+	display: table !important;
+}
+
+/*body.info #cont {
+	height: 333px !important;
+}
+body.visible.info #cont {
+	height: 358px !important;
+}*/
+#url {
+	display: block;
+	width: 76%;
+	height: 38px;
+	margin: 10px auto;
+	padding: 0;
+	border: 1px solid rgba(151, 151, 151, .25);
+	border-radius: 3px;
+	background: transparent;
+	font-size: 14px;
+	font-weight: regular;
+	text-align: center;
+	color: #7F7F7F;
+	line-height: 14px;
+	outline: none;
+	-webkit-transition: width 300ms ease-out;
+}
+#start {
+	position: relative;
+	visibility: hidden;
+	width: auto;
+	height: auto;
+	margin: 2px 0 0 0;
+	padding: 0 0 0 24px;
+	border: none;
+	background: url('data:image/svg+xml;utf8,<svg version="1.1" width="100px" height="100px" viewBox="0 15 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path xmlns="http://www.w3.org/2000/svg" d="M36.2 15.5 C49.5334 15.5 58 15.8 61.5 16.4 C65.9778 17.3 68.9 19 70.3 21.8 C71.5055617 24.1 72.1 28.9 72.2 36.2 L72.2 41 C72.2 49.7 71.9 55.3 71.2 57.8 C70.3111067 61.2 68.3 63.4 65.2 64.6 C61.9777617 65.8 55.1 66.4 44.6 66.5 L36.2 66.5 C22.8666 66.5 14.4 66.2 10.9 65.6 C6.4222 64.7 3.5 63 2.1 60.2 C0.894438333 57.9 0.3 53.1 0.2 45.8 L0.2 41 C0.2 32.3 0.5 26.7 1.2 24.2 C2.08889333 20.8 4.1 18.6 7.2 17.4 C10.4222383 16.2 17.3 15.6 27.8 15.5 L36.2 15.5 L36.2 15.5 Z M27.2 54.5 L49.7 41 L27.2 27.5 L27.2 54.5 Z" fill="#3AA7F2"/></svg>') no-repeat;
+	background-size: 21px;
+    background-position: left 3px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #3AA7F2;
+	cursor: pointer;
+	outline: none;
+	opacity: 1;
+	-webkit-transition: opacity 500ms ease-in, margin-top 500ms ease-in;
+	z-index: 2;
+}
+#start:hover {
+	background-image: url('data:image/svg+xml;utf8,<svg version="1.1" width="100px" height="100px" viewBox="0 15 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path xmlns="http://www.w3.org/2000/svg" d="M36.2 15.5 C49.5334 15.5 58 15.8 61.5 16.4 C65.9778 17.3 68.9 19 70.3 21.8 C71.5055617 24.1 72.1 28.9 72.2 36.2 L72.2 41 C72.2 49.7 71.9 55.3 71.2 57.8 C70.3111067 61.2 68.3 63.4 65.2 64.6 C61.9777617 65.8 55.1 66.4 44.6 66.5 L36.2 66.5 C22.8666 66.5 14.4 66.2 10.9 65.6 C6.4222 64.7 3.5 63 2.1 60.2 C0.894438333 57.9 0.3 53.1 0.2 45.8 L0.2 41 C0.2 32.3 0.5 26.7 1.2 24.2 C2.08889333 20.8 4.1 18.6 7.2 17.4 C10.4222383 16.2 17.3 15.6 27.8 15.5 L36.2 15.5 L36.2 15.5 Z M27.2 54.5 L49.7 41 L27.2 27.5 L27.2 54.5 Z" fill="#000000"/></svg>');
+	color: black;
+}
+
+body.visible {
+	height: 200px;
+}
+
+body.visible #start {
+	visibility: visible;
+}
+body.visible #url {
+	width: 86%;
+}
+
+span {
+	display: block;
+    width: 100%;
+    height: 24px;
+    padding: 40px 0 0 0;
+    font-size: 24px;
+    color: #000;
+}
+#first_run {
+	box-sizing: content-box;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background: #5461FF url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="9" viewBox="0 0 78 9" version="1.1"><title>Logo - Sideplayer + TM</title><desc>Created with Sketch.</desc><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Artboard" transform="translate(-210.000000, -181.000000)" fill="#000000" opacity="0.31"><g id="Logo---Sideplayer-+-TM" transform="translate(210.000000, 181.000000)"><path d="M0 6.63L1.06 5.96C1.36 7.11 1.91 7.68 2.72 7.68 3.09 7.68 3.4 7.56 3.63 7.34 3.87 7.11 3.99 6.82 3.99 6.46 3.99 6.21 3.9 5.99 3.73 5.81 3.55 5.62 3.34 5.46 3.08 5.35 2.82 5.23 2.54 5.09 2.23 4.94 1.92 4.78 1.64 4.62 1.38 4.46 1.12 4.29 0.9 4.06 0.73 3.76 0.56 3.46 0.47 3.12 0.47 2.73 0.47 2.12 0.68 1.61 1.1 1.21 1.51 0.8 2.03 0.6 2.63 0.6 3.63 0.6 4.39 1.06 4.91 1.97L3.86 2.65C3.54 2.06 3.13 1.76 2.63 1.76 2.37 1.76 2.16 1.84 2 2.01 1.85 2.18 1.77 2.39 1.77 2.63 1.77 2.93 1.89 3.18 2.13 3.39 2.38 3.61 2.67 3.79 3.02 3.95 3.36 4.11 3.71 4.28 4.05 4.46 4.4 4.64 4.69 4.89 4.94 5.22 5.18 5.56 5.3 5.95 5.3 6.42 5.3 7.15 5.06 7.74 4.58 8.2 4.1 8.65 3.48 8.88 2.72 8.88 2.02 8.88 1.42 8.67 0.94 8.25 0.46 7.84 0.15 7.3 0 6.63L0 6.63ZM7.45 8.79L7.45 0.69 8.74 0.69 8.74 8.79 7.45 8.79ZM11.5 8.79L11.5 0.69 13.92 0.69C14.98 0.69 15.88 1.04 16.62 1.74 17.35 2.45 17.72 3.44 17.72 4.74 17.72 6.03 17.35 7.03 16.62 7.73 15.88 8.44 14.98 8.79 13.92 8.79L11.5 8.79ZM12.79 7.59L13.55 7.59C13.93 7.59 14.28 7.54 14.61 7.45 14.93 7.35 15.23 7.2 15.51 7 15.79 6.79 16.01 6.49 16.16 6.11 16.32 5.73 16.4 5.27 16.4 4.74 16.4 4.21 16.32 3.75 16.16 3.37 16.01 2.99 15.79 2.69 15.51 2.49 15.23 2.28 14.93 2.13 14.61 2.03 14.28 1.94 13.93 1.89 13.55 1.89L12.79 1.89 12.79 7.59ZM19.97 8.79L19.97 0.69 24.86 0.69 24.86 1.89 21.26 1.89 21.26 3.89 24.17 3.89 24.17 5.09 21.26 5.09 21.26 7.59 24.98 7.59 24.98 8.79 19.97 8.79ZM27.2 8.79L27.2 0.69 30.16 0.69C30.97 0.69 31.59 0.91 32.04 1.36 32.49 1.81 32.72 2.39 32.72 3.09 32.72 3.79 32.49 4.36 32.04 4.81 31.59 5.26 30.97 5.48 30.16 5.48L28.5 5.48 28.5 8.79 27.2 8.79ZM28.5 4.28L30.22 4.28C30.59 4.28 30.88 4.17 31.09 3.97 31.3 3.76 31.4 3.47 31.4 3.09 31.4 2.71 31.3 2.42 31.09 2.21 30.88 2 30.59 1.89 30.22 1.89L28.5 1.89 28.5 4.28ZM34.68 8.79L34.68 0.69 35.98 0.69 35.98 7.59 39.54 7.59 39.54 8.79 34.68 8.79ZM40.37 8.79L43.24 0.69 44.46 0.69 47.33 8.79 46.01 8.79 45.33 6.78 42.38 6.78 41.69 8.79 40.37 8.79ZM42.77 5.57L44.94 5.57 43.85 2.3 42.77 5.57ZM48 0.69L49.38 0.69 51 4.06 52.63 0.69 54.01 0.69 51.65 5.32 51.65 8.79 50.36 8.79 50.36 5.32 48 0.69ZM55.68 8.79L55.68 0.69 60.57 0.69 60.57 1.89 56.97 1.89 56.97 3.89 59.88 3.89 59.88 5.09 56.97 5.09 56.97 7.59 60.69 7.59 60.69 8.79 55.68 8.79ZM62.91 8.79L62.91 0.69 65.8 0.69C66.57 0.69 67.17 0.89 67.6 1.29 68.03 1.69 68.24 2.23 68.24 2.93 68.24 3.48 68.1 3.94 67.82 4.31 67.54 4.68 67.15 4.93 66.64 5.07L69.02 8.79 67.49 8.79 65.16 5.16 64.21 5.16 64.21 8.79 62.91 8.79ZM64.21 3.95L65.83 3.95C66.16 3.95 66.43 3.87 66.62 3.7 66.82 3.53 66.92 3.27 66.92 2.93 66.92 2.58 66.82 2.32 66.62 2.15 66.43 1.98 66.16 1.89 65.83 1.89L64.21 1.89 64.21 3.95Z" id="Logo---Sideplayer"/><path d="M73.85 0.62L72.98 0.62 72.98 3 72.51 3 72.51 0.62 71.65 0.62 71.65 0.23 73.85 0.23 73.85 0.62ZM75.43 0.23L76.23 2.35 77.03 0.23 77.65 0.23 77.65 3 77.17 3 77.17 2.09 77.22 0.86 76.4 3 76.05 3 75.24 0.87 75.28 2.09 75.28 3 74.8 3 74.8 0.23 75.43 0.23Z" id="TM"/></g></g></g></svg>') no-repeat;
+    background-position: center 90%;
+    font-size: 16px;
+    font-weight: 100;
+    color: #FFF;
+    z-index: 10;
+}
+#first_run p {
+	display: table-cell;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+#text {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	padding: 33px 0 0 120px;
+	border: none;
+	background: transparent url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="99" viewBox="0 0 103 99" version="1.1"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="New-version" transform="translate(-77.000000, -143.000000)"><g id="new" transform="translate(77.000000, 134.000000)"><g id="Mask-+-Group" transform="translate(0.000000, 9.000000)"><g id="Group"><rect id="Rectangle-28" fill="#000000" x="0" y="0" width="103" height="79"/><rect id="Rectangle-30" opacity="0.25" fill="#FFFFFF" x="1" y="60" width="96" height="1.5"/><ellipse id="Oval-33" stroke="#5667FF" stroke-width="3" fill="#000000" cx="50.62" cy="70.93" rx="26.12" ry="26.15"/><g transform="translate(84.000000, 67.000000)" fill="#FFFFFF"><rect id="Rectangle-29-Copy-4" x="0" y="0" width="3" height="1.5"/><rect id="Rectangle-29-Copy-5" x="7" y="0" width="3" height="1.5"/><rect id="Rectangle-29-Copy-6" x="0" y="6" width="3" height="1.5"/><rect id="Rectangle-29-Copy-7" x="7" y="6" width="3" height="1.5"/><rect id="Rectangle-29-Copy-8" x="0" y="0" width="1.5" height="3"/><rect id="Rectangle-29-Copy-9" x="8.5" y="0" width="1.5" height="3"/><rect id="Rectangle-29-Copy-10" x="0" y="4.5" width="1.5" height="3"/><rect id="Rectangle-29-Copy-11" x="8.5" y="4.5" width="1.5" height="3"/></g><g id="Rectangle-4-+-youtube" transform="translate(39.000000, 61.000000)" fill="#FFFFFF"><path d="M21.98 11.08L21.98 15.81 21.98 18.14 0 18.14 0 15.81 0 15.81 0 4.16 0 1.83 11.15 1.83C11.04 2.49 10.99 3.66 10.99 5.32L3.47 5.32 3.47 5.32 3.47 14.64 18.51 14.64 18.51 11.1C18.69 11.1 18.89 11.1 19.08 11.1L20.98 11.1C21.33 11.1 21.66 11.09 21.98 11.08L21.98 11.08Z" id="Rectangle-4"/><path d="M19.66 0.03C21.8 0.03 23.16 0.08 23.73 0.18 24.45 0.31 24.91 0.6 25.14 1.04 25.33 1.42 25.44 2.2 25.45 3.37L25.45 4.16C25.45 5.57 25.39 6.48 25.29 6.88 25.14 7.42 24.82 7.78 24.32 7.97 23.8 8.17 22.7 8.27 21.01 8.28L19.66 8.28C17.52 8.28 16.16 8.23 15.59 8.13 14.88 8 14.41 7.71 14.19 7.27 13.99 6.89 13.89 6.12 13.88 4.94L13.88 4.16C13.88 2.75 13.93 1.84 14.04 1.43 14.18 0.89 14.5 0.53 15 0.34 15.52 0.14 16.62 0.04 18.31 0.03L19.66 0.03 19.66 0.03ZM18.22 6.34L21.83 4.16 18.22 1.97 18.22 6.34Z" id="youtube"/></g></g></g></g></g></g></svg>') no-repeat 0 0;
+	font-size: 17px;
+	text-align: left;
+	color: #1A1A1A;
+	line-height: 26px;
+}
+#text p {
+	display: inline-block;
+	position: relative;
+	width: 110px;
+	height: 24px;
+	margin: 0 7px;
+	padding: 0;
+}
+#text button {
+	position: absolute;
+	display: block;
+	width: auto;
+    height: 24px;
+    top: 6px;
+    margin: 0;
+    padding: 0 5px;
+    border: 1px solid #CCC;
+    border-radius: 2px;
+    background: #FAFAFA;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    color: #7F7F7F;
+}
+
+#info {
+	visibility: hidden;
+	box-sizing: border-box;
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 15px 0 0 0;
+    border: none;
+    border-radius: 0 0 3px 3px;
+    background: #5667ff;
+    opacity: 0;
+    -webkit-transition: opacity 150ms linear;
+    z-index: 2;
+}
+
+body.info #info {
+	visibility: visible;
+	opacity: 1 !important;
+}
+
+#info .things {
+	box-sizing: border-box;
+	width: 100%;
+	height: 110px;
+	margin: 0;
+	padding: 40px 0 0 45px;
+}
+#info .things > p {
+	height: 21px;
+	margin: 0;
+	padding: 3px 0 3px 34px;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 17 17" version="1.1" style="-webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="New-version" transform="translate(-108.000000, -354.000000)" fill="#FFFFFF"><g id="normal-+-(info-opened)" transform="translate(77.000000, 134.000000)"><g id="Resize" transform="translate(39.500000, 227.500000) scale(-1, 1) translate(-39.500000, -227.500000) translate(33.000000, 221.000000)"><path d="M4.94 6.25L9.05 10.36 7.35 12.06 12.05 12.04 12.06 7.35 10.35 9.06 6.24 4.95 3.94 2.66 5.65 0.94 0.94 0.94 0.94 5.65 2.64 3.96 4.94 6.25Z" id="Black"/></g></g></g></g></svg>') no-repeat 4px center;
+	background-size: 17px auto;
+	font-size: 13px;
+	font-weight: 100;
+	text-align: left;
+	line-height: 21px;
+	color: white;
+}
+#info .things > p.to_move {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" style="-webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));"><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="New-version" transform="translate(-106.000000, -377.000000)" fill="#FFFFFF"><g id="normal-+-(info-opened)" transform="translate(77.000000, 134.000000)"><g id="Move" transform="translate(32.000000, 244.000000)"><path d="M11.2752322 6.94976044L11.2752322 5.00238801 14 7.99318579 11.2741665 10.9829189 11.2752322 9.05790554 8.05484853 9.05790554 8.05484853 12.2572819 9.97827675 12.2572819 6.98923733 15 3.99806668 12.2562172 5.94600396 12.2572819 5.94600396 9.05790554 2.73968641 9.05790554 2.74075202 10.9829189 0 7.99318579 2.73968641 5.00238801 2.73968641 6.94976044 5.93747907 6.94976044 5.93747907 3.73632976 4.0097884 3.73632976 7.00309027 1 9.99426092 3.73739448 8.06870148 3.73632976 8.06870148 6.94976044 11.2752322 6.94976044Z" id="Black"/></g></g></g></g></svg>');
+	background-size: 20px auto;
+	background-position: 2px center;
+}
+#info .things > p.to_switch {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="12" viewBox="0 0 25 12" version="1.1" style="-webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="New-version" transform="translate(-103.000000, -404.000000)" fill="#FFFFFF"><g id="normal-+-(info-opened)" transform="translate(77.000000, 134.000000)"><g id="Rectangle-14-+-Rectangle-14-Copy-+-Rectangle-14-Copy-2" transform="translate(29.000000, 272.000000)"><rect id="Rectangle-14" opacity="0.8" x="11" y="1" width="8" height="3" rx="1"/><rect id="Rectangle-14-Copy" x="0" y="0" width="10" height="6" rx="1"/><rect id="Rectangle-14-Copy-2" x="0" y="5" width="19" height="1"/></g></g></g></g></svg>');
+	background-size: 25px auto;
+	background-position: 0 center;
+}
+#info > a {
+	position: absolute;
+	display: inline-block;
+	left: 20px;
+	top: 6.5px;
+	margin: 8px 0;
+	font-size: 12px;
+	color: white;
+	text-decoration: underline;
+	opacity: .6;
+}
+#info > a:hover {
+	opacity: 1;
+}
+
+#toggle_info {
+	box-sizing: border-box;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	right: 5px;
+	bottom: 5px;
+	border: 1px solid #D1D1D1;
+	border-radius: 50%;
+	background: white;
+	font-size: 11px;
+	text-align: center;
+	color: #D1D1D1;
+	line-height: 20px;
+	z-index: 3;
+	cursor: pointer;
+	-webkit-transition: top 150ms linear;
+}
+
+#toggle_info:hover, body.info #toggle_info {
+	background: #D1D1D1;
+	color: white;
+}
+
+#container {
+	position: relative;
+	width: 100%;
+	height: 175px;
+	margin: -5px 0 0 0;
+	padding: 5px 0 0 0;
+	border: none;
+	border-radius: 5px;
+	background: white;
+	z-index: 1;
+	-webkit-transition: height 300ms ease-out;
+}
+
+body.visible #container {
+	height: 200px;
+}
+
+#notification_error_page {
+	box-sizing: content-box;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 50px 0 0 50px;
+    background: white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36" version="1.1"><title>icon</title><desc>Created with Sketch.</desc><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="New-version" transform="translate(-452.000000, -161.000000)"><g id="notification-popup" transform="translate(77.000000, 134.000000)"><g id="icon" transform="translate(375.000000, 27.000000)"><circle id="Oval-5" fill="#525AFF" cx="18" cy="18" r="18"/><path d="M18 22C18.74 22 19.33 21.4 19.33 20.64L19.33 9.44C19.33 8.68 18.74 8.08 18 8.08 17.26 8.08 16.67 8.68 16.67 9.44L16.67 20.64C16.67 21.4 17.26 22 18 22L18 22Z" id="Shape" fill="#FFFFFF"/><path d="M18 24.64C17.02 24.64 16.2 25.48 16.2 26.48L16.2 26.56C16.2 27.56 17.02 28.4 18 28.4 18.98 28.4 19.8 27.56 19.8 26.56L19.8 26.48C19.8 25.48 18.98 24.64 18 24.64L18 24.64Z" id="Shape" fill="#FFFFFF"/></g></g></g></g></svg>') no-repeat 84% 10%;
+    font-size: 16px;
+    text-align: left;
+    color: #525252;
+    z-index: 10;
+}
+#notification_error_page span {
+	margin: 0;
+    font-size: 14px;
+    padding: 18px 0 0 0;
+    color: #525252;
+}
+
+#counters {
+	position: absolute;
+	width: 230px;
+	height: 40px;
+	right: 10px;
+	top: 5px;
+	overflow: hidden;
+}
+#counters iframe {
+	width: 1024px;
+    height: 800px;
+    margin: -20px 0 0 -774px;
+}
+</style>
+</head>
+<body class="loading">
+	<div id="cont">
+		<div id="notification_error_page">Sideplayer doesn’t work here.<br>Chrome doesn’t allow us to edit this page.<br><span>Please try a different website.</span></div>
+		<div id="first_run"><p>Please restart Chrome after installing<br>Sideplayer for the first time.</p></div>
+		<div id="container">
+			<div id="text">Click the Sideplayer button on<br>any Youtube video to get started.</div>
+			<input type="text" id="url" placeholder="or paste a youtube link here">
+			<button id="start">Play video</button>
+		</div>
+		<div id="info">
+			<a href="http://www.sideplayer.com/" target="_blank">www.sideplayer.com</a>
+			<div id="counters"></div>
+			<div class="things">
+				<p>To resize a video, drag it from the bottom left corner.</p>
+				<p class="to_move">To move a video, just click and drag.</p>
+				<p class="to_switch">Sideplayer even works when switching tabs.</p>
+			</div>
+		</div>
+		<div id="toggle_info">i</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<section id="collection-edit" class="screen-capture-form editor" >
+
+    <div class="image-container">
+        {{#if data.isVideo }}
+            <video width="350" height="200" controls>
+                 <source src="{{data.video}}" type="video/webm">
+            </video>
+         {{else}}
+            <img src="{{ data.image }}">
+         {{/if}}
+    </div>
+    <form id="new-element-form" action="#">
+     {{#if data.collections }}
+        <div class="form-field form-field-id-name">
+            <div class="form-error-display" ></div>
+            <label for="name" class="field-label">Name</label>
+            <input type="text" id="name" class="form-field" maxlength="60" value="{{ data.name }}"  />
+        </div>
+        <div class="form-field form-field-id-tags">
+            <div class="form-error-display" ></div>
+            <label for="tags" class="field-label">Tags</label>
+            <input type="text" id="tags" class="form-field" maxlength="80" value="{{ data.tags }}" placeholder="Ex. html5, virtual reality, portfolio"  />
+        </div>
+        <div class="form-field form-field-id-collection">
+            <div class="form-error-display" ></div>
+            <label for="category" class="field-label">Collection</label>
+            <select id="collection" class="cs-select" data-placeholder="Choose Collection...">
+                 <option value="" disabled selected></option>
+                {{#each data.collections as |collection| }}
+                    <option value="{{ collection.id }}" {{#compare collection.id ../data.collection }}  selected {{/compare }}>{{ collection.name}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <div class="form-field form-field-button">
+            <button type="button"  class="aw-new-element form-field screen-capture" ><span class="bt-content">{{ data.management }}</span><div class="updating-spinner"></div></button>
+            <a class="form-cancel-btn" >Cancel</a>
+        </div>
+    {{else}}
+            <div class="form-field form-field-id-name">
+                <label for="name" class="field-label">Before you can save an element, you need to create at least one collection folder, then you will be able to make screenshots.</label>
+            </div>
+
+            <div class="form-field form-field-button">
+            <button type="button"  class="form-field screen-capture btn-create-collection"  ><span class="bt-content">Create Collection</span><div class="updating-spinner"></div></button>
+            <a class="form-cancel-btn" >Cancel</a>
+        </div>
+    {{/if}}
+    </form>
+</section>

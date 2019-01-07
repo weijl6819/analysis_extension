@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/custom.css">
+
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/apidetails.js"></script>
+    <script src="../js/domdetailer.js"></script>
+    <script src="../js/domdetailer_excel.js"></script>
+    <script src="../js/url-tld.min.js"></script>
+
+</head>
+<body>
+
+
+<!--extension main wrapper-->
+<div class="extension_main_wrapper">
+
+    <!--scraped domains wrapper-->
+    <div class="scraped_domains_wrapper">
+
+        <!--logo starts here-->
+        <div class="logo_wrapper">
+            <img src="../images/expireddomainscraper.jpg" alt="Expired Domain Scraper">
+        </div>
+        <!--logo ends here-->
+
+        <div id="prog">If you <strong>do NOT</strong> have a DomDetailer API Key, please get one in order to view Moz &amp; Majestic Metrics.</div>
+
+
+        <!--domains_title title-->
+        <div class="domains_title">
+            <p>Find Domains | HOME</p>
+        </div>
+
+        <div class="logout">
+            <a href="#" id="logout_link">Logout</a>
+            <span class="pipe_sign">|</span>
+            <a href="settings.html" class="setting_btn">Settings</a>
+        </div>
+
+        <!--border bottom-->
+        <div class="border_bottom"></div>
+
+        <!--<button id="external_links">Open External Links</button>-->
+
+        <button id="find_domains_btn">Find Expired Domains</button>
+
+        <!--scraped domains detail stats here-->
+
+        <p class="domains_heading">Expired Domains Will Appear Below.</p>
+
+
+        <img id="progress_bar" src="../images/ajax-loader.gif" alt="image not found">
+
+        <!--<div class="scraped_domains_detail_wrapper">-->
+
+        <!--<a href="#" class="scraped_domain_link_name">www.google.com</a>-->
+        <!--<a class="domains_estibot_btn" href="estibot.html">Estibot</a>-->
+        <!--<a class="domains_domdetailer_btn" href="metrics.html">Metrics</a>-->
+        <!--<a class="domains_register_btn" href="http://www.expyred.com/" target="_blank">Register</a>-->
+        <!--<a class="domains_save_btn">Save</a>-->
+
+        <!--</div>-->
+    </div>
+    <!--scraped domains wrapper ends here-->
+
+    <button class="save_metrics_btn" id="save_all_domains">Save all Domains</button>
+
+     <span class="no_result">
+         No available domains found on this page
+     </span>
+
+
+    <!--metrics wrapper-->
+    <div class="metrics_wrapper">
+
+        <!--logo starts here-->
+        <div class="logo_wrapper">
+            <img src="../images/expireddomainscraper.jpg" alt="Expired Domain Scraper">
+        </div>
+        <!--logo ends here-->
+
+        <!--estibot API title -->
+        <div class="metrics_title">
+            <a href="#">
+                <span>&lt;</span>
+                <p>Metrics</p>
+            </a>
+        </div>
+
+        <div class="logout">
+            <a href="#" id="logout_link-1">Logout</a>
+            <span class="pipe_sign">|</span>
+            <a href="settings.html" class="setting_btn">Settings</a>
+        </div>
+
+        <!--border bottom-->
+        <div class="border_bottom"></div>
+
+        <div id="domdetailer_error">DomDetailer API key is invalid. Visit <a href='settings.html'>Settings</a> page to edit.
+        </div>
+
+        <!--metrics API detail stats here-->
+        <div class="metrics_api_detail_wrapper">
+            <p>Moz &amp; Majestic Metrics <span id="domdetailer_detail"></span></p>
+            <span id="metrics_result">Loading....</span>
+        </div>
+
+        <div class="metrics_detail_wrapper">
+            <div class="metrics_detail">
+                <p>Moz Links</p>
+                <p id="moz_links"></p>
+            </div>
+
+            <div class="metrics_detail">
+                <p>Moz DA</p>
+                <p id="moz_da"></p>
+            </div>
+
+            <div class="metrics_detail">
+                <p>Moz PA</p>
+                <p id="moz_pa"></p>
+            </div>
+
+            <div class="metrics_detail">
+                <p>Moz Rank</p>
+                <p id="moz_rank"></p>
+            </div>
+
+            <div class="metrics_detail">
+                <p>Moz Trust</p>
+                <p id="moz_trust"></p>
+            </div>
+
+            <div class="metrics_detail">
+                <p>Majestic Links</p>
+                <p id="majestics_link"></p>
+            </div>
+
+            <div class="metrics_detail">
+                <p>Majestic Trust Flow</p>
+                <p id="majestics_tf"></p>
+            </div>
+
+            <div class="metrics_detail">
+                <p>Majestic Citation Flow</p>
+                <p id="majestics_cf"></p>
+            </div>
+
+            <div class="metrics_detail">
+                <p>Majestic Referring Domains</p>
+                <p id="majestics_rd"></p>
+            </div>
+
+            <button class="save_metrics_btn" id="save_metrics">Save Metrics</button>
+            <a class="register_btn" href="http://www.expyred.com/" target="_blank">Register</a>
+
+        </div>
+
+
+    </div>
+    <!--domdetailer wrapper ends here-->
+
+</div>
+<!--extension main wrapper ends here-->
+
+
+</body>
+</html>

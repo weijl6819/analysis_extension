@@ -1,0 +1,920 @@
+{
+  "appName": {
+    "message": "Amazonセラー用AMZScout Pro"
+  },
+  "appDesc": {
+    "message": "AMZScoutの拡張機能は、直観ではなく、実際のデータに基づいてニッチを選ぶことを決定するのに役立ちます。"
+  },
+  "extendTrial": {
+    "message": "試用期間を延長"
+  },
+  "extendTrialMessage": {
+    "message": "無料で2ヶ月まで取得"
+  },
+  "number": {
+    "message": "#"
+  },
+  "in": {
+    "message": "に"
+  },
+  "results": {
+    "message": "結果l"
+  },
+  "opScore": {
+    "message": "チャンススコア"
+  },
+  "avgSalesRank": {
+    "message": "平均売上ランク"
+  },
+  "avgSalesTrend": {
+    "message": "平均販売動向"
+  },
+  "avgMonthlyRevenue": {
+    "message": "平均月間収益"
+  },
+  "avgMonthlySales": {
+    "message": "月間平均売上"
+  },
+  "variants": {
+    "message": "バリエーション"
+  },
+  "variantsTooltip": {
+    "message": "製品バリエーションの数"
+  },
+  "avgPrice": {
+    "message": "平均価格"
+  },
+  "avgMarginImpact": {
+    "message": "平均純利益率"
+  },
+  "avgReviews": {
+    "message": "平均レビュー数"
+  },
+  "rank" : {
+    "message": "ランク"
+  },
+  "sales" : {
+    "message": "売る"
+  },
+  "bsr30Tooltip": {
+    "message": "過去30日間の平均ベストセラー鳴りました"
+  },
+  "price30": {
+    "message": "価格30"
+  },
+  "price30Tooltip": {
+    "message": "過去30日間の平均価格"
+  },
+  "reviewsCount" : {
+    "message": "レビュー数"
+  },
+  "productName": {
+    "message": "製品名"
+  },
+  "brand": {
+    "message": "ブランド"
+  },
+  "price": {
+    "message": "価格"
+  },
+  "minPrice": {
+    "message": "最低価格"
+  },
+  "net": {
+    "message": "純利益"
+  },
+  "fbaFees": {
+    "message": "FBA手数料"
+  },
+  "lqs": {
+    "message": "LQS"
+  },
+  "lqsTooltip": {
+    "message": "リスティング品質スコア"
+  },
+  "category": {
+    "message": "カテゴリー"
+  },
+  "sellers": {
+    "message": "販売業者"
+  },
+  "enablePS": {
+    "message": "AMZScout潜在的なスコアポップアップを有効にする"
+  },
+  "extractOneProductOnly": {
+    "message": "製品ページでのみ1つの製品を抽出する"
+  },
+  "options": {
+    "message": "オプション"
+  },
+  "headers": {
+    "message": "ヘッダー"
+  },
+  "columns": {
+    "message": "列"
+  },
+  "data": {
+    "message": "データ"
+  },
+  "error": {
+    "message": "エラー"
+  },
+  "sellersTooltip": {
+    "message": "販売業者数"
+  },
+  "estSales": {
+    "message": "推定売上"
+  },
+  "estSalesTooltip": {
+    "message": "推定月間売上"
+  },
+  "estRevenue": {
+    "message": "推定収益"
+  },
+  "estRevenueTooltip": {
+    "message": "推定月間収益"
+  },
+  "nameLength": {
+    "message": "名前の長さ"
+  },
+  "reviews": {
+    "message": "レビュー数"
+  },
+  "ebc": {
+    "message": "EBC"
+  },
+  "ebcTooltip": {
+    "message": "強化されたブランドコンテンツリスト"
+  },
+  "rpr": {
+    "message": "RPR"
+  },
+  "rprTooltip": {
+    "message": "レビュー1件あたりの月間収益"
+  },
+  "availableFrom": {
+    "message": "入手先"
+  },
+  "availableFromTooltip": {
+    "message": "初回入手可能日"
+  },
+  "rating": {
+    "message": "評価"
+  },
+  "sellerIsFBA": {
+    "message": "販売業者はFBAです"
+  },
+  "descriptionLength": {
+    "message": "説明の長さ"
+  },
+  "imagesCount": {
+    "message": "画像数"
+  },
+  "seller": {
+    "message": "販売業者"
+  },
+  "url": {
+    "message": "URL"
+  },
+  "asin": {
+    "message": "ASIN"
+  },
+  "monthlyPayment": {
+    "message": "月額払い"
+  },
+  "onetimePayment": {
+    "message": "一括払い"
+  },
+  "oversize": {
+    "message": "サイズ超過"
+  },
+  "weight": {
+    "message": "重量"
+  },
+  "buyAtGoogle": {
+    "message": "Google Chromeストアで購入"
+  },
+  "needPermissions": {
+    "message": "サインインしてから続行してください"
+  },
+  "filters": {
+    "message": "フィルター"
+  },
+  "from": {
+    "message": "開始"
+  },
+  "to": {
+    "message": "終了"
+  },
+  "fbaOnly": {
+    "message": "FBAのみ"
+  },
+  "bulletsCount": {
+    "message": "弾数"
+  },
+  "apply": {
+    "message": "適用"
+  },
+  "clear": {
+    "message": "消去"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "nextPage": {
+    "message": "次のページ"
+  },
+  "filter": {
+    "message": "フィルター"
+  },
+  "trends": {
+    "message": "動向"
+  },
+  "export": {
+    "message": "CSVにエクスポート"
+  },
+  "import": {
+    "message": "CSVからのインポート"
+  },
+  "wrongPage": {
+    "message": "Amazon検索または製品ページを開いていないようです"
+  },
+  "pageLoading": {
+    "message": "ページの読み込みが完了するまでお待ちください"
+  },
+  "cantGetProductsErr": {
+    "message": "AMZScoutはこのページから製品情報を引き抜くことができません。別のページをお試しください。"
+  },
+  "instanceUnsupportedErr": {
+    "message": "ご利用中のAMZScoutのバージョンはもうサポートされていません。AMZScoutを最新バージョンにアップデートしてください。"
+  },
+  "instanceBlockedErr": {
+    "message": "ご利用中のAMZScoutのインスタンスがブロックされています。サポートまでお問い合わせください。"
+  },
+  "unhandledErr": {
+    "message": "誤ったページを開いているようです。別のページをお試しください。"
+  },
+  "providerInitErr": {
+    "message": "支払いプロバイダを初期化できませんでした。"
+  },
+  "paymentRejectedErr": {
+    "message": "お支払いが拒否されました。お支払いの詳細を確認してから、もう一度お試しください。"
+  },
+  "POUND": {
+    "message": "ポンド"
+  },
+  "KG": {
+    "message": "キログラム"
+  },
+  "RUB": {
+    "message": "₽"
+  },
+  "USD": {
+    "message": "$"
+  },
+  "EUR": {
+    "message": "€"
+  },
+  "GBP": {
+    "message": "£"
+  },
+  "INR": {
+    "message": "₹"
+  },
+  "ILS": {
+    "message": "₪"
+  },
+  "UAH": {
+    "message": "₴"
+  },
+  "VND": {
+    "message": "₫"
+  },
+  "marginImpact": {
+    "message": "純利益"
+  },
+  "marginImpactTooltip": {
+    "message": "マージンの割合"
+  },
+  "refresh": {
+    "message": "更新"
+  },
+  "feedback": {
+    "message": "フィードバック"
+  },
+  "paymentInfo": {
+    "message": "決済情報"
+  },
+  "choosePaymentMethod": {
+    "message": "支払方法を選択してください"
+  },
+  "paymentMethod_card": {
+    "message": "銀行カード"
+  },
+  "chromeStore": {
+    "message": "Chrome ストア"
+  },
+  "noFees": {
+    "message": "追加料金なし"
+  },
+  "moneyBack": {
+    "message": "100% 返金保証"
+  },
+  "paymentFooterMessage": {
+    "message": "AMZScout を使用して <strong>40 000+</strong> 人を超える繁盛している Amazon 出品者に加わりましょう"
+  },
+  "keepTracking": {
+    "message": "収益性の高い製品を選択することで、最初の月には約$ 500利益を取得"
+  },
+  "buy": {
+    "message": "購入"
+  },
+  "buyNow": {
+    "message": "今すぐ購入する"
+  },
+  "oneTimeFee": {
+    "message": "1回限りの手数料"
+  },
+  "monthlyFee": {
+    "message": "毎月の支払額"
+  },
+  "freeLaunchesLeft": {
+    "message": "左の:freeLaunchesLeftつの無料の実行"
+  },
+  "faq": {
+    "message": "よくあるご質問"
+  },
+  "trialEnded": {
+    "message": "試用期間が終了しました"
+  },
+  "trialEndedAlert": {
+    "message": "更なる使用のためにAMZScout延長を購入する必要があります"
+  },
+  "buyPrice": {
+    "message": "生涯ライセンスのための::currency :price"
+  },
+  "buyPriceRecurring": {
+    "message": "1ヶ月のサブスクリプションのための::currency :price"
+  },
+  "sponsored": {
+    "message": "スポンサー"
+  },
+  "hideSponsored": {
+    "message": "スポンサーを隠す"
+  },
+  "signUp": {
+    "message": "サインアップ"
+  },
+  "signUpWithChrome": {
+    "message": "Chrome"
+  },
+  "signUpWithGoogle": {
+    "message": "Google"
+  },
+  "signUpWithFacebook": {
+    "message": "Facebook"
+  },
+  "signUpWithWeibo": {
+    "message": "Weibo"
+  },
+  "signUpWithEmail": {
+    "message": "Email"
+  },
+  "signUpTitle": {
+    "message": "あなたの有益な製品を見つけるためにサインアップする"
+  },
+  "signUpMessage1": {
+    "message": "クレジットカードは必要ありません"
+  },
+  "signUpMessage2": {
+    "message": "ライセンスはこのアカウントに関連付けられます"
+  },
+  "signUpMessage3": {
+    "message": "複数のデバイスで使用する能力"
+  },
+  "signUpMessage4": {
+    "message": "あなたの個人情報は安全です"
+  },
+  "faq_q_0": {
+    "message": "Q: 延長費用は、1回限りの料金ですか、それとも毎月発生する料金ですか？ "
+  },
+  "faq_a_0": {
+    "message": "A: 費用は、1回限りの料金です。 あなたは、他に支払う必要はありません。延長には、全機能が含まれています。"
+  },
+  "faq_q_1": {
+    "message": "Q: 拡張機能を購入したのですが、使用方法を教えてください"
+  },
+  "faq_a_1": {
+    "message": "A: Amazonウェブサイトを開き、製品をいくつか検索してから拡張機能のボタンをクリックしてください。ローダーと共にポップアップが表示されます。数秒後、見つかった製品に関する情報が表示されます。"
+  },
+  "faq_q_2": {
+    "message": "Q: 推定値は月間、日間、あるいは年間のどれになりますか？"
+  },
+  "faq_a_2": {
+    "message": "A: 推定値は月間のものになります。"
+  },
+  "faq_q_3": {
+    "message": " Q: 推定値の算出方法を教えてください。"
+  },
+  "faq_a_3": {
+    "message": "A: これらの値は、Amazonトップレベルのカテゴリー（例：ホーム&園芸、本）やこれらのカテゴリーのいずれかのランクに基づく数式を使用して算出されています。"
+  },
+  "faq_q_4": {
+    "message": " Q: Net列は何を意味しますか。"
+  },
+  "faq_a_4": {
+    "message": "A: Net列はFBA手数料を差し引き、さらにAmazonの紹介料の15%を差し引いた後の金額を意味します。FBA手数料が利用できない場合は、Net価格は数式を用いて算出されます。"
+  },
+  "faq_q_5": {
+    "message": "Q: LQS列は何を意味しますか。"
+  },
+  "faq_a_5": {
+    "message": "A: LQS列はリスティングの品質スコアです。AMZScoutは多数の製品説明の特徴を分析し、そのスコアを算出します。スコアが高いほど、検索結果で上位に表示されることを示しています。詳細を確認するには、LQSの値にカーソルを合わせてください。"
+  },
+  "faq_q_6": {
+    "message": " Q: RPR列は何を意味しますか。"
+  },
+  "faq_a_6": {
+    "message": " A: RPR列はレビュー1件あたりの収益です。RPRが大きいほど、Amazonでの販売機会が良好であることを示しています。"
+  },
+  "faq_q_7": {
+    "message": "Q: FBA手数料は数量または体積に対して計算されますか。"
+  },
+  "faq_a_7": {
+    "message": "A: FBA手数料は保管料込みで1ヶ月間の個数に対して計算されます。これは、製品ページから取得した出荷時のサイズと重量を元に計算されます"
+  },
+  "faq_q_8": {
+    "message": "Q: AMZScoutに関する別の質問がある場合や、問題が発生した場合にはサポートを受けることはできますか。"
+  },
+  "faq_a_8": {
+    "message": "A: サポートを受けるための一番速い方法は、質問をこちらまでお寄せいただくことです <a href='mailto:amazondevcrew@gmail.com'>amazondevcrew@gmail.com</a>"
+  },
+  "history": {
+    "message": "歴史"
+  },
+  "rankHistory": {
+    "message": "ランク歴史"
+  },
+  "salesHistory": {
+    "message": "販売履歴"
+  },
+  "priceHistory": {
+    "message": "価格履歴"
+  },
+  "productCost": {
+    "message": "製品コスト"
+  },
+  "productPrice": {
+    "message": "製品価格"
+  },
+  "additionalProductCost": {
+    "message": "追加単価"
+  },
+  "additionalMonthlyCosts": {
+    "message": "追加月間コスト"
+  },
+  "productWeight": {
+    "message": "製品の重量"
+  },
+  "productSize": {
+    "message": "製品サイズ"
+  },
+  "orderHandling": {
+    "message": "注文処理"
+  },
+  "monthlyStorage": {
+    "message": "毎月の保管"
+  },
+  "pickPack": {
+    "message": "選別および梱包"
+  },
+  "weightHandling": {
+    "message": "重量の取り扱い"
+  },
+  "referralFee": {
+    "message": "紹介料"
+  },
+  "estimatedSales": {
+    "message": "月間売上高"
+  },
+  "piece": {
+    "message": "個数"
+  },
+  "totalFee": {
+    "message": "総FBA料金"
+  },
+  "estimatedRevenueTooltip": {
+    "message": "推定月間売上と利益率に基づく推定月次収益"
+  },
+  "estimatedRevenue": {
+    "message": "推定月次収益"
+  },
+  "profitCalculator": {
+    "message": "利益計算機"
+  },
+  "profit": {
+    "message": "利益"
+  },
+  "roi": {
+    "message": "ROI"
+  },
+  "roiTooltip": {
+    "message": "投資の回収"
+  },
+  "INCH": {
+    "message": "インチ"
+  },
+  "CM": {
+    "message": "cm"
+  },
+  "closingFee": {
+    "message": "閉会料金"
+  },
+  "favorites": {
+    "message": "お気に入り"
+  },
+  "favoritesTooltip":{
+    "message": "あなたのお気に入り商品"
+  },
+  "getNicheIdea":{
+    "message": "ニッチアイデア"
+  },
+  "inventory": {
+    "message": "目録"
+  },
+  "inventoryTooltip": {
+    "message": "在庫品の量"
+  },
+  "deliveryFee": {
+    "message": "配達料"
+  },
+  "cessFee": {
+    "message": "サービス＆目的税手数料"
+  },
+  "referralMessage": {
+    "message": "お友達とこのリンクを共有し、あなたがサインアップするすべての友人のために無料で1週間以上を取得します。あなたの友人は、あまりにも自由のための1週間を取得します。"
+  },
+  "estimatedProfit": {
+    "message": "推定月間利益"
+  },
+  "estimatedProfitTooltip": {
+    "message": "推定月次売上高と利益率への影響に基づいて推定毎月の利益"
+  },
+  "searchAli": {
+    "message": "AliBabaで探す"
+  },
+  "searchGoogle": {
+    "message": "Googleで探す"
+  },
+  "copyASIN": {
+    "message": "ASINをコピー"
+  },
+  "getKeywords": {
+    "message": "キーワードを取得"
+  },
+  "keyword": {
+    "message": "キーワード"
+  },
+  "keywords": {
+    "message": "キーワード"
+  },
+  "nicheKeywords": {
+    "message": "ニッチなキーワード"
+  },
+  "getNicheKeywords": {
+    "message": "ニッチなキーワードを取得する"
+  },
+  "keywordsNotFound": {
+    "message": "残念ながら、我々はすべてのキーワードを見つけることができませんでした"
+  },
+  "occurrencesNumber": {
+    "message": "出現回数"
+  },
+  "maxImport": {
+    "message": "::count製品の輸入のための最大量"
+  },
+  "emptyImport": {
+    "message": "商品が見つかりませんでした。ファイルを確認してください"
+  },
+  "cancel": {
+    "message": "取り消し"
+  },
+  "modalTitle": {
+    "message": "メッセージ"
+  },
+  "yes": {
+    "message": "はい"
+  },
+  "no": {
+    "message": "いいえ"
+  },
+  "bestSeller": {
+    "message": "BS"
+  },
+  "bestSellerTooltip":{
+    "message": "販売リーダー"
+  },
+  "bestSellerCategory": {
+    "message": "でベストセラー"
+  },
+  "bestSellerLink": {
+    "message": "ベストセラーカテゴリのURL"
+  },
+  "toggleFilterTitle": {
+    "message": "フィルタの有効/無効"
+  },
+  "aboutModalTitle": {
+    "message": "アプリケーションについて"
+  },
+  "aboutAppVersion": {
+    "message": "アプリ版"
+  },
+  "aboutRegisteredTo": {
+    "message": "登録者"
+  },
+  "aboutLicenceType": {
+    "message": "ライセンスタイプ"
+  },
+  "aboutExpires": {
+    "message": "期限切れ"
+  },
+  "daily": {
+    "message": "1日"
+  },
+  "monthly": {
+    "message": "毎月"
+  },
+  "annual": {
+    "message": "毎年"
+  },
+  "lifetime": {
+    "message": "一生"
+  },
+  "forever": {
+    "message": "永遠ゲット"
+  },
+  "save": {
+    "message": "セーブ"
+  },
+  "try": {
+    "message": "試す"
+  },
+  "tryDay": {
+    "message": "1日お試しください"
+  },
+  "paywallTitleTop": {
+    "message": "収益性の高い製品を見つけ、競合他社と勝つ"
+  },
+  "paywallTitleBottom": {
+    "message": "もっと収益を上げてください！"
+  },
+  "paywallTagline": {
+    "message": "Amazonで成功したビジネス"
+  },
+  "selectYourPlan": {
+    "message": "プランを選択"
+  },
+  "yourPlan": {
+    "message": "あなたの計画"
+  },
+  "payment": {
+    "message": "支払金額"
+  },
+  "paymentChooseMethod": {
+    "message": "お支払方法を選択してください"
+  },
+  "selectPlan": {
+    "message": "プランを選択"
+  },
+  "benefits": {
+    "message": "利点"
+  },
+  "benefit1": {
+    "message": "ニッチを見つける – リスクを最小限に抑えます"
+  },
+  "benefit2": {
+    "message": "正確なリアルタイムのメトリクス – 利益を最大化"
+  },
+  "benefit3": {
+    "message": "検証し、自信を持って販売します"
+  },
+  "licenceFull": {
+    "message": "有料"
+  },
+  "licenceTrial": {
+    "message": "トライアル"
+  },
+  "alreadyPaid": {
+    "message": "私はすでに支払い済みです"
+  },
+  "paymentDone": {
+    "message": "支払い完了"
+  },
+  "skip": {
+    "message": "スキップ"
+  },
+  "next": {
+    "message": "次"
+  },
+  "startTrial": {
+    "message": "トライアルを開始"
+  },
+  "s1h": {
+    "message": "データ収集のルーチンが<br>なくなりました"
+  },
+  "s1f": {
+    "message": "数回のクリックですべてのデータを<br>取得して決定してください。"
+  },
+  "s2h": {
+    "message": "高い潜在的な製品を見つける"
+  },
+  "s2f": {
+    "message": "信頼できる販売データに基づいてニ<br>ッチ・ポテンシャルを推定する。"
+  },
+  "s3h": {
+    "message": "リスクを最小化する"
+  },
+  "s3f": {
+    "message": "あなたは1ヶ月以内に販売する製品の<br>数を知ることができます。。"
+  },
+  "s4h": {
+    "message": "あなたは期待した結果を<br>得るでしょう"
+  },
+  "s4f": {
+    "message": "正しい決定を下すことによって。"
+  },
+  "tips": {
+    "message": "ヒント"
+  },
+  "stopShowingTips": {
+    "message": "それを表示しない"
+  },
+  "strictFilterTooltip": {
+    "message": "フィルタのパラメータが厳しすぎます。 それらを変更したり、フィルターをオフにしてみてください。"
+  },
+  "activeLimit": {
+    "message": "インストールの制限"
+  },
+  "activeExceed": {
+    "message": "アクティブなインストール数を超えました"
+  },
+  "t0": {
+    "message": "コラムのタイトルにはポップアップヒントがあります。いずれかのタイトルをクリックして、このインディケーターでスプレッドシート内のデータを分類することができます。"
+  },
+  "t1": {
+    "message": "すべての青い数字と製品スプレッドシートの列をクリックすることができます。"
+  },
+  "t2": {
+    "message": "「FBA料金」または「正価」の欄の数値をクリックすると「利益計算機」が開き、製品コストを入力して利益と投資対効果を計算することができます。"
+  },
+  "t3": {
+    "message": "LQS の数値の上に数秒間カーソルを置くと、リスティングの質に関する詳細が表示されます。"
+  },
+  "t4": {
+    "message": "価格の数値をクリックすると、これまでの価格の推移を示したグラフが表示されます。"
+  },
+  "t5": {
+    "message": "「ランク」の欄の数値をクリックすると、これまでのランクの推移を示したグラフが表示されます"
+  },
+  "t6": {
+    "message": "右側にある縦に並んだ3つの点にカーソルを持って行くとドロップダウンメニューが開き、アリババの類似の製品が表示されます。"
+  },
+  "t7": {
+    "message": "右の3つの縦のドットをクリックして必要な操作を選択するだけで、<br>効果的に商品を宣伝するためのキーワードのアイデアを見つけることができます。"
+  },
+  "t8": {
+    "message": "リスト内の製品番号の横にある「+」ボタンをクリックすると、AMZScoutトラッカー内の任意の製品を追跡することができます。"
+  },
+  "t9": {
+    "message": "BSR列にオレンジ色の丸印がある場合、製品はランク1のベストセラーです。<br>製品がどのカテゴリで売り上げを上回っているかを、カーソルの上にカーソルを置いたところで見つけてください。"
+  },
+  "t10": {
+    "message": "お気に入りの商品を追加するには、左のスターをクリックして、お気に入りのボタンをクリックしてください。"
+  },
+  "t11": {
+    "message": "EBC列には、ブランドコンテンツの強化またはA +の商品がある場合に緑のチェックマークが表示されます。 EBCはAmazonのBrand Registryプロセスを通じてブランドオーナーとして承認された販売者に開放されています"
+  },
+  "pw1ExpiredTitle": {
+    "message": "残念ながら、お試し期間が終了しました。"
+  },
+  "pw1ExpiredSubTitle": {
+    "message": "AMZScout Proの拡張機能を引き続き使用するには、以下のお支払いプランを参照してください。"
+  },
+  "pw1BuyNowTitle": {
+    "message": "収益性の高い製品を見つけ、競合他社に勝つ"
+  },
+  "pw1PlanMonthlyName": {
+    "message": "毎月"
+  },
+  "pw1PlanMonthlyHint": {
+    "message": "どんな境界もなく当社製品をお試しください！"
+  },
+  "pw1PlanAnnualName": {
+    "message": "1年当たり"
+  },
+  "pw1PlanMostPopular": {
+    "message": "最も人気のある"
+  },
+  "pw1PlanAnnualHint": {
+    "message": "あなたは私たちの製品を愛する？ 素晴らしいです、それは時間を節約することです！"
+  },
+  "pw1PlanAnnualPriceHint": {
+    "message": "最大20％割引"
+  },
+  "pw1PlanLifetimeName": {
+    "message": "一生"
+  },
+  "pw1PlanLifetimeHint": {
+    "message": "感動しましたか？ 永遠にそれを使用してください！"
+  },
+  "pw1PlanLifetimePriceHint": {
+    "message": "最大50％割引"
+  },
+  "pw1PlansTitle": {
+    "message": "あなたの計画を選択してください"
+  },
+  "pw1PaymentTitle": {
+    "message": "支払い"
+  },
+  "pw1MainTitle": {
+    "message": "値"
+  },
+  "pw1PanelProfit1": {
+    "message": "リスクを最小限に抑える"
+  },
+  "pw1PanelProfit2": {
+    "message": "利益を最大化する"
+  },
+  "pw1PanelProfit3": {
+    "message": "自信を持って売る"
+  },
+  "pw1PanelProfit4": {
+    "message": "マネーバック保証"
+  },
+  "pw1PayWithCard": {
+    "message": "銀行カードで支払う"
+  },
+  "pw1PayWith": {
+    "message": "支払う"
+  },
+  "pw1AlreadyPaid": {
+    "message": "私はすでに支払った"
+  },
+  "pw1Or": {
+    "message": "または"
+  },
+  "pw1StripePowered": {
+    "message": "ストライプで動く"
+  },
+  "pw1Terms": {
+    "message": "条項"
+  },
+  "pw1Privacy": {
+    "message": "プライバシー。"
+  },
+  "pw1And": {
+    "message": "そして"
+  },
+  "pw1StripeMoneyBack": {
+    "message": "あなたの支払いはStripeによって保護されています"
+  },
+  "pw1PayPalBuyerProtection": {
+    "message": "PayPal購入者保護プログラム"
+  },
+  "pw1TrustpilotReviews": {
+    "message": ":reviews レビュー"
+  },
+  "tutorial": {
+    "message": "チュートリアル"
+  },
+  "tutorialTitle": {
+    "message": "ガイド MZScout Pro Extension"
+  },
+  "freshNicheIdea": {
+    "message": "あなたは新鮮なニッチなアイデアを持っています！"
+  },
+  "show": {
+    "message": "ショー"
+  },
+  "featureIsNotAvailable": {
+    "message": "この機能は有料版で利用できます"
+  },
+  "allRowsAreNotAvailable": {
+    "message": "すべての行が有料版で利用可能になります。"
+  },
+  "product_score_high": {
+    "message": "簡単にコピーして販売する素晴らしい製品です。"
+  },
+  "product_score_middle": {
+    "message": "あなたがいくつかの経験を持って販売することができる製品。"
+  },
+  "product_score_low": {
+    "message": "売上を伸ばすために一生懸命働いた製品。"
+  },
+  "youCanSkipThisIn": {
+    "message": "お待ちください"
+  },
+  "noCreditCard": {
+    "message": "クレジットカードは必要ありません"
+  }
+}

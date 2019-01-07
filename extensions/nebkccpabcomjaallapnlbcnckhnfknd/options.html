@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Take a Break by Eye Care Plus - Settings</title>
+    <link rel="stylesheet" href="css/options.css">
+    <script src="js/libs/jquery-2.2.3.min.js"></script>
+</head>
+<body>
+    <div class="top">
+        Take a Break by Eye Care Plus - Settings
+        <a href="https://play.google.com/store/apps/details?id=com.eyeexamtest.eyecareplus&utm_source=chrome_extension&utm_campaign=chrome_extension&utm_medium=install_button&utm_content=settings"></a>
+    </div>
+    <div class="wrapper">
+        <label>Working hours</label>
+        <div class="inputs-wrapper time-wrapper">
+            <!--<span>From</span>-->
+            <input type="time" name="time-from">
+            <span>to</span>
+            <input type="time" name="time-to">
+        </div>
+
+        <label>Choose days</label>
+        <div class="inputs-wrapper days-wrapper">
+            <div class="day-input-wrapper">
+                <input type="checkbox" name="sun">
+                <span>sun</span>
+            </div>
+            <div class="day-input-wrapper">
+                <input type="checkbox" name="mon" checked>
+                <span>mon</span>
+            </div>
+            <div class="day-input-wrapper">
+                <input type="checkbox" name="tue" checked>
+                <span>tue</span>
+            </div>
+            <div class="day-input-wrapper">
+                <input type="checkbox" name="wed" checked>
+                <span>wed</span>
+            </div>
+            <div class="day-input-wrapper">
+                <input type="checkbox" name="thu" checked>
+                <span>thu</span>
+            </div>
+            <div class="day-input-wrapper">
+                <input type="checkbox" name="fri" checked>
+                <span>fri</span>
+            </div>
+            <div class="day-input-wrapper">
+                <input type="checkbox" name="sat">
+                <span>sat</span>
+            </div>
+        </div>
+
+        <label>Break interval</label>
+        <div class="inputs-wrapper">
+            <div class="select-wrapper">
+                <label for="interval"></label>
+                <select id="interval" name="interval">
+                    <option value="20">20 min</option>
+                    <option value="30">30 min</option>
+                    <option value="60" selected>1 h</option>
+                    <option value="120">2 h</option>
+                </select>
+            </div>
+        </div>
+
+        <label>Break duration</label>
+        <div class="inputs-wrapper">
+            <div class="select-wrapper">
+                <label for="break-length"></label>
+                <select id="break-length" name="break-length">
+                    <option value="5" selected>5 min</option>
+                    <option value="10">10 min</option>
+                    <option value="15">15 min</option>
+                </select>
+            </div>
+        </div>
+
+        <label>Notification sound</label>
+        <div class="inputs-wrapper">
+            <div class="switch-wrapper">
+                <input type="checkbox" id="sound-switch" name="sound-switch">
+                <label for="sound-switch"></label>
+            </div>
+        </div>
+
+        <label>Notification type</label>
+        <div class="inputs-wrapper preview-wrapper">
+            <div class="notification-type-wrapper">
+                <div>
+                    <span>Notify using new tab</span>
+                    <input type="radio" name="notification-type" value="tab" checked>
+                </div>
+                <a href="tab.html" target="_blank" class="preview tab-preview"></a>
+            </div>
+            <div class="notification-type-wrapper">
+                <div>
+                    <span>Use desktop notifications</span>
+                    <input type="radio" name="notification-type" value="desktop">
+                </div>
+                <a class="preview desktop-notification-preview"></a>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="js-defaults">Reset default</a>
+        </div>
+    </div>
+
+    <script src="js/options.js"></script>
+</body>
+</html>

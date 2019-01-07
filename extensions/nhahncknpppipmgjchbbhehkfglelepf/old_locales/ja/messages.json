@@ -1,0 +1,12 @@
+﻿{
+   "chrome_extension_description": {
+      "message": "この拡張機能を使えばGoogle検索で使ったキーワードをウェブページ上でハイライト表示できます。これでページの関連部分をすぐに見つけられます。スクリーンショットの矢印はこの機能を有効・無効にするボタンを指しています。
+参考: http://goo.gl/nNzOM"
+   },
+   "chrome_extension_name": {
+      "message": "Google検索でキーワードをハイライト表示"
+   },
+   "chrome_extension_title": {
+      "message": "Google検索でキーワードをハイライト表示"
+   }
+}

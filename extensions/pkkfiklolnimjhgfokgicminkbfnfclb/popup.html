@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+	Description: Farsight DNSDB Scout™ Popup
+	Author: Farsight Security, Inc.
+	Copyright: 2018 Farsight Security. All Rights Reserved.
+	License: Apache License, Version 2.0
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="images/fsi_scout_icon16.png"/>
+		<link rel="stylesheet" href="semantic.min.css">
+		<link rel="stylesheet" href="popup.css">
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="semantic.min.js"></script>
+	</head>
+
+	<body>
+		<!--Header-->
+		<div id="popup-headerBar" class="ui inverted menu">
+			<div class="ui container">
+				<div class="item">
+					<a href="dashboard.html" target="dashboard">
+						<img class="logo-svg" src="images/dnsdb-scout-logo-w.svg">
+					</a>
+				</div>
+
+				<div class="right menu">
+					<div class="">
+						<a href="options.html" target="options" title="Open DNSDB Scout™ options." class="ui icon purple button"><i class="cog icon"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Header -->
+
+		<!-- Main Content -->
+		<div class="ui grid">
+			<div class="center aligned row">
+				<div class="center aligned sixteen column wide column">
+					<div class="ui segment grey">
+						<a href="dashboard.html" target="dashboard">
+							<button class="ui teal fluid large button">
+								<i class="search icon"></i>Run a Query
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- API Key Status -->
+			<div class="center aligned row" id="popup-key-status">
+				<div class="center aligned sixteen wide column">
+					<p class="margin-bottom">API Key Status</p>
+				</div>
+				<!-- Block queries have an expiration date; trial and normal keys do not. Omit this section depending on key type -->
+				<div class="center aligned eight wide column border-right">
+					<div class="ui quota-days">
+						<h2 class="ui center aligned orange header" id="quota-time"></h2>
+						<p id="quota-time-desc"></p>
+					</div>
+				</div>
+
+				<div class="center aligned eight wide column">
+					<div class="ui quota-queries">
+						<h2 class="ui center aligned orange header" id="quota-quantity"></h2>
+						<p id="quota-quantity-desc"></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Warning -->
+			<div class="center aligned row" id="popup-warning">
+				<div class="center aligned sixteen wide column">
+					<div class="alert warning"><i class="icon exclamation triangle"></i>Invalid, Expired, or no API key set.</div>
+				</div>
+			</div>
+
+			<!-- Settings Button -->
+			<div class="center aligned row" id="popup-form">
+				<div class="center aligned sixteen wide column">
+
+					<div class="ui segment white">
+						<a href="options.html" target="options" title="Set Your DNSDB API Key">
+							<button class="ui purple fluid large button">
+								Set your API key
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Call to Action -->
+			<div class="center aligned row" id="popup-cta">
+				<div class="center aligned sixteen wide column">
+					<div class="ui segment white border-top">
+						<div class="popup-cta text-center">
+							<a href="https://www.farsightsecurity.com/trial-api/?referrer=Scout" target="_blank" title="Get your FREE DNSDB API Key">
+								<p>Don't have an API key?</p>
+								<div class="ui huge header">100</div>
+								<div class="small">Queries/day</div>
+								<h2>30-days free</h2>
+								<button class="ui orange fluid large button">
+									Sign Up Now!
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Main Content -->
+	</body>
+
+	<script src="./options.js"></script>
+</html>

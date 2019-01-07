@@ -1,0 +1,287 @@
+
+message MTCTICallInfo
+{
+    enum Payload
+    {
+        FULL = 1;
+        CHANGES = 2;
+    }
+    enum State
+    {
+        UNKNOWN = 0;
+        DIALTONE = 1;
+        DIALLING = 2;
+        DIALLED = 3;
+        RINGING = 4;
+        RINGBACK = 5;
+        CONNECTED = 6;
+        ONHOLD = 7;
+        ONHOLDPENDTRANSFER = 8;
+        ONHOLDPENDCONF = 9;
+        DISCONNECTED = 10;
+        BUSY = 11;
+        FAILED = 12;
+    }
+    enum Direction
+    {
+        OUTBOUND = 1;
+        INBOUND = 2;
+        PICKUP = 3;
+    }
+    required Payload payload = 1;
+	optional int32 callID = 2;
+	optional int32 referencecallID = 3;
+	optional State state = 4;
+	optional Direction direction = 5;
+	optional int32 featuresavailable = 7;
+	optional int32 relatedcallID = 8;
+}
+
+message MTCTICallLost
+{
+	optional int32  callID = 1;
+	optional int32  referencecallID = 2;
+	optional int32  reason = 3;
+	optional bool   thisenddropped = 4;
+	optional string description = 5;
+}
+
+
+message MTCTINotifyCallControl
+{
+	repeated MTCTICallInfo callinfo = 1;
+	repeated MTCTICallLost calllost = 2;
+}
+
+
+
+message MTCTISubscribeOpenAPIParkServer
+{
+    required int32 flags = 1;
+}
+
+message MTCTISubscribeOpenAPIConferenceServer
+{
+    required int32 flags = 1;
+}
+
+message MTCTISubscribeOpenAPIQueue
+{
+    required bytes guid = 1;
+    required int32 flags = 2;
+}
+
+message MTCTIOpenAPIQueueMembership
+{
+    required bytes userguid = 1;
+    optional string userextn = 2;
+    optional string username = 3;
+    optional bool   disabledmember = 4;
+    optional int32  roles = 5;
+}
+
+message MTCTINotifyOpenAPIQueue
+{
+    enum Payload
+    {
+        FULL = 1;
+        CHANGES = 2;
+    }
+    required Payload payload = 1;
+    optional string extn = 2;
+    optional string name = 3;
+    optional string katakananame = 4;
+    optional int32  featuresavailable = 5;
+    optional bool   voicemail = 6;
+	repeated MTCTIOpenAPIQueueMembership members = 7;
+	repeated MTCTIOpenAPIQueueMembership administrators = 8;
+}
+
+message MTCTISubscribeOpenAPIUser
+{
+    required bytes guid = 1;
+    required int32 flags = 2;
+}
+
+message MTCTIOpenAPIUserMembership
+{
+    required bytes groupguid = 1;
+    optional string groupextn = 2;
+    optional string groupname = 3;
+    optional bool   disabledmember = 4;
+    optional int32  roles = 5;
+}
+
+message MTCTINotifyOpenAPIUser
+{
+    enum Payload
+    {
+        FULL = 1;
+        CHANGES = 2;
+    }
+    required Payload payload = 1;
+    optional string extn = 2;
+    optional string name = 3;
+    optional string fullname = 4;
+    optional string katakananame = 5;
+    optional string email = 6;
+    optional int32  featuresavailable = 7;
+    optional string language = 8;
+    optional bool   dnd = 9;
+    optional bool   barred = 10;
+    optional bool   xdirectory = 11;
+    optional bool   voicemail = 12;
+    optional string loggedinextn = 13;
+    optional string forwardnumber = 14;
+    optional bool   forwardunconditional = 15;
+    optional bool   forwardonbusy = 16;
+    optional bool   forwardonnoanswer = 17;
+	repeated MTCTIOpenAPIUserMembership memberof = 18;
+	repeated MTCTIOpenAPIUserMembership administratorof = 19;
+}
+
+message MTCTIUpdateOpenAPIUser
+{
+    enum Action
+    {
+        DndOn = 1;
+        DndOff = 2;
+        VoicemailOn = 3;
+        VoicemailOff = 4;
+        CancelAllForwarding = 5;
+        SetForwardingNumber = 6;
+        SetForwardingUnconditionalOn = 7;
+        SetForwardingUnconditionalOff = 8;
+        SetForwardOnBusyOn = 9;
+        SetForwardOnBusyOff = 10;
+        SetForwardOnNoAnswerOn = 11;
+        SetForwardOnNoAnswerOff = 12;
+        SetLoginExtn = 13;
+        DisableMembership = 14;
+        EnableMembership = 15;
+    }
+	required Action action = 1;
+    optional string arg1 = 2;
+}
+
+message MTCTIOpenAPIUser
+{
+    required bytes guid = 1;
+    optional string extn = 2;
+    optional string name = 3;
+}
+
+message MTCTIOpenAPIQueue
+{
+    required bytes guid = 1;
+    optional string extn = 2;
+    optional string name = 3;
+}
+
+message MTCTISubscribeOpenAPILines
+{
+    required int32 flags = 1;
+}
+
+message MTCTINotifyOpenAPILines
+{
+    required int32 flags = 1;
+    repeated MTCTIOpenAPIUser add_user = 2;
+    repeated MTCTIOpenAPIQueue add_queue = 3;
+    repeated MTCTIOpenAPIUser delete_user = 4;
+    repeated MTCTIOpenAPIQueue delete_queue = 5;
+}
+
+message MTCTINotify
+{
+    required int32 subscribe_id = 1;
+    optional int32 notify_id = 2;
+    optional string label = 3;
+    oneof payload
+    {
+        MTCTINotifyCallControl callcontrol = 14;
+    }
+}
+
+message MTCTINotifyAck
+{
+    required int32 subscribe_id = 1;
+    required int32 notify_id = 2;
+}
+
+message MTCTISubscribe
+{
+    optional int32 requestid = 1;
+    required int32 subscribe_id = 2;
+    optional int32 timeout = 3;
+    optional string label = 4;
+    oneof payload
+    {
+        MTCTISubscribeOpenAPILines lines = 40;
+    }
+}
+
+message MTCTISubscribeEnd
+{
+    optional int32 requestid = 1;
+    required int32 subscribe_id = 2;
+    optional string reason = 3;
+}
+
+message MTCTISubscribeTerminated
+{
+    required int32 subscribe_id = 1;
+    optional string reason = 2;
+}
+
+message MTCTISubscribeCmd
+{
+    optional int32 requestid = 1;
+    required int32 subscribe_id = 2;
+    oneof payload
+    {
+        int32 timeout = 3;
+    }
+}
+
+message MTCTIRequestResponse
+{
+    required int32 requestid = 1;
+    required int32 result = 2;
+    optional string additional = 3;
+}
+
+message MTCTIGeneralCmdStatus
+{
+    required int32 cmdinst =1;
+    required int32 result = 2;
+    optional string additional = 3;
+}
+
+message MTCTIGeneralCmd
+{
+    required int32 requestid = 1;
+}
+
+message MTCTIGeneralData
+{
+    required int32 responseid = 1;
+}
+
+message MTCTIMessage
+{
+    oneof payload
+    {
+        MTCTIRequestResponse response = 1;
+        MTCTIGeneralCmd generalcmd = 2;
+        MTCTISubscribe subscribe = 3;
+        MTCTISubscribeCmd subscibecmd = 4;
+        MTCTISubscribeEnd subscribeend = 5;
+        MTCTISubscribeTerminated subscribeterminated = 6;
+        MTCTIGeneralData generaldata = 7;
+        MTCTINotify notify = 8;
+        MTCTINotifyAck notifyack = 9;
+    }
+}
+
+

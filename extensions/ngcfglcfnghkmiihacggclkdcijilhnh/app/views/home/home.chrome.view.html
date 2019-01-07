@@ -1,0 +1,22 @@
+<div flex>
+
+  <div class="top-decor-line"></div>
+
+  <div class="cp-content-wrapper">
+
+    <div ui-view="header"></div>
+
+    <div layout="row" flex>
+      <div ng-show="homeCtrl.contentToShow == 'content'" ui-view="content" class="main-content-wrapper"></div>
+      <div ng-show="homeCtrl.contentToShow == 'note'" ui-view="note" class="main-content-wrapper"></div>
+    </div>
+
+    <div ui-view="footer"></div>
+
+  </div>
+
+  <div class="cp-settings-wrapper">
+
+  </div>
+
+</div>

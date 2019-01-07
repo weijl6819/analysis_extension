@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "संपर्कों"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "एक पॉप अप विंडो में गूगल संपर्कों तक पहुंच"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "संपर्कों विकल्प"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "पॉपअप विंडो का आकार"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "चौडाई"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "ऊंचाई"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "बचाना"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "सहेजा"
+   }
+}

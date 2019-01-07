@@ -1,0 +1,209 @@
+  .jsc_dpe
+{
+  white-space: nowrap;
+}
+.jsc_dpe_hotspot
+{
+  display: inline-block !important;
+  vertical-align: middle !important;
+  padding: 0px!important;
+  margin: 0px!important;
+  margin-left: 4px!important;
+  margin-top: -0.25em!important;
+  font-size: inherit!important;
+  background-color: transparent!important;
+  background-repeat: no-repeat!important;
+  background-position: center center!important;
+  cursor: pointer!important;
+  border: solid 1px transparent!important;
+  border-radius: 4px!important;
+  height: 20px!important;
+  width: 20px!important;
+}
+.jsc_dpe_action > .jsc_dpe_hotspot
+{
+  margin-left: 0px!important;
+}
+.jsc_dpe_hotspot:hover
+{
+  background-color: orange!important;
+}
+.jsc_dpe_vcard_button
+{
+  -webkit-user-select: none; 
+  background-repeat: no-repeat !important; 
+  background-position: center !important; 
+  opacity: 0.7 !important;
+}
+.jsc_dpe_vcard_button:hover
+{
+  opacity: 0.9 !important;
+}
+
+#jsc_gmail_action
+{
+  -webkit-user-select: none; 
+  background-repeat: no-repeat !important; 
+  opacity: 0.7 !important;
+  background-position: 0px 5px!important;
+  display: inline-block!important;
+  width: 28px;
+  height: 21px;
+  vertical-align: middle;  
+}
+#jsc_gmail_action:hover
+{
+  opacity: 0.9 !important;
+}
+#jsc_gmail_action *
+{
+  background: none!important;
+}
+
+.jsc_presence
+{
+  overflow:       hidden;
+  position:       relative;
+}
+td > .jsc_presence
+{
+  padding-left: 4px;
+}
+.jsc_presence:before
+{
+  left:            -3px;
+  border:          solid 1px transparent;
+  border-radius:   6px;
+  position:        absolute;
+  top:             10px;
+  width:           6px;
+  bottom:          10px;
+  content:         "";
+  display:         inline-block;
+  box-sizing:      border-box;
+  -moz-box-sizing: border-box;
+}
+.jsc_presence.dnd:before
+{
+  background-color: rgba(240,15,15,1.0);
+  background:       -webkit-radial-gradient(center, circle, rgba(240,15,15,1.0), rgba(240,15,15,0.2));
+  background:       -moz-radial-gradient(center, circle, rgba(240,15,15,1.0), rgba(240,15,15,0.2))
+}
+.jsc_presence.online:before
+{
+  background-color: rgba(0,192,0,1.0);
+  background: -webkit-radial-gradient(center, circle, rgba(0,192,0,1.0), rgba(0,192,0,0.2));
+  background: -moz-radial-gradient(center, circle, rgba(0,192,0,1.0), rgba(0,192,0,0.2));
+}
+.jsc_presence.away:before
+{
+  background-color: rgba(255,206,7,1.0);
+  background: -webkit-radial-gradient(center, circle, rgba(255,206,7,1.0), rgba(255,206,7,0.2));
+  background: -moz-radial-gradient(center, circle, rgba(255,206,7,1.0), rgba(255,206,7,0.2));
+}
+.jsc_presence.offline:before
+{
+  background-color: rgba(128,128,128,.6);
+  background: -webkit-radial-gradient(center, circle, rgba(128,128,128,.6), rgba(128,128,128,0.2));
+  background: -moz-radial-gradient(center, circle, rgba(128,128,128,.6), rgba(128,128,128,0.2));
+}
+
+.jsc_presence_201806:before {
+  content: '';
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  /* top: -2px; */
+  width: 100%;
+  /* left: -27px; */
+  height: 100%;
+  border-left: solid 16px rgba(0, 0, 0, 0);
+  transform: scaleY(0.4) scaleX(0.2) translate(110%, 0px) rotateZ(180deg);
+  z-index: 1;
+}
+.jsc_presence_201806.dnd:before {
+  border-left-color: rgba(240, 15, 15, 0.75);
+}
+.jsc_presence_201806.online:before {
+  border-left-color: rgba(0, 192, 0, 0.75);
+}
+.jsc_presence_201806.away:before {
+  border-left-color: rgba(255, 206, 7, 0.75);
+}
+.jsc_presence_201806.offline:before {
+  border-left-color: rgba(128, 128, 128, 0.6);
+}
+
+#sidebarCell, #sidebarContainer
+{
+  transition: width ease-in 0.5s;
+}
+#sidebarCell[jsc_expand]
+{
+  width:      300px;
+  transition: width ease-out 0.5s;
+}
+#sidebarContainer[jsc_expand]
+{
+  width:      320px!important;
+  transition: width ease-out 0.5s;
+}
+#sidebarCell[jsc_expand] ~ td.oRight {
+  overflow:hidden;
+}
+@media screen and (max-width: 1024px) {
+  #sidebarCell[jsc_expand] ~ td.oRight {
+    max-width: 300px;
+  }
+}
+
+
+#sidebarContainer > #softphoneContainer
+{
+  transition: width ease-in 0.5s;
+}
+#sidebarContainer[jsc_expand] > #softphoneContainer
+{
+  width:      300px!important;
+  transition: width ease-out 0.5s;
+}
+
+#sidebarCell > #handlebarContainer
+{
+  transition: left ease-in 0.5s;
+}
+#sidebarCell[jsc_expand] > #handlebarContainer
+{
+  left:       314px;
+  transition: left ease-out 0.5s;
+}
+
+#SoftphoneIframe
+{
+  height:     400px!important;
+  transition: height ease-in 0.5s;
+}
+#sidebarCell[jsc_expand] #SoftphoneIframe, #sidebarContainer[jsc_expand] #SoftphoneIframe
+{
+  transition: height ease-out 0.5s;
+  height:     530px!important;
+}
+
+.openCTISoftphoneModule
+{
+  transition: width ease-in 0.5s;
+}
+#sidebarCell[jsc_expand] .openCTISoftphoneModule
+{
+  width:      295px;
+  transition: width ease-out 0.5s;
+}
+
+#adapterIframeDiv {
+  position: relative;
+  z-index: 999;
+}
+
+.oneUtilityBarPanel .slds-utility-panel__body .body_container {
+  position: relative;
+}

@@ -1,0 +1,161 @@
+/*!
+ *  Font Awesome 3.0.2
+ *  the iconic font designed for use with Twitter Bootstrap
+ *  -------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation
+ *  can be found at: http://fortawesome.github.com/Font-Awesome/
+ *
+ *  License
+ *  -------------------------------------------------------
+ *  - The Font Awesome font is licensed under the SIL Open Font License - http://scripts.sil.org/OFL
+ *  - Font Awesome CSS, LESS, and SASS files are licensed under the MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - The Font Awesome pictograms are licensed under the CC BY 3.0 License - http://creativecommons.org/licenses/by/3.0/
+ *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
+ *    "Font Awesome by Dave Gandy - http://fortawesome.github.com/Font-Awesome"
+
+ *  Contact
+ *  -------------------------------------------------------
+ *  Email: dave@davegandy.com
+ *  Twitter: http://twitter.com/fortaweso_me
+ *  Work: Lead Product Designer @ http://kyruus.com
+ */
+@font-face {
+  font-family: 'ShowTitleFontAwesome';
+  src: url('chrome-extension://__MSG_@@extension_id__/font/fontawesome-webfont.woff') format('woff'), url('chrome-extension://__MSG_@@extension_id__/font/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+#showtitlewrapper {
+  /*  Plugin styles
+        ------------------------------------------------------- */
+  position: fixed;
+  display: inline-block;
+  margin: 0 auto;
+  height: 18px;
+  padding: 0 5px 0;
+  background-repeat: no-repeat;
+  color: #000 !important;
+  z-index: 9999;
+  font-size: 11px !important;
+  font-family: sans-serif !important;
+  width: auto;
+  background: -webkit-linear-gradient(top, #efefef 0%, #e0e0e0 100%);
+  border: 1px solid white;
+  box-shadow: 0px 0px 1px #5b5b5b;
+}
+#showtitlewrapper [class^="icon-"],
+#showtitlewrapper [class*=" icon-"] {
+  font-family: ShowTitleFontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+}
+#showtitlewrapper [class^="icon-"]:before,
+#showtitlewrapper [class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+#showtitlewrapper .icon-eye-open:before {
+  content: "\f06e";
+}
+#showtitlewrapper .icon-eye-close:before {
+  content: "\f070";
+}
+#showtitlewrapper .icon-hand-right:before {
+  content: "\f0a4";
+}
+#showtitlewrapper .icon-hand-left:before {
+  content: "\f0a5";
+}
+#showtitlewrapper .icon-hand-up:before {
+  content: "\f0a6";
+}
+#showtitlewrapper .icon-hand-down:before {
+  content: "\f0a7";
+}
+#showtitlewrapper * {
+  font-size: 11px;
+}
+#showtitlewrapper .tolong {
+  color: #B60202;
+}
+#showtitlewrapper #showtitlemove i {
+  display: none;
+}
+#showtitlewrapper #showtitleremovelink .icon-eye-close,
+#showtitlewrapper #showtitleremovelink:hover .icon-eye-open {
+  display: none;
+}
+#showtitlewrapper #showtitleremovelink:hover .icon-eye-close {
+  display: inline;
+}
+#showtitlewrapper .link {
+  padding-left: 2px;
+  color: black !important;
+  cursor: pointer;
+}
+#showtitlewrapper p {
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+}
+#showtitlewrapper p:last-child {
+  margin-bottom: 0;
+}
+#showtitlewrapper.not-initialized {
+  display: none;
+}
+#showtitlewrapper.bottom_left {
+  bottom: -2px;
+  left: -2px;
+  border-top-right-radius: 3px;
+}
+#showtitlewrapper.bottom_left #showtitlemove i.icon-hand-up {
+  display: inline;
+}
+#showtitlewrapper.bottom_right {
+  bottom: -2px;
+  right: -2px;
+  border-top-left-radius: 3px;
+}
+#showtitlewrapper.bottom_right #showtitlemove i.icon-hand-left {
+  display: inline;
+}
+#showtitlewrapper.top_left {
+  top: -2px;
+  left: -2px;
+  border-bottom-right-radius: 3px;
+}
+#showtitlewrapper.top_left #showtitlemove i.icon-hand-right {
+  display: inline;
+}
+#showtitlewrapper.top_right {
+  top: -2px;
+  right: -2px;
+  border-bottom-left-radius: 3px;
+}
+#showtitlewrapper.top_right #showtitlemove i.icon-hand-down {
+  display: inline;
+}
+#showtitlewrapper.hide {
+  opacity: 0.6;
+}
+#showtitlewrapper.hide:hover {
+  opacity: 1;
+}
+#showtitlewrapper.hide #showtitle-title,
+#showtitlewrapper.hide #showtitlemove {
+  display: none;
+}

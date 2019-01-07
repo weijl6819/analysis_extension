@@ -1,0 +1,24 @@
+<div class="cp-tags-container">
+  <div class="cp-tags-bar-wrapper">
+    <div class="cp-tags-bar">
+      <input class="search-box cp-no-border cp-tags-bar-input" ng-model="homeCtrl.filterTagsText" placeholder="Filter Tags...">
+      <div class="cp-tags-bar-close-wrapper">
+        <div class="cp-x-close-button cp-no-border" ng-click="homeCtrl.tagsCleanButtonClick()">X</div>
+      </div>
+    </div>
+  </div>
+  <div class="cp-tags-list-wrapper">
+    <div class="cp-tag-item-wrapper cp-no-border"
+         ng-style="{'background':tag.isClicked ? '#555164' : '#f0f2f5' , 'color':tag.isClicked ? '#FFF' : '#585858'}"
+         ng-click="homeCtrl.tagClick(tag)"
+         ng-repeat="tag in homeCtrl.userTags |
+         filter: homeCtrl.filterTagsText |
+         orderBy:homeCtrl.tagsSortOrder
+         track by $index">
+      <div class="cp-tag-item cp-no-border">{{tag.text}}</div>
+    </div>
+  </div>
+  <hr class="cp-bottom-breaking-line" style="margin: 0 20px">
+</div>
+
+

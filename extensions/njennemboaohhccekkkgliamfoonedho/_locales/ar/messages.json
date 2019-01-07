@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "أشعل",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "الضوء هو ما يصل لعبة لغز بسيط ولكن بعد الإدمان. الاتصال الألوان المطابقة مع أنبوب لخلق تدفق توهج.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

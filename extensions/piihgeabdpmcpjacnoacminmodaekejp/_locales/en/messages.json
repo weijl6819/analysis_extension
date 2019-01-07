@@ -1,0 +1,101 @@
+{
+	"name": {
+		"message": "Scanguard Safe Site"
+	},
+	"browserAction_defaultTitle": {
+		"message": "Security Suite"
+	},
+	"shortName": {
+		"message": "Search the web using Scanguard's Safe Site tool"
+	},
+	"description": {
+		"message": "Safe Site helps block harmful and malicious URLs to improve your internet experience and keep you safe."
+	},
+	"chromeSettingsOverrides_searchProvider_name": {
+		"message": "Scanguard Safe Search"
+	},
+	"newTab_title": {
+		"message": "Scanguard Dashboard"
+	},
+	"urlScanner_tooltipTitle": {
+		"message": "Web Shield Security Information:"
+	},
+	"urlScanner_categoryLabel": {
+		"message": "Category:"
+	},
+	"urlScanner_threatLabel": {
+		"message": "Threat:"
+	},
+	"urlScanner_poweredByText": {
+		"message": "Powered by"
+	},
+	"warningPage_title": {
+		"message": "WARNING! This website could harm your system..."
+	},
+	"warningPage_subTitle": {
+		"message": "Don't worry, we've blocked it for your protection"
+	},
+	"warningPage_categoryLabel": {
+		"message": "Category"
+	},
+	"warningPage_categoryName_SAFE": {
+		"message": "No Threat"
+	},
+	"warningPage_categoryName_THREAT_TYPE_UNSPECIFIED": {
+		"message": "Unknown"
+	},
+	"warningPage_categoryDescription_THREAT_TYPE_UNSPECIFIED": {
+		"message": "This website has been identified as potentially harmful.  Attackers on this website may trick you into doing something dangerous that could comprimise your security."
+	},
+	"warningPage_categoryName_VIRUSINFECTED": {
+		"message": "Virus"
+	},
+	"warningPage_categoryDescription_VIRUSINFECTED": {
+		"message": "This website has been identified as containing deceptive content.  Attackers on this website may trick you into doing something dangerous that could compromise your security."
+	},
+	"warningPage_categoryName_SPYWARE": {
+		"message": "Spyware"
+	},
+	"warningPage_categoryDescription_SPYWARE": {
+		"message": "This website has been identified as containing deceptive content.  Attackers on this website may trick you into doing something dangerous that could compromise your security."
+	},
+	"warningPage_categoryName_PHISHING": {
+		"message": "Phishing"
+	},
+	"warningPage_categoryDescription_PHISHING": {
+		"message": "This website has been identified as containing deceptive content.  Attackers on this website may trick you into doing something dangerous that could compromise your security."
+	},
+	"warningPage_categoryName_MALWARE": {
+		"message": "Malware"
+	},
+	"warningPage_categoryDescription_MALWARE": {
+		"message": "This website has been identified as containing deceptive & malicious content.  Attackers on this website may trick you into doing something dangerous that could compromise your security. "
+	},
+	"warningPage_categoryName_SOCIAL_ENGINEERING": {
+		"message": "Social Engineering"
+	},
+	"warningPage_categoryDescription_SOCIAL_ENGINEERING": {
+		"message": "This website has been identified as containing deceptive content.  Attackers on this website may trick you into doing something dangerous that could compromise your security. "
+	},
+	"warningPage_categoryName_UNWANTED_SOFTWARE": {
+		"message": "Unwanted Software"
+	},
+	"warningPage_categoryDescription_UNWANTED_SOFTWARE": {
+		"message": "This website has been identified as containing unwanted software.  This program likely contains adware, spyware or other intrusive and malicious behavior. "
+	},
+	"warningPage_categoryName_POTENTIALLY_HARMFUL_APPLICATION": {
+		"message": "Harmful Application"
+	},
+	"warningPage_categoryDescription_POTENTIALLY_HARMFUL_APPLICATION": {
+		"message": "This website has been identified as containing unwanted software.  This program likely contains adware, spyware or other intrusive and malicious behavior."
+	},
+	"warningPage_backToSafety": {
+		"message": "Back to Safety"
+	},
+	"warningPage_visitWebsite": {
+		"message": "Visit Website"
+	},
+	"warningPage_whitelistText": {
+		"message": "I trust this website, do not flag again"
+	}
+}

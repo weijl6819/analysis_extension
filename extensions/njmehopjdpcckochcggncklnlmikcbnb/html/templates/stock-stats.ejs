@@ -1,0 +1,57 @@
+<div class="h10-overlay">
+
+    <div class="container6 inventory-level-modal">
+        <div class="top-tabs">
+            <span id="h10-inventory-levels">Inventory levels</span>
+            <a href="#" class="close-btn">
+                <img id="close-icon" src="<%= close %>" style="height:36px;vertical-align: middle;"/>
+            </a>
+        </div>
+        <div class="content-div" id="stock-stats">
+            <div class="container">
+                <div class="media " id="product-preview" style="display: none">
+                    <div class="media-left">
+                        <img class="media-object" src=" " alt="" id="h10-ss-img-preview">
+                    </div>
+                    <div class="media-body">
+                        <div>
+                            <a href="" id="product-title" target="_blank"></a>
+                        </div>
+                        <div>ASIN : <span id="product-asin"></span></div>
+                        <div>BSR : <span id="product-bsr"></span></div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bs-example" data-example-id="bordered-table">
+                        <table id="sellers-table" class="table">
+                            <thead>
+                            <tr>
+                                <th>
+                                    Seller
+                                </th>
+                                <th>
+                                    Stock
+                                </th>
+                                <th>
+                                    Price
+                                </th>
+                                <th>
+                                    Fulfillment
+                                </th>
+                                <th>
+                                    Rating
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody id="sellers-table-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

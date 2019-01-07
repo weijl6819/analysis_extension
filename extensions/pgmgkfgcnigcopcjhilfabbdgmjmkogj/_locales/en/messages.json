@@ -1,0 +1,48 @@
+{
+	"extName": {
+		"message": "Just a Clock - the Minutes",
+		"description": "The name of this extension"
+	},
+	"extShortName": {
+		"message": "The Minutes",
+		"description": "A shortened version of the name (should try to be no longer than 11 characters)"
+	},
+	"extDescription": {
+		"message": "A simple digital clock for the toolbar. This is JUST THE MINUTES. Pair with the hours for an awesome readable clock in your toolbar!",
+		"description": "A description of the extension, be sure to mention the need to install both extensions"
+	},
+	
+	"optionsFor": {
+		"message": "Options for",
+		"description": "Title for the Options page, this will be prefixed to the extension name, such as --[Options for] Just a Clock - The Minutes--"
+	},
+	"blackWhiteSetting": {
+		"message": "Black / White numbers",
+		"description": "Title for the color setting"
+	},
+	"blackLabel": {
+		"message": "Black",
+		"description": "Label for when the clock numbers should be black"
+	},
+	"whiteLabel": {
+		"message": "White",
+		"description": "Label for when the clock numbers should be white"
+	},
+	"whiteLabelClarification": {
+		"message": "for dark backgrounds",
+		"description": "Suggestion of when to use white numbers"
+	},
+	
+	"saveButton": {
+		"message": "Save",
+		"description": "Label for the button to save the options"
+	},
+	"saveNotice": {
+		"message": "may take up to 6 seconds to take effect",
+		"description": "Message to the user that changing any settings will take up to 6 seconds after the Save button is hit - (this is displayed next to the Save button)"
+	},
+	"saveStatus": {
+		"message": "Saved",
+		"description": "Message to inform the user that the settings were successfully saved."
+	}
+}

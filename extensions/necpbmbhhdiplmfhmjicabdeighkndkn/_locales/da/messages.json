@@ -1,0 +1,10 @@
+{
+  "appDesc": {
+    "description": "Description for the CWS",
+    "message": "Find straks hjemmesider, der ligner den, du browser lige nu. Udforsk nettet, opdag mere."
+  },
+  "appName": {
+    "description": "Title for the CWS",
+    "message": "Similar Sites - Opdag Lignende Hjemmesider"
+  }
+}

@@ -1,0 +1,35 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #000000;
+}
+.description {
+  width: 80%;
+  margin: 50px auto;
+}
+/*   FOOTER ALT (FLEXBOX   */
+#container {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between; /* switched from default (flex-start, see below) */
+}
+#container > div {
+  height: 25px;
+}
+#container2 {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: flex-start;    /* switched from default (flex-start, see below) */
+}
+#container2 > div {
+  height: 20px;
+}
+option.colorize {
+	color: #00008B; 
+}

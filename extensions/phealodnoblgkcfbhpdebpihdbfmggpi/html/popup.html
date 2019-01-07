@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/stars.css">
+
+    <script src="../node_modules/webextension-polyfill/dist/browser-polyfill.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jsontodom.js"></script>
+    <script src="../js/checkAuth.js"></script>
+    <script src="../js/popup_snovio.js"></script>
+    <script src="../js/popup.js"></script>
+
+    <title></title>
+</head>
+
+<body>
+
+    <header>
+        <div class="extenssion-cnt header-wrap">
+            <div class="logo-wrap">
+                <a href="https://app.snov.io/techcheck" target="_blank">
+                    <img src="../images/30x222_logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="user-name hidden">
+                <span id="userName" class="small text-muted">User Name
+                    <!--username@example.com-->
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="extenssion-cnt company-info hidden">
+
+            <div class="company-name hidden">
+                <div class="company__logo hidden">
+                    <img src="" alt="">
+                </div>
+                <h1 class="company-title"></h1>
+            </div>
+            <div>
+                <div class="company-info__item founded"></div>
+                <div class="company-info__item size"></div>
+                <div class="company-info__item country"></div>
+                <div class="company-info__item industry"></div>
+            </div>
+
+            <div class="company-socials hidden">
+                <!--append .company-socials__item-->
+            </div>
+
+        </div>
+
+        <div id="allStars" class="hidden">
+            <div id="pleaseRateUs" style="text-align:center; padding: 5px 10px 0px; color: red">We've been trying hard all this time. If you rate us we will know we did it right!</div>
+            <div class="stars">
+                <input type="radio" name="star" class="star-1" id="star-1" />
+                <label class="star-1" for="star-1">1</label>
+                <input type="radio" name="star" class="star-2" id="star-2" />
+                <label class="star-2" for="star-2">2</label>
+                <input type="radio" name="star" class="star-3" id="star-3" />
+                <label class="star-3" for="star-3">3</label>
+                <input type="radio" name="star" class="star-4" id="star-4" />
+                <label class="star-4" for="star-4">4</label>
+                <input type="radio" name="star" class="star-5" id="star-5" />
+                <label class="star-5" for="star-5">5</label>
+                <span></span>
+            </div>
+        </div>
+        <div id="badEval" class="hidden" style="text-align:center;">We promise we will try harder to work better. Send me your suggestions at help@snov.io</div>
+
+        <h2 class="tech-title">Technologies</h2>
+
+        <div class="extenssion-cnt">
+            <div class="container main-body contacts-table"></div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="extenssion-cnt">
+            <div class="footer__log-in hidden">
+                <a href="https://app.snov.io/login?techfinder=plugin" target="_blank">Log In</a>
+                <p>Please make sure you are logged in to add company to the list and find emails</p>
+            </div>
+
+            <div class="company-add hidden" id="footerUserLists">
+                <p>Add to companies list to find email addresses</p>
+                <div class="company-add__items">
+                    <select id="userList">
+                        <!-- list option foreach -->
+                    </select>
+
+                    <button class="btn btn-primary" id="btnSendtoList" data-toggle="button" data-loading-text="Saving...">
+                        Save
+                    </button>
+                    <a class="btn btn-success hidden" target="_blank" href="#">Go to list</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

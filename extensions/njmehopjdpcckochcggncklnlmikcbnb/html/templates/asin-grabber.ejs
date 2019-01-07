@@ -1,0 +1,77 @@
+<div class="h10-overlay">
+    <div class="container6 asin-grabber-modal">
+        <div class="top-tabs">
+            <span>ASIN Grabber</span>
+            <span id="h10-bb-search-term"></span>
+            <span id="h10-bb-search-volume"></span>
+            <i class="fa fa-spinner fa-spin" id="h10-bb-activity-indicator"></i>
+            <a href="#" class="close-btn">
+                <img id="close-icon" src="<%= close %>" style="height:36px;vertical-align: middle;"/>
+            </a>
+        </div>
+        <div id="asin-grabber-tab">
+            <div class="content-div" id="asin-grabber">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="bs-example">
+                            <table id="asin-grabber-table-summary">
+                                <thead>
+                                <tr>
+                                    <th class="h10-ag-summary-labels" title="Average Best Seller Rank (excluding sponsored listings)">
+                                        Avg. BSR
+                                    </th>
+                                    <th class="h10-ag-summary-labels" title="Average price (excluding sponsored listings)">
+                                        Avg. Price
+                                    </th>
+                                    <th class="h10-ag-summary-labels" title="Average number of reviews (excluding sponsored listings)">
+                                        Avg. Reviews
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td id="h10-ag-avg-sales-rank" class="h10-ag-summary-numbers">
+                                        <i class="fa fa-spinner fa-spin fa-fw"></i>
+                                    </td>
+                                    <td id="h10-ag-avg-price" class="h10-ag-summary-numbers">
+                                        <i class="fa fa-spinner fa-spin fa-fw"></i>
+                                    </td>
+                                    <td id="h10-ag-avg-reviews-number" class="h10-ag-summary-numbers">
+                                        <i class="fa fa-spinner fa-spin fa-fw"></i>
+                                    </td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table id="asin-grabber-table" class="table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>ASIN</th>
+                                    <th>Brand</th>
+                                    <th>Title</th>
+                                    <th>Price</th>
+                                    <th>BSR</th>
+                                    <th>Rating</th>
+                                    <th>Reviews</th>
+                                </tr>
+                                </thead>
+                                <tbody id="asin-grabber-table-body">
+                                </tbody>
+                            </table>
+                            <div id="h10-ag-export-wrapper" style="display:none;text-align: right;margin-top: 10px;margin-right: 20px;">
+                                <a href="https://www.helium10.com/" target="_blank">
+                                    <img style="float: left;padding-left: 2%;" src="" id="ag-helium-logo">
+                                </a>
+                                 <i style="padding-top: 10px" class="fa fa-download h10-ag-csv-action"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

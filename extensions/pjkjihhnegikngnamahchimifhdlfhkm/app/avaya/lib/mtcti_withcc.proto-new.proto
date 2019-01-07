@@ -1,0 +1,755 @@
+syntax = "proto3";
+
+
+message SubscribeCallLog
+{
+    bool missed = 1;
+    bool answered = 2;
+    bool outbound = 3;
+    bool fullonly = 4;
+}
+
+message NotifyCallEntry
+{
+    enum State
+    {
+        Unknown = 0;
+        Unread = 1;
+        Read = 2;
+        Saved = 3;
+    }
+    enum Type
+    {
+        Unspecified = 0;
+        Answered = 1;
+        Outbound = 2;
+        Unanswered = 3;
+        Answeredbyother = 4;
+        Answeredbyvoicemail = 5;
+    }
+    int32 instance = 1;
+    int32 utc = 2;
+    int32 localoffsetadd = 3;
+    int32 localoffsetsubtract = 4;
+    string datetime = 5;
+    int32 count = 6;
+	Type  type = 7;
+	State  state = 8;
+    int32 duration = 9;
+    string number = 10;
+    int32 numbertype = 11;
+    string name = 12;
+    string tag = 13;
+}
+
+message NotifyCallDeleted
+{
+    int32 instance = 1;
+}
+
+message NotifyCallLog
+{
+    bool full = 1;
+    repeated NotifyCallEntry entry = 2;
+    repeated NotifyCallDeleted deleted = 3;
+}
+
+message UpdateCallLog
+{
+    enum Action
+    {
+        Unspecified = 0;
+        Refresh = 1;
+        Deleteall = 2;
+        Deleteallunsaved = 3;
+        Deletealloutbound = 4;
+        Deleteallinbound = 5;
+        Readall = 6;
+        Deleteinst = 7;
+        Readinst = 8;
+        Saveinst = 9;
+        Unreadinst = 10;
+    }
+	Action  action = 1;
+    int32 instance = 2;
+}
+
+
+message PartyInfo
+{
+    int32 numbertype = 1;
+    string number = 2;
+    string name = 4;
+    int32 nametype = 5;
+    bool withheld = 6;
+    int32 diversionreason = 7;
+}
+
+message DialInfo
+{
+    string  number = 1;
+    int32 type = 2;
+    bool withholdcli = 3;
+    bool hidenumber = 4;
+    bool complete = 5;
+    string  madn = 6;
+}
+
+message CallData
+{
+    string language = 1;
+    bool  emergency = 2;
+    bool  privacy = 3;
+    bool  secure = 4;
+    bool  rprivacy = 5;
+}
+
+
+message ConferenceMember
+{
+    enum Payload
+    {
+        FULL = 0;
+        CHANGES = 1;
+    }
+    enum State
+    {
+        UNKNOWN = 0;
+        DIALTONE = 1;
+        DIALLING = 2;
+        DIALLED = 3;
+        RINGING = 4;
+        RINGBACK = 5;
+        CONNECTED = 6;
+        ONHOLD = 7;
+        ONHOLDPENDTRANSFER = 8;
+        ONHOLDPENDCONF = 9;
+        DISCONNECTED = 10;
+        BUSY = 11;
+        FAILED = 12;
+        WAITINGFORACCT = 13;
+        WAITINGFORAUTH = 14;
+        WAITINGFORLINE = 15;
+    }
+    enum Direction
+    {
+        UNDEFINED = 0;
+        OUTBOUND = 1;
+        INBOUND = 2;
+        PICKUP = 3;
+    }
+    enum FailedCause
+    {
+        UNSET = 0;
+        UNSPECIFIED = 1;
+        UNALLOCATEDNUMBER = 2;
+        REJECTED = 3;
+        NUMBEROOO = 4;
+        NETWORKOOO = 5;
+        BARRED = 6;
+        NOCHANNEL = 7;
+        NOACCOUNTCODE = 8;
+        NOAUTHCODE = 9;
+        NOLICENCE = 10;
+        LOCALRESOURCES = 11;
+        BANDWIDTH = 12;
+        COMPATIBILITY = 13;
+        CANTRECORD = 14;
+    }
+    Payload payload = 1;
+    int32 lref = 2;
+    State state = 5;
+    Direction direction = 6;
+    bool  activeheld = 7;
+    string calledparty = 10;
+    PartyInfo connectedparty = 12;
+    bool   mute = 16;
+    FailedCause  failedcause = 17;
+}
+
+message CallInfo
+{
+    enum Payload
+    {
+        FULL = 0;
+        CHANGES = 1;
+    }
+    enum State
+    {
+        UNKNOWN = 0;
+        DIALTONE = 1;
+        DIALLING = 2;
+        DIALLED = 3;
+        RINGING = 4;
+        RINGBACK = 5;
+        CONNECTED = 6;
+        ONHOLD = 7;
+        ONHOLDPENDTRANSFER = 8;
+        ONHOLDPENDCONF = 9;
+        DISCONNECTED = 10;
+        BUSY = 11;
+        FAILED = 12;
+        WAITINGFORACCT = 13;
+        WAITINGFORAUTH = 14;
+        WAITINGFORLINE = 15;
+    }
+    enum Direction
+    {
+        UNDEFINED = 0;
+        OUTBOUND = 1;
+        INBOUND = 2;
+        PICKUP = 3;
+    }
+    enum FailedCause
+    {
+        UNSET = 0;
+        UNSPECIFIED = 1;
+        UNALLOCATEDNUMBER = 2;
+        REJECTED = 3;
+        NUMBEROOO = 4;
+        NETWORKOOO = 5;
+        BARRED = 6;
+        NOCHANNEL = 7;
+        NOACCOUNTCODE = 8;
+        NOAUTHCODE = 9;
+        NOLICENCE = 10;
+        LOCALRESOURCES = 11;
+        BANDWIDTH = 12;
+        COMPATIBILITY = 13;
+        CANTRECORD = 14;
+    }
+    Payload payload = 1;
+    int32 callid = 2;
+    int32 referencecallid = 3;
+    int32 relatedcallid = 4;
+    State state = 5;
+    Direction direction = 6;
+    bool  activeheld = 7;
+    bytes gcid = 8;
+    int32 featuresavailable = 9;
+    string calledparty = 10;
+    PartyInfo callingparty = 11;
+    PartyInfo connectedparty = 12;
+    PartyInfo originalcalledparty = 13;
+    string tag = 14;
+    string accountcode = 15;
+    bool   mute = 16;
+    FailedCause  failedcause = 17;
+    int32 featuresavailable2 = 18;
+    bool   recording = 19;
+    repeated ConferenceMember conferencemember = 52;
+    DialInfo dialinfo = 53;
+    CallData calldata = 56;
+}
+
+message Conference
+{
+    enum State
+    {
+        UNDEFINED = 0;
+        INACTIVE = 1;
+        ACTIVE = 2;
+        HISTORIC = 3;
+    }
+	int32 confid = 1;
+	int32 referenceconfid = 2;
+	State state = 3;
+    string name = 4;
+	FormalConferenceDetail formal = 10;
+	PersonalConferenceDetail personal = 11;
+	AdHocConferenceDetail adhoc = 12;
+    repeated ConferenceMember conferencemember = 20;
+}
+
+message CallLost
+{
+    int32  callid = 1;
+    int32  referencecallid = 2;
+    int32  reason = 3;
+    bool   thisenddropped = 4;
+    string description = 5;
+}
+
+message ShortCodeData
+{
+    int32  code = 1;
+    string val = 2;
+}
+
+message MemberFunctionData
+{
+    enum Action
+    {
+        None = 0;
+        DropCall = 1;
+        MuteOn = 2;
+        MuteOff = 3;
+    }    
+    int32 lref = 1;
+    Action action = 2;
+}
+
+message CallInstance
+{
+    int32 callid = 1;
+    int32 referencecallid = 2;
+}
+
+message CallFunction
+{
+    enum Action
+    {
+        None = 0;
+        DropCall = 1;
+        AnswerCall = 2;
+        HoldCall = 3;
+        UnHoldCall = 4;
+        BlindTransfer = 5;
+        Redirect = 6;
+        Dial = 7;
+        Park = 8;
+        SetupTransfer = 9;
+        SetupConf = 10;
+        CompleteTransfer = 11;
+        CompleteConf = 12;
+        AddToConf = 13;
+        MemberFunction = 14;
+        SetTag = 15;
+        SetAccountCode = 16;
+        Unused16 = 17;
+        PushToEC500 = 18;
+        GenerateDigits = 19;
+        ShortCodeAction = 20;
+        UpdateSDP = 21;
+        Unused21 = 22;
+        ForceClear = 23;
+        SetAuthCode = 24;
+        CallRecordingOn = 25;
+        CallRecordingOff = 26;
+        PrivacyOn = 27;
+        PrivacyOff = 28;
+        MuteOn = 29;
+        MuteOff = 30;
+    }
+    Action action = 1;
+    string arg1 = 2;
+    ShortCodeData shortcodedata = 3;
+    MemberFunctionData memberfunctiondata = 4;
+    repeated  CallInstance callinst = 5;
+}
+
+message NotifyCallControl
+{
+    repeated CallInfo callinfo = 2;
+    repeated CallLost calllost = 3;
+}
+
+message TeleworkerConnection
+{
+    string number = 1;
+    bool   holdlineopen = 2;
+    int32  testconnection = 3;
+}
+
+message LoginDesk
+{
+    string number = 1;
+    string code = 2;
+}
+
+message SubscribeCallControl
+{
+    enum Attachment
+    {
+        AttachmentUnspecified = 0;
+        AttachmentThis = 1;
+        AttachmentAny = 2;
+        AttachmentDesk = 3;
+        AttachmentSoftPhone = 4;
+        AttachmentMobile = 5;
+        AttachmentTeleworker = 6;
+        AttachmentLoginDesk = 7;
+    }
+    int32 flags = 1;
+    Attachment attachment = 2;
+    TeleworkerConnection teleworkerconnection = 3;
+    LoginDesk logindesk = 4;
+}
+
+message AdvancedMakeCall
+{
+    string accountcode = 1;
+    string authcode = 2;
+    string tag = 3;
+    bool   withholdcli = 5;
+    bool   privacy = 6;
+    string madn = 7;
+    string subaddr = 8;
+}
+
+message MakeCall
+{
+    string target = 1;
+    int32  type = 2;
+    AdvancedMakeCall advanced = 3;
+}
+
+message UnParkCall
+{
+    string parkid = 1;
+}
+
+
+message UpdateCallControl
+{
+    int32 callid = 1;
+    int32 referencecallid = 2;
+    MakeCall makecall = 3;
+    CallFunction callfunction = 4;
+    UnParkCall unparkcall = 6;
+}
+
+message Absence
+{
+    int32 msg = 1;
+    string str = 2;
+}
+
+message FwdInfo
+{
+    bool voicemailon = 1;
+    bool fwdu = 2;
+    bool fwdb = 3;
+    bool fwdna = 4;
+    bool fwdhg = 5;
+    int32 noanswertime = 6;
+    string fwdu_number = 7;
+    string fwdb_number = 8;
+}
+
+message NotifyEquinoxPresentity
+{
+    string presentity = 1;
+    int32 lref = 2;
+    bool sac = 3;
+    int32 phonestate = 4;
+    Absence absence = 5;
+    string app = 6;
+    bool fwdu = 7;
+    int32 vmunread_messages = 8;
+}
+
+message EquinoxPresentity
+{
+    string presentity = 1;
+    int32 lref = 2;
+}
+
+message NotifyEquinoxPresence
+{
+    int32 full = 1;
+    repeated NotifyEquinoxPresentity entry = 2;
+}
+
+message SubscribeEquinoxPresence
+{
+    repeated EquinoxPresentity entry = 1;
+    int32 flags = 2;
+}
+
+message UpdateEquinoxSAC
+{
+    bool set = 1;
+}
+
+message UpdateEquinoxFwdU
+{
+    bool set = 1;
+    string fwdu_number = 2;
+}
+
+message UpdateEquinoxLock
+{
+    bool lock = 1;
+    bool unlock = 2;
+    string unlockcode = 3;
+}
+
+message UpdateEquinoxAbsence
+{
+    int32 set = 1;
+    Absence absence = 2;
+}
+
+message UpdateEquinoxEC500
+{
+    bool set = 1;
+}
+
+message UpdateEquinoxApp
+{
+    string value = 1;
+}
+
+message UpdateEquinoxSelf
+{
+    UpdateEquinoxSAC sac = 1;
+    UpdateEquinoxAbsence absence = 2;
+    UpdateEquinoxEC500 ec500 = 3;
+    UpdateEquinoxApp app = 4;
+    repeated ShortCodeData shortcodedata = 5;
+    UpdateEquinoxFwdU fwdu = 6;
+    UpdateEquinoxLock lock = 7;
+}
+
+message NotifyEquinoxSelf
+{
+    int32 featuresavailable = 1;
+    bool sac = 2;
+    int32 phonestate = 3;
+    Absence absence = 4;
+    int32 ec500 = 5;
+    string app = 6;
+    string presentity = 7;
+    bool fwdu = 8;
+    string fwdu_number = 9;
+    bool locked = 10;
+    FwdInfo fwdinfo = 11;
+    int32 vmunread_messages = 12;
+    bool ccdesk = 30;
+    bool ccsoftphone = 31;
+    bool ccmobile = 32;
+    bool ccteleworker = 33;
+    bool cclogindesk = 34;
+    bool ccwebrtc = 35;
+}
+
+message SubscribeEquinoxSelf
+{
+    int32 flags = 1;
+}
+
+message UpdateEquinoxPresence
+{
+    repeated EquinoxPresentity add = 1;
+    repeated EquinoxPresentity remove = 2;
+}
+
+message Contact
+{
+    string firstname = 1;
+    string lastname = 2;
+    int32 lref = 3;
+    string number = 4;
+    int32 favourite = 5;
+    string email = 6;
+    string image = 7;
+}
+
+message ListContacts
+{
+    repeated Contact entry_list = 1;
+}
+
+message NotifyContacts
+{
+    int32 head = 1;
+    ListContacts full = 2;
+    ListContacts changed = 3;
+    ListContacts removed = 4;
+    Contact selfcontact = 5;
+}
+
+message UpdateContacts
+{
+    int32 head = 1;
+    oneof payload
+    {
+        ListContacts full = 2;
+        ListContacts added = 3;
+        ListContacts changed = 4;
+        ListContacts removed = 5;
+    }
+}
+
+message SubscribeContacts
+{
+    int32 personalcontactlist = 1;
+    int32 selfcontact = 2;
+}
+
+message GetDirectory
+{
+    int32 cmdinst = 1;
+    string filter = 2;
+    int32 maxentries = 3;
+    bool personalcontacts = 4;
+    int32 numbersearch = 5;
+}
+
+message GetDirectoryResponse
+{
+    int32 cmdinst = 1;
+    string filter = 2;
+    int32  complete = 3;
+    bool personalcontacts = 4;
+    int32 head  =5;
+    ListContacts list = 6;
+}
+
+message GetContact
+{
+    int32 cmdinst = 1;
+    bool selfcontact = 2;
+    string name = 3;
+}
+
+message GetContactResponse
+{
+    int32 cmdinst = 1;
+    bool selfcontact = 2;
+    Contact contact = 3;
+}
+
+message GetCapability
+{
+    int32 cmdinst = 1; 
+}
+
+message GetCapabilityResponse
+{
+    int32 cmdinst = 1; 
+    bool subscribecontact = 2;
+    bool addcontact = 3;
+    bool deletecontact = 4;
+    bool updatecontact = 5;
+    bool directorysearch = 6;
+    bool favoritecontacts = 7;
+    bool retrievepictures = 8;
+    bool networksearchterminal = 9;
+    bool resolveenterprisecontacts = 10;
+    string version = 11;
+    int32 directorynumbersearch = 12; 
+    bool subscribecallcontrol = 13;
+    bool subscribecalllog = 14;
+}
+
+message Notify
+{
+    int32 subscribe_id = 1;
+    int32 notify_id = 2;
+    string label = 3;
+    oneof payload
+    {
+        NotifyEquinoxPresence presence = 10;
+        NotifyEquinoxSelf selfpresence = 11;
+        NotifyContacts contacts = 12;
+        NotifyCallControl callcontrol = 14;
+        NotifyCallLog calllog = 15;
+    }
+}
+
+message NotifyAck
+{
+    int32 subscribe_id = 1;
+    int32 notify_id = 2;
+}
+
+message Subscribe
+{
+    int32 requestid = 1;
+    int32 subscribe_id = 2;
+    int32 timeout = 3;
+    string label = 4;
+    oneof payload
+    {
+        SubscribeEquinoxPresence presence = 10;
+        SubscribeEquinoxSelf selfpresence = 11;
+        SubscribeContacts contacts = 12;
+        SubscribeCallControl callcontrol = 14;
+        SubscribeCallLog calllog = 15;
+    }
+}
+
+message SubscribeEnd
+{
+    int32 requestid = 1;
+    int32 subscribe_id = 2;
+    string reason = 3;
+}
+
+message SubscribeTerminated
+{
+    int32 subscribe_id = 1;
+    string reason = 2;
+}
+
+message SubscribeCmd
+{
+    int32 requestid = 1;
+    int32 subscribe_id = 2;
+    oneof payload
+    {
+        int32 timeout = 3;
+        UpdateEquinoxPresence presence = 10;
+        UpdateEquinoxSelf selfpresence = 11;
+        UpdateContacts contacts = 12;
+        UpdateCallControl callcontrol = 14;
+        UpdateCallLog calllog = 15;
+    }
+}
+
+message RequestResponse
+{
+    int32 requestid = 1;
+    int32 result = 2;
+    string additional = 3;
+}
+
+message GeneralCmdStatus
+{
+    int32 cmdinst =1;
+    int32 result = 2;
+    string additional = 3;
+}
+
+message GeneralCmd
+{
+    int32 requestid = 1;
+    oneof payload
+    {
+        GetDirectory directory = 2;
+        GetCapability capability = 3;
+        GetContact contact = 4;
+    }
+}
+
+message GeneralData
+{
+    int32 responseid = 1;
+    oneof payload
+    {
+        GetDirectoryResponse directory = 2;
+        GetCapabilityResponse capability = 3;
+        GetContactResponse contact = 4;
+        GeneralCmdStatus status = 5;
+    }
+}
+
+message Message
+{
+    oneof payload
+    {
+        RequestResponse response = 1;
+        GeneralCmd generalcmd = 2;
+        Subscribe subscribe = 3;
+        SubscribeCmd subscibecmd = 4;
+        SubscribeEnd subscribeend = 5;
+        SubscribeTerminated subscribeterminated = 6;
+        GeneralData generaldata = 7;
+        Notify notify = 8;
+        NotifyAck notifyack = 9;
+    }
+}
+
+

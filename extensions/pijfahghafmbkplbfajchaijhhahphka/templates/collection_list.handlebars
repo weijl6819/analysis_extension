@@ -1,0 +1,55 @@
+<ul class="collections-awwwards" >
+</ul>
+<a id="new-collection-btn" class="aw-create-collection">
+    <div class="cta" ><span>+</span> New Collection</div>
+</a>
+<div class="auto-open-dimmer"></div>
+<footer class="auto-open-container">
+    <div class="auto-open">
+        {{#if is_admin }}
+        <a class="resize-button">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+            <g>
+                <path d="M17.534,13.253c-0.264,0-0.476-0.213-0.476-0.476V3.279c0-0.261,0.212-0.474,0.476-0.474c0.263,0,0.476,0.213,0.476,0.474
+                v9.498C18.01,13.04,17.797,13.253,17.534,13.253z"/><path d="M27.032,13.253h-9.498c-0.264,0-0.476-0.213-0.476-0.476s0.212-0.475,0.476-0.475h9.498c0.262,0,0.475,0.213,0.475,0.475
+                S27.294,13.253,27.032,13.253z"/><path d="M17.534,13.253c-0.122,0-0.243-0.047-0.335-0.139c-0.187-0.187-0.187-0.486,0-0.671L28.596,1.044
+                c0.186-0.185,0.486-0.185,0.671,0c0.187,0.186,0.187,0.486,0,0.672L17.869,13.114C17.777,13.206,17.655,13.253,17.534,13.253z"/><path d="M12.785,27.499c-0.262,0-0.475-0.213-0.475-0.475v-9.498c0-0.263,0.213-0.476,0.475-0.476s0.474,0.213,0.474,0.476v9.498
+                C13.259,27.286,13.047,27.499,12.785,27.499z"/><path d="M12.785,18.002H3.287c-0.263,0-0.475-0.213-0.475-0.476s0.212-0.476,0.475-0.476h9.498c0.262,0,0.474,0.213,0.474,0.476
+                S13.047,18.002,12.785,18.002z"/><path d="M1.388,29.398c-0.122,0-0.243-0.047-0.336-0.139c-0.185-0.186-0.185-0.486,0-0.672l11.397-11.396
+                c0.187-0.187,0.486-0.187,0.673,0c0.184,0.186,0.184,0.484,0,0.67L1.723,29.26C1.631,29.352,1.509,29.398,1.388,29.398z"/>
+            </g>
+        </svg>
+        </a>
+        {{/if}}
+        <div class="button-header">
+            <div class="elements">
+    	        <div class="switch-widget-container manual active">
+    	            <div class="switch-widget"></div>
+    	        </div>
+    	        <div class="text">Auto-open on drag</div>
+    	        <div class="dots"></div>
+            </div>
+        </div>
+        <ul class="options">
+            <li class="by-domain switch-widget-hit-target switch-widget-active-target">
+                <div class="switch-widget-container light-bulb domain-check">
+                    <div class="switch-widget"></div>
+                </div>
+                <div class="texts">
+                    <div class="short">Disable Auto-open for this domain</div>
+                    <div class="long">The sidebar will not open automatically<br>when dragging content from this domain.</div>
+                </div>
+            </li>
+            <li class="globally switch-widget-hit-target switch-widget-active-target">
+                <div class="switch-widget-container light-bulb global-check">
+                    <div class="switch-widget"></div>
+                </div>
+                <div class="texts">
+                    <div class="short">Disable Auto-open globally</div>
+                    <div class="long">The sidebar will not open automatically<br>on any page unless Auto-open is<br>re-enabled.</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</footer>

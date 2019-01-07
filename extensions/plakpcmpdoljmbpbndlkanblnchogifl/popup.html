@@ -1,0 +1,270 @@
+<!doctype html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+  <head>
+	
+    <title locale="extName2"></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/popup.css">	
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.alphanumeric.js"></script>
+	<script type="text/javascript" src="js/jquery.blockUI.js"></script>
+	<script type="text/javascript" src="js/noty/jquery.noty.js"></script>
+	<script type="text/javascript" src="js/noty/layouts/center.js"></script>
+	<script type="text/javascript" src="js/noty/themes/default.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+  
+<body stlye="padding:0px;">
+	
+	<div style="display:none;" id="NotReadyDiv">
+		<div class="wrapper">
+		 <img id="settingImage" src="images/setting.png"></img> <span locale="CDC_SETTING"></span>
+		</div>
+	</div>
+	
+	<div id="ReadyDiv">
+		<div class="popup-header" locale="extName2"></div>
+		<div class="tab-header">
+			<div class="myTab myTab-adc myTab-Current" mode="adc" locale_title="CDC_DOWNLOAD_ADC_LABEL"><i class="myIcon-ADC" ></i></div>
+			<div class="myTab myTab-takeasy"  mode="takeasy" locale_title="CDC_DOWNLOAD_TAKEASY_LABEL"><i class="myIcon-Takeasy"></i></div>
+			<div class="myTab myTab-setting" mode="setting" locale_title="CDC_SETTING"><i class="myIcon-Settings"></i></div>
+			<div class="myTab myTab-info"  mode="about" locale_title="CDC_INFO"> <i class="myIcon-About"></i></div>
+		</div>
+		<div class="item-column">
+			<div  id="adcPanel" class="item-column-container">
+				<div class="button-column">
+					<div class="button-column-container">
+					<i id="resumeAllButton" class="iconButton myIcon-play" locale_title="CDC_RESUME_ALL"></i>
+					<i id="pauseAllButton" class="iconButton myIcon-pause" locale_title="CDC_PAUSE_ALL"></i>
+					<i id="clearAllButton" class="iconButton myIcon-trash" locale_title="CDC_CLEAR_ALL"></i>
+					<i id="addButton" class="iconButton myIcon-plus" locale_title="CDC_ADD_TASK"></i>
+					</div>
+					
+				</div>			
+				<div class="item-block content-container" >
+					<div  class="item-container">	
+					</div>
+					<div class="speed-container">
+						<img   src="images/01.png"　locale_title="CDC_DOWNLOAD_SPEED"　alt=""/> 
+						<span id="downloadSpeedDiv" locale_title="CDC_DOWNLOAD_SPEED" class="speed-text-div"></span>
+						<span style="width:20px;display:inline-block;"></span>
+						<img   src="images/02.png"　locale_title="CDC_UPLOAD_SPEED"　alt=""/> 
+						<span id="uploadSpeedDiv" locale_title="CDC_UPLOAD_SPEED" class="speed-text-div"></span>
+					</div>
+				</div>
+				<div class="infoPanel noTask content-container" style="display:none;">
+					<div id="adcInfoPanel1"  locale="CDC_ADD_TASK_INFO" loc_attr="CDC_DOWNLOAD_ADC_LABEL" style="font-weight:bold;"></div>
+					<div id="adcInfoPanel2" style="">
+						<img style="display:block;position: absolute;"  src="images/Arrow.png"　/>
+						<span style="position: absolute;left: 70px;width: 200px;" locale="CDC_ADD_TASK_INFO2"  loc_attr="CDC_DOWNLOAD_ADC_LABEL"></span>
+					</div>	
+				</div>
+			</div>
+			<div  id="takeasyPanel" class="item-column-container" style="display:none;">
+				<div class="button-column">
+					<div class="button-column-container">
+					<i id="resumeAllButtonTakeasy" class="iconButton myIcon-play" locale_title="CDC_RESUME_ALL"></i>
+					<i id="pauseAllButtonTakeasy" class="iconButton myIcon-pause" locale_title="CDC_PAUSE_ALL"></i>
+					<i id="clearAllButtonTakeasy" class="iconButton myIcon-trash" locale_title="CDC_CLEAR_ALL"></i>
+					<i id="addButtonTakeasy" class="iconButton myIcon-plus" locale_title="CDC_ADD_TASK"></i>
+					</div>
+				</div>
+				<div class="item-block content-container">
+					<div  class="item-container">	
+					</div>
+					<div class="speed-container">
+					</div>
+				</div>
+				<div class="infoPanel noTask content-container" style="display:none;">
+					<div id="takeasyInfoPanel1"  locale="CDC_ADD_TASK_INFO"  loc_attr="CDC_DOWNLOAD_TAKEASY_LABEL" style="font-weight:bold;"></div>
+					<div id="takeasyInfoPanel2" style="">
+						<img style="display:block;position: absolute;"  src="images/Arrow.png"　/>
+						<span style="position: absolute;left: 70px;width: 200px;" locale="CDC_ADD_TASK_INFO2" loc_attr="CDC_DOWNLOAD_TAKEASY_LABEL" ></span>
+					</div>	
+				</div>
+			</div>			
+			<div id="aboutPanel"  class="item-column-container" style="display:none;">
+				<div class="button-column">
+					<div class="button-column-container">
+					</div>
+				</div>				
+				<div id="about" class="content-container">
+					<div id="aboutInner" class="item-column-container-inner">
+						<l locale="CDC_LICENSE" style="font-weight:bold;"></l>
+
+						<ul id="licenseList" style="list-style-type: bullet;">
+							<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+							<li><a href="http://getbootstrap.com/2.3.2/" target="_blank">Bootstrap</a></li>
+							<li><a href="http://glyphicons.com" target="_blank">Glyphicons</a></li>
+						</ul>
+
+						<l locale="CDC_VERSION" style="font-weight:bold;"></l><br/>
+						<div id="versionInfo">
+							<version></version>
+						</div>
+
+						<l locale="CDC_FIND_NAS"  style="font-weight:bold;"></l>: <br/>
+						<a id="adcLink" class="adcLink" href="" target="_blank"><img src="images/36/Download Center_36x36.png"></a>
+						<a id="takeasyLink" class="takeasyLink" href="" target="_blank"><img src="images/36/Takeasy_36x36.png"></a>
+						<div class="like-container">
+							<a href="https://www.facebook.com/ASUSTOR.TW" title="Facebook" target="_blank"><img src="images/facebook_24x24.png"></a>
+							<a id="tweeterLink" href="https://twitter.com/ASUSTOR" title="Twitter" target="_blank"><img src="images/twitter_24x24.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="settingPanel"  class="item-column-container" style="display:none;">		
+				<div class="button-column">
+					<div class="button-column-container">
+					</div>
+				</div>	
+				  <div  id="setting"  class="content-container">		
+				  <ul id="settingList">
+					<li class="statusLi">
+				  	  <label for="Status" ><l locale="CDC_STATUS"></l>:</label>
+					  <span id="appStatusSpan"></span>
+					</li>				  
+					<li>
+				  	  <label for="Protocol" ><l locale="CDC_PROTOCOL"></l>:</label>
+					  <input type="radio" name="Protocol" value="http" checked> <l locale="CDC_HTTP"></l>  &nbsp;&nbsp; <input type="radio" name="Protocol" value="https"> <l locale="CDC_HTTPS"></l>  
+					</li>
+					<li>
+					  <label for="Host" ><l locale="CDC_HOST"></l>:</label>
+					  <input id="Host" class="settingInput" type="text" maxlength="30"  locale_title="CDC_HOST_DESC"  /> <br/>
+					</li>
+					<li>
+					  <label for="Port" ><l locale="CDC_PORT"></l>:</label>
+					  <input id="Port" class="settingInput" class="numeric" value="8000" type="text" maxlength="10" />	<br/>	
+					</li>
+					<li>					  
+					  <label for="userID"  ><l locale="CDC_ACCOUNT"></l>:</label>
+					  <input id="userID" class="settingInput" maxlength="30" type="text" /><br/>
+					</li>
+					<li>					  
+					  <label for="Password"  ><l locale="CDC_PASSWORD"></l>:</label>
+					  <input id="Password" class="settingInput" maxlength="30" type="password" />
+					</li>
+					</ul>
+					  <div class="button-group">
+						  <a class="myBtn btn"  id="settingClear" class="myBtn"   href="#" ><i class="icon-Clear"></i><l locale="CDC_CLEAR_SETTING"></l></a>
+						  <a class="myBtn btn"  id="settingSubmit" class="myBtn" name="submit"  href="#" ><i class="icon-Apply"></i><l locale="CDC_APPLY"></l></a>
+						  <br/>
+						  <div id="connectStatusDiv"></div>
+					  </div>	
+				  
+				  </div>
+
+
+			</div><!-- settingPanel  -->	
+			
+			
+			<div class="item-column-container" id="adcFailPanel" style="display:none;">
+				<div class="button-column">
+					<div class="button-column-container">
+					</div>
+				</div>	
+				<div class="infoPanel content-container"  >
+				<img  id="errorButton" name="settingButton" class="iconButton" src="images/error.png"　title="Error"　alt=""> 
+				<div id="errorMessage" locale="CDC_CONN_ERROR"></div>
+				</div>
+			</div>
+			<div class="item-column-container" id="adcNotInstallPanel" style="display:none;">
+				<div class="button-column">
+					<div class="button-column-container">
+					</div>
+				</div>
+				<div class="infoPanel content-container"  >
+					<div class="item-column-container-inner">
+						<img  src="images/Hi.png" alt="">
+						<div id="errorMessage" locale="CDC_NOT_INSTALL" loc_attr="CDC_DOWNLOAD_ADC_LABEL"></div>
+						<a class="adcLink" href="" target="_blank" locale="CDC_GET_IT"></a>
+					</div>
+				</div>
+			</div>		
+			<div class="item-column-container" id="adcNoPermissionPanel" style="display:none;">
+				<div class="button-column">
+					<div class="button-column-container">
+					</div>
+				</div>	
+				<div class="infoPanel content-container"  >
+					<div class="item-column-container-inner">
+						<img  src="images/Hi.png" alt=""> 
+						<div id="errorMessage" locale="CDC_NO_PERMISSION" loc_attr="CDC_DOWNLOAD_ADC_LABEL"></div>
+					</div>
+				</div>
+			</div>
+			<div class="item-column-container" id="takeasyFailPanel" style="display:none;">
+				<div class="button-column">
+					<div class="button-column-container">
+					</div>
+				</div>	
+				<div class="infoPanel content-container">
+				<img  id="errorButton" name="settingButton" class="iconButton" src="images/error.png"　title="Error"　alt=""> 
+				<div id="errorMessage" locale="CDC_CONN_ERROR"></div>
+				</div>
+			</div>
+			<div class="item-column-container" id="takeasyNotInstallPanel" style="display:none;">
+				<div class="button-column">
+					<div class="button-column-container">
+					</div>
+				</div>	
+				<div class="infoPanel content-container">
+					<div class="item-column-container-inner">
+						<img  src="images/Hi.png" alt=""> 
+						<div id="errorMessage" locale="CDC_NOT_INSTALL" loc_attr="CDC_DOWNLOAD_TAKEASY_LABEL"></div>
+						<a class="takeasyLink" href="" target="_blank" locale="CDC_GET_IT"></a>
+					</div>
+				</div>
+			</div>	
+			<div class="item-column-container" id="takeasyNoPermissionPanel" style="display:none;">
+				<div class="button-column">
+					<div class="button-column-container">
+					</div>
+				</div>	
+				<div class="infoPanel content-container"  >
+					<div class="item-column-container-inner">
+						<img  src="images/Hi.png" alt=""> 
+						<div id="errorMessage" locale="CDC_NO_PERMISSION" loc_attr="CDC_DOWNLOAD_TAKEASY_LABEL"></div>
+					</div>
+				</div>
+			</div>
+			<i id="logoutButton" class="iconButton myIcon-logout" locale_title="CDC_LOGOUT"></i>	
+		</div>
+
+	</div>
+	
+<!-- modals -->
+<div id="clearModal" class="myModal modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 class="messageHeader" locale="CDC_CLEAR_SETTING"></h3>
+  </div>
+  <div class="modal-body">
+    <p class="messageContent" locale="CDC_CLEAR_SETTING_MSG"></p>
+  </div>
+  <div class="modal-footer">
+	<button class="btn myBtn" aria-hidden="true" id="clearSubmit" locale="CDC_CONFIRM"></button>
+    <button class="btn myBtn" data-dismiss="modal" aria-hidden="true"  locale="CDC_CLOSE"></button>
+  </div>
+</div>	
+	
+<!-- modals -->
+<div id="logoutModal" class="myModal modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3 class="messageHeader" locale="CDC_LOGOUT"></h3>
+  </div>
+  <div class="modal-body">
+    <p class="messageContent" locale="CDC_LOGOUT_MSG"></p>
+  </div>
+  <div class="modal-footer">
+	<button class="btn myBtn" data-dismiss="modal" aria-hidden="true" id="logoutSubmit" locale="CDC_CONFIRM"></button>
+    <button class="btn myBtn" data-dismiss="modal" aria-hidden="true"  locale="CDC_CLOSE"></button>
+  </div>
+</div>		
+	
+</body>
+</html>
+

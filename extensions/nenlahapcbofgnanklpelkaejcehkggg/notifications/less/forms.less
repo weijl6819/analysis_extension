@@ -1,0 +1,435 @@
+@import (reference) './variables.less';
+
+form, .designed-form {
+  .defaultRegular;
+  .field-group {
+    margin-bottom: 18px;
+    position: relative;
+    &.display-none {
+      display: none;
+    }
+    &:last-child {
+      margin-bottom: 18px;
+    }
+    &.no-margin {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    ul li label {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  }
+  .input-group {
+    display: flex;
+    justify-content:space-between;
+    & > div {
+      &:first-child {
+        margin-right: 10px;
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+    .field-group {
+      width: 50%;
+      margin-bottom: 18px;
+    }
+     @media (max-width: 500px) {
+      flex-direction: column;
+       & > div, & > div:first-child, & > div:last-child  {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+      }
+      .field-group {
+        margin-bottom: @spacingSmall;
+      }
+    }
+  }
+  label {
+    display: block;
+    font-size: 14px;
+    color: @smoke;
+    margin-bottom: 7px;
+  }
+  .note {
+    display: block;
+    margin: 8px 0;
+    font-size: 12px;
+    color: @smoke;
+    &.error {
+      color: @poppy;
+    }
+  }
+
+
+  input {
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+
+  input:not([type="checkbox"]), textarea {
+    .defaultRegular;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border: 1px solid @strokeGray;
+    border-radius: 6px;
+    outline-width: 0;
+    color: @charcoal;
+    padding: 0 7px;
+    font-size: 13px;
+    height: 42px;
+    text-align: left;
+    background: @steam;
+    border: 1px solid transparent;
+  }
+
+  textarea {
+    padding: 10px;
+  }
+
+  &.small-form {
+    .field-group {
+      margin-bottom: 20px;
+    }
+    .button-wrapper {
+      padding-top: 15px;
+    }
+  }
+
+
+  .button-wrapper {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      width: 50%;
+    }
+    &.increased-padding {
+      padding-top: 34px;
+    }
+  }
+  ::-webkit-input-placeholder, {
+    color: @silver;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: @silver;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+    color: @silver;
+  }
+
+  :-ms-input-placeholder {
+    color: @silver;
+  }
+
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px @steam inset !important;
+    border: none;
+  }
+
+  .error,
+  .card-number.invalid_number,
+  .card-number.card_declined,
+  .card-number.incorrect_number,
+  .expiration-date.invalid_expiry_year,
+  .expiration-date.invalid_expiry_month,
+  .expiration-date.expired_card,
+  .security-code.invalid_cvc {
+    & > label {
+      color: @poppy;
+    }
+    input, textarea {
+      border-color: @poppy !important;
+      &:focus {
+        border-color: @poppy;
+      }
+    }
+    .note {
+      color: @poppy;
+    }
+  }
+
+  .toggle-show {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+
+} // END FORM
+
+
+
+
+
+.invite-friends-form {
+  .friends-emails {
+    margin-top: 20px;
+  }
+  textarea {
+    min-height: 80px;
+    max-width: 100%;
+    max-height: 200px;
+  }
+  .button-wrapper {
+    margin-top: 20px;
+  }
+}
+
+.inner-input-text {
+  .defaultRegular;
+  color: @charcoal;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: auto;
+  text-align: center;
+  pointer-events: none;
+  text-indent: 50px;
+  font-size: 13px;
+}
+
+
+.form-label {
+  position: absolute;
+  top: -14px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  font-size: 11px;
+  pointer-events: none;
+  display: none;
+  h4 {
+    .defaultRegular;
+    background: #fff;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+  }
+  &:not(.focus-only) {
+    animation: labelIn 250ms ease;
+  }
+  @keyframes labelIn {
+    0% {
+      transform: translateY(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
+
+
+.field-group .form-label.focus-only {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0s ease;
+}
+.field-group.active-data {
+  input:focus ~ .form-label.focus-only, &.error .form-label {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s ease;
+  }
+}
+input:not(:placeholder-shown):focus ~ .form-label.focus-only, &.error .form-label {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s ease;
+}
+.hide-form-label {
+  .form-label {
+    display: none !important;
+  }
+}
+
+.animate-indent {
+  input {
+    transition: text-indent 0.4s ease;
+  }
+  .inner-input-text {
+    animation: innerTextIn 0.4s ease;
+    @keyframes innerTextIn {
+      0% {
+        transform: translateX(44px);
+        opacity: 0;
+      }
+      100% {
+        transform: translatex(0px);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// RADIO BUTTONS AND CHECKBOXES
+// Start New Forms Radio Input
+  label {
+    input[type="radio"] {
+      margin-bottom: 10px;
+      & + span {
+        text-transform: none;
+        color: @charcoal;
+        font-size: 14px;
+        position: relative;
+        cursor: pointer;
+        &:before {
+          content: "";
+          width: 9px;
+          border: 1px solid @charcoal;
+          height: 9px;
+          border-radius: 100%;
+          background: transparent;
+          display: inline-block;
+          user-select: none;
+          vertical-align: top;
+          margin-right: 7px;
+        }
+      }
+      &:active + span {
+        user-select: none;
+      }
+      &:checked + span:before {
+        background: @charcoal;
+        border: 1px solid @charcoal;
+        width: 9px;
+        height: 9px;
+        box-shadow: inset 0px 0px 0px 2px #fff;
+      }
+      &:disabled + span:before {
+        border: 1px solid @smoke;
+      }
+      &:checked {
+        &:disabled + span:before {
+          background: @smoke;
+          border: 1px solid @smoke;
+          width: 9px;
+          height: 9px;
+          box-shadow: inset 0px 0px 0px 2px #fff;
+        }
+      }
+    }
+  }
+  // End New Forms Radio Input
+
+  input[type="checkbox"]:not(.default), input[type="radio"]:not(.default) {
+    display: none !important;
+    & + label:not(.default) {
+      text-transform: none;
+      color: @charcoal;
+      font-size: 14px;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      &:before {
+        content: "";
+        min-width: 12px;
+        min-height: 12px;
+        max-width: 12px;
+        max-height: 12px;
+        border: 1px solid @smoke;
+        border-radius: 2px;
+        background: #fff;
+        display: inline-block;
+        user-select: none;
+        vertical-align: top;
+        margin-right: 6px;
+      }
+      &:active {
+        user-select: none;
+      }
+    }
+    &:checked + label:before {
+      background: @charcoal;
+      border: 1px solid @charcoal;
+    }
+    &:not([type="radio"]):checked + label:before {
+      background-image: url("https://cdn.ivaws.com/wikibuy-assets/images/check.png");
+      background-size: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+    }
+    &:disabled + label:before {
+      background: transparent;
+      border-color: @smoke;
+    }
+    &:checked {
+      &:disabled + label:before {
+        background-color: @smoke;
+      }
+    }
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="radio"]:not(.default) {
+    & + label {
+      &:before {
+        content: "";
+        width: 12px;
+        border: 1px solid @reef;
+        height: 12px;
+        border-radius: 100%;
+        background: transparent;
+        display: inline-block;
+        user-select: none;
+        vertical-align: top;
+        margin-right: 7px;
+
+      }
+      &:active {
+        user-select: none;
+      }
+    }
+    &:checked + label:before {
+      background: @reef;
+      border: 1px solid @reef;
+      width: 12px;
+      height: 12px;
+      box-shadow: inset 0px 0px 0px 2px #fff;
+    }
+    &:disabled + label:before {
+      border: 1px solid @smoke;
+    }
+    &:checked {
+      &:disabled + label:before {
+        background-color: @smoke;
+        border: 1px solid @smoke;
+        width: 12px;
+        height: 12px;
+        box-shadow: inset 0px 0px 0px 2px #fff;
+      }
+    }
+  }

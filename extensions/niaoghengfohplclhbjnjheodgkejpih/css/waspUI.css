@@ -1,0 +1,624 @@
+/*
+ Document   : waspUI
+ Created on : 25-Apr-2013, 2:50:32 PM
+ Author     : Patrick
+ Description:
+ layout of the scripts/tags treeview visualisation
+ */
+.footer {
+color:#bbb;
+background-color:rgba(255,255,255,.75);
+padding:1px 5px;
+font-size:0.75rem;
+position:absolute;
+left:0;
+bottom:0;
+}
+#WASP-target {
+	font-size: 1.25em;
+	}
+	#WASP-target .tabbed-pane-content {
+	position: absolute;
+	top:23px;
+	bottom:0;
+	left:0;
+	right:0;
+	padding: 10px 10px 20px 10px;
+	overflow: auto;
+	}
+	#WASP-target input[id^='ux-'] {
+	display:none;
+	}
+	#WASP-target .tree,
+	#WASP-target .tree ul {
+	display:block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	}
+	#WASP-target .tree li {
+	position:relative;
+	display:block;
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	min-width: 100px;
+	}
+	#WASP-target .tree li > span,
+	#WASP-target .tree li > label > span {
+	overflow: hidden;
+	text-overflow:ellipsis;
+	transition:  width .15s, background-color .15s;
+	transition-timing-function: ease-out;}
+	#WASP-target .tree li > span:hover,
+	#WASP-target .tree li > label:hover {
+	box-shadow: inset 0px 0px 50px 0px rgba(255, 255, 255, 0.66);
+	}
+	#WASP-target .tree li > span,
+	#WASP-target .tree li > label {
+	color: #5d504f;
+	width: 250px;
+	padding: 0 10px 0 18px;
+	background-position: 1px center;
+	background-repeat: no-repeat;
+	display:inline-block;
+	position:relative;
+	border-radius:0.25em;
+	border:1px solid #cdc4b8;
+	text-align:center;
+	margin:1px 0;
+	}
+	#WASP-target .tree li.selected > span {
+	font-weight: bold;
+	border:2px solid #5d504f;
+	margin:0;
+	}
+	#WASP-target .tree li.blocked > span,
+	#WASP-target .tree li.blocked > label {
+	background-color:rgba(255,96,96,0.5) !important;
+	background-image: url('../img/iconic/denied_16x16.png') !important;
+	}
+	#WASP-target .tree li.blocked.selected > span {
+	background-color:rgba(255,96,96,1) !important;
+	}
+	#WASP-target .tree li[id^='blocked'] > span,
+	#WASP-target .tree li[id^='blocked'] > label {
+	background-color:rgba(255,96,96,0.5);
+	background-image: url('../img/iconic/denied_16x16.png');
+	}
+	#WASP-target .tree li[id^='blocked'].selected > span {
+	background-color:rgba(255,96,96,1);
+	}
+	#WASP-target .tree li.override > span,
+	#WASP-target .tree li.override > label {
+	background-color:rgba(202,202,202,0.5) !important;
+	background-image: url('../img/iconic/reload_12x14.png') !important;
+	}
+	#WASP-target .tree li.override.selected > span,
+	#WASP-target .tree li.override.selected > label {
+	background-color:rgba(202,202,202,1) !important;
+	}
+	#WASP-target .tree li[id^='tags'] > span,
+	#WASP-target .tree li[id^='tags'] > label {
+	background-color:rgba(247,189,129,0.5);
+	background-image: url('../img/iconic/tag_stroke_16x16.png');
+	}
+	#WASP-target .tree li[id^='tags'].selected > span {
+	background-color:rgba(247,189,129,1);
+	}
+	#WASP-target .tree li[id^='scripts'] > span,
+	#WASP-target .tree li[id^='scripts'] > label {
+	background-color:rgba(197,154,233,0.5);
+	background-image: url('../img/iconic/document_alt_stroke_12x16.png');
+	}
+	#WASP-target .tree li[id^='scripts'].selected > span {
+	background-color:rgba(197,154,233,1);
+	}
+	#WASP-target .tree li[id^='datalayer'] > span,
+	#WASP-target .tree li[id^='datalayer'] > label {
+	background-color:rgba(197,154,233,0.5);
+	background-image: url('../img/iconic/layers_16x14.png');
+	}
+	#WASP-target .tree li[id^='datalayer'] li[id^='datalayer'] > span {
+	background-image: url('../img/iconic/play_9x12.png');
+	}
+	#WASP-target .tree li[id^='datalayer'].selected > span {
+	background-color:rgba(197,154,233,1);
+	}
+	#WASP-target .tree li.redirect > span,
+	#WASP-target .tree li.redirect > label {
+	background-color:rgba(202,202,202,0.5);
+	background-image: url('../img/iconic/undo_16x16.png');
+	}
+	#WASP-target .tree li.redirect.selected > span,
+	#WASP-target .tree li.redirect.selected > label {
+	background-color:rgba(202,202,202,1);
+	}
+	#WASP-target li[id^='page-info'] > span,
+	#WASP-target .tree li.html > span,
+	#WASP-target .tree li.html > label {
+	background-image: url('../img/iconic/document_alt_fill_12x16.png');
+	background-color:rgba(132,181,254,0.5);
+	}
+	#WASP-target li[id^='page-info'].selected > span,
+	#WASP-target .tree li.html.selected > span,
+	#WASP-target .tree li.html.selected > label {
+	background-color:rgba(132,181,254,1);
+	}
+	#WASP-target .tree li.other > span,
+	#WASP-target .tree li.other > label {
+	background-image: url('../img/iconic/tag_fill_16x16.png');
+	background-color:rgba(249,234,127,0.5);
+	}
+	#WASP-target .tree li.other.selected > span,
+	#WASP-target .tree li.other.selected > label {
+	background-color:rgba(249,234,127,1);
+	}
+	#WASP-target .tree li.empty-text > span,
+	#WASP-target .tree li.empty-text > label {
+	background-image: url('../img/iconic/document_stroke_12x12.png');
+	background-color:rgba(249,234,127,0.5);
+	}
+	#WASP-target .tree li.empty-html > span,
+	#WASP-target .tree li.empty-html > label {
+	background-image: url('../img/iconic/document_fill_12x12.png');
+	background-color:rgba(249,234,127,0.5);
+	}
+	#WASP-target .tree li.empty-html.selected > span,
+	#WASP-target .tree li.empty-html.selected > label,
+	#WASP-target .tree li.empty-text.selected > span,
+	#WASP-target .tree li.empty-text.selected > label {
+	background-color:rgba(249,234,127,1);
+	}
+	/*
+	 Friendly name icons.
+	 */
+	#WASP-target .tree li.friendly-appview > span,
+	#WASP-target .tree li.friendly-appview > label {
+	background-image: url('../img/iconic/iphone_12x16.png');
+	}
+	#WASP-target .tree li.friendly-event > span,
+	#WASP-target .tree li.friendly-event > label {
+	background-image: url('../img/iconic/bolt_16x16.png');
+	}
+	#WASP-target .tree li.friendly-transaction > span,
+	#WASP-target .tree li.friendly-transaction > label {
+	background-image: url('../img/iconic/dollar_16x16.png');
+	}
+	#WASP-target .tree li.friendly-tran > span,
+	#WASP-target .tree li.friendly-tran > label {
+	background-image: url('../img/iconic/dollar_16x16.png');
+	}
+	#WASP-target .tree li.friendly-item > span,
+	#WASP-target .tree li.friendly-item > label {
+	background-image: url('../img/iconic/box_12x12.png');
+	}
+	#WASP-target .tree li.friendly-social > span,
+	#WASP-target .tree li.friendly-social > label {
+	background-image: url('../img/iconic/share_16x16.png');
+	}
+	#WASP-target .tree li.friendly-exception > span,
+	#WASP-target .tree li.friendly-exception > label {
+	background-image: url('../img/iconic/x_14x14.png');
+	}
+	#WASP-target .tree li.friendly-timing > span,
+	#WASP-target .tree li.friendly-timing > label {
+	background-image: url('../img/iconic/clock_16x16.png');
+	}
+	#WASP-target .tree li.friendly-analytics > span,
+	#WASP-target .tree li.friendly-analytics > label {
+	background-image: url('../img/iconic/chart_16x16.png');
+	}
+	#WASP-target .tree li.friendly-cdn > span,
+	#WASP-target .tree li.friendly-cdn > label {
+	background-image: url('../img/iconic/cloud_16x10.png');
+	}
+	#WASP-target .tree li.friendly-tagmanager > span,
+	#WASP-target .tree li.friendly-tagmanager > label {
+	background-image: url('../img/iconic/fork_14x16.png');
+	}
+	#WASP-target .tree li.friendly-advertising > span,
+	#WASP-target .tree li.friendly-advertising > label {
+	background-image: url('../img/iconic/target_16x16.png');
+	}
+	#WASP-target .tree li.domain > span,
+	#WASP-target .tree li.domain > label {
+	background-size: 16px 16px;
+	background-image: url('../img/iconic/compass_16x16.png');
+	}
+	#WASP-target .tree li > label:after {
+	content: '';
+	display:inline-block;
+	right:-0.25em;
+	position:absolute;
+	height:0.5em;
+	width:0.5em;
+	top:0.333em;
+	border:1px solid #5d504f;
+	border-radius: 50%;
+	background-color: white;
+	}
+	#WASP-target .tree input[id^="ux-node-"]:not(:checked) ~ label:after {
+	content: attr(data-childcount);
+	background-color: #cdc4b8;
+	font-size: 0.66em;
+	line-height: 1.75em;
+	height: auto;
+	width: auto;
+	padding: 0 0.5em;
+	right: auto;
+	left: calc(100% - 0.75em);
+	top: calc(50% - 0.875em);
+	font-weight:bold;
+	}
+	#WASP-target .tree ul {
+	position: relative;
+	display:inline-block;
+	padding-left: 40px;
+	line-height: 1.5em;
+	max-width:5000px;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: -webkit-transform .15s, line-height .15s;
+	transition:  transform .15s, line-height .15s;
+	transition-timing-function: ease-out;
+	}
+	#WASP-target .asc ul {
+	-webkit-transform-origin: 16px calc(100% - 16px);
+	transform-origin: 16px calc(100% - 16px);
+	vertical-align: bottom;
+	}
+	#WASP-target .desc ul {
+	-webkit-transform-origin: 16px 16px;
+	transform-origin: 16px 16px;
+	vertical-align: top;
+	}
+	/*
+	 tree branch style
+	 */
+	#WASP-target .tree ul > li:before,
+	#WASP-target .tree ul > li:after {
+	content:"";
+	position:absolute;
+	border-style: solid;
+	border-color: #5d504f;
+	}
+	#WASP-target .tree ul > li:after {
+	height:100%;
+	width:0;
+	left:-18px;
+	border-width:0 0 0 2px;
+	}
+	#WASP-target .desc ul > li:before {
+	top:0;
+	left:-18px;
+	width:18px;
+	height:0.75em;
+	border-width: 0 0 2px 2px;
+	border-radius: 0 0 0 8px;
+	}
+	#WASP-target .asc ul > li:before {
+	bottom:0;
+	left:-18px;
+	width:18px;
+	height:0.75em;
+	border-width: 2px 0 0 2px;
+	border-radius: 8px 0 0 0;
+	}
+	#WASP-target .desc ul > li:first-of-type:before {
+	top:0.75em;
+	left:-36px;
+	width:36px;
+	height:2px;
+	border-width:2px 0 0 0;
+	border-radius:0;
+	}
+	#WASP-target .asc ul > li:last-of-type:before {
+	bottom:0.75em;
+	left:-36px;
+	width:36px;
+	height:2px;
+	border-width:2px 0 0 0;
+	border-radius:0;
+	}
+	#WASP-target .desc ul > li:after {
+	top:calc(0.75em+16px);
+	}
+	#WASP-target .asc ul > li:after {
+	bottom:0;
+	}
+	#WASP-target .desc ul > li:last-of-type:after,
+	#WASP-target .asc ul > li:first-of-type:after {
+	content:none;
+	}
+	#WASP-target .desc ul > li:first-of-type:after {
+	height:calc(100% - 0.75em);
+	top:0.75em;
+	width:18px;
+	left:-36px;
+	border-width: 2px 2px 0 0;
+	border-radius: 0 8px 0 0;
+	}
+	#WASP-target .asc ul > li:last-of-type:after {
+	height:calc(100% - 0.75em);
+	bottom:calc(0.75em + 2px);
+	width:18px;
+	left:-36px;
+	border-width: 0 2px 2px 0;
+	border-radius: 0 0 8px 0;
+	}
+	/*
+	 open close controls
+	 */
+	#WASP-target .tree input[id^="ux-node-"]:not(:checked) ~ ul,
+	#WASP-target .tree input[id^="ux-node-"]:not(:checked) ~ * ul {
+	line-height:0;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	overflow: hidden;
+	padding:0;
+	font-size: 0;
+	}
+	#WASP-target .tree input[id^="ux-node-"]:not(:checked) ~ ul li:after {
+	height:0;
+	width:0;
+	}
+	#WASP-target .tree input[id^="ux-node-"]:not(:checked) ~ ul span,
+	#WASP-target .tree input[id^="ux-node-"]:not(:checked) ~ ul label {
+	margin:0;
+	padding:0;
+	border:none;
+	}
+	#WASP-target .tree input[id^="ux-node-"]:not(:checked) ~ ul
+	label:after  {
+	display:none;
+}
+/*
+ connection arrows
+ */
+#WASP-target .connect {
+	position:absolute;
+}
+#WASP-target .connect:before, #WASP-target .connect:after {
+	content:'';
+	position:absolute;
+	border-style:dotted;
+}
+#WASP-target .connect[data-to^="tags"]:before, #WASP-target .connect[data-to^="tags"]:after {
+	border-color:green;
+}
+#WASP-target .connect[data-to^="scripts"]:before, #WASP-target .connect[data-to^="scripts"]:after {
+	border-color:blue;
+}
+#WASP-target .connect[data-to^="blocked"]:before, #WASP-target .connect[data-to^="blocked"]:after {
+	border-color:red;
+}
+#WASP-target .connect:before {
+	border-width:2px 2px 0 0;
+	border-top-right-radius:3em;
+	top:0;
+	bottom:50%;
+	right:-3em;
+}
+#WASP-target .connect.tl:before {
+	left:0;
+}
+#WASP-target .connect.tr:before {
+	left:100%;
+}
+#WASP-target .connect:after {
+	border-width:0 2px 2px 0;
+	border-bottom-right-radius:3em;
+	top:50%;
+	bottom:0;
+	right:-3em;
+}
+#WASP-target .connect.bl:after {
+	left:0;
+}
+#WASP-target .connect.br:after {
+	left:100%;
+}
+#WASP-target .connect span {
+	display:block;
+	position:absolute;
+	border-style:solid;
+	border-width:0.35em;
+	border-color:transparent;
+	width:0;
+	height:0;
+}
+#WASP-target .connect span:first-child {
+	right:-3.25em;
+	top:50%;
+}
+#WASP-target .connect.st[data-to^="scripts"] span:first-child {
+	border-top-color:blue;
+	border-bottom-width:0;
+}
+#WASP-target .connect.st[data-to^="tags"] span:first-child {
+	border-top-color:green;
+	border-bottom-width:0;
+}
+#WASP-target .connect.st[data-to^="blocked"] span:first-child {
+	border-top-color:red;
+	border-bottom-width:0;
+}
+#WASP-target .connect.sb[data-to^="scripts"] span:first-child {
+	border-bottom-color:blue;
+	border-top-width:0;
+}
+#WASP-target .connect.sb[data-to^="tags"] span:first-child {
+	border-bottom-color:green;
+	border-top-width:0;
+}
+#WASP-target .connect.sb[data-to^="blocked"] span:first-child {
+	border-bottom-color:red;
+	border-top-width:0;
+}
+#WASP-target .connect[data-to^="scripts"] span:last-child {
+	border-right-color:blue;
+}
+#WASP-target .connect[data-to^="tags"] span:last-child {
+	border-right-color:green;
+}
+#WASP-target .connect[data-to^="blocked"] span:last-child {
+	border-right-color:red;
+}
+#WASP-target .connect.st.br span:last-child, #WASP-target .connect.sb.tr span:last-child {
+	right:-0.25em;
+}
+#WASP-target .connect.st.bl span:last-child, #WASP-target .connect.sb.tl span:last-child {
+	left:-0.25em;
+}
+#WASP-target .connect.st span:last-child {
+	bottom:-0.25em;
+}
+#WASP-target .connect.sb span:last-child {
+	top:-0.25em;
+}
+#WASP-sidebar-resizer-widget {
+	position:absolute;
+	top:0;
+	height:23px;
+	right:0;
+	width:16px;
+	cursor:ew-resize;
+	background-image:url(Images/statusbarResizerHorizontal.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	z-index:13;
+}
+.fatal {
+	width:50%;
+	margin:12px auto;
+	color:white;
+	text-align:center;
+	padding:20px;
+	border-radius:10px;
+	background-color:red;
+}
+.fatal a {
+	color:white;
+}
+.properties-code {
+	counter-reset:lines;
+}
+.properties-code span {
+	display:block;
+	counter-increment:lines;
+	position:relative;
+	white-space:pre;
+	height:auto;
+}
+.properties-code span:before {
+	display:block;
+	position:absolute;
+	background-color:#ddd;
+	content:counter(lines);
+	padding:0 0.10em;
+	border-right:1px solid black;
+	text-align:right;
+	height:100%;
+	left:0;
+	pointer-events:none;
+}
+.ldig1 span, .ldig2 span, .ldig3 span {
+	padding-left:2.5em;
+}
+.ldig1 span:before, .ldig2 span:before, .ldig3 span:before {
+	width:2em;
+}
+.ldig4 span, .ldig5 span {
+	padding-left:3.5em;
+}
+.ldig4 span:before, .ldig5 span:before {
+	width:3em;
+}
+.ldig6 span, .ldig7 span {
+	padding-left:4.5em;
+}
+.ldig6 span:before, .ldig7 span:before {
+	width:4em;
+}
+.ldig8 span, .ldig9 span {
+	padding-left:5.5em;
+}
+.ldig8 span:before, .ldig9 span:before {
+	width:5em;
+}
+.soft-context-menu-glass-pane {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index:20000;
+}
+.soft-context-menu {
+	position:absolute;
+	border:1px solid rgba(196, 196, 196, 0.9);
+	border-top:1px solid rgba(196, 196, 196, 0.5);
+	border-bottom:1px solid rgba(150, 150, 150, 0.9);
+	padding:4px 0 4px 0;
+	border-radius:4px;
+	background-color:white;
+	-webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.soft-context-menu-item {
+	width:100%;
+	line-height:13px;
+	font-size:14px;
+	border-top:1px solid transparent;
+	border-bottom:1px solid transparent;
+	padding:2px 7px 2px 6px;
+	margin:0 13px 0 0;
+	white-space:nowrap;
+}
+.soft-context-menu-separator {
+	height:10px;
+	margin:0 1px;
+}
+.soft-context-menu-separator> .separator-line {
+	margin:0;
+	height:5px;
+	border-bottom:1px solid rgb(227, 227, 227);
+	pointer-events:none;
+}
+.soft-context-menu-item-mouse-over {
+	border-top:1px solid rgb(56, 121, 217);
+	border-bottom:1px solid rgb(56, 121, 217);
+	background-color:rgb(56, 121, 217);
+	color:white;
+}
+body.platform-mac .soft-context-menu-item-mouse-over {
+	border-top:1px solid rgb(90, 131, 236);
+	border-bottom:1px solid rgb(18, 88, 233);
+	background-image:-webkit-gradient(linear, left top, left bottom, from(rgb(100, 140, 243)), to(rgb(36, 101, 243)));
+}
+.soft-context-menu-item-checkmark {
+	color:rgb(108, 108, 108);
+	pointer-events:none;
+}
+.soft-context-menu-item-submenu-arrow {
+	color:#222;
+	float:right;
+	pointer-events:none;
+}
+.soft-context-menu-item-mouse-over .soft-context-menu-item-checkmark {
+	color:white;
+}
+#search-box {
+	position:fixed;
+	width:calc(100%-56px);
+	padding:2px;
+	height:auto;
+	bottom:0;
+	left:25px;
+	background-color:#ccc;
+	line-height:15px;
+	font-size:12px;
+	border-color:#333;
+	border-style:solid;
+	border-width:1px 1px 0 1px;
+}

@@ -1,0 +1,1 @@
+window.bgAlarm={init:function(){var c=this;chrome.runtime.onInstalled.addListener(function(){chrome.alarms.clearAll(),c.checkAlarm()}),chrome.runtime.onStartup.addListener(function(){c.checkAlarm()})},checkAlarm:function(){bgStatic.checkAlarm(),bgGa.checkAlarm()}};

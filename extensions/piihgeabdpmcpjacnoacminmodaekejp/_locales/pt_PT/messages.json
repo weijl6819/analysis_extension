@@ -1,0 +1,101 @@
+{
+  "name": {
+    "message": "Local Seguro Scanguard"
+  },
+  "browserAction_defaultTitle": {
+    "message": "Suite de Segurança"
+  },
+  "shortName": {
+    "message": "Faça pesquisas na internet usando a ferramenta Local Seguro da Scanguard"
+  },
+  "description": {
+    "message": "O Local Seguro ajuda a bloquear URL prejudiciais e maliciosos para melhorar a sua experiência de internet e mante-lo protegido."
+  },
+  "chromeSettingsOverrides_searchProvider_name": {
+    "message": "Pesquisa Segura Scanguard"
+  },
+  "newTab_title": {
+    "message": "Painel Scanguard"
+  },
+  "urlScanner_tooltipTitle": {
+    "message": "Informação de Segurança da Proteção da Web:"
+  },
+  "urlScanner_categoryLabel": {
+    "message": "Categoria:"
+  },
+  "urlScanner_threatLabel": {
+    "message": "Ameaça:"
+  },
+  "urlScanner_poweredByText": {
+    "message": "Patrocinado por"
+  },
+  "warningPage_title": {
+    "message": "AVISO! Este website pode danificar o seu sistema..."
+  },
+  "warningPage_subTitle": {
+    "message": "Não se preocupe, bloqueámo-lo para sua proteção"
+  },
+  "warningPage_categoryLabel": {
+    "message": "Categoria:"
+  },
+  "warningPage_categoryName_SAFE": {
+    "message": "Sem ameaças"
+  },
+  "warningPage_categoryName_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Desconhecido"
+  },
+  "warningPage_categoryDescription_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Este website foi identificado como potencialmente perigoso.  Os atacantes deste website poderão levá-lo a fazer algo perigoso que poderá comprometer a sua segurança."
+  },
+  "warningPage_categoryName_VIRUSINFECTED": {
+    "message": "Vírus"
+  },
+  "warningPage_categoryDescription_VIRUSINFECTED": {
+    "message": "Este website possui conteúdo enganoso.  Os atacantes deste website poderão levá-lo a fazer algo perigoso que poderá comprometer a sua segurança."
+  },
+  "warningPage_categoryName_SPYWARE": {
+    "message": "Spyware"
+  },
+  "warningPage_categoryDescription_SPYWARE": {
+    "message": "Este website possui conteúdo enganoso.  Os atacantes deste website poderão levá-lo a fazer algo perigoso que poderá comprometer a sua segurança."
+  },
+  "warningPage_categoryName_PHISHING": {
+    "message": "Phishing"
+  },
+  "warningPage_categoryDescription_PHISHING": {
+    "message": "Este website possui conteúdo enganoso.  Os atacantes deste website poderão levá-lo a fazer algo perigoso que poderá comprometer a sua segurança."
+  },
+  "warningPage_categoryName_MALWARE": {
+    "message": "Malware"
+  },
+  "warningPage_categoryDescription_MALWARE": {
+    "message": "Este website possui conteúdo enganoso e malicioso.  Os atacantes deste website poderão levá-lo a fazer algo perigoso que poderá comprometer a sua segurança."
+  },
+  "warningPage_categoryName_SOCIAL_ENGINEERING": {
+    "message": "Engenharia Social"
+  },
+  "warningPage_categoryDescription_SOCIAL_ENGINEERING": {
+    "message": "Este website possui conteúdo enganoso.  Os atacantes deste website poderão levá-lo a fazer algo perigoso que poderá comprometer a sua segurança."
+  },
+  "warningPage_categoryName_UNWANTED_SOFTWARE": {
+    "message": "Software Indesejável"
+  },
+  "warningPage_categoryDescription_UNWANTED_SOFTWARE": {
+    "message": "Este website possui software indesejável.  Este programa provavelmente contém adware, spyware ou outros comportamentos intrusivos e mal-intencionados."
+  },
+  "warningPage_categoryName_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Aplicação Maliciosa"
+  },
+  "warningPage_categoryDescription_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Este website possui software indesejável.  Este programa provavelmente contém adware, spyware ou outros comportamentos intrusivos e mal-intencionados."
+  },
+  "warningPage_backToSafety": {
+    "message": "Voltar para Segurança"
+  },
+  "warningPage_visitWebsite": {
+    "message": "Visitar o website"
+  },
+  "warningPage_whitelistText": {
+    "message": "Confio neste website, não voltar a sinalizar"
+  }
+}

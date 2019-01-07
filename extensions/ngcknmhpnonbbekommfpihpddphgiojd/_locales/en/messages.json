@@ -1,0 +1,11 @@
+{
+	"apNm":{
+		"message": "Fix Url Links Redirect"
+	},
+	"apDsc": {
+		"message": "Removes the URL link redirect and takes you direct to destination. Remove the middle man and tracking. Remove link Referrer."
+	},
+	"apSt":{
+		"message": "Settings - Fix URL Links"
+	}
+}

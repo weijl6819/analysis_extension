@@ -1,0 +1,90 @@
+{
+   "extension_description": {
+      "description": "Description of this extension",
+      "message": "Daily crypto news. Most convenient way to track cryptocurrency news."
+   },
+   "extension_hint": {
+      "description": "Tooltip for main button",
+      "message": "Click to show feeds"
+   },
+   "extension_locale": {
+      "description": "For internal usage",
+      "message": "en"
+   },
+
+   "options_title": {
+      "message": "Settings"
+   },
+   "options_select_source": {
+      "message": "Show sources:"
+   },
+   "options_show_post_first": {
+      "message": "Show new posts on top"
+   },
+   "options_show_post_unmark": {
+      "message": "Show only new posts"
+   },
+   "options_dont_ask_mark_all": {
+      "message": "Don't ask me again mark all"
+   },
+   "options_dont_ask_remove_all": {
+      "message": "Don't ask me again remove all"
+   },
+   "options_show_prices_updates": {
+      "message": "Show prices updates"
+   },
+   "options_show_mini_graphs": {
+      "message": "Show Mini-graphs"
+   },
+   "options_save": {
+      "message": "Save"
+   },
+   "options_suggestion": {
+      "message": "Submit bug or suggestion"
+   },
+   "options_saved": {
+      "message": "Saved"
+   },
+
+   "feedback_faq": {
+      "message": "FAQ Feedback"
+   },
+   "feedback_read_faq": {
+      "message": "Read FAQ"
+   },
+   "feedback_dialog_title": {
+      "message": "Send us bug or your suggestion"
+   },
+   "feedback_dialog_label_email": {
+      "message": "Your email"
+   },
+   "feedback_dialog_field_required_text": {
+      "message": "(required)"
+   },
+   "feedback_dialog_label_subject": {
+      "message": "Subject"
+   },
+   "feedback_dialog_label_description": {
+      "message": "Description"
+   },
+   "feedback_dialog_button_submit": {
+      "message": "SEND EMAIL"
+   },
+   "feedback_dialog_field_error_format_email_text": {
+      "message": "Invalid email format"
+   },
+   "feedback_dialog_field_error_required_email_text": {
+      "message": "Email is required"
+   },
+   "feedback_dialog_field_error_required_subject_text": {
+      "message": "Subject is required"
+   },
+   "feedback_dialog_field_error_too_low_subject_text": {
+      "message": "Subject is too short. Minimum 6 characters"
+   },
+   "feedback_dialog_success_text": {
+      "message": "Thanks for you feedback!"
+   }
+
+
+}

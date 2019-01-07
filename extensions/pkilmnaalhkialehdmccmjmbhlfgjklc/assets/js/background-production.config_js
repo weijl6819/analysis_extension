@@ -1,0 +1,25 @@
+(function(chrome) {
+  'use strict';
+
+  var appId = 'rIFHMl1TQ1AixBtyfC3vhTD7EDCxUafFI4zpr2uK';
+  var parseKey = 'Parse/' + appId + '/';
+
+  function changeHandler() {
+    chrome.storage.local.get('maybe.user', function(value) {
+      if (value['maybe.user']) {
+        localStorage.setItem('maybe.user', value['maybe.user']);
+      }
+    });
+
+    chrome.storage.local.get('maybe.clean', function(value) {
+      if (value['maybe.clean']) {
+        localStorage.removeItem('maybe.user');
+        localStorage.removeItem(parseKey + 'currentUser');
+        localStorage.removeItem(parseKey + 'installationId');
+        chrome.storage.local.clear(function() {});
+      }
+    });
+  }
+
+  chrome.storage.onChanged.addListener(changeHandler);
+})(chrome);

@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/html/fonts/material-icons/MaterialIcons-Regular.eot");
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url("/html/fonts/material-icons/MaterialIcons-Regular.woff2") format("woff2"), url("/html/fonts/material-icons/MaterialIcons-Regular.woff") format("woff"), url("/html/fonts/material-icons/MaterialIcons-Regular.ttf") format("truetype");
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+}
+
+body {
+    min-width: 360px;
+    margin: 6px;
+}
+
+.brand-logo {
+    outline: none;
+}
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+    margin: 0;
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 18px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+.nav-wrapper>a>img {
+    height: 48px;
+    width: auto;
+    margin-top: 5px;
+}
+
+.picker__date-display {
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.picker__weekday-display {
+    display: none;
+}
+
+.picker__frame {
+    margin: auto;
+    bottom: inherit !important;
+}
+
+.row {
+    margin-bottom: 14px;
+}
+
+[type="checkbox"]+label {
+    padding-left: 30px;
+    height: 26px;
+}
+
+[type="checkbox"]+label:before,
+[type="checkbox"]:not(.filled-in)+label:after {
+    margin-top: 4px;
+}
+
+.progress .determinate {
+    color: white;
+    line-height: 18px;
+    padding-left: 4px;
+    text-align: left;
+}
+
+.preloader {
+    display: flex;
+    background: rgba(255, 255, 255, 0.7);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#restore {
+    position: absolute;
+    right: 20px;
+    bottom: 140px;
+}

@@ -1,0 +1,68 @@
+{
+    "ext_name": {
+	    "message": "Ads Blocker"
+    },
+	"ext_name_short": {
+	    "message": "AdsBlocker"
+    },
+    "ext_description": {
+	    "message": "Ads Blocker - блокирует рекламу на всех сайтах."
+    },
+    "popup_vk_support": {
+	    "message": "Техподдержка ВКонтакте"
+    },
+	"popup_fb_support": {
+	    "message": "Техподдержка Ads Blocker"
+    },
+	"popup_on": {
+        "message": "Блокировка рекламы включена"
+    },
+	"popup_off": {
+        "message": "Блокировка рекламы выключена"
+    },
+	"email_support": {
+        "message": "Техподдержка по e-mail"
+    },
+	"onInstalled_h1": {
+		"message": "Поздравляем!"
+	},
+	"onInstalled_h2": {
+		"message": "Вы установили лучшее расширение для блокировки рекламы"
+	},
+	"onInstalled_question": {
+		"message": "Остались вопросы?"
+	},
+	"onInstalled_support": {
+		"message": "Напишите нам в группе техподдержки:"
+	},	
+	"onUpdated_h2": {
+		"message": "У Вас установлена последняя версия блокировщика рекламы"
+	},
+	"onShareded_h2": {
+		"message": "Спасибо, что выбрали лучшее расширение для блокировки рекламы"
+	},
+	"feature_blockads": {
+		"message": "AdsBlocker блокирует все виды рекламы, включая видеорекламу, всплывающие окна, тизеры, баннеры и текстовую рекламу."
+	},
+	"feature_blocktrack": {
+		"message": "AdsBlocker блокирует системы слежки и аналитики, тем самым защищая ваши личные данные."
+	},
+	"feature_support": {
+		"message": "Круглосуточная техническая поддержка в наших группах ВКонтакте, в Facebook и по e-mail."
+	},
+	"onUpdated_happy": {
+		"message": "Довольны нашим приложением?"	
+	},
+	"onUpdated_rate": {
+		"message": "Оцените нас на ⭐️⭐️⭐️⭐️⭐️ в Chrome Web Store:"	
+	},
+	"ask": {
+		"message": "Вы довольны нашим расширением?<br><br>"
+	},
+	"mail": {
+		"message": "Напишите свои замечания и пожелания на почту support[@]adsblocker.ru"
+	},
+    "webstore": {
+        "message": "Оцените, пожалуйста, нас в Chrome Web Store:<br><br>"
+    }
+}

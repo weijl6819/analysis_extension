@@ -1,0 +1,120 @@
+﻿{
+	"extension_name" : "Fox Web Security",
+	"extension_description" : "Protection from adult content (parental control) and from dangerous sites. Entrust protection for yourself and your children to professionals!",
+	"require_fox_server" : "For correct work you must install the Fox Web Security (DNS Lookup Service)!",
+	"require_fox_server_2" : "click here for install Fox Web Security (DNS Lookup Service)",
+	"notifications_icon" : "skin/foxsecurity_red_80.png",
+
+	"security_infected_alert" : "This website may harm your computer and your personal information. (%S)",
+	"security_adult_alert" : "This website contains adult material. (%S)",
+	"security_error_alert" : "Failed to determine the safety of this site.",
+	"security_white_alert" : "This website is secure.",
+	"security_unknown_alert" : "Security status for this website is undefined.",
+	"security_disabled_alert" : "Protection is disabled!",
+	"security_danger_alert" : "This website is secure, but has dangerous content.",
+	"security_white_list_alert" : "Website unlocked by the user (whitelist).",
+	"security_black_list_alert" : "Website blocked by the user (blacklist).",
+
+	"security_white_list_menu_add" : "Add \"%S\" to the whitelist",
+	"security_white_list_menu_del" : "Remove \"%S\" from the whitelist",
+	"security_black_list_menu_add" : "Add \"%S\" to the blacklist",
+	"security_black_list_menu_del" : "Remove \"%S\" from the blacklist",
+
+	"adult_label" : "%S: adult",
+	"infected_label" : "%S: infected",
+	"white_list_label" : "whitelist",
+	"black_list_label" : "blacklist",
+
+	"page_lock_head_text" : "This website is not allowed.",
+	"page_lock_reason_head_text" : "Reason for the lock:",
+	"page_lock_thanks_text" : "Fox Web Security expresses gratitude to providers of DNS services<br/>that provide a high level of security for users!",
+
+	"prompt_select_action" : "Select action:",
+	"prompt_allow_browser" : "Allow until the browser is closed",
+	"prompt_allow_tab" : "Allow until the tab is closed",
+	"prompt_deny" : "Deny",
+	"prompt_reset" : "Reset to defaults",
+	"prompt_password" : "Enter password:",
+	"prompt_password_error" : "Incorrect password, try again?",
+
+	"system_action_locked" : "This action has been locked by Fox Web Security!",
+	"confirm_warning" : "Are you sure?",
+	"select_all" : "Select all",
+
+	"settings.label" : "Settings",
+	"domain.included.alert.label" : "Dangerous requests from this website:",
+
+	"pref.tab.general.label" : "Protection",
+	"pref.tab.white_list.label" : "Whitelist",
+	"pref.tab.black_list.label" : "Blacklist",
+	"pref.tab.page_lock.label" : "Block page (template)",
+	"pref.tab.dns_servers.label" : "DNS Servers",
+	"pref.tab.statistics.label" : "Statistics",
+	"pref.tab.others.label" : "Others",
+
+	"pref.security_enabled.label" : "Enable protection",
+
+	"pref.password_settings.label" : "Protect with password:",
+	"pref.password_value.label" : "Password:",
+	"pref.password_show.label" : "Show password",
+	"pref.password_save.label" : "Save password",
+
+	"pref.security_infected.label" : "Protection from viruses, fraudulent and phishing sites",
+	"pref.security_adult.label" : "Adult content blocking (parental control)",
+
+	"pref.security_alert.label" : "Enable notifications",
+	"pref.security_action.label" : "Action for dangerous main request:",
+	"pref.security_action.pagelock.label" : "Show block page",
+	"pref.security_action.forbid.label" : "Show standard error page",
+	"pref.security_action.none.label" : "None",
+	"pref.security_closetab.label" : "Forbid the creation of new tabs and windows",
+
+	"pref.security_action_subrequest.label" : "Action for dangerous sub-request:",
+	"pref.security_action_subrequest.block.label" : "Block the request",
+	"pref.security_action_subrequest.block_alien_domain.label" : "Block the request only if the domain is different from the main request",
+	"pref.security_action_subrequest.none.label" : "None",
+
+	"pref.security_action_all.label" : "Action:",
+
+	"pref.security_white_list_enabled.label" : "Enable the whitelist",
+	"pref.security_black_list_enabled.label" : "Enable the blacklist",
+
+	"pref.security_mask.hint" : "You can use the mask  *  at the beginning of the domain name for the blacklist and whitelist",
+	"pref.security_mask.example1" : "*example.com - jycyjrdc-example.com, 651651example.com, example.com, etc",
+	"pref.security_mask.example2" : "*.example.com - www.example.com, 123.example.com, etc (but without 'example.com' ! )",
+	"pref.security_mask.deny_all" : "* - for deny all domains",
+
+	"pref.pagelock.default.label" : "Default",
+
+	"pref.dns_servers.test.label" : "Make check",
+	"pref.dns_servers.test.host.label" : "Domain or IP:",
+	"pref.dns_servers.test.start.label" : "start",
+
+	"pref.dns_servers.edit.enabled.label" : "Enabled:",
+	"pref.dns_servers.edit.name.label" : "Name:",
+	"pref.dns_servers.edit.dns_ip.label" : "DNS IP:",
+	"pref.dns_servers.edit.response.label" : "Response:",
+	"pref.dns_servers.edit.response.adult.label" : "adult sites:",
+	"pref.dns_servers.edit.response.infected.label" : "dangerous sites:",
+	"pref.dns_servers.edit.response.unknown_host.label" : "unknown host:",
+	"pref.dns_servers.edit.save_check.label" : "check & save",
+	"pref.dns_servers.edit.save.label" : "save",
+	"pref.dns_servers.edit.check.label" : "check",
+	"pref.dns_servers.edit.close.label" : "close",
+	"pref.dns_servers.edit.delete.label" : "delete",
+	"pref.dns_servers.edit.hint1.label" : "IP list can be split by the symbols: « , » or « ; ». Example: 127.0.0.1, 127.0.0.2; 127.0.0.3",
+	"pref.dns_servers.edit.back_to_editing.label" : "back to editing",
+	"pref.dns_servers.link.s3blog.label" : "You can use any secure DNS! Click here for more details.",
+
+	"pref.foxdns.text_1.label" : "FoxDNS is a free service to protect against advertising, pornography, viruses and fraudulent websites.",
+	"pref.foxdns.text_2.label" : "Our DNS is created on the base of the experience of the majority of known similar services, so our defense is more perfect and is the most comprehensive. This means that now you do not need to choose which secure DNS to use, just select FoxDNS and you will get the maximum protection!",
+
+	"pref.show.context_menu.main.label" : "Show menu in the main context menu",
+	"pref.reset.settings.label" : "Reset settings to defaults",
+	"pref.startup.tabs.reload.label" : "Reload and check tabs at browser startup",
+
+	"failed_connection" : "Failed connection!",
+	"dns_not_secure" : "Probably DNS-service « DNS_NAME » does not have the functionality to protect users!",
+
+	"pref.settings.saved.label" : "Settings saved"
+}

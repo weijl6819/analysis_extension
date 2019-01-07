@@ -1,0 +1,159 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+      *,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+      body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 15px;
+}
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
+
+ .split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  width: 70%
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  float: right;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 16px;
+}
+
+
+</style>
+    </head>
+    <body>
+      <div class="split left">
+      <div class="centered">
+      <h1>Gixen eBay Sniper Autosnipe Settings</h1>
+      <p>Thank you for using Gixen eBay Sniper Autosnipe<br/>
+      We appreciate you have installed this extension.</p>
+      <p style="text-align:left;font-size:14px">On this page you can configure the settings for the extension<br/>
+      Usename : username you use to sign into gixen<br/>
+      Password : the password you use to sign in to gixen<br/>
+      Bid : the default amount shown in the bid box<br/>
+      Main server : the default time for gixen to place the bid before the auction ends<br/>
+      Offset Mirror server : the mirror offset for gixen to place the bid before the auction ends</p>
+      <h3>Please donate to help Autosnipe</h3>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="get" target="_blank">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="SHGCPFPR7HTBN">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+<p><a href="http://gixen.com">Gixen.com</a></p>
+<p><a href="https://www.gixen.com/forum/viewtopic.php?t=9102">Autosnipe for Chrome Support Page</a></>
+      </div>
+      </div>
+      <div class="split right">
+      <form> 
+      <fieldset>  
+	  <label for="username">Username:</label><input id="username" type="text" name="username">
+	  <label for="password">Password:</label><input id="password" type="password" name="password">
+	  <label for="bid">Bid:</label><input id="bid" type="text" name="bid">
+	  <label for="offset1">Main server:</label><input id="offset1" type="number" name="offset1" value="6">
+	  <label for="offset2">Offset Mirror server:</label><input id="offset2" type="number" name="offset2" value="6">
+	  <div id="buttonDiv">
+      </div>
+      </div>
+      </fieldset>
+      </form>
+    </body>
+    <script src="options.js"></script>
+  </html>

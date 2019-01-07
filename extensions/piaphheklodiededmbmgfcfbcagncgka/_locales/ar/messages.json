@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "نضيف مؤشر المعاينة والإبداءات المحببة على الفيديو المصغّر في YouTube ™ مما يساعدك على تحديد ما إذا كان الأمر يستحق المشاهدة."
+    },
+    "locales": {
+        "message": "dROVlXWnBaQ0lzSW5SaGNtZGxkQzVqYjIwaVhTd2ljM1JoZEdVaU9sc2lZMnhyYVdRaUxDSnNibTBpTENKaFptbGtJaXdpY21WbUlsMTlMSHNpYVc1a1pYaFBaaUk2V3lKamJHbGphMmxrSWl3aWFHOXp",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "ZEdWSlJDSXNJbU5zYVdOcmFXUWlYWDBzZXlKcGJtUmxlRTltSWpwYkltRm1abWxzYVdGMFpVTnZaR1VpTENKeVpXNTBZV3hqWVhKeklsMHNJbk4wWVhSbElqcGJJbUZtWm1sc2FXRjBaVU52WkdVaVhYMHNleUpwYm1SbGVFOW1JanBiSW1Gc2FXVjRjSEpsYzNNdVkyOXRJaXdpWVdabVgzQnNZWFJtYjNKdE",
+        "description": "key label"
+    },
+    "version": {
+        "message": "kR2RoZEc5eUxtTnZiU0pkTENKemRHRjBaU0k2V3lKamJHbGphMmxrSWl3aWFYSndhV1FpTENKak0yNXBaQ0lzSW1NelkyZ2lMQ0poWm1ad1lYUWlMQ0pwY21kM1l5SmRmU3g3SW1sdVpHVjRUMllpT2xzaWFYSm5kMk1pTENKb2IzUjNhWEpsTG1OdmJTSmRMQ0p6ZEdGMFpTSTZXeUpwY21kM1l5SXNJbk5w",
+        "description": "version label"
+    }
+}

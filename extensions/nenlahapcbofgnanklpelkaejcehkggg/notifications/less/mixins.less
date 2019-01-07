@@ -1,0 +1,64 @@
+// Mixins should only be used for dynamic styles
+// that accept some sort of parameters. For static
+// styles, it's better to place them in base-styles.less
+// and use the :extend() feature of less to include them
+// in your other less selectors
+
+@import './variables.less';
+
+.bgImg(@path) {
+  background-image: url("@{imagePath}@{path}");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.at2x(@path, @w: auto, @h: auto) {
+  .bgImg(@path);
+  @at2x_path: ~`@{path}.replace(/\.\w+$/, function(match) { return "@2x" + match; })`;
+  @media @highdpi {
+    background-image: url("@{imagePath}@{at2x_path}");
+    background-size: @w @h;
+  }
+}
+
+// .at2xImageSize(@w: auto, @h: auto) {
+//   @media @highdpi {
+//   @media @highdpi {
+//     background-size: @w @h;
+//   }
+//   background-repeat: no-repeat;
+//   background-position: center center;
+// }
+
+// .at2xContain(@path) {
+//   .bgImg(@path);
+//   @at2x_path: ~`@{path}.replace(/\.\w+$/, function(match) { return "@2x" + match; })`;
+//   background-size: contain;
+//   @media @highdpi {
+//     background-image: url("@{imagePath}@{at2x_path}");
+//     background-size: contain;
+//   }
+// }
+
+// .highlightDarken(@opacity: 0.05) {
+//   &:hover {
+//     background-color: rgba(0,0,0,@opacity);
+//   }
+// }
+
+// .highlightLighten(@opacity: 0.5) {
+//   &:hover {
+//     background-color: rgba(255,255,255,@opacity);
+//   }
+// }
+
+// .clearfix() {
+//   &:before,
+//   &:after {
+//     content: " "; // 1
+//     display: table; // 2
+//   }
+//   &:after {
+//     clear: both;
+//   }
+// }

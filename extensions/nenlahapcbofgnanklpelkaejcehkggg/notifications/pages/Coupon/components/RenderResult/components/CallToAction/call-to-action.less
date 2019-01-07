@@ -1,0 +1,29 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy {
+  .coupons-cta {
+    position: relative;
+    .loader-wrapper {
+      
+    }
+    .not-subscribed-description {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    @keyframes buttonPulse {
+      0%, 100% {
+        background: #01c049;
+        border: 1px solid transparent;
+        box-shadow: none;
+      }
+      50% {    
+        background-color: #00e76d;
+        border: 1px solid #00e76d;
+        box-shadow: 0px 2px 12px rgba(210, 210, 210, 0.7);
+      }
+    }
+    .button-pulse {
+      animation: buttonPulse 2s 3s ease infinite;
+    }
+  }
+}

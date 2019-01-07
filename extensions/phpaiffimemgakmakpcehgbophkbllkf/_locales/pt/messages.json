@@ -1,0 +1,130 @@
+{
+  "extensionName": {
+    "message": "Baixe vídeos Vimeo, Premium",
+    "description": "Extension name."
+  },
+  "extensionDescription": {
+    "message": "Gerenciador de downloads simples e profissional de qualquer vídeo Vimeo hospedado em qualquer lugar na web.",
+    "description": "Extension description."
+  },
+  "CANT_REACH_SERVER": {
+    "message": "Não foi possível acessar o servidor, verifique sua conexão com a internet",
+    "description": ""
+  },
+  "currentTab": {
+    "message": "Aba atual",
+    "description": "11 char max for translation"
+  },
+  "allTabs": {
+    "message": "Todas abas",
+    "description": "11 chars max for translation"
+  },
+  "One_day_trial": {
+    "message": "Experimente por um dia",
+    "description": ""
+  },
+  "Lifetime_license_from_Donation": {
+    "message": "Licença vitalícia de Doação",
+    "description": ""
+  },
+  "Lifetime_license": {
+    "message": "Licença vitalícia",
+    "description": ""
+  },
+  "Monthly_subscription": {
+    "message": "Assinatura mensal",
+    "description": ""
+  },
+  "You_have_a_one_day_trial": {
+    "message": "Você tem um dia de experiência",
+    "description": ""
+  },
+  "You_have_a_Lifetime_license_from_Donation": {
+    "message": "Você tem uma licença vitalícia de Doação",
+    "description": ""
+  },
+  "You_have_a_Lifetime_license": {
+    "message": "Você tem uma licença vitalícia",
+    "description": ""
+  },
+  "You_have_a_Monthly_subscription": {
+    "message": "Você tem uma assinatura mensal",
+    "description": ""
+  },
+  "Buy_a_one_day_trial": {
+    "message": "Comprar um dia de experiência",
+    "description": ""
+  },
+  "Buy_a_Lifetime_license_from_Donation": {
+    "message": "Comprar uma licença vitalícia de doação",
+    "description": ""
+  },
+  "Buy_a_Lifetime_license": {
+    "message": "Comprar uma licença vitalícia",
+    "description": ""
+  },
+  "Buy_a_Monthly_subscription": {
+    "message": "Comprar uma assinatura mensal",
+    "description": ""
+  },
+  "Got_a_license_key__Type_it_here_": {
+    "message": "Chave de ativação:",
+    "description": "18 chars max for translation"
+  },
+  "Reload_Data_from_server": {
+    "message": "Recarregar dados do servidor",
+    "description": ""
+  },
+  "Hey___You_need_some_videos___": {
+    "message": "Ei! Você precisa de alguns vídeos :)",
+    "description": ""
+  },
+  "Go_to": {
+    "message": "Vá para",
+    "description": "In the context of 'Go to vimeo.com' synonyms: Load, See "
+  },
+  "or_reload_the_page": {
+    "message": "ou atualize a página",
+    "description": ""
+  },
+  "enjoy": {
+    "message": "aproveite",
+    "description": ""
+  },
+  "Valid_until": {
+    "message": "Válido até",
+    "description": "License valid until 2014-01-19"
+  },
+  "You_don_t_have_a_license__are_you_logged_into_google_chrome_": {
+    "message": "Você não tem uma licença. Você está conectado no google chrome?",
+    "description": ""
+  },
+  "Loading_products": {
+    "message": "Carregando produtos",
+    "description": ""
+  },
+  "Can_t_register_user__you_must_be_logged_in": {
+    "message": "Não foi possível registrar o seu usuário, você precisa se conectar primeiro",
+    "description": ""
+  },
+  "You_are_not_logged_into_google_chrome_": {
+    "message": "Você não está conectado no Google Chrome.",
+    "description": ""
+  },
+  "Please_go_to_your_browser_settings_": {
+    "message": "Vá para as configurações do seu navegador e conecte-se",
+    "description": ""
+  },
+  "feedback": {
+    "message": "feedback",
+    "description": ""
+  },
+  "homepage": {
+    "message": "página inicial",
+    "description": ""
+  },
+  "help": {
+    "message": "ajuda",
+    "description": ""
+  }
+}

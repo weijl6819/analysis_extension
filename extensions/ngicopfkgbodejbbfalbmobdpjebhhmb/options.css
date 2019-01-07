@@ -1,0 +1,32 @@
+
+body {
+  background-color: #F8F4E8;
+}
+div.content {
+  margin: 20px;
+}
+table.content {
+  font-family: arial,sans-serif;
+  font-size:90%;
+}
+div.title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+u.sample {
+  font-weight: bold;
+  padding: 0 5px;
+}
+span.sample {
+  font-weight: bold;
+  font-size: 100%;
+  margin-right: 3px;
+  padding: 0 5px;
+}
+#save {
+  font-weight: bold;  
+}
+.error {
+  color: #990000;
+  background: #FFDCDC
+}

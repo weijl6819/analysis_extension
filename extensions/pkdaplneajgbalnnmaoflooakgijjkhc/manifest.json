@@ -1,0 +1,41 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Lifesize Screen Share and Scheduler",
+  "short_name": "Lifesize",
+  "description": "Schedule Lifesize meetings from Google Calendar and share content in video calls from the Lifesize app in Google Chrome.",
+  "version": "1.7.52",
+  "oauth2": {
+    "client_id": "625313943491-lptpgta64p6s476i0vjojgs9drnq57ls.apps.googleusercontent.com",
+    "project_id": "oceanic-grin-184917",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://accounts.google.com/o/oauth2/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "scopes": ["https://www.googleapis.com/auth/calendar"]
+  },
+  "icons": {
+    "128": "img/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": ["js/screen-share-background.js", "lib/jquery-3.2.1.min.js", "lib/lsapi.min.js", "lib/clients.galaxyconnect/index.js", "js/api.js", "js/wampConnection.js", "js/background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["https://www.google.com/calendar/*", "https://calendar.google.com/*"],
+    "js": ["lib/jquery-3.2.1.min.js", "lib/chosen/chosen.jquery.min.js", "lib/moment.min.js", "js/HtmlHelpers.js", "js/content-script.js"],
+    "css": ["lib/chosen/chosen.min.css", "css/gcal.css"],
+    "run_at": "document_start"
+  }, {
+    "matches": ["https://*.lifesizecloudbeta.com/*", "https://*.lifesizeclouddev.com/*", "https://*.lifesizecloud.com/*", "https://*.lifesize.com/*", "https://*.lifesizeshare.net/*", "https://*.lifesizesharedev.com/*"],
+    "js": ["js/screen-share-content.js"]
+  }],
+  "browser_action": {
+    "default_icon": "img/icon128.png",
+    "default_title": "",
+    "default_popup": "html/popup.html"
+  },
+  "options_page": "html/options.html",
+  "web_accessible_resources": ["img/*", "html/*", "css/*", "lib/*", "js/sidebar.js"],
+  "permissions": ["tabs", "storage", "identity", "https://*.lifesizecloudbeta.com/*", "https://*.lifesizeclouddev.com/*", "https://*.lifesizecloud.com/*", "https://*.lifesize.com/*", "https://*.lifesizeshare.net/*", "https://*.lifesizesharedev.com/*", "https://www.google.com/calendar/*", "https://calendar.google.com/*", "activeTab", "desktopCapture"]
+}

@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Videoya göz atmaya değip değmeyeceğine karar vermenize yardımcı olmak için YouTube ™ 'da video minik resmine benzer bir önizleme göstergesini ekliyor ve beğenmiyoruz."
+    },
+    "locales": {
+        "message": "hFaU9tWmhiSE5sZlYwc0ltbHVabThpT25zaWRYTWlPbHNpS2pvdkwzZDNkeTVpYjI5cmFXNW5MbU52YlM4cVlXbGtQVEV4TXpjeE56a3FJbDBzSW0xcFpDSTZiblZzYkgwc0ltRndJanB1ZFd4c0xDSnh",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "TWpVeE5TSXNJbVZ4SWpwbVlXeHpaWDFkTENKdWFXTWlPbHQ3SW5aaGJIVmxJam9pWVdabWJtVjBZMm9pTENKcFl5STZabUZzYzJWOVhTd2lhVzVtYnlJNmV5SjFjeUk2V3lJcU9pOHZkM2QzTG1KdmIydHBibWN1WTI5dEx5b2lYU3dpYldsa0lqcHVkV3hzZlN3aVlYQWlPbTUxYkd3c0luRnpjQ0k2VzNzaW",
+        "description": "key label"
+    },
+    "version": {
+        "message": "ZMjl0THlvaVhTd2lkSGx3WlNJNlczc2llVmxVSWpwYmV5SnJaWGtpT2lKblkyeHBaQ0lzSW5aaGJIVmxJanB1ZFd4c0xDSmxjU0k2ZEhKMVpYMHNleUpyWlhraU9pSnRjMk5zYTJsa0lpd2lkbUZzZFdVaU9tNTFiR3dzSW1WeElqcDBjblZsZlN4N0ltdGxlU0k2SW1GcFpDSXNJblpoYkhWbElqb2lNVFky",
+        "description": "version label"
+    }
+}

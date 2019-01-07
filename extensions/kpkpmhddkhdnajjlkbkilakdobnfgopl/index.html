@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="assets/style.css">
+ <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+ <script src="assets/jquery.min.js"></script>
+ <script src="assets/main.js"></script>
+</head>
+
+<body>	
+<div class="main">
+	<div class="col-xs-12">
+		<header>
+			<p><a id="openHOME"><img src="img/logo.png"></a></p>
+		</header>
+	</div>
+	<div class="col-xs-12">
+		<div class="search-box">
+				<input id="serachTXT" type="text" name="serach" placeholder="Type Your Keyword">
+				<div id="searchBtn" class="search-icon"><img src="img/search.png"></div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="post-body">
+			<ul id="posts"></ul>
+			<div class="postend" id="postEnd"></div>
+			<div class="load-more" id="postloader"><img src="img/loader.gif"></div>
+			<div id="preloader" class="preloader">
+				<ul>
+					<li><div class="news-box"><div class="img anim-bg"></div><div class="content"><div class="txt-lg anim-bg"></div><div class="txt-sm anim-bg"></div><div class="txt-xs anim-bg"></div></div></div></li><li><div class="news-box"><div class="img anim-bg"></div><div class="content"><div class="txt-lg anim-bg"></div><div class="txt-sm anim-bg"></div><div class="txt-xs anim-bg"></div></div></div></li><li><div class="news-box"><div class="img anim-bg"></div><div class="content"><div class="txt-lg anim-bg"></div><div class="txt-sm anim-bg"></div><div class="txt-xs anim-bg"></div></div></div></li><li><div class="news-box"><div class="img anim-bg"></div><div class="content"><div class="txt-lg anim-bg"></div><div class="txt-sm anim-bg"></div><div class="txt-xs anim-bg"></div></div></div></li>
+				</ul>
+			</div>
+			<div id="notfound" class="notfound">
+				<div class="col-xs-12">
+					<p>I think you're lost!</p>
+					<img src="img/not-found.png">
+				</div>
+				<div class="col-xs-12">
+					<button id="seeLATEST">See Latest</button>
+				</div>
+			</div>
+			<div id="noInternet" class="nointernet">
+				<div class="col-xs-12">
+					<img src="img/no-internet.png">
+					<p>Sorry! No internet connection</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<div class="social-box">
+			<div class="left">
+				<a href="" id="openFB"><img src="img/fb-icon.png"></a><a id="openTW"><img src="img/tw-icon.png"></a><a id="openLI"><img src="img/li-icon.png"></a>
+			</div>
+			<div class="right">
+				<a id="openAPP">Rate this app now!</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-12">
+		<footer>
+			<span>Made for you with </span><img src="img/love-icon.png"><span> by <a id="openSITE">TechGenYZ</a></span>
+		</footer>
+	</div>
+</div>
+</body>
+</html>

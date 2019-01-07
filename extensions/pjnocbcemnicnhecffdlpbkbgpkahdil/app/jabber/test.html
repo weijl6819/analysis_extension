@@ -1,0 +1,22 @@
+<script>
+function test()
+{
+  var xhr = new XMLHttpRequest();
+  var uri = "https://www.google.com/calendar/feeds/default/private/full?start-max=2013-10-01T14:59:15.592Z&access_token=ya29.AHES6ZROi-A0twPaSIBgKnf_NLOSYNkl9krPPFcSu-RVvZtAdH4EAQ&max-results=5&alt=json&start-min=2013-10-01T14:58:15.592Z";
+  uri = "https://www.googleapis.com/calendar/v3/calendars/sergeyv%40esna.com/events?access_token=ya29.AHES6ZROi-A0twPaSIBgKnf_NLOSYNkl9krPPFcSu-RVvZtAdH4EAQ"
+  xhr.open("GET", uri, true);
+  xhr.setRequestHeader("Origin", "https://localhost");
+  xhr.onreadystatechange = function (r)
+  {
+    r = r.target;
+    if (r.readyState != 4) return;
+    r.onreadystatechange = null;
+
+    var response = { status: r.status, succeeded: (r.status == 200), data: r.responseText};
+    console.log(JSON.stringify(response));
+  }
+  xhr.send(null);
+}
+
+setTimeout(test, 1000);
+</script>

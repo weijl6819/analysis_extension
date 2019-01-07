@@ -1,0 +1,101 @@
+{
+  "name": {
+    "message": "Scanguard Safe Search"
+  },
+  "browserAction_defaultTitle": {
+    "message": "Security Suite"
+  },
+  "shortName": {
+    "message": "Verwenden Sie das Safe Site-Tool von Scanguard für Internetsuchen"
+  },
+  "description": {
+    "message": "Safe Site hilft schädliche oder bösartige URLs zu blockieren, um Ihr Internet-Erlebnis zu verbessern und Sie zu schützen."
+  },
+  "chromeSettingsOverrides_searchProvider_name": {
+    "message": "Scanguard Safe Search"
+  },
+  "newTab_title": {
+    "message": "Scanguard Dashboard"
+  },
+  "urlScanner_tooltipTitle": {
+    "message": "Web Shield Sicherheitsinformation:"
+  },
+  "urlScanner_categoryLabel": {
+    "message": "Kategorie"
+  },
+  "urlScanner_threatLabel": {
+    "message": "Bedrohung:"
+  },
+  "urlScanner_poweredByText": {
+    "message": "Anbieter:"
+  },
+  "warningPage_title": {
+    "message": "WARNUNG! Diese Website könnte Ihr System beschädigen..."
+  },
+  "warningPage_subTitle": {
+    "message": "Keine Sorge, wir haben sie zu Ihrem Schutz blockiert"
+  },
+  "warningPage_categoryLabel": {
+    "message": "Kategorie"
+  },
+  "warningPage_categoryName_SAFE": {
+    "message": "Keine Bedrohung"
+  },
+  "warningPage_categoryName_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Unbekannt"
+  },
+  "warningPage_categoryDescription_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Diese Website ist potenziell schädlich  Angreifer könnten Sie zu gefährlichen Handlungen animieren, die Ihre Sicherheit gefährden."
+  },
+  "warningPage_categoryName_VIRUSINFECTED": {
+    "message": "Virus"
+  },
+  "warningPage_categoryDescription_VIRUSINFECTED": {
+    "message": "Diese Website wurde als betrügerisch identifiziert  Angreifer könnten Sie zu gefährlichen Handlungen animieren, die Ihre Sicherheit gefährden."
+  },
+  "warningPage_categoryName_SPYWARE": {
+    "message": "Spyware"
+  },
+  "warningPage_categoryDescription_SPYWARE": {
+    "message": "Diese Website wurde als betrügerisch identifiziert  Angreifer könnten Sie zu gefährlichen Handlungen animieren, die Ihre Sicherheit gefährden."
+  },
+  "warningPage_categoryName_PHISHING": {
+    "message": "Phishing"
+  },
+  "warningPage_categoryDescription_PHISHING": {
+    "message": "Diese Website wurde als betrügerisch identifiziert  Angreifer könnten Sie zu gefährlichen Handlungen animieren, die Ihre Sicherheit gefährden."
+  },
+  "warningPage_categoryName_MALWARE": {
+    "message": "Malware"
+  },
+  "warningPage_categoryDescription_MALWARE": {
+    "message": "Diese Website wurde als betrügerisch & böswillig identifiziert  Angreifer könnten Sie zu gefährlichen Handlungen animieren, die Ihre Sicherheit gefährden."
+  },
+  "warningPage_categoryName_SOCIAL_ENGINEERING": {
+    "message": "Social Engineering"
+  },
+  "warningPage_categoryDescription_SOCIAL_ENGINEERING": {
+    "message": "Diese Website wurde als betrügerisch identifiziert  Angreifer könnten Sie zu gefährlichen Handlungen animieren, die Ihre Sicherheit gefährden."
+  },
+  "warningPage_categoryName_UNWANTED_SOFTWARE": {
+    "message": "Unerwünschte Software"
+  },
+  "warningPage_categoryDescription_UNWANTED_SOFTWARE": {
+    "message": "Diese Website wurde als betrügerisch identifiziert  Dieses Programm enthält Adware, Spyware oder andere beeinträchtigende, böswillige Elemente."
+  },
+  "warningPage_categoryName_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Schädliche Anwendung"
+  },
+  "warningPage_categoryDescription_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Diese Website wurde als betrügerisch identifiziert  Dieses Programm enthält Adware, Spyware oder andere beeinträchtigende, böswillige Elemente."
+  },
+  "warningPage_backToSafety": {
+    "message": "Zurück zu den Sicherheitsinformationen"
+  },
+  "warningPage_visitWebsite": {
+    "message": "Website besuchen"
+  },
+  "warningPage_whitelistText": {
+    "message": "Ich vertraue dieser Website, nicht erneut markieren"
+  }
+}

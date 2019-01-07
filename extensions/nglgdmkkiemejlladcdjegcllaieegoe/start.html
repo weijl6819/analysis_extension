@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+// Restores select box state to saved value from localStorage.
+function restore_options() {
+  var favorite = localStorage["new_tab"];
+  if (!favorite) {
+    return;
+  }
+  var select = document.getElementById("tab");
+  for (var i = 0; i < select.children.length; i++) {
+    var child = select.children[i];
+    if (child.value == favorite) {
+      child.selected = "true";
+      break;
+    }
+  }
+}
+
+</script>
+
+<script type="text/javascript">
+
+window.open ("start.html", "new");
+
+</script>

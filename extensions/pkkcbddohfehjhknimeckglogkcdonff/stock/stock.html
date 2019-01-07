@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>股票资讯</title>
+    <link rel="stylesheet" type="text/css" href="css/stock.css">
+    <style type="text/css">
+        body{
+            width:420px;
+            height:580px;
+            margin:0;
+            padding:0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--searchInput-->
+    <div class="mod_search hide">
+        <div class="tipWarning">
+            *最多添加30条股票信息
+        </div>
+        <div class="borders"></div>
+        <div class="inputF">
+            <input id="stock" data-keyup="fetchData" autocomplete="off" class="inputSe" type="search" placeholder="请输入公司名称或股票代码" />
+        </div><a class="btn_cancel" href="javascript:;">取消</a>
+    </div>
+    <!--searchInput-->
+    <!-- Stock Toolbar start -->
+    <div class="mod_toolbar">
+        <h3 class="title">股票行情助手</h3>
+        <span class="info hide">信息已满，请在编辑删除后重试</span>
+        <span class="edit"></span>
+        <span class="add"></span>
+        <a class="btn_cancel hide" href="javascript:;">完成</a>
+    </div>
+    <!-- Stock Toolbar end -->
+    <!-- Stock Category start -->
+    <div class="mod_stock_category clearfix border_shadow">
+        <ul class="stockL"></ul>
+    </div>
+    <!-- Stock Category end -->
+    <!-- Choose their own stocks start -->
+    <div class="mod_stock_self clearfix border_shadow">
+        <div id="stock_list" class="stock_list clearfix btnListHide">
+            <u></u>
+        </div>
+        <div class="noCount">
+            <p>您还没有关注的股票
+                <br>快点击右上角的“+”来添加您的第一支股票吧</p>
+        </div>
+    </div>
+    <!-- Choose their own stocks end -->
+    <!-- Stock Details start -->
+    <div class="mod_stock_detail hide clearfix">
+    </div>
+    <!-- Stock Details end -->
+    <div class="mod_copyRight clearfix">
+        Copyright&nbsp;@&nbsp;2015&nbsp;&nbsp;24money.com
+        <a class="guan" target="_blank" href="http://www.24money.com"></i>
+    </div>
+    <input type="hidden" id="stockId" value="" />
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="../js/json2.js"></script>
+    <!--<script type="text/javascript" src="js/kendo.all.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+
+    <script type="text/javascript" src="js/searchStock.js"></script>
+    <script type="text/javascript" src="js/store.js"></script>
+    <script type="text/javascript" src="js/stock.js"></script>
+
+    <!--<script type="text/javascript" src="js/stock.min.js"></script>-->
+</body>
+
+</html>

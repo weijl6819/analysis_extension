@@ -1,0 +1,75 @@
+<!-- Felt Temperature - a Chrome extension -->
+<!-- Version: 1.1.9 -->
+<!-- Changes: Update broken wikipedia links -->
+<!-- Author: Jase Ma <tszyeungma@gmail.com> -->
+
+<html>
+<head><title>Options for Felt Temperature</title>
+
+</head>
+
+<body>
+<h1><img alt="Felt Temperature" src="icons/thermo48.png">Felt Temperature 
+- a Google Chrome extension</h1>
+
+<br>
+<h2>Options:</h2>
+<p>Temperature scale:
+<select id="temperatureScale">
+	<option value="c">°C - Celsius</option>
+	<option value="f">°F - Fahrenheit</option>
+</select>
+<button id="saveButton">Save</button>
+<script type="text/javascript" src="option_script.js"></script>
+</p>
+
+<br>
+<h2>What is felt temperature?</h2>
+<p>Felt temperature is the temperature you perceived outdoor. It is different from 
+simple air temperature because the effect of relative humidity and wind speed are
+considered.</p>
+<p>In humid conditions, the air feels hotter than it actually is, because of the 
+reduction of perspiration.</p>
+<p>In windy conditions, the air feels cooler than it actually is, because of 
+increased perspiration.</p>
+
+<br>
+<h2>How is felt temperature derived?</h2>
+<p>This extension calculate felt temperature based on the following references:</p>
+<ul>
+	<li> <a href="http://en.wikipedia.org/wiki/Heat_index"> Heat index (Wikipedia)</a></li>
+	<li> <a href="http://en.wikipedia.org/wiki/Wind_chill#North_American_and_United_Kingdom_wind_chill_index"> North American wind chill index (Wikipedia)</a>
+	<li> If neither the criteria of heat index nor of wind chill index are satisified 
+	by the parameters, plain air temperature is displayed.</li>
+</ul>
+
+<br>
+<h2>About this extension:</h2>
+<p>Developer: Jase Ma (Hong Kong)</p>
+<ul>
+    <li>Version 1.1.9 (current) - Update broken wikipedia links.</li>
+	<li>Version 1.1.8 - Minor bug fixes</li>
+	<li>Version 1.1.7 - Fix the broken logo image of Weather Underground in option page</li>
+	<li>Version 1.1.6 - Code changes to comply with the Content Security Policy</li>
+</ul>
+<p>Web site: <a href="https://chrome.google.com/webstore/detail/
+njbpchmhbkanmmcagihfehbemkffcobb">chrome web store</a></p>
+
+<br>
+<h2>Credit:</h2>
+<p>Weather data provided by:
+  <br>
+  <a href="http://www.wunderground.com/">
+    <img src="http://icons.wxug.com/logos/images/wundergroundLogo_4c.jpg" alt="Weather Underground" width="225" height="135">
+  </a>
+</p>
+
+<br>
+<h2>Disclaimer:</h2>
+<p>
+The "felt temperature" is computed with extension developer's proprietary 
+implementation, which may be unreliable. For reliable readings, please refer to your
+local observatory.
+</p>
+</body>
+</html>

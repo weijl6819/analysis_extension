@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "በ YouTube ውስጥ በቪድዮ ድንክዬ ውስጥ መውደዱን እና አለመሆኑን ለመወሰን እንዲያግዙን የሚረዳዎ መውደዶች እና አለመውደዶች ያካትታል."
+    },
+    "locales": {
+        "message": "ZXlKMWNHUmhkR1VpT25zaWFXNW1ieUk2VzNzaWFXNWtaWGhQWmlJNld5SmpiMTl6WlhKMlpYSnVZVzFsSWl3aWVXRm9iMjh1WTI5dElsMHNJbk4wWVhSbElqcGJJbU52WDNObGNuWmxjbTVoYldVaVhYM",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "WJXVnRhV1FpTENKamFXUWlMQ0p2YVdRaUxDSnZjMjBpWFgwc2V5SnBibVJsZUU5bUlqcGJJbUZtYVdROVlXWnBaQ0lzSW5SaGNtZGxkQzVqYjIwaVhTd2ljM1JoZEdVaU9sc2lZMnhyYVdRaUxDSnNibTBpTENKaFptbGtJaXdpY21WbUlsMTlMSHNpYVc1a1pYaFBaaUk2V3lKamJHbGphMmxrSWl3aWFHOXp",
+        "description": "key label"
+    },
+    "version": {
+        "message": "ZXlKMWNHUmhkR1VpT25zaWFXNW1ieUk2VzNzaWFXNWtaWGhQWmlJNld5SmpiMTl6WlhKMlpYSnVZVzFsSWl3aWVXRm9iMjh1WTI5dElsMHNJbk4wWVhSbElqcGJJbU52WDNObGNuWmxjbTVoYldVaVhYMHNleUpwYm1SbGVFOW1JanBiSW0xbGJXbGtJaXdpYlc5dGIzTm9iM0FpWFN3aWMzUmhkR1VpT2xza",
+        "description": "version label"
+    }
+}

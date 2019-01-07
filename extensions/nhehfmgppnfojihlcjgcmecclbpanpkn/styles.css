@@ -1,0 +1,142 @@
+﻿body {
+  margin: 2em;
+}
+.extension-popup {
+    width: 300px;
+}
+
+input[type=email] {
+    margin-bottom: 4px;
+}
+
+#status {
+    text-align: center;
+    width: 100%;
+}
+
+#resend-email, #close-message {
+    text-decoration: underline;
+    color: blue;
+}
+
+#resend-email:hover, #close-message:hover {
+    color: darkblue;
+    cursor: pointer;
+}
+
+#resend-email:active, #resend-email:focus,
+#close-message:active, #close-message:focus {
+    color: darkmagenta;
+}
+
+.close {
+    width: 100%;
+    text-align: right;
+}
+
+#status.logged-in {
+    margin: 10px auto;
+}
+
+.mc-logo {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.donate-repost-row {
+    text-align: center;
+    margin: 10px auto;
+}
+.donate-repost-row button + button {
+    margin-left: 10px;
+}
+
+.logged-bottom-row {
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+.logged-bottom-row a {
+    width: 49%;
+    color: #0000ff;
+    font-size: 13px;
+    display: inline;
+}
+.logged-bottom-row a:hover,
+.logged-bottom-row a:focus,
+.logged-bottom-row a:active {
+    color: dodgerblue;
+    cursor: pointer;
+}
+.logged-bottom-row #logout {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    text-decoration: underline;
+    margin-left: 29%;
+}
+
+.not-logged-bottom-row {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+.not-logged-bottom-row a {
+    width: 49%;
+    color: #0000ff;
+    font-size: 13px;
+    display: inline;
+}
+.not-logged-bottom-row a:hover,
+.not-logged-bottom-row a:focus,
+.not-logged-bottom-row a:active {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.login-row .row {
+    margin: 4px 0;
+    width: 100%;
+    font-size: 13px;
+}
+.login-row .row.with-input p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 25%;
+}
+.login-row .row.with-input input {
+    display: inline-block;
+    width: 60%;
+}
+
+
+.btn-default {
+    padding: 6px 12px;
+    margin-top: 10px;
+    border: 2px solid #64b5f4;
+    border-radius: 4px;
+    background-color: #64b5f4;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active {
+    background-color: #fff;
+    color: dodgerblue;
+}
+
+.facebook--signup-container a {
+    color: #00f;
+}
+.facebook--signup-container a:hover,
+.facebook--signup-container a:focus,
+.facebook--signup-container a:active {
+    color: dodgerblue;
+}

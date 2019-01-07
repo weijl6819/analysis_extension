@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "亮",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "亮灯的是一个简单但很容易上瘾的益智游戏。连接管辉光流匹配的颜色。",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

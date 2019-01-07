@@ -1,0 +1,44 @@
+* {
+	font-family: Segoe UI, Segoe, Verdana;
+}
+
+body {
+	margin: 3em;
+}
+
+h2 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-family: Segoe UI Light, Segoe, Verdana;
+}
+
+input#new-cmd-trigger {
+	width: 6em;
+}
+input#new-cmd-exec {
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+	border-bottom: black solid 1px;
+}
+
+thead:after {
+    line-height:0.25em;
+    content:"-";
+    color:white; /* to hide text */
+    display:block;
+}
+
+td {
+	padding-right: 0.5em;
+}
+
+td.cmd-exec{
+	width: 35em;
+}

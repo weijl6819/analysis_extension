@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="/lib/chosen/chosen.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css/common.css" type="text/css">
+    <link rel="stylesheet" href="/css/options.css" type="text/css">
+  </head>
+  <body>
+  <script id="options-tpl" type="text/template">
+    <div class="container">
+
+      <div class="header">
+        <img src="/img/logo_text.png" class="logo-text"/>
+      </div>
+      <a class="btn blue pull-right" id="logout-btn">{{#loc}}_sign_out{{/loc}}</a>
+      <h3>{{#loc}}_extension_settings{{/loc}}</h3>
+
+      <div class="modules">
+        <div class="module-left"  id="account">
+          <form class="form-signin" id="loginForm" name="login" role="form">
+            <h4>{{#loc}}_account{{/loc}}</h4>
+            <hr>
+            <div class="">
+                <div class="form-group">
+                  <label class="current-user"></label>
+                </div>
+                <div class="form-group">
+                  <div class="input-icon" id="loginDiv">
+                    <i class="fa fa-user"></i>
+                      <input id="login" class="form-control" type="email" autocomplete="off" placeholder="{{#loc}}_email{{/loc}}" name="email" required autofocus/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-icon" id="passwordDiv">
+                      <i class="fa fa-lock"></i>
+                      <input id="password" class="form-control" type="password" autocomplete="off" placeholder="{{#loc}}_password{{/loc}}" name="password" />
+                  </div>
+                </div>
+            </div>
+            <div>
+              <button class="btn green pull-right" id="email-check-btn">{{#loc}}_sign_in{{/loc}}</button>
+              <button class="btn green pull-right" id="login-btn" type="submit" disabled>{{#loc}}_sign_in{{/loc}}</button>
+            </div>
+          </form>
+        </div> <!-- module -->
+
+
+        <div class="module-right" id="preferences">
+          <h4>{{#loc}}_preferences{{/loc}}</h4>
+          <hr>
+          <div>
+            <label>{{#loc}}_default_dialing{{/loc}}</label><div id="select-box">
+              <select>
+                <option value="" disabled selected>{{#loc}}_select_header{{/loc}}</option>
+              </select>
+            </div>
+
+            <label>{{#loc}}_customize_header{{/loc}}</label>
+            <textarea id="defaultInvitation" placeholder="{{#loc}}_customize_placeholder{{/loc}}"></textarea>
+            </div>
+        </div> <!-- module -->
+      </div> <!-- modules -->
+
+      <div class="footer"></div>
+    </div><!-- container -->
+    <div class="container">
+      <div class="spacer"></div>
+      <div>
+        <a class="btn green pull-right" id="save">{{#loc}}_save{{/loc}}</a>
+        <a class="btn grey pull-right" id="cancel">{{#loc}}_cancel{{/loc}}</a>
+      </div>
+      <div class="spacer"></div>
+      <div id="status"></div>
+      <div id="loader">
+        <img src="/img/loader.gif">
+      </div>
+    </div>
+
+    </script>
+  </body>
+
+  <script src="/lib/jquery-3.2.1.min.js"></script>
+  <script src="/lib/chosen/chosen.jquery.min.js"></script>
+  <script src="/lib/mustache-0.8.1.min.js"></script>
+  <script src="/js/HtmlHelpers.js"></script>
+  <script src="/js/options.js"></script>
+
+</html>

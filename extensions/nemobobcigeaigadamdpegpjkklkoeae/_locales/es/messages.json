@@ -1,0 +1,36 @@
+{
+        "extName": {
+        "message": "Web of Science - Búsqueda básica"
+        },
+		"extDesc": {
+        "message": "Realiza una búsqueda de temas en contra de la Web of Science."
+		},
+		"searchOptionSpan":{
+		"message":"<p class='optionsSubHead'>Seleccionar una base de datos</p><p class='optionsBlurb'>La Web of Science - Extensión de búsqueda rápida realiza una búsqueda de temas en <em>Todas las bases de datos</em> (todas las bases de datos de Web of Science a las que se suscribe), o puede seleccionar para ejecutar sólo en la colección principal de <em>Web of Science</em></p>"
+		},
+		"allDBNote":{
+		"message":"<p><em>Tenga en cuenta que debe suscribirse a Web of Science para que esta herramienta de búsqueda funcione.</em></p>"
+		},
+		"footerSearch": {
+        "message": "Buscar"
+        },
+		"resetButton": {
+        "message": "Reiniciar"
+        },
+		"optionMSG": {
+        "message": "Ajustes"
+        },
+		"wosALLDB": {
+        "message": "Todas las bases de datos"
+        },
+		"wosCC": {
+        "message": "Colección principal de <strong>Web of Science</strong>"
+        },
+		"placeHolder": {
+        "message": "Ingresa un tema para buscar"
+        },
+		"contextLabel": {
+        "message": "Buscar Web of Science"
+        }
+
+}

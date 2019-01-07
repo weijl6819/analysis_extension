@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link href='https://fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../css/views.css">
+    <title>Register</title>
+    <script src="../../js/ext/jquery-1.11.3.min.js"></script>
+    <script src="../../js/cni-auth.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/register.js"></script>
+</head>
+<body>
+<div class="d-logo">
+    <img src="../../img/logo_icon_and_title.svg" align="middle"/>
+</div>
+<div class="d-register-form">
+    <form id="f-register" class="f-form">
+        <fieldset>
+            <div id="d-message" class="d-message"></div>
+            <div class="d-form-field">
+                <input id="i-login" class="i-form-field" name="email" type="text"
+                       placeholder="email"
+                       required
+                       autofocus>
+            </div>
+            <div class="d-form-field">
+                <input id="i-password" class="i-form-field" name="password" type="password"
+                       placeholder="password"
+                       required
+                       autofocus>
+            </div>
+            <div class="d-form-field">
+                <input id="i-re-password" class="i-form-field" name="retypePassword" type="password"
+                       placeholder="retype password" required
+                       autofocus>
+            </div>
+            <div class="d-form-field">
+                <button id="b-register" class="b-submit" type=submit>REGISTER</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

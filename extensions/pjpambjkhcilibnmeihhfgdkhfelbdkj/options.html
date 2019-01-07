@@ -1,0 +1,28 @@
+﻿<html>
+    <head>
+        <title data-message="optHeader">Contacts options</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="options.css"/>
+        <script src="options.js"></script>
+    </head>
+<body>
+<div class="main-container">
+<img alt="Contacts icon" src="imgs/icon_48.png" width="42" height="42" style="float: left">
+<header data-message="optHeader">Contacts options</header>
+<h1 data-message="optDesc">Enter size values for the popup window</h1>
+
+<table style="margin-bottom:-10px;">
+     <tr>
+         <td><p data-message="optWidth">Width</p></td>
+         <td><input type="number" name="text1" id="wth" value=""/></td>
+         <td><p data-message="optHeight">Height</p></td>
+         <td><input type="number" name="text2" id="hht" value=""/></td>
+         <td><button data-message="optSave" id="save">Save</button></td>
+         <td><div id="status"></div></td>
+    </tr>
+</table>
+
+<h2>Example: 1060 x 700 for a 1280 x 1024 screen resolution.<br>Your current  resolution is: <input type="text" id="scrRes" style="border: none;"></h2>
+<h2>You can also use the keyboard shortcut command <b>Alt + C</b> to quickly open the popup. Make sure this key combination doesn’t conflict with any other installed extension. You can check this and create a different one at:  <i>chrome://extensions/shortcuts</i></h2>
+</body>
+</html>

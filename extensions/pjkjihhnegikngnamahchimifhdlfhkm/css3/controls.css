@@ -1,0 +1,2142 @@
+﻿option 
+{
+  padding: 0px;
+}
+
+.splash
+{
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.splash.hidden
+{
+  display: none;
+}
+.splash .phoneOnly {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: solid 1px lightgray;
+}
+.splash > .flex, .connection > .flex
+{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  max-height: 600px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px #eaeaea;
+}
+.splash .progress
+{
+  text-align: center;
+}
+h1
+{
+  font-size:      11pt;
+  color:          #333333;
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  font-family:    'sans600';
+}
+.auth label, .card.connection .cardBox > label
+{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom:  0.5em;
+}
+.splash h1, .connection h1, .install h1 
+{
+  display: flex;
+  flex-direction: column;
+  -align-items: center;
+
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 4pt;
+  border-bottom: solid 1px #eaeaea;
+  padding: 1em 0;
+  text-align: center;
+}
+.splash h1:before, .connection h1:before, .install h1:before
+{
+  display: block;
+  height: 128px;
+  width: 100%;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: 128px 128px;
+  background-position: center center;
+  margin-bottom: 4px;
+}
+.ILINKPRO .splash h1:before, .ILINKPRO .connection h1:before
+{
+  background-image: url('../img/ilink/128.png');
+}
+.JABBER .splash h1:before, .JABBER .connection h1:before, .JABBER .install h1:before
+{
+  background-image: url('../img/jabber/128.png');
+}
+.OFFICE2600 .splash h1:before, .OFFICE2600 .connection h1:before, .OFFICE2600 .install h1:before
+{
+  background-image: url('../img/office2600/128.png');
+}
+.AVAYA .splash h1:before, .AVAYA .connection h1:before, .AVAYA .install h1:before
+{
+  background-image: url('../img/avaya/128.png');
+}
+
+.splash .view
+{
+  height:         100%;
+  width:          100%;
+  box-sizing:     border-box;
+  overflow-y:     auto;
+  padding:        1em;
+}
+.splash .view > .auth > div
+{
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  padding:        4px;
+}
+
+.splash img
+{
+  box-sizing: border-box;
+  padding: 10px;
+  background-image: url('../img/jabber/32.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.ILINKPRO .splash img 
+{
+  background-image: url('../img/ilink/32.png');
+}
+.AVAYA .splash img 
+{
+  background-image: url('../img/avaya/32.png');
+}
+
+fieldset
+{
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+fieldset > div
+{
+  display:  flex;
+  flex-wrap:wrap;
+  padding-top: 8px;
+}
+
+.card.connection
+{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card.connection .cardBox
+{
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-bottom: solid 1px #ccc;
+  padding: 1em;
+  box-sizing: border-box;
+  outline: none;
+}
+.card.connection input[type='text'], .card.connection input[type='password'], .card.connection select
+{
+  padding: 8px 0px;
+  padding-left: 0.75em;
+}
+.card.connection select
+{
+  padding-left: 0.5em;
+}
+
+.card.connection.hidden
+{
+  display: none;
+}
+.card.connection .action
+{
+  display: flex;
+  padding:  4px;
+}
+.card.connection .action > div:first-of-type
+{
+  flex: 1;
+}
+.card.connection .action button
+{
+  background-color: #73d0e6;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.5em 1em;
+  letter-spacing: 1pt;
+  cursor:       pointer;
+}
+.card.connection .action button:hover, .card.connection .action button:focus
+{
+  background-color: #73D0E6;
+}
+
+select
+{
+  width:        100%;
+  box-sizing:   border-box;
+  padding:      0;
+  margin:       0;
+  border:       solid 1px transparent;
+  outline:      none;
+}
+
+
+input[type='checkbox']
+{
+  width: auto;
+  margin: 0;
+}
+
+fieldset > div > div
+{
+  display: inline-flex;
+  width: 100%;
+}
+
+fieldset label
+{
+  text-overflow:ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  flex: 1;
+
+  font-size: 11pt;
+  color: #333333;
+  display: inline-block;
+}
+fieldset label.check
+{
+  order: 1;
+  flex:       1 80%;
+}
+fieldset label.check ~ input
+{
+  order:      0;
+  align-self: center;
+  position:   relative;
+  margin-right: 4px;
+}
+fieldset label.check ~ a
+{
+  order:      2;
+}
+
+fieldset label.check ~ input:before
+{
+  content: '';
+  position: absolute;
+  top:      0;
+  left:     0;
+  right:    0;
+  bottom:   0;
+  border:   solid 2px #73D0E6;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: white;
+}
+fieldset label.check ~ input:checked:after
+{
+  content: '';
+  position: absolute;
+  top:      0px;
+  left:     0px;
+  right:    0px;
+  bottom:   0px;
+  border:   solid 3px transparent;
+  background: #73D0E6;
+  background-clip: content-box;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+fieldset label
+{
+  
+}
+fieldset label ~ a
+{
+  align-self: center;
+}
+fieldset label ~ a:before
+{
+  font-family:            'symtiny';
+  content:                '\e64d'
+}
+
+.action a
+{
+  display: inline-block;
+  width: 100%;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.action a:hover, .action a:focus, .card.connection .action button:focus, .progress a:focus
+{
+  color: #FFBB00;
+}
+
+.people .icon
+{
+  display: none;
+}
+.people .chat .iMore
+{
+  display: inline-flex;
+}
+.calls .iMore
+{
+  display: inline-flex;
+}
+.search .icon.iMore
+{
+  display: inline-flex;
+}
+.people .dial .iCall
+{
+  display: inline-flex;
+}
+.people .add .iPlus
+{
+  display: inline-flex;
+}
+.people .delete .iDelete
+{
+  display: inline-flex;
+}
+
+.list li.group
+{
+  flex-direction: column;
+}
+.list li.group .list
+{
+  overflow: visible;
+  white-space: normal;
+}
+li.group.pin > a
+{
+  display: none;
+}
+
+.people
+{
+  -display: flex;
+  flex-direction: column;
+}
+.people > li.group
+{
+  flex: 1 0 auto;
+}
+.people > li.group > a
+{
+  display: none;
+}
+.people > li.group > a ~ .list
+{
+  display: none;
+}
+.people[mode='all'] > li.group > a[jsc_id='$$$'] ~ .list
+{
+  display: block;
+}
+.people[mode='fav'] > li.group
+{
+  display: none!important;
+}
+.people[mode='fav'] > li.group.pin
+{
+  display: block!important;
+}
+.people[mode='fav'] > li.group > a[jsc_id='$'] ~ .list
+{
+  display: flex;
+  flex-direction: column;
+}
+.people[mode='groups'] > li.group > a ~ .list
+{
+  display: block;
+  padding-bottom: 4px;
+}
+.people[mode='groups'] > li.group > a
+{
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+.people[mode='groups'] > li.group > a[jsc_id='$$$']
+{
+  display: none;
+}
+.people[mode='groups'] > li.group > a[jsc_id='$$$'] + .list
+{
+  display: none;
+}
+.people[mode='groups'] > li.group
+{
+  display: none;
+}
+.people[view='groups'] > li.group.groups
+{
+  display: inline-flex;
+}
+.people[view='relations'] > li.group.relations
+{
+  display: inline-flex;
+}
+
+/*
+.people[mode='fav'] > li.group > a ~ *
+{
+  display: none;
+}
+.people[mode='fav'] > li.group > a[jsc_id='$'] + *
+{
+  display: block;
+}
+.people[mode='groups'] > li.group > a[jsc_id='$$$'] + *
+{
+  display: none;
+}
+.people[mode='groups'] > li.group > a[jsc_id='$'] + *
+{
+  display: none;
+}
+*/
+
+
+.list.chat
+{
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+.list > li.hidden
+{
+  display: none;
+}
+.icons > li.group
+{
+  display: none;
+}
+.list.icons 
+{
+  display: flex;
+  flex-direction: column;
+}
+.list.actions
+{
+  display:          flex;
+  flex-wrap:        wrap;
+  justify-content:  center;
+  flex-direction:   row;
+}
+.list.actions.call {
+  flex: 0 0 auto;
+}
+.list.actions > li
+{
+  padding: 1px;
+  width: 33.33%;
+  background-color: transparent;
+}
+.list.actions.call li
+{
+  -width: 25%;
+  width: 20%;
+}
+.list.actions > li > a
+{
+  background-color: white;
+}
+
+.tabs > *
+{
+  white-space:      nowrap;  
+  text-overflow:    ellipsis;
+  overflow:         hidden;
+}
+.tabs > .hidden 
+{
+  display:          none;
+}
+
+.list.call li
+{
+  background-color: transparent;
+  padding: 1px;
+  margin: 0;
+}
+
+.list.call li.separator
+{
+  width:            100%;
+  background-color: transparent;
+  padding:          0;
+  height:           auto;
+  min-height:       0;
+}
+.list.call li.separator ~ li
+{
+  width: 50%;
+  background-color: transparent;
+  padding: 4px;
+  margin: 0;
+}
+.list.call li.separator ~ li > a
+{
+  flex-direction: row;
+  align-items: center;
+  justify-content: inherit;
+  font-size: initial;
+  color: white;
+  border-radius:    4px;
+  background-color: #f15234;
+}
+.list.call li.separator ~ li > a > *
+{
+  font-size: inherit;
+}
+.list.call li.separator ~ li > a > *, .list.call li.separator ~ li > a:before
+{
+  color: white;
+  text-align: left;
+}
+
+.callInfo
+{
+  background-color: white;
+  flex: 0 0 auto;
+  padding: 4px;
+  margin: 0 0px;
+}
+.callInfo > *
+{
+  color:     #333333;
+  flex: 0 0;
+}
+.callInfo > * ~ *
+{
+  font-size: 10pt;
+}
+
+.list .status
+{
+}
+.list .status > *
+{
+  display: inline-flex;
+  align-items: center;
+  padding: 4px;
+}
+.list .status > *:before
+{
+  font-family: 'symthin';
+  font-size: 40pt;
+  margin-right: 4px;
+}
+.list .status > * > *
+{
+  display: inline-flex;
+  align-items: center;
+}
+
+.list.search .title
+{
+  -font-size: inherit;
+  -font-weight: inherit;
+  -text-align: center;
+  -letter-spacing: inherit;
+  -justify-content: center;
+  -border-bottom: solid 1px #EAEAEA;
+}
+
+.list.search li.iCall > a > i:before {
+  content: '\e608';
+  font-family: 'symthin';
+  font-size: 24pt;
+}
+
+li.input
+{
+  flex-direction: column;
+}
+
+li.input > div
+{
+  width: 100%;
+}
+
+.list.keypad > li.iClear, .list.keypad > li.iDial
+{
+  width: 50%;
+}
+.list.keypad > li.iClear > a, .list.keypad > li.iDial > a
+{
+  flex-direction: row;
+  font-size: initial;
+}
+.list.keypad > li.iClear > a:before, .list.keypad > li.iDial > a:before, .list.keypad > li.iClear > a:after, .list.keypad > li.iDial > a:after
+{
+  font-family: symthin;
+  font-size: 20pt;
+}
+/*.list.keypad > li.iClear > a:after, .list.keypad > li.iDial > a:after
+{
+  content: '\e623';
+  color: transparent;
+}
+*/
+.list.keypad > li.iClear > a > div, .list.keypad > li.iDial > a > div
+{
+  text-align: left;
+}
+
+.list.keypad > li
+{
+  padding: 1px;
+  background-color: transparent;
+}
+.list.keypad > li > a
+{
+  background-color: white;
+}
+
+.dialtext
+{
+  padding: 0 1px;
+  padding-bottom: 1px;
+  position: relative;
+}
+.dialtext > div
+{
+  position: relative;
+  background-color: white;
+  height: 3em;
+  border-bottom: solid 2px transparent;
+}
+.dialtext > input:focus ~ div {
+  border-bottom: solid 2px orange;
+}
+.dialtext label
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid 1px transparent;
+  box-sizing: border-box;
+  padding: 0 32pt;
+  padding-top: 10pt;
+  font-size: 9pt;
+  -opacity: 0.5
+}
+.dialtext input
+{
+  opacity: 0;
+  height: 100%;
+  text-indent: -100em;
+  position: absolute;
+}
+
+.dialtext .DPE
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30pt;
+}
+.dialtext .ActDel
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30pt;
+}
+
+.dialtext a
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dialtext a.hidden
+{
+  display: none;
+}
+.dialtext a:before
+{
+  font-family: symthin;
+  font-size: 20pt;
+}
+.dialtext .DPE:before
+{
+  content: '\e611';
+}
+.dialtext .ActDel:before
+{
+  content: '\e605';
+}
+.dialtext a:focus
+{
+  color: orange;
+}
+
+.DPE > label
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 8pt;
+  left: auto;
+  padding: 0;
+}
+
+label.Phone
+{
+  -font-weight: bold;
+  color: #333333;
+  -font-size: 14pt;
+}
+
+.list.keypad.hidden
+{
+  display: none;
+}
+.keypad .list.icons
+{
+  padding: 1px;
+}
+
+.dialtext a.results:before
+{
+  content: '\e625';
+}
+.dialtext a.results > label
+{
+  display: none;
+}
+
+.list.icons.large
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.list.icons.large > li
+{
+  width: 33.33%;
+  height: 6em;
+  max-width: 7em;
+  background-color: transparent;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.list.icons.large > li > a
+{
+  display: flex;
+  -flex-direction: column;
+  font-size: 10pt;
+  background-color: white;
+  -justify-content: space-around;
+  -position: relative;
+  -align-items: initial;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.list.icons.large > li > a > span
+{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.list.icons.large > li > a:before
+{
+  font-size: 32pt;
+  -border: solid 1px rgba(0, 0, 0, 0);
+  -background-color: #73D0E6;
+  -border-radius: 50%;
+  width: 48pt;
+  height: 48pt;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  color: #73D0E6;
+}
+.list.icons.large > li > a:hover:before, .list.icons.large > li > a:focus:before
+{
+  color: #FFBB00;
+}
+
+.list.icons.large > li > a:after
+{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  margin: 0;
+  background-color: #EE4A2A!important;
+}
+
+.list.activity
+{
+  padding: 4px 0 0 0;
+  box-sizing: border-box;
+}
+
+.view.noflex
+{
+  display: block;
+}
+
+.chats *[jsc_id].icon > a > i:before
+{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24pt;
+  font-family: 'symthin';
+}
+.chats *[jsc_id].icon.iDial > a > i:before
+{
+  content: '\e608';
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input.input2
+{
+  height: auto;
+  -display: inline-block!important;
+  -justify-content:center;
+  min-height: initial;
+}
+
+li.group
+{
+  background-color: #F7F7F7;
+  -margin-bottom: 2px;
+}
+
+li.group > a:before/*, li.Group > a:before*/
+{
+  font-family: symthin;
+  font-size: 40pt;
+  content: '\e620'!important;
+  margin-right: 4px;
+  flex: 0 0 auto!important;
+}
+li.Group > a > i:before
+{
+  font-family: symthin;
+  font-size: 32pt;
+  content: '\e620';
+}
+
+li.group.collapsed > a:before
+{
+  -content: '\e636';
+}
+.people[mode='groups'] > li.group.collapsed > .list
+{
+  display: none;
+}
+li.group.iPlus > a:before 
+{
+  content: '\e602'!important;
+}
+
+li.group > a > button
+{
+  border: none;
+  background: none;
+  padding: 0;
+  flex: 0 0 auto;
+  color: #73D0E6;
+}
+li.group > a > button:hover, li.group > a > button:focus
+{
+  color: #fb0;
+}
+li.group > a > button:before
+{
+  font-family: symthin;
+  font-size: 24pt;
+  content: '\e60d';
+  padding: 0;
+}
+.list.hidden
+{ 
+  display: none;
+}
+
+.tabs
+{
+  padding: 0px 2px 0px 2px;
+  box-sizing: border-box;
+  -background-color: #F7F7F7;
+  -border-bottom: solid 2px #73D0E6;
+}
+
+.list.icons
+{
+  -padding: 2px;
+}
+
+
+/* popup */
+.popup
+{
+  position: absolute;
+  top:      0;
+  left:     0;
+  width:    100%;
+  height:   100%;
+  z-index:  10;
+}
+.popup > .bkg
+{
+  position: absolute;
+  top:      0;
+  left:     0;
+  bottom:   0;
+  right:    0;
+  background-color: #909090;
+  opacity:  0.75;
+}
+.popup > .wrap, .popup > .menu
+{
+  position:   relative;
+  width:      100%;
+  height:     100%;
+  box-sizing: border-box;
+  display:    flex;
+  align-items: center;
+  justify-content: center;
+  z-index:    20;
+}
+.popup > .wrap
+{
+  padding:    2em 1em;
+}
+.popup > .menu
+{
+  padding-right: 40pt;
+}
+.popup > .wrap > .card, .popup > .menu > .card
+{
+  width:      100%;
+  border:     solid 1px #EAEAEA;
+  background-color: #F7F7F7;
+  display:    flex;
+  flex-direction: column;
+  flex:       1;
+  z-index:    30;
+}
+.popup > .wrap > .card
+{
+  height:     80%;
+}
+.popup > .wrap > .card.auto
+{
+  height:     auto;
+}
+.popup > .menu > .card
+{
+  height:     100%;
+}
+
+/* header */
+.head
+{
+  display:          flex;
+  background-color: white;
+  min-height:       48pt;
+}
+.head.back {
+  flex:             0 0 50pt;
+}
+.head.hidden
+{
+  display: none;
+}
+.head.top
+{
+  background-color: #F7F7F7;
+  min-height:       40pt;
+  overflow:         hidden;
+}
+.popup .head
+{
+  background-color: #EAEAEA;
+}
+.head > *
+{
+  flex:         0 0 auto;
+  align-items:  center;
+  display:      inline-flex;
+  justify-content: center;
+}
+.head > .main
+{
+  flex:         1 1;
+  overflow:     hidden;
+}
+.head > .main > a
+{
+  flex:         1 1 100%;
+  justify-content:  flex-start;
+}
+.back > .main > a 
+{
+  flex:         0;
+}
+.back > .main > div
+{
+  flex:           1 1;
+  padding-left:   4px;
+  padding-right:  4px;
+  box-sizing:     border-box;
+  overflow:       hidden;
+}
+
+.head.back a 
+{
+  height:       50pt;
+}
+.head a
+{
+  flex:             0 0 auto;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  height:           40pt;
+  min-width:        40pt;
+}
+
+.head a:not([href])
+{
+  color:        #333333;
+  cursor:       default;
+}
+.head a:before
+{
+  flex:         0 0 auto;
+  font-family:  symthin;
+  font-size:    24pt;
+  color:        #73D0E6;
+}
+.head a > i:before 
+{
+  font-family:  symthin;
+}
+
+.head a > *
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.head a > * > *, .head > .main > div > div, .head > .main > div > div > div
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.head .spot
+{
+  visibility:   hidden;
+}
+.head.top .spot
+{
+  display:      none;
+}
+
+/*!!*/
+.-head *[jsc_id] a:before
+{
+  content: '\e631';
+  border-radius:  50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: transparent;
+  font-size:  32pt;
+}
+
+.people[mode='groups'] li.group > a ~ .list
+{
+  display: none;
+}
+
+
+.view.party
+{
+  flex: 1 1 auto;
+}
+.view.party .main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.view.party .main ~ *
+{
+  text-align: center;
+  -flex: 0;
+}
+.view.party .main a:before
+{
+  content: '\e631';
+  border-radius:  50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-size:  72pt;
+}
+.view.party .main[jsc_id] a:before
+{
+  color: transparent;
+}
+
+/* group picker */
+.list.actions li.iPick
+{
+  width: 100%;
+}
+.list.actions li.iPick > a
+{
+  flex-direction: row;
+  font-size: initial;
+  justify-content: initial;
+  align-items: center;
+  text-align: left;
+}
+
+.wrap > .card
+{
+  padding: 2px;
+  max-width: 100%;
+}
+.menu > .card
+{
+  padding-right: 0px;
+}
+.wrap > .card > .head
+{
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+.menu > .card > .head
+{
+  flex: 0 0 40pt;
+}
+.wrap > .card > .view, .menu > .card > .view
+{
+  flex: 1 1 auto;
+  padding: 20px 0;
+}
+
+.menu > .card > .view
+{
+  padding: 4px;
+}
+
+
+.view.msgbox
+{
+  padding: 4px 0px;
+}
+
+
+.list li 
+{
+  min-height: 48pt;
+  padding:    0px;
+  background-clip: content-box;
+  background-color: white;
+  margin-bottom: 4px;
+}
+.list li.title
+{
+  margin-bottom: 0px;
+}
+.list.icons:not(.vertical) li
+{
+  margin-bottom: 0px;
+}
+
+.list li.group
+{
+  background-color: transparent;
+}
+.list[mode='groups'] li.group
+{
+  background-color: white;
+}
+
+.list > li > a.icon, .list > li > a > button
+{
+  opacity: 0.2;
+}
+.list > li > a:focus > button, .list > li > a:hover > button, .list > li > a:focus ~ a, .list > li > a:hover ~ a, .list > li > a.icon:focus, .list > li > a.icon:hover
+{
+  opacity: 1;
+}
+.list > li:hover > a
+{
+  opacity: 1;
+}
+
+.tabs ~ .view
+{
+  padding: 4px;
+}
+.card > .head > .main > a
+{
+  -padding: 4px;
+  font-size: 11pt;
+}
+.card > .head > .main > a > *
+{
+  text-align: left;
+}
+.menu .card > .head > .main > a .imp
+{
+  font-size: 11pt;
+}
+.card > .head > .main > a .imp
+{
+  font-size: 9pt;
+}
+.card > .head > .main > a:before
+{
+  font-size: 40pt;
+  margin-right: 4px;
+}
+.card > .head > .main > a > i:before 
+{
+  font-size: 40pt;
+}
+
+.flow .pres, .flow .call
+{
+  font-size: 9pt;
+}
+
+.view.noflex .list li
+{
+  padding: 0px;
+}
+
+.view.noflex .list li.title, li.title
+{
+  min-height: inherit;
+
+  color: #333333;
+  -background-color: transparent;
+  background-clip:content-box;
+  font-size: 11pt;
+}
+
+.view.noflex .list li.title a, li.title a
+{
+  height: auto;
+}
+
+.view.noflex .list li.title:not(:nth-child(2)), li.title:not(:nth-child(2))
+{
+  padding-top: 4px;
+}
+
+li.title > div, li.input > div
+{
+  padding: 4px;
+  box-sizing: border-box;
+}
+.list.icons.large > li
+{
+  padding: 0 1px;
+}
+
+
+.frame.hidden 
+{
+  display: none;
+}
+
+
+.view ~ div.actions, .view > div.actions
+{
+  border-top: solid 1px #eaeaea;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 2px;
+  overflow: hidden;
+}
+.view ~ div.actions > div, .view > div.actions > div
+{
+  -flex: 0 0 50%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2px;
+  box-sizing: border-box;
+}
+.view ~ div.actions a, .view > div.actions a 
+{
+  color: white;
+  display: flex;
+  align-items: center;
+  -width: 95%;
+  height: 28pt;
+  flex: 1 1 auto;
+  border-radius: 2px;
+  font-size: 10pt;
+  justify-content: center;
+}
+div.actions > .icon > a:before
+{
+  padding:  0 4px;
+  font-size: 18pt!important;
+}
+
+.view ~ div.actions > .iAccept a, .view > div.actions > .iAccept a, .view > div.actions > .iOK a, .view ~ div.actions > .iOK a
+{
+  background-color: #73D0E6;
+}
+.view ~ div.actions > .iAccept a:hover, .view > div.actions > .iAccept a:hover, 
+.view ~ div.actions > .iAccept a:focus, .view > div.actions > .iAccept a:focus, 
+.view > div.actions > .iOK a:hover, .view ~ div.actions > .iOK a:hover,
+.view > div.actions > .iOK a:focus, .view ~ div.actions > .iOK a:focus
+{
+  background-color: #1AC2E8
+;
+}
+.view ~ div.actions > .iDecline a, .view > div.actions > .iDecline a, .view > div.actions > .iCancel a
+{
+  background-color: #F26449;
+}
+.view ~ div.actions > .iDecline a:hover, .view > div.actions > .iDecline a:hover, 
+.view ~ div.actions > .iDecline a:focus, .view > div.actions > .iDecline a:focus, 
+.view > div.actions > .iCancel a:hover,
+.view > div.actions > .iCancel a:focus
+{
+  background-color: #F15132;
+}
+
+div.actions.tight
+{
+  padding-top: 10pt;
+  width: 100%;
+}
+div.actions.ruller
+{
+  margin-top: 10pt;
+  padding: 5pt 0;
+  border-top: solid 1px #eaeaea;
+  -border-bottom: solid 1px #eaeaea;
+}
+.view > div.actions.ruller > div
+{
+  flex: 0 0 100%;
+}
+.view > div.actions.ruller a
+{
+  color: #73D0E6;
+}
+.view > div.actions.ruller a:hover, .view > div.actions.ruller a:focus
+{
+  color: #FFBB00;
+}
+div.actions.hidden
+{
+  display: none;
+}
+
+
+.title div 
+{
+  flex: 0 1 100%;
+}
+.title div ~ a
+{
+  flex: 0 0 auto;
+  min-height: initial;
+}
+.title.iClear div ~ a:before
+{
+  content: '\e649'!important;
+  font-family: 'symthin';
+  flex: 0 0 auto!important;
+  width: auto!important;
+  height: auto!important;
+  font-size: 16pt;
+  margin-right: 0!important;
+}
+.title.iClear.no-events div ~ a {
+  display: none;
+}
+
+.cards.events > .head .iMenu, .cards.events > .popup .menu .head .iMenu
+{
+  font-weight: bold;
+  position: relative;
+  /*-webkit-animation: alertsFont 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation:         alertsFont 1s;
+  animation-iteration-count: infinite;*/
+}
+.cards.events > .head .iMenu:after, .cards.events > .popup .menu .head .iMenu:after
+{
+  content: '';
+  position: absolute;
+  top: 8pt;
+  right: 8pt;
+  background-color: #EE4A2A;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  width: 4px;
+  height: 4px;
+  -webkit-animation: alertsPin 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation:         alertsPin 1s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes alertsFont {
+  0%   { font-weight:  normal; }
+  50%  { font-weight:  bold; }
+  100% { font-weight:  normal; }
+}
+@keyframes alertsFont {
+  0%   { font-weight:  normal; }
+  50%  { font-weight:  bold; }
+  100% { font-weight:  normal; }
+}
+@-webkit-keyframes alertsPin {
+  0%   { opacity:   0; }
+  50%  { opacity:   1; }
+  100% { opacity:   0; }
+}
+@keyframes alertsPin {
+  0%   { opacity:   0; }
+  50%  { opacity:   1; }
+  100% { opacity:   0; }
+}
+
+
+.head .main div > *:not(:first-child)
+{
+  font-size: 9pt;
+}
+
+.iflow.MUC .flow > i:before 
+{
+  font-family: 'symthin';
+  content: '\e61f';
+  font-size: 24pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+.head .iHistory[jsc_id] a:before
+{
+  color: #73D0E6;
+  content: '\e61b'
+}
+*/
+
+.softhide div.softhide 
+{
+  display: none;
+}
+
+footer .action > div
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+footer .action > div > div
+{
+}
+
+
+
+.-head.back .main
+{
+  padding-left: 8pt;
+}
+.-head.back .main > a:before
+{
+  margin-right: 0;
+  padding: 3px;
+}
+.-head.back .main > a:after
+{
+  content:    '\e65e';
+  font-size:  30pt;
+  font-family: 'symthin';
+  display: inline-flex;
+  position: absolute;
+  left: -18pt;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+}
+.-head.back .main a
+{
+  -padding: 4px 0;
+  position: relative;
+}
+
+.list.chats.active li:not(.active) {
+  display: none;
+}
+.list.chats .unread {
+  color: #FFBB00;
+}
+
+.list.chat li .flow div div 
+{
+  white-space: normal;
+  word-break: break-word;
+}
+
+.list.chat li .flow .chat a 
+{
+  white-space: normal;
+}
+
+.list li.input > div 
+{
+  font-size: 9pt;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.list li[jsc_id='-1'] 
+{
+  display: none!important;
+}
+
+.directory > li > a > i:before
+{
+  font-family: 'symthin';
+  font-size:    40pt;
+}
+
+
+.windows .list.search li.iCall > a:before, .windows li.group > a > button:before, .windows .head.top a:before, .windows .iflow.MUC .flow > i:before,
+.windows .icon:before, .windows .icon > a:before, .windows .icons:not(.large) a:before,
+.windows .list.radio > li > a:after, .windows .list.check > li> a:after, .windows li > a > i:before
+{
+  -webkit-text-stroke: 0.3pt;
+}
+.windows .list.keypad > li.iClear > a:before, .windows .list.keypad > li.iDial > a:before, .windows .list.keypad > li.iClear > a:after, .windows .list.keypad > li.iDial > a:after,
+.windows .dialtext a:before, .windows .title.iClear div ~ a:before
+{
+  -webkit-text-stroke: 0.1pt;
+}
+
+
+
+.list.padded
+{
+  padding-top: 4px;
+}
+
+.list:not([mode='fav']) li.action, .list li.action
+{
+  min-height:       initial;
+  background-color: #73D0E6;
+}
+.list:not([mode='fav']) li.action:hover, .list li.action:hover
+{
+  background-color: #1AC2E8;
+}
+.list li.action > a:before
+{
+  color:            white;
+  font-size:        20pt;
+  font-family:      'symthin';
+  height:           auto!important;
+  flex:             0 0 20pt!important;
+}
+.list li.action:hover > a:before, .list li.action:hover > a > div
+{
+  color:            #FFBB00;
+}
+.list li.action > a
+{
+  padding: 0px 4px;
+}
+.list li.action > a > div
+{
+  color: white;
+}
+
+.actions > .icon > a:hover, .actions > .icon > a:focus
+{
+  color: #ffbb00;
+}
+
+
+
+.nodata
+{
+  flex:                 0 0 auto;
+  background-color:     white;
+  padding:              1em;
+  color:                #909090;
+  text-align:           center;
+  margin-bottom:        4px;
+}
+.nodata-head
+{
+  font-size:            11pt;
+}
+.nodata.collapse > .nodata-head, .nodata.collapse > .nodata-icon, .nodata.collapse > .nodata-text
+{
+  display: none;
+}
+
+.nodata-icon 
+{
+  display:              flex;
+  flex-direction:       column;
+  align-items:          center;
+}
+.nodata-icon:before 
+{
+  background-color:     #73D0E6;
+  color:                white;
+}
+.nodata-icon:before
+{
+  content:              '\e606';
+  font-family:          'symthin';
+  font-size:            52pt;
+  width:                75pt;
+  height:               75pt;
+  border-radius:        50%;
+  margin:               10pt 0;
+  display:              flex;
+  align-items:          center;
+  justify-content:      center;
+}
+.nodata-text
+{
+  font-size:            9pt;
+  padding-bottom:       4px;
+}
+.nodata-link
+{
+  display:              flex;
+  overflow:             hidden;
+  white-space:          nowrap;
+  text-overflow:        ellipsis;
+
+  color:                white;
+  background-color:     #73D0E6;
+  align-items:          center;
+  justify-content:      center;
+  align-content:        center;
+  padding:              4px 10px;
+  border-radius:        2px;
+}
+.nodata-link:before
+{
+  font-family:          'symthin';
+  margin-right:         4px;
+}
+.nodata-link.hidden
+{
+  display:              none;
+}
+
+.input > .note
+{
+  font-size:            9pt;
+  text-align:           center;
+  width:                100%;
+  padding: 1.25em       0;
+  color:              red;
+}
+
+.card.install {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: block;
+  background-color: #F7F7F7;
+}
+.card.install.softhide
+{
+  display: none;
+}
+.card.banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: block;
+  background-color: #F7F7F7;
+}
+.card.banner.softhide
+{
+  display: none;
+}
+.card.banner iframe {
+  width: 100%;
+  border: solid 1px lightgray;
+  height: 100%;
+}
+.banner-item {
+  background-color: white;
+  padding: 10pt;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.install-view {
+  padding: 10pt;
+}
+.install-head {
+  font-size: 9pt;
+}
+.install-item {
+  margin: 5pt 0;
+  background-color: white;
+  padding: 10pt;
+  text-align: center;
+}
+.install-name {
+  font-weight: bold;
+}
+.install-text {
+  font-size: 10pt;
+}
+.install-link {
+  color:                white;
+  background-color:     #73D0E6;
+  align-items:          center;
+  justify-content:      center;
+  align-content:        center;
+  display:              flex;
+  margin-top:           0.5em;
+  padding:              4px 0;
+  font-size:            9pt;
+  text-transform:       uppercase;
+  letter-spacing:       2pt;
+}
+.install-link:hover, .install-link:focus {
+  color: #FFBB00;
+}
+.install-link[disabled] {
+  color: white;
+  background-color:     #909090;
+  cursor: default;
+}
+.install-skip {
+  display:  inline-block;
+  text-align: center;
+  font-size: 9pt;
+}
+
+.list.keypad li {
+  margin-bottom: 1px;
+}
+
+
+.rtc 
+{
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+}
+.rtc.hidden
+{
+  display: none;
+}
+.rtcVideo
+{
+  position:                     relative;
+  -webkit-perspective:          1000;
+  flex: 1 1 100%;
+}
+
+.rtcVideo > div.video
+{
+  position:                     absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+  -width:                        100%;
+  -height:                       100%;
+  -webkit-transition-property:  rotation;
+  -webkit-transition-duration:  2s;
+  -webkit-transform-style:      preserve-3d;
+}
+
+.rtcVideo > div.video > .local
+{
+  position:                     absolute;
+  width:                        100%;
+  height:                       100%;
+  z-webkit-transform:            scale(-1, 1);
+  -webkit-backface-visibility:  hidden;
+}
+.rtcVideo > div.video .remote 
+{
+  position:                     absolute;
+  width:                        100%;
+  height:                       100%;
+  -webkit-transform:            rotateY(180deg);
+  -webkit-backface-visibility:  hidden;
+}
+.rtcVideo > div.video .mini 
+{
+  position:                     absolute;
+  height:                       30%;
+  width:                        30%;
+  bottom:                       32px;
+  right:                        4px;
+  z-webkit-transform:            scale(-1, 1);
+  opacity:                      1.0;
+}
+.rtcVideo > div.video video
+{
+  width:                        100%;
+  height:                       100%;
+  opacity:                      0;
+  -webkit-transition-property:  opacity;
+  -webkit-transition-duration:  2s;
+  cursor:                       pointer;
+}
+
+.videoBox 
+{
+  display: none;
+  -flex: 1 1 100%;
+  -position: relative;
+  -background-color: red;
+}
+.videoBox.video 
+{
+  display: block;
+  flex: 1 1;
+  position: relative;
+  overflow: hidden;
+}
+.video > .video 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 3px;
+}
+
+.video > video
+{
+  width:            100%;
+  height:           100%;
+  background-color: #FFF;
+}
+
+.video > .local
+{
+  width:            25%;
+  height:           25%;
+  background-color: #FFF;
+  position:         absolute;
+  bottom:           10px;
+  left:             10px;
+  z-index:          2;
+  border:           solid 1px lightGray;
+  cursor: pointer;  
+}
+
+.video > .local:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: symthin;
+  font-size: 50px;
+  opacity: 0;
+}
+
+.video > .local:hover:before {
+  content: '\e630';
+  opacity: 1;
+}
+  
+.video > .local.muted:before {
+  content: '\e62e';
+  opacity: 1;
+}
+
+.video > .local > video {
+  width: 100%;
+  height: 100%;
+}
+
+.head .icon.hidden {
+  display: none;
+}
+
+.cardChat > .view > .more .iCall {
+  display: none;
+}
+
+.people > .DPE {
+  display: inline-flex;
+}
+.DPE a:before {
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list.icons.large > li
+{
+  position: relative;
+}
+.list.icons.large > li > a
+{
+  align-content:    center;
+  justify-content:  center;
+  position:         static;
+}
+.large li > a > i
+{
+  margin:           0;
+}
+.large li > a > div
+{
+  font-size:        9pt;
+  flex:             initial;
+  width:            100%;
+}
+.large li > a > i:before
+{
+  font-size:        32pt;
+}
+
+li > a[key] > i
+{
+  display: none;
+}
+li > a[key]
+{
+  justify-content: center;
+}
+li > a[key] > div
+{
+  flex: 0 0 auto;
+  font-size:        7pt;
+}
+.list.call > li > a > div 
+{
+  font-size: 9pt;
+  flex: initial;
+  width: 100%;
+}
+
+li.-directory > a > i
+{
+  position: relative;
+  overflow: visible;
+}
+li.directory
+{
+  position: relative;
+}
+
+li.-directory > a > i:after
+{
+  content: '';
+  -content: '\e603';
+  -color: white;
+  -background-color: red;
+  -border-radius: 50%;
+  height: 10pt;
+  width: 10pt;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  -font-family: 'symtiny';
+  -font-size: 8pt;
+
+  background-image: url('../img/common/domain.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  -display: inline-flex;
+  -align-items: center;
+  -justify-content: center;
+}
+
+li.directory:after
+{
+  content:            ' ';
+  position:           absolute;
+  left:               0;
+  top:                0;
+  border:             solid 8px transparent;
+  border-top-color:   lightgray;
+  border-left-color:  lightgray;
+  box-sizing:         border-box;
+}
+
+li.Control > a button 
+{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #73D0E6;
+  text-decoration: underline;
+}
+li.Control > a[href]:hover > div > div {
+  color: #303030;
+}
+li.Control > a:hover button {
+}
+li.Control > a button:hover 
+{
+  color: orange;
+}
+
+
+.list.split {
+  flex:           1 1 100%;
+  overflow-y:     auto;
+}
+.notes {
+  flex:           0 0 auto;
+  padding:        8px 0;
+}
+.notes div {
+  font-size:      9pt;
+}
+.notes input {
+  font-size:      9pt;
+}
+
+.notes textarea {
+  width:          100%;
+  box-sizing:     border-box;
+  height:         3em;
+  font-size:      9pt;
+  resize:         none;
+}
+
+.ping {
+  opacity:        0.99;
+}
+
+.wrap > .card > .view > div:not(.actions) {
+  flex: 0 0 auto;
+  font-size: 9pt;
+}
+
+.keypad > .view > .list {
+  width: 100%;
+}
+
+.menu > .head.top {
+  justify-content: space-between;
+}
+.menu > .head.top > .main {
+  display: none;
+}
+.menu > .head.top > .right {
+  flex: 0 1 auto;
+  overflow: hidden;
+}
+.menu > .head.top > .right > .iLogout {
+  flex: 0 1 auto;
+}
+
+.video.embedded {
+  display:          flex;
+  flex-direction:   column;
+  align-items:      center;
+  justify-content:  center;
+  text-align:       center;
+}
+
+.video.embedded > a.icon {
+  display:          flex;
+  flex-direction:   column-reverse;
+}
+.video.embedded > a.icon:before {
+  font-size:        48pt;
+  -webkit-text-stroke: initial;
+}

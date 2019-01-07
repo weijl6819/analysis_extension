@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+#config {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  padding: 10px;
+  border-bottom: dashed 1px gray;
+}
+#instances {
+  flex: 1 1 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding: 10px;
+}
+iframe {
+  width: 150px;
+  height: 75px;
+  margin: 5px;
+  border: dotted 1px gray;
+  overflow: hidden;
+}
+

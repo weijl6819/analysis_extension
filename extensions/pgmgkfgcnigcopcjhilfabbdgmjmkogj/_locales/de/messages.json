@@ -1,0 +1,48 @@
+﻿{
+	"extName": {
+		"message": "Einfach eine Uhr – die Minuten",
+		"description": "The name of this extension"
+	},
+	"extShortName": {
+		"message": "Die Minuten",
+		"description": "A shortened version of the name (should try to be no longer than 11 characters)"
+	},
+	"extDescription": {
+		"message": "Eine einfache Digitaluhr für die Toolbar. Diese Erweiterung zeigt nur die Minuten. Installieren Sie auch “Die STUNDEN” für eine tolle lesbare Uhr in Ihrer Toolbar!",
+		"description": "A description of the extension, be sure to mention the need to install both extensions"
+	},
+	
+	"optionsFor": {
+		"message": "Einstellungen für",
+		"description": "Title for the Options page, this will be prefixed to the extension name, such as --[Options for] Just a Clock - The Minutes--"
+	},
+	"blackWhiteSetting": {
+		"message": "Schwarz / Weiß-Nummern",
+		"description": "Title for the color setting"
+	},
+	"blackLabel": {
+		"message": "Schwarz",
+		"description": "Label for when the clock numbers should be black"
+	},
+	"whiteLabel": {
+		"message": "Weiß",
+		"description": "Label for when the clock numbers should be white"
+	},
+	"whiteLabelClarification": {
+		"message": "für dunkle Hintergründe",
+		"description": "Suggestion of when to use white numbers"
+	},
+	
+	"saveButton": {
+		"message": "Speichern",
+		"description": "Label for the button to save the options"
+	},
+	"saveNotice": {
+		"message": "kann bis zu 6 Sekunden dauern",
+		"description": "Message to the user that changing any settings will take up to 6 seconds after the Save button is hit - (this is displayed next to the Save button)"
+	},
+	"saveStatus": {
+		"message": "Gespeichert",
+		"description": "Message to inform the user that the settings were successfully saved."
+	}
+}

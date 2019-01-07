@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body style="min-width: 200px">
+        <h2 style="margin-top: 5px; margin-bottom: 5px; text-align: center;"> <img src="icon.png" style="width:16px;"> Reading Ruler </h2>
+        <hr>
+        <form id="hl-form" action="" method="">
+            
+            <table>
+                <tr>
+                    <td>
+                        <b>Enabled:</b>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="hl-form-enabled" name="hl-form-enabled" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Color:</b>
+                    </td>
+                    <td>
+                        <input type="color" id="hl-form-color" name="hl-form-color" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Opacity:</b>
+                    </td>
+                    <td>
+                        <input type="range" min="0" max="100" id="hl-form-opacity" name="hl-form-opacity" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Shadow:</b>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="hl-form-shadow" name="hl-form-shadow" />
+                    </td>
+                </tr>                
+            </table>
+            
+        </form>
+        <hr>
+        <h4 style="margin-top: 5px; margin-bottom: 5px;">Usage:</h4>
+        <ul style="margin: 0px;padding-left: 15px;">
+            <li>Double click on text to start</li>
+            <li>Key Up/Down to navigate</li>
+            <li>ESC to cancel</li>
+        </ul>
+        <script src="popup.js"></script>
+    </body>
+</html>

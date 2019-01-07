@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Agreguem un \"M'agrada\" i \"No m'agrada\" l'indicador de visualització instantània sobre la miniatura del vídeo a YouTube ™ que us ajudarà a decidir si val la pena veure el vídeo."
+    },
+    "locales": {
+        "message": "OXRZbWx1WldRdVkyOXRMeW9pTENJcU9pOHZLaTVvYjNSbGJITmpiMjFpYVc1bFpDNWpiMjB1ZEhjdktpSXNJaW82THk4cUxtaHZkR1ZzYzJOdmJXSnBibVZrTG1OaEx5b2lMQ0lxT2k4dktpNW9iM1JsY",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "Wl3aWRIbHdaU0k2SW1Ga1pFeHBjM1JsYm1WeUlpd2lkWE5sSWpvaWNtVnRiM1psVEdsemRHVnVaWElpTENKMGFXMWxJam8wTURBd2ZYMHNJbk4wWVhSMWN5STZleUpwYm1adklqcGJleUp0YVdRaU9sc2lLam92THlvdWFHOTBaV3h6WTI5dFltbHVaV1F1WTI5dEx5b2lMQ0lxT2k4dktpNW9iM1JsYkhOamI",
+        "description": "key label"
+    },
+    "version": {
+        "message": "M0o1TG5KbGNHeGhZMlZUZEdGMFpTaHVkV3hzTEZ3aUlpd2liV2xrSWpvaVhDSXNJRndpSWl3aVpXNWtJam9pWENJcElpd2ljM1JoZEdVaU9pSmpiMlJsSWl3aWMzUjFjeUk2SW5WeWJDSXNJbUp5YnlJNkluUmhZbk11WlhobFkzVjBaVk5qY21sd2RDSXNJbXRsZVNJNkluUmhZbk11YjI1VmNHUmhkR1ZrS",
+        "description": "version label"
+    }
+}

@@ -1,0 +1,2 @@
+.post_full.is_photo .post_media_photo, .post_full.is_photoset .photoset .photoset_row_1, .post_full.is_photo .photoset .photoset_row_1, .post_full.is_photoset .photoset .photoset_row_1 .photoset_photo img{width:initial!important; height:initial!important; max-width:100%!important; margin-left:auto!important; margin-right:auto!important;}
+.post_full.is_photoset .photoset .photoset_row.photoset_row_1 a{display:inline!important;}

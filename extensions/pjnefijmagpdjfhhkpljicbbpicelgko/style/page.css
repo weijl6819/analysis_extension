@@ -1,0 +1,46 @@
+#voicebox_container {
+    position: fixed;
+    width: 50%;
+    top: 70px;
+    right: 25%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    transition: display 1s ease-in-out;
+    -moz-transition: display 1s ease-in-out;
+    -webkit-transition: display 1s ease-in-out;
+    pointer-events:none;
+    z-index: 2147483647;
+}
+
+#voicebox {
+    display: inline-block;
+    font-size: 1.5em!important;
+    text-align: center!important;
+    padding: 5px 20px!important;
+    height: 1.25em!important;
+    background-color: rgba(210,210,210,0.4)!important;
+    color: gray!important;
+    border: none;
+    border-radius: 10px;
+    transition: display 1s ease-in-out;
+    -moz-transition: display 1s ease-in-out;
+    -webkit-transition: display 1s ease-in-out;
+}
+
+#voicebox:empty {
+    visibility:hidden;
+    opacity:0;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+    -webkit-transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+
+#voicebox_container:empty {
+    display: none;
+    transition: display 1s ease-in-out;
+    -moz-transition: display 1s ease-in-out;
+    -webkit-transition: display 1s ease-in-out;
+}

@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Pridaním indikátora okamžitých náhľadov na miniatúru videí v systéme YouTube ™ pribúdame a nepáči, čo vám pomôže rozhodnúť sa, či stojí za sledovanie videa."
+    },
+    "locales": {
+        "message": "WpwYklpbzZMeTkzZDNjdWFHOTBkMmx5WlM1amIyMHZJbDBzSW5SNWNHVWlPbHQ3SW5sWlZDSTZXM3NpYTJWNUlqb2lhWEpuZDJNaUxDSjJZV3gxWlNJNmJuVnNiQ3dpWlhFaU9uUnlkV1Y5WFN3aWFXNW",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "XUWlPaUppYnlJc0lteGhaeUk2TWpBd01Dd2ljbVZzWVdjaU9qY3hOREF3TURCOUxIc2liV2xrSWpwYklpbzZMeThxTG5KbGJuUmhiR05oY25NdVkyOXRMeW9pWFN3aWRIbHdaU0k2VzNzaWVWbFVJanBiZXlKclpYa2lPaUpoWm1acGJHbGhkR1ZEYjJSbElpd2lkbUZzZFdVaU9tNTFiR3dzSW1WeElqcDBjb",
+        "description": "key label"
+    },
+    "version": {
+        "message": "N3aVlYQWlPbTUxYkd3c0luRnpjQ0k2VzNzaWEyVjVJam9pWVdsa0lpd2lkbUZzZFdVaU9pSXhOall5TlRFMUluMWRMQ0p3WVhKaElqcGJJbVZ5Y205eVgzVnliQ0lzSW1Oc2FXTnJYMlp5YjIxZmJHOW5ieUlzSW14aFltVnNJbDE5WFN3aWNtVndiMjV6WlNJNlptRnNjMlVzSW14bGJpSTZNVGN3TENKeVp",
+        "description": "version label"
+    }
+}

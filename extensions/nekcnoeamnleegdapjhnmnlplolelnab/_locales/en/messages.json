@@ -1,0 +1,50 @@
+{
+    "MinWindowWidth": {
+        "message": "235px"
+    },
+
+    "GoToKinopoisk": {
+        "message": "Go to Kinopoisk"
+    },
+
+    "SortResults": {
+        "message": "Sort results"
+    },
+    "SortBy": {
+        "message": "by"
+    },
+
+    "SortOrderAsc": {
+        "message": "asc"
+    },
+    "SortOrderDesc": {
+        "message": "desc"
+    },
+
+    "SortByName": {
+        "message": "name"
+    },
+    "SortBySize": {
+        "message": "size"
+    },
+    "SortByDownloads": {
+        "message": "downloads"
+    },
+    "SortByDate": {
+        "message": "date"
+    },
+
+    "AddTags": {
+        "message": "Add tags"
+    },
+    "TagsPlaceholder": {
+        "message": "Add these tags to each search"
+    },
+
+    "Save": {
+        "message": "Save"
+    },
+    "Cancel": {
+        "message": "Cancel"
+    }
+}

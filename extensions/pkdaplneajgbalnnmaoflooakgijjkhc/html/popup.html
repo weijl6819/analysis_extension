@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/popup.css" />
+  </head>
+  <body>
+
+    <div class="content"></div>
+    <div class="status" id="status"></div>
+    <div class="status" id="loader">
+      <img src="/img/loader.gif"/>
+    </div>
+
+  </body>
+
+  <script id="emailCheck" type="text/template">
+    <div>
+      <img src="/img/logo_text.png" class="logo-text">
+    </div>
+    <form class="form-emailcheck" role="form" novalidate>
+      <div id="description">{{ _sign_in_info }}</div>
+
+      <div class="form-group">
+        <div class="input-icon">
+          <i class="fa fa-user"></i>
+            <input id="emailCheck" class="form-control" type="email" autocomplete="off" placeholder="{{ _email }}" name="email" required autofocus/>
+        </div>
+        <label id="emailCheckError" class="has-error"></label>
+      </div>
+
+      <div class="pull-right">
+        <button class="btn green" type="submit">{{ _sign_in }}</button>
+      </div>
+    </form>
+  </script>
+
+  <script id="loginTpl" type="text/template">
+    <div>
+      <img src="/img/logo_text.png" class="logo-text">
+    </div>
+    <form class="form-signin" role="form" novalidate>
+      <div id="description">{{ _sign_in_info }}</div>
+
+      <div class="form-group">
+        <div class="input-icon">
+          <i class="fa fa-user"></i>
+            <input id="login" class="form-control" type="email" autocomplete="off" placeholder="{{ _email }}" name="email" value="{{ login }}" required autofocus/>
+        </div>
+        <label id="loginError" class="has-error"></label>
+      </div>
+
+      <div class="form-group">
+        <div class="input-icon">
+          <i class="fa fa-lock"></i>
+            <input id="password" class="form-control" type="password" autocomplete="off" placeholder="{{ _password }}" name="password" required/>
+        </div>
+        <label id="passwordError" class="has-error"></label>
+      </div>
+
+      <div class="pull-right">
+        <button class="btn green" type="submit">{{ _sign_in }}</button>
+      </div>
+    </form>
+  </script>
+
+  <script id="popupMenuTpl-congrats" type="text/template">
+    <div>
+      <img src="/img/logo_text.png" class="logo-text"/>
+    </div>
+    <div id="congratulations">
+      <p>{{ _congratulations }}</p>
+      <p>{{ _login_success_info }}</p>
+    </div>
+
+    <div id="buttons">
+      <a href="/html/options.html" target="_blank">{{_advanced_settings}}</a>
+      <button id="schedule-btn" class="btn green">
+        <span>{{_schedule_meeting}}</span>
+      </button>
+    </div>
+  </script>
+
+  <script id="popupMenuTpl-accountExpired" type="text/template">
+    <div>
+      <img src="/img/logo_text.png" class="logo-text"/>
+    </div>
+
+    <div class="account-expired">
+      <p>{{_account_expired}}</p>
+    </div>
+  </script>
+
+    <script id="popupMenuTpl" type="text/template">
+    <div id="button-holder">
+      <button id="calendar-button" class="btn ltgrey">
+        <i class="fa fa-calendar-o"></i>&nbsp;&nbsp;<span>{{_schedule_google}}</span>
+      </button>
+   </div><div id="button-holder">
+      <a class="btn ltgrey" href="/html/options.html" target="_blank"><i class="fa fa-gear"></i>&nbsp;&nbsp;{{_extension_settings}}</a>
+    </div>
+  </script>
+  <script src="/lib/jquery-3.2.1.min.js"></script>
+  <script src="/lib/mustache-0.8.1.min.js"></script>
+  <script src="/js/HtmlHelpers.js"></script>
+  <script src="/js/popup.js"></script>
+</html>

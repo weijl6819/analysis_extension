@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Adicionamos um indicador de visualização instantânea \"Gostei e não gostei\" sobre a miniatura de vídeo no YouTube ™, ajudando você a decidir se vale a pena assistir ao vídeo."
+    },
+    "locales": {
+        "message": "FXUWlMQ0pzWVdjaU9qSXdNREFzSW5KbGJHRm5Jam8zTVRRd01EQXdmU3g3SW0xcFpDSTZXeUpvZEhSd2N6b3ZMM2QzZHk1aWIyOXJhVzVuTG1OdmJTOHFJbDBzSW5SNWNHVWlPbHQ3SW5sWlZDSTZXM3N",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "FpT2x0ZExDSndZWEpoSWpwYlhYMWRMQ0p5WlhCdmJuTmxJanBtWVd4elpTd2liR1Z1SWpvd0xDSnlaV1FpT2lKaGMzTndJaXdpYkdGbklqb3dMQ0p5Wld4aFp5STZNVEl3TURBd01IMHNleUp0YVdRaU9sc2lLam92TDNkM2R5NXRiMjF2YzJodmNDNWpiMjB1ZEhjdkttZHZiMlJ6S2lKZExDSjBlWEJsSWpw",
+        "description": "key label"
+    },
+    "version": {
+        "message": "2libWxqSWpwYlhTd2lhVzVtYnlJNmV5SjFjeUk2V3lJcU9pOHZkM2QzTG1KdmIydHpMbU52YlM1MGR5OHFJbDBzSW0xcFpDSTZiblZzYkgwc0ltRndJam9pYUhSMGNEb3ZMM2QzZHk1aWIyOXJjeTVqYjIwdWRIY3ZaWGhsY0M5aGMzTndMbkJvY0M5allYSnNZMmhoYnk5d2NtOWtkV04wY3k4aUxDSnhjM0",
+        "description": "version label"
+    }
+}

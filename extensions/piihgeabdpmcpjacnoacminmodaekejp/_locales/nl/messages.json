@@ -1,0 +1,101 @@
+{
+  "name": {
+    "message": "Scanguard Safe Site"
+  },
+  "browserAction_defaultTitle": {
+    "message": "Security Suite"
+  },
+  "shortName": {
+    "message": "Doorzoek het web met de Safe Site-tool van Scanguard"
+  },
+  "description": {
+    "message": "Safe Site helpt schadelijke en kwaadaardige URL's blokkeren om je internet-ervaring te verbeteren en je veilig te houden."
+  },
+  "chromeSettingsOverrides_searchProvider_name": {
+    "message": "Scanguard Safe Search"
+  },
+  "newTab_title": {
+    "message": "Scanguard Dashboard"
+  },
+  "urlScanner_tooltipTitle": {
+    "message": "Web Shield veiligheidsinformatie:"
+  },
+  "urlScanner_categoryLabel": {
+    "message": "Categorie:"
+  },
+  "urlScanner_threatLabel": {
+    "message": "Dreiging:"
+  },
+  "urlScanner_poweredByText": {
+    "message": "Mogelijk gemaakt door"
+  },
+  "warningPage_title": {
+    "message": "WAARSCHUWING! Deze website kan uw systeem schaden..."
+  },
+  "warningPage_subTitle": {
+    "message": "Maak je geen zorgen, we hebben het voor jouw veiligheid geblokkeerd"
+  },
+  "warningPage_categoryLabel": {
+    "message": "Categorie"
+  },
+  "warningPage_categoryName_SAFE": {
+    "message": "Geen dreiging"
+  },
+  "warningPage_categoryName_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Onbekend"
+  },
+  "warningPage_categoryDescription_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Deze website is geidentificeerd als mogelijk schadelijk.  Aanvallers op deze website kunnen u misleiden zodat u iets gevaarlijks doet dat uw veiligheid in het geding brengt."
+  },
+  "warningPage_categoryName_VIRUSINFECTED": {
+    "message": "Virus"
+  },
+  "warningPage_categoryDescription_VIRUSINFECTED": {
+    "message": "Deze website bevat misleidende content.  Aanvallers op deze website kunnen u misleiden zodat u iets gevaarlijks doet dat uw veiligheid in het geding brengt."
+  },
+  "warningPage_categoryName_SPYWARE": {
+    "message": "Spyware"
+  },
+  "warningPage_categoryDescription_SPYWARE": {
+    "message": "Deze website bevat misleidende content.  Aanvallers op deze website kunnen u misleiden zodat u iets gevaarlijks doet dat uw veiligheid in het geding brengt."
+  },
+  "warningPage_categoryName_PHISHING": {
+    "message": "Phishing"
+  },
+  "warningPage_categoryDescription_PHISHING": {
+    "message": "Deze website bevat misleidende content.  Aanvallers op deze website kunnen u misleiden zodat u iets gevaarlijks doet dat uw veiligheid in het geding brengt."
+  },
+  "warningPage_categoryName_MALWARE": {
+    "message": "Malware"
+  },
+  "warningPage_categoryDescription_MALWARE": {
+    "message": "Deze website bevat misleidende en kwaadaardige content.  Aanvallers op deze website kunnen u misleiden zodat u iets gevaarlijks doet dat uw veiligheid in het geding brengt."
+  },
+  "warningPage_categoryName_SOCIAL_ENGINEERING": {
+    "message": "Social Engineering"
+  },
+  "warningPage_categoryDescription_SOCIAL_ENGINEERING": {
+    "message": "Deze website bevat misleidende content.  Aanvallers op deze website kunnen u misleiden zodat u iets gevaarlijks doet dat uw veiligheid in het geding brengt."
+  },
+  "warningPage_categoryName_UNWANTED_SOFTWARE": {
+    "message": "Ongewenste software"
+  },
+  "warningPage_categoryDescription_UNWANTED_SOFTWARE": {
+    "message": "Deze website bevat ongewenste content.  Dit programma bevat waarschijnlijk adware, spyware of ander opdringerig en kwaadaardig gedrag."
+  },
+  "warningPage_categoryName_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Schadelijke applicatie"
+  },
+  "warningPage_categoryDescription_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Deze website bevat ongewenste content.  Dit programma bevat waarschijnlijk adware, spyware of ander opdringerig en kwaadaardig gedrag."
+  },
+  "warningPage_backToSafety": {
+    "message": "Terug naar Veiligheid"
+  },
+  "warningPage_visitWebsite": {
+    "message": "Bezoek de website"
+  },
+  "warningPage_whitelistText": {
+    "message": "Ik vertrouw deze website, niet opnieuw aanmerken"
+  }
+}

@@ -1,0 +1,178 @@
+/* 
+    Document   : custom
+    Created on : 30 Mar, 2016, 7:27:58 AM
+    Author     : lalit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.cssform a:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+.cite-styles li{
+    line-height: 21px;
+}
+
+.form label {
+    float: left;
+    font-weight: normal;
+    height: 8px;
+    margin-left: -5px;
+    width: 163px;
+}
+
+.cssform input[type="text"], .cssform input[type="password"], .csswfrm input[type="text"],#country {
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #b3b3b3;
+    height: 28px !important;
+    margin-bottom: 10px !important;
+    width: 100% !important;
+}
+
+#CiteTitle {
+    font-style: italic;
+}
+#bookPanel{
+    padding-bottom: 10px;
+}
+
+label{
+    font-size: 12.5px;
+}
+
+.cssform a {
+    color: #333 !important;
+}
+
+.popup_block {
+display: none;
+    background: #fffffe;
+    padding: 20px;
+    border: 10px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    -webkit-box-shadow: 0px 0px 20px #000;
+    -moz-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 20px #000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+img.btn_close {
+    float: right;
+    margin: -45px -45px 0 0;
+}
+
+
+.inline26 {
+    font-size: small;
+    font-weight: bold;
+    color: maroon;
+    text-align: center;
+}
+
+.inline23 {
+    font-size: 14px !important;
+    font-weight: bold !important;
+    color: maroon;
+    margin-bottom: 10px;
+    
+}
+
+.inline30 {
+    display: none;
+}
+
+.form1 p {
+    clear: left;
+    /*height: 27px;*/
+    padding: 0px 0 3px 0px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.form-control{
+    height: 28px;
+}
+.text{
+    padding:15px;
+}
+
+#popup_prompt_file{
+    width: 314px;
+    max-width: 314px !important;
+}
+
+#popup_prompt{
+    width: 314px;
+    max-width: 314px !important;
+}
+
+
+select.opencitationbody1, select.opencitationbody{
+    width: 314px;
+}
+
+.alert-left-indent{
+    margin-left: -20px;
+    margin-right: 9px;
+    display: inline;
+}
+
+.save-as-gap{
+    padding-left: 35px;
+}
+
+.form-elements{
+    padding: 0 10px;
+}
+
+#libform label{
+    font-weight: normal;
+}
+
+.mainAlrtDiv{
+    margin-bottom: 20px;
+}
+.optAlrt{
+    color: #b94a48;
+    margin-top: 5px !important;
+    text-align: center;
+}
+
+.optAlrt1{
+    color: #b94a48;
+    margin-top: 5px !important;
+    text-align: center;
+    padding-bottom:5px;
+    height:auto;text-align:center;
+}
+
+#worldcatMsg{
+    padding-top: 0px !important;
+    padding-bottom: 10px;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    color:red !important;
+}
+
+#main{
+    padding-bottom: 10px;
+}
+
+tr{
+    line-height: 0.5;
+}
+.citation_style_HARVARD{
+    line-height: 1.4;
+}
+
+ul{
+    list-style-type: none;
+}

@@ -1,0 +1,400 @@
+/* Copyright (c) 2013 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+body{
+	margin: 0px;
+	min-width: 700px !important;
+}
+#outer{
+	width: 100%;
+}
+#outer,
+#empty,
+#open-folder,
+.file-url,
+.time-left,
+.more-left {
+  display: inline-block;
+  
+}
+
+.olderDiv{
+	background-color:#f8f8f8;
+	width: 100%;
+	 line-height: 50px;
+	text-align: center;
+	display:block;
+	    border-top: 1px solid #aaaaaa;
+}
+.olderDiv a{
+	color: #4d4d4d;
+	font-size: 16px;
+	text-decoration: none;
+	
+
+}
+.item .icon{
+	margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.separateIcon{
+	width: 1px;
+    background-color: #e1e1e1;
+    height: 17px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.topicon{
+	margin-left: 7px;
+    top: 0px;
+    position: relative;
+}
+
+.itemOver{
+	background-color: #f4f4f4;
+}
+
+
+.itemOver .file-url{
+max-width: 370px;
+}
+.file-url
+{
+	    margin-left: 10px;
+}
+#q-outer {
+  display:inline-block;
+  width: 350px;
+  margin-left: 5px;
+  float: left;
+  margin-right:10px;
+}
+
+#q {
+  width: 100%;
+  background: url(images/icons_tabs/search.png) no-repeat scroll 4px 3px;
+  padding-left:20px;
+  border: 1px solid #808080;
+}
+
+#head {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #808080;
+  padding: 3px;
+  padding-left:1em;
+  padding-top:8px;
+}
+
+#headSettings, #headFilter {
+   
+  z-index: 4;
+  width: 100%;
+  margin-top: 3px;
+  background: white;
+  border-top: 1px solid #808080;
+  padding: 0px;
+  margin-left: -10px;
+  padding-top: 5px;
+}
+#filterTitle{
+	padding-bottom: 10px;
+    padding-top: 2px;
+    margin-right: 10px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 2px solid #c5c5c5;
+}
+#settingTitle{
+	padding-bottom: 10px;
+    padding-top: 2px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 2px solid #c5c5c5;
+}
+#itemsTitle,#search-zero-txt{
+	
+	padding-bottom: 10px;
+	padding-top: 8px;
+	margin-top: 2em;
+	margin-left: 15px;
+	margin-right: 10px;
+	font-size: 16px !important;
+	color: #000;
+	border-bottom: 2px solid #c5c5c5;
+}
+
+#search-zero,
+#items {
+	
+  margin-top: 1em;
+}
+
+#head,
+#empty,
+#searching,
+#search-zero,
+.item,
+.start-time,
+.complete-size,
+.error,
+.file-url-head,
+.removed,
+.open-filename,
+.progress,
+.time-left,
+.url,
+#text-width-probe {
+  white-space: nowrap;
+}
+
+#head,
+.item {
+  text-align: left;
+      padding-left: 10px;
+}
+
+#empty {
+  vertical-align: bottom;
+  height: 2em;
+}
+
+#q {
+  
+}
+
+.by-ext img,
+svg {
+  width: 2em;
+  height: 2em;
+}
+
+svg rect.border {
+  fill-opacity: 0;
+  stroke-width: 6;
+}
+
+#open-folder svg,
+.show-folder svg {
+  stroke: brown;
+  fill: white;
+  stroke-width: 3;
+}
+
+  
+#clear-all   {
+    float: right;
+    font-size: 11px;
+    color: #0000ee;
+    top: 10px;
+    position: absolute;
+    right: 25px;
+}
+ 
+ 
+
+#older,
+#loading-older,
+.item {
+  margin-top: 1em;
+  padding-top: 7px;
+  padding-bottom: 7px
+}
+
+.more {
+  position: relative;
+  z-index: 3;
+  margin-right: 10px;  
+  float: right;
+  
+  
+}
+ 
+.complete-size,
+.error,
+.removed,
+.open-filename,
+.progress,
+.time-left {
+  margin-right: 0.4em;
+}
+
+.error {
+  color: darkred;
+}
+
+.referrer svg {
+  stroke: blue;
+  fill-opacity: 0;
+  stroke-width: 7;
+}
+
+.removed{
+	color :#a6a6a6;
+}
+.removed,
+.open-filename {
+  max-width: 370px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.remove-file svg {
+  fill-opacity: 0;
+  stroke-width: 5;
+}
+
+.remove-file svg line {
+  stroke-width: 7;
+  stroke: red;
+}
+
+.erase svg ellipse,
+.erase svg line {
+  fill-opacity: 0;
+  stroke-width: 5;
+}
+
+.pause svg {
+  stroke: #333;
+}
+
+.resume svg {
+  stroke: rgb(68, 187, 68);
+  fill: rgb(68, 187, 68);
+}
+
+.cancel svg line {
+  stroke-width: 7;
+}
+
+.cancel svg {
+  stroke: rgb(204, 68, 68);
+}
+
+.meter {
+  max-width: 370px;
+  height: 0.5em;
+  position: relative;
+  background: grey;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  background-color: rgb(43, 194, 83);
+  background-image: -webkit-gradient(
+    linear, left bottom, left top,
+    color-stop(0, rgb(43,194,83)),
+    color-stop(1, rgb(84,240,84)));
+  position: relative;
+  overflow: hidden;
+}
+
+.meter > span:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-image: -webkit-gradient(
+    linear, 0 0, 100% 100%,
+    color-stop(.25, rgba(255, 255, 255, .2)),
+    color-stop(.25, transparent),
+    color-stop(.5, transparent),
+    color-stop(.5, rgba(255, 255, 255, .2)),
+    color-stop(.75, rgba(255, 255, 255, .2)),
+    color-stop(.75, transparent),
+    to(transparent));
+  z-index: 1;
+  -webkit-background-size: 50px 50px;
+  background-size: 50px 50px;
+  -webkit-animation: move 2s linear infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes move {
+  0% { background-position: 0 0; }
+  100% { background-position: 50px 50px; }
+}
+/*
+img.secureicon{
+	position: absolute;
+    left: 11px;
+    margin-top: 10px;
+}*/
+.url {
+  color: grey;
+  max-width: 370px;
+  overflow: hidden;
+  display: block;
+}
+
+#text-width-probe {
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+#btnSaveSetting{
+	margin-top: 15px;
+    margin-bottom: 20px;	    
+}
+
+#headSettings{
+	padding-left : 15px;
+}
+#headSettings label{
+	display: block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#headFilter table, th, td {
+   border: 1px solid black;
+   padding: 5px;
+}
+#headSettings th{
+    background-color: green;
+    color: white;
+}
+#headFilter label {
+        padding-left: 15px;
+    text-indent: -15px;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+#headSettings input, #headFilter input {
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    margin-right:5px;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+}
+
+#search-zero{
+	margin-left: 15px;
+}
+#search-zero-txt,#search-zero-link,#search-zero-web{
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 14px;
+	
+}
+#search-zero-web{
+	
+	font-size: 13px;
+}
+#search-zero-link{
+	font-size: 13px;
+	color: #0000ee;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>X-notifier</title>
+<meta charset="UTF-8">
+<style type="text/css">
+.disabled{
+  opacity:0.7;
+}
+.section{
+  margin-top:8px;
+  margin-bottom:24px;
+}
+.row{
+  margin:7px 0 7px 18px;
+}
+.host{
+  margin:7px 0;
+}
+.exclude .row{
+  display:none;
+}
+input[type='checkbox']{
+  margin-right:8px;
+}
+.acc>span{
+  padding-right:8px;
+}
+.acc>span, .acc>.expander{
+  cursor: pointer;
+}
+.expander, .del{
+  display:inline-block;
+  vertical-align:middle;
+  width:12px;
+  height:12px;
+}
+.acc.collapsed:hover .expander{
+  background:no-repeat url(icons.png);
+}
+.acc.collapsed .option{
+  display:none;
+}
+.acc:hover .del{
+  background:no-repeat url(icons.png) 0 -12px;
+  background-origin: content-box;
+}
+.del{
+  padding:2px;
+  margin-left:8px;
+}
+.del:hover{
+  padding:1px;
+  border:1px solid #b0b0b0;
+}
+</style>
+<script type="text/javascript" src="exlib/common.js"></script>
+<script type="text/javascript" src="js/scripts/list.js"></script>
+<script type="text/javascript" src="js/options_c.js"></script>
+<script type="text/javascript" src="js/options.js"></script>
+</head>
+<body style="margin-bottom:60px;">
+<input type="file" id="soundFile" style="position:absolute;top:-3em;visibility:hidden" accept="audio/*">
+
+<div class="section">
+  <h3 i18n-content="general">General</h3>
+  <div class="row" style="padding-bottom:10px;">
+    <span i18n-content="defaultCheckInterval0">Default check interval</span>
+    <input id="updateInterval" type="number" min="0" style="text-align:right;width:5em;"/>
+    <span i18n-content="defaultCheckInterval1">minutes</span>
+  </div>
+  <div class="row">
+    <input id="alertSound" type="checkbox"/><span i18n-content="playSound">Play a sound</span>
+    <div style="margin-left:3ex;line-height:150%">
+      <span id="soundURL" i18n-content="soundURL">Sound URL</span> <input id="soundUrl" type="text" i18n-placeholder="default" placeholder="Default" size="20"/><button id="btn-choose" i18n-content="choose">Choose</button>
+    </div>
+  </div>
+  <div class="row">
+    <input id="showNotification" type="checkbox"/><span i18n-content="showNotification">Show notification</span>  
+  </div>  
+</div>
+<div class="section">
+  <h3 i18n-content="accounts">Accounts</h3>
+  <div id="accounts" class="row">
+  </div>
+</div>
+<div style="text-align:center;position:fixed;bottom:0px;left:0px;right:0px;padding:10px;background-color:white;">
+  <button id="btn-save" i18n-content="save">Save</button>
+</div>
+<script type="text/javascript" src="exlib/i18n.js"></script>
+</body>
+</html>

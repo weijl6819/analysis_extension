@@ -1,0 +1,19 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "Bitcoinify",
+  "description": "Create your videoblog in a couple of clicks!",
+  "version": "1.1",
+  "icons": { "16": "bitcoinify/img/icon16.png",
+    "48": "bitcoinify/img/icon48.png",
+    "128": "bitcoinify/img/icon128.png" },
+  "browser_action": {
+    "default_title": "Bitcoinify your content",
+    "default_icon": "bitcoinify/img/bitcoinify.png",
+    "default_popup": "bitcoinify/popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

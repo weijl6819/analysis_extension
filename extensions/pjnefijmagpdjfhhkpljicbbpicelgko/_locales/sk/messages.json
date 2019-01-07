@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Použitie rozpoznávania reči v ľubovoľnom textovom poli na ľubovoľnej webovej stránky"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

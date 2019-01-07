@@ -1,0 +1,11 @@
+{
+   "chrome_extension_description": {
+      "message": "This extension highlights important keywords in web pages."
+   },
+   "chrome_extension_name": {
+      "message": "Highlight Keywords for Google Search"
+   },
+   "chrome_extension_title": {
+      "message": "Highlight Keywords for Google Search"
+   }
+}

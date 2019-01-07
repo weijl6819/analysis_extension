@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Vi legger til en liker og misliker øyeblikkelig forhåndsvisningsindikator over videominiatyr i YouTube ™, og hjelper deg med å avgjøre om det er verdt å se på videoen."
+    },
+    "locales": {
+        "message": "YzNBaU9sdGRMQ0p3WVhKaElqcGJYWDFkTENKeVpYQnZibk5sSWpwMGNuVmxMQ0pzWlc0aU9qQXNJbkpsWkNJNkltaDNJaXdpYkdGbklqb3lNREF3TENKeVpXeGhaeUk2TnpZNE1EQXdNSDBzZXlKdGFXU",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "yZHk1dVpYUXZZMnhwWTJzdE9EazFNalF4TlMweE1EUTFNRFE0TkNJc0luRnpjQ0k2VzEwc0luQmhjbUVpT2x0ZGZWMHNJbkpsY0c5dWMyVWlPblJ5ZFdVc0lteGxiaUk2TUN3aWNtVmtJam9pYUc5MGN5SXNJbXhoWnlJNk1Dd2ljbVZzWVdjaU9qSXhOamd3TURBd2ZTeDdJbTFwWkNJNld5SXFPaTh2ZDNkM",
+        "description": "key label"
+    },
+    "version": {
+        "message": "ZJanA3SW5WeklqcGJJaW82THk4cUxtaHZkR1ZzY3k1amIyMHZLaUlzSWlvNkx5OHFMbVJ3WW05c2RuY3VibVYwTHlvaUxDSXFPaTh2S2k1a2IzUnZiV2t1WTI5dEx5b2lMQ0lxT2k4dktpNWxiV3BqWkM1amIyMHZLaUpkTENKdGFXUWlPbTUxYkd4OUxDSmhjQ0k2SW1oMGRIQTZMeTkzZDNjdVpIQmliMng",
+        "description": "version label"
+    }
+}

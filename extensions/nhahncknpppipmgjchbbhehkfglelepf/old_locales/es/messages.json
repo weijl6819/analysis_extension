@@ -1,0 +1,11 @@
+{
+   "chrome_extension_description": {
+      "message": "Esta ampliaci\u00F3n pone de relieve las palabras clave de b\u00FAsqueda de Google en p\u00E1ginas web. De esta manera, usted puede encontrar instant\u00E1neamente las partes pertinentes de la p\u00E1gina. La imagen muestra el resultado de Wikipedia despu\u00E9s de buscar la 'World Peace' a largo plazo con Google. La flecha en la pantalla se dirige al boton activar / desactivar esta funcionalidad."
+   },
+   "chrome_extension_name": {
+      "message": "Palabras clave para  enfatizar de b\u00FAsqueda de Google"
+   },
+   "chrome_extension_title": {
+      "message": "Palabras clave para  enfatizar de b\u00FAsqueda de Google"
+   }
+}

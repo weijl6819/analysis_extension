@@ -1,0 +1,103 @@
+{
+  "appDesc": {
+    "description": "Instant access to the best sites related to the one you are browsing!\r\nSimilar Sites is our advanced extension to discover new websites that are similar to the ones you browse.\r\nThis extension will help you finding out instantly a list of alternative websites that are related and relevant to the ones you visit. A great companion tool to help you explore the internet for fresh ideas and discover new leads.\r\n See the Top 10 Similar Sites to any website.\r\n Thumbnail Image preview for Similar Sites results. \r\n\r\nThere will be much more extras to come soon, just bear with us :) \r\n\r\nYou can get more information about our technology and to understand how SimilarSites choose his recommendation on our website: http://www.SimilarSites.com\r\n\r\n\tGet the top 10 Similar Sites to any website !\r\n\tThumbnail Image preview for any results \r\n\r\nFeatured:\r\n Featured on FireFox Mozilla Marketplace ! \r\n (NEW) Advanced Similar Product Feature  - That will give you product recommendation on leading shopping websites\r\n Our Search widget - Get Similar Sites with one click, on search result for quick access to find more nice website on leading search engine like google and bing\r\n\r\n\r\n------------------------------------------------------------------------------------------------------------------------------------\r\n\r\nNote: When you click the Similar Sites button, your browser will send a search query to our servers to see if there are any similar sites for the websites you are viewing.\r\nIn order to continuously improve our technology of websites analysis, we collect certain data such of browsing history/trend statistics and how our features are being used. Details may be found in our privacy policy.\r\n-----------------------------------------------------------------------------------------------------------------------------------\r\nBy installing this extension, you agree to the Terms of Service and to our Privacy Policy at : http://www.similarsites.com/privacy-policy.aspx",
+    "message": "Instantly find websites similar to the one you’re currently browsing. Explore the web, discover more."
+  },
+  "appName": {
+    "description": "Similar Sites",
+    "message": "Similar Sites - Discover Related Websites"
+  },
+  "globalRankSS": {
+    "description": "Similar site's Global Rank",
+    "message": "Global Rank"
+  },
+  "monthlyVisitsSS": {
+    "description": "Similar site's Monthly Visits",
+    "message": "Monthly Visits"
+  },
+  "globalRankMain": {
+    "description": "Main site's Global Rank",
+    "message": "Global Rank"
+  },
+  "monthlyVisitsMain": {
+    "description": "Main site's Monthly Visits",
+    "message": "Monthly Visits"
+  },
+  "siteTopicsMain": {
+    "description": "Main site's Site Topics",
+    "message": "Site Topics"
+  },
+  "SimilarSites": {
+    "description": "Similar sites area title",
+    "message": "Similar Sites"
+  },
+  "ViewMoreSimilarSites": {
+    "description": "View More Similar Sites button in the end of the similar sites",
+    "message": "View More Similar Sites"
+  },
+  "rateUs": {
+    "message": "Rate us"
+  },
+  "high_stars_title": {
+    "message": "Thanks for rating"
+  },
+  "high_stars_subtitle": {
+    "message": "Please take a moment to rate us on the $BROWSER$ Web Store",
+    "placeholders": {
+      "browser": {
+        "content": "$1"
+      }
+    }
+  },
+  "high_stars_buttonText": {
+    "message": "Rate us on the $BROWSER$ Web Store",
+    "placeholders": {
+      "browser": {
+        "content": "$1"
+      }
+    }
+  },
+  "low_stars_title": {
+    "message": "Help us improve"
+  },
+  "low_stars_subtitle": {
+    "message": "Please take a moment to help us improve SimilarSites Extension"
+  },
+  "low_stars_buttonText": {
+    "message": "Take a Quick Survey"
+  },
+  "error_text": {
+    "description": "error page message",
+    "message": "We are having some trouble getting the data for you right now, please try again later."
+  },
+  "no_info_text1": {
+    "description": "no info page message part one",
+    "message": "We can't find information about"
+  },
+  "no_info_text2": {
+    "description": "no info page message part two",
+    "message": "please try again later"
+  },
+  "Go_To_SimilarSites": {
+    "description": "Go to similarsites button on error/no info page",
+    "message": "Go to SimilarSites.com"
+  },
+  "optout_title": {
+    "message": "Unable to locate results for "
+  },
+  "optout_subtitle": {
+    "message": "You chose to opt out from sharing data, which we need to be able to show you similar sites."
+  },
+  "optout_button": {
+    "message": "Opt-in to see similar sites"
+  },
+  "NoSimilarSites": {
+    "message": "No Similar Sites found for"
+  },
+  "getSimilarSite":{
+    "message":"View Similar Sites"
+  },
+  "topSS":{
+    "message":"Top Similar Sites"
+  }
+}

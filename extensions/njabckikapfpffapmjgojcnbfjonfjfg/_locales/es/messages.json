@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "cookies.txt",
+    "description": "Name of the extension"
+  },
+  "appDesc": {
+    "message": "Permite exportar las galletas en un formato compatible, entre otros, con wget, curl, aria2.", 
+    "description": "Description of the extension"
+  }
+}

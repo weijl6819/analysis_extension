@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Workspace Launcher</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  </head>
+  <body>
+
+    <div id="main">
+      <div class="indexContainer" id="workspacesContainer">
+        <div id="workspacesHeader">
+          <h1 id="workspaceTitle" class="mainTitle fade">WORKSPACES</h1>
+					<button class="headerButton fade" id="addWorkspaceButton">+ NEW</button>
+					<button class="headerButton fade" id="workspacesEditButton">EDIT</button>
+					<button class="headerButton fade" id="workspacesShowAllButton">SHOW ALL</button>
+					<button class="headerButton fade" id="workspacesBackButton">BACK</button>
+					<button class="headerButton fade" id="workspacesDoneButton">DONE</button>
+        </div> <!-- workspacesHeader -->
+				<p id="no_workspaces"><i>Click </i><b>+ NEW</b><i> to add a new workspace.</i></p>
+        <ul id="workspaces">
+        </ul> <!-- workspaces -->
+
+        <template id="workspaceTemplate">
+          <li class="workspaceItem">
+            <button class="workspace fade">
+              <p class="workspaceName"></p>
+            </button>
+          </li>
+        </template>
+
+      </div> <!-- workspacesContainer -->
+
+
+      <div class="indexContainer" id="websitesContainer">
+        <!-- <div id="websitesHeader">
+          <h1 class="mainTitle">WEBSITES</h1>
+          <button class="headerButton fade" id="showAllWebsites">SHOW ALL</button>
+          <button class="headerButton fade" id="addFavoriteButton">+ NEW</button>
+        </div>  -->
+				<!-- websitesHeader -->
+        <!-- <div id="websites">
+        </div>  -->
+				<!-- websites -->
+      </div> <!-- websitesContainer -->
+    </div> <!-- main -->
+
+    <div id="sidebar">
+      <a id="closeSidebar" class="fade">&times;</a>
+
+      <div id="workspaceForm">
+        <h4>WORKSPACE</h4>
+        <h6>DETAILS</h6>
+
+        <div id="pinnedTabsContainer">
+          <h5>PINNED TABS</h5>
+          <div id="pinnedTabs">
+          </div> <!-- pinnedTabs -->
+          <button class="addTabButton fade" id="addPinnedTab">+ TAB</button>
+        </div> <!-- pinnedTabsContainer -->
+
+        <div id="regularTabsContainer">
+          <h5>REGULAR TABS</h5>
+          <div id="regularTabs">
+          </div> <!-- regularTabs -->
+          <button class="addTabButton fade" id="addRegularTab">+ TAB</button>
+        </div> <!-- regularTabsContainer -->
+
+        <template id="tabTemplate">
+          <div class="tab">
+            <input type="text" name="tab" value="http://">
+            <button class="removeTab fade">&times;</button>
+          </div> <!-- tab -->
+        </template>
+
+        <div id="nameContainer">
+          <h5>WORKSPACE NAME</h5>
+          <input  type="text" id="workspaceName" maxlength="24">
+        </div> <!-- nameContainer -->
+
+				<div id="sidebarButtons">
+	        <button class="sidebarButton button fade" id="saveWorkspace" type="submit">SAVE</button>
+					<button class="sidebarButton button fade" id="deleteWorkspace" type="submit">DELETE</button>
+				</div>
+				<p id="workspaceError"></p>
+        <p id="workspaceSuccess"></p>
+      </div> <!-- workspaceForm -->
+    </div> <!-- sidebar -->
+
+		<div id="helperMessageContainer">
+			<p id="helperMessage">
+			</p>
+		</div>
+
+
+    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+		<script src="assets/js/jquery-ui.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "name": {
+    "message": "Scanguard Safe Site"
+  },
+  "browserAction_defaultTitle": {
+    "message": "Security Suite"
+  },
+  "shortName": {
+    "message": "Cerca nel Web utilizzando lo strumento Sito sicuro di Scanguard"
+  },
+  "description": {
+    "message": "Safe Site  aiuta a bloccare URL dannosi e dannosi per migliorare la tua esperienza su Internet e tenerti al sicuro."
+  },
+  "chromeSettingsOverrides_searchProvider_name": {
+    "message": "Scanguard Safe Search"
+  },
+  "newTab_title": {
+    "message": "Scanguard Dashboard"
+  },
+  "urlScanner_tooltipTitle": {
+    "message": "Web Shield informazioni di sicurezza:"
+  },
+  "urlScanner_categoryLabel": {
+    "message": "Categoria:"
+  },
+  "urlScanner_threatLabel": {
+    "message": "minaccia:"
+  },
+  "urlScanner_poweredByText": {
+    "message": "Fonte:"
+  },
+  "warningPage_title": {
+    "message": "ATTENZIONE! questo sito web potrebbe danneggiare il tuo sistema.."
+  },
+  "warningPage_subTitle": {
+    "message": "Non ti preoccupare, lo abbiamo bloccato per te"
+  },
+  "warningPage_categoryLabel": {
+    "message": "Categoria"
+  },
+  "warningPage_categoryName_SAFE": {
+    "message": "Nessuna minaccia"
+  },
+  "warningPage_categoryName_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Sconosciuto"
+  },
+  "warningPage_categoryDescription_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Sito web identificato come potenzialmente dannoso.  Gli aggressori su questo sito possono indurti a comportamenti pericolosi che potrebbero compromettere la tua sicurezza."
+  },
+  "warningPage_categoryName_VIRUSINFECTED": {
+    "message": "Virus"
+  },
+  "warningPage_categoryDescription_VIRUSINFECTED": {
+    "message": "Sito web identificato come portatore di contenuti ingannevoli.  Gli aggressori su questo sito possono indurti a comportamenti pericolosi che potrebbero compromettere la tua sicurezza."
+  },
+  "warningPage_categoryName_SPYWARE": {
+    "message": "Spyware"
+  },
+  "warningPage_categoryDescription_SPYWARE": {
+    "message": "Sito web identificato come portatore di contenuti ingannevoli.  Gli aggressori su questo sito possono indurti a comportamenti pericolosi che potrebbero compromettere la tua sicurezza."
+  },
+  "warningPage_categoryName_PHISHING": {
+    "message": "Phishing"
+  },
+  "warningPage_categoryDescription_PHISHING": {
+    "message": "Sito web identificato come portatore di contenuti ingannevoli.  Gli aggressori su questo sito possono indurti a comportamenti pericolosi che potrebbero compromettere la tua sicurezza."
+  },
+  "warningPage_categoryName_MALWARE": {
+    "message": "Malware"
+  },
+  "warningPage_categoryDescription_MALWARE": {
+    "message": "Sito web identificato come portatore di contenuti ingannevoli e pericolosi.  Gli aggressori su questo sito possono indurti a comportamenti pericolosi che potrebbero compromettere la tua sicurezza."
+  },
+  "warningPage_categoryName_SOCIAL_ENGINEERING": {
+    "message": "Ingegneria social"
+  },
+  "warningPage_categoryDescription_SOCIAL_ENGINEERING": {
+    "message": "Sito web identificato come portatore di contenuti ingannevoli.  Gli aggressori su questo sito possono indurti a comportamenti pericolosi che potrebbero compromettere la tua sicurezza."
+  },
+  "warningPage_categoryName_UNWANTED_SOFTWARE": {
+    "message": "Software indesiderato"
+  },
+  "warningPage_categoryDescription_UNWANTED_SOFTWARE": {
+    "message": "Sito web identificato come portatore di software indesiderato.  Questo programma probabilmente contiene adware, spyware o altri comportamenti malevoli e intrusivi."
+  },
+  "warningPage_categoryName_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Applicazione dannosa"
+  },
+  "warningPage_categoryDescription_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Sito web identificato come portatore di software indesiderato.  Questo programma probabilmente contiene adware, spyware o altri comportamenti malevoli e intrusivi."
+  },
+  "warningPage_backToSafety": {
+    "message": "Ritorna in sicurezza"
+  },
+  "warningPage_visitWebsite": {
+    "message": "Visita il sito web"
+  },
+  "warningPage_whitelistText": {
+    "message": "Questo sito é attendibile, non segnalarlo più"
+  }
+}

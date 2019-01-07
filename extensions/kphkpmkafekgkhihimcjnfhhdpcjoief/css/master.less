@@ -1,0 +1,248 @@
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+// variables
+
+@white-color:#fff;
+@black-color:#000;
+@primary-color:#2fdab8;
+@navyblue-dark:#2C3E50;
+@navyblue-light:#34495E;
+@grey-1:#a6a6a6;
+@grey-light:#f2f2f2;
+@facebook-blue:#3b5998;
+
+
+
+
+
+
+body {
+  margin-top: 70px;
+  background: #f9f9f9;
+}
+
+// globals
+.pop-header{
+    border-bottom: 1px solid @primary-color;
+    margin: 20px 0;
+    span{
+        background: @primary-color;
+        color: @white-color;
+        padding:2px 3px;
+    }
+}
+// colors
+.primary-color{
+    color: @primary-color;
+}
+
+.facebook-blue{
+    color: @facebook-blue;
+}
+
+// navigation
+.navbar-color{
+    background-color: @white-color;
+}
+
+.navbar-text{
+    color: @grey-1;
+}
+
+.menu-label{
+    font-size: thin;
+    cursor: pointer;
+    margin: 10px;
+}
+
+// intro banner
+
+.intro-banner{
+    background: @white-color;
+    border: solid 1px @grey-light;
+    padding: 15px;
+    margin: 10px 0px 30px;
+    text-align: center;
+
+    .lead{
+        font-size: medium;
+    }
+
+    .text{
+        color: @grey-1;
+        font-size: small;
+        margin-left:10px;
+    }
+}
+
+
+.alert-dismissible .close{
+    // top:-2px;
+    // right: 0px;
+}
+
+/* left right panel*/
+.right-panel{
+    background: white;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 9999999999999999;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: .5s;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+     .close-wrapper{
+         padding: 10px;
+         .closeBtn{
+             color:@grey-1;
+             cursor: pointer;
+         }
+     }
+
+
+     header {
+         padding: 20px;
+
+         .menu-title{
+         color: @navyblue-dark;
+         text-transform: uppercase;
+         font-size: x-large;
+         font-weight: bolder;
+        }
+    }
+     .settings{
+         padding: 50px 20px;
+
+         .theme-toggle{
+             .theme{
+                 float: right;
+             }
+             .theme span{
+                 width: 25px;
+                 height: 25px;
+                 border-radius: 100%;
+                 float: right;
+                 border: 1px solid #BDC3C7;
+                 cursor: pointer;
+                 margin-left: 5px;
+             }
+
+             .theme .dark{
+                 background-color: @black-color !important;
+             }
+
+             .theme .light{
+                 background-color: @white-color !important;
+             }
+         }
+     }
+
+     .categories{
+         padding: 20px 20px;
+
+         h6{
+             font-size: medium;
+         }
+     }
+
+     .contact{
+         padding: 20px 20px;
+     }
+
+
+
+}
+
+.openRHS{
+    width: 300px;
+}
+
+.closeRHS{
+    width: 0;
+}
+
+.main-wrapper{
+    transition: .5s;
+}
+
+
+// card
+
+
+.thumbnail{
+    border: none;
+}
+
+.thumbnail .caption{
+    min-height: 87px;
+}
+
+.card {
+position: relative;
+
+    .label-default{
+        background: @primary-color;
+        }
+    &:hover{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        transition: .3s;
+    }
+
+}
+
+a.card.thumbnail{
+    padding: 0px;
+    border-radius: 0px;
+}
+.card:hover{
+        text-decoration: none;
+}
+
+.card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_caption h6 {
+  color: #555;
+}
+
+.card_title {
+  color: #555;
+  white-space: normal;
+  overflow: hidden;
+  // text-overflow: ellipsis;
+  font-weight: 600;
+}
+
+.video{
+  position:absolute;
+  top:32%;
+  left:45%;
+}
+.article, .gif, .picture{
+  display:none;
+}
+.icon-video{
+  color:@primary-color;
+}
+
+/*nav header*/
+.btn-open-menu-icon{
+    color: #EA4C88;
+}
+
+
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: xx-large;
+}
+
+.site-title{
+    font-family: 'Pacifico', cursive;
+    font-size: xx-large;
+}

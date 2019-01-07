@@ -1,0 +1,134 @@
+{
+	"extTitle": {
+		"message": "Verbessertes Design für Instagram.com",
+		"description": "Extension Title."
+	},
+	"extDesc": {
+		"message": "Das Web-Design von Instagram.com ist nicht für den Desktop optimiert. Diese Erweiterung ändert das.",
+		"description": "Extension description."
+	},
+	"blockPosts": {
+		"message": "Posts verstecken von",
+		"description": "Block Posts from Users setting."
+	},
+	"blockStories": {
+		"message": "Storys verstecken von",
+		"description": "Block Stories from Users setting."
+	},
+	"night": {
+		"message": "Nacht Modus an?",
+		"description": "Night mode setting."
+	},
+	"nightModeStart": {
+		"message": "Nacht Modus Startstunde",
+		"description": ""
+	},
+	"nightModeStart_help": {
+		"message": "Wenn du diese Einstellung und das Ende auf die gleiche zahlt stellst, ist der Nacht Modus dauerhaft an.",
+		"description": ""
+	},
+	"nightModeEnd": {
+		"message": "Nacht Modus Endstunde",
+		"description": ""
+	},
+	"nightModeEnd_help": {
+		"message": "Wenn du diese Einstellung und das Ende auf die gleiche zahlt stellst, ist der Nacht Modus dauerhaft an.",
+		"description": ""
+	},
+	"picturesOnly": {
+		"message": "Nur Bilder zeigen",
+		"description": "setting"
+	},
+	"hideStories": {
+		"message": "Alle Storys verstecken",
+		"description": "setting"
+	},
+	"hideRecommended": {
+		"message": "Vorgeschlagene Nutzer verstecken",
+		"description": "setting"
+	},
+	"highlightOP": {
+		"message": "Highlight Author in comments",
+		"description": "setting"
+	},
+	"only3Dot": {
+		"message": "Alle Style-Modifikationen entfernen",
+		"description": "setting"
+	},
+	"rows": {
+		"message": "Posts pro Reihe",
+		"description": "setting"
+	},
+	"indicateFollowing": {
+		"message": "Following indicator",
+		"description": "setting"
+	},
+	"noSpaceBetweenPosts": {
+		"message": "Keine leerstellen zwischen Posts",
+		"description": "setting"
+	},
+	"rowsFourBoxWidth": {
+		"message": "4-Posts Reihen Breite",
+		"description": "setting"
+	},
+	"rowsFourBoxWidth_help": {
+		"message": "Tritt nur in Kraft, wenn 'Posts pro Reihe' auf 4 gesetzt ist.",
+		"description": "setting"
+	},
+	"rowsTwoBoxWidth": {
+		"message": "2-Posts Reihen Breite",
+		"description": "setting"
+	},
+	"rowsTwoBoxWidth_help": {
+		"message": "Tritt nur in Kraft, wenn 'Posts pro Reihe' auf 2 gesetzt ist.",
+		"description": "setting"
+	},
+	"watchPosts": {
+		"message": "Posts beobachten von",
+		"description": "setting"
+	},
+	"watchPosts_help": {
+		"message": "Bitte gehe sicher, dass der Name existiert (d.h. https://instagram.com/DerName funktioniert)",
+		"description": "setting"
+	},
+	"watchStories": {
+		"message": "Storys beobachten von",
+		"description": "setting"
+	},
+	"watchStories_help": {
+		"message": "Bitte gehe sicher, dass der Name existiert (d.h. https://instagram.com/DerName funktioniert)",
+		"description": "setting"
+	},
+	"watchInBackground": {
+		"message": "Benachrichtige im Hintergrund?",
+		"description": "setting"
+	},
+	"watchInBackground_help": {
+		"message": "Falls ausgeschaltet, erhälst du nur Benachrichtigungen, wenn du Instagram.com öffnest.",
+		"description": "setting"
+	},
+	"watch_openProfile": {
+		"message": "Klicken um das Profil zu öffnen.",
+		"description": "Text in Notification"
+	},
+	"watch_newPost": {
+		"message": "$user$ hat etwas gepostet",
+		"description": "Text of the Notification, when the watched User posted a new post",
+		"placeholders": {
+			"user": {
+				"content": "$1",
+				"example": "JacobGross_"
+			}
+		}
+	},
+	"watch_newStory": {
+		"message": "Sieh dir $user$'s Story an",
+		"description": "Text of the Notification, when the watched User has an unseen Story",
+		"placeholders": {
+			"user": {
+				"content": "$1",
+				"example": "JacobGross_"
+			}
+		}
+	}
+}

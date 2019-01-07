@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Use o reconhecimento de voz na caixa de texto QUALQUER em qualquer site"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

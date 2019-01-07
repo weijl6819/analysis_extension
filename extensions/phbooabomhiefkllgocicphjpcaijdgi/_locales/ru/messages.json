@@ -1,0 +1,50 @@
+{
+    "name":
+    {
+        "message":"WebTop - Быстрая авторизация"
+    },
+    "description":
+    {
+        "message":"Быстрая авторизация в один клик для WebTop.  WebTop это онлайн рабочий стол с набором приложений."
+    },
+    "register":
+    {
+        "message":"Регистрация"
+    },
+    "email":
+    {
+        "message":"Адрес электронной почты"
+    },
+    "password":
+    {
+        "message":"Пароль"
+    },
+    "forgot":
+    {
+        "message":"Забыли?"
+    },
+    "save":
+    {
+        "message":"Сохранить"
+    },
+    "login_error":
+    {
+        "message":"Ошибка входа"
+    },
+    "enter_login":
+    {
+        "message":"Введите адрес электронной почты и пароль"
+    },
+    "data_saved":
+    {
+        "message":"Данные сохранены"
+    },
+    "please_wait":
+    {
+        "message":"Подождите пожалуйста"
+    },
+    "remind_link":
+    {
+        "message":"http://uid.me/remind/?l=ru"
+    }
+}

@@ -1,0 +1,14 @@
+#selectable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#selectable li {
+    font-size: 15px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif !important;
+    color: #6e99dd;
+    text-transform: uppercase;
+}

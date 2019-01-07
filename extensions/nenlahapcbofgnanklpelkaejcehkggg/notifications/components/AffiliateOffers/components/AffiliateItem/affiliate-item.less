@@ -1,0 +1,155 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy .other-offer-tile-run {
+  position: relative;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 6px;
+  padding: 25px 65px;
+  &.sidebar-layout {
+    padding: 0;
+    border-bottom: 0;
+    .flex {
+      flex-direction: column;
+      align-items: flex-start;
+      cursor: pointer;
+    }
+    .with-vendor {
+      font-weight: normal;
+      color: @darkGray;
+      font-size: 15px;
+      line-height: 21px;
+      .palmetto {
+        color: @palmetto;
+      }
+      .midnight {
+        color: @midnight;
+      }
+    }
+    .group {
+      display: flex;
+      align-items: flex-end;
+      h4.inline {
+        padding-right: 6px;
+      }
+    }
+    h4 {
+      color: @darkGray;
+    }
+    .actions {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .button-wrapper {
+        width: auto;
+        min-width: 100px;
+        button {
+          max-width: 120px;
+          height: 27px;
+          margin-bottom: 0;
+          border-radius: 4px;
+          & > span {
+            margin: 0 auto;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  .use-coupon {
+    .icon-coupon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    .group {
+      display: flex;
+      align-items: flex-end;
+      h2 {
+        padding-right: 6px;
+        line-height: 25px;
+      }
+    }
+    h4 {
+      padding: 0;
+    }
+  }
+  .title {
+    min-height: 50px;
+  }
+  .info {
+    color: @gray;
+    padding: 7px 12px;
+    font-size: 13px;
+    background-color: rgba(173, 185, 191, 0.07);
+  }
+  .product-image, .image-error .product-image {
+    width: 130px;
+    height: 95px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .feedback-group {
+    display: flex;
+    align-items: center;
+    .comment-link {
+      margin-right: 5px;
+    }
+  }
+
+  .button-wrapper {
+    text-align: center;
+    position: relative;
+    max-width: 150px;
+    max-width: 208px;
+    min-height: 26px;
+    width: 100%;
+    button {
+      max-width: 100%;
+      min-width: 100%;
+      margin-bottom: 6px;
+      .cta {
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+      }
+      &.green-outline-button {
+        background: transparent;
+        border: 1px solid @palmetto;
+        color: @palmetto;
+        &:hover {
+          border: 1px solid @lime;
+          color: @lime;
+        }
+        &:active {
+          border: 1px solid @lime;
+          color: @lime;
+        }
+      }
+    }
+    .vendor {
+      position: absolute;
+      width: 100%;
+    }
+  }
+  h4.savings-amount {
+    padding: 0 20px;
+    .uppercase {
+      text-transform: uppercase;
+    }
+  }
+}

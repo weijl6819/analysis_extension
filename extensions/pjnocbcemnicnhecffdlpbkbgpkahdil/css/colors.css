@@ -1,0 +1,216 @@
+﻿footer
+{
+  background-color:     #222222;
+  background:           -webkit-gradient(linear, left top, left bottom, from(#444444), to(#000000));
+  background:           -moz-linear-gradient(top, #444444, #000000);
+  filter:               progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+footer > ul
+{
+  border-right:         2px groove #333333;
+}
+footer > ul > li
+{
+  border:               none;
+  border-left:          2px groove #333333;
+}
+
+footer > ul > li > a, header > ul > li > a
+{
+	filter:   alpha(opacity=75);
+	opacity:  0.75;
+	color:    white;
+  font-size: 10px;
+}
+
+footer > ul > li > a:hover, footer > ul > li >a:focus, footer ul.Menu a:hover, footer ul.Menu a:focus, footer > ul > li.selected > a, header > ul > li > a:hover, header > ul > li >a:focus
+{
+	opacity:              0.9;
+	filter:               alpha(opacity=90);
+  box-shadow:           0px -4px 2px rgba(100, 100, 255, 0.75) inset;
+}
+footer > ul > li.selected > a
+{
+  box-shadow:           none;
+}
+footer > ul > li.selected, footer > ul > li.popup
+{
+  background:           -webkit-gradient(linear, left top, left bottom, from(#000000), to(#444444));
+  background:           -moz-linear-gradient(top, #000000, #444444);
+  filter:               progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#444444');
+  background-color:     #111111;
+}
+
+.Event > a:before
+{
+  background-color:     rgba(173, 216, 230, 0.75);
+  -opacity:              0.75;
+  -webkit-transition:   background-color 0.25s ease-in;
+}
+.Timer .Event > a:before
+{
+  background-color:     rgba(173, 216, 230, 0.0);
+  -opacity:              0;
+}
+
+header
+{
+  background-color:     #222222;
+  background:           -webkit-gradient(linear, left top, left bottom, from(#444444), to(#000000));
+  background:           -moz-linear-gradient(top, #444444, #000000);
+  filter:               progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+  border-bottom:        solid 1px #444444;
+}
+
+header > h1
+{
+  color:                white;
+  opacity:              0.75;
+}
+header > ul:nth-of-type(1) > li
+{
+  border-right:          2px groove #333333;
+}
+header > ul:nth-of-type(2) > li
+{
+  border-left:          2px groove #333333;
+}
+
+section.splash
+{
+  background-color:     #222222;
+  background:           -webkit-gradient(linear, left top, left bottom, from(#444444), to(#000000));
+  background:           -moz-linear-gradient(top, #444444, #000000);
+  filter:               progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+
+ul.popup
+{
+  border: 1px solid #444444;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  background-color: #222222;
+  background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#000000));
+  background: -moz-linear-gradient(top, #444444, #000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+ul.popup > li
+{
+  color: white;
+}
+ul.popup > li > a:hover
+{
+  background-color: #6666FF;
+}
+
+
+
+ul.list > li
+{
+  background-color: white;
+  border-bottom: solid 1px #EEE;
+}
+ul.list > li:last-of-type
+{
+  border-bottom: none;
+}
+ul.list > li > a:hover, ul.list > li > a:focus, ul.list > li > div > a:hover, ul.list > li > div > a:focus
+{
+  background-color: lightblue;
+}
+ul.list > li > a, ul.list > li > a
+{
+  text-decoration: none;
+  color: #A8A8A8;
+}
+ul.list > li > a:first-line
+{
+  color: black;
+}
+ul.list > li.group
+{
+  background-color: transparent;
+}
+
+ul.people li.away > a:before, ul.timeline li.away > a:before, ul.locations li.away > a:before, .vcard.away:before, .Chat > li.away:after
+{
+  background-color: rgba(255,206,7,1.0);
+  background: -webkit-radial-gradient(center, circle, rgba(255,206,7,1.0), rgba(255,206,7,0.2));
+  background: -moz-radial-gradient(center, circle, rgba(255,206,7,1.0), rgba(255,206,7,0.2));
+}
+ul.people li.dnd > a:before, ul.timeline li.dnd > a:before, ul.locations li.dnd > a:before, .vcard.dnd:before, .Chat > li.dnd:after
+{
+  background-color: rgba(240,15,15,1.0);
+  background: -webkit-radial-gradient(center, circle, rgba(240,15,15,1.0), rgba(240,15,15,0.2));
+  background: -moz-radial-gradient(center, circle, rgba(240,15,15,1.0), rgba(240,15,15,0.2));
+}
+ul.people li.online > a:before, ul.timeline li.online > a:before, ul.locations li.online > a:before, .vcard.online:before, .Chat > li.online:after
+{
+  background-color: rgba(0,192,0,1.0);
+  background: -webkit-radial-gradient(center, circle, rgba(0,192,0,1.0), rgba(0,192,0,0.2));
+  background: -moz-radial-gradient(center, circle, rgba(0,192,0,1.0), rgba(0,192,0,0.2));
+}
+ul.people li.offline > a:before, ul.timeline li.offline > a:before, ul.locations li.offline > a:before, .vcard.offline:before, .Chat > li.offline:after
+{
+  background-color: rgba(128,128,128,.6);
+  background: -webkit-radial-gradient(center, circle, rgba(128,128,128,.6), rgba(128,128,128,0.2));
+  background: -moz-radial-gradient(center, circle, rgba(128,128,128,.6), rgba(128,128,128,0.2));
+}
+
+
+fieldset
+{
+  border: solid 1px #DDD;
+  border-radius: 5px;
+  background-color: white;
+}
+fieldset > *
+{
+  border-bottom: solid 1px #DDD;
+}
+fieldset > *:last-of-type
+{
+  border-bottom: none;
+}
+fieldset label
+{
+  font-weight: bold;
+}
+
+input
+{
+  border: solid 1px transparent;
+  border-radius: 2px;
+  font-size: 11px;
+  font-family: inherit;
+}
+select
+{
+  font-size: 11px;
+  font-family: inherit;
+  border-radius: 2px;
+}
+button:focus, input:focus, select:focus, textarea:focus
+{
+  outline: none;
+  border: solid 1px #359EE7;
+}
+
+button
+{
+  color: black;
+
+  background-color: #CCC;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#BABABA));
+  background: -moz-linear-gradient(top, white, #BABABA);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#BABABA');
+  background-clip: padding-box;
+
+  border: 1px solid #999;
+  border-top-color: #A6A6A6;
+
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+
+  border-radius:  6px;
+}

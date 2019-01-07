@@ -1,0 +1,48 @@
+<div class="top-decor-line"></div>
+
+<div class="cp-hello-bg">
+  <div class="cp-hello-wrapper">
+
+    <cp-auth-header></cp-auth-header>
+
+    <div class="cp-hello-content">
+      <h2>Password Reset</h2>
+
+      <div class="cp-hello-form-wrapper">
+        <div class="cp-hello-form">
+          <form name="userForm" data-ng-submit="authCtrl.askForPasswordReset()" class="margin-top-15"
+                accept-charset="utf-8">
+
+            <h4>Please enter your email</h4>
+
+            <div class="form-group">
+              <input lc-focus-me="true" type="email" class="form-control cp-hello-form-input" id="email" name="email" data-ng-model="authCtrl.credentials.email"
+                     placeholder="email">
+            </div>
+
+            <div class="form-group">
+              <div class="list-inline text-center" style="margin-left: 0; height: 34px;">
+                <button type="submit" class="cp-hello-primary cp-hello-primary-action btn btn-block" style="width: 100%">
+                  Send Reset Mail
+                </button>
+              </div>
+            </div>
+
+            <div data-ng-show="authCtrl.error || authCtrl.success" class="cp-hello-message-wrapper">
+              <div data-ng-show="authCtrl.error" class="text-center text-danger">
+                <strong>{{authCtrl.error}}</strong>
+              </div>
+              <div data-ng-show="authCtrl.success" class="text-center text-success">
+                <strong>{{authCtrl.success}}</strong>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+

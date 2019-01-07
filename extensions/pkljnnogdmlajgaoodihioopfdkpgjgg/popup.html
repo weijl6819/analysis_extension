@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <title></title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <style type="text/css">
+        h1,ul,li{ margin: 0; padding: 0; list-style: none;}
+        .wrap{max-height: 500px; overflow: auto;}
+        .wrap h1{font: bold 18px/1.5em tahoma; margin-bottom: 10px; color: #16a085;}
+        .dom_list li{width: 378px; margin-bottom: 10px; white-space: nowrap; overflow: hidden;}
+        .dom_list li input, .dom_list li span{float: left; margin-right: 5px;}
+
+        .s{font: 14px/22px "courier new"; color: #333;}
+        .dom_list .opt_bar{ margin-bottom: 15px;}
+        .opt_bar .s, .opt_bar .c{-webkit-appearence: none; height: 22px; line-height: 22px; border: 1px solid #16a085; padding: 1px; vertical-align: top;}
+        .opt_bar .s{width: 250px; padding-left: 5px; padding-right: 5px;}
+        .opt_bar .c{cursor: pointer;}
+
+        .item span{ display: inline-block; vertical-align: top;}
+        .item .s{ width: 252px; height: 24px; padding: 1px 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background: #f0f0f0;}
+        .item .c{ width: 48px; height: 26px; background: #ddd; }
+
+        .btn{display: inline-block; width: 50px; height: 26px; cursor: pointer; background: #16a085; color: #fff; font: bold 14px/26px arial; text-decoration: none; text-align: center; -webkit-user-select: none;}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>DOM HIGHLIGHTER</h1>
+    <ul class="dom_list" id="dom_list">
+        <li class="opt_bar">
+            <input class="s" type="text" id="selector" placeholder="css or jquery selector"/>
+            <input class="c" type="color" id="color"/>
+            <span class="btn btn_add">ADD</span>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

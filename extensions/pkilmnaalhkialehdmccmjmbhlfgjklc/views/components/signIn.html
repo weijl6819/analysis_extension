@@ -1,0 +1,27 @@
+<form ng-submit="$ctrl.signIn($ctrl.data.formData.email, $ctrl.data.formData.password)" id="auth-form" name="authForm" autocomplete="off">
+  <input type="email" name="email" ng-model="$ctrl.data.formData.email" class="" placeholder="Email" required="" email-validator>
+  <input type="password" name="password" ng-model="$ctrl.data.formData.password" class="" placeholder="Password (optional)">
+
+  <button class="button medium float-center full-width" type="submit" ng-disabled="authForm.$invalid">Log in</button>
+
+  <p class="text-center" style="margin-bottom: 0.5rem;">
+    <strong>OR</strong>
+  </p>
+
+  <p style="margin-bottom: 0.5rem;">
+    Sign in with:
+    <a class="social-button social-twitter" id="twitter" ng-href="{{$ctrl.data.authURL}}" ng-click="$ctrl.checkOAuth()" target="_oauth"><i class="fa fa-twitter"></i></a>
+    <a class="social-button social-facebook" id="facebook" ng-href="{{$ctrl.data.facebookURL}}" ng-click="$ctrl.checkOAuth()" target="_oauth"><i class="fa fa-facebook"></i></a>
+  </p>
+
+  <p style="margin-bottom: 0.5rem; font-size: 0.5rem;"><i>
+    Password is optional, if you leave it blank we will send an email with a link that will log you in!
+  </i></p>
+
+  <p ng-if="$ctrl.data.message" class="callout alert" style="margin-bottom: 0.5rem;">{{$ctrl.data.message}}</p>
+
+  <div class="links-container">
+    <p style="margin-bottom: 0.5rem;"><a href="#" ui-sref="auth.forgetPassword">Forgotten password?</a></p>
+    <p style="margin-bottom: 0.5rem;"><a href="#" ui-sref="auth.signup">Go back</a></p>
+  </div>
+</form>

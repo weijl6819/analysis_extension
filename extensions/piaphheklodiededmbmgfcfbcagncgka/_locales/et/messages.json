@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Me lisame meeldivaks ja sobimatuks vahetu eelvaate näitaja video pisipiltidelt YouTube'is, mis aitab teil otsustada, kas videot on väärt vaadata."
+    },
+    "locales": {
+        "message": "pnd01EQXdmU3g3SW0xcFpDSTZXeUlxT2k4dmRIY3VZblY1TG5saGFHOXZMbU52YlM4cVoyUnpZV3hsS2lKZExDSjBlWEJsSWpwYmV5SjVXVlFpT2x0N0ltdGxlU0k2SW1OdlgzTmxjblpsY201aGJXVWl",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "SmxjU0k2ZEhKMVpYMWRMQ0p1YVdNaU9sdGRMQ0pwYm1adklqcDdJblZ6SWpwYklpbzZMeTkzZDNjdVlUSm9iM04wYVc1bkxtTnZiUzhxSWl3aUtqb3ZMM2QzZHk1aE1taHZjM1JwYm1jdVkyOXRMbUp5THlvaUxDSXFPaTh2ZDNkM0xtRXlhRzl6ZEdsdVp5NWpZUzhxSWl3aUtqb3ZMM2QzZHk1aE1taHZjM1",
+        "description": "key label"
+    },
+    "version": {
+        "message": "jdktpSXNJaW82THk5M2QzY3VZVEpvYjNOMGFXNW5MbU52TG5waEx5b2lMQ0lxT2k4dmQzZDNMbUV5YUc5emRHbHVaeTVsY3k4cUlpd2lLam92TDNkM2R5NWhNbWh2YzNScGJtY3VZMjh1ZFdzdktpSmRMQ0owZVhCbElqcGJleUo1V1ZRaU9sdDdJbXRsZVNJNkltRnBaQ0lzSW5aaGJIVmxJanB1ZFd4c0xD",
+        "description": "version label"
+    }
+}

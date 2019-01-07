@@ -1,0 +1,91 @@
+
+<!-------- Main Content Header Wrapper--------->
+<div class="cp-main-content-header-wrapper">
+  <div style="position: relative ; height: 100%;">
+    <div class="cp-main-content-header">
+
+      <!--note-content-header-2nd-row -->
+      <div class="cp-note-content-header-2nd-row">
+        <!-------------- Tags Area ------------>
+        <div class="cp-note-tags-wrapper">
+          <div class="note-dialog-tags-wrapper">
+            <md-chips
+                    md-autocomplete-snap
+                    ng-model="homeCtrl.activeNote.properties.tags"
+                    md-on-append="homeCtrl.newTagAppend($chip)">
+              <md-autocomplete
+                      md-input-name="autocompleteField"
+                      md-selected-item="homeCtrl.selectedItem"
+                      md-search-text="homeCtrl.searchTagsText"
+                      md-items="tag in homeCtrl.tagsQuerySearch(homeCtrl.searchTagsText)"
+                      md-item-text="tag.text"
+                      placeholder="+Tags"
+                      secondary-placeholder="+Tag">
+                <md-item-template>
+                  <span md-highlight-text="homeCtrl.searchTagsText">{{tag.text}}</span>
+                </md-item-template>
+              </md-autocomplete>
+              <md-chip-template>
+                <span>{{$chip.text}}</span>
+              </md-chip-template>
+            </md-chips>
+            <br/>
+          </div>
+        </div><!-------------- End of Tags Area ------------>
+      </div> <!-- End of note-content-header-2nd-row-->
+    </div>
+
+  </div>
+</div> <!-------- End of Main Content Header Wrapper--------->
+
+
+<!-------- Main Content Body Wrapper --------->
+<div class="cp-main-content-body-wrapper">
+  <div style="position: relative ; height: 100%;">
+    <div class="cp-main-content-body">
+
+      <!--<div class="cp-note-title-wrapper">-->
+        <!--<form class="cp-note-title-form" name="noteTitleForm" flex>-->
+          <!--<md-input-container style="width:100%" flex>-->
+            <!--<label></label>-->
+            <!--<input class="cp-note-title-input cp-no-border" ng-model="homeCtrl.activeNote.properties.title" columns="2" placeholder="Title">-->
+          <!--</md-input-container>-->
+        <!--</form>-->
+      <!--</div>-->
+
+      <div class="cp-note-link-wrapper" ng-click="homeCtrl.goToPage(homeCtrl.activeNote.properties.url)">
+        <a>{{homeCtrl.activeNote.properties.url}}</a>
+      </div>
+
+      <div class="cp-note-scrollable-area">
+
+        <div class="cp-note-highlight-wrapper" ng-if="homeCtrl.activeNote.properties.highlightText == undefined">
+          <p >No highlight chosen</p>
+          <md-tooltip>
+            Select text on page to highlight (Optional)
+          </md-tooltip>
+        </div>
+        <div class="cp-note-highlight-wrapper cp-note-highlight-wrapper-active" ng-if="homeCtrl.activeNote.properties.highlightText !== undefined">
+          <p ><span>"</span>{{homeCtrl.activeNote.properties.highlightText |truncate:20}}<span>"</span></p>
+        </div>
+
+        <div class="cp-note-content-wrapper">
+          <form name="noteContentForm">
+            <md-input-container style="width:100%" flex>
+              <label></label>
+              <textarea class="cp-note-content-textarea cp-no-border" ng-model="homeCtrl.activeNote.properties.content" columns="10" placeholder="Add your note"></textarea>
+            </md-input-container>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div> <!-------- End of Main Content Body Wrapper --------->
+
+<!-------- Main Content Footer --------->
+<div class="cp-main-content-footer">
+
+</div> <!-------- End of Main Content Footer --------->

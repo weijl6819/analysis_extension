@@ -1,0 +1,669 @@
+﻿/* top frame */
+body > .frame
+{
+  height:     100%;
+}
+
+.hidden
+{
+  display:    none;
+}
+
+.frame
+{
+  box-sizing: border-box;
+}
+
+/* icons */
+.icon a:before, .icons a:before
+{
+  padding:        4px;
+  flex:           0 0 auto; 
+}
+
+/* header */
+.self > *
+{
+  width:          100%;
+  overflow:       hidden;
+  align-items:    center;
+}
+.self label
+{
+  display:        block;
+  -max-width:      15em;
+}
+.self > *:before
+{
+  margin:         0 4px;
+  text-align:     center;
+}
+
+/* content */
+.view
+{
+  display:        flex;
+  flex-direction: column;
+  flex:           1;
+  overflow-y:     auto;
+  overflow-x:     hidden;
+}
+.view.hidden
+{
+  display:        none;
+}
+
+
+/* omni search */
+.omni
+{
+  padding:        4px;
+  box-sizing:     border-box;
+
+  display:        flex;
+  flex-direction: column;
+
+  flex:           0 0 auto;
+}
+.omni > .find
+{
+  position:       relative;
+  flex:           0 0 auto;
+}
+.wrap > .omni > .find
+{
+  padding:        4px 0px;
+  overflow:       hidden;
+}
+.omni > .find > input
+{
+  padding:        8px 24pt;
+  font-size:      9pt;
+}
+.omni > .find > .icon
+{
+  position:       absolute;
+  top:            0;
+  height:         100%;
+  display:        inline-flex;
+  align-items:    center;
+}
+.omni > .find > .iSearch
+{
+  left:           .5em;
+}
+.omni > .find > .iClear
+{
+  right:          .5em;
+}
+
+
+.omni.show
+{
+  flex:           1 0 10px;
+  overflow:       hidden;
+}
+.omni.show > .view
+{
+  -flex:           1 0;
+}
+.omni.hide
+{
+  flex:           0 0 auto;
+}
+.omni.hide > .view
+{
+  display:        none;
+}
+.omni.show ~ .stack
+{
+  -flex:           0 1 0px;
+  display:        none;
+}
+.omni.hide ~ .card
+{
+  -flex:           1 0 200px;
+}
+
+.omni > .view > .list
+{
+  padding:        0;
+}
+
+/* cards */
+.cards
+{
+  display:        flex;
+  flex-direction: column;
+
+  height:         100%;
+}
+.cards.hidden
+{
+  display:        none;
+}
+.cards > .stack
+{
+  flex:           1;
+  height:         100%;
+  position:       relative;
+  overflow:       hidden;
+}
+.stack > .card
+{
+  display:        flex;
+  flex-direction: column;
+  position:       absolute;
+  left:           0;
+  right:          0;
+  top:            0;
+  bottom:         0;
+}
+.stack > .card.hidden
+{
+  display:        none;
+}
+.cards > .menu.hiding {
+  display:        none;
+}
+
+/* tabs */
+.tabs
+{
+  flex:          0 0 auto;
+  display:       flex;
+  width:         100%;
+}
+.tabs > a
+{
+  -flex:          1 1 auto;
+  flex:          1 1 100%;
+  padding:       8px 2px;
+  margin:        0 2px;
+  display:       inline-block;
+}
+
+
+
+
+/* lists */
+.list
+{
+  aaflex:           1 1 auto;
+  --width:          100%;
+}
+.list > li
+{
+  width:          100%;
+  display:        inline-flex;
+}
+.list > li *
+{
+  overflow:       hidden;
+  text-overflow:  ellipsis;
+  white-space:    nowrap;
+}
+.list > li > a
+{
+  padding:        4px;
+  flex:           1 1 100%;
+  display:        inline-flex;
+  align-items:    center;
+  height:         48pt;
+  box-sizing:     border-box;
+}
+.list > li > a.icon
+{
+  flex:           0 0 auto;
+}
+.list > li > a > div
+{
+  flex:           1 1 100%;
+}
+
+/* events indicator */
+.list > li > a[label]:after
+{
+  content:        attr(label);
+  flex:           0 0 auto;
+  box-sizing:     border-box;
+  width:          2em;
+  margin-right:   1em;
+  text-align:     center;
+  font-size:      9pt;
+}
+
+.-people *[jsc_id] > a:first-of-type:before, .-chats *[jsc_id] > a:first-of-type:before
+{
+  -content:        '';
+  flex:           0 0 40pt;
+  width:          40pt;
+  height:         40pt;
+  margin-right:   4px;
+  -border:         solid 1px transparent;
+  border-radius:  20pt;
+  -background-color: red;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.list.actions
+{
+  text-align:     center;
+}
+.list.actions li
+{
+  height:         4em;
+  width:          31%;
+  padding:        4px;
+  box-sizing:     border-box;
+}
+.list.actions li > a
+{
+  justify-content: center;
+  flex-direction:  column;
+  font-size:       8pt;
+  align-items:     center;
+  box-sizing:      border-box;
+}
+
+.list.chat li
+{
+  min-height:      2em;
+  padding:         0 4px;
+  padding-top:     4px;
+  box-sizing:      border-box;
+}
+.list.chat li > *
+{
+  display:         inline-flex;
+  width:           100%;
+}
+
+/* chat */
+.person
+{
+  text-align:     center;
+  font-size:      110%;
+  overflow:       hidden;
+  text-overflow:  ellipsis;
+  white-space:    nowrap;
+  padding:        4px;
+}
+.input
+{ 
+  flex:           0 0 auto;
+  display:        inline-flex;
+  padding:        2px 0px;
+  height:         3em;
+}
+.input.hidden
+{
+  display:        none;
+}
+.input textarea
+{
+  width:          100%;
+  height:         100%;
+  box-sizing:     border-box;
+  resize:         none;
+  font-size:      9pt;
+  padding:        2px;
+  padding-right:  3em;
+  overflow-y:     auto;	
+}
+.input-wrap {
+  position:       relative;
+  flex:           1;
+  height:         100%;
+}
+.input-wrap.hidden {
+  display: none;
+}
+.view.chat  {
+  overflow: hidden;
+}
+
+.input-label {
+  position: absolute;
+  right: 8px;
+  bottom: 2px;
+  width: auto;
+  font-size:  6pt;
+  opacity: 0.5;
+  color: black;
+}
+.input-warn {
+  color: red;
+  opacity: 1;
+}
+.chat-error {
+  color: red;
+  font-size: 75%;
+}
+
+.button
+{
+  display:        inline-flex;
+  flex-direction: column;
+  height:         100%;
+  justify-content: center;
+  padding:        0 8px;
+  margin-left:    4px;
+}
+.button.hidden
+{
+  display: none;
+}
+
+/* chat flow */
+.list li .flow > *
+{
+  overflow:         visible;
+}
+
+.flow > i
+{
+  flex:           0 0 32pt;
+  width:          32pt;
+  height:         32pt;
+  border-radius:  16pt;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding:         0;
+  border:          none;
+  display:         flex;
+  justify-content: center;
+  font-style:      normal;
+}
+.iflow > .flow > i
+{
+  margin-right:   8px;
+}
+.oflow > .flow > i
+{
+  margin-left:   8px;
+}
+.iflow > .flow > i:before
+{
+  content:        '';
+}
+.oflow > .flow > i:before
+{
+  content:        '';
+}
+.iflow > .flow > *:before
+{
+  content:        '';
+}
+.oflow > .flow > *:after
+{
+  content:        '';
+}
+
+.flow > *
+{
+  flex:             1;
+  position:         relative;
+  padding:          4px;
+}
+.flow > div:before, .flow > div:after
+{
+  position:         absolute;
+  top:              4px;
+  border:           solid 8px transparent;
+}
+.flow > div:before
+{
+  left:             -8px;
+  border-left-width: 0;
+}
+.flow > div:after
+{
+  right:            -8px;
+  border-right-width: 0;
+}
+
+.flow img
+{
+  width:            100%;
+}
+.flow .time
+{
+  text-align:       center;
+}
+.flow .chat
+{
+  white-space:      normal;
+  word-wrap:        break-word;
+}
+.flow .call
+{
+  white-space:      normal;
+  word-wrap:        break-word;
+}
+.flow .dial
+{
+  white-space:      normal;
+  word-wrap:        break-word;
+}
+.flow .pres
+{
+  white-space:      normal;
+  word-wrap:        break-word;
+}
+.flow .map
+{
+  white-space:      normal;
+  word-wrap:        break-word;
+}
+
+/* call actions */
+div.keypad
+{
+  flex:             0;
+}
+
+.list.keypad
+{
+  display:          flex;
+  flex-wrap:        wrap;
+  background-color: transparent;
+}
+.list.keypad li
+{
+  width:            33.33%;
+  flex-direction:   column;
+  text-align:       center;
+  padding:          2px;
+  height:           2.5em;
+  box-sizing:       border-box;
+  min-height:       40pt;
+}
+.list.keypad li > a
+{
+  font-size:        75%;
+  flex-direction:   column;
+  background-color: #F7F7F7;
+  min-height:       initial;
+}
+.list.keypad li > a[key]:before
+{
+  content:          attr(key);
+  font-size:        initial;
+}
+
+.list.call
+{
+  display:          flex;
+}
+.list.call li
+{
+  width:            25%;
+  height:           auto;
+}
+
+.list.buttons
+{
+  background-color: transparent;
+  display:          flex;
+}
+
+.list.buttons li
+{
+  padding:          4px 4px;
+}
+
+.list.buttons li > a
+{
+  border:           solid 1px transparent;
+  border-radius:    4px;
+  background-color: #f15234;
+  min-height:       initial;
+  color:            white;
+}
+.list.buttons li > a:before
+{
+  color:            white;
+}
+
+/*
+.list > li.checked > a:after
+{
+  content:         '';
+  flex:            0 0 2em;
+  width:           2em;
+  height:          2em;
+  margin-left:     4px;
+  border:          solid 0.75em rgba(0, 0, 0, 0);
+  border-radius:   1em;
+  background-color: #939393;
+  box-sizing:      border-box;
+  background-clip: content-box;
+}
+*/
+
+.list.radio > li > a:after
+{
+  font-family: 'symthin';
+  content:     '\e634';
+  color:       #73D0E6;
+  font-size:   24pt;
+  margin-right: 10pt;
+}
+.list.radio > li.checked > a:after 
+{
+  content:     '\e633';
+}
+.list.radio > li.iLogout > a:after 
+{
+  content:     '';
+}
+.list.check > li> a:after 
+{
+  font-family:  'symthin';
+  content:      '\e64c';
+  color:        #73D0E6;
+  font-size:    24pt;
+  margin-right: 10pt;
+}
+.list.check > li.checked > a:after 
+{
+  content:     '\e60c';
+}
+.list.check > li.readOnly > a:after
+{
+  color:        #CCCCCC;
+  cursor:      default;
+}
+.list.check > li.readOnly *
+{
+  color:        #CCCCCC;
+  cursor:      default;
+}
+.list.icons
+{
+  -padding:        4px;
+  box-sizing:     border-box;
+}
+
+.list li
+{
+  box-sizing:     border-box;
+}
+li.title
+{
+  padding:        4px;
+}
+
+
+.menu > .head > .icons.left > a
+{
+  border-right:   solid 1px #EAEAEA;
+}
+.menu > .head > .icons.right > a
+{
+  font-size:      9pt;
+  padding-right:  4px;
+  border-left:   solid 1px #EAEAEA;
+}
+.menu > .head > .main
+{
+  visibility:     hidden;
+}
+
+li > a > i, .card > .head > .main > a > i
+{
+  display:              inline-flex;
+  width:                40pt;
+  height:               40pt;
+  flex:                 0 0 40pt;
+  margin-right:         4px;
+  border-radius:        50%;
+  background-repeat:    no-repeat;
+  background-position:  center center;
+  background-size:      100% 100%;
+  font-style:           normal;
+
+  align-items:          center;
+  justify-content:      center;
+  background-color:     transparent;
+}
+.card > .head > .main > a > i
+{
+  padding:              3px;
+}
+.card > .head.back > .main > a > i 
+{
+  position:             relative;
+  left:                 -22pt;
+}
+.card .head.back > .main > a 
+{
+  width:                50pt;
+  height:               50pt;
+  flex:                 0 0 50pt;
+  position:             relative;
+}
+.card .head.back > .main > a:before
+{
+  content:              '\e65e';
+  font-size:            30pt;
+  font-family:          'symthin';
+  display:              inline-flex;
+  margin:               0;
+  flex:                 0 0 30pt;
+  position:             relative;
+  left:                 -9pt;
+}
+
+.call.actions > li > a > i, .call.actions > li > a > div 
+{
+  flex: 0 0 auto;
+  margin: 0;
+  height: auto;
+}
+
+

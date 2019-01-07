@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="minimalist">
+	<head>
+	  	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="language" content="english">
+		<meta name="viewport" content="width=device-width">
+		  
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&subset=latin-ext" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/quill.bubble.css" />
+		<link rel="stylesheet" type="text/css" href="./css/advanced.css" />
+		<link rel="stylesheet" type="text/css" href="./css/tipr.css"> 		
+		<style>
+
+		</style>	
+	</head>
+	<body>
+	    <div id="apps">
+			<div id="content-container">
+				<div class="advanced-wrapper">
+					<div class="standalone-container">
+					  <div id="bubble-container"></div>
+					</div>
+				</div>
+			</div>
+		    <div class="weather-container" style="display: none;">
+			    <div id="weather"></div>
+			</div>
+			<div class="links-container">
+				<div class="link-span">
+					<a class="activate-minimalism tip" data-tip="minimalist&nbsp;mode">⚪️</a>
+				</div>
+				<div class="link-span">
+					<a class="deactivate-minimalism tip" data-tip="normal&nbsp;mode" style="display: none;">🔘</a>
+				</div>
+				<div class="link-span">
+					<a class="tip" id="render-link" data-tip="transform&nbsp;to&nbsp;PDF&nbsp;(beta)">📄</a>
+				</div>
+				<div class="link-span">
+					<a class="change-background tip" data-tip="change&nbsp;background">💻</a>
+				</div>
+				<div class="link-span">
+					<a class="hide-links tip" data-tip="hide&nbsp;links" style="display: none;font-weight:normal">🙉</a>
+				</div>
+				<div class="link-span">
+					<a class="show-links tip" data-tip="show&nbsp;links" style="display: none;font-weight:normal; font: normal;">🙈</a>
+				</div>
+				<span class="links-href" style="display: none;">
+					<div class="link-span">
+						<a class="configure-links tip" data-tip="configure&nbsp;links" style="font-weight:normal; font: normal;">🔧</a>
+					</div>
+					<div class="link-span prepend-link">
+						<a class="add-link" style="display:none; font-weight:normal; font: normal;">Add new link</a>
+					</div>
+					<div class="link-span">
+						<a class="end-configure-links tip" data-tip="end&nbsp;links&nbsp;configuration" style="display:none; font-weight:normal; font: normal;">✔️</a>
+					</div>
+				</span>			
+			</div>
+	    </div>	    
+		<script type="text/javascript" src="./js/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript" src="./js/chrome-Storage-largeSync.min.js"></script>  
+		<script type="text/javascript" src="./js/quill.min.js"></script>
+		<script type="text/javascript" src="./js/tipr.min.js"></script>
+		<script type="text/javascript" src="./js/ga.js"></script>
+		<script type="text/javascript" src="./js/simpleweather.min.js"></script>
+		<script type="text/javascript" src="./js/pdfmake.min.js"></script>
+		<script type="text/javascript" src="./js/vfs_fonts.js"></script>
+		<script type="text/javascript" src="./js/parser.js"></script>
+		<script type="text/javascript" src="./js/advanced.js"></script>
+	</body>
+</html>

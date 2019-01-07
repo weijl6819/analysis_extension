@@ -1,0 +1,62 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy .new-tooltip {
+  position: fixed;
+  opacity: 0;
+  animation: opacIn 350ms ease forwards;
+  &.top {
+    animation: tooltipDown 350ms ease forwards;
+  }
+  .new-tooltip-wrapper {
+    background: @midnight;
+    border-radius: 7px;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+  }
+  h2 {
+    color: @offWhite;
+  }
+  .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #c9d1d7;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .bold {
+    color: #fff;
+    padding-right: 7px;
+  }
+  @keyframes tooltipDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes tooltipLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  @keyframes opacIn {
+    0% {
+      opacity: 0;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+}

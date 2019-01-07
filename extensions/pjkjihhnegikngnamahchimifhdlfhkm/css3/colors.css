@@ -1,0 +1,341 @@
+﻿/* global */
+body
+{
+  color:            #909090;
+}
+a 
+{ 
+  color:            #73D0E6;
+  cursor:           pointer;
+  text-decoration:  none;
+}
+a[href]:active, a[href]:hover
+{
+  color:            #FFBB00;
+}
+
+input, textarea
+{
+  border:           solid 1px transparent;
+  outline:          none;
+}
+input ~ .icon
+{
+  color:            #939393;
+}
+input:focus, textarea:focus, select:focus
+{
+  border-color:     #73D0E6;
+}
+input:focus ~ .icon
+{
+  color:            #73D0E6;
+}
+input ~ .icon:hover, input ~ .icon:focus
+{
+  color:            #FFBB00;
+}
+
+.frame, .card
+{
+  background-color: #F7F7F7;
+}
+
+/* icons */
+.icons a
+{
+  color:            #333333;
+}
+.icons a[href]:hover, .icons a[href]:before, .icons a[href]:hover > *, .list a > i, .main a > i
+{
+  color:            #73D0E6;
+}
+.AURA1 .icons a[href]:hover, .AURA1 .icons a[href]:before, .AURA1 .icons a[href]:hover > *
+{
+  color: white;
+}
+.AURA1 .icons li a[href]:hover, 
+.AURA1 .icons li a[href]:before, 
+.AURA1 .icons li a[href]:hover > * {
+  color: #3B5062;
+}
+
+.AURA1 li a.icon {
+  color: #3B5062;
+}
+
+
+.AURA1 .main a > i, .AURA1 .list a > i {
+  color: #3B5062;
+}
+.AURA1 .list.check > li> a:after {
+  color: #3B5062;
+}
+
+.icons a[href]:hover:before, .icons a[href]:hover:after, .back > .main > a:hover > i:before, .main > a:hover:before
+{
+  color:            #FFBB00;
+}
+.back > .main[jsc_id]:not(.MUC):not(.iChat) > a:hover > i:before 
+{
+  color:            transparent;
+}
+
+/* header */
+.head.top
+{
+  background-color: #F7F7F7;
+  border-bottom:    solid 4px #EAEAEA;
+}
+.AURA1 .head.top {
+  background-color: #3B4F63;
+  border-bottom: none;
+}
+.AURA1 .head .main a:before {
+  color: #3B4F63;
+}
+.AURA1 .head .main a:hover:before,
+.AURA1 .head .main a:focus:before {
+  color: #FFBB00;
+}
+.AURA1 .head .main a:hover > i:before,
+.AURA1 .head .main a:focus > i:before {
+  color: #3B4F63;
+}
+
+.AURA1 .popup .head {
+  color: white;
+  background-color: #3B4F63;
+}
+.AURA1 .popup .head a, .AURA1 .popup .head a > i {
+  color: white;
+}
+.AURA1 .nodata-link {
+  color: white;
+  background-color: #3B4F63;
+}
+
+
+.AURA1 .view ~ div.actions > .iAccept a:hover, 
+.AURA1 .view > div.actions > .iAccept a:hover, 
+.AURA1 .view ~ div.actions > .iAccept a:focus, 
+.AURA1 .view > div.actions > .iAccept a:focus, 
+.AURA1 .view > div.actions > .iOK a:hover, 
+.AURA1 .view ~ div.actions > .iOK a:hover, 
+.AURA1 .view > div.actions > .iOK a:focus, 
+.AURA1 .view ~ div.actions > .iOK a:focus {
+
+}
+.AURA1 .view ~ div.actions > .iAccept a, 
+.AURA1 .view > div.actions > .iAccept a, 
+.AURA1 .view > div.actions > .iOK a, 
+.AURA1 .view ~ div.actions > .iOK a {
+  background-color: #3B4F63;
+}
+
+.view ~ div.actions > .iDecline a:hover, 
+.view > div.actions > .iDecline a:hover, 
+.view ~ div.actions > .iDecline a:focus, 
+.view > div.actions > .iDecline a:focus, 
+.view > div.actions > .iCancel a:hover, 
+.view > div.actions > .iCancel a:focus {
+
+}
+
+.AURA1 .view ~ div.actions > .iDecline a, 
+.AURA1 .view > div.actions > .iDecline a, 
+.AURA1 .view > div.actions > .iCancel a {
+  background-color: #EB1C24;
+}
+
+
+.head.top .main
+{
+  border-left:      solid 1px #EAEAEA;
+  border-right:     solid 1px #EAEAEA ;
+}
+.head.top .right.highlight {
+  background-color: transparent;
+}
+.head.top .right.highlight.itemPeople > .iPeople {
+  background-color: #f0f0f0;
+}
+.AURA1 .head.top .right.highlight.itemPeople > .iPeople {
+  color: #FDB720;
+  background-color: #3B4F63;
+}
+.AURA1 .head.top .right.highlight.itemPeople > .iPeople:before {
+  color: #FDB720;
+}
+
+.head.top .right.highlight.itemConfig > .iConfig {
+  background-color: #f0f0f0;
+}
+
+
+.head .self > *
+{
+  color:            #909090;
+  font-size:        9pt;
+}
+.head .self .imp 
+{
+  color:            #333333;
+  font-size:        11pt;
+}
+.AURA1 .head .self .imp {
+  color: white;
+} 
+
+/* presence */
+.offline .imp:before, .offline.pres:before
+{
+  -color:            transparent;
+}
+.online  .imp:before, .online.pres:before, .iOnline > a > i:before, .iOnline > a:hover > i:before
+{
+  color:            #0AA400;
+}
+.away    .imp:before, .away.pres:before, .iAway > a > i:before, .iAway > a:hover > i:before
+{
+  color:            #FFBB00;
+}
+.dnd     .imp:before, .dnd.pres:before, .iDND > a > i:before, .iDND > a:hover > i:before
+{
+  color:            #EE4A2A;
+}
+
+/* omni */
+.omni .find
+{
+  -border-bottom:    solid 2px #CCC;
+}
+
+/* lists */
+.list > li
+{
+  -background-color: #F7F7F7;
+}
+.list.chat > li
+{
+  background-color: transparent;
+}
+.list a *
+{
+  color:            #333333;
+  font-size:        11pt;
+}
+.list a span
+{
+  font-size:        8pt;
+}
+.list.large a span
+{
+  font-size:        9pt;
+}
+.list a :not(i) ~ *
+{
+  color:            #909090;
+  font-size:        9pt;
+}
+.list a:hover *, .list a:hover * ~ *
+{
+  color:            #73D0E6;
+}
+.AURA1 .list a:hover *, 
+.AURA1 .list a:hover * ~ *
+{
+  color:            #333333;
+}
+.AURA1 .list.radio > li > a:after {
+  color:            #333333;
+}
+
+.list > li > a[label]:after
+{
+  background-color: #EE4A2A;
+  color:            white;
+}
+.list > li > a[label]:hover:after
+{
+  color:            white;
+}
+
+
+/* tabs, buttons */
+.tabs > a, .button
+{
+  color:            white;
+  background-color: #73D0E6;
+}
+.tabs > a:hover, .tabs > a:focus, .button:hover, .button:focus
+{
+  color:            #FFBB00;
+  background-color: #1AC2E8;
+  outline:          none;
+}
+.tabs > a.active
+{
+  background-color: #1AC2E8;
+}
+
+
+/* chats */
+.flow > i 
+{
+  background-color: white;
+}
+.flow > div
+{
+  border-bottom:    solid 2px #CCC;
+  background-color: white;
+  color:            #909090;
+  font-size:        11pt;
+}
+.flow > div:before
+{
+  border-right:     solid 8px white;
+}
+.flow > div:after
+{
+  border-left:      solid 8px white;
+}
+.flow .time
+{
+  color:            #d5d5d5;
+}
+.flow .pres, .flow .call
+{
+  color:            #909090;
+}
+
+
+
+.AURA1 .card.menu .list.large li a {
+  background-color: transparent;
+}
+.AURA1 .card.menu .list.large {
+  background-color: #3B5062;
+}
+.AURA1 .card.menu .list.large a * {
+  color: white;
+}
+.AURA1 .card.menu .list.large li a > i {
+  color: white;
+}
+
+.AURA1 .keypad > li > a {
+  color: white;
+  background-color: #3B5062;
+}
+.AURA1 .keypad > li > a > i {
+  color: white;
+}
+.AURA1 .keypad > li.iClear > a > div, 
+.AURA1 .keypad > li.iDial > a > div {
+  color: white;
+}
+.AURA1 .keypad > li > a *, .AURA1 .keypad > li > a:hover *, .AURA1 .keypad > li > a:focus * {
+  color: white;
+}
+

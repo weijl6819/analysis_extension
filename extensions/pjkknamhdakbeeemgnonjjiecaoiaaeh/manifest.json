@@ -1,0 +1,61 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "chrome_settings_overrides": {
+        "search_provider": {
+            "alternate_urls": [],
+            "encoding": "UTF-8",
+            "favicon_url": "http://www.wowmovix.com/favicon.ico",
+            "image_url": "http://movix.searchalgo.com/go/?category=images&s=wmdp&vert=movies&var=plus&q={searchTerms}",
+            "image_url_post_params": "",
+            "instant_url": "",
+            "instant_url_post_params": "",
+            "is_default": true,
+            "keyword": "WowMovix",
+            "name": "WowMovix Search Plus",
+            "search_url": "http://movix.searchalgo.com/go/?category=web&s=wmdp&vert=movies&var=plus&q={searchTerms}",
+            "search_url_post_params": "",
+            "suggest_url": "http://sug.searchalgo.com/search/index_sg.php?q={searchTerms}",
+            "suggest_url_post_params": ""
+        }
+    },
+    "background": {
+        "scripts": [
+            "js/official/jquery.min.js",
+            "js/base.js",
+            "js/init.js",
+            "/vertical/init.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "images/icon38.png",
+        "default_popup": "popup.html",
+        "default_title": "WowMovix Search Plus"
+    },
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "homepage_url": "http://wow.gomovix.com",
+    "description": "WowMovix Search Plus is a powerful search engine, offering you a variety of unique features and search tools.",
+    "icons": {
+        "16": "images/icon16.png",
+        "128": "images/icon128.png"
+    },
+    "manifest_version": 2,
+    "name": "WowMovix Search Plus",
+    "omnibox": {
+        "keyword": "m"
+    },
+    "permissions": [
+        "tabs",
+        "<all_urls>",
+        "http://*/*",
+        "https://*/*",
+        "cookies",
+        "storage",
+        "contextMenus"
+    ],
+    "short_name": "WowMovix",
+    "version": "1.0.2",
+    "web_accessible_resources": [
+        "*"
+    ]
+}

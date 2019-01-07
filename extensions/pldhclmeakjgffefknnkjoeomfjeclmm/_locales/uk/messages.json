@@ -1,0 +1,58 @@
+{
+    "name":
+    {
+        "message":"uCoz - Безпечна авторизація"
+    },
+    "description":
+    {
+        "message":"Безпечна авторизація в один клік на сайтах uCoz. Більш як один мільйон сайтів підтримують цю систему авторизації."
+    },
+    "register":
+    {
+        "message":"Реєстрація"
+    },
+    "email":
+    {
+        "message":"Адреса електронної пошти"
+    },
+    "password":
+    {
+        "message":"Пароль"
+    },
+    "forgot":
+    {
+        "message":"Забули?"
+    },
+    "save":
+    {
+        "message":"Зберегти"
+    },
+    "create_site":
+    {
+        "message":"Створити сайт з uCoz"
+    },
+    "login_error":
+    {
+        "message":"Помилка входу"
+    },
+    "enter_login":
+    {
+        "message":"Введіть адресу електронної пошти та пароль"
+    },
+    "data_saved":
+    {
+        "message":"Дані збережені"
+    },
+    "please_wait":
+    {
+        "message":"Зачекайте будь ласка"
+    },
+    "site":
+    {
+        "message":"http://www.ucoz.ua"
+    },
+    "remind_link":
+    {
+        "message":"http://www.uid.me/remind/?l=ua"
+    }
+}

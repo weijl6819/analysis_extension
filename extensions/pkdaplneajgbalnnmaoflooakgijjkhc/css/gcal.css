@@ -1,0 +1,42 @@
+#lifesizeButton, #lifesizeStatus, #lifesizeLoader {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+#lifesizeButton {
+  display: table;
+  margin-top: 0.5em;
+  padding: 0px 5px 2px 5px;
+  color: #fff;
+  background: #4B45DA;
+  cursor: pointer;
+}
+
+.visibleVideoRow {
+  display: table-row !important;
+}
+
+#lifesizeButton.active {
+  margin-left: 0;
+}
+
+#lifesizeButton.no-click-button {
+  cursor: default;
+}
+
+#lifesizeButton span {
+  display: inline-block;
+}
+
+#lifesizeButton img {
+  position: relative;
+  top: 2px;
+  vertical-align: baseline;
+  display: inline-block;
+  height: 16px;
+  margin-right: 5px;
+}
+
+#lifesizeSelect {
+  width: 300px;
+}

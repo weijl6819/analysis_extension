@@ -1,0 +1,58 @@
+{
+    "name":
+    {
+        "message":"uCoz - sichere Autorisierung"
+    },
+    "description":
+    {
+        "message":"Sichere Autorisierung mit einem Mausklick auf uCoz Websiten. Mehr als eine Million Websiten unterst?tzen dieses System der Autorisierung."
+    },
+    "register":
+    {
+        "message":"Anmeldung"
+    },
+    "email":
+    {
+        "message":"E-Mail"
+    },
+    "password":
+    {
+        "message":"Passwort"
+    },
+    "forgot":
+    {
+        "message":"Vergessen?"
+    },
+    "save":
+    {
+        "message":"Speichern"
+    },
+    "create_site":
+    {
+        "message":"Homepage mit uCoz erstellen"
+    },
+    "login_error":
+    {
+        "message":"Autorisierungsfehler"
+    },
+    "enter_login":
+    {
+        "message":"Geben Sie Ihre E-Mail und Passwort ein"
+    },
+    "data_saved":
+    {
+        "message":"Angaben sind gespeichert"
+    },
+    "please_wait":
+    {
+        "message":"Warten Sie bitte"
+    },
+    "site":
+    {
+        "message":"http://www.ucoz.de"
+    },
+    "remind_link":
+    {
+        "message":"http://www.uid.me/remind/?l=de"
+    }
+}

@@ -1,0 +1,17 @@
+.nCage{background: transparent url("http://files.gamebanana.com/img/ico/sprays/516c32f08e03d.png") no-repeat;}
+.God{background: transparent url("http://sandbox.yoyogames.com/extras/image/name/san2/795/569795/original/MorganFreeman.png") no-repeat;}
+.pepe{background: transparent url("http://vignette4.wikia.nocookie.net/roblox/images/5/57/Pepe.png/revision/latest?cb=20150909113619") no-repeat;}  
+.Illuminati{background: transparent url("http://vignette4.wikia.nocookie.net/clubpenguin/images/2/2d/Illuminati.png/revision/latest/scale-to-width-down/480?cb=20150117022611") no-repeat;}  
+.Money{background: transparent url("http://i48.tinypic.com/v6m8eb.jpg") no-repeat;}  
+.Fedora{background: transparent url("http://vignette1.wikia.nocookie.net/animalcrossing/images/5/5e/Fedora.png/revision/latest?cb=20140504124922") no-repeat;}  
+body{overflow-x: hidden;}
+
+.rain--item{
+	height: 100px;
+	width: 100px;
+	background-size: contain;
+	display: block;
+	position: absolute;
+	top:-200px;
+	z-index:9999999999999999;
+}

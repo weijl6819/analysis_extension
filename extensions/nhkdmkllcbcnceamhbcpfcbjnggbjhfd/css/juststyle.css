@@ -1,0 +1,378 @@
+.enhance3844 {
+	float: left;
+	margin-right: 10px;
+	color: #D11C16;
+	cursor: pointer;
+}
+
+
+.enhance3844 a:link{
+	color: #D11C16; //button
+	text-decoration: none;
+}
+
+
+.enhance3844 a:hover{
+	color: #fa3131; //button hover
+	text-decoration: none;
+
+}
+
+.enhance3849{
+	display: none;
+	color: #D11C16;
+}
+
+.justdemoresult{
+	border: 2px solid #2D918C;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+.enhance3844 a:visited:hover{
+	color: #b13436;
+	text-decoration: none;
+
+}
+
+#fbshareframe{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	border: none;
+	
+}
+
+
+.fb-comments-count span:hover{
+	background-color: #41CCC5;
+		text-decoration: none;
+
+}
+
+.enhance3847 {
+	min-height: 30px;
+}
+
+.enhance3844 a:visited{
+	color: #D11C16;
+		text-decoration: none;
+
+}
+
+.enhance3847 a:link{
+	color: #e11212;
+}
+
+
+.enhance3847 a:hover{
+	color: #D11C16;
+}
+
+.enhance3847 a:visited{
+	color: #D11C16;
+}
+
+.enhance3845 {
+	float: left;
+	margin-right: 5px;
+	display: none;
+}
+
+.enhance3843 {
+	max-height: 30px;
+	margin-top: 5px;
+	padding-bottom: 10px;
+	font-size: 16px;
+	display: block;
+	float: none;
+}
+
+.enhance_greenLink {
+	color: #006621;
+	cursor: pointer;
+}
+
+.enhance_greenLink:hover{
+	text-decoration: underline;
+}
+
+.enhanceInfobox{
+	right: 0px;
+	position: absolute;
+	font-size: 12px;
+	padding-top: 5px;
+}
+
+.enhanceShortener{
+	width: 500px;
+	display: none;
+}
+
+.justsettings{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/icon128.png');
+	font-size: 20px;
+	border-left: #ffffff 1px solid;
+	color: #2D918C;
+	min-height: 30px;
+	min-width: 40px;
+	padding-left: 0px;
+	margin-right: 5px;
+	min-width: 30px;
+	background-size:    cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;
+    cursor: pointer;
+
+}
+.justsettings2{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/icon128.png');
+	font-size: 20px;
+	border-left: #ffffff 1px solid;
+	color: #2D918C;
+	min-height: 30px;
+	min-width: 40px;
+	padding-left: 0px;
+	margin-right: 5px;
+	min-width: 30px;
+	background-size:    cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;
+    cursor: pointer;
+ 
+	opacity: 0.5;
+}
+
+.justXTID{
+	display: none;
+}
+
+#justsep{
+	background-color: #ffffff;
+	min-width: 2px;
+}
+
+#justmenu{
+	background-color: #2D918C;
+	border-radius: 3px;
+}
+
+.justoptions{
+	font-size: 25px;
+}
+
+.justoptions a:link{
+	color: #ffffff;
+}
+
+.justoptions a:hover{
+	color: #ffffff;
+}
+
+.justoptions a:visited{
+	color: #ffffff;
+}
+
+.justoptions i{
+	color: #ffffff;
+}
+
+
+
+#justXTID{
+	display:none;
+}
+
+.videoplayer{
+	display:none;
+}
+
+.fb-comment{
+	display:none;
+}
+
+.ytNA {
+	color: rgba(45, 145, 45, 0.2);
+}
+
+.shortened {
+	color: rgba(45, 145, 45, 0.2);
+}
+
+
+.togglejust{
+	color: #8f8f8f;
+}
+
+.togglejust a:link{
+	color: #8f8f8f;
+}
+
+.togglejust a:hover{
+	color: #8f8f8f;
+}
+
+.togglejust a:visited{
+	color: #8f8f8f;
+}
+
+.togglejust2{
+	color: #2D918C;
+}
+
+.togglejust2 a:link{
+	color: #2D918C;
+}
+
+.togglejust2 a:hover{
+	color: #2D918C;
+}
+
+.togglejust2 a:visited{
+	color: #2D918C;
+}
+
+.fbcomm{
+	z-index: 1;
+	position: absolute;
+	cursor: pointer;
+}
+
+.commentCount{
+	z-index: 2;
+	color: #ffffff;
+	position: absolute;
+	text-align: center;
+	font-size: 10px;
+	cursor: pointer;
+
+	
+}
+
+.fbAll{
+	cursor: pointer;
+}
+
+.commentButton{
+	cursor: pointer;
+}
+
+.fb_comments_count{
+	cursor: pointer;
+	padding: 2px;
+	color: #ffffff;
+	z-index: 20;
+	font-size: 10px;
+	text-align: center;
+	background-color: #2D918C;
+	position: absolute;
+	min-width: 30px;
+	width: 30px;
+	border-radius:5px;
+
+}
+
+.instapaper{
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+.evernote{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/evernote.png');
+	min-height: 16px;
+	min-width: 16px;
+	background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.evernote:hover{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/evernote_hover.png');
+}
+
+.pocket{
+	padding-top: 2px;
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/pocket.png');
+	min-height: 16px;
+	min-width: 18px;
+	background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.pocket:hover{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/pocket_hover.png');
+}
+
+.fb_messenger{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/fb_messenger.png');
+	min-height: 16px;
+	min-width: 16px;
+	background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.fb_messenger:hover{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/fb_messenger_hover.png');
+}
+
+body {
+/* 	display: none; */
+}
+
+.justButton{
+	min-width: 16px;
+	max-width: 16px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.justButton2{
+
+	color: #41CCC5;
+
+}
+
+.justButton a:link{
+	text-decoration: none;
+}
+
+.comloadimg{
+	width: 30px;
+	background-color: #2D918C;
+	text-align: center;
+	border-radius:5px;
+	padding: 2px;
+	max-height: 12px;
+}
+
+.loader_shorten{
+	display: none;
+}
+
+.iframe_loader{
+	background-image:url('chrome-extension://__MSG_@@extension_id__/icons/ajax-loader.gif');
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+iframe{
+		background-color: #ffffff;
+
+}
+
+.fb-comments span{
+	background-color: #ffffff;
+}
+
+.loader{
+		min-width: 20px;
+		width: 20px;
+		height: 20px;
+		min-height: 20px;
+		background-repeat:   no-repeat;
+		background-position: center center;
+		background-image:url('chrome-extension://__MSG_@@extension_id__/icons/ajax-loader.gif');
+}

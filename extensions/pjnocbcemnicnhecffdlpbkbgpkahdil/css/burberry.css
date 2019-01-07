@@ -1,0 +1,75 @@
+﻿html, body
+{
+  font-family: arial, helvetica, clean, sans-serif;
+}
+
+.splash > a
+{
+  color: #c9a46f!important;
+}
+
+section.splash
+{
+  background: none;
+  background-color: #1f1f1f;
+}
+
+footer
+{
+  background: none;
+  background-color: #1f1f1f;
+}
+header
+{
+  background: none;
+  background-color: #1f1f1f;
+}
+section.content > section
+{
+  /*background-color: #404040;*/
+}
+
+@font-face
+{
+  font-family: 'BurberryCapitalsSmallRegular';
+  src: url('burberry.eot');
+  src: local('☺'), url('burberry.woff') format('woff'), url('burberry.ttf') format('truetype'), url('burberry.svg#BurberryCapitalsSmallRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header > h1
+{
+  font-family: BurberryCapitalsSmallRegular, serif;
+  padding-top: 14px;
+}
+
+button
+{
+  font-family: BurberryCapitalsSmallRegular, serif;
+  color: #444444;
+}
+
+section.splash > div
+{
+  padding-top: 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+section.splash > div:before
+{
+  position: absolute;
+  top:      16px;
+  width:    100%;
+  display:  inline-block;
+  content:  "ilink for BURBERRY";
+
+  opacity:  .75;
+
+  font-size:   16px;
+  font-family: BurberryCapitalsSmallRegular, serif;
+
+  color:    white;
+}
+

@@ -1,0 +1,48 @@
+h1 {
+	color: rgb(51, 51, 51);
+	cursor: auto;
+	font-family: Verdana;
+	letter-spacing: -1px;
+	margin: 0 0 5px 0;
+	font-size: 17px;
+	font-weight: 300;
+}
+body {
+	width: 300px;
+	padding: 0px;
+	height: 90px;
+	margin: 0;
+	position: relative;
+}
+div {
+	font-family: verdana;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 10px;
+	color: rgb(76, 76, 76);
+}
+.version {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	height: 14px;
+	font-size: 11px;
+	color: rgb(175, 175, 175);
+	width: 45px;
+	float: left;
+}
+.opcion {
+    position: absolute; 
+    right: 2px;  
+    bottom: 2px;
+    float: right;
+}
+.actualizacion {
+    margin-bottom: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url(/img/tv-128.png) no-repeat 5px 50%;
+    background-size: 70px;
+    padding-left: 80px;
+}

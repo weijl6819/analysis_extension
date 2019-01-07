@@ -1,0 +1,59 @@
+<style>
+input.rgb {
+	font-family:monospace;
+}
+td {
+}
+table.top {
+	border-style:solid;
+	padding: 5;
+}
+</style>
+<table cellpadding="2" class="top" width="500">
+<tr>
+ <td>Badge color:</td>
+ <td>
+  <table cellpadding="5">
+  <tr>
+   <td>
+   R:<input type="text" size="3" id="r" class="rgb">
+   G:<input type="text" size="3" id="g" class="rgb">
+   B:<input type="text" size="3" id="b" class="rgb">
+   &nbsp;<input type="text" size="2" id="bc" class="rgb" disabled="disabled">
+   </td>
+  </tr>
+  </table>
+ </td>
+</tr>
+
+<tr>
+ <td>Filter:<sup>*</sup></td>
+ <td><input type="text" id="fil" style="width:100%"></td>
+</tr>
+
+<tr>
+ <td>Extras:<sup>**</sup></td>
+ <td><input type="text" id="extra" style="width:100%"></td>
+</tr>
+
+<tr>
+ <td colspan="2">
+ <input type="checkbox" id="sdp"> - Show decimal point
+ </td>
+</tr>
+
+<tr>
+ <td colspan="2" align="center">
+  <input type="button" id="bres" value="Reset to defaults">
+  <input type="button" id="bsav" value="Apply & Save">
+ </td>
+</tr>
+
+</table>
+<hr>
+<i>
+*) Specify only specific currencies (space separeted, e.g. <b>USD EUR GBP CHF</b>)<br>
+*) Additnal currency pairs that are not traded at Forex
+(space separeted, e.g. <b>USD/EUR CHF/PLN</b>)<br>
+</i>
+<script src="options.js"></script>

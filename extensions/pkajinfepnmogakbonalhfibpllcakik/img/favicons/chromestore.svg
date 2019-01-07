@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg10" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 433.4 402"
+	 style="enable-background:new 0 0 433.4 402;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);}
+	.st1{fill:#F9F9F9;}
+	.st2{fill:#FFFFFF;}
+	.st3{clip-path:url(#SVGID_4_);}
+	.st4{fill:#E14C40;}
+	.st5{fill:#FFD24D;}
+	.st6{fill:#00AA60;}
+	.st7{fill:#577FC0;}
+	.st8{fill:#D6483E;}
+</style>
+<g id="g18" transform="matrix(1.3333333,0,0,-1.3333333,-191.2812,729.11065)">
+	<g id="g91">
+		<g id="g20">
+			<g>
+				<defs>
+					<rect id="SVGID_1_" x="-102" y="-132" width="816" height="1056"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="g22" class="st0">
+					<g id="g28" transform="translate(143.4609,254.334)">
+						<path id="path30" class="st1" d="M0,0c0-5,4-9,9-9h307.1c5,0,9,4,9,9v157.3c0,5-4,9-9,9H9c-5,0-9-4-9-9V0z"/>
+					</g>
+					<path id="path32" class="st1" d="M354.2,522.8h-96.8v24.1h96.8V522.8z"/>
+					<g id="g34" transform="translate(468.5391,372.2559)">
+						<path id="path36" class="st2" d="M0,0h-325.1v126.4h90.8l0,24.1l23.1,24.1l0-48.2h96.8l0,48.2l24.1-24.1l0-24.1H0V0z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g id="g38">
+			<g>
+				<defs>
+					<rect id="SVGID_3_" x="89.3" y="216.1" width="433.4" height="233.8"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+				</clipPath>
+				<g id="g40" class="st3">
+					<g id="g46" transform="translate(305.6372,413.5986)">
+						<path id="path48" class="st4" d="M0,0c0,0,82,3.7,125.5-78.7H-7c0,0-25,0.8-46.3-29.5c-6.1-12.7-12.7-25.8-5.3-51.7
+							c-10.7,18-56.6,98-56.6,98S-82.8-3.3,0,0"/>
+					</g>
+					<g id="g50" transform="translate(426.8643,204.3018)">
+						<path id="path52" class="st5" d="M0,0c0,0-37.8-72.9-131-69.3c11.5,19.9,66.3,114.7,66.3,114.7s13.2,21.3-2.4,54.9
+							c-7.9,11.7-16,23.9-42.1,30.5c21,0.2,113.2,0,113.2,0S38.6,73.4,0,0"/>
+					</g>
+					<g id="g54" transform="translate(184.9966,203.7461)">
+						<path id="path56" class="st6" d="M0,0c0,0-44.2,69.2,5.5,148.1C17,128.2,71.7,33.3,71.7,33.3s11.8-22.1,48.7-25.4
+							c14.1,1,28.7,1.9,47.4,21.2c-10.3-18.3-56.6-98-56.6-98S44.2-70.1,0,0"/>
+					</g>
+					<g id="g58" transform="translate(243.23,273.1113)">
+						<path id="path60" class="st2" d="M0,0c0,34.3,27.8,62.1,62.1,62.1c34.3,0,62.1-27.8,62.1-62.1c0-34.3-27.8-62.1-62.1-62.1
+							C27.8-62.1,0-34.3,0,0"/>
+					</g>
+					<g id="g62" transform="translate(256.6279,273.1113)">
+						<path id="path64" class="st7" d="M0,0c0,26.9,21.8,48.7,48.7,48.7c26.9,0,48.7-21.8,48.7-48.7c0-26.9-21.8-48.7-48.7-48.7
+							C21.8-48.7,0-26.9,0,0"/>
+					</g>
+					<g id="g66" transform="translate(305.6357,413.5986)">
+						<path id="path68" class="st8" d="M0,0c0,0,54.2,2.4,97.8-40.9c-0.7,0-149-0.5-196.6-0.5C-81.6-24.1-50-2,0,0"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

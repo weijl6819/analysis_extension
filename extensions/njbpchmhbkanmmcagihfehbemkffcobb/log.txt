@@ -1,0 +1,83 @@
+v1.1.9
+
+Update broken wikipedia link.
+
+----------------------------------
+
+v1.1.8
+
+Fix typos in codes
+add version history to option page
+
+----------------------------------
+
+v1.1.7 - 22 March 2013
+Bug fix
+
+- Fix the broken logo image of Weather Underground in option page (options.html)
+
+----------------------------------
+
+v1.1.6 - 24 September 2012
+Bug fix
+
+- The temperature scale could not be saved due to Content Security Policy
+	(http://developer.chrome.com/extensions/contentSecurityPolicy.html)
+
+-----------------------------------
+
+v1.1.5 - 21 September 2012
+Bug fix
+
+- Try fetching geolocation on interval update
+
+-----------------------------------
+
+v1.1.4 - 21 September 2012
+Changes to comply with art work requirements
+
+-----------------------------------
+
+v1.1.3 - 20 September 2012
+Minor update and bug fix
+
+- change to manifest version 2
+- use generated background page instead of the dedicated one
+
+-----------------------------------
+
+v1.1.2 - 20 June 2011
+Bug fix
+
+- Add checking for API data
+- Compute heat index instead of polling API data
+
+-----------------------------------
+
+v1.1.1 - 20 June 2011
+Bug fix
+
+- Correct extension web site address in option page
+
+-----------------------------------
+
+v1.1 - 20 June 2011
+Minor update
+
+Cosmatic changes:
+- Extension name is changed from "Apparent Temperature" to "Felt Temperature" for easier understanding.
+- Updated description.
+- Option page is updated.
+
+-----------------------------------
+
+v1.0 - 19 June 2011
+Major release
+
+Features:
+- Option for temperature scale
+- Auto refresh apparent temperature when the user's location is changed
+- Auto refresh apparent temperature in 5 minute interval
+- Badge showns different color for heat index, temperature, and wind chill.
+
+-----------------------------------

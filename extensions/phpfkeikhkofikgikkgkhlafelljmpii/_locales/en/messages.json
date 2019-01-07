@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "OneClick Picsaver",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Save images from any web-page in one click. Extension recognizes and downloads only full-sized pictures without trash and banners.", 
+    "description":"The description of the application, displayed in the web store."
+  }
+}

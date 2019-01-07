@@ -1,0 +1,23 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+  "name": "Save to Blogmate",
+  "version": "0.3",
+  "manifest_version": 2,
+  "description": "Save articles to Blogmate",
+  "icons": { "16"  : "img/icon.png",
+ 			       "48"  : "img/48.png",
+			       "128" : "img/128.png" },
+  "homepage_url": "http://blogmate.is",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+	"permissions": [
+	  "http://*.blogmate.is/",
+    "http://blogmate.local:3000/",
+    "tabs",
+    "cookies"
+	],
+	"browser_action": {
+    "default_icon": "img/icon.png", 
+    "default_title": "Save to Blogmate",      
+    "default_popup": "popup.html"       
+  }
+}

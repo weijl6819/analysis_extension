@@ -1,0 +1,21 @@
+{
+   "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "popup.html",
+      "default_title": "Photo Editor"
+   },
+   "description": "free online photo editor makes your photos beautiful with easy and powerful editing tools !",
+   "icons": {
+      "128": "logo128.png",
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png"
+   },
+    "manifest_version": 2,
+   "name": "Photo Editor",
+   "permissions": [ "tabs", "notifications" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "offline_enabled": true,
+   "container": "GOOGLE_DRIVE",
+   "version": "2.2.2"
+}

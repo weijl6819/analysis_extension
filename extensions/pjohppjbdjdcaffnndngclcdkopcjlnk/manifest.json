@@ -1,0 +1,33 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+
+    "manifest_version": 2,
+    "name": "Bonus App",
+    "version": "1.7",
+
+    "description": "Automatically find and apply coupons when you shop online",
+    "icons": {
+        "32": "images/icon_32px.png",
+        "128": "images/icon_128px.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "32": "images/icon_32px.png",
+            "64": "images/icon_64px.png",
+            "128": "images/icon_128px.png"
+        },
+        "default_title": "Bonus App"
+    },
+
+    "background": {
+        "page": "background.html"
+    },
+
+    "permissions": ["tabs", "http://*/*", "https://*/*", "cookies", "notifications", "gcm", "unlimitedStorage", "storage", "webRequest"],
+    "short_name": "Bonus App",
+    "web_accessible_resources": ["images/icon_32.png"],
+
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'"
+}

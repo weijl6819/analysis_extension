@@ -1,0 +1,9 @@
+<div ng-mouseleave='close()' ng-mouseenter="open()" class="reminder_container" ng-class="{selecting:selecting,active:settings.active}">
+	<h3 class="reminder_main" ng-click='set()'></h3>
+	<span class="reminder_status" ng-click='set()'></span>
+	<div class="reminder_select">
+		<span ng-repeat="time in settings.times" class="reminder_select_time" ng-class="{active:time.active}" ng-click="timeSelected($index)">
+			{{time.msg}}
+		</span>
+	</div>
+</div>

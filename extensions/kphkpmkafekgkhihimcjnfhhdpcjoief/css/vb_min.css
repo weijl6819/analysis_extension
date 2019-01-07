@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css?family=Pacifico';
+body {
+  margin-top: 70px;
+  background: #f9f9f9;
+}
+.pop-header {
+  border-bottom: 1px solid #2fdab8;
+  margin: 20px 0;
+}
+.pop-header span {
+  background: #2fdab8;
+  color: #ffffff;
+  padding: 2px 3px;
+}
+.primary-color {
+  color: #2fdab8;
+}
+.facebook-blue {
+  color: #3b5998;
+}
+.navbar-color {
+  background-color: #ffffff;
+}
+.navbar-text {
+  color: #a6a6a6;
+}
+.menu-label {
+  font-size: thin;
+  cursor: pointer;
+  margin: 10px;
+}
+.intro-banner {
+  background: #ffffff;
+  border: solid 1px #f2f2f2;
+  padding: 15px;
+  margin: 10px 0 30px;
+  text-align: center;
+}
+.intro-banner .lead {
+  font-size: medium;
+}
+.intro-banner .text {
+  color: #a6a6a6;
+  font-size: small;
+  margin-left: 10px;
+}
+/* left right panel*/
+.right-panel {
+  background: white;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999999999999999;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: .5s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.right-panel .close-wrapper {
+  padding: 10px;
+}
+.right-panel .close-wrapper .closeBtn {
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.right-panel header {
+  padding: 20px;
+}
+.right-panel header .menu-title {
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.right-panel .settings {
+  padding: 50px 20px;
+}
+.right-panel .settings .theme-toggle .theme {
+  float: right;
+}
+.right-panel .settings .theme-toggle .theme span {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  float: right;
+  border: 1px solid #BDC3C7;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.right-panel .settings .theme-toggle .theme .dark {
+  background-color: #000000 !important;
+}
+.right-panel .settings .theme-toggle .theme .light {
+  background-color: #ffffff !important;
+}
+.right-panel .categories {
+  padding: 20px 20px;
+}
+.right-panel .categories h6 {
+  font-size: medium;
+}
+.right-panel .contact {
+  padding: 20px 20px;
+}
+.openRHS {
+  width: 300px;
+}
+.closeRHS {
+  width: 0;
+}
+.main-wrapper {
+  transition: .5s;
+}
+.thumbnail {
+  border: none;
+}
+.card {
+  position: relative;
+}
+.card .label-default {
+  background: #2fdab8;
+}
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: .3s;
+}
+a.card.thumbnail {
+  padding: 0px;
+  border-radius: 0px;
+}
+.card:hover {
+  text-decoration: none;
+}
+.card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.card_caption h6 {
+  color: #555;
+}
+.card_title {
+  color: #555;
+  white-space: normal;
+  overflow: hidden;
+  font-weight: 600;
+  min-height: 27px;
+}
+.video {
+  position: absolute;
+  top: 32%;
+  left: 45%;
+}
+.article,
+.gif,
+.picture {
+  display: none;
+}
+.icon-video {
+  color: #2fdab8;
+}
+/*nav header*/
+.btn-open-menu-icon {
+  color: #EA4C88;
+}
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: xx-large;
+}
+.site-title {
+  font-family: 'Pacifico', cursive;
+  font-size: xx-large;
+}

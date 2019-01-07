@@ -1,0 +1,202 @@
+html{
+	height: 320px;
+	width: 250px;
+}
+
+body{
+	height: 320px;
+	width: 250px;
+}
+
+#topLogo{
+	height: 25%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+#menuHalf{
+	background-color: white;
+	background-size: cover;
+	height: 75%;
+	width: .5%;
+	float: left;
+	display: none;
+}
+
+
+#menu{
+	table-layout: fixed;
+	height: 50%;
+	float: left;
+	margin: 0 !important;
+	display: inline !important;
+}
+
+tr{
+	height: 20%;
+	border-bottom: 1px solid #ddd;
+}
+
+.page{
+	width: auto;
+	word-wrap: break-word;
+	display: inherit;
+	color: #333;
+	display: none;
+	font-weight: 600;
+}
+
+.page a{
+	color: #333 !important;
+}
+
+
+#page{
+	width: 99%;
+	height: 75%;
+	float: right;
+	padding-left: 10px;
+}
+
+#menuIcon{
+	height: 10%;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#bars{
+	height: 60%;
+	vertical-align: bottom;
+	position: relative;
+	top: 1px;
+}
+
+#menuName{
+	height: 100%;
+	display: inline;
+	position: relative;
+	vertical-align: top;
+	top: 4px;
+	margin: 0 !important;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+}
+
+#pageInfo{
+	height: 90% !important;
+}
+
+#title{
+	text-align: center;
+	margin-top: 8px;
+	font-weight: bold;
+	height: 10%;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+#data{
+	height: 86%;
+	display: table;
+	width: 100%;
+}
+
+/* End of CSS for basic structure of every page */
+
+#foodHoursTitle{
+	font-weight: bold;
+	margin: 0;
+	width: 20%;
+	float: left;
+}
+
+#foodHoursBox{
+	display: table-row;
+	vertical-align: bottom;
+	height: 10%;
+}
+
+#foodHours{
+	height: 20px;
+	width: 80%;
+	float: right;
+	text-align: right;
+	font-weight: 600;
+}
+
+#food{
+	font-weight: 600;
+	padding-left: 10px;
+}
+
+/* End of CSS for takeout page */
+
+#employees{
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+/* End of CSS for onDuty page */
+
+#caveHoursBox{
+	display: table-row;
+	vertical-align: bottom;
+	height: 10%;
+
+}
+
+#caveHours{
+	font-weight: 600;
+	font-size: 16px;
+}
+#temp{
+	height: 80%;
+	width: 50%;
+	float: left;
+	text-align: center;
+	display:table-cell;
+    vertical-align:middle;
+    padding-left: 10px;
+}
+
+#tempInfo{
+	height: 80%;
+	width: 50%;
+	float: right;
+}
+
+.extraInfo{
+	height: 33%;
+	margin-left: 10%;
+	font-weight: 600;
+}
+
+#tempNum{
+ font-size: 70px;
+
+}
+
+#tempInfo{
+	padding-top: 2%;
+}
+
+/* End of CSS for home page */
+
+#busTimes{
+	margin-left: 0 !important;
+	list-style: none;
+	padding-left: 10px;
+}
+
+#thisPageInfo{
+	height: 100% !important;
+}
+
+/* End of CSS for busTimes page */

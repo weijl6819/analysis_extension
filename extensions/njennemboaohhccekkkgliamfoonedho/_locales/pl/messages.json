@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Zapalać",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up jest prostym, ale bardzo wciągająca gra logiczna. Podłącz dopasowania kolorów z rury, aby utworzyć przepływ blask.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

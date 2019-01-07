@@ -1,0 +1,38 @@
+body,html {
+	min-width: 400px;
+	min-height: 600px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+#data{
+	height:100%;
+	width: 100%;
+	overflow: auto;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2b3e50;
+    padding: 0;
+    height: 10px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #df691a;
+    background-color: #2b3e50;
+}
+
+#content {
+	margin-top: 41px;
+	margin-bottom: 21px;
+}
+
+.full-width {
+	width: 100%;
+}

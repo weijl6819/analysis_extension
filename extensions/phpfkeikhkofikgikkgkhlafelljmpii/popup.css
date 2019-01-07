@@ -1,0 +1,142 @@
+body {
+    width: 750px;
+    height: 273px;
+    font-family: "Verdana","Arial",sans-serif;
+    overflow: hidden;
+    font-size: 12px;
+	margin:0px;
+}
+
+div.images {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    height: 240px;
+}
+
+div.img_container{
+	border: 1px solid #FFFFFF;
+	display:inline-block;
+	height: 238px;
+}
+
+div.img_container:before{
+	content:'';
+	display:inline-block;
+	vertical-align:bottom;
+	width:0;
+	height:211px;
+}
+
+.img_container:hover{
+    border-radius:3px;
+    border: 1px solid #C2C2C2;
+    background-image: -webkit-linear-gradient(top, #EEFCFE 0%, #E1F3F8 100%);
+}
+
+div.img_placer{
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 17px;
+	margin-left: 17px;
+}
+
+div.img_placer .img_holder{
+	position: relative;
+	display: table-cell;
+        border: 1px solid #C1CBD0;
+        background-color: #FFFFFF;       
+}
+
+div.img_placer .Image{
+        margin: 4px;
+	position: relative;
+        border: 1px solid #C2C2C2;  
+        max-width: 200px;
+        max-height: 150px;
+}
+
+label{
+	margin-top: 8px;
+	position: absolute;
+	left: 18px;
+	display: inline-block;
+	width: 90%;
+        
+}
+img.shadow{
+    max-width: 10px;
+}
+
+input.img_checkbox{
+	margin-top:9px;
+	float: left;
+}
+
+#idSaveToDifferent{
+    position: absolute;
+    right: 120px;
+    bottom: 3px;
+}
+
+#idSaveAll{
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+}
+
+#ImgCount
+{
+    position:  absolute;
+    left: 5px;
+    bottom: 9px;
+}
+
+#Status
+{
+    position:  absolute;
+    left: 150px;
+    bottom: 9px; 
+}
+
+#global
+{
+    width:      100%;
+    height:     100%;
+}
+
+#Installer
+{
+    position:  absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#InstallBottom
+{
+    position:  absolute;
+    width: 200px;
+    height: 100px;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -100px;
+}
+
+#InstallText
+{
+    position:  absolute;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    height: 50px;
+    top: 90px;
+    text-align: center;
+}
+
+#InstallButton
+{
+    width: 100%;
+    height: 50px;
+}

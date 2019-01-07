@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+	Description: Farsight DNSDB Scout™ Options
+	Author: Farsight Security, Inc.
+	Copyright: 2018 Farsight Security. All Rights Reserved.
+	License: Apache License, Version 2.0
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/png" href="images/fsi_scout_icon16.png"/>
+		<link rel="stylesheet" href="semantic.min.css">
+		<link rel="stylesheet" href="dashboard.css">
+
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="semantic.min.js"></script>
+		<script type="text/javascript" src="accordion.js"></script>
+
+		<title>Farsight DNSDB Scout</title>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<div id="headerBar" class="ui inverted menu">
+			<div class="ui container">
+				<div class="item">
+					<a href="dashboard.html">
+						<img class="logo-svg" src="images/dnsdb-scout-logo-w.svg">
+					</a>
+				</div>
+
+				<div class="right menu">
+					<div class="ui active inline loader" id="loading-spinner"></div>
+
+					<div class="ui quota-error" id="quota-error">
+						<div class="alert warning"><i class="icon exclamation triangle"></i>Invalid or no API key set.</div>
+					</div>
+
+					<div class="ui quota-days" id="quota-days">
+						<h2 class="ui center aligned orange header" id="quota-time"></h2>
+						<p id="quota-time-desc"></p>
+					</div>
+
+					<div class="ui quota-queries" id="quota-queries">
+						<h2 class="ui center aligned orange header" id="quota-quantity"></h2>
+						<p id="quota-quantity-desc"></p>
+					</div>
+
+					<div>
+						<a href="dashboard.html" class="ui icon purple button" title="Go to query Dashboard"><i class="search icon"></i></a>
+						<a href="https://www.farsightsecurity.com/about-farsight-security/contacts/?referrer=Scout" class="link underline" target="_blank" title="Contact support via: support@farsightsecurity.com">Need help?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Header -->
+
+		<!-- Content -->
+		<div class="main ui container">
+			<div class="ui two column stackable grid">
+				<div class="ten wide column">
+					<div class="white-card">
+						<h2>Settings</h2>
+
+						<form class="ui form api-key-form">
+							<div class="field">
+								<label>Set an API Key</label>
+								<input type="password" name="DNSDB_API_Key" id="api_key" placeholder="">
+							</div>
+
+							<div class="ui hidden info message" id="api_key_message"></div>
+
+							<div class="two fields">
+								<div class="inline field">
+									<button class="ui left floated basic small red button" id="api_key_clear" type="submit">
+										<i class="trash icon"></i>Clear Saved API Key
+									</button>
+								</div>
+
+								<div class="inline field">
+									<button class="ui right floated teal large button" type="submit" id="api_key_set">Save API Key</button>
+								</div>
+							</div>
+						</form>
+
+						<div class="ui accordion">
+							<span class="title" id="advanced-section"><i class="plus square outline icon" id="advanced-section-icon"></i>Advanced</span>
+
+							<div class="content" id="advanced-section-content">
+								<form class="ui form">
+									<div class="field">
+										<label>API Endpoint</label>
+										<input class="four wide field" type="text" name="API_Endpoint" id="api_endpoint" placeholder="">
+										<div class="flowing popup one wide inline item transition" id="api-endpoint-info" data-content="You may configure which DNSDB API server to use here. A vast majority of users will want to use the default: api.dnsdb.info"><i class="info circle icon purple"></i></div>
+										<button class="ui left floated teal mini button" type="submit" id="api_endpoint_set" value="submit">Save</button>
+
+										<a href="https://api.dnsdb.info/?referrer=Scout" target="_blank" rel="noopener" title="Would you like to learn more about DNSDB and it's API? Click to open the DNSDB API documentation.">
+											<button class="ui left floated blue mini button" id="api_docs_btn" type="button">Open API Docs</button>
+										</a>
+									</div>
+
+									<div id="api_endpoint_message_container">
+										<div class="ui hidden info message" id="api_endpoint_message"></div>
+									</div>
+								</form>
+
+								<br>
+								<br>
+
+								<div id="clear-all-button-container">
+									<button class="ui left floated red button" id="clear-all" type="submit">
+										<i class="bomb icon"></i>Clear All Settings & History
+									</button>
+
+									<div class="flowing popup one wide inline item transition" id="clear-all-info" data-content="Clear everything that has been stored: API Key, API Endpoint, and Query History."><i class="info circle icon purple"></i></div>
+								</div>
+
+								<div id="clear-all-message-container">
+									<div class="ui hidden info message" id="clear-all-message"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="six wide column">
+					<div class="orange-card text-center" id="orange-cta">
+						<a href="https://www.farsightsecurity.com/trial-api/?referrer=Scout" target="_blank" title="Get your FREE API Key">
+							<h2>Get your FREE API Key</h2>
+							<div class="ui huge header">100</div>
+							<div class="small">Queries/day</div>
+							<h2>30-days free</h2>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Content -->
+	</body>
+
+	<div id="footer">
+		© 2018 by Farsight Security, Inc.
+		<br>
+		Use of this tool is governed by your DNSDB API Key License Agreement and Farsight Security Terms of Use.
+	</div>
+
+	<script src="./options.js"></script>
+</html>

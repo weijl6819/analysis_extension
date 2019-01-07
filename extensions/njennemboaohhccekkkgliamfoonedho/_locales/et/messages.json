@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Särama lööma",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up on lihtne veel kuid väga sõltuvust puzzle mäng. Ühendage vastavad värvid koos toru luua kuma voolu.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

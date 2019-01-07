@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/general.css"/>
+    <link rel="stylesheet" href="style/snow.css"/>
+    <link rel="stylesheet" href="style/navigation.css">
+    <link title="light" rel="stylesheet" href="style/light/design.css">
+    <link title="light" rel="stylesheet" href="style/light/navigation.css">
+
+    <title></title>
+
+  </head>
+
+  <body class="container-fluid">
+      <img class="background" id="background-wallpaper" src=""/>
+
+      <div id="player" ></div>
+
+      <div id="snowflakeContainer">
+        <img class="snowflake" id='rain' src='images/w.png' style='display:none;'/>
+      </div>
+
+      <div id="upperPlane"></div>
+
+<!-- BEGIN OF TEMPLATE WITH CENTRAL DATE & TIME & SEARCHBAR -->
+      <template id='design_central'>
+
+        <div id='current_weather' style="display:none">
+          <div id='temperature'></div> <div id='unit'></div>
+        </div>
+        <div id='current_description' style="display:none">
+          <div id='location'></div>
+          </br>
+          <div id='weather_description'></div>
+        </div>
+        <img id='weather_icon' src=''/>
+
+        <div class="alert alert-warning alert-dismissible fade show" id="weather_alert" role="alert" style="display:none;">
+          <strong id="w-popup-str"></strong> <br> <span id="w-popup-sp"></span>
+          <hr>
+          <div id="show_weather" class="submit">
+          </div>
+          <div id="no_weather" class="submit">
+          </div>
+        </div>
+        <!-- Navigation tabs at top of the window-->
+        <nav class="navbar navbar-dark ml-auto" id='navigation'>
+          <button class="navbar-toggler p-0 ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon p-0"></span> -->
+            <img id="open_nav" src="images/menu.svg"/>
+          </button>
+          <div class="collapse width navbar-collapse" id="navbarSupportedContent">
+            <img id="close_nav" src="images/close.svg"/>
+            <ul id='nav_header' class="nav row mx-0 p-auto">
+              <li class="nav-item col-4 m-auto">
+                <span class="active" id='help1'></span>
+              </li>
+              <li class="nav-item col-4 m-auto">
+                <span class="" id='quicklinks1'></span>
+              </li>
+              <li class="nav-item col-4 m-auto">
+                <span class="" id='settings1'></span>
+              </li>
+            </ul>
+
+              <div id="settings" style="display:none;">
+                <div class="container" id="innerSettings">
+                  <div class="row tab">
+                    <button class="col active" id="image"></button>
+                    <button class="col" id="videos">Videos</button>
+                  </div>
+
+                  <div id="cimages" class="tabcontent" style="display: inline">
+                    <div class="container p-0" id="background">
+
+                      <div class="row" id="row_fav_img">
+                        <p id='shuffleP' class='col-9 p-0'></p> <p class="on col-1" id='imagesOn'> On</p>
+                        <img id='filter_images' class='toggle col-2 p-0' src="images/toggle-switch-off.svg"/>
+                      </div>
+
+                      <div class="row" id="backgrounds"></div>
+
+                      <div id="clear"><span id='clear_images'></span></div>
+
+                    </div>
+                  </div>
+
+                  <div id="cvideos" class="tabcontent">
+                    <div id="video">
+                      <div id="yheading"></div>
+                      <div id="vinput">
+                        <input type="text" name="v" id="v" class="input" placeholder="Enter URL">
+                      </div>
+                      <div id="submit2" class="submit"></div>
+                      <div id="stopVideo" class="mx-auto"></div>
+
+                      <div id="dashed_line"></div>
+
+                      <div id="sugg_desc" class ="suggestion"></div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div id="help" style="display:inline">
+                <div class='container'  >
+                    <div class="row tab">
+                      <button class="col active" id="bsettings"></button>
+                      <button class="col" id="bfaq">FAQ</button>
+                    </div>
+                    <div id="chelp" class="tabcontent">
+                      <div id='faq_content'>
+                      </div>
+                    </div>
+                    <div id="csettings" class="tabcontent" style="display:inline;">
+                      <div id='outerSlide' class='outer container p-0'>
+                        <div id='divSlide' class='row'>
+                          <p id="pslide" class='col-9 p-0'> </p>  <p class="on col-1" id='slideOn'> On</p>
+                          <img id='slideshow' class='toggle col-2 p-0' src="images/toggle-switch.svg"/>
+                        </div>
+                        <div id='outer_interval' class='row'>
+                          <div id = "interval" class='col-11 m-0 px-1 py-0'></div>
+                          <div class='col-1 p-0 m-0' style='display:inline'>
+                            <div class="arrow-down"></div>
+                          </div>
+                        </div>
+                        <div id = "options" style='display:none'>
+                          <p class='option' id="10000">10 seconds <img src='images/check.svg'/></p>
+                          <p class='option' id="30000">30 seconds <img src='images/check.svg'/></p>
+                          <p class='option' id="60000">1 minute <img src='images/check.svg'/></p>
+                          <p class='option' id="300000">5 minutes <img src='images/check.svg'/></p>
+                          <p class='option' id="1800000">30 minutes <img src='images/check.svg'/></p>
+                          <p class='option' id="3600000">1 hour <img src='images/check.svg'/></p>
+                        </div>
+                      </div>
+
+                      <div id='outerWeath' class='outer container p-0'>
+                        <div id='divWeath' class='row'>
+                          <p id='pweather' class='col-9 p-0'></p> <p class="on col-1" id='WeathOn'> Off</p>
+                          <img id='weather' class='toggle col-2 p-0' src="images/toggle-switch-off.svg"/>
+                        </div>
+
+                        <div class='row' id='divInput'>
+                          <input  id='city' type='text' class='input col-8' autocomplete="off" placeholder="Type in city name"/>
+                          <div class='submit col-3 ml-3' id='weathSub'></div>
+                        </div>
+
+                        <div style="display:none" id="weathCheckStatic"> <span id="new-loc"></span><div id="weatherCheck"></div> </div>
+                        <div style="display:none" id="weathRequestBlocked"></div>
+                      </div>
+
+                      <div id='outerThemes' class='outer container p-0'>
+                        <div id='divThemes' class='row'>
+                          <div class='col-9 p-0'>
+                            <p id='pthemes' ></p>
+                            <div id="themes_arrow" class="arrow-down-2"></div>
+                          </div> <p class="on col-1" id='ThemesOn'> Off</p>
+                          <img id='themes' class='toggle col-2 p-0' src="images/toggle-switch-off.svg"/>
+                        </div>
+
+                        <div id = 'season' style='display:none'>
+                          <div class='seasons'> <img id='sp' class='check' src='images/radiobox-blank.svg'/> <span id='spring'></span></div>
+                          <div class='seasons'> <img id='s' class='check' src='images/radiobox-blank.svg'/> <span id='summer'></span></div>
+                          <div class='seasons'> <img id='a' class='check' src='images/radiobox-blank.svg'/> <span id='autumn'></span></div>
+                          <div class='seasons'> <img id='w' class='check' src='images/radiobox-blank.svg'/> <span id='winter'></span></div>
+                        </div>
+                      </div>
+
+                      <div id='search_visibility' class = 'outer container p-0'>
+                          <div id='div_search' class='row'>
+
+                            <p id='search_v' class='col-9 p-0'></p><p class="on col-1" id='SearchOn'> On</p>
+                            <img id='search_v_i' class='toggle col-2 p-0' src="images/toggle-switch.svg"/>
+                          </div>
+                      </div>
+
+                      <div id='time_visibility' class = 'outer container p-0'>
+                          <div id='div_time' class='row'>
+
+                            <p id='time_v' class='col-9 p-0'></p><p class="on col-1" id='TimeOn'> On</p>
+                            <img id='time_v_i' class='toggle col-2 p-0' src="images/toggle-switch.svg"/>
+                          </div>
+                      </div>
+                      <div id='template_v' class='mx-auto'><span id="template-change"></span> <span id="template_id">centered</span> Design</div>
+                      </div>
+
+                    </div>
+              </div>
+              <div  id="first" style="display:none">
+                    <div class="container">
+
+                      <div class="row tab">
+                        <button class="col active" id="bmost"></button>
+                        <button class="col" id="bquicklinks"></button>
+                      </div>
+
+                      <div id='cquicklinks' class='tabcontent'>
+                        <div id="qheading"></div>
+                        <div>
+                          <input type="text" name="quicklink" id="quicklink" class="input" placeholder="Enter URL">
+                        </div>
+                        <div id="submit1" class="submit"></div>
+                      </br>
+                      <div id="quicklinks" >
+
+                        <div class="checkbox"  style="display:none" id="d1">
+                          <input type="checkbox"  id="q1" checked>
+                          <label for="q1" class="labelInput" id="lq1"></label>
+                        </div>
+                        <label id="l1" for="q1" style="display:none" class="labelQuick"></label>
+                        <br id="b1" style="display:none"/>
+
+                        <div class="checkbox" style="display:none" id="d2">
+                          <input type="checkbox" id="q2" checked>
+                          <label for="q2" class="labelInput" id="lq2"></label>
+                        </div>
+                        <label for="q2" style="display:none" class="labelQuick" id="l2"></label>
+                        <br id="b2" style="display:none"/>
+
+                        <div class="checkbox" style="display:none"id="d3">
+                          <input type="checkbox" id="q3" checked>
+                          <label for="q3" class="labelInput" id="lq3"></label>
+                        </div>
+                        <label for="q3" style="display:none" class="labelQuick" id="l3"></label>
+                        <br id="b3" style="display:none"/>
+
+                        <div class="checkbox" style="display:none" id="d4">
+                          <input type="checkbox" id="q4" checked>
+                          <label for="q4" class="labelInput" id="lq4"></label>
+                        </div>
+                        <label for="q4" style="display:none" class="labelQuick" id="l4"></label>
+                        <br id="b4" style="display:none"/>
+
+                        <div class="checkbox" style="display:none" id="d5">
+                          <input type="checkbox" id="q5" checked>
+                          <label for="q5" class="labelInput" id="lq5"></label>
+                        </div>
+                        <label for="q5" style="display:none" class="labelQuick" id="l5"></label>
+                        <br id="b5" style="display:none"/>
+                      </div>
+                    </div>
+
+                    <div id="cmost" class="tabcontent" style="display: inline">
+                      <div id="sites"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+
+        <div id="outerDiv">
+          <div id="bmc">
+          </div>
+        </div>
+
+
+        <!-- central div with time and date and searchbar -->
+        <div id='body_content'>
+          <div id="alert_box"><p id="alert_ok"> OK </p> </div>
+          <!--Timestamp-->
+          </br>
+          <div class="time" id="time"> <div class='time' id='str'>PM</div> </div>
+          <div class="time" id="date"></div>
+
+          <!--Google Search bar -->
+          <form method="get" action="https://www.google.com/search" id="form">
+            <input type="text" name= "q" id="search" size="31" maxlength="255" value="" placeholder="Search Google" autocomplete="off" autofocus/>
+            </br>
+            <input type="submit" id="submit" style="display:none"/>
+          </form>
+
+        </div>
+
+        <div id='images'>
+          <img id="next" src='images/arrow-right.svg' class="navigation"/>
+        </div>
+        <span id='next_span'></span>
+      </template>
+
+      <template id='design_light'>
+
+        <!-- Navigation tabs at top of the window-->
+        <nav class="navbar navbar-dark ml-auto" id='navigation'>
+          <button class="navbar-toggler p-0 ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon p-0"></span> -->
+            <img id="open_nav" src="images/menu.svg"/>
+          </button>
+          <div class="collapse width navbar-collapse" id="navbarSupportedContent">
+            <img id="close_nav" src="images/close.svg"/>
+            <ul id='nav_header' class="nav row mx-0 p-auto">
+              <li class="nav-item col-4 m-auto">
+                <span class="active" id='help1'></span>
+              </li>
+              <li class="nav-item col-4 m-auto">
+                <span class="" id='quicklinks1'></span>
+              </li>
+              <li class="nav-item col-4 m-auto">
+                <span class="" id='settings1'></span>
+              </li>
+            </ul>
+
+              <div id="settings" style="display:none;">
+                <div class="container" id="innerSettings">
+                  <div class="row tab">
+                    <button class="col active" id="image"></button>
+                    <button class="col" id="videos">Videos</button>
+                  </div>
+
+                  <div id="cimages" class="tabcontent" style="display: inline">
+                    <div class="container p-0" id="background">
+
+                      <div class="row" id="row_fav_img">
+                        <p id='shuffleP' class='col-9 p-0'></p> <p class="on col-1" id='imagesOn'> On</p>
+                        <img id='filter_images' class='toggle col-2 p-0' src="images/toggle-switch-off.svg"/>
+                      </div>
+
+                      <div class="row" id="backgrounds"></div>
+
+                      <div id="clear"><span id='clear_images'></span></div>
+
+                    </div>
+                  </div>
+
+                  <div id="cvideos" class="tabcontent">
+                    <div id="video">
+                      <div id="yheading"></div>
+                      <div id="vinput">
+                        <input type="text" name="v" id="v" class="input" placeholder="Enter URL">
+                      </div>
+                      <div id="submit2" class="submit"></div>
+                      <div id="stopVideo" class="mx-auto"></div>
+
+                      <div id="dashed_line"></div>
+
+                      <div id="sugg_desc" class ="suggestion"></div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div id="help" style="display:inline">
+                <div class='container'  >
+                    <div class="row tab">
+                      <button class="col active" id="bsettings"></button>
+                      <button class="col" id="bfaq">FAQ</button>
+                    </div>
+                    <div id="chelp" class="tabcontent">
+                      <div id='faq_content'>
+                      </div>
+                    </div>
+                    <div id="csettings" class="tabcontent" style="display:inline;">
+                      <div id='outerSlide' class='outer container p-0'>
+                        <div id='divSlide' class='row'>
+                          <p id="pslide" class='col-9 p-0'> </p>  <p class="on col-1" id='slideOn'> On</p>
+                          <img id='slideshow' class='toggle col-2 p-0' src="images/toggle-switch.svg"/>
+                        </div>
+                        <div id='outer_interval' class='row'>
+                          <div id = "interval" class='col-11 m-0 px-1 py-0'></div>
+                          <div class='col-1 p-0 m-0' style='display:inline'>
+                            <div class="arrow-down"></div>
+                          </div>
+                        </div>
+                        <div id = "options" style='display:none'>
+                          <p class='option' id="10000">10 seconds <img src='images/check.svg'/></p>
+                          <p class='option' id="30000">30 seconds <img src='images/check.svg'/></p>
+                          <p class='option' id="60000">1 minute <img src='images/check.svg'/></p>
+                          <p class='option' id="300000">5 minutes <img src='images/check.svg'/></p>
+                          <p class='option' id="1800000">30 minutes <img src='images/check.svg'/></p>
+                          <p class='option' id="3600000">1 hour <img src='images/check.svg'/></p>
+                        </div>
+                      </div>
+
+                      <div id='outerWeath' class='outer container p-0'>
+                        <div id='divWeath' class='row'>
+                          <p id='pweather' class='col-9 p-0'></p> <p class="on col-1" id='WeathOn'> Off</p>
+                          <img id='weather' class='toggle col-2 p-0' src="images/toggle-switch-off.svg"/>
+                        </div>
+
+                        <div class='row' id='divInput'>
+                          <input  id='city' type='text' class='input col-8' autocomplete="off" placeholder="Type in city name"/>
+                          <div class='submit col-3 ml-3' id='weathSub'></div>
+                        </div>
+
+                        <div style="display:none" id="weathCheckStatic"> <span id="new-loc"></span><div id="weatherCheck"></div> </div>
+                        <div style="display:none" id="weathRequestBlocked"></div>
+                      </div>
+
+                      <div id='outerThemes' class='outer container p-0'>
+                        <div id='divThemes' class='row'>
+                          <div class='col-9 p-0'>
+                            <p id='pthemes' ></p>
+                            <div id="themes_arrow" class="arrow-down-2"></div>
+                          </div> <p class="on col-1" id='ThemesOn'> Off</p>
+                          <img id='themes' class='toggle col-2 p-0' src="images/toggle-switch-off.svg"/>
+                        </div>
+
+                        <div id = 'season' style='display:none'>
+                          <div class='seasons'> <img id='sp' class='check' src='images/radiobox-blank.svg'/> <span id='spring'></span></div>
+                          <div class='seasons'> <img id='s' class='check' src='images/radiobox-blank.svg'/> <span id='summer'></span></div>
+                          <div class='seasons'> <img id='a' class='check' src='images/radiobox-blank.svg'/> <span id='autumn'></span></div>
+                          <div class='seasons'> <img id='w' class='check' src='images/radiobox-blank.svg'/> <span id='winter'></span></div>
+                        </div>
+                      </div>
+
+                      <div id='search_visibility' class = 'outer container p-0'>
+                          <div id='div_search' class='row'>
+
+                            <p id='search_v' class='col-9 p-0'></p><p class="on col-1" id='SearchOn'> On</p>
+                            <img id='search_v_i' class='toggle col-2 p-0' src="images/toggle-switch.svg"/>
+                          </div>
+                      </div>
+
+                      <div id='time_visibility' class = 'outer container p-0'>
+                          <div id='div_time' class='row'>
+
+                            <p id='time_v' class='col-9 p-0'></p><p class="on col-1" id='TimeOn'> On</p>
+                            <img id='time_v_i' class='toggle col-2 p-0' src="images/toggle-switch.svg"/>
+                          </div>
+                      </div>
+                      <div id='template_v' class='mx-auto'><span id="template-change"></span><span id="template_id">centered</span> Design</div>
+                      </div>
+
+                    </div>
+              </div>
+              <div  id="first" style="display:none">
+                    <div class="container">
+
+                      <div class="row tab">
+                        <button class="col active" id="bmost"></button>
+                        <button class="col" id="bquicklinks"></button>
+                      </div>
+
+                      <div id='cquicklinks' class='tabcontent'>
+                        <div id="qheading"></div>
+                        <div>
+                          <input type="text" name="quicklink" id="quicklink" class="input" placeholder="Enter URL">
+                        </div>
+                        <div id="submit1" class="submit"></div>
+                      </br>
+                      <div id="quicklinks" >
+
+                        <div class="checkbox"  style="display:none" id="d1">
+                          <input type="checkbox"  id="q1" checked>
+                          <label for="q1" class="labelInput" id="lq1"></label>
+                        </div>
+                        <label id="l1" for="q1" style="display:none" class="labelQuick"></label>
+                        <br id="b1" style="display:none"/>
+
+                        <div class="checkbox" style="display:none" id="d2">
+                          <input type="checkbox" id="q2" checked>
+                          <label for="q2" class="labelInput" id="lq2"></label>
+                        </div>
+                        <label for="q2" style="display:none" class="labelQuick" id="l2"></label>
+                        <br id="b2" style="display:none"/>
+
+                        <div class="checkbox" style="display:none"id="d3">
+                          <input type="checkbox" id="q3" checked>
+                          <label for="q3" class="labelInput" id="lq3"></label>
+                        </div>
+                        <label for="q3" style="display:none" class="labelQuick" id="l3"></label>
+                        <br id="b3" style="display:none"/>
+
+                        <div class="checkbox" style="display:none" id="d4">
+                          <input type="checkbox" id="q4" checked>
+                          <label for="q4" class="labelInput" id="lq4"></label>
+                        </div>
+                        <label for="q4" style="display:none" class="labelQuick" id="l4"></label>
+                        <br id="b4" style="display:none"/>
+
+                        <div class="checkbox" style="display:none" id="d5">
+                          <input type="checkbox" id="q5" checked>
+                          <label for="q5" class="labelInput" id="lq5"></label>
+                        </div>
+                        <label for="q5" style="display:none" class="labelQuick" id="l5"></label>
+                        <br id="b5" style="display:none"/>
+                      </div>
+                    </div>
+
+                    <div id="cmost" class="tabcontent" style="display: inline">
+                      <div id="sites"></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+        <div id='body_content'>
+
+          <div id="outerDiv">
+            <div id="bmc">
+            </div>
+          </div>
+
+          <div id='weather_container'>
+            <div id='current_weather' style="display:none">
+              <div id='temperature'></div> <div id='unit'></div>
+            </div>
+            <div id='current_description' style="display:none">
+              <div id='location'></div>,
+              <div id='weather_description'></div>
+            </div>
+            <img id='weather_icon' src=''/>
+          </div>
+
+          <div class="time" id="time"> <div class='time' id='str'>PM</div> </div>
+          <div class="time" id="date"></div>
+
+          <div class="alert alert-warning alert-dismissible fade show" id="weather_alert" role="alert" style="display:none;">
+            <strong id="w-popup-str"></strong> <br> <span id="w-popup-sp"></span>
+            <hr>
+            <div id="show_weather" class="submit"></div>
+            <div id="no_weather" class="submit"></div>
+          </div>
+
+          <!--Google Search bar -->
+          <form  method="get" action="https://www.google.com/search" id="form">
+            <input type="text" name= "q" id="search" size="31" maxlength="255" value="" placeholder="Search Google" autocomplete="off" autofocus/>
+            </br>
+            <input type="submit" id="submit" style="display:none"/>
+          </form>
+
+          <div id="alert_box"><p id="alert_ok"> OK </p> </div>
+          <!--Timestamp-->
+          </br>
+
+          <div id='images'>
+            <img id="next" src='images/arrow-right.svg' class="navigation"/>
+          </div>
+          <span id='next_span'></span>
+
+
+        </div>
+
+      </template>
+
+      <div id="main_body_content">
+      </div>
+
+    <div id="lowerPlane"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="src/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="src/fallingsnow_v6.js"></script>
+    <script src="src/show_video.js"></script>
+    <script src="src/bundle_fe.js"></script>
+
+   </body>
+</html>

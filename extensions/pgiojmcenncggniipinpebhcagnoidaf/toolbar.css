@@ -1,0 +1,166 @@
+body { font-family:Arial, Helvetica, Sans-Serif; font-size:0.75em; color:#000;}
+
+
+.textInput
+{
+    border-top: 1px solid #49494B;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #49494B;
+    background: #fff;
+    color: black;
+    font-size: 0.7em;
+}
+
+.textInput:hover  {
+    border-color: 1px solid black;
+}
+
+.textInput:focus  {
+    border-color: 1px solid black;
+    outline:none;
+}
+
+#searchText{
+    margin:0;
+    height:24px;
+    margin-left: -4.6px;
+    vertical-align:top;
+}
+
+.ui-draggable{
+    position: relative !important;
+    left: 0px !important;
+}
+
+#searchListSelection {
+    width: 16px !important;
+    background-image: url(../logos/recent.png);
+    vertical-align: top;
+    height: 24px !important;
+    margin-left: -4.6px !important;
+    border: none;
+    outline: 0 none;
+}
+
+select#searchListSelection{
+    -webkit-appearance: button;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 0px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 13px;
+    -webkit-padding-start: 3px;
+    -webkit-user-select: none;
+    background-image: url(../logos/recent.png),
+        -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: center right;
+    background-repeat: no-repeat;
+    color: #555;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#searchType {
+    width: 33px !important;
+    vertical-align: top;
+    height: 24px !important;
+    border: none;
+    outline: 0 none;
+}
+
+select#searchType{
+    -webkit-appearance: button;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 1px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 25px;
+    -webkit-padding-start: 8px;
+    -webkit-user-select: none;
+    background-image: url(../logos/google_btn.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+#extensionBody{
+    cursor:default;
+    background-color:#F3F3F3;
+    margin:1px;
+    padding:1px;
+    height:30px;
+    overflow:hidden;
+    vertical-align:middle;
+    position: relative;
+}
+
+#tableWidth{
+    display:inline !important;
+    overflow:hidden !important;
+    position: relative;
+}
+
+#logoButton{
+    padding:0;
+    margin:0;
+    border:none;
+    height:24px;
+    background-color:#F3F3F3;
+}
+
+.customizeButtons{
+    padding:0 !important;
+    margin:0 !important;
+    border:none !important;
+    height:24px !important;
+    margin-left: -4.6px !important;
+}
+
+
+
+#settingsButton{
+    padding:0;
+    margin:0;
+    border:none;
+    background-color:#F3F3F3;
+}
+
+iframe {
+    margin: 0px !important;
+    width: 100% !important;
+    min-height: 37px !important;
+}
+
+#dragImagex{ 	
+    padding:0 10px 0 10px !important;
+}
+
+#searchResults {
+    display: inline;
+    color: #3f46c7;
+    font-size: 14px;
+}
+
+.searchResltsSpan {
+    border-right: 1px solid #3f46c7;
+    vertical-align: 11px;
+    padding-left:5px;
+    padding-right:5px;
+    cursor: hand;
+}
+
+div#searchResults span:first-child {
+    padding-left:10px;
+}
+
+div#searchResults span:last-child {
+    padding-left:13px;
+    border-right:none;
+}
+

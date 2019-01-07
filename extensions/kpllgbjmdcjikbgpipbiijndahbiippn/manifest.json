@@ -1,0 +1,7 @@
+{"manifest_version": 2, "description": "__MSG_description__", "browser_action": {"default_icon": "128-size.png", "default_title": "Roblox New Tab & Themes"},
+
+ "version": "2.6.4", "default_locale": "en", "icons": {"128": "128-size.png"},
+
+ "update_url": "https://clients2.google.com/service/update2/crx", "name": "Roblox New Tab & Themes", "background": {"scripts": ["bg_script.js"]},
+
+ "chrome_url_overrides": {"newtab": "page.html"}}

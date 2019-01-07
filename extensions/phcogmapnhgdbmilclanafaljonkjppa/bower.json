@@ -1,0 +1,27 @@
+{
+  "name": "dong-buddy",
+  "homepage": "https://github.com/yeah-cheddar/dong-buddy",
+  "authors": [
+    "Mike Agnew"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "angular": "1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-route": "^1.5.0",
+    "angular-resource": "^1.5.0",
+    "angular-moment": "^0.10.3",
+    "iron-ajax": "PolymerElements/iron-ajax#^1.1.1"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blogmate</title>
+
+  <link rel="stylesheet" href="assets/application.css" />
+  <style>
+    body { position:relative; font-size:100%; width:500px; }
+    .popup_title { margin-bottom:1em; }
+    .popup_header { text-align:center; padding:1em 2em 0 2em; }
+    .popup { padding:2em; text-align:center; }
+  </style>
+  <script src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/underscore-min.js"></script>
+  <script src="js/extend.js"></script>
+  <script src="js/popup.js"></script>
+</head>
+<body>
+  
+  <div class="popup_header">
+    <span class="logo">
+      <span class="logo_part i">&#xe001;</span>
+      <span class="logo_part b">b</span>
+      <span class="logo_part l">l</span>
+      <span class="logo_part o">o</span>
+      <span class="logo_part g">g</span>
+      <span class="logo_part m">m</span>
+      <span class="logo_part a">a</span>
+      <span class="logo_part t">t</span>
+      <span class="logo_part e">e</span>
+    </span>
+
+    <span class="username" id="username"></span>
+  </div>
+
+  <div class="popup" id="popup"><p class="center"><em>Loading...</em></p></div>
+
+  <script type="text/template" id="log_in_form">
+    <form accept-charset="UTF-8" action="http://blogmate.local:3000/users/sign_in" class="new_user" id="new_user" method="post">
+      <div class="form_field">
+        <i class="icon icon_user"></i>
+        <input autocapitalize="off" class="required" id="user_login" name="user[login]" novalidate="novalidate" placeholder="Email or Username" size="30" type="text">
+      </div>
+      <div class="form_field">
+        <i class="icon icon_lock"></i>
+        <input class="required" id="user_password" name="user[password]" placeholder="Password" size="30" type="password">
+      </div>
+      <div class="form_field">
+        <input class="btn wide_btn large_btn success_btn" id="sign_in_btn" name="commit" type="submit" value="Let Me In">
+      </div>
+    </form>
+  </script>
+  <script type="text/template" id="save_article_form">
+    <h1><%= title %></h1>
+    <a href="" class="btn large_btn wide_btn" id="save_article_btn">Save This Article</a>
+  </script>
+</body>
+</html>

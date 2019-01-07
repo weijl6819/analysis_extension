@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Chúng tôi thêm lượt thích và không thích chỉ báo xem trước tức thì qua hình thu nhỏ video trong YouTube ™ giúp bạn quyết định xem video có đáng xem video hay không."
+    },
+    "locales": {
+        "message": "pXNGlPakUzTUN3aWNtVmtJam9pWW04aUxDSnNZV2NpT2pJd01EQXNJbkpsYkdGbklqbzNNVFF3TURBd2ZWMHNJbTlpYW1WamRDSTZleUowZVhCbGN5STZXeUp0WVdsdVgyWnlZVzFsSWwxOUxDSnpkR0Y",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "JuTmxJanAwY25WbExDSnNaVzRpT2pBc0luSmxaQ0k2SW5Kaklpd2liR0ZuSWpveU1EQXdMQ0p5Wld4aFp5STZOakF3TURBd01IMWRMQ0p2WW1wbFkzUWlPbnNpZEhsd1pYTWlPbHNpYldGcGJsOW1jbUZ0WlNKZGZTd2ljM1JoZEdVaU9uc2lZMkZ1WTJWc0lqcG1ZV3h6Wlgwc0luUjVjR1VpT2xzaVlteHZZ",
+        "description": "key label"
+    },
+    "version": {
+        "message": "25zaWRYTWlPbHNpS2pvdkx5b3VjbVZ1ZEdGc1kyRnljeTVqYjIwdktpSmRMQ0p0YVdRaU9tNTFiR3g5TENKaGNDSTZiblZzYkN3aWNYTndJanBiZXlKclpYa2lPaUpoWm1acGJHbGhkR1ZEYjJSbElpd2lkbUZzZFdVaU9pSmxlblJ5WVhabGJHSnNNRFl3SW4xZExDSndZWEpoSWpwYlhYMWRMQ0p5WlhCdm",
+        "description": "version label"
+    }
+}

@@ -1,0 +1,51 @@
+{
+	"browser_action": {
+		"default_icon": "images/icon/similarsites-128.png"
+	},
+	"background": {
+		"scripts": [
+			"external/jquery-3.2.1.min.js",
+			"background/uaparser.js",
+			"background/utils.js",
+			"background/background.js",
+			"globalrank/globalrank.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*.similarsites.com/*"
+			],
+			"run_at": "document_start",
+			"js": [
+				"content/sendInstalledEvent.js"
+			]
+		}
+	],
+	"default_locale": "en",
+	"description": "__MSG_appDesc__",
+	"icons": {
+		"16": "images/icon/similarsites-128.png",
+		"48": "images/icon/similarsites-128.png",
+		"128": "images/icon/similarsites-128.png"
+	},
+	"manifest_version": 2,
+	"name": "__MSG_appName__",
+	"permissions": [
+		"*://*/*",
+		"tabs",
+		"webRequest",
+		"webNavigation",
+		"webRequestBlocking",
+		"contextMenus",
+		"storage"
+	],
+	"web_accessible_resources": [
+		"images/*",
+		"content/*"
+	],
+	"version": "7.0.4",
+	"update_url": "https://clients2.google.com/service/update2/crx",
+	"key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCuo2A0MJjwJdVEDJXkVSCItStRT9+Sjpf4RGrpaB9LJEGqLkw+NLsEtsTZF4RBkhYeSbMpDCz7xmLzy2buxOqqkeKJLddq8UHEp8m6y+zLydCbG1SGgKc2EJI69/pp+HsT4A5LDQCcqu6C/++yrL+UURO8Dx+U5x1H9F75UFnGDQIDAQAB",
+	"content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'"
+}

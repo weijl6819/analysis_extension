@@ -1,0 +1,50 @@
+{
+    "name":
+    {
+        "message":"WebTop – Швидка авторизація"
+    },
+    "description":
+    {
+        "message":"Швидка авторизація в один клік для WebTop. WebTop це робочий стіл онлайн з набором різноманітних веб-додатків."
+    },
+    "register":
+    {
+        "message":"Реєстрація"
+    },
+    "email":
+    {
+        "message":"Адреса електронної пошти"
+    },
+    "password":
+    {
+        "message":"Пароль"
+    },
+    "forgot":
+    {
+        "message":"Забули?"
+    },
+    "save":
+    {
+        "message":"Зберегти"
+    },
+    "login_error":
+    {
+        "message":"Помилка входу"
+    },
+    "enter_login":
+    {
+        "message":"Введіть адресу електронної пошти та пароль"
+    },
+    "data_saved":
+    {
+        "message":"Дані збережені"
+    },
+    "please_wait":
+    {
+        "message":"Зачекайте будь ласка"
+    },
+    "remind_link":
+    {
+        "message":"http://uid.me/remind/?l=ua"
+    }
+}

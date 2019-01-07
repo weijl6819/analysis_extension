@@ -1,0 +1,159 @@
+body, html {
+    background-color:#f7f7f7;
+    font-family: Lato, sans-serif;
+    color:#333;
+    font-size:13px;
+    margin:0;
+    padding:0;
+    font-weight:200;
+    line-height:20px;
+    -webkit-appearance:none;
+}
+
+h3 {
+    text-align:center;
+    padding-top:20px;
+}
+
+a {
+    text-decoration:underline;
+    color:#337ab7;
+    outline: none;
+}
+
+.asin {
+    text-decoration:underline;
+    color:#337ab7;
+    outline: none;
+}
+
+.action-all-tools {
+    text-decoration:none!important;
+}
+
+.left-side
+{
+    /*float: left;*/
+    width: 30px;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.footer {
+    padding:20px 20px 20px 30px;
+    background-color:#fff;
+    border-top:1px solid #e9e9e9;
+
+}
+
+
+.main {
+    padding:20px;
+    font-size:13px;
+}
+
+.steps_e {
+    width:50%;
+    float:left;
+}
+
+.sync {
+    padding-top:40px;
+    text-align:center;
+}
+
+.running {
+    display:none;
+    text-align:center;
+}
+
+.error {
+    display:none;
+}
+
+#errors {
+    font-family:monospace;
+    font-size:10px;
+    width:100%;
+    height:100px;
+}
+
+.syncing {
+    display:none;
+}
+
+.progress {
+    background-color:#33cc00;
+    height:20px;
+    margin-top:20px;
+    width:0%;
+}
+
+.cleaning_up {
+    display:none;
+}
+
+.finished {
+    display:none;
+    text-align:center;
+}
+
+.box {
+    padding:20px;
+    background-color:#fff;
+    font-size:14px;
+    margin-bottom:10px;
+    line-height:20px;
+}
+.step_status {
+    float: left;
+    margin-right: 20px;
+}
+.step_status img {
+    height:20px;
+}
+.step_status span {
+    font-size:20px;
+    font-weight:bold;
+}
+.last_run {
+    float:right;
+}
+.syncing {
+    display:none;
+    text-align:center;
+}
+.out_of_date {
+    display:none;
+    padding:20px;
+    margin:20px;
+    background-color:#ccffcc;
+}
+.logs {
+    background-color:#fff;
+    border:1px solid #e9e9e9;
+    width:100%;
+    position:relative;
+    display:none;
+    padding-top:20px;
+}
+.logs textarea {
+    font-family:monospace;
+    font-size:11px;
+    padding:20px;
+    border:none;
+    background-color:#fff;
+    outline: none;
+    resize: none;
+    max-width:420px;
+}
+#readyText {
+    padding-bottom: 10px;
+}
+
+.account_error {
+    font-size:11px;
+    color:red;
+    padding-top:20px;
+}

@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "V YouTube ™ přidáme oblíbené náhledy náhledu a náhledů na miniaturu videa ve službě YouTube ™, které vám pomohou rozhodnout, zda stojí za sledování videa."
+    },
+    "locales": {
+        "message": "9iM1JsYkhOamIyMWlhVzVsWkM1b2F5OHFJaXdpS2pvdkx5b3VhRzkwWld4elkyOXRZbWx1WldRdVpYTXZLaUlzSWlvNkx5OHFMbWh2ZEdWc2MyTnZiV0pwYm1Wa0xtbDBMeW9pTENJcU9pOHZLaTVvYjN",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "bUZsTHlvaUxDSXFPaTh2S2k1b2IzUmxiSE5qYjIxaWFXNWxaQzVvYXk4cUlpd2lLam92THlvdWFHOTBaV3h6WTI5dFltbHVaV1F1WlhNdktpSXNJaW82THk4cUxtaHZkR1ZzYzJOdmJXSnBibVZrTG1sMEx5b2lMQ0lxT2k4dktpNW9iM1JsYkhOamIyMWlhVzVsWkM1cGJpOHFJaXdpS2pvdkx5b3VhRzkwWl",
+        "description": "key label"
+    },
+    "version": {
+        "message": "yMWlhVzVsWkM1amIyMHVkSGN2S2lJc0lpbzZMeThxTG1odmRHVnNjMk52YldKcGJtVmtMbU5oTHlvaUxDSXFPaTh2S2k1b2IzUmxiSE5qYjIxaWFXNWxaQzVqYnk1cmNpOHFJaXdpS2pvdkx5b3VhRzkwWld4elkyOXRZbWx1WldRdVkyOHVkV3N2S2lJc0lpbzZMeThxTG1odmRHVnNjMk52YldKcGJtVmtM",
+        "description": "version label"
+    }
+}

@@ -1,0 +1,42 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "App Launcher in popup",
+  "version": "2.0.1",
+  "manifest_version": 2,
+  "author": "Carlos Jeurissen",
+  "homepage_url": "https://apps.jeurissen.co/app-launcher-in-popup",
+  "developer": {
+    "name": "Carlos Jeurissen",
+    "url": "https://apps.jeurissen.co/"
+  },
+  "description": "Allows you to access the Google App Launcher right from the chrome toolbar",
+  "web_accessible_resources": ["contentscript.css"],
+  "permissions": ["https://mail.google.com/"],
+  "background": {
+    "scripts": ["scripts/cj-landing.js", "scripts/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "19": "images/icon-19.png",
+    "32": "images/icon-32.png",
+    "38": "images/icon-38.png",
+    "48": "images/icon-48.png",
+    "64": "images/icon-64.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [{
+    "all_frames": true,
+    "js": ["scripts/contentscript.js"],
+    "matches": ["https://mail.google.com/mail/mu/mp/*"],
+    "run_at": "document_start"
+  }]
+}

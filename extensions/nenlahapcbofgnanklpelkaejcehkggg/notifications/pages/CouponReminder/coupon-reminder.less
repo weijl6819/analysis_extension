@@ -1,0 +1,110 @@
+@import "~less/variables.less";
+@import "../../less/cleanslate.less";
+#__wikibuy__ .__wikibuy {
+  &.__onTop {
+    position: relative;
+    z-index: 2147483647;
+  }
+  @import "../../less/global.less";
+  @import "../../less/icon-font.less";
+  .coupon-reminder-page {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    &.disabled {
+      pointer-events: none;
+    }
+    .coupon-reminder-notification {
+      width: 310px;
+      margin-left: 20px;
+      margin-right: 20px;
+      background: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      button {
+        height: 60px; //OVERRIDE
+        font-size: 17px;
+      }
+      header {
+        position: relative;
+        height: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 7px 0;
+        .w-icon-logo {
+          height: 40px;
+          width: 60px;
+          background-position: center;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-image: none;
+          svg {
+            fill: @palmetto;
+            width: 26px;
+          }
+        }
+        .group {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .w-icon-logo {
+          height: 40px;
+          width: 60px;
+          background-position: center;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            fill: @palmetto;
+            width: 36px;
+          }
+        }
+        .close {
+          height: 40px;
+          width: 40px;
+          color: @gray;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          opacity: 1;
+          text-shadow: none;
+          float: none;
+        }
+        .icon-carat {
+          transform: rotate(90deg);
+          width: 40px;
+          height: 40px;
+        }
+      }
+      & > section {
+        position: relative;
+        padding: 8px 16px 16px;
+        overflow: auto;
+        max-height: 560px;
+        .icon-credit {
+          width: 160px;
+          height: 160px;
+          background:  url('https://cdn.ivaws.com/wikibuy-assets/images/wb_credits.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+        .button-wrapper {
+          margin-top: 20px;
+          button {
+            width: 100%;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

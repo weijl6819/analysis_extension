@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Daily Coin Feed FeedBack</title>
+    <link rel="icon" href="/images/coin.feed.main_16.png">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/feedback.css" />
+    <script type="text/javascript" src="js/background/namespace.js"></script>
+    <script type="text/javascript" src="/js/locale.js"></script>
+    <script type="text/javascript" src="/js/Prefs.js"></script>
+    <script type="text/javascript" src="/js/Utils.js"></script>
+    <script type="text/javascript" src="/js/feedback.js"></script>
+    <script type="text/javascript" src="/js/_external/jquery-3.3.1.js"></script>
+</head>
+
+<body style="overflow-y:scroll"> 
+    <div id="tree-navi-wrap">
+        <div id="tree-navi-right">
+            <div id="tree-navi-body">
+                <center>
+                    <div id="navi-additional-sections">
+                        <div class="navi-page-block active" block="navi-faq-feedback">
+                            <div class="navi-body-header">
+                                <h1 msg="feedback_dialog_title">FAQ Feedback</h1>
+                            </div>
+
+                            <div class="navi-block">
+                                    <div class="modal-body">
+                                        <div>
+                                            <form id="feedback-form" class="feedback-form">
+                                                <div class="form-group">
+                                                    <label id="popup-feedback-dialog-label-email" for="exampleInputEmail" msg="feedback_dialog_label_email">Your email</label>
+                                                    <span class="feedback-form-field-required form-field-required-text" msg="feedback_dialog_field_required_text">(required)</span>
+                                                    <input type="email" class="form-control animate" id="exampleInputEmail" maxlength="255">
+                                                    <div class="form-error-text"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label id="popup-feedback-dialog-label-subject" for="exampleInputSubject" msg="feedback_dialog_label_subject">Subject</label>
+                                                    <span class="feedback-form-field-required form-field-required-text" msg="feedback_dialog_field_required_text">(required)</span>
+                                                    <input type="text" class="form-control animate" id="exampleInputSubject" maxlength="255">
+                                                    <div class="form-error-text"></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label id="popup-feedback-dialog-label-description" for="exampleTextArea" msg="feedback_dialog_label_description">Description</label>
+                                                    <textarea class="form-control exampleTextArea animate" id="exampleTextArea" maxlength="10000"></textarea>
+                                                    <div class="form-error-text"></div>
+                                                </div>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-success" id="feedBackConfirm" msg="feedback_dialog_button_submit">SEND EMAIL</button>
+                                                </div>
+                                            </form>
+                                            <div id="feedback-success" class="feedback-success">
+                                                <p id="popup-feedback-dialog-success-text" class="text-center" msg="feedback_dialog_success_text">Thanks for you feedback!</p><br>
+                                                <div class="text-center feedback-success-glyphicon">
+                                                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                             
+                    </div>
+
+                </center>
+            </div>
+        </div>
+    </div>
+    
+    
+    <span class="loader"></span>
+</body>
+
+</html>

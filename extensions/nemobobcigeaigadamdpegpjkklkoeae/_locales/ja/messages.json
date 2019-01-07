@@ -1,0 +1,36 @@
+{
+        "extName": {
+        "message": "Web of Science - クイックサーチ"
+        },
+		"extDesc": {
+        "message": "Web of Science でトピックを検索します"
+		},
+		"searchOptionSpan":{
+		"message":"<p class='optionsSubHead'>データベースを選択</p><p class='optionsBlurb'>Web of Science - クイックサーチ拡張機能は、<em>すべてのデータベース</em> (Web of Science で購読権のあるすべてのデータベース) に対してトピックを横断検索します。または <em>Web of Science Core Collection</em> のみを検索対象として選択することもできます。</p>"
+		},
+		"allDBNote":{
+		"message":"<p><em>この検索拡張機能を使用するには、Web of Science の購読権が必要なのでご注意ください。</em></p>"
+		},
+		"footerSearch": {
+        "message": "検索"
+        },
+		"resetButton": {
+        "message": "フィールドをクリア"
+        },
+		"optionMSG": {
+        "message": "設定"
+        },
+		"wosALLDB": {
+        "message": "<strong>Web of Science</strong> (横断検索)"
+        },
+		"wosCC": {
+        "message": "<strong>Web of Science Core Collection</strong>"
+        },
+		"placeHolder": {
+        "message": "検索するトピックを入力"
+        },
+		"contextLabel": {
+        "message": "Web of Science を検索"
+        }
+
+}

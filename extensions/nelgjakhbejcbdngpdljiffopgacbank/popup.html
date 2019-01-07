@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+    	<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/weather.css" />
+        <title>Simple Weather</title>
+    </head>
+    <body>
+
+		<div id="loader"></div>
+
+        <div id="idojaras">
+        	
+        	<div id="back">
+				<div class="felho"></div>
+				<div class="anim"></div>
+			</div>
+
+        	<div id="inner">
+
+	        	<div id="varos" class="row">
+	        		<h2>Budapest</h2>
+	        		<span id="datum"></span>
+	        		<a href="options.html"><img src="static/pic/cog.png" /></a>
+	        	</div><!-- #varos -->
+
+	        	<div id="idojaras-most" class="row">
+	        		<div class="hatter">
+
+	        			<div class="info row">
+							<div class="row">
+								<i id="mostani-icon" class="wi"></i>
+	        					<span id="mostani-fok"></span>
+							</div>
+	        				<div class="row mostani-egyebek">
+		        				<span id="mostani-top">&uarr; <span></span> : </span>
+		        				<span id="mostani-low">&darr; <span></span></span>
+		        				<span id="mostani-szoveg"></span>
+		        				<span id="mostani-napiszoveg"></span>
+	        				</div>
+	      
+	        			</div><!-- .info -->
+	          		</div><!-- .hatter -->
+	        	</div><!-- #idojaras-most -->
+
+	        	<div id="idoidojaras-elorejelzes" class="row">
+	        		
+	        	</div><!-- #idojaras-elorejelzes -->
+
+	        	<a href="" target="_blank" class="full_forecast">full forecast on yahoo</a>
+
+        	</div><!-- inner -->
+        
+        </div><!-- #idojaras -->
+
+
+        <script type="text/javascript" src="static/js/jquery.js"></script>
+        <script type="text/javascript" src="static/js/jquery.simpleWeather.js"></script>
+        <script type="text/javascript" src="static/js/weather.js"></script>
+    </body>
+</html>

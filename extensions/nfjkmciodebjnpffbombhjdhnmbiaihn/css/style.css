@@ -1,0 +1,65 @@
+body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        /*font-size: medium;*/
+        width:400px;
+        min-height:700px;
+        /*color:white;*/
+        background: linear-gradient(black, gray, black);
+      }
+      .divLink{
+        text-decoration:none;
+        cursor:pointer;
+        opacity:.5;
+        /*font-size:small;*/
+      }
+      .divLink:hover{
+        opacity:1;
+      }
+      .changeValueGreen{
+        background-color:rgb(76,217,99);
+      }
+      .changeValueRed{
+        background-color:rgb(254,58,47);
+      }
+      .table{
+        background-color: none;
+        margin-bottom: 0px;
+      }
+      .table th, .table td { 
+        border-top: none !important; 
+      }
+      .table-bordered th, .table-bordered td { 
+        border-top: none !important; 
+      }
+      a{
+        color:white; !imporatant
+      }
+      a:hover{
+        text-decoration:none; !imporatant
+      }
+      .modal {
+        display:    none;
+        position:   fixed;
+        z-index:    1000;
+        top:        0;
+        left:       0;
+        height:     100%;
+        width:      100%;
+        background: rgba( 255, 255, 255, .8 ) 
+                    url('http://i.stack.imgur.com/FhHRx.gif') 
+                    50% 50% 
+                    no-repeat;
+    }
+    
+    body.loading {
+        overflow: hidden;   
+    }
+    
+    body.loading .modal {
+        display: block;
+    }
+    .chart-container{
+      height: 190px;
+      width: 380px;
+      background-color: white;
+    }

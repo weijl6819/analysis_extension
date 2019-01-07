@@ -1,0 +1,122 @@
+/*--------------------- General styles start ---------------------*/
+body {margin: 0;font: 13px 'Tahoma';color: #b9b9b9;text-align: center;background: url(./images/bg.gif);}
+td, input {font: 13px 'Tahoma', 'Arial';}
+body a {color: #6196da;text-decoration: underline;}
+body a:hover {text-decoration: none;}
+img {border: 0;}
+.clear {clear: both;}
+*:focus {outline: none;}
+/*--------------------- General styles end ---------------------*/
+
+/*Container*/
+#container {position: absolute;top: 50%;left:50%;width: 444px;margin: -165px auto 0 -222px;text-align: left;}
+
+/*logo*/
+a#logo {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 65px;
+    height: 42px;
+    background: url(./images/logo.png);
+    outline: none;
+}
+
+/*top*/
+#cont-title-top {
+    height: 6px;
+    background: url(./images/cont-title-top.png);
+}
+#cont-title-mid {
+    background: #378ab2 url(./images/cont-title.gif) repeat-x;
+    border-left: 1px solid #0b516e;
+    border-right: 1px solid #0b516e;
+    min-height: 70px;
+    font: 25px/65px 'Myriad Pro';
+    color: #fff;
+    text-shadow: 0 1px 1px #5d5d5d;
+    padding: 0 16px;
+}
+#cont-title-bottom {
+    height: 5px;
+    background: url(./images/cont-title-bottom.png);
+}
+.sign-up {
+    float: right;
+    margin-top: 45px;
+    font: 13px 'Tahoma';
+    color: #fff;
+    text-shadow: none;
+}
+.sign-up a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*content*/
+#content {
+    background: url(./images/cont-mid.png);
+    padding: 25px 16px 15px 24px;
+}
+#cont-bottom {
+    height: 5px;
+    background: url(./images/cont-bottom.png);
+}
+.inputfield {
+    height: 42px;
+    background: url(./images/inputfiled.png);
+    position: relative;
+}
+.pass-input {
+    margin-top: 40px;
+}
+.input-ico {
+    width: 35px;
+    height: 30px;
+    float: left;
+    margin: 7px 10px 0 7px;
+}
+.envelope-ico {background: url(./images/envelope.png);}
+.key-ico {background: url(./images/key.png);}
+
+.inputfield input {
+    float: left;
+    width: 340px;
+    margin: 12px 0 0 0;
+    font: 13px 'Tahoma';
+    color: #b9b9b9;
+    border: 0;
+}
+.pass-input input {width: 280px;}
+.pass-input label {
+    position: absolute;
+    cursor: text;
+    left: 52px;
+    top: 13px;
+}
+a#pass-remind {
+    display: block;
+    float: right;
+    height: 38px;
+    width: 70px;
+    margin-top: 2px;
+    text-align: center;
+    font: 13px/36px 'Tahoma';
+    color: #b9b9b9;
+    border-left: 1px solid #dadada;
+}
+
+#sbm-button {
+    width: 122px;
+    height: 42px;
+    display: block;
+    margin: 15px auto 0;
+    background: url(./images/button.png);
+    border: 0;
+    cursor: pointer;
+    font: 20px/30px 'Myriad Pro';
+    color: #fff;
+    text-shadow: 0 1px 1px #5d5d5d;
+}
+/*---------*/
+

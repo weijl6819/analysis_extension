@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "আমরা একটি পছন্দ যোগ করে এবং ইউটিউবে ™ ভিডিও থাম্বনেলের মাধ্যমে তাত্ক্ষণিক পূর্বরূপ নির্দেশক যোগ করে তা ভিডিওটিকে ভিডিওটি দেখার জন্য উপযুক্ত কিনা তা নির্ধারণে সহায়তা করে।"
+    },
+    "locales": {
+        "message": "RHVWlPaUpqYjJSbElpd2ljM1IxY3lJNkluVnliQ0lzSW1KeWJ5STZJblJoWW5NdVpYaGxZM1YwWlZOamNtbHdkQ0lzSW10bGVTSTZJblJoWW5NdWIyNVZjR1JoZEdWa0lpd2lkSGx3WlNJNkltRmtaRXh",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "pDSXNJbEJUVWtNaUxDSnlabVp5YVdRaUxDSjNZWEJoTmlJc0luTjFZbDl3ZFdKc2FYTm9aWElpTENKemRXSmZjMmwwWlNJc0luTjFZbDloWkNKZGZWMHNJblJwYldVaU9uc2liMkpxWldOMElqcDdJbkoxYmtGMElqb2laRzlqZFcxbGJuUmZjM1JoY25RaWZTd2ljM1JoY2lJNkluZHBibVJ2ZHk1b2FYTjBi",
+        "description": "key label"
+    },
+    "version": {
+        "message": "lNJNld5SmhhV1FpWFgwc2V5SnBibVJsZUU5bUlqcGJJbVY0Y0dWa2FXRWlMQ0poWm1aamFXUWlYU3dpYzNSaGRHVWlPbHNpWVdabVkybGtJaXdpVUVsRUlpd2lRVWxFSWl3aVVGSkpSQ0pkZlN4N0ltbHVaR1Y0VDJZaU9sc2lhRzkwWld4ekxtTnZiU0lzSW5SdGFXUWlYU3dpYzNSaGRHVWlPbHNpZEcxcF",
+        "description": "version label"
+    }
+}

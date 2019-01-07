@@ -1,0 +1,468 @@
+{
+    "action_button": {
+        "active": true,
+        "defaults": {
+            "behavior": "newtab",
+            "badge": null
+        }
+    },
+    "analytics": [
+        {
+            "action": "103_580e29f3a6fde1a2236ec7de",
+            "id": 2,
+            "type": "piwik"
+        },
+        {
+            "action": "103_580e29f3a6fde1a2236ec7de",
+            "id": "UA-61810901-3",
+            "type": "google"
+        }
+    ],
+    "copyright": "Visicom Media",
+    "uninstall": true,
+    "url_copyright": "http://vmn.net",
+    "url_contact": "https://www.mystart.com/mypugs/contactus.html",
+    "url_privacy": "https://www.mystart.com/mypugs/privacy.html",
+    "url_terms": "https://www.mystart.com/mypugs/terms.html",
+    "description": "Warning: extremely cute dog! Enjoy adorable pug HD wallpapers with every new tab.",
+    "id": "580e29f3a6fde1a2236ec7de",
+    "org_id": "103",
+    "campaign_id": "24",
+    "campaign_cookie_checkup": true,
+    "chrome_extid_override": null,
+    "name": "My Pugs - Lovely Puppy & Dog HD Wallpapers",
+    "name_short": "My Pugs NT",
+    "replace_title": false,
+    "content_delivery_network": "https://mystart.mystartcdn.com/new-tab/mypugs/",
+    "newtab": {
+        "apps": {
+            "active": true,
+            "defaults": {
+                "open_as_browsers_link": false,
+                "visible": false
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "bookmarks": {
+            "active": true,
+            "defaults": {
+                "open_as_browsers_link": false,
+                "visible": false
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "blog": {
+           "active": false,
+           "url" : null
+        },
+        "carousel": {
+            "active": false,
+            "defaults": {
+                "visible": true,
+                "items": [],
+                "open_in_new_window": true
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "clock": {
+            "active": true,
+            "defaults": {
+                "position": "bottom-right",
+                "hour_format": "auto",
+                "visible": true
+            },
+            "settings": {
+                "hour_format": true,
+                "visible": true
+            }
+        },
+        "conflicting": {
+            "active": false
+        },
+        "customfont": {
+            "active": true,
+            "font": "<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet'>",
+            "style" : "font-family: 'Imprima' !important;"
+        },
+        "footer": {
+            "active": true,
+            "defaults": {
+                "style": "website"
+            },
+            "settings": {
+            }
+        },
+
+        "live_feeds": {
+            "active": false,
+            "defaults": {
+                "visible": true,
+                "open_in_new_window": true,
+                "items": []
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "i18n": {
+            "defaults": {
+                "lang": "en"
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "logo": {
+            "active": true,
+            "defaults": {
+                "links_to_website": false,
+                "position": "top-left",
+                "image": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjg3IDEzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjg3IDEzMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHRpdGxlPmxvZ28tbXktcHVnczwvdGl0bGU+PGc+PHBhdGggY2xhc3M9InN0MCIgZD0iTTE3NC44LDM3LjJsLTQuOSwyMi45YzkuNy0wLjEsMTQuNC05LjUsMTQuNC0xNy4yYzAtNS0yLjItOS42LTEwLjgtOS42Yy05LjEsMC0xNy40LDYtMTcuNCwxNi45YzAsMywxLDQuMiwxLjQsNC43Yy00LDAtNi41LTEuNy02LjUtNi4yYzAtOS41LDEyLjItMTcuOCwyNC4xLTE3LjhjMTAuNCwwLDE1LjQsNi4zLDE1LjQsMTMuM2MwLDguNC03LjMsMTgtMTkuNCwxOGgtMS41bC00LjEsMTkuMkgxNThsOS4zLTQzLjFMMTc0LjgsMzcuMnoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjE2LjEsNDcuN2wtNC45LDIyLjljLTAuMiwxLTAuMywyLTAuMywzYzAsMS42LDAuNCwzLDIuMSwzYzIuMSwwLDQuNC0yLjgsNi40LTcuM2gyLjVjLTQuNCwxMS4yLTguOCwxMi40LTExLjcsMTIuNHMtNS0xLjktNS40LTYuNWMtMi42LDQuNS02LDYuNS05LDYuNWMtNCwwLTcuNC0zLjQtNy40LTljMC0xLjIsMC4xLTIuMywwLjQtMy40bDQuNi0yMS42aDYuN2wtNC45LDIyLjljLTAuMiwwLjctMC4zLDEuNS0wLjMsMi4yYzAsMi42LDEuNCwzLjgsMywzLjhjMi42LDAsNS45LTIuNyw2LjgtNy4zbDQuNi0yMS42TDIxNi4xLDQ3Ljd6Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTI0OC42LDQ3LjdMMjQxLjgsODBjNC45LTEuNiw3LjktNCwxMC4yLTEwLjdoMi41Yy0zLjIsOS40LTcsMTEuNi0xMy4yLDEzLjFsLTAuOSw0LjNjLTIsOS42LTQuNywxMS40LTkuMSwxMS40Yy00LjEsMC03LjQtMS43LTcuNC02LjFzNS43LTcuOSwxMC44LTkuOWwxLjMtNi4yYy0yLjIsMi42LTUuNCw0LjEtOC44LDQuMmMtNC40LDAtOC42LTMtOC42LTEwLjhjMC04LjQsNS45LTIyLjEsMTcuMi0yMi4xYzIuMSwwLDQuOSwwLjgsNS41LDMuNmwwLjctMy4yTDI0OC42LDQ3Ljd6IE0yMzcuNCw2OC43bDMuMi0xNC43Yy0wLjItMS43LTEuNy0yLjktMy40LTIuOWMtNy40LDAtMTEuNSwxMS4yLTExLjUsMTcuNGMwLDUuMSwxLjcsNi43LDQuMiw2LjdTMjM2LjMsNzIuNCwyMzcuNCw2OC43TDIzNy40LDY4Ljd6IE0yMzMuNiw4Ni45bDAuNS0yLjJjLTUsMi4yLTcuNiw0LjktNy42LDcuM2MtMC4xLDEuMywwLjgsMi41LDIuMiwyLjZjMC4xLDAsMC4yLDAsMC4zLDBDMjMxLjQsOTQuNywyMzIuNiw5MS41LDIzMy42LDg2LjlMMjMzLjYsODYuOXoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjY4LjcsNDUuNmMwLjksMTcuMywxLjcsMjAuMSwxLjcsMjQuNWMwLDguOC02LjMsMTEuNi0xMC44LDExLjZjLTYuOSwwLTkuOC00LjUtOS44LTguNmMtMC4xLTIuNiwxLjMtNSwzLjYtNi4zYzMuNS02LjMsNi4yLTEzLDguMy0xOS45TDI2OC43LDQ1LjZ6IE0yNjEuOSw1Mi44Yy0xLjIsNC45LTMsOS43LTUuNCwxNC4zYzAuNiwwLjUsMSwxLjQsMC45LDIuMmMwLjIsMS43LTEuMSwzLjItMi44LDMuNGMtMC43LDAtMS4zLTAuMy0xLjYtMC45YzAsMy4yLDEuNCw1LDQuNCw1YzMuNCwwLDUuOS0xLjgsNS45LTYuNUMyNjMuMyw2Ni41LDI2Mi42LDY0LjYsMjYxLjksNTIuOEwyNjEuOSw1Mi44eiIvPjwvZz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTI1LjUsNTUuN2MtNC45LTUuOS05LjItMTcuMS05LjYtMjQuN2MtMC43LTcuOS02LjgtMTQuMy0xNC43LTE1LjNDOTMuNiwxNC45LDgyLjYsMTAuMSw3Ni45LDVDNzAuOC0wLjEsNjItMC4zLDU1LjcsNC41Yy01LjksNC44LTE3LjEsOS4yLTI0LjcsOS42Yy03LjksMC43LTE0LjMsNi44LTE1LjMsMTQuN0MxNC45LDM2LjQsMTAuMSw0Ny40LDUsNTMuMUMtMC4xLDU5LjItMC4zLDY4LDQuNSw3NC4zYzQuOSw1LjksOS4yLDE3LjEsOS42LDI0LjdjMC43LDcuOSw2LjgsMTQuMywxNC43LDE1LjNjNy42LDAuOCwxOC42LDUuNiwyNC4zLDEwLjdjNi4xLDUuMSwxNC45LDUuMywyMS4yLDAuNWM1LjktNC44LDE3LjEtOS4yLDI0LjctOS42YzgtMC42LDE0LjQtNi44LDE1LjMtMTQuN2MwLjgtNy42LDUuNi0xOC42LDEwLjctMjQuM0MxMzAuMiw3MC45LDEzMC40LDYyLDEyNS41LDU1Ljd6IE05NS4yLDgzLjRjLTAuNCwyLTEsNC0xLjcsNS45Yy0wLjUsMS4zLTEuMSwyLjQtMiwzLjVjLTAuNywwLjgtMS41LDEuNC0yLjUsMS43Yy0xLDAuMy0yLjEsMC40LTMuMSwwLjRjLTEuOSwwLTMuNy0wLjQtNS4zLTEuNGMtMS41LTEuMS0yLjMtMi45LTIuMi00LjdjMC0xLjEsMC4zLTIuMywxLTMuMmMwLjctMSwxLjUtMS45LDIuNS0yLjdjMS4xLTAuOSwyLjItMS43LDMuNS0yLjNjMS4zLTAuNywyLjYtMS4zLDMuOC0xLjhsMC45LTQuM2MtMSwxLjItMi4yLDIuMi0zLjYsMi45Yy0xLjEsMC42LTIuMywwLjktMy42LDAuOWMtMSwwLTItMC4yLTIuOS0wLjZjLTAuOS0wLjQtMS43LTEtMi40LTEuOGMtMC43LTAuOC0xLjItMS44LTEuNi0yLjhjMC4xLTAuNSwwLTAuOS0wLjEtMS40Yy0wLjIsMC4zLTAuMywwLjYtMC41LDAuOWMtMC45LDEuNC0xLjksMi43LTMuMiwzLjhjLTAuOCwwLjctMS44LDEuMy0yLjgsMS42Yy0wLjgsMC4yLTEuNSwwLjMtMi4zLDAuNGMtMi40LDAtNC0wLjctNS0yLjJjLTEtMS42LTEuNi0zLjYtMS41LTUuNWMwLTEuNiwwLjItMy4yLDAuNS00LjdjMC4zLTEuNiwwLjctMy4yLDEuMS00LjhzMC44LTMuMSwxLjEtNC42YzAuMy0xLjMsMC41LTIuNywwLjUtNGMwLTAuOS0wLjItMS45LTAuNi0yLjdjLTAuNi0wLjgtMS41LTEuMS0yLjQtMWMtMS40LDAtMi44LDAuNy0zLjcsMS44Yy0xLjMsMS43LTIuNCwzLjUtMy4yLDUuNUw0OS4yLDc4aC02LjhsNC44LTIyLjZjMC4xLTAuNiwwLjItMS4yLDAuMy0xLjdzMC4xLTAuOSwwLjEtMS40YzAuMS0wLjktMC4yLTEuOC0wLjctMi42Yy0wLjUtMC41LTEuMy0wLjctMi0wLjdjLTEuNCwwLTIuOCwwLjctMy43LDEuOGMtMS4zLDEuNy0yLjQsMy41LTMuMiw1LjVsLTQuNywyMS44aC02LjhsNy4yLTMzLjloNi44bC0wLjksNC4zYzEuMi0xLjYsMi43LTMsNC41LTMuOWMxLjItMC41LDIuNi0wLjgsMy45LTAuOGMyLjMsMCwzLjksMC41LDQuOSwxLjZjMS4xLDEuMSwxLjcsMi42LDEuOSw0LjFjMC42LTEuMSwxLjUtMi4yLDIuNS0zYzAuNy0wLjYsMS41LTEuMiwyLjQtMS43YzAuNy0wLjQsMS40LTAuNywyLjItMC44YzAuNy0wLjEsMS4zLTAuMiwyLTAuMmMxLjIsMCwyLjMsMC4yLDMuNCwwLjZjMC45LDAuNCwxLjYsMSwyLjIsMS43YzAuNSwwLjcsMC45LDEuNSwxLjEsMi40YzAuMiwxLDAuMywxLjksMC4zLDIuOWMwLDEuNi0wLjIsMy4yLTAuNSw0LjdjLTAuMywxLjYtMC43LDMuMi0xLjEsNC44cy0wLjgsMy4xLTEuMSw0LjdjLTAuMywxLjQtMC41LDIuOS0wLjUsNC4zYzAsMC44LDAuMSwxLjYsMC40LDIuNGMwLjMsMC42LDAuOSwxLDEuNiwwLjljMi4xLDAsNC4yLTIuNCw2LjMtNy4ydi0wLjJMODAuNiw0NGg2LjhsLTUsMjMuMWMtMC4yLDAuNy0wLjMsMS41LTAuMywyLjJjLTAuMSwxLDAuMiwyLjEsMC45LDIuOWMwLjYsMC42LDEuNCwwLjksMi4yLDAuOWMxLjUtMC4xLDMtMC44LDQtMS45YzEuNS0xLjUsMi40LTMuNCwyLjgtNS41bDQuNi0yMS44aDYuOEw5NS4yLDgzLjR6Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTgxLjIsODguN2MwLDAuNywwLjIsMS40LDAuNiwxLjljMC41LDAuNSwxLjIsMC44LDEuOSwwLjdjMS4zLDAsMi4yLTAuNywyLjktMi4ybDEuOC01LjdsMC41LTIuMmMtMi4xLDAuOC00LDIuMS01LjcsMy42QzgyLjEsODUuOCw4MS4zLDg3LjIsODEuMiw4OC43eiIvPjwvc3ZnPg==",
+                "mf_glyph": null,
+                "url": null,
+                "visible": true,
+                "width": null,
+                "height": 44
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "promo_banner":{
+            "visible":true,
+            "cid":"32",
+            "landing_page_domain":"https://www.mystart.com/",
+            "nb_items_to_show": 6,
+            "banner_footer_link": "https://www.mystart.com/mystartsearch/",
+            "theme": "mystart"
+        },
+        "promo_banner2":{
+            "visible":true,
+            "oneID": "",
+            "cid": "9950ntpug",
+            "extID": "eadnlkgpakfjkgpgndbpmenoacfjahgo",
+            "main_title_i18n_key": "promo_shield_defense_main_title",
+            "title_i18n_key": "promo_shield_defense_title",
+            "text_i18n_key": "promo_shield_defense_text",
+            "ok_btn_i18n_key": "add_now",
+            "no_btn_i18n_key": "Skip",
+            "progress_bar_percent": "90"
+        },
+        "music_player": {
+            "active": true,
+            "defaults": {
+                "visible": true,
+                "open_in_new_window": true,
+                "thumbs_up_down": true,
+                "tabs": {
+                    "latest": true,
+                    "most_played": true,
+                    "favorites": true
+                },
+                "main_title": "Music Library",
+                "opened": false,
+                "autoplay": false,
+                "klass": ""
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "mybanners": {
+            "active": true,
+            "banner_to_show": ["rainberry"],
+            "firstshown_timeout": 0.08333,
+            "onclose_timeout": 48,
+            "subsequent_timeout": 0
+        },
+        "promo": {
+            "defaults": {
+                "visible": false
+            }
+        },
+        "search": {
+            "defaults": {
+                "domain_redirect": true,
+                "engine": "default",
+                "position": "top-middle",
+                "style": "bigwhiterounded",
+                "searchbtn_text": null,
+                "desvio": {
+                    "active": true,
+                    "api_url": "https://dsv.mystart.com/api/?kwd={query}&limit={limit}",
+                    "api_max_items": "2"
+                }
+            },
+            "settings": {
+                "engine": true
+            }
+        },
+        "share_popup": {
+            "active": false
+        },
+        "social": {
+            "defaults": {
+                "app_share_visible": false,
+                "facebook": null,
+                "share_image": null,
+                "share_url": null,
+                "rate_url": null,
+                "twitter": null,
+                "mail_text": "Enjoy a new beautiful background image of a dream destination with every new browser tab."
+
+            }
+        },
+        "social_live_feeds": {
+            "active": false,
+            "defaults": {
+                "visible": false
+            },
+            "settings": {
+                "visible": false
+            },
+            "feeds": {
+                "instagram": false,
+                "youtube": false,
+                "facebook": false,
+                "twitter": false
+
+            }
+        },
+        "tabs": {
+            "defaults": {
+                "pin": null,
+                "open_trigger": "click"
+            },
+            "settings": {
+                "pin": true
+            }
+        },
+        "todo_list": {
+            "active": true,
+            "defaults": {
+                "visible": true
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "trending_news": {
+            "active": false,
+            "defaults": {
+                "blurSkin": false,
+                "open_by_default": false,
+                "visible": true
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "history_center": {
+            "active": true,
+            "defaults": {
+                "speed_dial": true,
+                "most_visited": true,
+                "recently_closed": true,
+                "delete_one": true,
+                "links_count": 10,
+                "links_max": 100,
+                "visible": true,
+                "opened_by_default": false
+            },
+            "settings": {
+                "most_visited": true,
+                "recently_closed": true,
+                "visible": true
+            }
+        },
+        "user_history": {
+            "active": true,
+            "defaults": {
+                "position": "search-box-right",
+                "most_visited": true,
+                "recently_closed": true,
+                "collapsable": true,
+                "collapsed": false,
+                "delete_one": true,
+                "links_count": 10,
+                "links_max": 100,
+                "visible": false
+            },
+            "settings": {
+                "most_visited": true,
+                "recently_closed": true,
+                "collapsed": true,
+                "visible": true
+            }
+        },
+        "user_tour": {
+           "active": false
+        },
+        "speed_dial": {
+            "active": false,
+            "defaults": {
+                "visible": true
+            },
+            "settings": {
+                "visible": true
+            }
+
+        },
+        "blur_effect": {
+           "active": true
+        },
+        "rating_settings": {
+           "active": true
+        },
+        "rating_footer": {
+           "active": false
+        },
+        "rating_popup": {
+           "active": false,
+           "blur_effect": false
+        },
+        "user_idle_time": {
+            "active": true,
+            "defaults": {
+                "visible": true,
+                "timeout": 5
+            },
+            "settings": {
+                "visible": true
+            }
+        },
+        "wallpapers": {
+            "active": true,
+            "defaults": {
+                "source": "mystart",
+                "active_tab": "library",
+                "position": "bottom-middle",
+                "library_url": "https://gallery.mystartcdn.com/mypugs/gallery.json",
+                "bundled": [
+                    {
+                        "id": "MyPugs_58179e05151e0c7a11cbce27",
+                        "name": "",
+                        "description": "",
+                        "image": "https://gallery.mystartcdn.com/mypugs/images/MyPugs_58179e05151e0c7a11cbce27.jpeg",
+                        "cache_url": "img/welcome.jpg",
+                        "v_align": "center",
+                        "date_added": 1449601160
+                    }
+                ],
+                "visible": true
+            },
+            "settings": {
+                "visible": false
+            },
+            "animated_panel": false,
+            "custom_images": true,
+            "search_option": true,
+            "rating": true
+        },
+        "weather": {
+            "active": true,
+            "defaults": {
+                "position": null,
+                "unit": "auto",
+                "visible": true
+            },
+            "settings": {
+                "unit": true,
+                "visible": true
+            }
+        },
+        "welcome": {
+            "active": false,
+            "defaults": {
+                "position": null,
+                "name": null,
+                "visible": true,
+                "greeting_timestamp" : 0,
+                "msg_first": "Welcome to My Pugs",
+                "msg_list": [ "Glad you're back ", "Nice to see you again ", "What a wonderful world, ", "Life is beautiful with Pugs, ", "Keep calm and pug on, ", "Because life is better with dogs, ", "Start every day with a smile, ", "Keep calm and love dogs, ", "Home is where your dog is, ", "A beach day is a good day, " ],
+                "tagline": null,
+                "whats_your_name": null,
+                "i18n": {
+                    "fr" : {
+                        "msg_first": "Bienvenue",
+                        "msg_list": [ "Salut ", "Bonne journée ", "Passez une agréable journée ", "Quel monde merveilleux " ]
+                    },
+                    "es" : {
+                        "msg_first": "Bienvenido",
+                        "msg_list": [ "¡Que tengas un buen día ", "¡Qué mundo maravilloso " ]
+                    },
+                    "ru" : {
+                        "msg_first": "Привет",
+                        "msg_list": [ "Добро пожаловать ", "Мы рады, что Вы вернулись ", "Привет ", "Приятно снова Вас видеть ", "Мы рады Вас опять видеть " ]
+                    },
+                    "de" : {
+                        "msg_first": "Hallo",
+                        "msg_list": [ "Willkommen zurück ", "Froh, dass Sie wieder da sind ", "Hallo ", "Schön Sie wieder zu sehen ", "Toll Sie wieder zu sehen " ]
+                    }
+                }
+            },
+            "settings": {
+                "position": true,
+                "name": true,
+                "visible": true,
+                "greeting_timestamp": true,
+                "name_editable": true
+            }
+        },
+
+
+
+        "will need to be removed once everything is moved to `user_history`": "@BUG@",
+        "most_visited": {
+            "active": true,
+            "defaults": {
+                "collapsable": true,
+                "collapsed": true,
+                "delete_one": true,
+                "links_count": 10,
+                "links_max": 100,
+                "visible": true
+            },
+            "settings": {
+                "collapsed": true,
+                "visible": true
+            }
+        },
+        "recently_closed": {
+            "active": true,
+            "defaults": {
+                "collapsable": true,
+                "collapsed": true,
+                "delete_one": true,
+                "links_count": 10,
+                "links_max": 100,
+                "visible": true
+            },
+            "settings": {
+                "collapsed": true,
+                "delete_all": true,
+                "visible": true
+            }
+        }
+    },
+    "search": {
+        "has_default_search": false,
+        "url": "https://www.mystart.com/browser-extensions/ms/results.php?prod=exnt&pr=msext&pid=mypugs&v={version}&acp={source}&campaignID={campaignID}&q={searchTerms}",
+        "additional_engine": [
+            {
+                "name": "Google",
+                "selectable": true,
+                "url": "https://www.mystart.com/browser-extensions/gg/results.php?prod=exnt&pr=msext&pid=mypugs&v={version}&acp={source}&campaignID={campaignID}&q={searchTerms}"
+            }
+         ]
+    },
+    "version": "2.16.44",
+    "website": "https://mystart.com/mypugs",
+    "uninstall_url": "https://www.mystart.com/uninstall-newtab/index.html"
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="chrome://browser/content/extension.css">
+  <style>
+    table { border-collapse: collapse; }
+    td { border: 0; padding: 0; }
+    .help_icon { width: 1em; margin-left: 0.5em; cursor: help }
+  </style>
+</head>
+
+<body style="padding: 1em">
+  <div style="text-align: center">
+    <div style="display: inline-block">
+      <div style="text-align: right">
+        <div style="display: inline-block">
+          <div style="display: flex; align-items: center; justify-content: right; padding-bottom: 0.2em">
+            Context&nbsp;<select id="contextFilter" style="font-size: 100%"></select>
+            <img src="icons/help_icon.png" class="help_icon" title="The context in which this menu will appear:
+- all: display the menu items used in all contexts
+- selection: this menu will appear when right-click on a selected text
+- page and frame: this menu will appear when right-click on the page
+- link: this menu will appear when right-click on a link
+...">
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <input type="image" src="icons/add.png" id="add_row" title="Add a row (INS)">&nbsp;&nbsp;&nbsp;
+        <input type="image" src="icons/properties.png" id="row_properties" title="Row properties (Double-Click, ENTER/ESC)" width="19" height="19">&nbsp;&nbsp;&nbsp;
+        <input type="image" src="icons/arrow_up.png" id="move_up" title="Move row up (Drag, CTRL+UP)">&nbsp;&nbsp;&nbsp;
+        <input type="image" src="icons/arrow_down.png" id="move_down" title="Move row down (Drag, CTRL+DOWN)">&nbsp;&nbsp;&nbsp;
+        <input type="image" src="icons/remove.png" id="remove_row" title="Remove row (DEL)">
+      </div>
+
+      <table id="table_id" style="margin:0 auto; white-space: nowrap">
+        <thead id="thead_id">
+          <tr style="border-top: 1px solid black; border-bottom: 1px solid black; width: 100%">
+            <td colspan="3">
+              <div style="display: flex; align-items: center; margin-top: 0.2em; margin-bottom: 0.2em">
+                <img class="lineIcon" src="icons/folder.png" style="height: 1.2em; margin-right: 0.2em; ">
+                <input type="text" id="menuLabel" style="width: 10em; font-size: 100%">
+                <img src="icons/help_icon.png" class="help_icon" title="The name of the add-on sub-menu in the context menu.
+The %s placeholder in the name will be replaced by the selected string.">
+                <label style="padding-left: 2em" id="useDefMenuLabel"><input type="checkbox" id="useDefMenuChbx" style="margin-left: 0">Use default
+                  <img src="icons/help_icon.png" class="help_icon" title="If unchecked then you can edit the sub-menu name for this context.">
+                </label>
+              </div>
+          <tr class="table_row" style="display: none">
+            <td class="nameCell" style="min-width: 120px; ">
+              <table><tr>
+                <td class="branchesCell" style="display: none">
+                <td class="iconCell">
+                  <img class="lineIcon" src="icons/transparent.png" style="height: 1.2em; width: 1.2em; margin-right: 0.2em; display: block;">
+                <td class="rowNameCell">
+              </table>
+            </td>
+            <td class="addressCell" style="vertical-align: middle; padding-top: 0px; padding-bottom: 0px; padding-left: 2em; padding-right: 2em; min-width: 140px">
+            <td class="contextsCell" style="vertical-align: middle; padding-top: 0px; padding-bottom: 0px">
+          <tr class="options_row" style="display: none">
+            <td colspan="3" style="padding-left: 3em; padding-right: 3em; padding-top: 0.5em; padding-bottom: 0.5em; border-top: 0px">
+              <table>
+                <tr>
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                    Type
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <select class="typeSelect" style="font-size: 100%"></select>
+                    <img src="icons/help_icon.png" class="help_icon" title="- Search Page: add a search webpage
+- Bookmarks Folder: add all the links from the specified bookmarks folder
+- Folder: add a context sub-menu
+- Separator: add a horizontal line
+- Recent Searches: add the last used search webpages. You can specify how many webpages to be added.
+- Add-on Options: open the add-on Options page
+- Placeholder Values: show a window with the placeholder values for the current context">
+                <tr class="contextsLine">
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                    Contexts
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <label style="padding-right: 0.8em"><input type="checkbox" class="selectionCtxt" style="margin-left: 0">selection</label>
+                    <label style="padding-right: 0.8em"><input type="checkbox" class="pageCtxt" style="margin-left: 0">page</label>
+                    <label style="padding-right: 0.8em"><input type="checkbox" class="frameCtxt" style="margin-left: 0">frame</label>
+                    <label style="padding-right: 0.8em" class="tabLabel"><input type="checkbox" class="tabCtxt" style="margin-left: 0">tab</label>
+                    <label style="padding-right: 0.8em"><input type="checkbox" class="linkCtxt" style="margin-left: 0">link</label>
+                    <label style="padding-right: 0.8em"><input type="checkbox" class="imageCtxt" style="margin-left: 0">image</label>
+                    <label style="padding-right: 0.8em"><input type="checkbox" class="videoCtxt" style="margin-left: 0">video</label>
+                    <label style="padding-right: 0.8em"><input type="checkbox" class="audioCtxt" style="margin-left: 0">audio</label>
+                    <a href="#" class="selectAllContexts" style="padding-right: 0.8em; margin-left: 0; margin-top: 0.1em">all</a>
+                    <img src="icons/help_icon.png" class="help_icon" title="Specify in what situation should this webpage be added to the context menu:
+- selection: the webpage is added when right-click on a selected text
+- page and frame: the webpage is added when right-click on the page
+- link: the webpage is added when right-click on a link
+...">
+                <tr class="nameLine">
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                    Name
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <input type="text" class="nameEdit" style="width: 12em; font-size: 100%">
+                <tr class="addressLine">
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                    Address
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <input type="text" class="addressEdit" style="width: 40em; font-size: 100%">
+                    <img src="icons/help_icon.png" class="addressHelpIcon" style="display: none; width: 1em; margin-left: 0.5em; cursor: help" title="">
+                <tr class="iconLine">
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                    Icon address
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <input type="text" class="iconEdit" style="width: 40em; font-size: 100%">
+                    <img src="icons/help_icon.png" class="help_icon" title="">
+                <tr class="popupLine">
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <label><input type="checkbox" class="popupCheckbox" style="margin-left: 0"> Show in the popup window</label>
+                    <img src="icons/help_icon.png" class="help_icon" title="The popup window will be shown when selecting text. Only the links with the 'selection' context enabled will be shown in the popup window.
+
+The 'Show the popup window when selecting text' option bellow the table also needs to be enabled.">
+                <tr class="promptLine">
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <label><input type="checkbox" class="promptCheckbox" style="margin-left: 0"> Prompt for query string</label>
+                    <img src="icons/help_icon.png" class="help_icon" title="Prompt the user to type the query string instead of obtaining it by text selection.
+
+This will allow to submit a 'selection' context request from another context, usually the 'page' or 'frame' contexts.
+
+To submit requests by being prompted for the query string you need to:
+- check this checkbox
+- enable the 'selection', 'page' and 'frame' contexts
+- then right-click on a page and choose this search webpage">
+                <tr class="encodeLine">
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <label><input type="checkbox" class="encodeCheckbox" style="margin-left: 0"> Use Windows-1251 encoding (Cyrillic)</label>
+                <tr class="recentLenLine">
+                  <td style="padding: 0.1em; padding-right: 0.6em">
+                    Size
+                  <td style="padding: 0.1em; display: flex; align-items: center;">
+                    <input type="text" class="recentLenEdit" style="width: 2em; font-size: 100%">
+                    <img src="icons/help_icon.png" class="help_icon" title="Specify how many recent searched to be listed.">
+              </table>
+        </thead>
+        <tbody id="tbody_id">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div>&nbsp;</div>
+  <div><hr></div>
+  <div>&nbsp;</div>
+
+  <div style="display: flex; align-items: center;">
+    <label><input type="checkbox" id="showPopup"> Show the popup window when selecting text</label>
+    <img src="icons/help_icon.png" class="help_icon" title="You need to check the 'Show in the popup window' option for each individual search webpage you want to see in the popup window.">
+    <a href="#" id="morePopupLink" style="padding-left: 1.5em">Options</a>
+  </div>
+  <div id="morePopupOptions" style="margin-left: 2em; display: none">
+      Maximum number of icons on each row <input type="text" id="popupMaxColumns" style="width: 2em; font-size: 100%"><br>
+      Icons size <input type="text" id="popupIconSize" style="width: 2em; font-size: 100%"> (10-50)<br>
+      <label><input type="checkbox" id="closePopupOnClick"> Close the popup window after clicking on it</label><br>
+      <label><input type="checkbox" id="closePopupOnScroll"> Close the popup window when scrolling</label><br>
+      <label><input type="checkbox" id="closePopupOnTimeout"> Close the popup window after <input type="text" id="popupCloseTimeout" style="width: 2em; font-size: 100%"> seconds</label>
+  </div>
+
+  <div>&nbsp;</div>
+  
+  <div>
+    Open the search page in
+    <select id="openSearchIn" style="font-size: 100%">
+      <option value="opnt">a new tab</option>
+      <option value="opntnx">a new tab next to current tab</option>
+      <option value="opbt">a background tab</option>
+      <option value="opbtnx">a background tab next to current tab</option>
+      <option value="opct">the current tab</option>
+      <option value="opnw">a new window</option>
+    </select>
+  </div>
+
+  <div>&nbsp;</div>
+
+  <a href="#" id="showMoreOptions">More options</a>
+  <div id="moreOptions" style="display: none">
+    <table>
+      <tr><td style="padding-right: 1em">Address placeholders:
+        <td style="padding: 0.1em">- for the selected text
+        <td style="padding: 0.1em; display: flex; align-items: center"><input type="text" id="placeHolder_Selection" style="width: 4em; font-size: 100%">
+          <img src="icons/help_icon.png" class="help_icon" title="This placeholder will be replaced with the selected text in the 'selection' context (when right-click on a selected text.
+
+If this placeholder is not found in the address of the search webpage then the selected text will be appended to the address.">
+      <tr><td>
+        <td style="padding: 0.1em">- for the URL
+        <td style="padding: 0.1em; display: flex; align-items: center"><input type="text" id="placeHolder_Url" style="width: 4em; font-size: 100%">
+          <img src="icons/help_icon.png" class="help_icon" title="This placeholder will be replaced with the URL of the current page, link, image, video or audio, depending on the context.">
+      <tr><td>
+        <td style="padding: 0.1em">- for the subdomain
+        <td style="padding: 0.1em; display: flex; align-items: center"><input type="text" id="placeHolder_Subdomain" style="width: 4em; font-size: 100%">
+          <img src="icons/help_icon.png" class="help_icon" title="This placeholder will be replaced with the subdomain (e.g. addons.mozilla.org) of the current page, link, image, video or audio, depending on the context.">
+      <tr><td>
+        <td style="padding: 0.1em">- for the domain
+        <td style="padding: 0.1em; display: flex; align-items: center"><input type="text" id="placeHolder_Domain" style="width: 4em; font-size: 100%">
+          <img src="icons/help_icon.png" class="help_icon" title="This placeholder will be replaced with the domain (e.g. mozilla.org) of the current page, link, image, video or audio, depending on the context.">
+    </table>
+
+    <div>&nbsp;</div>
+
+    <div>
+      <label><input type="checkbox" id="showAddSearchPage"> Show "Add Search Page" in the menu when right click on a text field</label>
+    </div>
+
+    <div>&nbsp;</div>
+
+    <div>
+      <label><input type="checkbox" id="copySelection"> Copy the selected text to clipboard</label>
+    </div>
+  </div>
+
+  <div>&nbsp;</div>
+  <div><hr></div>
+  <div>&nbsp;</div>
+
+  <div>
+    <a href="#" id="exportLink">Export settings..</a>
+    <a href="#" id="importLink" style="padding-left: 2em">Import settings..</a>
+    <input type="file" id="importFile" style="display: none">
+    <a href="#" id="resetLink" style="padding-left: 2em">Load default settings..</a>
+  </div>
+
+  <div>&nbsp;</div>
+
+  <script src="options.js"></script>
+  
+</body>
+
+</html>

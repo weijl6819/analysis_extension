@@ -1,0 +1,44 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+   "chrome_settings_overrides": {
+      "search_provider": {
+         "alternate_urls": [  ],
+         "encoding": "UTF-8",
+         "favicon_url": "http://www.mixplugin.com/images/favicon32.png",
+         "image_url": "http://apps.searchalgo.com/search/?category=images&s=xdds&q={searchTerms}",
+         "image_url_post_params": "",
+         "instant_url": "",
+         "instant_url_post_params": "",
+         "is_default": true,
+         "keyword": "mixDownloads",
+         "name": "mixDownloads",
+         "search_url": "http://apps.searchalgo.com/search/?category=web&s=xdds&q={searchTerms}",
+         "search_url_post_params": "",
+		 "suggest_url":"http://sug.searchalgo.com/search/index_sg.php?q={searchTerms}",
+         "suggest_url_post_params": ""
+      }
+   },
+    "content_scripts": [
+    {
+      "matches": ["http://www.mixplugin.com/mydownload/search/*"],
+            "js": ["js/search.js"]
+    }
+  ],
+   "description": "Your Download Search",
+   "short_name": "mixDownloads Search",
+    "default_locale": "en",
+    "icons": {
+    "128": "icons/icon128.png",
+    "16": "icons/icon16.png"
+  },
+   "manifest_version": 2,
+   "background": {
+       "scripts": ["js/jquery.min.js","js/main.js","js/background2.js"]
+   },
+	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "omnibox": { "keyword" : "mydownload" },
+   "name": "mixDownloads Search",
+   "permissions": ["downloads", "downloads.open", "downloads.shelf","notifications","http://*/","tabs","storage","cookies"],
+   "version": "1.0.1"
+}

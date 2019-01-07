@@ -1,0 +1,65 @@
+h1 {
+	color: rgb(51, 51, 51);
+	cursor: auto;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	letter-spacing: -1px;
+	line-height: 33px;
+	padding: 0 1px;
+	margin-bottom: 15px;
+}
+body {
+	margin: 20px;
+}
+div {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	color: rgb(76, 76, 76);
+}
+.logos {
+    position: absolute;
+    z-index: 0;
+    top: 90px;
+}
+.logos div {
+    height: 70px;
+    width: 70px;
+    margin: 1px 0;
+}
+.prog {
+    position: absolute;
+    left: 91px;
+    top: 49px;
+    right: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 20px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    overflow: hidden;
+    margin: 1px 0px;
+}
+ul li {
+    position: absolute;
+    padding: 10px;
+    height: 50px;
+}
+li:nth-child(odd){
+    background: rgb(213, 213, 213);
+}
+li:nth-child(even){
+    background: rgb(172, 172, 172);
+}
+.head {
+    height: 20px;
+}
+.head li {
+    height: 20px;
+    padding: 0;
+    text-align: center;
+}

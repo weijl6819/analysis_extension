@@ -1,0 +1,116 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./bookindy-container.html">
+
+<dom-module id="bookindy-extension"
+  <style media="screen">
+  </style>
+
+  <template>
+      <template is="dom-if" if="{{initialized}}">
+          <template is="dom-if" if="{{!supported}}">
+            <bookindy-container>
+              <p class="BookIndy-content">
+                We're bringing Bookindy to the US – keep this extension installed and soon you'll get a nice surprise!
+              </p>
+              <button class="BookIndy-btn"
+                      id="Bookindy-dismiss"
+                      data-track-click="button-close-unsupported"
+                      on-click="dismissUnsupported"
+              >Close this</button>
+            </bookindy-container>
+          </template>
+
+          <template is="dom-if" if="{{supported}}">
+            <bookindy-container>
+              <p class="BookIndy-content">
+                <template is="dom-if" if="{{!store}}">
+                    Buy
+                    <a class="BookIndy-product-link"
+                       href="{{data.affiliateURL}}"
+                       target="_blank"
+                       data-track-click="product-name"
+                    >{{data.title}}</a>
+                    from a local bookshop for £<span>{{data.price}}</span>
+                </template>
+
+                <template is="dom-if" if="{{store}}">
+                  <template is="dom-if" if="{{!cheaper}}">
+                    Buy
+                    <a class="BookIndy-product-link"
+                       href="{{data.affiliateURL}}"
+                       target="_blank"
+                       data-track-click="product-name"
+                    >{{data.title}}</a>
+                    supporting
+                    <a class="BookIndy-product-link"
+                       href="{{store.url}}"
+                       target="blank"
+                       data-track-click="store-name"
+                    >
+                      <span>{{store.name}}</span> (<span>{{store.distance}}</span> miles away)</a> for £<span>{{data.price}}</span>
+                  </template>
+
+                  <template is="dom-if" if="{{cheaper}}">
+                    Yay! It's cheaper at
+                    <a class="BookIndy-product-link"
+                       href="{{data.affiliateURL}}"
+                       target="blank"
+                       data-track-click="store-name"
+                       data-track-click-label="cheaper"
+                    ><span>{{store.name}}</span> (<span>{{store.distance}}</span> miles away).</a>
+                    <a class="BookIndy-product-link"
+                       href="{{data.affiliateURL}}"
+                       target="_blank"
+                       data-track-click="buy-now"
+                       data-track-click-label="cheaper"
+                    >Buy now for £<span>{{data.price}}</span></a>
+                  </template>
+                </template>
+              </p>
+              <a class="BookIndy-icon-btn" href="{{data.affiliateURL}}" target="_blank" data-track-click="button-pickup">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg class="BookIndy-btn-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path id="Place" d="M49.415,17.83c-9.972,0-18.056,8.079-18.056,18.054s18.056,43.627,18.056,43.627s18.056-33.655,18.056-43.624
+                	C67.471,25.915,59.391,17.83,49.415,17.83z M49.415,44.511c-4.764,0-8.63-3.859-8.63-8.626s3.866-8.626,8.63-8.626
+                	s8.63,3.859,8.63,8.626S54.179,44.511,49.415,44.511z"/>
+                </svg>
+                Pick up in Shop</a>
+              <a class="BookIndy-btn" href="{{data.affiliateURL}}" target="_blank" data-track-click="button-deliver">Get it Delivered</a>
+            </bookindy-container>
+          </template>
+      </template>
+  </template>
+
+  <script>
+    Polymer({
+      is: "bookindy-extension",
+      properties: {
+        initialized: {
+          type: Boolean,
+          value: false
+        },
+        supported: {
+          type: Boolean,
+          value: false
+        },
+        data: {
+          type: Object
+        },
+        store: {
+          type: Object,
+          value: false
+        },
+        cheaper: {
+          type: Boolean,
+          value: false
+        }
+      },
+      dismissUnsupported: function () {
+        this.set('initialized', false);
+        this.fire('dismissUnsupported');
+      }
+    });
+  </script>
+</dom-module>

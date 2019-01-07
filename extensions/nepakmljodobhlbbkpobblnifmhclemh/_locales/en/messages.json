@@ -1,0 +1,42 @@
+{
+    "GLOBAL_APP_NAME": {
+        "message": "PageLiner",
+        "description": "Extension name."
+    },
+    "GLOBAL_APP_DESCRIPTION": {
+        "message": "Create guidelines on websites to check alignment for example.",
+        "description": "Extension description."
+    },
+    "POPUP_TOGGLE_HELPLINES": {
+        "message": "show/hide guides",
+        "description": "Popup action."
+    },
+    "POPUP_NEW_HELPLINE_X": {
+        "message": "vertical",
+        "description": "Popup action."
+    },
+    "POPUP_NEW_HELPLINE_Y": {
+        "message": "horizontal",
+        "description": "Popup action."
+    },
+    "POPUP_CLEAR_ALL_HELPLINES": {
+        "message": "delete all guides",
+        "description": "Popup action."
+    },
+    "POPUP_ALL_HELPLINES_HEADING": {
+        "message": "All guides",
+        "description": "Popup table head."
+    },
+    "POPUP_ALL_HELPLINES_TABLE_COLOR": {
+        "message": "Color",
+        "description": "Popup table colors."
+    },
+    "POPUP_ALL_HELPLINES_TABLE_POSITION": {
+        "message": "Position",
+        "description": "Popup table positions."
+    },
+    "POPUP_DONATE": {
+        "message": "Buy me a beer",
+        "description": "Donate link."
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/><meta name=viewport content="width=device-width, initial-scale=1.0"/><title>WASP Options</title><script src="js/vendor/jquery.min.js"></script><script src="js/vendor/bootstrap.min.js"></script><script src="js/analytics.js"></script><script src="js/options.deploy.js"></script><link href="css/bootstrap.min.css" rel=stylesheet /><link href="css/bootstrap-responsive.min.css" rel=stylesheet /><style type="text/css">
+			body {
+				font-family:'MyriadPro',sans-serif;
+				color:#574036;
+			}
+			/* Sticky footer styles */
+			html, body {
+				height:100%;/* The html and body elements cannot have any padding or margin. */
+			}
+			.header__top-wrapper {
+				background-color:#f37b21;
+				height:45px;
+				width:100%;
+			}
+			.header__blue {
+				height:43px;
+				background-color:#203065;
+				width:41.66%;
+			}
+			.header__blue.logo {
+				position:relative;
+			}
+			.header__blue.logo img {
+				position:relative;
+				top:8px;
+				left:10px;
+				display:inline-block;
+				float:left;
+			}
+			.crawler-text {
+				color:#f37b21;
+				font-weight:bold;
+				font-size:20px;
+				padding-top:17px;
+				display:inline-block;
+				margin-left:15px;
+			}
+			#version {
+				color:#b8b8b8;
+				font-weight:normal;
+				font-size:16px;
+				margin-left:5px;
+				display:inline-block;
+				padding-top:15px;
+			}
+			/* Wrapper for page content to push down footer */
+			#wrap {
+				min-height:100%;
+				height:auto !important;
+				height:100%;
+				/* Negative indent footer by it's height + top offset*/
+				margin:0 auto -120px;
+			}
+			/* Set the fixed height of the footer here */
+			#push, #footer {
+				height:60px;
+			}
+			#footer {
+				background-color:#f5f5f5;
+			}
+			/* Lastly, apply responsive CSS fixes as necessary */
+			@media(max-width:767px) {
+				#footer {
+					margin-left:-20px;
+					margin-right:-20px;
+					padding-left:20px;
+					padding-right:20px;
+				}
+			}
+		</style></head><body><div id=wrap><div class=header__top-wrapper><div class="header__blue logo"><img src="/img/WASPicon92.png"><span class=crawler-text>.inspector</span><span id=version>v</span></div></div><div class=navbar><div class="navbar navbar-inner"><div class="nav-collapse collapse"><ul class=nav><li class=active><a href="#">Options</a></li><li><a href="http://support.webanalyticssolutionprofiler.com?utm_source=plugin&utm_medium=chrome&utm_campaign=wasp">Support</a></li><li><a href="about.html">About</a></li></ul><form class="navbar-form pull-right"><button id=rateWASP class="btn btn-warning"> Rate WASP! </button></form></div></div></div><div class=container><div class=hero-unit><h1>Options</h1><form class=form-horizontal><div class=control-group><label class=control-label for=userType>I am <i class=icon-question-sign></i></label><div class=controls><input type=radio value=Marketer name=userType /> A Marketer <input type=radio name=userType value=Analyst /> An Analyst <input type=radio checked=true name=userType value=Implementer /> An Implementer </div></div><div class=control-group><div class=controls><label class=checkbox for=optOut><input type=checkbox name=optOut /> Opt out of anonymous usage tracking <i class=icon-question-sign></i></label></div></div></form><div id=alertArea> &nbsp; </div></div><div id=push></div></div></div><div id=footer><div class=container><p class="muted credit"><br/> &copy; 2015 Cardinal Path. All Rights Reserved. Patent pending. </p></div></div></body></html>

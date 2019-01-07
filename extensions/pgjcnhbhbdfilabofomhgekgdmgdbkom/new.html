@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clause</title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/server_call.js"></script>
+
+</head>
+<body>
+
+	<nav style="background: rgba(255,255,255,0.97);">
+		<div class="nav-wrapper">
+			<img src="icons/clause.png" class="brand-logo center" height="100%">
+			<!--<ul id="nav-mobile" class="left hide-on-med-and-down">
+				<li><a href="sass.html">Sass</a></li>
+				<li><a href="badges.html">Components</a></li>
+				<li><a href="collapsible.html">JavaScript</a></li>
+			</ul>-->
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row"></div>
+		<div class="row">
+			<div class="col s12 card">
+				<div class="card-content">
+					<div class="container">
+						<span class="card-title black-text">Final Draft</span>
+						<div class="row"></div>
+						<div class="row">
+							<div class="input-field col s8">
+								<input id="post_title" type="text" length="100" maxlength="100">
+								<label for="post_title">Title</label>
+							</div>
+							<br><button id="publish_btn" class="waves-effect waves-light btn right">Publish to Medium</button>
+						</div>
+						<div class="row">
+							<div class="col s6">
+								<label>Visibility:</label>&nbsp;
+								<input class="group_visibility" name="group_visiblity" type="radio" id="draft" value="0" checked/>
+      							<label for="draft">Draft</label>&nbsp;
+								<input class="group_visibility" name="group_visiblity" type="radio" id="public" value="1" />
+      							<label for="public">Public</label>&nbsp;
+								<input class="group_visibility" name="group_visiblity" type="radio" id="unlisted" value="2" />
+      							<label for="unlisted">Unlisted</label>
+							</div>
+							<label id="visibility_desc"></label>
+						</div>
+						<div class="row">
+							<div class="input-field col s6" id="post_tags"></div>
+						</div>
+						<div class="row">
+							<div class="input-field col s6">
+								<input id="post_tag_input" type="text" class="validate">
+								<label for="post_tag_input">Tags</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<label>License:</label><br><br>
+								<ul class="tabs">
+									<li class="tab col s4"><a href="#test3" style="color: rgba(0,0,0,0.44);">No rights reserved</a></li>
+									<li class="tab col s4"><a href="#test2" style="color: rgba(0,0,0,0.44);">Some rights reserved</a></li>
+									<li class="tab col s4"><a class="active" href="#test4" style="color: rgba(0,0,0,0.44);">All rights reserved</a></li>
+								</ul>
+							</div>
+							<div id="test3" class="col s12">
+								<div class="container">
+									<input name="license_group" class="group_license" type="radio" id="l1" value="0" />
+      								<label for="l1">Creative Commons copyright waiver</label><br>
+									<input name="license_group" class="group_license" type="radio" id="l2" value="1" />
+      								<label for="l2">Public domain</label><br>
+								</div>
+							</div>
+							<div id="test2" class="col s12">
+								<div class="container">
+									<input name="license_group" class="group_license" type="radio" id="l3" value="2" />
+      								<label for="l3">Attribution</label><br>
+									<input name="license_group" class="group_license" type="radio" id="l4" value="3" />
+      								<label for="l4">Attribution, no derivatives</label><br>
+									<input name="license_group" class="group_license" type="radio" id="l5" value="4" />
+      								<label for="l5">Attribution, share alike</label><br>
+									<input name="license_group" class="group_license" type="radio" id="l6" value="5" />
+      								<label for="l6">Attribution, non-commercial</label><br>
+									<input name="license_group" class="group_license" type="radio" id="l7" value="6" />
+      								<label for="l7">Attribution, non-commercial, no derivatives</label><br>
+									<input name="license_group" class="group_license" type="radio" id="l8" value="7" />
+      								<label for="l8">Attribution, non-commercial, share alike</label>
+								</div>
+							</div>
+							<div id="test4" class="col s12">
+								<div class="container">
+									<input name="license_group" class="group_license" type="radio" id="l9" value="8" checked/>
+      								<label for="l9">All rights</label><br>
+								</div>
+							</div>
+							<label id="license_desc"></label>
+						</div>
+						<div class="row">
+							<div class="input-field col s10">
+								<label>Preview:</label><br><br>
+								<div id="post_body"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row"></div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="controllers.css">
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateModalLabel">Chrome Controller</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you would like to update your settings?</p>
+                    <p></p><b>You may need to refresh the page in order for them to take effect.</b></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="final-submit" type="button" class="btn btn-dark">Submit Changes</button>
+
+                    <button id="final-submit-rate" type="button" class="btn btn-primary" data-dismiss="modal">
+                        <div class="star"></div>
+                        Rate!
+                        <div class="star"></div>
+                        & Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="title" class="text-center">
+        <h1 class="title-text">SETTINGS</h1>
+        <div id="rating-container" onclick="">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+
+        <div id="nav-buttons">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#pages" data-toggle="tab" data-slide-to="0" role="tab"
+                        aria-selected="true">General</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pages" data-toggle="tab" data-slide-to="1" role="tab" aria-selected="false">Button
+                        Mapping</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="pages" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <!-- General Settings HTML -->
+                <div id="settings-container" class="page">
+
+                    <div class="sec-div" style="margin-top: 0px">
+                        <div class="text-center">
+                            <h3 class="section-title">SCROLLING</h3>
+                        </div>
+
+                        <div class="row pr-5 pl-5">
+                            <div class="col">
+                                <form>
+                                    <div class="form-group">
+                                        <div>
+                                            <label class="setting-label">Speed</label>
+                                        </div>
+                                        <label class="range-display">--</label>
+                                        <input id="scroll-sensitivity" format="%val%" step="1" type="range" min="1" max="25"
+                                            value="13" class="slider setting-modifier">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div>
+                                            <label class="setting-label">Sprint Speed</label>
+                                        </div>
+                                        <label class="range-display">--</label>
+                                        <input id="scroll-sprint" format="%val%x" step="0.1" type="range" min="1" max="5"
+                                            value="2" class="slider setting-modifier">
+                                    </div>
+                                </form>
+                            </div>
+                            <!--<div class="col">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formControlRange">Selection Duration</label>
+                                            <input id="select-time" step="1" type="range" min="5" max="61" value="20" class="slider">
+                                        </div>
+                                    </form>
+                                </div>-->
+                        </div>
+                    </div>
+
+                    <div class="sec-div">
+                        <div class="text-center">
+                            <h3 class="section-title">CURSOR</h3>
+                        </div>
+
+                        <div class="row pr-5 pl-5">
+                            <div class="col">
+                                <form>
+                                    <div class="form-group">
+                                        <div id="cursor-dot"></div>
+                                        <label class="setting-label">Color: </label>
+                                        <input type="color" id="cursor-color" class="color-picker setting-modifier">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div>
+                                            <label class="setting-label">Radius</label>
+                                        </div>
+                                        <label class="range-display">--</label>
+                                        <input id="cursor-radius" format="%val% pixels" step="1" type="range" min="5"
+                                            max="30" value="10" class="slider setting-modifier">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div>
+                                            <label class="setting-label">Horizontal Speed</label>
+                                        </div>
+                                        <label class="range-display">--</label>
+                                        <input id="horizontal-cursor-sensitivity" format="%val%" step="0.1" type="range"
+                                            min="1" max="12" value="5" class="slider setting-modifier">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div>
+                                            <label class="setting-label">Vertical Speed</label>
+                                        </div>
+                                        <label class="range-display">--</label>
+                                        <input id="vertical-cursor-sensitivity" format="%val%" step="0.1" type="range"
+                                            min="1" max="12" value="5" class="slider setting-modifier">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div>
+                                            <label class="setting-label">Idle Hide Timer</label>
+                                        </div>
+                                        <label class="range-display">--</label>
+                                        <input id="idle-cursor-timer" step="1" format="%val% seconds" format-mult="0.001"
+                                            type="range" min="1000" max="15000" value="5000" class="slider setting-modifier">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sec-div" style="margin-bottom: 0px">
+                        <div class="text-center">
+                            <h3 class="section-title">HUD</h3>
+                        </div>
+
+                        <div class="row pr-5 pl-5">
+                            <div class="col">
+                                <div class="form-check" style="margin-top: 10px">
+                                    <input class="form-check-input setting-modifier" type="checkbox" value="" id="hud-hidden">
+                                    <label class="setting-label mb-2">Hidden</label>
+                                </div>
+
+                                <div class="form-check" style="margin-bottom: 10px">
+                                    <input class="form-check-input setting-modifier" type="checkbox" value="" id="hud-hide-text">
+                                    <label class="setting-label mb-2">Hide Text</label>
+                                </div>
+
+                                <form>
+                                    <div class="form-group">
+                                        <label class="setting-label">Color: </label>
+                                        <input type="color" id="hud-color" class="color-picker setting-modifier">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div>
+                                            <label class="setting-label">Size</label>
+                                        </div>
+                                        <label class="range-display">--</label>
+                                        <input id="hud-size" format="%val% pixels" step="4" type="range" min="32" max="128"
+                                            value="64" class="slider setting-modifier">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="setting-label">Position</label>
+                                        <select class="custom-select setting-modifier" id="hud-position">
+                                            <option selected>TOP</option>
+                                            <option>LEFT</option>
+                                            <option>RIGHT</option>
+                                            <option>BOTTOM</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+
+                <template id="template-button">
+                    <option value="click">Click</option>
+                    <option value="newTab">New Tab</option>
+                    <option value="closeTab" value="click">Close Tab</option>
+                    <option value="historyBack">History-Back</option>
+                    <option value="historyForward">History-Forward</option>
+                    <option value="tabLeft">Tab-Left</option>
+                    <option value="tabRight">Tab-Right</option>
+                </template>
+
+                <template id="template-video">
+                    <option value="videoScreenSize">Video-Screen Size</option>
+                    <option value="videoPlayPause">Video-Play/Pause</option>
+                    <option value="videoDisplayTime">Video-Display Time</option>
+                </template>
+
+                <template id="template-axis">
+                    <option value="scroll">Scroll</option>
+                    <option value="moveCursor">Move Cursor</option>
+                </template>
+
+                <template id="template-dpad">
+                    <option value="autoCursorSelect">Jump Select</option>
+                </template>
+
+                <template id="template-keyboard">
+                    <option value="space">Space</option>
+                    <option value="backspace">Backspace</option>
+                    <option value="enter">Enter</option>
+                    <option value="clear">Clear</option>
+                    <option value="close">Close</option>
+                </template>
+
+                <template id="template-none">
+                    <option value="none">NONE</option>
+                </template>
+
+                <!-- Mapping Settings HTML -->
+                <div id="mappings-container" class="page">
+                    <h1 style="margin-left: 8px;">CONTROLLER TYPE<a class="sec-foot-note">Your selection only changes
+                            the names of the buttons.</a></h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="controller xbox-controller active" data-controller-alt="data-xb-alt"></div>
+                        </div>
+
+                        <div class="col">
+                            <div class="controller ps-controller" data-controller-alt="data-ps-alt"></div>
+                        </div>
+
+                        <div class="col">
+                            <div class="controller not-listed" data-controller-alt="data-nl-alt"><a>Not Listed</a></div>
+                        </div>
+                    </div>
+
+                    <div class="hide" id="not-listed-disclaimer">
+                        <a>Find your controller's button numbering <a id="gamepad-api-button" href="#">here</a>.</a>
+                    </div>
+
+                    <div class="mapping-menu-global">
+                        <h1>AXIS</h1>
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="label" data-ps-alt="Left Stick" data-xb-alt="Left Stick" data-nl-alt="Axis 0/1">Left
+                                        Stick</td>
+                                    <td class="map" data-default="moveCursor" data-button-map="leftstick"
+                                        data-mappings-type="axis,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="Right Stick" data-xb-alt="Right Stick" data-nl-alt="Axis 2/3">Right
+                                        Stick</td>
+                                    <td class="map" data-default="scroll" data-button-map="rightstick"
+                                        data-mappings-type="axis,none"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h1>BUTTONS</h1>
+
+                        <table class="table">
+                            <tbody>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="D-Pad" data-xb-alt="D-Pad" data-nl-alt="B12-B15">D-Pad</td>
+                                    <td class="map" data-default="autoCursorSelect" data-button-map="dpad"
+                                        data-mappings-type="axis,dpad,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="✕" data-xb-alt="A" data-nl-alt="B0">A</td>
+                                    <td class="map" data-default="click" data-button-map="a" data-mappings-type="button,video,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="𐩒" data-xb-alt="B" data-nl-alt="B1">B</td>
+                                    <td class="map" data-default="videoScreenSize" data-button-map="b"
+                                        data-mappings-type="button,video,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="◻" data-xb-alt="X" data-nl-alt="B2">X</td>
+                                    <td class="map" data-default="videoPlayPause" data-button-map="x"
+                                        data-mappings-type="button,video,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="△" data-xb-alt="Y" data-nl-alt="B3">Y</td>
+                                    <td class="map" data-default="videoDisplayTime" data-button-map="y"
+                                        data-mappings-type="button,video,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="Option" data-xb-alt="Menu" data-nl-alt="B9">Menu</td>
+                                    <td class="map" data-default="newTab" data-button-map="menu" data-mappings-type="button,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="Share" data-xb-alt="View" data-nl-alt="B8">View</td>
+                                    <td class="map" data-default="closeTab" data-button-map="view" data-mappings-type="button,none"></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <h1>TRIGGERS</h1>
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="label" data-ps-alt="L1" data-xb-alt="LB" data-nl-alt="B4">LB</td>
+                                    <td class="map" data-default="historyBack" data-button-map="lb" data-mappings-type="button,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="L2" data-xb-alt="LT" data-nl-alt="B6">LT</td>
+                                    <td class="map" data-default="tabLeft" data-button-map="lt" data-mappings-type="button,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="R2" data-xb-alt="RT" data-nl-alt="B7">RT</td>
+                                    <td class="map" data-default="tabRight" data-button-map="rt" data-mappings-type="button,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="R1" data-xb-alt="RB" data-nl-alt="B5">RB</td>
+                                    <td class="map" data-default="historyForward" data-button-map="rb"
+                                        data-mappings-type="button,none"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h1>KEYBOARD<a class="sec-foot-note">These mappings take precedence when the keyboard is open.</a></h1>
+
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="label" data-ps-alt="✕" data-xb-alt="A" data-nl-alt="B0">A</td>
+                                    <td class="map" data-default="none" data-button-map="kb_a" data-mappings-type="keyboard,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="𐩒" data-xb-alt="B" data-nl-alt="B1">B</td>
+                                    <td class="map" data-default="close" data-button-map="kb_b" data-mappings-type="keyboard,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="◻" data-xb-alt="X" data-nl-alt="B2">X</td>
+                                    <td class="map" data-default="backspace" data-button-map="kb_x" data-mappings-type="keyboard,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="△" data-xb-alt="Y" data-nl-alt="B3">Y</td>
+                                    <td class="map" data-default="space" data-button-map="kb_y" data-mappings-type="keyboard,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="Share" data-xb-alt="View" data-nl-alt="B8">View</td>
+                                    <td class="map" data-default="clear" data-button-map="kb_view" data-mappings-type="keyboard,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="Option" data-xb-alt="Menu" data-nl-alt="B9">Menu</td>
+                                    <td class="map" data-default="enter" data-button-map="kb_menu" data-mappings-type="keyboard,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="L1" data-xb-alt="LB" data-nl-alt="B4">LB</td>
+                                    <td class="map" data-default="none" data-button-map="kb_lb" data-mappings-type="keyboard,none"></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="label" data-ps-alt="R1" data-xb-alt="RB" data-nl-alt="B5">RB</td>
+                                    <td class="map" data-default="none" data-button-map="kb_rb" data-mappings-type="keyboard,none"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom-container" class="text-center pt-2 mb-2">
+        <button id="submit" class="btn btn-dark" data-toggle="modal" data-target="#updateModal">Submit</button>
+    </div>
+
+    <script src="../../lib/jquery.min.js"></script>
+    <script src="../../lib/bootstrapjs.min.js"></script>
+    <script src="script.js"></script>
+    <script src="mapping_script.js"></script>
+</body>
+
+</html>

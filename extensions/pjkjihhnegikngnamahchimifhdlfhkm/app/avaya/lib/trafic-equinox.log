@@ -1,0 +1,182 @@
+trafic
+
+01> AAAAARIGCAEaAggB
+{"generalcmd":{"requestid":1,"capability":{"cmdinst":1}}}
+
+02> AAAAARoICAIQAWoCCAE=
+{"subscribe":{"requestid":2,"subscribeId":1}}
+
+03> AAAAARoKCAMQAhg8YgIQAQ==
+{"subscribe":{"requestid":3,"subscribeId":2,"timeout":60,"contacts":{"selfcontact":1}}}
+
+04> AAAAARoICAQQA1oCCBA=
+{"subscribe":{"requestid":4,"subscribeId":3,"selfpresence":{"flags":16}}}
+
+05< AAAAAQoECAEQAA==
+{"response":{"requestid":1,"result":0}}
+
+06< AAAAAQoECAIQAA==
+{"response":{"requestid":2,"result":0}}
+
+07< AAAAAQoECAMQAA==
+{"response":{"requestid":3,"result":0}}
+
+08< AAAAAQoECAQQAA==
+{"response":{"requestid":4,"result":0}}
+
+09< AAAAAUIrCAMQAVolCAAiCwgLEgcxMjM0MzIxMglBdmFpbGFibGU6AzIwMfgBAZACAQ==
+{"notify":{"subscribeId":3,"notifyId":1,"selfpresence":{"featuresavailable":0,"absence":{"msg":11,"str":"1234321"},"app":"Available","presentity":"201","ccsoftphone":true,"cclogindesk":true}}}
+
+10< AAAAAUIpCAIQAWIjCAIqHwoGQWNXZWIxIgMyMDEyEGFjd2ViMUBhdmF5YS5jb20=
+{"notify":{"subscribeId":2,"notifyId":1,"contacts":{"head":2,"selfcontact":{"firstname":"AcWeb1","number":"201","email":"acweb1@avaya.com"}}}}
+
+11< AAAAAUKNAQgBEAFqhgEICxIdSVAgT2ZmaWNlIDExLjAuMi4xLjAgYnVpbGQgNTYYASJhCAESGWFjd2VidGVzdGluZy5pcG9jbG91ZC5jb20aGWFjd2VidGVzdGluZy5pcG9jbG91ZC5jb206EBoIMTAuMS40LjcowCcwxSc6FRoNMzUuMTg4LjI4LjE3MijAJzDFJw==
+{"notify":{"subscribeId":1,"notifyId":1}} // looks incomplete
+
+12< AAAAATodCAEaGQgBEAEYASABKAEwATgBWgMxLjBgA2gBcAE=
+{"generaldata":{"responseid":1,"capability":{"cmdinst":1,"subscribecontact":true,"addcontact":true,"deletecontact":true,"updatecontact":true,"directorysearch":true,"favoritecontacts":true,"version":"1.0","directorynumbersearch":3,"subscribecallcontrol":true,"subscribecalllo
+g":true}}}
+
+13> AAAAAUoECAMQAQ==
+{"notifyack":{"subscribeId":3,"notifyId":1}}
+
+14> AAAAARoQCAUQBBiQHFIHCgUKAzIwMQ==
+{"subscribe":{"requestid":5,"subscribeId":4,"timeout":3600,"presence":{"entry":[{"presentity":"201"}]}}}
+
+15> AAAAARoJCAYQBRiQHFIA
+{"subscribe":{"requestid":6,"subscribeId":5,"timeout":3600,"presence":{}}}
+
+16> AAAAAUoECAIQAQ==
+{"notifyack":{"subscribeId":2,"notifyId":1}}
+
+17> AAAAARIKCAcSBggCGDIgAQ==
+{"generalcmd":{"requestid":7,"directory":{"cmdinst":2,"maxentries":50,"personalcontacts":true}}}
+
+18> AAAAAUoECAEQAQ==
+{"notifyack":{"subscribeId":1,"notifyId":1}}
+
+19> AAAAASIkCAgQA1oeEg8IARILCAsSBzEyMzQzMjEiCwoJQXZhaWxhYmxl
+{"subscibecmd":{"requestid":8,"subscribeId":3,"selfpresence":{"absence":{"set":1,"absence":{"msg":11,"str":"1234321"}},"app":{"value":"Available"}}}}
+
+20< AAAAAQoECAUQAA==
+{"response":{"requestid":5,"result":0}}
+
+21< AAAAAQoECAYQAA==
+{"response":{"requestid":6,"result":0}}
+
+22< AAAAAQoECAcQAA==
+{"response":{"requestid":7,"result":0}}
+
+23< AAAAAQoECAgQAA==
+{"response":{"requestid":8,"result":0}}
+
+24< AAAAAUImCAMQAlogCAAiCwgLEgcxMjM0MzIxMglBdmFpbGFibGX4AQGQAgE=
+{"notify":{"subscribeId":3,"notifyId":2,"selfpresence":{"featuresavailable":0,"absence":{"msg":11,"str":"1234321"},"app":"Available","ccsoftphone":true,"cclogindesk":true}}}
+
+25< AAAAAUIlCARSIQgBEh0KAzIwMSoLCAsSBzEyMzQzMjEyCUF2YWlsYWJsZQ==
+{"notify":{"subscribeId":4,"presence":{"full":1,"entry":[{"presentity":"201","absence":{"msg":11,"str":"1234321"},"app":"Available"}]}}}
+
+26< AAAAAUIvCAVSKwgBEh0KAzIwMSoLCAsSBzEyMzQzMjEyCUF2YWlsYWJsZRIICgQyMTEyIAg=
+{"notify":{"subscribeId":5,"presence":{"full":1,"entry":[{"presentity":"201","absence":{"msg":11,"str":"1234321"},"app":"Available"},{"presentity":"2112","phonestate":8}]}}}
+
+27< AAAAATpKCAcSRggCGAEgASgCMjwKIwoGQWNXZWIxGAEiAzIwMSgBMhBhY3dlYjFAYXZheWEuY29tChUKBUZpcnN0EgRMYXN0GAIiBDIxMTI=
+{"generaldata":{"responseid":7,"directory":{"cmdinst":2,"complete":1,"personalcontacts":true,"head":2,"list":{"entryList":[{"firstname":"AcWeb1","lref":1,"number":"201","favourite":1,"email":"acweb1@avaya.com"},{"firstname":"First","lastname":"Last","lref":2,"number":"2112"
+}]}}}}
+
+28> AAAAAUoECAMQAg==
+{"notifyack":{"subscribeId":3,"notifyId":2}}
+
+29> AAAAAUoCCAQ=
+{"notifyack":{"subscribeId":4}}
+
+30> AAAAAUoCCAU=
+{"notifyack":{"subscribeId":5}}
+
+...
+ping/pong
+
+set own presence
+
+31> AAAAASIiCAkQA1ocEg0IARIJCAsSBWFiY2RlIgsKCUF2YWlsYWJsZQ==
+{"subscibecmd":{"requestid":9,"subscribeId":3,"selfpresence":{"absence":{"set":1,"absence":{"msg":11,"str":"abcde"}},"app":{"value":"Available"}}}}
+
+32> AAAAASIiCAoQA1ocEg0IARIJCAsSBWFiY2RlIgsKCUF2YWlsYWJsZQ==
+{"subscibecmd":{"requestid":10,"subscribeId":3,"selfpresence":{"absence":{"set":1,"absence":{"msg":11,"str":"abcde"}},"app":{"value":"Available"}}}}
+
+33< AAAAAQoECAkQAA==
+{"response":{"requestid":9,"result":0}}
+
+34< AAAAAQoECAoQAA==
+{"response":{"requestid":10,"result":0}}
+
+35< AAAAAUIkCAMQA1oeCAAiCQgLEgVhYmNkZTIJQXZhaWxhYmxl+AEBkAIB
+{"notify":{"subscribeId":3,"notifyId":3,"selfpresence":{"featuresavailable":0,"absence":{"msg":11,"str":"abcde"},"app":"Available","ccsoftphone":true,"cclogindesk":true}}}
+
+36< AAAAAUIICAIQAmICCAM=
+{"notify":{"subscribeId":2,"notifyId":2,"contacts":{"head":3}}}
+
+37< AAAAAUIjCARSHwgAEhsKAzIwMSoJCAsSBWFiY2RlMglBdmFpbGFibGU=
+{"notify":{"subscribeId":4,"presence":{"full":0,"entry":[{"presentity":"201","absence":{"msg":11,"str":"abcde"},"app":"Available"}]}}}
+
+38< AAAAAUIjCAVSHwgAEhsKAzIwMSoJCAsSBWFiY2RlMglBdmFpbGFibGU=
+{"notify":{"subscribeId":5,"presence":{"full":0,"entry":[{"presentity":"201","absence":{"msg":11,"str":"abcde"},"app":"Available"}]}}}
+
+39> AAAAAUoECAMQAw==
+{"notifyack":{"subscribeId":3,"notifyId":3}}
+
+40> AAAAAUoECAIQAg==
+{"notifyack":{"subscribeId":2,"notifyId":2}}
+
+41> AAAAARIKCAsSBggDGDIgAQ==
+{"generalcmd":{"requestid":11,"directory":{"cmdinst":3,"maxentries":50,"personalcontacts":true}}}
+
+42> AAAAAUoCCAQ=
+{"notifyack":{"subscribeId":4}}
+
+43> AAAAAUoCCAU=
+{"notifyack":{"subscribeId":5}}
+
+44< AAAAAQoECAsQAA==
+{"response":{"requestid":11,"result":0}}
+
+45< AAAAATpKCAsSRggDGAEgASgDMjwKIwoGQWNXZWIxGAEiAzIwMSgBMhBhY3dlYjFAYXZheWEuY29tChUKBUZpcnN0EgRMYXN0GAIiBDIxMTI=
+{"generaldata":{"responseid":11,"directory":{"cmdinst":3,"complete":1,"personalcontacts":true,"head":3,"list":{"entryList":[{"firstname":"AcWeb1","lref":1,"number":"201","favourite":1,"email":"acweb1@avaya.com"},{"firstname":"First","lastname":"Last","lref":2,"number":"2112
+"}]}}}}
+
+...
+ping/pong
+
+searching acweb2
+
+50> AAAAARISCAoSDggEEgZhY3dlYjIYMiAA
+{"generalcmd":{"requestid":10,"directory":{"cmdinst":4,"filter":"acweb2","maxentries":50,"personalcontacts":false}}}
+
+51< AAAAAQoECAoQAA==
+{"response":{"requestid":10,"result":0}}
+
+52< AAAAATrRAQgKEswBCAQYASAAMsMBCiEKBkFjV2ViMiIDMjAyMhJjaGFpdHJhc0BhdmF5YS5jb20KDgoHQWNXZWIyMCIDMjIwCg4KB0FjV2ViMjEiAzIyMQoOCgdBY1dlYjIyIgMyMjIKDgoHQWNXZWIyMyIDMjIzCg4KB0FjV2ViMjQiAzIyNAoOCgdBY1dlYjI1IgMyMjUKDgoHQWNXZWIyNiIDMjI2Cg4KB0FjV2ViMjciAzIyNwoOCgdBY1dlYjI4IgMyMjgKDgoHQWNXZWIyOSIDMjI5
+{"generaldata":{"responseid":10,"directory":{"cmdinst":4,"complete":1,"personalcontacts":false,"list":{"entryList":[{"firstname":"AcWeb2","number":"202","email":"chaitras@avaya.com"},{"firstname":"AcWeb20","number":"220"},{"firstname":"AcWeb21","number":"221"},{"firstname":
+"AcWeb22","number":"222"},{"firstname":"AcWeb23","number":"223"},{"firstname":"AcWeb24","number":"224"},{"firstname":"AcWeb25","number":"225"},{"firstname":"AcWeb26","number":"226"},{"firstname":"AcWeb27","number":"227"},{"firstname":"AcWeb28","number":"228"},{"firstname":"AcWeb29
+","number":"229"}]}}}}
+
+53> AAAAASJMCAsQBFJGCgUKAzIwMgoFCgMyMjAKBQoDMjIyCgUKAzIyMwoFCgMyMjQKBQoDMjI1CgUKAzIyNgoFCgMyMjcKBQoDMjI4CgUKAzIyOQ==
+{"subscibecmd":{"requestid":11,"subscribeId":4,"presence":{"add":[{"presentity":"202"},{"presentity":"220"},{"presentity":"222"},{"presentity":"223"},{"presentity":"224"},{"presentity":"225"},{"presentity":"226"},{"presentity":"227"},{"presentity":"228"},{"presentity":"229"
+}]}}}
+
+54< AAAAAQoECAsQAA==
+{"response":{"requestid":11,"result":0}}
+
+55< AAAAAUJpCARSZQgAEhAKAzIwMiAGMgdPZmZsaW5lEgcKAzIyMCAGEgcKAzIyMiAGEgcKAzIyMyAGEgcKAzIyNCAGEgcKAzIyNSAGEgcKAzIyNiAGEgcKAzIyNyAGEgcKAzIyOCAGEgcKAzIyOSAG
+{"notify":{"subscribeId":4,"presence":{"full":0,"entry":[{"presentity":"202","phonestate":6,"app":"Offline"},{"presentity":"220","phonestate":6},{"presentity":"222","phonestate":6},{"presentity":"223","phonestate":6},{"presentity":"224","phonestate":6},{"presentity":"225","
+phonestate":6},{"presentity":"226","phonestate":6},{"presentity":"227","phonestate":6},{"presentity":"228","phonestate":6},{"presentity":"229","phonestate":6}]}}}
+
+56> AAAAAUoCCAQ=
+{"notifyack":{"subscribeId":4}}
+
+57> AAAAASJMCAwQBFJGEgUKAzIwMhIFCgMyMjASBQoDMjIyEgUKAzIyMxIFCgMyMjQSBQoDMjI1EgUKAzIyNhIFCgMyMjcSBQoDMjI4EgUKAzIyOQ==
+{"subscibecmd":{"requestid":12,"subscribeId":4,"presence":{"remove":[{"presentity":"202"},{"presentity":"220"},{"presentity":"222"},{"presentity":"223"},{"presentity":"224"},{"presentity":"225"},{"presentity":"226"},{"presentity":"227"},{"presentity":"228"},{"presentity":"2
+29"}]}}}    
+
+58< AAAAAQoECAwQAA==
+{"response":{"requestid":12,"result":0}}
+

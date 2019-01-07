@@ -1,0 +1,13 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+ 
+   "chrome_url_overrides": {
+      "newtab": "redirect.html"
+   },
+   "description": "Easy access to security tools and useful links directly from your newtab.",
+   "manifest_version": 2,
+   "name": "FunSafeTab",
+
+   "permissions": [],
+   "version": "0.5.663"
+}

@@ -1,0 +1,61 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy {
+  .code-list {
+    & > .copied {
+      animation: flash-animation 0.5s;
+    }
+    @keyframes flash-animation {
+      from { background: @canary; }
+      to   { background: default; }
+    }
+    .coupon-list-item-container {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #f1f1f1;
+      cursor: pointer;
+      &:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+      .code {
+        text-transform: lowercase;
+      }
+      .description {
+      }
+      .savings {
+        color: @palmetto;
+        display: flex;
+        align-items: center;
+        .copied-text {
+          text-transform: uppercase;
+          color: @graphite;
+          line-height: 16px;
+          margin-right: 8px;
+          .defaultBold;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    svg path {
+      animation: checkmark 0.25s ease-in-out 1.8s backwards;
+    }
+    @keyframes checkmark {
+      0% {
+        stroke-dashoffset: 180;
+      }
+
+      100% {
+        stroke-dashoffset: 0
+      }
+    }
+  }
+
+  .full-page {
+    .code-list {
+      overflow: auto;
+    }
+  }
+}

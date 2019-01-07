@@ -1,0 +1,189 @@
+.bh-offer_badge{
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 20px 100px;            
+        }
+        .bh-bdg-main{
+            position: relative;
+            z-index: 1;
+        }
+        .bh-bdg_btns{
+            position: absolute;
+            left: 50%;
+            margin: -25px 0 0 -56px;
+            z-index: 0;
+            top: 50%;
+            transform:rotate(-15deg);
+            -webkit-transform:rotate(-15deg);
+            -moz-transform:rotate(-15deg);
+            transition:all .2s;
+            -webkit-transition:all .2s;
+            -moz-transition:all .2s;
+        }
+        #bh-bdg-apparels{
+            transform:rotate(15deg);
+            -webkit-transform:rotate(15deg);
+            -moz-transform:rotate(15deg);
+        }
+        .bh-offer_badge:hover .bh-bdg_btns{
+            left:-30%;
+            top:70%;
+        }
+        .bh-offer_badge:hover .bh-bdg_btns:hover{
+/*
+            transform:rotate(-20deg);
+            -webkit-transform:rotate(-20deg);
+            -moz-transform:rotate(-20deg);
+*/
+        }
+        .bh-offer_badge:hover #bh-bdg-apparels{
+            left:130%;
+        }
+        
+        .bh-offer_badge:hover #bh-bdg-apparels:hover{
+/*
+            transform:rotate(20deg);
+            -webkit-transform:rotate(20deg);
+            -moz-transform:rotate(20deg);
+*/
+        }
+        .bh-offer_badge:hover .bh-bdg_btns:hover{
+            
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+            top:58%;
+        }
+        .bh-offer_badge:hover #bh-bdg-watches:hover{
+          -webkit-transform-origin: right center;
+          -ms-transform-origin: right center;
+          transform-origin: right center;
+          -webkit-animation-name: swing-opp;
+          animation-name: swing-opp;
+            
+        }
+        .bh-offer_badge:hover #bh-bdg-apparels:hover{
+          -webkit-transform-origin: left center;
+          -ms-transform-origin: left center;
+          transform-origin: left center;
+          -webkit-animation-name: swing;
+          animation-name: swing;
+        }
+        
+        @-webkit-keyframes swing {
+          20% {
+            -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+          }
+
+          40% {
+            -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+          }
+
+          60% {
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+          }
+
+          80% {
+            -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+          }
+        }
+        @keyframes swing {
+          20% {
+            -webkit-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+          }
+
+          40% {
+            -webkit-transform: rotate(5deg);
+            -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+          }
+
+          60% {
+            -webkit-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            transform: rotate(20deg);
+          }
+
+          80% {
+            -webkit-transform: rotate(10deg);
+            -ms-transform: rotate(10deg);
+            transform: rotate(10deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
+          }
+        }
+        @-webkit-keyframes swing-opp {
+          20% {
+            -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+          }
+
+          40% {
+            -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+          }
+
+          60% {
+            -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+          }
+
+          80% {
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+          }
+        }
+        
+        @keyframes swing-opp {
+          20% {
+            -webkit-transform: rotate(-30deg);
+            -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+          }
+
+          40% {
+            -webkit-transform: rotate(-5deg);
+            -ms-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+          }
+
+          60% {
+            -webkit-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+          }
+
+          80% {
+            -webkit-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+          }
+        }

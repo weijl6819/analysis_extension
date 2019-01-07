@@ -1,0 +1,430 @@
+#__wikibuy__, #__wikibuy__ h1, #__wikibuy__ h2, #__wikibuy__ h3, #__wikibuy__ h4, #__wikibuy__ h5, #__wikibuy__ h6, #__wikibuy__ p, #__wikibuy__ td, #__wikibuy__ dl, #__wikibuy__ tr, #__wikibuy__ dt, #__wikibuy__ ol, #__wikibuy__ form, #__wikibuy__ select, #__wikibuy__ option, #__wikibuy__ pre, #__wikibuy__ div, #__wikibuy__ table,  #__wikibuy__ th, #__wikibuy__ tbody, #__wikibuy__ tfoot, #__wikibuy__ caption, #__wikibuy__ thead, #__wikibuy__ ul, #__wikibuy__ li, #__wikibuy__ address, #__wikibuy__ blockquote, #__wikibuy__ dd, #__wikibuy__ fieldset, #__wikibuy__ li, #__wikibuy__ iframe, #__wikibuy__ strong, #__wikibuy__ legend, #__wikibuy__ em, #__wikibuy__ summary, #__wikibuy__ cite, #__wikibuy__ span, #__wikibuy__ input, #__wikibuy__ sup, #__wikibuy__ label, #__wikibuy__ dfn, #__wikibuy__ object, #__wikibuy__ big, #__wikibuy__ q, #__wikibuy__ samp, #__wikibuy__ acronym, #__wikibuy__ small, #__wikibuy__ img, #__wikibuy__ strike, #__wikibuy__ code, #__wikibuy__ sub, #__wikibuy__ ins, #__wikibuy__ textarea, #__wikibuy__ button, #__wikibuy__ var, #__wikibuy__ a, #__wikibuy__ abbr, #__wikibuy__ applet, #__wikibuy__ del, #__wikibuy__ kbd, #__wikibuy__ tt, #__wikibuy__ b, #__wikibuy__ i, #__wikibuy__ hr,
+
+/* HTML5 - Sept 2013 taken from MDN https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list */
+#__wikibuy__ article, #__wikibuy__ aside, #__wikibuy__ figure, #__wikibuy__ figcaption, #__wikibuy__ footer, #__wikibuy__ header, #__wikibuy__ menu, #__wikibuy__ nav, #__wikibuy__ section, #__wikibuy__ time, #__wikibuy__ mark, #__wikibuy__ audio, #__wikibuy__ video, #__wikibuy__ abbr, #__wikibuy__ address, #__wikibuy__ area, #__wikibuy__ blockquote, #__wikibuy__ canvas, #__wikibuy__ caption, #__wikibuy__ cite, #__wikibuy__ code, #__wikibuy__ colgroup, #__wikibuy__ col, #__wikibuy__ datalist, #__wikibuy__ fieldset, #__wikibuy__ main, #__wikibuy__ map, #__wikibuy__ meta, #__wikibuy__ optgroup, #__wikibuy__ output, #__wikibuy__ progress, #__wikibuy__ svg {
+    background-attachment:scroll;
+    background-color:transparent;
+    background-image:none; /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+    background-position:0 0;
+    background-repeat:repeat;
+    border-color:black;
+    border-color:currentColor; /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+    border-radius:0;
+    border-style:none;
+    border-width:medium;
+    bottom:auto;
+    clear:none;
+    clip:auto;
+    color:inherit;
+    counter-increment:none;
+    counter-reset:none;
+    direction:inherit;
+    display:inline;
+    float:none;
+    font-family: inherit; /* As with other inherit values, this needs to be set on the root container element */
+    font-size: inherit;
+    font-style:inherit;
+    font-variant:normal;
+    font-weight:inherit;
+    height:auto;
+    left:auto;
+    letter-spacing:normal;
+    line-height:inherit;
+    list-style-type: inherit; /* Could set list-style-type to none */
+    list-style-position: outside;
+    list-style-image: none;
+    margin:0;
+    max-height:none;
+    max-width:none;
+    min-height:0;
+    min-width:0;
+    opacity:1;
+    outline:invert none medium;
+    overflow:visible;
+    padding:0;
+    position:static;
+    quotes: "" "";
+    right:auto;
+    table-layout:auto;
+    text-align:inherit;
+    text-decoration:inherit;
+    text-indent:0;
+    text-transform:none;
+    top:auto;
+    unicode-bidi:normal;
+    vertical-align:baseline;
+    visibility:inherit;
+    white-space:normal;
+    width:auto;
+    word-spacing:normal;
+    z-index:auto;
+
+    /* CSS3 */
+    /* Including all prefixes according to http://caniuse.com/ */
+    /* CSS Animations don't cascade, so don't require resetting */
+    -webkit-background-origin: padding-box;
+            background-origin: padding-box;
+    -webkit-background-clip: border-box;
+            background-clip: border-box;
+    -webkit-background-size: auto;
+       -moz-background-size: auto;
+            background-size: auto;
+    -webkit-border-image: none;
+       -moz-border-image: none;
+         -o-border-image: none;
+            border-image: none;
+    -webkit-border-radius:0;
+       -moz-border-radius:0;
+            border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    -webkit-column-count: auto;
+       -moz-column-count: auto;
+            column-count: auto;
+    -webkit-column-gap: normal;
+       -moz-column-gap: normal;
+            column-gap: normal;
+    -webkit-column-rule: medium none black;
+       -moz-column-rule: medium none black;
+            column-rule: medium none black;
+    -webkit-column-span: 1;
+       -moz-column-span: 1; /* doesn't exist yet but probably will */
+            column-span: 1;
+    -webkit-column-width: auto;
+       -moz-column-width: auto;
+            column-width: auto;
+    font-feature-settings: normal;
+    overflow-x: visible;
+    overflow-y: visible;
+    -webkit-hyphens: manual;
+       -moz-hyphens: manual;
+            hyphens: manual;
+    -webkit-perspective: none;
+       -moz-perspective: none;
+        -ms-perspective: none;
+         -o-perspective: none;
+            perspective: none;
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+        -ms-perspective-origin: 50% 50%;
+         -o-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+    -webkit-backface-visibility: visible;
+       -moz-backface-visibility: visible;
+        -ms-backface-visibility: visible;
+         -o-backface-visibility: visible;
+            backface-visibility: visible;
+    text-shadow: none;
+    -webkit-transition: all 0s ease 0s;
+            transition: all 0s ease 0s;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+    -webkit-transform-origin: 50% 50%;
+       -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+         -o-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform-style: flat;
+       -moz-transform-style: flat;
+        -ms-transform-style: flat;
+         -o-transform-style: flat;
+            transform-style: flat;
+    word-break: normal;
+}
+
+/* == BLOCK-LEVEL == */
+/* Actually, some of these should be inline-block and other values, but block works fine (TODO: rigorously verify this) */
+/* HTML 4.01 */
+#__wikibuy__, #__wikibuy__ h3, #__wikibuy__ h5, #__wikibuy__ p, #__wikibuy__ h1, #__wikibuy__ dl, #__wikibuy__ dt, #__wikibuy__ h6, #__wikibuy__ ol, #__wikibuy__ form, #__wikibuy__ option, #__wikibuy__ pre, #__wikibuy__ div, #__wikibuy__ h2, #__wikibuy__ caption, #__wikibuy__ h4, #__wikibuy__ ul, #__wikibuy__ address, #__wikibuy__ blockquote, #__wikibuy__ dd, #__wikibuy__ fieldset, #__wikibuy__ hr,
+
+/* HTML5 new elements */
+#__wikibuy__ article, #__wikibuy__ dialog, #__wikibuy__ figure, #__wikibuy__ footer, #__wikibuy__ header, #__wikibuy__ hgroup, #__wikibuy__ menu, #__wikibuy__ nav, #__wikibuy__ section, #__wikibuy__ audio, #__wikibuy__ video, #__wikibuy__ address, #__wikibuy__ blockquote, #__wikibuy__ colgroup, #__wikibuy__ main, #__wikibuy__ progress, #__wikibuy__ summary {
+    display:block;
+}
+#__wikibuy__ h1, #__wikibuy__ h2, #__wikibuy__ h3, #__wikibuy__ h4, #__wikibuy__ h5, #__wikibuy__ h6 {
+    font-weight: bold;
+}
+#__wikibuy__ h1 {
+    font-size: 2em;
+    padding: .67em 0;
+}
+#__wikibuy__ h2 {
+    font-size: 1.5em;
+    padding: .83em 0;
+}
+#__wikibuy__ h3 {
+    font-size: 1.17em;
+    padding: .83em 0;
+}
+#__wikibuy__ h4 {
+    font-size: 1em;
+}
+#__wikibuy__ h5 {
+    font-size: .83em;
+}
+#__wikibuy__ p {
+    margin: 1em 0;
+}
+#__wikibuy__ table {
+    display: table;
+}
+#__wikibuy__ thead {
+    display: table-header-group;
+}
+#__wikibuy__ tbody {
+    display: table-row-group;
+}
+#__wikibuy__ tfoot {
+    display: table-footer-group;
+}
+#__wikibuy__ tr {
+    display: table-row;
+}
+#__wikibuy__ th, #__wikibuy__ td {
+    display: table-cell;
+    padding: 2px;
+}
+
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+#__wikibuy__ ol, #__wikibuy__ ul {
+    margin: 1em 0;
+}
+#__wikibuy__ ul li, #__wikibuy__ ul ul li, #__wikibuy__ ul ul ul li, #__wikibuy__ ol li, #__wikibuy__ ol ol li, #__wikibuy__ ol ol ol li, #__wikibuy__ ul ol ol li, #__wikibuy__ ul ul ol li, #__wikibuy__ ol ul ul li, #__wikibuy__ ol ol ul li {
+    list-style-position: inside;
+    margin-top: .08em;
+}
+#__wikibuy__ ol ol, #__wikibuy__ ol ol ol, #__wikibuy__ ul ul, #__wikibuy__ ul ul ul, #__wikibuy__ ol ul, #__wikibuy__ ol ul ul, #__wikibuy__ ol ol ul, #__wikibuy__ ul ol, #__wikibuy__ ul ol ol, #__wikibuy__ ul ul ol {
+    padding-left: 40px;
+    margin: 0;
+}
+/* helper for general navigation */
+#__wikibuy__ nav ul, #__wikibuy__ nav ol {
+    list-style-type:none;
+
+}
+#__wikibuy__ ul, #__wikibuy__ menu {
+    list-style-type:disc;
+}
+#__wikibuy__ ol {
+    list-style-type:decimal;
+}
+#__wikibuy__ ol ul, #__wikibuy__ ul ul, #__wikibuy__ menu ul, #__wikibuy__ ol menu, #__wikibuy__ ul menu, #__wikibuy__ menu menu {
+    list-style-type:circle;
+}
+#__wikibuy__ ol ol ul, #__wikibuy__ ol ul ul, #__wikibuy__ ol menu ul, #__wikibuy__ ol ol menu, #__wikibuy__ ol ul menu, #__wikibuy__ ol menu menu, #__wikibuy__ ul ol ul, #__wikibuy__ ul ul ul, #__wikibuy__ ul menu ul, #__wikibuy__ ul ol menu, #__wikibuy__ ul ul menu, #__wikibuy__ ul menu menu, #__wikibuy__ menu ol ul, #__wikibuy__ menu ul ul, #__wikibuy__ menu menu ul, #__wikibuy__ menu ol menu, #__wikibuy__ menu ul menu, #__wikibuy__ menu menu menu {
+    list-style-type:square;
+}
+#__wikibuy__ li {
+    display:list-item;
+    /* Fixes IE7 issue with positioning of nested bullets */
+    min-height:auto;
+    min-width:auto;
+    padding-left: 20px; /* replace -webkit-padding-start: 40px; */
+}
+#__wikibuy__ strong {
+    font-weight:bold;
+}
+#__wikibuy__ em {
+    font-style:italic;
+}
+#__wikibuy__ kbd, #__wikibuy__ samp, #__wikibuy__ code, #__wikibuy__ pre {
+  font-family:monospace;
+}
+#__wikibuy__ a {
+    color: blue;
+    text-decoration: underline;
+}
+#__wikibuy__ a:visited {
+    color: #529;
+}
+#__wikibuy__ a, #__wikibuy__ a *, #__wikibuy__ input[type=submit], #__wikibuy__ input[type=button], #__wikibuy__ input[type=radio], #__wikibuy__ input[type=checkbox], #__wikibuy__ select, #__wikibuy__ button {
+    cursor:pointer;
+}
+#__wikibuy__ button, #__wikibuy__ input[type=submit] {
+    text-align: center;
+    padding: 2px 6px 3px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: arial, helvetica, sans-serif;
+    font-size: small;
+    background: white;
+    -webkit-appearance: push-button;
+    color: buttontext;
+    border: 1px #a6a6a6 solid;
+    background: lightgrey; /* Old browsers */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(221,221,221,1) 100%, rgba(209,209,209,1) 100%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(221,221,221,1)), color-stop(100%,rgba(209,209,209,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%,rgba(209,209,209,1) 100%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%,rgba(209,209,209,1) 100%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%,rgba(209,209,209,1) 100%,rgba(221,221,221,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%,rgba(209,209,209,1) 100%,rgba(221,221,221,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+    -webkit-box-shadow: 1px 1px 0px #eee;
+       -moz-box-shadow: 1px 1px 0px #eee;
+         -o-box-shadow: 1px 1px 0px #eee;
+            box-shadow: 1px 1px 0px #eee;
+    outline: initial;
+}
+#__wikibuy__ button:active, #__wikibuy__ input[type=submit]:active, #__wikibuy__ input[type=button]:active, #__wikibuy__ button:active {
+  background: rgb(59,103,158); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,103,158,1)), color-stop(50%,rgba(43,136,217,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C */
+  border-color: #5259b0;
+}
+#__wikibuy__ button {
+    padding: 1px 6px 2px 6px;
+    margin-right: 5px;
+}
+#__wikibuy__ input[type=hidden] {
+    display:none;
+}
+/* restore form defaults */
+#__wikibuy__ textarea {
+    -webkit-appearance: textarea;
+    background: white;
+    padding: 2px;
+    margin-left: 4px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 11px;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 13px;
+    resize: both;
+}
+#__wikibuy__ select, #__wikibuy__ textarea, #__wikibuy__ input {
+    border:1px solid #ccc;
+}
+#__wikibuy__ select {
+    font-size: 11px;
+    font-family: helvetica, arial, sans-serif;
+    display: inline-block;
+}
+#__wikibuy__ textarea:focus, #__wikibuy__ input:focus {
+    outline: auto 5px -webkit-focus-ring-color;
+    outline: initial;
+}
+#__wikibuy__ input[type=text] {
+    background: white;
+    padding: 1px;
+    font-family: initial;
+    font-size: small;
+}
+#__wikibuy__ input[type=checkbox], #__wikibuy__ input[type=radio] {
+    border: 1px #2b2b2b solid;
+    border-radius: 4px;
+}
+#__wikibuy__ input[type=checkbox], #__wikibuy__ input[type=radio] {
+    outline: initial;
+}
+#__wikibuy__ input[type=radio] {
+    margin: 2px 2px 3px 2px;
+}
+#__wikibuy__ abbr[title], #__wikibuy__ acronym[title], #__wikibuy__ dfn[title] {
+    cursor:help;
+    border-bottom-width:1px;
+    border-bottom-style:dotted;
+}
+#__wikibuy__ ins {
+    background-color:#ff9;
+    color:black;
+}
+#__wikibuy__ del {
+    text-decoration: line-through;
+}
+#__wikibuy__ blockquote, #__wikibuy__ q  {
+    quotes:none; /* HTML5 */
+}
+#__wikibuy__ blockquote:before, #__wikibuy__ blockquote:after, #__wikibuy__ q:before, #__wikibuy__ q:after, #__wikibuy__ li:before, #__wikibuy__ li:after  {
+    content:"";
+}
+#__wikibuy__ input, #__wikibuy__ select {
+    vertical-align:middle;
+}
+
+#__wikibuy__ table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+#__wikibuy__ hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+}
+#__wikibuy__ *[dir=rtl] {
+    direction: rtl;
+}
+#__wikibuy__ mark {
+    background-color:#ff9;
+    color:black;
+    font-style:italic;
+    font-weight:bold;
+}
+#__wikibuy__ menu {
+    padding-left: 40px;
+    padding-top: 8px;
+}
+
+/* additional helpers */
+#__wikibuy__ [hidden],
+#__wikibuy__ template {
+    display: none;
+}
+#__wikibuy__ abbr[title] {
+    border-bottom: 1px dotted;
+}
+#__wikibuy__ sub, #__wikibuy__ sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+#__wikibuy__ sup {
+    top: -0.5em;
+}
+#__wikibuy__ sub {
+    bottom: -0.25em;
+}
+#__wikibuy__ img {
+    border: 0;
+}
+#__wikibuy__ figure {
+    margin: 0;
+}
+#__wikibuy__ textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit  */
+#__wikibuy__ {
+    font-size: medium;
+    line-height: 1;
+    direction:ltr;
+    text-align: left; /* for IE, Opera */
+    text-align: start; /* recommended W3C Spec */
+    font-family: "Times New Roman", Times, serif; /* Override this with whatever font-family is required */
+    color: black;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    list-style-type:disc;
+}
+
+#__wikibuy__ pre {
+    white-space:pre;
+}

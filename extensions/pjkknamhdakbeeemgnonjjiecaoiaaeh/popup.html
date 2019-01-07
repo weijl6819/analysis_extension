@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-orange.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="js/official/jquery.min.js"></script>
+    <!--<script src="js/official/bootstrap.min.js"></script>-->
+    <script src="js/official/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="/js/base.js"></script>
+    <script src="/vertical/pop.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+<div class="wrap">
+    <div class="menu">
+        <h3 id="extTitle"></h3>
+        <ul class="demo-list-icon mdl-list" id="generalMenu">
+            <li class="mdl-list__item aboutLikeButton">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">thumb_up</i>
+                    I like this extension
+                </span>
+                <div class="wave2"></div>
+            </li>
+            <li class="mdl-list__item aboutFeedbackButton">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">thumb_down</i>
+                    I don't like this extension
+                </span>
+                <div class="wave2"></div>
+            </li>
+            <li class="mdl-list__item aboutShareButton">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">share</i>
+                    Share with friends
+                </span>
+                <div class="wave2"></div>
+            </li>
+        </ul>
+        <ul class="demo-list-icon mdl-list" id="plusMenu">
+            <li class="mdl-list__item">
+                <span class="mdl-list__item-primary-content">
+                     <label for="seSelector" style="width: 115px;">Search Engine</label>
+                     <select name="seSelector" id="seSelector">
+                        <option>Yahoo</option>
+                        <option>Google</option>
+                        <option>Yandex</option>
+                        <option>Bing</option>
+                        <option>Facebook</option>
+                        <option>YouTube</option>
+                        <option>eBay</option>
+                        <option>Amazon</option>
+                        <option>WikiPedia</option>
+                        <option>Twitter</option>
+                        <option>Alibaba</option>
+                     </select>
+                </span>
+            </li>
+        </ul>
+        <p id="extHelp"></p>
+    </div>
+    <div class="header demo-card-wide mdl-card mdl-shadow--2dp">
+        <!--<div class="mdl-card__title" style="position: absolute; bottom: 0;">-->
+        <div class="row" style="position: absolute; bottom: 10px; margin: 0 10px">
+            <div class="col-md-12">
+                <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg"
+                               style="border-radius: 3px 0 0 3px; border-color: rgba(66, 66, 66, 0.6);"
+                               id="aboutSearchInput"/>
+                        <span class="input-group-btn">
+                                <button class="btn btn-info btn-lg" id="aboutSearchIcon" type="button"
+                                        style="border-radius: 0 3px 3px 0; background-color: #424242; border-color: #424242">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+
+        <div class="mdl-card__menu" style="position: absolute; left: 5px">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" id="aboutMenuButton">
+                <i class="material-icons">menu</i>
+            </button>
+        </div>
+        <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect aboutShareButton">
+                <i class="material-icons">share</i>
+            </button>
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect aboutLikeButton">
+                <i class="material-icons">thumb_up</i>
+            </button>
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect aboutHomeButton">
+                <i class="material-icons">home</i>
+            </button>
+        </div>
+    </div>
+    <div class="content">
+        <div style="height: 200px;"></div>
+        <div id="container" class="video-list">
+        </div>
+        <div style="height: 44px;"></div>
+    </div>
+    <footer class="mdl-mini-footer" style="padding: 10px 20px;">
+        <div class="mdl-mini-footer__left-section">
+            <ul class="mdl-mini-footer__link-list aboutLinks">
+                <li><a id="aboutHelpButton" href="#">Help</a></li>
+                <li><a id="aboutTermsButton" href="#">Terms</a></li>
+                <li><a id="aboutPrivacyButton" href="#">Privacy</a></li>
+                <li><a class="aboutFeedbackButton" href="#">Feedback</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

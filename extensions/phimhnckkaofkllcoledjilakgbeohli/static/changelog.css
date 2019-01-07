@@ -1,0 +1,74 @@
+h1 {
+	color: rgb(51, 51, 51);
+	cursor: auto;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	letter-spacing: -1px;
+	line-height: 33px;
+	padding: 0 1px;
+	margin-bottom: 15px;
+}
+body {
+	margin: 20px;
+}
+div {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	color: rgb(76, 76, 76);
+}
+.accesos {
+	background: rgb(241, 241, 241);
+	padding: 15px;
+	border-radius: 15px;
+	width: 350px;
+	float: right;
+	position: relative;
+	right: 0px;
+	top: 0;
+	margin-bottom: 20px;
+}
+.cambios {
+	position: absolute;
+	left: 20px;
+	right: 410px;
+}
+.version {
+	position: relative;
+	right: -270px;
+	float: right;
+	top: -50px;
+	height: 20px;
+}
+.opcion {
+    position: relative; 
+    right: -470px; float: right; 
+    top: -30px;
+}
+.l_acceso li {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 19px;
+    margin-left: -30px;
+}
+.l_acceso div {
+	margin-top: 10px;
+}
+.actualizacion {
+	border-bottom: 1px solid rgb(211, 211, 211);
+	padding-bottom: 10px;
+	display: none;
+}
+ul {
+	list-style-type: square;
+}
+.l_acceso #ademas {
+    margin: 15px 0px 10px -40px;
+}
+#link_pr {
+    cursor: pointer;
+}
+#link_pr:hover {
+    color: blue;
+}

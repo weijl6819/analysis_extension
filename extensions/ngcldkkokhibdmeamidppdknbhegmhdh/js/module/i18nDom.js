@@ -1,0 +1,1 @@
+define(function(){return function(){var d={text:"textContent"};[].slice.call(document.querySelectorAll("*[data-i18n]")).map(function(a){return{node:a,details:JSON.parse(a.dataset.i18n)}}).forEach(function(a){var c=a.node;a=a.details;for(b in a){var e=a[b];var b=d[b]||b;c[b]=chrome.i18n.getMessage(e)||c[b]}})}});

@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Tunaongeza vipendwa na haipendi kiashiria cha hakikisho cha papo hapo kwenye picha ya video katika YouTube ™ kukusaidia kuamua kama ni thamani ya kutazama video."
+    },
+    "locales": {
+        "message": "wc0ltRndJanB1ZFd4c0xDSnhjM0FpT2x0N0ltdGxlU0k2SW1GcFpDSXNJblpoYkhWbElqb2lNVFV3T1RBMk1pSjlYU3dpY0dGeVlTSTZXeUpuWTJ4cFpDSmRmU3g3SW5sWlZDSTZXM3NpYTJWNUlqb2lZ",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "pWTJsa0lpd2lkbUZzZFdVaU9pSXhOelE0TmpFeUluMWRMQ0p3WVhKaElqcGJYWDFkTENKeVpYQnZibk5sSWpwbVlXeHpaU3dpYkdWdUlqb3hOekFzSW5KbFpDSTZJbU5wWkNJc0lteGhaeUk2TWpBd01Dd2ljbVZzWVdjaU9qY3hOREF3TURCOUxIc2liV2xrSWpwYkltaDBkSEJ6T2k4dmQzZDNMbUp2YjJ0c",
+        "description": "key label"
+    },
+    "version": {
+        "message": "phV1FpTENKMllXeDFaU0k2Ym5Wc2JDd2laWEVpT25SeWRXVjlYU3dpYm1saklqcGJYU3dpYVc1bWJ5STZleUoxY3lJNld5SXFPaTh2ZDNkM0xtRm5iMlJoTG1OdmJTOHFJbDBzSW0xcFpDSTZJbWgwZEhBNkx5OXpiMloxYmk1MGIyUmhlUzhpZlN3aVlYQWlPbTUxYkd3c0luRnpjQ0k2VzNzaWEyVjVJam9",
+        "description": "version label"
+    }
+}

@@ -1,0 +1,51 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="amazon-price-option">
+  <script>
+    Polymer({
+      is: "amazon-price-option",
+      properties: {
+        store: {
+          type: Object
+        },
+        product: {
+          type: Object
+        }
+      },
+      extends: 'li',
+      attached: function () {
+        this.async(function() {
+          var store = this.store;
+          var cloneItem = this.parentElement.children[0].cloneNode(true);
+          var selectedButton = cloneItem.querySelectorAll('.a-button-selected')[0];
+          var priceEl = cloneItem.querySelectorAll('.a-button-inner .a-color-secondary')[0] || cloneItem.querySelectorAll('.a-button-inner .a-color-price')[0];
+          var primeIcon = cloneItem.querySelectorAll('.a-icon-prime')[0];
+
+          [].forEach.call(cloneItem.querySelectorAll('.tmm-olp-links'), function (el, i) {
+            if (i === 0) {
+              el.innerHTML = `<span class="olp-used olp-link"><a href="${store.url}" class="a-size-mini a-link-normal">${store.distance} miles away</a></span>`;
+            } else {
+              el.remove();
+            }
+          });
+
+          cloneItem.querySelectorAll('.a-button-inner span:first-child')[0].innerHTML = 'Local Bookshop';
+          cloneItem.querySelectorAll('a')[0].href = this.product.affiliateURL;
+          cloneItem.querySelectorAll('a')[0].dataset.trackClick = 'pricing-button';
+          priceEl.innerHTML = `£${this.product.price}`;
+
+          if (selectedButton) {
+            selectedButton.classList.remove('a-button-selected');
+          }
+
+          if (primeIcon) {
+            primeIcon.remove();
+          }
+
+          this.innerHTML = cloneItem.innerHTML;
+          this.className = cloneItem.className;
+        });
+      }
+    });
+  </script>
+</dom-module>

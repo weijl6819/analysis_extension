@@ -1,0 +1,331 @@
+
+
+.cm-wrapper {
+    background: #fff;
+    /*border: 1px solid #a7afb9;*/
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, .6);*/
+    margin: 1px auto 2px;
+    width: 410px
+}
+
+.cm-wrapper h1,
+.cm-wrapper h2,
+.cm-wrapper h3,
+.cm-wrapper h4,
+.cm-wrapper h5,
+.cm-wrapper p {
+    margin: 0;
+    padding: 0
+}
+
+.cm-wrapper h2 {
+    font-size: 15px;
+    margin-bottom: 10px
+}
+
+.cm-wrapper ul,
+.cm-wrapper li {
+    margin: 0;
+    padding: 0
+}
+
+.cm-wrapper a {
+    text-decoration: none
+}
+
+.cm-wrapper header {
+    background-color: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    font-weight: 400
+}
+
+.cm-wrapper header h1 {
+    color: #222;
+    font-size: 16px;
+    margin: 0;
+    padding: 12px;
+    text-align: center
+}
+
+.cm-wrapper header h1 span {
+    color: #666;
+    font-weight: 400
+}
+
+.cm-wrapper header .icon-logo {
+    background: url(/images/icon-18.png) no-repeat;
+    height: 18px;
+    margin-right: 5px;
+    width: 18px
+}
+
+.cm-wrapper footer {
+    background: #fff;
+    padding: 10px
+}
+
+.cm-wrapper footer p {
+    color: #747784;
+    font-size: 11px
+}
+
+.cm-wrapper .content {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 10px
+}
+
+.cm-wrapper .styles {
+    border-bottom: 1px solid #e1e1e1;
+    list-style-type: none;
+    margin: 0 0 10px;
+    padding: 10px 0
+}
+
+.cm-wrapper .cite-styles {
+    
+   
+}
+
+.cm-wrapper .cite-styles1{
+    border-bottom: 1px solid #e1e1e1;
+     margin-bottom: 20px;
+}
+
+.cm-wrapper .styles li {
+    display: inline-block;
+    text-align: center;
+    width: 25%
+}
+
+.cm-wrapper .styles li a {
+    color: #444;
+    display: block;
+    font-size: 13px;
+    padding: 4px 16px
+}
+
+.cm-wrapper .styles li a:hover,
+.cm-wrapper .styles li a:active,
+.cm-wrapper .styles li a.selected {
+    background: #d5e1f2
+}
+
+.cm-wrapper .styles li a.selected {
+    font-weight: 700
+}
+
+.cm-wrapper .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px
+}
+
+.cm-wrapper .btn-wrapper {
+    text-align: center
+}
+
+.cm-wrapper .btn {
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    text-align: center
+}
+
+.cm-wrapper .btn:hover {
+    background: #d5e1f2
+}
+
+.cm-wrapper #spinner {
+    display: none;
+    margin-bottom: 6px;
+    text-align: center
+}
+
+#noAuthorMsgDiv {
+    background: #F2DEDE;
+    border: 1px solid #EED3D7;
+    color: #b94a48;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-align: center
+}
+
+.cm-wrapper #failed-wrapper {
+    background: #F2DEDE;
+    border: 1px solid #EED3D7;
+    color: #b94a48;
+    display: none;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center
+}
+
+.cm-wrapper #result-wrapper {
+    display: none
+}
+
+.cm-wrapper #result-wrapper .list {
+    list-style-type: none;
+    margin-bottom: 20px
+}
+
+.cm-wrapper #result-wrapper .list li {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    max-height: 160px;
+    overflow: auto;
+    position: relative;
+    padding: 6px 6px 6px 30px
+}
+
+.cm-wrapper #result-wrapper .list li.selected {
+    background: -ms-linear-gradient(top, #ffc, #fff5aa);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc), to(#fff5aa));
+    background: -webkit-linear-gradient(top, #ffc, #fff5aa);
+    background: -o-linear-gradient(top, #ffc, #fff5aa);
+    background: -moz-linear-gradient(top, #ffc, #fff5aa);
+    background: linear-gradient(top, #ffc, #fff5aa)
+}
+
+.cm-wrapper #result-wrapper .list li aside {
+    left: 3px;
+    font-size: 14px;
+    opacity: .3;
+    position: absolute;
+    text-align: center;
+    top: 3px;
+    width: 24px
+}
+
+.cm-wrapper #result-wrapper .list li aside a,
+.cm-wrapper #result-wrapper .list li aside input,
+.cm-wrapper #result-wrapper .list li aside button {
+    border: 0;
+    background: 0 0;
+    color: #333;
+    display: block;
+    text-align: center
+}
+
+.cm-wrapper #result-wrapper .list li aside a:hover,
+.cm-wrapper #result-wrapper .list li aside input:hover,
+.cm-wrapper #result-wrapper .list li aside button:hover,
+.cm-wrapper #result-wrapper .list li aside a .selected,
+.cm-wrapper #result-wrapper .list li aside input .selected,
+.cm-wrapper #result-wrapper .list li aside button .selected {
+    background: #d5e1f2
+}
+
+.cm-wrapper #result-wrapper .list li aside a:active,
+.cm-wrapper #result-wrapper .list li aside input:active,
+.cm-wrapper #result-wrapper .list li aside button:active {
+    background: #a3bde3
+}
+
+.cm-wrapper #result-wrapper .list li aside a,
+.cm-wrapper #result-wrapper .list li aside button {
+    height: 24px;
+    padding: 0;
+    width: 24px
+}
+
+.cm-wrapper #result-wrapper .list li aside.bottom {
+    bottom: 9px;
+    top: auto
+}
+
+.cm-wrapper #result-wrapper .list li p {
+    color: #747784;
+    font-size: 11px;
+    line-height: 1.4em;
+    margin-bottom: 0;
+    text-align: left
+}
+
+.cm-wrapper #result-wrapper .list li h4 {
+    line-height: 1.5em
+}
+
+.cm-wrapper #result-wrapper .list li h4 {
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.cm-wrapper #result-wrapper .list li h4:hover {
+    cursor: copy
+}
+
+.cm-wrapper #result-wrapper .list li em {
+    font-style: italic
+}
+
+.cm-wrapper #result-wrapper .list li a {
+    color: #2d2d2d;
+    display: block
+}
+
+.cm-wrapper #result-wrapper .list li a:hover {
+    text-decoration: none
+}
+
+.cm-wrapper #result-wrapper .list li .info {
+    color: #2B579A;
+    float: right;
+    font-size: 12px
+}
+
+.cm-wrapper #result-wrapper .list li:hover aside {
+    opacity: 1
+}
+
+.cm-wrapper .quote-wrapper {
+    margin-bottom: 10px;
+    position: relative
+}
+
+.cm-wrapper .quote-wrapper textarea {
+    border: 1px solid #e1e1e1;
+    display: block;
+    font-size: 14px;
+    height: 90px;
+    padding: 6px;
+    width: 100%
+}
+
+.cm-wrapper .field-tip {
+    color: #747784;
+    display: block;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+h1{
+    font-weight:bold;
+}
+
+.savebtn{
+    background-color: skyblue !important;
+}
+p{
+        padding: 0px 0 3px 0px;
+    font-size: 13px;
+}
+#bookPanel{
+    font-size: 14px;
+}

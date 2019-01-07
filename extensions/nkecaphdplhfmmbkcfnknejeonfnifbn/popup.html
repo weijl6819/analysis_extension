@@ -1,0 +1,338 @@
+
+<html>
+<head>
+    <title>PowerAdSpy | LinkedIn ad spy tool</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+                @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+                /*================= Toggle button css starts ================*/
+                html, body {
+                    font-family: Raleway,sans-serif;
+                }
+                /*.switch {
+          position: relative;
+          display: inline-block;
+              width: 50px;
+            height: 20px;
+        }*/
+
+                /*.switch input {display:none;}
+
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+
+        .slider:before {
+          position: absolute;
+          content: "";
+              height: 15px;
+            width: 15px;
+            left: 6px;
+            bottom: 3px;
+          background-color: white;
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+
+        input:checked + .slider {
+          background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+                /*.slider.round {
+          border-radius: 34px;
+        }
+
+        .slider.round:before {
+          border-radius: 50%;
+        }*/
+
+                .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 76px;
+                    height: 24px;
+                }
+
+                    .switch input {
+                        display: block;
+                    }
+
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ca2222;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                }
+
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 15px;
+                        width: 15px;
+                        left: 2px;
+                        bottom: 4px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                input:checked + .slider {
+                    background-color: #2ab934;
+                }
+
+                input:focus + .slider {
+                    box-shadow: 0 0 1px #2196F3;
+                }
+
+                input:checked + .slider:before {
+                    -webkit-transform: translateX(55px);
+                    -ms-transform: translateX(55px);
+                    transform: translateX(55px);
+                }
+
+                /*------ ADDED CSS �-------*/
+                .on {
+                    display: none;
+                }
+
+                .on, .off {
+                    color: white;
+                    position: absolute;
+                    transform: translate(-50%,-50%);
+                    top: 50%;
+                    left: 50%;
+                    font-size: 10px;
+                    font-family: Verdana, sans-serif;
+                }
+
+                input:checked + .slider .on {
+                    display: block;
+                }
+
+                input:checked + .slider .off {
+                    display: none;
+                }
+
+                /*--------- END �------*/
+
+                /* Rounded sliders */
+                .slider.round {
+                    border-radius: 34px;
+                }
+
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+
+
+
+
+
+
+                /*================= Toggle button css ends ================*/
+
+                .clear {
+                    display: block !important;
+                    float: none !important;
+                    clear: both !important;
+                    border: 0 !important;
+                    background: transparent none !important;
+                    height: 0 !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                }
+
+                .dropTemp {
+                    width: 270px;
+                    border: 1px solid #1e69d2;
+                    background: #ffffff;
+                    border-radius: 4px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+
+                    .dropTemp > p {
+                        text-align: center;
+                        background: #448ccb;
+                        padding: 15px 0;
+                        margin: 0;
+                        color: #ffffff;
+                        border-radius: 4px 4px 0 0;
+                        font-size: 17px;
+                    }
+
+                    .dropTemp i {
+                        color: #448ccb;
+                    }
+
+                    .dropTemp .dropTempInner {
+                        padding: 10px;
+                        border-bottom: 1px dotted #448ccb;
+                        text-decoration: none;
+                        display: block;
+                        color: inherit;
+                    }
+
+                        .dropTemp .dropTempInner:last-child {
+                            border-bottom: none;
+                        }
+
+                        .dropTemp .dropTempInner div p {
+                            margin: 0;
+                        }
+
+                        .dropTemp .dropTempInner div:nth-child(1) {
+                            float: left;
+                        }
+
+                            .dropTemp .dropTempInner div:nth-child(1) p:nth-child(1) {
+                                font-weight: 400;
+                                font-size: 13px;
+                                margin-bottom: 0;
+                            }
+
+                            .dropTemp .dropTempInner div:nth-child(1) p:nth-child(2) {
+                                font-size: 14px;
+                            }
+
+                        .dropTemp .dropTempInner div:nth-child(2) {
+                            float: right;
+                            font-size: 20px;
+                        }
+
+                .header_bg {
+                    padding: 5px;
+                    text-align: center;
+                    background: #1e69d2; /* For browsers that do not support gradients */
+                    background: -webkit-linear-gradient(#7ea6ff, #040f1f); /* For Safari 5.1 to 6.0 */
+                    background: -o-linear-gradient(#7ea6ff, #040f1f); /* For Opera 11.1 to 12.0 */
+                    background: -moz-linear-gradient(#7ea6ff, #040f1f); /* For Firefox 3.6 to 15 */
+                    background: linear-gradient(#7ea6ff, #040f1f); /* Standard syntax */
+                }
+
+                .lastPara {
+                    font-size: small;
+                    background-color: #212121;
+                    color: #fff;
+                    padding: 5px;
+                    text-align: center;
+                    font-weight: 300;
+                }
+    </style>
+
+</head>
+<body>
+    <script type="text/javascript" src="jquery.js"></script>
+    <!-- <script type="text/javascript" src="facebook-script.js"></script> -->
+    <div class="dropTemp">
+
+        <div class="header_bg"><img src="http://poweradspy.com/wp-content/uploads/2017/11/powerAdSpy.png" width="90%" height="auto" /></div>
+
+        <a  style="display:none;" id="amember-signup" target="_blank" class="dropTempInner">
+            <div>
+                <p>Dear PowerAdSpy User,</p>
+                <p>You have achieved 24 hour access to PowerAdSpy (Free plan) , Please signup to redeem the offer...</p>
+            </div>
+            <div class="clear"></div>
+        </a>
+        <a style="display:none;" id="amember-video" target="_blank" class="dropTempInner">
+            <div>
+                <p>Dear PowerAdSpy User,</p>
+                <p>To Get More ads watch videos here</p>
+            </div>
+            <div class="clear"></div>
+        </a>
+        <a href="" id="amember-login" style="display:none;" target="_blank" class="dropTempInner">
+            <div>
+                <p>Dear PowerAdSpy User , </p>
+                <p>Click here to login in Power Ads Spy.</p>
+            </div>
+            <div class="clear"></div>
+        </a>
+
+        <div class="dropTempInner">
+            <div>
+                <p>Show only sponsored</p>
+            </div>
+            <div>
+                <div>
+                    <span>
+                        <!--<label class="switch">
+                          <input type="checkbox" id="issponsored">
+                          <span class="slider round"></span>
+                        </label>-->
+                        <label class="switch">
+                            <!--<input type="checkbox" id="issponsored">-->
+                            <input type="button" id="is-sponsored" value="ON" style="border-radius: 15px;color:blue;padding: 4px;font-weight: 600;box-shadow: 1px 2px 2px 0 #6286ec ;width: 50px;">
+                            <!--<div  class="slider round">-->
+                            <!--ADDED HTML-->
+                            <!--<span id="sponsoredon" class="on">ON</span>
+                            <span id="sponsoredoff" class="off">OFF</span>-->
+                            <!--END-->
+                            <!--</div>-->
+                        </label>
+                    </span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <a href="javascript:void(0)" class="dropTempInner">
+            <div style="width: 100%;">
+                <span style="float: left;">Version </span><span style="float: right;"><b id="version"></b></span>
+            </div>
+            <div class="clear"></div>
+        </a>
+        <a href="javascript:void(0)" class="dropTempInner">
+            <div style="width: 100%;">
+                <span style="float: left;">Total Ads </span><span style="float: right;"><b id="total-ads">fetching</b></span>
+            </div>
+            <div class="clear"></div>
+        </a>
+        <a id="user-rewards" style="cursor:pointer;" class="dropTempInner">
+            <div style="width: 100%;">
+                <span style="float: left;">Your Rewards </span><span style="float: right;"><b id="earning">fetching</b></span>
+            </div>
+            <div class="clear"></div>
+        </a>
+        <a id="user-history" style="cursor:pointer;" class="dropTempInner">
+            <div style="width: 100%;">
+                <span style="float: left;">View History </span><span style="float: right;"><b id="earning-ff">Click Here</b></span>
+            </div>
+            <div class="clear"></div>
+        </a>
+        <!--<a href="javascript:void(0)" class="dropTempInner">
+            <div style="width: 100%;">
+                <span style="float: right;"><b id="Time"></b></span>
+            </div>
+            <div class="clear"></div>
+        </a>-->
+        <div class="lastPara">Copyright @2018</div>
+    </div>
+    <script src="settings.live.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

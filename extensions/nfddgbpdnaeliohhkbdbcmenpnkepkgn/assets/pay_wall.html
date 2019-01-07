@@ -1,0 +1,288 @@
+<html>
+
+<head>
+
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+<style type="text/css">
+
+div.J-awx-Jh, div.Kj-JD-Jh {
+    filter: alpha(opacity=75);
+    opacity: .75;
+}
+
+.inboxsdk__modal_overlay {
+    right: 0px;
+    bottom: 0px;
+}
+
+.J-awx-Jh, .Kj-JD-Jh {
+    background: #fff;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+
+
+.inboxsdk__modal_fullscreen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 501;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: 110px 50px 50px 50px;
+}
+
+.inboxsdk__modal_fullscreen .inboxsdk__modal_container {
+    position: relative;
+    margin-top: -60px;
+    width: auto;
+    overflow: hidden;
+}
+
+.Kj-JD {
+    color: #000;
+    padding: 30px 42px;
+}
+
+.J-awx, .Kj-JD {
+    -webkit-box-shadow: 0 4px 16px rgba(0,0,0,.2);
+    box-shadow: 0 4px 16px rgba(0,0,0,.2);
+    background: #fff;
+    background-clip: padding-box;
+    border: 1px solid #acacac;
+    border: 1px solid rgba(0,0,0,.333);
+    outline: 0;
+    position: absolute;
+}
+
+.Kj-JD {
+    top: 0;
+    width: 450px;
+    z-index: 501;
+}
+
+
+
+
+.Kj-JD-K7 {
+    background-color: #fff;
+    color: #000;
+    cursor: default;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 16px;
+}
+
+.Kj-JD-K7 {
+    font: bold 120% arial,sans-serif;
+    cursor: default;
+}
+
+
+
+.inboxsdk__modal_content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Kj-JD-Jz {
+    background-color: #fff;
+    line-height: 1.4em !important;
+    word-wrap: break-word;
+}
+
+.Kj-JD-Jz {
+    font: normal 100% arial,sans-serif;
+}
+
+
+
+.Kj-JD-Jl {
+    margin-top: 16px;
+}
+
+.Kj-JD-Jl, .Kj-JD-Jl button {
+    font: normal 90% arial,sans-serif;
+}
+
+
+
+.inboxsdk__modal_close {
+    outline: none;
+}
+
+.Kj-JD-K7-Jq {
+    height: 11px;
+    opacity: .7;
+    padding: 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+}
+.Kj-JD-K7-Jq:after {
+    content: '';
+    background: url(https://ssl.gstatic.com/ui/v1/dialog/close-x.png);
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    right: 17px;
+}
+
+
+
+div.T-I.inboxsdk__button {
+    -webkit-user-select: none;
+    min-width: 27px;
+}
+
+.T-I-atl {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    background-image: linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+}
+.T-I-ax7 {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #f5f5f5;
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+    color: #444;
+    border: 1px solid #dcdcdc;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.T-I {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    margin-right: 16px;
+    height: 27px;
+    line-height: 27px;
+    min-width: 54px;
+    outline: 0;
+    padding: 0 8px;
+}
+
+.J-J5-Ji {
+    display: inline-block;
+    position: relative;
+    display: -moz-inline-box;
+    display: inline-block;
+}
+
+</style>
+
+<link href="font-awesome.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div class="inboxsdk__modal_fullscreen">
+    <div class="Kj-JD inboxsdk__modal_container" tabindex="0" role="alertdialog">
+        <div class="Kj-JD-K7 Kj-JD-K7-GIHV4 inboxsdk__modal_toprow">
+            <span class="Kj-JD-K7-K0" role="heading" id="NET_EXTNAME"></span>
+            <span class="Kj-JD-K7-Jq inboxsdk__modal_close" tabindex="0" role="button"></span>
+        </div>
+        <div class="Kj-JD-Jz inboxsdk__modal_content">
+
+<p style="font-weight:bold">
+    Help us support this extension and enjoy scheduling more<br>
+    emails and reminders!
+</p>
+
+<p>
+    Using this <span id="NET_PLAN_DESC">...</span>, you have <span id="NET_CREDIT_TOTAL">...</span> credits (Credits include<br>
+    send later emails, reminders, and auto-followups). Choose a<br>
+    plan to increase your credits and help us release new features.
+</p>
+
+<p>
+    You have used <span id="NET_CREDIT_USED">...</span> credits.
+</p>
+
+<table id="NET_PLANS" cellpadding="0" cellspacing="0" border="0" class="net_plans net_hidden">
+    <tr>
+        <td class="net_plans-clear-top-border" colspan="2" style="text-align: center">
+            <input type="radio" name="cycle" value="annual" id="NET_CYCLE_ANNUAL"><label for="NET_CYCLE_ANNUAL">Annual Billing (Save $12)</label>
+            &nbsp; &nbsp;
+            <input type="radio" name="cycle" value="monthly" id="NET_CYCLE_MONTHLY"><label for="NET_CYCLE_MONTHLY">Monthly Billing</label>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="net-plans-selected" id="NET_PRICING_1"></td>
+    </tr>
+    <tr>
+        <td class="net_plans-subject">Credits Monthly</td>
+        <td class="net-plans-selected">Unlimited</td>
+    </tr>
+    <tr>
+        <td class="net_plans-subject">Reminders</td>
+        <td class="net-plans-selected">Unlimited</td>
+    </tr>
+    <tr>
+        <td class="net_plans-subject">Send Laters</td>
+        <td class="net-plans-selected">Unlimited</td>
+    </tr>
+    <tr>
+        <td class="net_plans-subject">Open Tracking</td>
+        <td class="net-plans-selected">Unlimited</td>
+    </tr>
+    <tr>
+        <td class="net_plans-subject">Track by default</td>
+        <td class="net-plans-selected">Yes</td>
+    </tr>
+    <!--<tr>
+        <td class="net_plans-subject">Remove "Sent with SndLatr" text</td>
+        <td class="net-plans-selected">Yes</td>
+    </tr>-->
+    <tr>
+        <td></td>
+        <td><div class="T-I J-J5-Ji ar7 L3 inboxsdk__button T-I-atl" role="button" tabindex="0" data-tooltip="" id="NET_CHOOSE2"><div><span class="inboxsdk__button_text">Choose</span></div></div></td>
+    </tr>
+</table>
+
+        </div>
+
+        <div class="Kj-JD-Jl inboxsdk__modal_buttons">
+            <div id="NET_PROCESSING_PAYMENT" class="net_payment-messages">
+                <i class="fa fa-spinner fa-pulse fa-fw"></i> Processing payment ...
+            </div>
+            <div id="NET_PROCESSING_ERROR" class="net_payment-messages"></div>
+
+            <div class="T-I J-J5-Ji ar7 L3 inboxsdk__button T-I-atl" role="button" tabindex="0" id="NET_OK"><div><span class="inboxsdk__button_text">OK</span></div></div>
+            <div class="T-I J-J5-Ji ar7 L3 inboxsdk__button T-I-atl" role="button" tabindex="0" data-tooltip="Choose a plan" id="NET_CHOOSE_PLAN"><div><span class="inboxsdk__button_text">Choose a plan</span></div></div>
+            <div style="display:none" class="T-I J-J5-Ji ar7 L3 inboxsdk__button T-I-ax7" role="button" tabindex="0" data-tooltip="Let me use one more time for free" id="NET_STAY_FREE"><div><span class="inboxsdk__button_text">Let me use one more time for free</span></div></div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="Kj-JD-Jh inboxsdk__modal_overlay" style="z-index: 500;"></div>
+
+<script src="pay_wall.js"></script>
+<script src="../lib/util.js"></script>
+
+</body>
+</html>

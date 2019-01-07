@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Options - Image On/Off</title>
+<script src="options.js"></script>
+<link href="options.css" rel="stylesheet" type="text/css">
+</head>
+<body style="text-align:left; padding:25px;">
+
+  <h2>Image On/Off Options:</h2>
+  
+  <p><label for="contextMenu"><input id="contextMenu" type="checkbox" /> 
+  Add image exceptions  shortcut to the context menu</label><br />
+  </p>
+  
+  <p><label for="autoRefresh" title="Automaticly reload page after enabling/disabling images"><input id="autoRefresh" type="checkbox" /> 
+  Auto-Reload on ON/OFF</label><br /><br /></p>
+  <p><label for="allProtocols"><input id="allProtocols" type="checkbox" /> 
+  Enable/disable images for http AND https instead of one only</label><br /></p>
+
+  <p><label for="allSubdomains"><input id="allSubdomains" type="checkbox" /> 
+  Enable/disable images for all subdomains instead of single host only</label><br /></p>
+
+  <p><label for="allPorts"><input id="allPorts" type="checkbox" /> 
+  Enable/disable images for all ports instead of just one</label><br /><br /></p>
+    
+<h3>Icon</h3>   
+    
+   
+      <p>  <input id="lightIcon" type="radio" name="icon" />  <label for='lightIcon'>Light Icon</label> <img src="icon-light-allow.png" valign="middle" /></p>
+      <p>   <input id="defaultIcon" type="radio" name="icon" /> <label for='defaultIcon'>Default Icon</label> <img src="icon-allow.png" valign="middle" /></p>
+       <p>  <input id="darkIcon" type="radio" name="icon" /> <label for='darkIcon'>Dark Icon</label> <img src="icon-dark-allow.png" valign="middle" /></p>
+    
+    <br />
+  <h3>Image settings</h3>
+  <p>
+<button id="openImageSettings">Open Image settings</button> <button id="clearImageSettings" title="Clear all rules set by Image On/Off">Clear image settings set by this extension</button><br /><br /></p>
+
+  <h3>Local Storage rules</h3>
+
+  <p>Every existing rule is saved here and can be reintroduced at will. (Incognito rules aren't saved)</p>
+
+  <p><textarea name="imgTF_rules" id="imgTF_rules" cols="30" rows="10" style="width:100%;"></textarea></p>
+
+  <p>
+    <button id="importRules">Add these rules to image exceptions </button> <button id="clearLocalStorageRules">Clear Local Storage rules</button>
+    <br>
+    <br /></p>
+  <h3>More info:<br />
+  </h3>
+<a href="https://singleclickapps.com/images-on-off/">https://singleclickapps.com/images-on-off
+
+  
+</a>
+</body>
+</html>

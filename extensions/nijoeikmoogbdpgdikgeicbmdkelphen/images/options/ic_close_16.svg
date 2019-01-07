@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_close_16</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="assets" sketch:type="MSArtboardGroup" transform="translate(-351.000000, -415.000000)">
+            <g id="ic_close_16" sketch:type="MSLayerGroup" transform="translate(351.000000, 415.000000)">
+                <path d="M3.70710678,13.7071068 L13.7071068,3.70710678 C14.0976311,3.31658249 14.0976311,2.68341751 13.7071068,2.29289322 C13.3165825,1.90236893 12.6834175,1.90236893 12.2928932,2.29289322 L2.29289322,12.2928932 C1.90236893,12.6834175 1.90236893,13.3165825 2.29289322,13.7071068 C2.68341751,14.0976311 3.31658249,14.0976311 3.70710678,13.7071068 L3.70710678,13.7071068 Z" id="Shape" fill="#979797" sketch:type="MSShapeGroup"></path>
+                <path d="M13.7071068,12.2928932 L3.70710678,2.29289322 C3.31658249,1.90236893 2.68341751,1.90236893 2.29289322,2.29289322 C1.90236893,2.68341751 1.90236893,3.31658249 2.29289322,3.70710678 L12.2928932,13.7071068 C12.6834175,14.0976311 13.3165825,14.0976311 13.7071068,13.7071068 C14.0976311,13.3165825 14.0976311,12.6834175 13.7071068,12.2928932 L13.7071068,12.2928932 Z" id="Shape" fill="#979797" sketch:type="MSShapeGroup"></path>
+                <rect id="bounds" sketch:type="MSShapeGroup" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

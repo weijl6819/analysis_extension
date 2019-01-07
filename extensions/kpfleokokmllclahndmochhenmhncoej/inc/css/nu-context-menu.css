@@ -1,0 +1,51 @@
+.nu-context-menu {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px gray;
+    box-sizing: border-box;
+    display: block;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    z-index: 9999;
+}
+
+.nu-context-menu.active {
+    opacity: 1;
+    height: auto;
+    width: auto;
+}
+
+.nu-context-menu ul {
+    font-size: 15px;
+    list-style: none;
+    margin: 2px 0 0;
+    padding: 4px 0;
+    text-align: left;
+}
+
+.nu-context-menu ul li {
+    clear: both;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 2px 16px;
+    white-space: nowrap;
+    color: Black;
+}
+
+.nu-context-menu ul li:hover {
+    background: Lightblue;
+    color: Black;
+}
+
+.nu-context-menu ul hr {
+    background: #e8e8e8;
+   /*  --border: 0;
+    --color: #e8e8e8;
+    --height: 1px; */
+    margin: 4px 0;
+}

@@ -1,0 +1,23 @@
+
+<div class="cp-toolbar-wrapper">
+    <div class="cp-toolbar">
+
+        <div class="cp-toolbar-pin-button-wrapper cp-no-border" ng-click="homeCtrl.locationButtonClick()">
+            <div type="button">
+                <img ng-if="!homeCtrl.isLocationMode" src="../app/icons/location.png">
+                <img ng-if="homeCtrl.isLocationMode" src="../app/icons/location-purple.png">
+            </div>
+        </div>
+
+
+        <cp-search-bar></cp-search-bar>
+
+
+        <div class="cp-toolbar-add-button-wrapper cp-no-border pull-right" ng-click="homeCtrl.create({ isEnterEditMode: true })">
+            <div type="button">
+                <img class="cp-add-new-sm-plus" src="../app/icons/hospital.png">
+            </div>
+        </div>
+
+    </div>
+</div>

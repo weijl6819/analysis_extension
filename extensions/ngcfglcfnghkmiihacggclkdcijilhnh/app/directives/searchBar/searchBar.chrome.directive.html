@@ -1,0 +1,13 @@
+
+<div class="cp-search-bar-wrapper">
+  <div class="cp-search-bar">
+    <input class="search-box cp-no-border cp-search-bar-input" ng-model="homeCtrl.searchBarText" placeholder="Search...">
+    <div class="cp-search-bar-close-wrapper">
+      <!--<div class="cp-x-close-button cp-no-border" ng-click="homeCtrl.searchCleanButtonClick()">X</div>-->
+      <img ng-if="homeCtrl.searchBarText.length"
+           class="cp-x-close-button cp-no-border"
+           ng-click="homeCtrl.searchCleanButtonClick()"
+           src="../app/icons/delete-x.png">
+    </div>
+  </div>
+</div>

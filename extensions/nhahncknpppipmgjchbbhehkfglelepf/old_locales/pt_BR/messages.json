@@ -1,0 +1,11 @@
+{
+   "chrome_extension_description": {
+      "message": "Esta extens\u00E3o real\u00E7a as palavras-chave de busca do Google em p\u00E1ginas web. De esta forma, voc\u00EA pode localizar instantaneamente as partes relevantes de uma p\u00E1gina. A imagem mostra o resultado Wikipedia depois de procurar a 'World Peace' termo com o Google. A seta na imagem aponta para o bot\u00E3o que habilitar / desabilitar esta funcionalidade."
+   },
+   "chrome_extension_name": {
+      "message": "Palavras-chave Destaque para Google Search"
+   },
+   "chrome_extension_title": {
+      "message": "Palavras-chave Destaque para Google Search"
+   }
+}

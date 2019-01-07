@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Contacts"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Buksan ang iyong Google Contacts sa isang madaling gamitin popup."
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Mga Setting"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Sukat ng popup window"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "lapad"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "tangkad"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "I-save ang"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Nai-save na"
+   }
+}

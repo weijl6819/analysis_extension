@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>GQueues Chrome Extension Options</title>
+        <link type="text/css" rel="stylesheet" href="/gqueuesChromeExt-min.css" />
+    </head>
+
+    <body>
+        <div class="gq-options-container">
+            <div class="gq-options-header"><img height="35px" src="images/gqLogoWhite.png" />Chrome Extension Options</div>
+
+            <div class="gq-options-content">
+
+                <div class="gq-options-setting">
+                    <div id="gqAccount" class="gq-hidden">
+                        <div>Currently linked GQueues account: <span id="gqAccountEmail"></span></div> 
+                        <div><button type='button' id='gqDisconnectBtn' class='gq-button'>Disconnect GQueues Account</button></div>
+                    </div>
+                    <div id="gqNoAccount" class="gq-hidden">
+                        <div><button type='button' id='gqConnectBtn' class='gq-button'>Connect GQueues Account</button></div>
+                    </div>
+                </div>
+
+                <div class="gq-options-setting">
+                    Use web page title and URL by default: <input id="gqWebDefault" type="checkbox" />
+                    <div class="gq-options-note">If selected, when the <em>Create Task</em> window appears the web page title will be set as the task description and a link to the page will be placed in the notes.</div>
+                </div>
+
+                <div id="gqDefaultQueue" class="gq-options-setting gq-hidden">
+                    <div>Default queue for new tasks:</div>
+                    <div>
+                        <select id="gqQueueDropdown"></select>
+                        <img id="gqRefreshBtn" src="images/refreshBtn.png" />
+                    </div>
+                    
+                </div>
+
+                <div class="gq-options-setting">
+                    <button type='button' id='gqSaveBtn' class='gq-button'>Save</button>
+                </div>
+
+            </div>
+        </div>
+
+    <script type="text/javascript" src="/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="/options.js"></script>
+    </body>
+</html>
+

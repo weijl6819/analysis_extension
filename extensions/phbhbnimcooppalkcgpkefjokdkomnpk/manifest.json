@@ -1,0 +1,21 @@
+{"description": "__MSG_localeDesc__", 
+
+"manifest_version": 2, 
+
+"background": {"scripts": ["bg.js"]}, 
+
+"update_url": "https://clients2.google.com/service/update2/crx", 
+
+"chrome_url_overrides": {"newtab": "my_nt.html"}, 
+
+"icons": {"128": "128-logo.png"}, 
+
+"name": "__MSG_addTitle__", 
+
+"version": "3.9.7", 
+
+"browser_action": {"default_icon": "128-logo.png", 
+
+"default_title": "WWE New Tab"}, 
+
+"default_locale": "en"}

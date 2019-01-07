@@ -1,0 +1,20 @@
+{
+  "name": "fb-group-management-tools",
+  "version": "1.0.0",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "systemjs": "0.20.13",
+    "core-js": "^2.4.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.3.4",
+    "@types/chrome": "0.0.35",
+    "@types/filesystem": "0.0.28",
+    "@types/filewriter": "0.0.28",
+    "@types/node": "0.0.2"
+  }
+}

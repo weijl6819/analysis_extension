@@ -1,0 +1,519 @@
+{
+    "appName": {
+        "message": "Email tracking para Gmail - Mailtrack"
+    },
+    "appDescription": {
+        "message":
+            "Mail tracking gratuito para sempre e ilimitado. Adicione o double-check (✓✓) no seu Gmail."
+    },
+    "tooltipLoading": {
+        "message": "Carregando..."
+    },
+    "tooltipTrackingDisabled": {
+        "message": "Tracking desativado"
+    },
+    "tooltipDemoMode": {
+        "message": "Mailtrack é desativado para emails enviados para si mesmo"
+    },
+    "tooltipNotTraced": {
+        "message": "Enviado desde um dispositivo sem Mailtrack"
+    },
+    "tooltipLastWordVariant": {
+        "message": "último"
+    },
+    "tooltipTracedOneRecipient": {
+        "message": "$RECIPIENT$ ainda não leu seu $LAST$ email",
+        "placeholders": {
+            "RECIPIENT": {
+                "content": "$1"
+            },
+            "LAST": {
+                "content": "$2"
+            }
+        }
+    },
+    "tooltipUnreliableRecipient": {
+        "message":
+            "Atenção: o destinatário não é rastreável. O status de abertura pode não ser confiável."
+    },
+    "tooltipTracedManyRecipients": {
+        "message": "Niguém leu seu $LAST$ email ainda",
+        "placeholders": {
+            "LAST": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipTimeAgo": {
+        "message": " há $TIME$ ",
+        "placeholders": {
+            "TIME": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipRead": {
+        "message": " - Lido "
+    },
+    "tooltipClick": {
+        "message": " - Click na $URL$ ",
+        "placeholders": {
+            "URL": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipTimeAfterYouSent": {
+        "message": " $TIME$ depois de enviado ",
+        "placeholders": {
+            "TIME": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipByOpener": {
+        "message": " por $OPENER$ ",
+        "placeholders": {
+            "OPENER": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipUsingPlatform": {
+        "message": " usando $PLATFORM$ ",
+        "placeholders": {
+            "platform": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipOpenTimes": {
+        "message": " $TIMES$ vezes ",
+        "placeholders": {
+            "TIMES": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipOpenMoreThan1000Times": {
+        "message":
+            "Este e-mail foi aberto mais de 1000 vezes; não é possível exibir o histórico detalhado de aberturas"
+    },
+    "tooltipReadYourEmail": {
+        "message": " leu seu $LAST$ email",
+        "placeholders": {
+            "LAST": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipFirstRead": {
+        "message": "Lido pela primeira vez "
+    },
+    "tooltipYourEmailWasRead": {
+        "message": "O seu $LAST$ email foi lido ",
+        "placeholders": {
+            "LAST": {
+                "content": "$1"
+            }
+        }
+    },
+    "tooltipFailed": {
+        "message": "Erro ao carregar. Por favor, tente novamente"
+    },
+    "tooltipUnlockHistoryTracking": {
+        "message": "Ativar atividade de email completa"
+    },
+    "activationModalText": {
+        "message": "Habilitar o rastreamento de e-mails para $EMAIL$",
+        "placeholders": {
+            "EMAIL": {
+                "content": "$1"
+            }
+        }
+    },
+    "activationModalCallToAction": {
+        "message": "Ativar"
+    },
+    "activationModalDisclaimer": {
+        "message": "Ao ativar Mailtrack, você concordará com os"
+    },
+    "activationModalTerms": {
+        "message": "termos de uso"
+    },
+    "activationModalTermsUrl": {
+        "message": "http://mailtrack.io/pt/terms"
+    },
+    "activationModalRemindLater": {
+        "message": "Lembrar-me mais tarde"
+    },
+    "activationModalDoNotUse": {
+        "message": "Não usar Mailtrack"
+    },
+    "desktopNotificationOpenSingleRecipientUsingDeviceTemplate": {
+        "message": "✓✓ $who$ acaba de ler seu email usando $device$",
+        "placeholders": {
+            "who": {
+                "content": "$1",
+                "example": "sample@example.com"
+            },
+            "device": {
+                "content": "$2",
+                "example": "iPhone"
+            }
+        }
+    },
+    "desktopNotificationOpenMultipleRecipientsUsingDeviceTemplate": {
+        "message": "✓✓ Seu email acaba de ser lido usando $device$",
+        "placeholders": {
+            "device": {
+                "content": "$1",
+                "example": "Gmail"
+            }
+        }
+    },
+    "desktopNotificationOpenSingleRecipientTemplate": {
+        "message": "✓✓ $who$ acaba de ler seu email",
+        "placeholders": {
+            "who": {
+                "content": "$1",
+                "example": "sample@example.com"
+            }
+        }
+    },
+    "desktopNotificationOpenMultipleRecipientsTemplate": {
+        "message": "✓✓ Seu email acaba de ser lido"
+    },
+    "desktopNotificationOpenMuteAllNotificationsButtonText": {
+        "message": "Silenciar todas as notificações"
+    },
+    "desktopNotificationClickSingleRecipientUsingDeviceTemplate": {
+        "message": "✓✓ $who$ clicou em um link usando $device$",
+        "placeholders": {
+            "who": {
+                "content": "$1",
+                "example": "sample@example.com"
+            },
+            "device": {
+                "content": "$2",
+                "example": "iPhone"
+            }
+        }
+    },
+    "desktopNotificationClickMultipleRecipientsUsingDeviceTemplate": {
+        "message": "✓✓ Um link foi clicado usando $device$",
+        "placeholders": {
+            "device": {
+                "content": "$1",
+                "example": "Gmail"
+            }
+        }
+    },
+    "desktopNotificationClickSingleRecipientTemplate": {
+        "message": "✓✓ $who$ clicou em um link",
+        "placeholders": {
+            "who": {
+                "content": "$1",
+                "example": "sample@example.com"
+            }
+        }
+    },
+    "desktopNotificationClickMultipleRecipientsTemplate": {
+        "message": "✓✓ Um link foi clicado"
+    },
+    "desktopNotificationClickMuteAllNotificationsButtonText": {
+        "message": "Silenciar todos os cliques"
+    },
+    "desktopNotificationMuteThreadButtonText": {
+        "message": "Silenciar esta conversa"
+    },
+    "openSettingsButtonText": {
+        "message": "Ver as configurações de Mailtrack"
+    },
+    "settingsOption_settings": {
+        "message": "Preferências"
+    },
+    "settingsOption_account": {
+        "message": "Conta"
+    },
+    "settingsOption_support": {
+        "message": "Contato"
+    },
+    "settingsOption_faqs": {
+        "message": "Ajuda"
+    },
+    "settingsOption_pricing": {
+        "message": "Planos e Preços"
+    },
+    "settingsOption_dashboard": {
+        "message": "Painel de Atividades"
+    },
+    "settingsOption_dashboardLastopened": {
+        "message": "Emails Abertos"
+    },
+    "settingsOption_dashboardUnopened": {
+        "message": "Emails não Abertos"
+    },
+    "settingsOption_clickReport": {
+        "message": "Relatório de clicks"
+    },
+    "settingsOption_dashboard_upgrade": {
+        "message":
+            "Para acessar o Painel de Atividades, você precisa atualizar para o Mailtrack Pro."
+    },
+    "settingsOption_dashboardLastopened_upgrade": {
+        "message":
+            "Para acessar o Painel de Emails Abertos, você precisa atualizar para o Mailtrack Pro."
+    },
+    "settingsOption_dashboardUnopened_upgrade": {
+        "message":
+            "Para acessar o Painel de e-mails não abertos, você precisa atualizar para o Mailtrack Pro."
+    },
+    "settingsOption_clickReport_upgrade": {
+        "message":
+            "Para acessar o Relatório de cliques, você precisa atualizar para o Mailtrack Pro."
+    },
+    "settingsOption_upgrade": {
+        "message": "Atualizar à Mailtrack Pro"
+    },
+    "enabling": {
+        "message": "Ativando Mailtrack..."
+    },
+    "disabling": {
+        "message": "Desativando Mailtrack..."
+    },
+    "upgrade": {
+        "message": "Atualizar"
+    },
+    "upgrade_now": {
+        "message": "Atualizar agora"
+    },
+    "incompatibleExtensionTitle": {
+        "message": "Incompatibilidade detectada"
+    },
+    "incompatibleExtensionExplanation": {
+        "message":
+            "Detectamos que você tem uma ou mais extensões instaladas que são <strong>incompatíveis</strong> com Mailtrack."
+    },
+    "incompatibleExtensionStep1Title": {
+        "message": "Desinstale ou remova extensões incompatíveis em configurações"
+    },
+    "incompatibleExtensionStep1ListTitle": {
+        "message": "Extensões incompatíveis:"
+    },
+    "incompatibleExtensionStep1CallToAction": {
+        "message": "Ir à configuração de extensões"
+    },
+    "incompatibleExtensionStep2Title": {
+        "message": "Recarregue seu Gmail para ver as modificações"
+    },
+    "incompatibleExtensionStep2CallToAction": {
+        "message": "Recarregue seu Gmail"
+    },
+    "incompatibleExtensionDoNotShow": {
+        "message": "Não me alerte mais"
+    },
+    "incompatibleLabsTitle": {
+        "message": "Incompatibilidade detectada"
+    },
+    "incompatibleLabsExplanation": {
+        "message":
+            "Detectamos que você tem funcionalidades Lab que são <strong>incompatíveis</strong> com Mailtrack. Para que Mailtrack funcione corretamente, você deveria desabilitá-los."
+    },
+    "incompatibleLabsStep1Title": {
+        "message": "Desabilitar Labs incompatíveis em configurações"
+    },
+    "incompatibleLabsStep1ListTitle": {
+        "message": "Funcionalidades Labs incompatíveis:"
+    },
+    "incompatibleLabsName_previewPane": {
+        "message": "Painel de visualização prévia"
+    },
+    "incompatibleLabsStep1CallToAction": {
+        "message": "Ir às configurações do Gmail Labs"
+    },
+    "incompatibleLabsDoNotShow": {
+        "message": "Não me alerte mais"
+    },
+    "feedbackSubject": {
+        "message": "[SUPORTE] Problema com Mailtrack"
+    },
+    "serverAlertPopupTitle": {
+        "message": "Alerta"
+    },
+    "serverAlertPopupButtonText": {
+        "message": "OK"
+    },
+    "iFrameFallbackTitle": {
+        "message": "Eita! Alguma coisa quebrou..."
+    },
+    "iFrameFallbackText": {
+        "message":
+            "Se o problema continuar, por favor entre em contato com <a mailto=\"feedback@mailtrack.io\">feedback@mailtrack.io</a>"
+    },
+    "gettingStartedUrl": {
+        "message": "https://mailtrack.io/en/getting-started?login_hint=$email$",
+        "placeholders": {
+            "email": {
+                "content": "$1",
+                "example": "john.doe@mailtrack.io"
+            }
+        }
+    },
+    "uninstallUrl": {
+        "message": "https://mailtrack.io/pt/goodbye"
+    },
+    "trackingToolTooltipText": {
+        "message": "Ferramentas de Mailtrack"
+    },
+    "composerToolEmailTrackingTooltipTextEnable": {
+        "message": "Ativar rastreio de email"
+    },
+    "composerToolEmailTrackingTooltipTextDisable": {
+        "message": "Desativar rastreio de email"
+    },
+    "composerToolEmailNotificationTooltipTextEnable": {
+        "message": "Ativar notificações de email"
+    },
+    "composerToolEmailNotificationTooltipTextDisable": {
+        "message": "Desativar notificações de email"
+    },
+    "composerToolEmailNotificationTooltipTextDisabled": {
+        "message": "Notificações de emails precisa de rastreio de emails"
+    },
+    "plainTextSupportModalTitle": {
+        "message": "Mailtrack não funciona com texto plano"
+    },
+    "plainTextSupportModalText": {
+        "message":
+            "Desative o modo de Texto Plano para que Mailtrack funcione corretamente (<a target=\"_blank\" href=\"https://mailtrack.desk.com/customer/pt_br/portal/articles/1830586-does-tracking-work-in-plain-text-mode-\">como?</a>)."
+    },
+    "plainTextSupportModalButtonText": {
+        "message": "OK"
+    },
+    "debeconiserFailedModalTitle": {
+        "message": "Sua resposta foi enviada, mas não pode ser exibida"
+    },
+    "debeconiserFailedModalText": {
+        "message": "Por favor, recarregue a página."
+    },
+    "debeconiserFailedModalButtonText": {
+        "message": "OK"
+    },
+    "topBarUpdatePermissionsText": {
+        "message":
+            "Estamos melhorando Mailtrack. Por favor, certifique-se de que sua conta está preparada."
+    },
+    "topBarUpdatePermissionsButton": {
+        "message": "Atualizar autorizações"
+    },
+    "plainTextModeModalTitle": {
+        "message": "Mailtrack não é compatível com o modo de texto plano"
+    },
+    "plainTextModeModalText": {
+        "message":
+            "Mailtrack não funciona em modo de texto plano e seus emails não serão rastreados."
+    },
+    "plainTextModeModalButtonText": {
+        "message": "Aceitar"
+    },
+    "plainTextModeModalLinkText": {
+        "message": "Não mostrar isto de novo"
+    },
+    "demoModeModalTitle": {
+        "message": "Mailtrack não funciona com emails enviados para você mesmo(a)."
+    },
+    "demoModeModalButtonText": {
+        "message": "Aceitar"
+    },
+    "genericError": {
+        "message":
+            "⚠ <br /><br />Algo não saiu bem<br /><br />Por favor, tente novamente mais tarde"
+    },
+    "closingTabMessage": {
+        "message": "Seu email pode não ter sido rastreado."
+    },
+    "signatureTooltipMessage": {
+        "message": "Elimine esta assinatura publicitária para sempre de seus emails profissionais."
+    },
+    "signatureTooltipOk": {
+        "message": "Planos & preços"
+    },
+    "signatureTooltipCancel": {
+        "message": "Ocultar"
+    },
+    "removeSignatureTitle": {
+        "message": "Remover a assinatura de Mailtrack"
+    },
+    "removeSignatureText": {
+        "message": "APAGAR"
+    },
+    "sentWithSignatureText": {
+        "message": "Enviado com"
+    },
+    "senderNotifiedSignatureText": {
+        "message": "Remetente notificado por"
+    },
+    "expandBtnMsg": {
+        "message": "Clique para ver a informação de tracking"
+    },
+    "requestPermissionsTitle": {
+        "message": "Permissões necessárias"
+    },
+    "requestPermissionsText": {
+        "message":
+            "Devido a mudanças no novo Gmail, Mailtrack precisa que atualize suas permissões."
+    },
+    "requestPermissionsButtonText": {
+        "message": "Aceitar"
+    },
+    "modalTitleBodyButtonCancelText": {
+        "message": "Cancelar"
+    },
+    "mustReloadTitle": {
+        "message": "Refrescar"
+    },
+    "mustReloadText": {
+        "message": "Devido a algumas mudanças a págino do Gmail precisa ser refrescada"
+    },
+    "mustReloadbuttonText": {
+        "message": "OK"
+    },
+    "currentlyDisabledFor": {
+        "message": "Mailtrack está desativado para"
+    },
+    "mailtrackIsEnabled": {
+        "message": "Mailtrack ativado"
+    },
+    "mailtrackIsDisabled": {
+        "message": "Mailtrack desativado"
+    },
+    "enableButtonText": {
+        "message": "ATIVAR"
+    },
+    "trackReplyDoTrack": {
+        "message": "Monitorar a resposta"
+    },
+    "trackReplySuccessMessage": {
+        "message": "Mailtrack irá notificá-lo após 24 horas se uma resposta não for recebida"
+    },
+    "browserSignUpPopupTitle": {
+        "message": "Registro requerido"
+    },
+    "browserSignUpPopupExplanation": {
+        "message":
+            "Mailtrack está instalado, mas é necessário se registrar para permitir o rastreamento de emails."
+    },
+    "signInWithGoogle": {
+        "message": "Registre-se no Google"
+    },
+    "forBrowser": {
+        "message": "para $browser$",
+        "placeholders": {
+            "browser": {
+                "content": "$1",
+                "example": "Chrome"
+            }
+        }
+    }
+}

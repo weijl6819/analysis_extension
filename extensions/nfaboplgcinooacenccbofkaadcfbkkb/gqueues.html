@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="/gqueuesChromeExt-min.css" />
+    </head>
+    <body>
+
+
+    <div id="gqChromePopup">
+        <div id="gqLoadingPanel" class="gq-panel"><div><span></span></div></div>
+
+        <div id="gqSetupPanel" class="gq-hidden gq-panel">
+            <div class="gq-chrome-setup-logo"><img width="183px" height="45px" src="images/gqLogoWhite.png" /></div>
+            <div class="gq-chrome-setup-unauthorized gq-hidden">Account unauthorized. Reconnect your account to continue.</div>
+            <div class="gq-chrome-setup-welcome">To start creating tasks first connect your account.</div>
+            <div class="gq-chrome-setup-btn"><button type='button' id='gqConnectBtn' class='gq-button'>Connect GQueues Account</button></div>
+        </div>
+
+        <div id="gqErrorPanel" class="gq-hidden gq-panel">
+            <div class="gq-chrome-setup-logo"><img width="183px" height="45px" src="images/gqLogoWhite.png" /></div>
+            <p>Error encountered during extension loading.</p>
+            <p><span id="gqErrorRefresh">Refresh</span> to try again.</p>
+        </div>
+
+        <div id="gqResponsePanel" class="gq-hidden gq-panel"><div></div></div>
+
+        <div id="gqContentPanel" class="gq-hidden gq-panel">
+
+            <div class="gq-ext-header"><a href="https://www.gqueues.com" target="_blank"><img width="110px" height="27px" src="images/gqLogo.png" /></a>Create Task</div>
+
+            <div id="gqContentWrapper">
+                <table id="gqChromeTopContent" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td width="20%"><label for="gqQueueDropdown">From web page</label></td>
+                            <td width="80%"><input type="checkbox" id="gqFromWeb" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gqQueueDropdown">Queue</label></td>
+                            <td>
+                                <select id="gqQueueDropdown"></select>
+                                <img id="gqRefreshBtn" src="images/refreshBtn.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="gqDescription">Description</label></td>
+                            <td><input id="gqDescription" type="text" maxlength="250" /></td>
+                        </tr>
+                        <tr>
+                            <td class="top-align"><label for="gqNotes">Notes</label></td>
+                            <td><textarea id="gqNotes"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="gq-label-tags"><label for="gqAddTag">Tags</label></td>
+                            <td id="gqTags" class="gq-value gq-i-tags-row"><div id="gqAddTag">+ add tag</div></td>
+                        </tr>
+                        <tr>
+                            <td class="gq-label-assign"><label for="gqAddAssignment">Assignments</label></td>
+                            <td id="gqAssignments" class="gq-value">
+                                <div id="gqAddAssignment">+ assign to</div>
+                                <table cellpadding="0" cellspacing="0"><tbody></tbody></table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" class='gq-date-heading'>
+                                <div id="gqDateReminder" class="gq-hidden"></div>
+                                <input type="checkbox" id="gqDateCheckbox" /><span id="gqDateCheckboxLabel">Due Date:</span><span id="gqDateSummary"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div id="gqDateTableRow" class="gq-hidden">
+                    <div id="gqCalendarDialogModern" class="">
+                        <div class="">
+
+                            <div class="gq-left-panel">
+                                <div id="gqDateInputMenu"></div>
+                                <div id="gqCalendar" class="gq-modern-calendar"></div>
+                            </div>
+
+                            <div class="gq-right-panel">
+                                <div id="gqTimeInputMenu"></div>
+                                <div id="gqDurationInputMenu"></div>
+                                <div id="gqReminderInputMenu"></div>
+                                <div id="gqReminderAmountInputMenu"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gq-clear gq-ext-btns">
+                    <div id="gqUserEmail"></div>
+                    <button id="gqCreateBtn" class="gq-button gq-button-two" tabindex="7">Create Task</button>
+                    <button id="gqCancelBtn" class="gq-button" tabindex="8">Cancel</button>
+                </div>
+
+                <div class="gq-clear"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="gqSpacer" class="gq-hidden"></div>
+    <div id="gqAssignFilter" class="gq-hidden">
+        <div class="gq-tf-content">
+            <table id="gqAssignTemplate"><tbody>
+                <tr class="gq-i-assignment" key="">
+                    <td class="gq-a-icon"></td>
+                    <td class="gq-a-name" title=""></td>
+                    <td class="gq-a-comment" config="{ name:'comments' }"></td>
+                </tr>
+            </tbody></table>
+            <div class='gq-tf-error gq-hidden'>Invalid email</div>
+            <div class="gq-tf-input"><input type="text" value="type email / add" /></div>
+            <ul>
+                <li class="gq-tf-create"></li>
+                <li class="gq-tf-separator"></li>
+                <li class="gq-tf-manage">Settings...</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="gqTagFilter" class="gq-hidden">
+            <div class="gq-tf-content">
+                <div id="gqTagTemplate">
+                    <div class="gq-i-tag"><span title="Show all items with this tag" class="gq-i-tag-content">{{ tag.name|escape }}</span><span title="Remove tag from this item" class="gq-i-tag-delete gq-invisible">X</span></div>   
+                </div>
+
+                <div class="gq-tf-input"><input type="text" value="create / search" /></div>
+                <ul>
+                    <li class="gq-tf-create"></li>
+                    <li class="gq-tf-separator"></li>
+                    <li class="gq-tf-manage">Manage tags</li>
+                </ul>
+            </div>
+    </div>
+
+    <div id="gqMessageBox" class="gq-dialog gq-hidden">
+        <div class="gq-dialog-content-container">
+            <div class="gq-dialog-title-bar">
+                <div class="gq-dialog-title">title</div>
+            </div>
+            <div class="gq-dialog-content">
+                <div class="gq-dialog-text">message</div>
+                <div class="gq-dialog-button-container">
+                    <button id="gqMessageBoxOkBtn" class="gq-button gq-button-two">OK</button>
+                    <button id="gqMessageBoxOk2Btn" class="gq-button"></button>
+                    <button id="gqMessageBoxCancelBtn" class="gq-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="gqModalBkgnd" class="gq-hidden"></div>
+
+
+    <script type="text/javascript" src="/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="/jqueryui-1.8.22.min.js"></script>
+    <script type="text/javascript" src="/gqueuesChromeExt-min.js"></script>
+
+    </body>
+</html>
+

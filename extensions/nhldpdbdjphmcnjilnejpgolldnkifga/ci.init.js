@@ -1,0 +1,1 @@
+window["framework"] = new AddonsFramework({"statUrl":"","version":"1.4.1","name":"GetPaidTo Cash Alert","description":"Alerts you to cashback and voucher codes when you’re shopping online plus notifications when a new survey becomes available.","url":"https://www.getpaidto.com","author":"GetPaidTo.com","updateUrl":"","AddonsFrameworkVersion":"1.3.4.20"});

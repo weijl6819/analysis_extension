@@ -1,0 +1,11 @@
+{
+   "appDesc": {
+      "message": "Poista Proxy. Selaa Internetiä nopealla ja rajoittamattomalla VPN-laitteella Chromelle. Avaa estetty sivusto, jossa on paras vapaa proxy virtuaaliseen yksityiseen verkkoon."
+   },
+   "appName": {
+      "message": "DotVPN: n paras ilmainen Chrome-verkko VPN"
+   },
+   "appShortName": {
+      "message": "DotVPN"
+   }
+}

@@ -1,0 +1,36 @@
+@import "~less/variables.less";
+@import "../../less/cleanslate.less";
+#__wikibuy__ .__wikibuy {
+.review-wrapper {
+      height: 108px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 15px;
+      cursor: pointer;
+      button {
+        font-weight: bold;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .review-wikibuy {
+        flex-direction: row-reverse;
+        display: flex;
+        justify-content: center;
+      }
+      .review-wikibuy svg {
+        width: 49px;
+        padding-left: 8px;
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+      .review-wikibuy svg path {}
+      .review-wikibuy svg:hover path,
+      .review-wikibuy svg:hover ~ svg path {
+        fill: #f9c319 !important;
+        stroke: #f9c319 !important;
+        cursor: pointer;
+      }
+    }
+  }

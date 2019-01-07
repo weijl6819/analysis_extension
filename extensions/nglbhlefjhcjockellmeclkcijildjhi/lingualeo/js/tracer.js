@@ -1,0 +1,1 @@
+var LinguaLeoTracer=function(){var d={},e=0,b={},f=(new Date).getTime()+"_";return{addAction:function(a,c,g){d[a]||(d[a]=[]);c={id:f+e++,name:c,data:g};a in b&&(c.groupId=b[a]);d.push(c);return this},lockSection:function(a){b[a]||(b[a]=(new Date).getTime());return this},unlockSection:function(a){b[a]&&delete b[a];return this}}};

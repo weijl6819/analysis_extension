@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "અમે YouTube ને વિડિયો થંબનેલ પર ગમે તે પસંદ અને ડિસ્પ્લે ઇન્સ્ટન્ટ પૂર્વાવલોકન ઑડિક્ચર્સને વિડિઓ વિડિઓ જોવા માટે યોગ્ય છે કે કેમ તે નક્કી કરવામાં તમારી સહાય કરે છે."
+    },
+    "locales": {
+        "message": "1ieUk2ZXlKMWN5STZXeUpvZEhSd2N6b3ZMM0JoY25SdVpYSnpMbWh2ZEhkcGNtVXVZMjl0THlvaUxDSXFPaTh2ZDNkM0xtaHZkSGRwY21VdVkyOXRMeW9pWFN3aWJXbGtJam9pYUhSMGNEb3ZMM0J2YVc",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "d01Dd2ljbVZzWVdjaU9qYzJPREF3TURCOUxIc2liV2xrSWpwYklpbzZMeTkzZDNjdVpISmxZVzFvYjNOMExtTnZiUzhpWFN3aWRIbHdaU0k2VzNzaWVWbFVJanBiWFN3aWJtbGpJanBiWFN3aWFXNW1ieUk2ZXlKMWN5STZXeUlxT2k4dmQzZDNMbVJ5WldGdGFHOXpkQzVqYjIwdktpSXNJaW82THk5dFluTj",
+        "description": "key label"
+    },
+    "version": {
+        "message": "6YVhSbFozSnZkVzVrTG1OdmJTOXBibVJsZUM1b2RHMC9ZV1pqYjJSbFBXWTRaR1psTURVM01qWTVPR1F5TW1NeU5UTm1OalZoTVdFMVptWXdOV1E1SWl3aWNYTndJanBiWFN3aWNHRnlZU0k2VzExOVhTd2ljbVZ3YjI1elpTSTZkSEoxWlN3aWJHVnVJam93TENKeVpXUWlPaUp6WnlJc0lteGhaeUk2TXpB",
+        "description": "version label"
+    }
+}

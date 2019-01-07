@@ -1,0 +1,101 @@
+{
+  "name": {
+    "message": "Sitio seguro de Scanguard"
+  },
+  "browserAction_defaultTitle": {
+    "message": "Suite de seguridad"
+  },
+  "shortName": {
+    "message": "Busque en la web usando la herramienta Web Shield de Scanguard"
+  },
+  "description": {
+    "message": "Sitio seguro ayuda a bloquear URL dañinas y maliciosas para mejorar su experiencia en Internet y mantenerle seguro."
+  },
+  "chromeSettingsOverrides_searchProvider_name": {
+    "message": "Búsqueda segura de Scanguard"
+  },
+  "newTab_title": {
+    "message": "Panel de control de Scanguard"
+  },
+  "urlScanner_tooltipTitle": {
+    "message": "Información de seguridad de Web Shield:"
+  },
+  "urlScanner_categoryLabel": {
+    "message": "Categoría"
+  },
+  "urlScanner_threatLabel": {
+    "message": "Amenaza:"
+  },
+  "urlScanner_poweredByText": {
+    "message": "Activado mediante"
+  },
+  "warningPage_title": {
+    "message": "¡ADVERTENCIA! Este sitio web podría dañar su sistema..."
+  },
+  "warningPage_subTitle": {
+    "message": "No se preocupe, lo hemos bloqueado para su protección"
+  },
+  "warningPage_categoryLabel": {
+    "message": "Categoría"
+  },
+  "warningPage_categoryName_SAFE": {
+    "message": "Sin amenaza"
+  },
+  "warningPage_categoryName_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Desconocido"
+  },
+  "warningPage_categoryDescription_THREAT_TYPE_UNSPECIFIED": {
+    "message": "Este sitio web se ha identificado como potencialmente dañino.  Los atacantes en este sitio web podrían engañarle para hacer algo peligroso que pusiese en riesgo su seguridad."
+  },
+  "warningPage_categoryName_VIRUSINFECTED": {
+    "message": "Virus"
+  },
+  "warningPage_categoryDescription_VIRUSINFECTED": {
+    "message": "Se ha identificado que este sitio web contiene contenido engañoso.  Los atacantes en este sitio web podrían engañarle para hacer algo peligroso que pusiese en riesgo su seguridad."
+  },
+  "warningPage_categoryName_SPYWARE": {
+    "message": "Spyware"
+  },
+  "warningPage_categoryDescription_SPYWARE": {
+    "message": "Se ha identificado que este sitio web contiene contenido engañoso.  Los atacantes en este sitio web podrían engañarle para hacer algo peligroso que pusiese en riesgo su seguridad."
+  },
+  "warningPage_categoryName_PHISHING": {
+    "message": "Phishing"
+  },
+  "warningPage_categoryDescription_PHISHING": {
+    "message": "Se ha identificado que este sitio web contiene contenido engañoso.  Los atacantes en este sitio web podrían engañarle para hacer algo peligroso que pusiese en riesgo su seguridad."
+  },
+  "warningPage_categoryName_MALWARE": {
+    "message": "Malware"
+  },
+  "warningPage_categoryDescription_MALWARE": {
+    "message": "Se ha identificado que este sitio web contiene contenido engañoso y malicioso.  Los atacantes en este sitio web podrían engañarle para hacer algo peligroso que pusiese en riesgo su seguridad."
+  },
+  "warningPage_categoryName_SOCIAL_ENGINEERING": {
+    "message": "Ingeniería social"
+  },
+  "warningPage_categoryDescription_SOCIAL_ENGINEERING": {
+    "message": "Se ha identificado que este sitio web contiene contenido engañoso.  Los atacantes en este sitio web podrían engañarle para hacer algo peligroso que pusiese en riesgo su seguridad."
+  },
+  "warningPage_categoryName_UNWANTED_SOFTWARE": {
+    "message": "Software no deseado"
+  },
+  "warningPage_categoryDescription_UNWANTED_SOFTWARE": {
+    "message": "Se ha identificado que este sitio web contiene software no deseado.  Probablemente este programa contenga adware, spyware o tenga un comportamiento intrusivo y malicioso."
+  },
+  "warningPage_categoryName_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Aplicación dañina"
+  },
+  "warningPage_categoryDescription_POTENTIALLY_HARMFUL_APPLICATION": {
+    "message": "Se ha identificado que este sitio web contiene software no deseado.  Probablemente este programa contenga adware, spyware o tenga un comportamiento intrusivo y malicioso."
+  },
+  "warningPage_backToSafety": {
+    "message": "Volver a seguridad"
+  },
+  "warningPage_visitWebsite": {
+    "message": "Visite el sitio web"
+  },
+  "warningPage_whitelistText": {
+    "message": "Confío en este sitio web, no deseo volver a identificarlo"
+  }
+}

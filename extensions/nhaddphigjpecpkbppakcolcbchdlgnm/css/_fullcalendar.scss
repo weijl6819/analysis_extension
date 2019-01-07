@@ -1,0 +1,69 @@
+#calendar {
+    width: 100%;
+    td {border-color: #f0f2f5!important;}
+}
+.fc-day-header { background: #fff !important; border-color: #f0f2f5!important; line-height: 4; }
+.fc-day { background: #fff !important; }
+.fc-agendaWeek-view .fc-day.fc-today { background: #f0f0f0 !important; }
+.fc-event {background: #4786ff !important;border-radius: 0 !important;line-height: 2;}
+.fc-event-dot {background-color: #4786ff;}
+.fc-header-toolbar {
+    button {
+        background: #f5f7fa !important;border-radius: 0 !important;border: 1px solid #dee1e6;
+        box-shadow: none !important; text-shadow: none !important;
+        padding: 0 20px !important;color: #575b5e !important;outline: none !important;
+    }
+    button.fc-state-active {background: #fff !important;}
+    .fc-center { color: #1b2437 !important; font-size: 12px; }
+}
+.fc-day-number { padding: 5px 7px 2px 2px !important; font-size: 18px; font-weight: 100; }
+.fc-agendaWeek-view {
+    .fc-day-grid.fc-unselectable { display: none; }
+    .fc-divider.fc-widget-header { display: none !important; }
+}
+.fc-agendaDay-view {
+    .fc-day-grid.fc-unselectable { display: none; }
+    .fc-divider.fc-widget-header { display: none !important; }
+}
+
+.fc-row .fc-bg {z-index: 5;}
+
+.fc-month-view .fc-day {
+    background: transparent !important;
+
+    &.fc-today {background: #f0f0f080 !important;}
+    &.a { background: #1bc26e78 !important; }
+    &:hover { transition: all .3s; cursor: pointer; }
+}
+
+.fc-widget-content {background: #fff;}
+
+#app.dark-theme {
+    background: #383838;
+    #calendar {
+        td {border-color: #1d1d1d!important;}
+    }
+    .fc-day-header { background: #313131 !important; border-color: #1d1d1d!important; color: #757575!important;}
+    .fc-day { background: #313131    !important; }
+    .fc-month-view .fc-day.fc-today { background: #2b2b2b !important; }
+    .fc-agendaWeek-view .fc-day.fc-today { background: #2b2b2b !important; }
+    .fc-event { background: #4786ff !important; border-radius: 0 !important; }
+    .fc-event-dot { background-color: #4786ff; }
+    .fc-header-toolbar button {
+        background: #2b2b2b !important; border: 1px solid #1d1d1d; color: #757575 !important;
+    }
+    .fc-day-number { color: #757575; }
+    .fc-header-toolbar {
+        button.fc-state-active { background: #383838 !important;}
+        .fc-center { color: #757575 !important; }
+    }
+    .fc-unthemed th { border-color: #1d1d1d; }
+    .fc-axis.fc-time.fc-widget-content { color: #757575; }
+    .fc-widget-header { background: #2b2b2b; color: #757575; border-color: #1d1d1d; }
+    .fc-unthemed .fc-list-item:hover td { background: #2b2b2b; }
+    .fc-list-item-time.fc-widget-content { color: #757575; }
+    .fc-listWeek-view { border-color: #1d1d1d; }
+    .fc-unthemed .fc-list-empty { background: #313131; color: #757575; }
+    .fc-unthemed .fc-popover {background-color: #383838; border-color: #1d1d1d; }
+    .fc-unthemed .fc-popover .fc-header {background: #313131;}
+}

@@ -1,0 +1,28 @@
+<form ng-submit="$ctrl.sendLink($ctrl.data.formData.name, $ctrl.data.formData.email)" id="auth-form" name="authForm" autocomplete="off">
+  <input type="text" name="name" ng-model="$ctrl.data.formData.name" placeholder="Name" required>
+  <input type="email" name="email" ng-model="$ctrl.data.formData.email" placeholder="Email" required email-validator>
+
+  <p vc-recaptcha key="'6LeCfyUTAAAAAPx6V1Fu36CxISlRWJp5q2tNTmms'" ng-model="$ctrl.data.formData.myRecaptchaResponse" ng-if="$ctrl.data.attempt > 4"></p>
+
+  <button class="button medium float-center full-width" type="submit" ng-disabled="authForm.$invalid">Sign up</button>
+
+  <p class="text-center" style="margin-bottom: 0.5rem;">
+    <strong>OR</strong>
+  </p>
+
+  <p style="margin-bottom: 0.5rem;">
+    Sign in with:
+    <a class="social-button social-twitter" id="twitter" ng-href="{{$ctrl.data.authURL}}" ng-click="$ctrl.checkOAuth()" target="_oauth"><i class="fa fa-twitter"></i></a>
+    <a class="social-button social-facebook" id="facebook" ng-href="{{$ctrl.data.facebookURL}}" ng-click="$ctrl.checkOAuth()" target="_oauth"><i class="fa fa-facebook"></i></a>
+  </p>
+
+  <p class="disclaimer" style="margin-bottom: 0.5rem; font-size: 0.5rem;">
+    <i>By signing up, you agree to our <a href="http://www.maybe.xyz/terms-of-service" id="ToS" target="_blank">Terms</a> and that you have read our <a id="privacy" href="http://www.maybe.xyz/privacy" target="_blank">Data Policy</a>, including our <a id="cookiePolicy" ui-sref="page.cookies" target="_blank">Cookie Use</a>.</i>
+  </p>
+
+  <p ng-if="$ctrl.data.message" class="callout alert" style="margin-bottom: 0.5rem;">{{$ctrl.data.message}}</p>
+
+  <div class="links-container">
+    <p style="margin-bottom: 0.5rem;">Already have an account? <a href="#" ui-sref="auth.signin">Log in</a></p>
+  </div>
+</form>

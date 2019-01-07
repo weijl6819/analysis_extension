@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="css/lib/materialize.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        #data {
+            width: 85%;
+            height: 85%;
+        }
+        
+        #captchaFound {
+            width: 85%;
+            max-height: 90%;
+        }
+        
+        .preloader-status {
+            position: absolute;
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        
+        span.badge.found {
+            font-weight: 300;
+            font-size: 0.8rem;
+            color: #fff;
+            background-color: #26a69a;
+            border-radius: 2px;
+            margin-left: 0px;
+            margin-right: 14px;
+            float: left;
+        }
+        
+        span.badge.found:after {
+            content: " found";
+        }
+        
+        span.badge.found-reviews:after {
+            content: " reviews found";
+        }
+        
+        span.badge.found-phrases:after {
+            content: " phrases found";
+        }
+        
+        .title {
+            padding-right: 120px;
+            display: inline-block;
+        }
+
+        ul.tabs {
+            overflow-x: hidden;
+            display: inline-block;
+            width: auto;
+        }
+
+        #saveAll, #exportAll {
+            float: right;
+            margin-top: 6px;
+        }
+
+        .collapsible-body {
+            padding: 0;
+        }
+
+        ul.collection {
+            border-radius: 0;
+        }
+
+        .collection .collection-item.active {
+            /*background-color: #26a69a;*/
+            color: inherit;
+        }
+
+        .collapsible-header {
+            border-bottom: none;
+        }
+
+        .collapsible-header.active {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .collapsible-header i {
+            /*width: inherit; 
+            font-size: inherit; */
+            line-height: inherit; 
+            display: inherit; 
+            float: inherit;
+            text-align: inherit;
+            margin-right: inherit; 
+        }
+
+        .yellow-text.accent-5 {
+            color: #ffc100 !important;
+        }
+
+        .yellow.accent-5 {
+            background-color: #ffc100 !important;
+        }
+        
+        .btn-normal {
+            color: rgb(255, 255, 255);
+            background-color: rgb(51, 122, 183)!important;
+            border-color: rgb(46, 109, 164)!important;
+        }
+        
+        #break {
+            height: 55px;
+        }
+        
+        #break .title {
+            margin-top: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="preloader-status">
+        </div>
+    </div>
+
+    <section>
+        <nav>
+            <div class="nav-wrapper grey lighten-5">
+                <a href="#" class="brand-logo center"><img src="images/icon128.png" class="brand-icon"></a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form class="col s12">
+                <div class="row">
+                    <!--<div class="row" style="text-align: center;">
+                        
+                    </div>-->
+                    <div class="col s12">
+                        <ul class="tabs">
+                            <li class="tab"><a class="active" href="#allReviews">All reviews</a></li>
+                            <li class="tab"><a href="#analysis">Analysis</a></li>
+                        </ul>
+                        <a id="saveAll" title="This will save all reviews to a CSV file" href="#!" class="saveAll btn btn-normal waves-effect waves-light red">
+                            <span><i class="material-icons left">save</i><span>Export reviews</span></span>
+                        </a>
+                        <a id="exportAll" title="This will save all keyword phrases below and the number of times they appear in reviews to a CSV file" href="#!" style="display: none;" class="btn btn-normal waves-effect waves-light green">
+                            <span><i class="material-icons left">save</i><span>Export phrases</span></span>
+                        </a>
+                    </div>
+                    <div id="allReviews" class="col s12">
+                        <ul class="collection">
+                        </ul>
+                    </div>
+                    <div id="analysis" class="col s12">
+                        <ul class="collection collapsible" data-collapsible="expandable">
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="dataNotFound" class="modal">
+            <div class="modal-content">
+                <h4>No Reviews</h4>
+                <p>Reviews not found. Please change search params and try again.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
+            </div>
+        </div>
+        <div id="phrasesNotFound" class="modal">
+            <div class="modal-content">
+                <h4>No Phrases</h4>
+                <p>Phrases not found. Please change search params and try again.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
+            </div>
+        </div>
+        <div id="data" class="modal">
+            <div class="modal-content">
+                <h4>Reviews</h4>
+                <div class="container">
+                    <div class="col s12">
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Dismiss</a>
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Copy</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/materialize.min.js"></script>
+    <script src="js/reviews.js"></script>
+</body>
+
+</html>

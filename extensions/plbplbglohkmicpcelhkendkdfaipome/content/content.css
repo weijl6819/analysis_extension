@@ -1,0 +1,379 @@
+@charset "UTF-8";
+.rf-addable-image {
+  outline: 2px solid #39B54A !important;
+  transition: outline .3s; }
+  .rf-addable-image:hover {
+    outline-width: 4px !important; }
+
+body {
+  -webkit-animation: bugfix infinite 1s; }
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0; }
+  to {
+    padding: 0; } }
+
+.rf-dialog *, .rf-dialog input, .rf-dialog div[contenteditable], .rf-dialog textarea, .rf-dialog select {
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: Helvetica, sans-serif !important;
+  font-size: 14px;
+  line-height: 21px; }
+
+.rf-dialog {
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  max-height: 100%;
+  height: auto;
+  right: 0;
+  overflow: auto;
+  background-color: #fff;
+  z-index: 1000000;
+  width: 400px; }
+  .rf-dialog .rf-material-input {
+    padding-top: 20px;
+    margin-bottom: 15px;
+    position: relative; }
+    .rf-dialog .rf-material-input label {
+      cursor: pointer;
+      position: absolute;
+      top: 28px;
+      left: 12px;
+      transition: all .3s;
+      color: #999;
+      font-weight: normal; }
+      .rf-dialog .rf-material-input label span {
+        font-size: 12px;
+        font-style: italic;
+        transition: opacity .3s; }
+    .rf-dialog .rf-material-input input, .rf-dialog .rf-material-input textarea, .rf-dialog .rf-material-input div[contenteditable] {
+      float: none;
+      display: block;
+      width: 100%;
+      height: 34px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857;
+      color: #555555;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #ccc;
+      border-radius: 0;
+      transition: border-bottom .3s;
+      margin: 0; }
+      .rf-dialog .rf-material-input input:focus, .rf-dialog .rf-material-input input.ng-not-empty, .rf-dialog .rf-material-input textarea:focus, .rf-dialog .rf-material-input textarea.ng-not-empty, .rf-dialog .rf-material-input div[contenteditable]:focus, .rf-dialog .rf-material-input div[contenteditable].ng-not-empty {
+        outline: none;
+        border-bottom-color: #607d8b; }
+      .rf-dialog .rf-material-input input:focus ~ label,
+      .rf-dialog .rf-material-input input.ng-not-empty ~ label, .rf-dialog .rf-material-input textarea:focus ~ label,
+      .rf-dialog .rf-material-input textarea.ng-not-empty ~ label, .rf-dialog .rf-material-input div[contenteditable]:focus ~ label,
+      .rf-dialog .rf-material-input div[contenteditable].ng-not-empty ~ label {
+        color: #607d8b;
+        top: 5px;
+        left: 0;
+        font-size: 10px; }
+      .rf-dialog .rf-material-input input:focus ~ label span,
+      .rf-dialog .rf-material-input input.ng-not-empty ~ label span, .rf-dialog .rf-material-input textarea:focus ~ label span,
+      .rf-dialog .rf-material-input textarea.ng-not-empty ~ label span, .rf-dialog .rf-material-input div[contenteditable]:focus ~ label span,
+      .rf-dialog .rf-material-input div[contenteditable].ng-not-empty ~ label span {
+        font-size: 10px; }
+      .rf-dialog .rf-material-input input.ng-not-empty ~ label span, .rf-dialog .rf-material-input textarea.ng-not-empty ~ label span, .rf-dialog .rf-material-input div[contenteditable].ng-not-empty ~ label span {
+        opacity: 0; }
+    .rf-dialog .rf-material-input div[contenteditable], .rf-dialog .rf-material-input textarea {
+      height: auto;
+      min-height: 34px; }
+    .rf-dialog .rf-material-input.has-error label {
+      color: #ff5722 !important; }
+    .rf-dialog .rf-material-input.has-error input, .rf-dialog .rf-material-input.has-error textarea, .rf-dialog .rf-material-input.has-error div[contenteditable] {
+      border-bottom-color: #ff5722 !important; }
+    .rf-dialog .rf-material-input-example {
+      position: absolute;
+      left: 12px;
+      bottom: -24px;
+      font-size: 12px;
+      color: #c2c2c2; }
+  .rf-dialog img {
+    max-height: 100%;
+    max-width: 100%; }
+  .rf-dialog hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid #777; }
+  .rf-dialog .btn-link:active:focus, .rf-dialog .btn-link:active, .rf-dialog .btn-link:focus {
+    outline: none; }
+  .rf-dialog.rf-minimized {
+    bottom: auto; }
+    .rf-dialog.rf-minimized .rf-panel-heading {
+      border-bottom: 0; }
+    .rf-dialog.rf-minimized .rf-panel-body, .rf-dialog.rf-minimized .rf-panel-footer {
+      height: 0;
+      padding: 0;
+      border: 0;
+      overflow: hidden; }
+  .rf-dialog .rf-info-message {
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 16px; }
+    .rf-dialog .rf-info-message img {
+      outline: 2px solid #39B54A; }
+  .rf-dialog .rf-panel {
+    box-shadow: rgba(0, 0, 0, 0.05) 0 1px 1px; }
+  .rf-dialog .rf-panel-body {
+    padding: 10px 15px; }
+  .rf-dialog .rf-panel-footer {
+    margin: 0 15px 10px; }
+  .rf-dialog .rf-panel-heading {
+    padding: 0 91px 0 15px;
+    height: 38px;
+    background-color: #222;
+    position: relative;
+    white-space: nowrap; }
+    .rf-dialog .rf-panel-heading .rf-heading-title {
+      line-height: 38px;
+      color: #fff;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .rf-dialog .rf-panel-heading .rf-controls {
+      font-size: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 91px; }
+      .rf-dialog .rf-panel-heading .rf-controls:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 8px;
+        height: 20px;
+        border-left: 1px solid #fff; }
+      .rf-dialog .rf-panel-heading .rf-controls span {
+        color: #fff;
+        line-height: 38px;
+        font-size: 14px;
+        text-align: center;
+        width: 33%;
+        display: inline-block;
+        cursor: pointer; }
+        .rf-dialog .rf-panel-heading .rf-controls span.rf-controls-move {
+          cursor: move; }
+  .rf-dialog button.rf-btn {
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    line-height: 36px;
+    padding: 0 6px;
+    border-radius: 2px;
+    background-color: transparent;
+    text-transform: uppercase;
+    min-width: 88px; }
+    .rf-dialog button.rf-btn:focus {
+      outline: none; }
+    .rf-dialog button.rf-btn-block {
+      width: 100%;
+      display: block; }
+    .rf-dialog button.rf-btn-xs {
+      font-size: 12px;
+      line-height: 22px;
+      text-transform: none; }
+    .rf-dialog button.rf-btn-default {
+      color: #607d8b;
+      background-color: #fff; }
+      .rf-dialog button.rf-btn-default:hover {
+        background-color: rgba(158, 158, 158, 0.2); }
+      .rf-dialog button.rf-btn-default[disabled]:hover {
+        background-color: #fff; }
+    .rf-dialog button.rf-btn-primary {
+      color: #fff;
+      background-color: #607d8b;
+      border-color: #566f7c; }
+      .rf-dialog button.rf-btn-primary:hover {
+        background-color: #4b626d;
+        border-color: #3d4f58; }
+      .rf-dialog button.rf-btn-primary[disabled]:hover {
+        background-color: #607d8b;
+        border-color: #566f7c; }
+    .rf-dialog button.rf-btn-info {
+      color: #fff;
+      background-color: #5bc0de;
+      border-color: #46b8da; }
+      .rf-dialog button.rf-btn-info:hover {
+        background-color: #31b0d5;
+        border-color: #269abc; }
+      .rf-dialog button.rf-btn-info[disabled]:hover {
+        background-color: #5bc0de;
+        border-color: #46b8da; }
+    .rf-dialog button.rf-btn-warning {
+      color: #000;
+      background-color: #FFAB40;
+      border-color: #ffa027; }
+      .rf-dialog button.rf-btn-warning:hover {
+        background-color: #ff950d;
+        border-color: #e88200; }
+      .rf-dialog button.rf-btn-warning[disabled]:hover {
+        background-color: #FFAB40;
+        border-color: #ffa027; }
+    .rf-dialog button.rf-btn-danger {
+      color: #fff;
+      background-color: #ff5722;
+      border-color: #ff4409; }
+      .rf-dialog button.rf-btn-danger:hover {
+        background-color: #ee3900;
+        border-color: #ca3100; }
+      .rf-dialog button.rf-btn-danger[disabled]:hover {
+        background-color: #ff5722;
+        border-color: #ff4409; }
+    .rf-dialog button.rf-btn-link {
+      color: #92d050;
+      border-color: transparent; }
+      .rf-dialog button.rf-btn-link:hover, .rf-dialog button.rf-btn-link:focus {
+        color: #39b54a;
+        background-color: transparent;
+        text-decoration: none; }
+    .rf-dialog button.rf-btn[disabled] {
+      cursor: not-allowed;
+      opacity: 0.65;
+      box-shadow: none; }
+    .rf-dialog button.rf-btn.rf-btn-private {
+      margin-bottom: 10px; }
+  .rf-dialog img.rf-thumbnail {
+    max-height: 74px;
+    margin-bottom: 0; }
+  .rf-dialog-caption {
+    max-height: 40px;
+    overflow: hidden;
+    margin-bottom: 10px; }
+  .rf-dialog .rf-fig-list-item {
+    display: inline-block;
+    padding: 10px; }
+    .rf-dialog .rf-fig-list-item img {
+      border: 2px solid transparent;
+      cursor: pointer;
+      max-width: 60px;
+      max-height: 60px; }
+      .rf-dialog .rf-fig-list-item img.rf-fig-list-item-current {
+        border-color: #5cb85c; }
+  .rf-dialog .rf-dialog-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .rf-dialog .rf-dialog-popup-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(33, 33, 33, 0.48); }
+    .rf-dialog .rf-dialog-popup-window {
+      border-radius: 4px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);
+      width: 400px;
+      background-color: #fff; }
+    .rf-dialog .rf-dialog-popup-content {
+      padding: 24px; }
+    .rf-dialog .rf-dialog-popup-title {
+      font-weight: bold;
+      font-size: 19px;
+      margin-bottom: 18px; }
+      .rf-dialog .rf-dialog-popup-title img {
+        height: 30px;
+        vertical-align: middle;
+        margin-right: 10px; }
+    .rf-dialog .rf-dialog-popup-buttons {
+      text-align: right;
+      padding: 0 8px 0 16px; }
+      .rf-dialog .rf-dialog-popup-buttons .rf-btn {
+        margin: 8px 0 8px 8px; }
+  .rf-dialog .rf-container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .rf-dialog .rf-container-fluid:before, .rf-dialog .rf-container-fluid:after {
+      content: ' ';
+      display: table; }
+    .rf-dialog .rf-container-fluid:after {
+      clear: both; }
+  .rf-dialog .rf-row {
+    margin-left: -15px;
+    margin-right: -15px; }
+    .rf-dialog .rf-row:before, .rf-dialog .rf-row:after {
+      content: ' ';
+      display: table; }
+    .rf-dialog .rf-row:after {
+      clear: both; }
+    .rf-dialog .rf-row > * {
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+      float: left; }
+    .rf-dialog .rf-row .rf-col-4 {
+      width: 33.3333%; }
+    .rf-dialog .rf-row .rf-col-6 {
+      width: 50%; }
+    .rf-dialog .rf-row .rf-col-8 {
+      width: 66.6667%; }
+  .rf-dialog .rf-create-buttons .rf-btn-warning {
+    width: 33%; }
+  .rf-dialog .rf-create-buttons .rf-btn-primary {
+    width: 65%; }
+  .rf-dialog .rf-max-figures-exceeded {
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ff4409; }
+
+.rf-image-popup {
+  position: fixed;
+  z-index: 1100000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  opacity: 0;
+  transition: opacity .5s; }
+  .rf-image-popup:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+  .rf-image-popup.rf-fade-in {
+    opacity: 1; }
+  .rf-image-popup .rf-image-wrp {
+    position: relative;
+    display: inline-block; }
+    .rf-image-popup .rf-image-wrp:after {
+      cursor: pointer;
+      content: '✖';
+      position: absolute;
+      top: -34px;
+      right: -34px;
+      color: #fff;
+      font-size: 20px;
+      line-height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: #607d8b; }
+    .rf-image-popup .rf-image-wrp img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      border: 1px solid #DDD; }

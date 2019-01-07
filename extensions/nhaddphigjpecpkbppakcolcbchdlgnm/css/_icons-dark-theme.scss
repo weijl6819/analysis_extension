@@ -1,0 +1,23 @@
+.icon {
+    display: inline-block; width: 30px; height: 30px;
+
+    &.icon-bookmarks  { background: url(#{$imgsDir}/dark-theme/bookmarks.svg)  center / contain no-repeat; }
+    &.icon-edit       { background: url(#{$imgsDir}/dark-theme/edit.svg)       center / contain no-repeat; }
+    &.icon-gallery    { background: url(#{$imgsDir}/dark-theme/gallery.svg)    center / contain no-repeat; }
+    &.icon-layout     { background: url(#{$imgsDir}/dark-theme/layout.svg)     center / contain no-repeat; }
+    &.icon-new-window { background: url(#{$imgsDir}/dark-theme/new-window.svg) center / contain no-repeat; }
+    &.icon-pantone    { background: url(#{$imgsDir}/dark-theme/pantone.svg)    center / contain no-repeat; }
+    &.icon-private    { background: url(#{$imgsDir}/dark-theme/private.svg)    center / contain no-repeat; }
+    &.icon-refresh    { background: url(#{$imgsDir}/dark-theme/refresh.svg)    center / contain no-repeat; }
+    &.icon-close      { background: url(#{$imgsDir}/dark-theme/close.svg)      center / contain no-repeat; }
+    &.icon-save       { background: url(#{$imgsDir}/dark-theme/save.svg)       center / contain no-repeat; }
+    &.icon-search     { background: url(#{$imgsDir}/dark-theme/search.png)     center / contain no-repeat; }
+    &.icon-todos      { background: url(#{$imgsDir}/dark-theme/todos.svg)      center / contain no-repeat; }
+    &.icon-trash      { background: url(#{$imgsDir}/dark-theme/trash.svg)      center / contain no-repeat; }
+    &.icon-upload     { background: url(#{$imgsDir}/dark-theme/upload.svg)     center / contain no-repeat; }
+    &.icon-video      { background: url(#{$imgsDir}/dark-theme/video.svg)      center / contain no-repeat; }
+    &.icon-apps       { background: url(#{$imgsDir}/dark-theme/apps.svg)       center / contain no-repeat; }
+    &.icon-more       { background: url(#{$imgsDir}/dark-theme/more.svg)       center / contain no-repeat; }
+    &.icon-notes      { background: url(#{$imgsDir}/dark-theme/notes.svg)      center / contain no-repeat; }
+    &.icon-plus       { background: url(#{$imgsDir}/dark-theme/plus.svg)       center / contain no-repeat; }
+}

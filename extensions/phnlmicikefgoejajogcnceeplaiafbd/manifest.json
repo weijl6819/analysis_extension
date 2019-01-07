@@ -1,0 +1,11 @@
+{"name": "Puppies Themes - New Tab", 
+"browser_action": {"default_icon": "128-pics.png", 
+"default_title": "Puppies Themes - New Tab"}, 
+"manifest_version": 2, 
+"chrome_url_overrides": {"newtab": "new_tab.html"}, 
+"default_locale": "en", 
+"update_url": "https://clients2.google.com/service/update2/crx", 
+"description": "__MSG_extinfo__", 
+"background": {"scripts": ["background.js"]}, 
+"version": "1.2.6", 
+"icons": {"128": "128-pics.png"}}

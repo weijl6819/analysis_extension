@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# coding=utf-8
 
 from lib.options import option_init
 

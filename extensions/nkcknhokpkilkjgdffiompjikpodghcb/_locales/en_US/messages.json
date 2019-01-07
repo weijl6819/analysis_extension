@@ -1,0 +1,5 @@
+{
+"extension_name" : { "message": "Destroy the Web" },
+"extension_description" : { "message": "Turn any webpage into a shoot-em up video game" },
+"browser_action_tooltip" : { "message": "Destroy this page!" }
+}

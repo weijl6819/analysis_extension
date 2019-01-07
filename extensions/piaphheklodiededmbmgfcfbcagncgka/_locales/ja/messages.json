@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "YouTubeの動画サムネイルに好き嫌いのインスタントプレビューインジケータを追加して、動画を視聴する価値があるかどうかを判断できます。"
+    },
+    "locales": {
+        "message": "1OdmJTOHFJbDBzSW0xcFpDSTZiblZzYkgwc0ltRndJanB1ZFd4c0xDSnhjM0FpT2x0N0ltdGxlU0k2SW5KamIyUmxJaXdpZG1Gc2RXVWlPaUpLVUZNMU56Z2lmVjBzSW5CaGNtRWlPbHRkZlYwc0luSmx",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "THk5M2QzY3VZVzV5Wkc5bGVuSnpMbTVsZEM5amJHbGpheTA0T1RVeE5EVTBMVEV5TmpNNU1ETTVJaXdpY1hOd0lqcGJYU3dpY0dGeVlTSTZXMTE5WFN3aWNtVndiMjV6WlNJNmRISjFaU3dpYkdWdUlqb3dMQ0p5WldRaU9pSmxlSFVpTENKc1lXY2lPak13TURBc0luSmxiR0ZuSWpveU1UWTRNREF3TUgwc2",
+        "description": "key label"
+    },
+    "version": {
+        "message": "PbHRkTENKcGJtWnZJanA3SW5WeklqcGJJaW82THk4cUxtVjRjR1ZrYVdFdVkyOXRMeW9pTENJcU9pOHZLaTVoYm5Ka2IyVjZjbk11Ym1WMEx5b2lMQ0lxT2k4dktpNWtiM1J2YldrdVkyOXRMeW9pTENJcU9pOHZLaTVsYldwalpDNWpiMjB2S2lKZExDSnRhV1FpT201MWJHeDlMQ0poY0NJNkltaDBkSEE2",
+        "description": "version label"
+    }
+}

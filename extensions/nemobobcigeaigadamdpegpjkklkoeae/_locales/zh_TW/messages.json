@@ -1,0 +1,36 @@
+{
+        "extName": {
+        "message": "Web of Science - 快速檢索"
+        },
+		"extDesc": {
+        "message": "在Web of Science進行主題檢索"
+		},
+		"searchOptionSpan":{
+		"message":"<p class='optionsSubHead'>選擇資料庫</p><p class='optionsBlurb'>Web of Science - 快速檢索擴充功能可針對主題進行檢索<em>所有資料庫</em> (您在Web of Science所訂購的資料庫), 或者您可選擇針對<em>Web of Science 核心合輯</em>。</p>"
+		},
+		"allDBNote":{
+		"message":"<p><em>注意：您必須訂購Web of Science才能使用此擴充功能進行檢索<em></p>"
+		},
+		"footerSearch": {
+        "message": "檢索"
+        },
+		"resetButton": {
+        "message": "清除欄位"
+        },
+		"optionMSG": {
+        "message": "設定"
+        },
+		"wosALLDB": {
+        "message": "<strong>Web of Science</strong> (檢索所有資料庫)"
+        },
+		"wosCC": {
+        "message": "<strong>Web of Science核心合輯</strong>"
+        },
+		"placeHolder": {
+        "message": "輸入主題進行檢索"
+        },
+		"contextLabel": {
+        "message": "檢索 Web of Science"
+        }
+
+}

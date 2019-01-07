@@ -1,0 +1,496 @@
+{
+    "version": "6.4.0",
+    "hash": "KSbRIBPPzTrDXSzEvYTRefaKYuu8b9VU5TBu0xvYHLMQqOGgBMBzEHIQpcVZw4Yq",
+    "ruleset": {
+        "popUpAlways": 1209600000
+    },
+    "feedback": {
+        "email": "feedback@mailtrack.io",
+        "premium": "premium@mailtrack.io"
+    },
+    "composer": {
+        "body_text_area": {
+            "trackedPixel": {
+                "regex": "<img\\s[^>]*?src\\s*=\\s*['\"](https:\/\/[a-zA-Z0-9]+\\.googleusercontent\\.com\/proxy\/[a-zA-Z0-9=_-]+#https:\/\/mailtrack.io\/trace\/mail\/[0-9a-f]{40}(?:\\d*\\.png|\\.png\\?u=\\d+(?:&[^&='\"\\s\/\\?]+=?[^&='\"\\s\/\\?]*)*))['\"][^>]*?>"
+            },
+            "deadPixel": {
+                "regex": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            },
+            "undoPixel": {
+                "regex": "(<img\\s[^>]*?src\\s*=\\s*['\"]https:\/\/mailtrack.io\/trace\/mail\/[0-9a-f]{40}(?:\\d+\\.png|\\.png\\?u=\\d+(?:&[^&='\"\\s\/\\?]+=?[^&='\"\\s\/\\?]*)*)['\"][^>]*?>)"
+            },
+            "signature": {
+                "logo_image": "https://s3-eu-west-1.amazonaws.com/mailtrack-crx/icon-signature.png",
+                "logo_url": "https://mailtrack.io/",
+                "update_url": "https://mailtrack.io/settings/update/signature"
+           },
+            "textLinks": {
+                "regex": "https?:\/\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,}\\.[a-z]{2,}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)"
+            }
+        },
+        "addTrack": {
+            "url": "https://mailtrack.io/trace/async_add/",
+            "timeout": 9000,
+            "maxRetry": 3
+        },
+        "pixel": {
+            "width": "0",
+            "height": "0",
+            "class": "mailtrack-img"
+        }
+    },
+    "list": {
+        "forceUpdate": 300000,
+        "recipients": {
+            "search_class": ".yW"
+        }
+    },
+    "__google": {
+        "iframe": {
+            "terms": {
+                "src": "https://mailtrack.io/<%- language %>/gmail/terms",
+                "postUrl": "https://mailtrack.io/terms/accept"
+            }
+        },
+        "intercom": {
+            "activate": true
+        },
+        "composer": {
+            "body_text_area": {
+                "gmail_extra" : {
+                    "links" : {
+                        "search_class": ".gmail_signature a[href^=\"http\"]"
+                    }
+                },
+                "gmail_quote" : {
+                    "search_class": ".gmail_quote"
+                },
+                "trimmed_content": {
+                    "search_class": ".aH1"
+                }
+            }
+        },
+        "__mail": {
+            "activate":  true,
+            "namespace": "mt-gmail",
+            "name": {
+                "search_class": ".gb_pb"
+            },
+            "signatureMessage": {
+                "upgrade": {
+                    "src": "https://mailtrack.io/<%- language %>/gmail/upgrade?userId="
+                }
+            },
+            "iframe": {
+                "upgrade": {
+                    "src": "https://mailtrack.io/<%- language %>/gmail/upgrade?userId="
+                }
+            },
+            "attachments": {
+                "selector": ".GQ .GM",
+                "items": [
+                    {
+                        "selector": "input[name=attach]",
+                        "value": "value",
+                        "regex": "[0-9a-fA-F]{16,}"
+                    },
+                    {
+                        "selector": "a",
+                        "value": "href",
+                        "regex": "[0-9a-fA-F]{16,}"
+                    }
+                ]
+            },
+            "incompatibility": {
+                "extensions": {
+                    "activate": true,
+                    "items": [
+                        {
+                            "name": "Mixmax",
+                            "type": "selector",
+                            "searchClass": ".mixmax-is-gmail"
+                        }
+                    ]
+                },
+                "labs": {
+                    "activate": false,
+                    "items": []
+                }
+            },
+            "composer": {
+                "dialog": {
+                    "search_class": ".aoP:not([data-mt-composer])",
+                    "compose" : {
+                        "className": "aoP"
+                    },
+                    "subjectSet": {
+                        "className": "aJQ"
+                    }
+                },
+                "plain_text": {
+                    "search_class": "input[name=\"ishtml\"]"
+                },
+                "compose_id": {
+                    "search_class": "input[name=\"composeid\"]"
+                },
+                "recipients": {
+                    "to": {
+                        "search_class": "input[name=\"to\"]",
+                        "new" : {
+                            "search_class": "textarea[name=\"to\"]"
+                        }
+                    },
+                    "cc": {
+                        "search_class": "input[name=\"cc\"]",
+                        "button": {
+                            "search_class": ".pE"
+                        },
+                        "new" : {
+                            "search_class": "textarea[name=\"cc\"]"
+                        }
+                    },
+                    "bcc": {
+                        "search_class": "input[name=\"bcc\"]",
+                        "button": {
+                            "search_class": ".pB"
+                        },
+                        "new" : {
+                            "search_class": "textarea[name=\"bcc\"]"
+                        }
+                    }
+                },
+                "send_button": {
+                    "search_class": ".aoO"
+                },
+                "send_and_archive_button": {
+                    "search_class": ".Uo"
+                },
+                "body_text_area": {
+                    "search_class": ".Am"
+                },
+                "trimmed_content": {
+                    "search_class": "input[name=uet]",
+                    "signature": {
+                        "regex": "(?:href=\"(https?://.*?)\")"
+                    }
+                },
+                "subject": {
+                    "search_class": "input[name=\"subjectbox\"]"
+                },
+                "reply": {
+                    "class": "HM"
+                },
+                "toolbar": {
+                    "colgroup": {
+                        "search_class": ".IZ > colgroup"
+                    },
+                    "sendButton" : {
+                        "search_class": ".Up"
+                    },
+                    "tools": {
+                        "selected_class": "J-Z-I-Jp",
+                        "hover_class": "J-Z-I-JW"
+                    },
+                    "fontBubbleArrow" : {
+                        "search_class": ".aA4"
+                    }
+                },
+                "popup": {
+                    "url": "https://mail.google.com"
+                },
+                "ticker": {
+                "search_class": ".aWQ > span"
+                },
+                "remove_button_popup_link": {
+                    "search_class": ".Lf.a5s"
+                }
+            },
+            "thread": {
+                "viewChange": {
+                    "noSplit": {
+                        "search_class": "[role=\"main\"]"
+                    },
+                    "split": {
+                        "className": "if"
+                    }
+                },
+                "thread_mails_wrapper": {
+                    "search_class": ".Bk"
+                },
+                "subject": {
+                    "search_class": ".hP"
+                },
+                "link_search": {
+                    "search_class": "td.Bu"
+                },
+                "proxy": {
+                    "timeout": 10000
+                }
+            },
+            "alert": {
+                "search_class": ".b8.UC"
+            },
+            "compose": {
+                "search_class": ".T-I.J-J5-Ji.T-I-KE.L3"
+            },
+            "navigation": {
+                "search_class": "[role=\"navigation\"]",
+                "sentMail": {
+                    "search_class": "a[href$=\"#sent\"]"
+                }
+            },
+            "undo": {
+                "search_class": "#link_undo"
+            }
+        },
+        "__inbox": {
+            "activate":  true,
+            "__edge": {
+                "activate": false
+            },
+            "namespace": "mt-inbox",
+            "signatureMessage": {
+                "upgrade": {
+                    "src": "https://mailtrack.io/<%- language %>/inbox/upgrade?userId="
+                }
+            },
+            "iframe": {
+                "upgrade": {
+                    "src": "https://mailtrack.io/<%- language %>/inbox/upgrade?userId="
+                }
+            },
+            "composer": {
+                "dialog": {
+                    "search_class": ".be[role=\"dialog\"]:not([data-mt-composer]), .vl.br:not([data-mt-composer])",
+                    "compose" : {
+                        "className": "be",
+                        "attributeName": "jstid"
+                    },
+                    "reply" : {
+                        "classNames": ["vl", "br"],
+                        "attributeName": "class"
+                    }
+                },
+                "recipients": {
+                    "name": {
+                        "search_class": ".sA"
+                    },
+                    "to": {
+                        "search_class": ".Fv .l1",
+                        "new" : {
+                            "search_class": ".Fv input"
+                        }
+                    },
+                    "cc": {
+                        "search_class": ".fD .l1",
+                        "button": {
+                            "search_class": "[jsaction$=\".toggle_cc_bcc\"]"
+                        },
+                        "new" : {
+                            "search_class": ".fD input"
+                        }
+                    },
+                    "bcc": {
+                        "search_class": ".fx .l1",
+                        "button": {
+                            "search_class": "[jsaction$=\".toggle_cc_bcc\"]"
+                        },
+                        "new" : {
+                            "search_class": ".fx input"
+                        }
+                    },
+                    "reply": {
+                        "search_class": ".kX [email]"
+                    }
+                },
+                "send_button": {
+                    "search_class": "[jsaction$=\".send\"][role=\"button\"], .sY[role=\"button\"]"
+                },
+                "body_text_area": {
+                    "search_class": "div[id^=\"aR-\"], div[id^=\"S2lLHf-\"]"
+                },
+                "trimmed_content": {
+                    "search_class": "input[name=uet]",
+                    "signature": {
+                        "regex": "(?:href=\"(https?://.*?)\")"
+                    }
+                },
+                "subject": {
+                    "search_class": ".iO input[type=\"text\"]",
+                    "reply": {
+                        "search_class": ".eo span"
+                    }
+                },
+                "reply": {
+                    "class": "vl"
+                },
+                "toolbar": {
+                    "sendButton" : {
+                        "search_class": "[role=\"button\"][jsaction$=\".send\"]"
+                    },
+                    "tools": {
+                        "selected_class": "g-W-K-AA"
+                    },
+                    "attach": {
+                        "search_class": "[jsaction$=\".attach\"]",
+                        "offestLeft": "168px"
+                    },
+                    "popout": {
+                        "search_class": "[jsaction$=\".quick_compose_popout_mole\"]"
+                    },
+                    "dustbin": {
+                        "search_class": "[jsaction$=\".discard_draft\"]"
+                    },
+                    "dropdownMenu": {
+                        "search_class": ".dF"
+                    },
+                    "dropdownOptions": {
+                        "search_class": ".g-aq.b0"
+                    }
+                },
+                "remove_button_popup_link": {
+                    "search_class": ".oE"
+                }
+            },
+            "list": {
+                "search_class": "[data-item-id*=\"#thread-\"] .jS:not(.mt-list) .rw",
+                "item" : {
+                    "wrapper" : {
+                      "search_class": ".jS"
+                    },
+                    "subject" : {
+                      "search_class": ".bg"
+                    },
+                    "recipients": {
+                        "search_class": ".rw",
+                        "email": {
+                            "search_class": ".rw span[email]"
+                        },
+                        "ellipsis": {
+                            "search_class": ".rw",
+                            "formats" : [" .. ", "..."]
+                        }
+                    }
+                }
+            },
+            "thread": {
+                "search_class": "[data-msg-id*=\"#msg-\"]:not(.mt-thread) .m4 .fX",
+                "subject": {
+                    "search_class": ".eo"
+                },
+                "link_search": {
+                    "search_class": "div.aY"
+                },
+                "item" : {
+                    "inboxId": {
+                        "regex": "^.*?#msg-(f|a):r?-?(\\d+)$"
+                    },
+                    "time": {
+                        "search_class": ".qO"
+                    },
+                    "sender": {
+                        "search_class": ".fX[email]"
+                    }
+                }
+            },
+            "compose": {
+                "search_class": ".jB [role=\"menuitem\"]"
+            },
+            "navigation": {
+                "search_class": "nav.fv",
+                "sentMail": {
+                    "search_class": ".MIsA5 span"
+                }
+            },
+            "undo": {
+                "search_class": "[jsaction=\"global.undo\"]"
+            }
+        }
+    },
+    "__background": {
+        "notifications": {
+            "activate": true,
+            "push": {
+                "url": "wss://ws.mailtrack.io:8282"
+            },
+            "disableNotifications": {
+                "url": "https://mailtrack.io/notifications/disable?",
+                "status": 200
+            },
+            "disableConversation": {
+                "url": "https://mailtrack.io/notifications/disable?type=desktop&",
+                "status": 200
+            },
+            "create": {
+                "type": "basic",
+                "iconUrl": {
+                    "open": "images/icon-notification-open.png",
+                    "click": "images/icon-notification-click.png"
+                },
+                "buttons": {
+                    "iconUrl": "images/icon-notification-mute.png"
+                }
+            }
+        },
+        "menuOptions": {
+            "activate": true,
+            "options": [
+                {
+                  "activate": true,
+                  "title": "settingsOption_dashboard",
+                  "href": "https://mailtrack.io/reauth?login_hint=<%- email %>&url=https%3A%2F%2Fmailtrack.io%2Fen%2Fdashboard%2F"
+                },
+                {
+                  "activate": true,
+                  "title": "settingsOption_settings",
+                  "href": "https://mailtrack.io/reauth?login_hint=<%- email %>&url=https%3A%2F%2Fmailtrack.io%2Fen%2Fdashboard%2Fsettings"
+                },
+                {
+                  "activate": true,
+                  "title": "settingsOption_account",
+                  "href": "https://mailtrack.io/reauth?login_hint=<%- email %>&url=https%3A%2F%2Fmailtrack.io%2Fen%2Fdashboard%2Faccount"
+                },
+                {
+                  "activate": true,
+                  "title": "settingsOption_upgrade",
+                  "href": "https://mailtrack.io/reauth?login_hint=<%- email %>&url=https%3A%2F%2Fmailtrack.io%2Fen%2Fdashboard%2Fupgrade%3Futm_source=gmail%26utm_medium=menu%26utm_campaign=updatemenu"
+                },
+                {
+                  "activate": true,
+                  "title": "settingsOption_faqs",
+                  "href": "https://mailtrack.desk.com"
+                }
+            ]
+        },
+        "__opera": {
+            "notifications": {
+                "activate": false
+            }
+        },
+        "__firefox": {
+            "notifications": {
+                "activate": false
+            },
+            "menuOptions": {
+                "activate": false
+            }
+        },
+        "__edge": {
+            "notifications": {
+                "activate": false
+            },
+            "menuOptions": {
+                "activate": false
+            }
+        }
+    },
+    "pattern": {
+        "pixel": "https://mailtrack.io/trace/mail/*",
+        "googleProxy": "*://*.googleusercontent.com/proxy/*"
+    },
+    "remote_configuration": "https://s3-eu-west-1.amazonaws.com/mailtrack-crx/configuration_<%- version %>.json",
+    "linkUrl": "https://mailtrack.io/trace/link/",
+    "pixelUrl": "https://mailtrack.io/trace/mail/",
+    "installUrl": "https://mailtrack.io/install",
+    "reauthorizeUrl": "https://mailtrack.io/connect/reauthorize/google?login_hint="
+}

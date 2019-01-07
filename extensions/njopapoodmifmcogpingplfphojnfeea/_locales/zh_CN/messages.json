@@ -1,0 +1,1031 @@
+{
+  "appName": {
+    "message": "AMZScout Pro"
+  },
+  "appDesc": {
+    "message": "AMZScout扩展将帮助您根据实际数据做出选择利基的决定，而不是直觉。"
+  },
+  "extendTrial": {
+    "message": "延长试用期"
+  },
+  "extendTrialMessage": {
+    "message": "获得长达2个月免费"
+  },
+  "pageLoading": {
+    "message": "请等待页面加载"
+  },
+  "number": {
+    "message": "#"
+  },
+  "in": {
+    "message": "在"
+  },
+  "results": {
+    "message": "结果"
+  },
+  "avgSalesRank": {
+    "message": "平均销量排名"
+  },
+  "avgSalesTrend": {
+    "message": "平均銷售趨勢"
+  },
+  "opScore": {
+    "message": "机会得分"
+  },
+  "opScoreDisabled": {
+    "message": "潜在分数仅在搜索页面上可用"
+  },
+  "avgMonthlyRevenue": {
+    "message": "平均月销量"
+  },
+  "avgMonthlySales": {
+    "message": "平均每月销售额"
+  },
+  "variants": {
+    "message": "变体"
+  },
+  "variantsTooltip": {
+    "message": "商品变体数目"
+  },
+  "avgPrice": {
+    "message": "平均价格"
+  },
+  "avgMarginImpact": {
+    "message": "平均净利率"
+  },
+  "avgReviews": {
+    "message": "平均评论数量"
+  },
+  "rank" : {
+    "message": "排名"
+  },
+  "sales" : {
+    "message": "出售"
+  },
+  "bsr30Tooltip": {
+    "message": "平均畅销响了最近30天"
+  },
+  "price30": {
+    "message": "价格30"
+  },
+  "price30Tooltip": {
+    "message": "平均价格为最近30天"
+  },
+  "reviewsCount" : {
+    "message": "评论数量"
+  },
+  "productName": {
+    "message": "商品名称"
+  },
+  "brand": {
+    "message": "品牌"
+  },
+  "price": {
+    "message": "价格"
+  },
+  "minPrice": {
+    "message": "最低售价"
+  },
+  "net": {
+    "message": "净利"
+  },
+  "fbaFees": {
+    "message": "FBA费用"
+  },
+  "lqs": {
+    "message": "LQS"
+  },
+  "lqsTooltip": {
+    "message": "Listing质量得分"
+  },
+  "category": {
+    "message": "品类"
+  },
+  "sellers": {
+    "message": "卖家"
+  },
+  "sellersTooltip": {
+    "message": "卖家数量"
+  },
+  "enablePS": {
+    "message": "启用AMZScout潜在得分弹出窗口"
+  },
+  "extractOneProductOnly": {
+    "message": "仅在产品页面中提取一个产品"
+  },
+  "options": {
+    "message": "选项"
+  },
+  "headers": {
+    "message": "头"
+  },
+  "columns": {
+    "message": "列"
+  },
+  "data": {
+    "message": "数据"
+  },
+  "error": {
+    "message": "错误"
+  },
+  "estSales": {
+    "message": "预计销量"
+  },
+  "estSalesTooltip": {
+    "message": "预计月销量"
+  },
+  "estRevenue": {
+    "message": "预估收入"
+  },
+  "estRevenueTooltip": {
+    "message": "预估月收入"
+  },
+  "nameLength": {
+    "message": "姓名长度"
+  },
+  "reviews": {
+    "message": "第#条评论"
+  },
+  "ebc": {
+    "message": "EBC"
+  },
+  "ebcTooltip": {
+    "message": "增强的品牌内容列表"
+  },
+  "rpr": {
+    "message": "RPR"
+  },
+  "rprTooltip": {
+    "message": "每条评论的月收益"
+  },
+  "availableFrom": {
+    "message": "生效日期"
+  },
+  "availableFromTooltip": {
+    "message": "第一次生效的日期"
+  },
+  "rating": {
+    "message": "评分"
+  },
+  "sellerIsFBA": {
+    "message": "是否FBA卖家"
+  },
+  "descriptionLength": {
+    "message": "描述长度"
+  },
+  "imagesCount": {
+    "message": "图片数量"
+  },
+  "seller": {
+    "message": "卖家"
+  },
+  "url": {
+    "message": "链接"
+  },
+  "asin": {
+    "message": "ASIN"
+  },
+  "monthlyPayment": {
+    "message": "按月支付"
+  },
+  "onetimePayment": {
+    "message": "一次性支付"
+  },
+  "buyAtGoogle": {
+    "message": "在Google Chrome商店购买"
+  },
+  "oversize": {
+    "message": "大尺寸"
+  },
+  "weight": {
+    "message": "重量"
+  },
+  "needPermissions": {
+    "message": "请登录后再点击下一步"
+  },
+  "filters": {
+    "message": "筛选"
+  },
+  "from": {
+    "message": "从"
+  },
+  "to": {
+    "message": "到"
+  },
+  "fbaOnly": {
+    "message": "仅FBA卖家"
+  },
+  "bulletsCount": {
+    "message": "弹数"
+  },
+  "apply": {
+    "message": "应用"
+  },
+  "clear": {
+    "message": "清除"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "nextPage": {
+    "message": "下一页"
+  },
+  "filter": {
+    "message": "筛选"
+  },
+  "trends": {
+    "message": "趋势"
+  },
+  "export": {
+    "message": "导出"
+  },
+  "import": {
+    "message": "进口"
+  },
+  "wrongPage": {
+    "message": "看起来您不在Amazon的搜索或产品页面"
+  },
+  "cantGetProductsErr": {
+    "message": "AMZScout无法从此页面中提取产品信息，请尝试其他页面。"
+  },
+  "instanceUnsupportedErr": {
+    "message": "你的AMZScout版本不再支持。请更新到最新AMZScout版本。"
+  },
+  "instanceBlockedErr": {
+    "message": "你的AMZScout被冻结了。请与支持联系。"
+  },
+  "unhandledErr": {
+    "message": "看起来我们在错误的页面。请尝试其他的页面。"
+  },
+  "providerInitErr": {
+    "message": "无法初始化支付提供商。"
+  },
+  "paymentRejectedErr": {
+    "message": "付款被拒绝。 请检查您的付款详情，然后重试。"
+  },
+  "POUND": {
+    "message": "磅"
+  },
+  "KG": {
+    "message": "公斤"
+  },
+  "RUB": {
+    "message": "₽"
+  },
+  "USD": {
+    "message": "$"
+  },
+  "EUR": {
+    "message": "€"
+  },
+  "GBP": {
+    "message": "£"
+  },
+  "INR": {
+    "message": "₹"
+  },
+  "ILS": {
+    "message": "₪"
+  },
+  "UAH": {
+    "message": "₴"
+  },
+  "VND": {
+    "message": "₫"
+  },
+  "marginImpact": {
+    "message": "净利率"
+  },
+  "marginImpactTooltip": {
+    "message": "保证金百分比"
+  },
+  "refresh": {
+    "message": "请刷新"
+  },
+  "feedback": {
+    "message": "反饋"
+  },
+  "paymentInfo": {
+    "message": "支付信息"
+  },
+  "choosePaymentMethod": {
+    "message": "请选择支付方式："
+  },
+  "paymentMethod_card": {
+    "message": "银行卡"
+  },
+  "chinaBanks": {
+    "message": "中国银行"
+  },
+  "aliPay": {
+    "message": "支付宝"
+  },
+  "weChat": {
+    "message": "微信"
+  },
+  "noFees": {
+    "message": "没有额外费用"
+  },
+  "moneyBack": {
+    "message": "100％退款保证"
+  },
+  "paymentFooterMessage": {
+    "message": "超过<strong>40 000</strong>名亚马逊卖家<strong>信任AMZScout</strong>"
+  },
+  "keepTracking": {
+    "message": "通过选择一个赚钱的产品在第一时间拿到每月约$$ 500利润"
+  },
+  "buy": {
+    "message": "购买"
+  },
+  "buyNow": {
+    "message": "现在订购吧！"
+  },
+  "oneTimeFee": {
+    "message": "一次性支付"
+  },
+  "monthlyFee": {
+    "message": "每月支付"
+  },
+  "freeLaunchesLeft": {
+    "message": "剩下:freeLaunchesLeft个免费运行"
+  },
+  "faq": {
+    "message": "常见问题"
+  },
+  "trialEnded": {
+    "message": "您的试用期已经结束"
+  },
+  "trialEndedAlert": {
+    "message": "请购买AMZScout插件以获得继续使用的权利。"
+  },
+  "buyPrice": {
+    "message": "终身许可证::currency:price"
+  },
+  "buyPriceRecurring": {
+    "message": "1个月认购::currency:price"
+  },
+  "sponsored": {
+    "message": "赞助商"
+  },
+  "hideSponsored": {
+    "message": "隐藏赞助"
+  },
+  "signUp": {
+    "message": "注册"
+  },
+  "signUpWithChrome": {
+    "message": "Chrome"
+  },
+  "signUpWithGoogle": {
+    "message": "Google"
+  },
+  "signUpWithFacebook": {
+    "message": "Facebook"
+  },
+  "signUpWithWeibo": {
+    "message": "Weibo"
+  },
+  "signUpWithEmail": {
+    "message": "Email"
+  },
+  "signUpTitle": {
+    "message": "註冊以查找您有利可圖的產品"
+  },
+  "signUpMessage1": {
+    "message": "無需信用卡"
+  },
+  "signUpMessage2": {
+    "message": "您的許可將與此帳戶相關聯"
+  },
+  "signUpMessage3": {
+    "message": "能夠在多個設備上使用"
+  },
+  "signUpMessage4": {
+    "message": "あなたの個人情報は安全に保護されます"
+  },
+  "faq_q_0": {
+    "message": "問：這是一次性延期費用或是每月費用？ "
+  },
+  "faq_a_0": {
+    "message": "答：此費用是一次性費用。您不再需要付費。已包含延期的所有功能。"
+  },
+  "faq_q_1": {
+    "message": "問：我購買了該擴充功能，我該怎麼使用它？"
+  },
+  "faq_a_1": {
+    "message": "答：開啟 Amazon 網站，搜尋一些產品，按一下擴充功能按鈕。您將看到一個帶有載入器的彈出視窗。在幾秒後，會出現關於所找到產品的資訊。"
+  },
+  "faq_q_2": {
+    "message": "問：估計值是月度、每日，還是年度資料？"
+  },
+  "faq_a_2": {
+    "message": "答：估計值是月度資料。"
+  },
+  "faq_q_3": {
+    "message": "問：估計值是如何計算的？"
+  },
+  "faq_a_3": {
+    "message": "答：這些數值是使用公式計算的，該公式是以 Amazon 頂級分類（例如居家裝飾、書籍）以及在這些分類之一中的排名為基礎。"
+  },
+  "faq_q_4": {
+    "message": "問：淨價欄是什麼意思？"
+  },
+  "faq_a_4": {
+    "message": "答：淨價欄是指在減去 FBA 費用和 15% 的 Amazon 網站傭金後的價格。如果無法獲取 FBA 費用。淨價將由公式計算。"
+  },
+  "faq_q_5": {
+    "message": "問：LQS 欄是什麼意思？"
+  },
+  "faq_a_5": {
+    "message": "答：LQS 是指列表品質得分。AMZScout 會分析許多產品描述標準，並為其計算得分。分數更高就意味著在搜尋結果中位置更靠前。將遊標移動至 LQS 值上可以查看詳細得分。"
+  },
+  "faq_q_6": {
+    "message": "問：RPR 欄是什麼意思？"
+  },
+  "faq_a_6": {
+    "message": "答：RPR 是指每個評論的收入。RPR 更大，意味著在 Amazon 上的銷售機會更好。"
+  },
+  "faq_q_7": {
+    "message": "問：FBA 費用是以單件，還是總量為基礎計算的？"
+  },
+  "faq_a_7": {
+    "message": "答：FBA 費用是以單件為基礎計算的，包含一個月的保管費。"
+  },
+  "faq_q_8": {
+    "message": "問：如果我在使用 AMZScout 時遇到了其他疑問或問題，我該如何獲取支援？"
+  },
+  "faq_a_8": {
+    "message": "答：獲取支援的最快方式是將您的問題寫至 <a href='mailto:amazondevcrew@gmail.com'>amazondevcrew@gmail.com</a>"
+  },
+  "rankHistory": {
+    "message": "排名历史"
+  },
+  "salesHistory": {
+    "message": "销售历史"
+  },
+  "priceHistory": {
+    "message": "价格历史"
+  },
+  "productCost": {
+    "message": "產品成本"
+  },
+  "productPrice": {
+    "message": "產品價格"
+  },
+  "additionalProductCost": {
+    "message": "每單位成本附加費"
+  },
+  "additionalMonthlyCosts": {
+    "message": "額外的每月費用"
+  },
+  "productWeight": {
+    "message": "產品重量"
+  },
+  "productSize": {
+    "message": "產品尺寸"
+  },
+  "orderHandling": {
+    "message": "訂單處理"
+  },
+  "monthlyStorage": {
+    "message": "月儲存"
+  },
+  "pickPack": {
+    "message": "分揀包裝"
+  },
+  "weightHandling": {
+    "message": "重量處理"
+  },
+  "referralFee": {
+    "message": "介紹費"
+  },
+  "estimatedSales": {
+    "message": "估計月銷售額"
+  },
+  "piece": {
+    "message": "pcs."
+  },
+  "totalFee": {
+    "message": "總 FBA 費用"
+  },
+  "estimatedRevenueTooltip": {
+    "message": "基於估計月銷售額和利潤率影響的估計月收入"
+  },
+  "estimatedRevenue": {
+    "message": "估計月收入"
+  },
+  "profitCalculator": {
+    "message": "利润计算器"
+  },
+  "profit": {
+    "message": "利润"
+  },
+  "roi": {
+    "message": "ROI"
+  },
+  "roiTooltip": {
+    "message": "投资回报"
+  },
+  "INCH": {
+    "message": "英寸"
+  },
+  "CM": {
+    "message": "厘米"
+  },
+  "closingFee": {
+    "message": "闭幕费"
+  },
+  "deliveryFee": {
+    "message": "快递费"
+  },
+  "cessFee": {
+    "message": "服务及附加税费用"
+  },
+  "referralMessage": {
+    "message": "与好友分享该链接，你会拿到1星期免费为每一位朋友，谁就会注册。您的朋友将获得1周免费的。"
+  },
+  "estimatedProfit": {
+    "message": "估计每月利润"
+  },
+  "estimatedProfitTooltip": {
+    "message": "根据估计每月销售和利润率的影响预计每月利润"
+  },
+  "favorites": {
+    "message": "最爱"
+  },
+  "favoritesTooltip":{
+    "message": "您最喜爱的产品"
+  },
+  "getNicheIdea":{
+    "message": "利基的想法"
+  },
+  "inventory": {
+    "message": "库存"
+  },
+  "inventoryTooltip": {
+    "message": "商品的库存数量"
+  },
+  "searchAli": {
+    "message": "在阿里巴巴找"
+  },
+  "searchGoogle": {
+    "message": "在Google上查找"
+  },
+  "copyASIN": {
+    "message": "复制ASIN"
+  },
+  "getKeywords": {
+    "message": "取得关键字"
+  },
+  "keyword": {
+    "message": "关键词"
+  },
+  "keywords": {
+    "message": "关键词"
+  },
+  "nicheKeywords": {
+    "message": "利基关键词"
+  },
+  "getNicheKeywords": {
+    "message": "获得利基关键词"
+  },
+  "keywordsNotFound": {
+    "message": "不幸的是，我们没有找到任何关键字"
+  },
+  "occurrencesNumber": {
+    "message": "出现次数"
+  },
+  "maxImport": {
+    "message": "最大进口量为::count个产品"
+  },
+  "emptyImport": {
+    "message": "找不到产品，检查您的文件"
+  },
+  "cancel": {
+    "message": "消除"
+  },
+  "send": {
+    "message": "发送"
+  },
+  "modalTitle": {
+    "message": "信息"
+  },
+  "yes": {
+    "message": "是"
+  },
+  "no": {
+    "message": "没有"
+  },
+  "bestSeller": {
+    "message": "BS"
+  },
+  "bestSellerTooltip": {
+    "message": "销售主管"
+  },
+  "bestSellerCategory": {
+    "message": "在畅销书"
+  },
+  "bestSellerLink": {
+    "message": "畅销产品分类网址"
+  },
+  "toggleFilterTitle": {
+    "message": "启用/禁用过滤器"
+  },
+  "aboutModalTitle": {
+    "message": "关于申请"
+  },
+  "aboutAppVersion": {
+    "message": "应用版本"
+  },
+  "aboutRegisteredTo": {
+    "message": "登记在"
+  },
+  "aboutLicenceType": {
+    "message": "许可证类型"
+  },
+  "aboutExpires": {
+    "message": "过期"
+  },
+  "trialTitle": {
+    "message": "AMZScout免费试用优惠"
+  },
+  "trialMessage": {
+    "message": "在接下来的7天，你可以使用AMZScout Chrome扩展程序的所有功能不受任何限制。<br><br>无需信用卡。没有惊喜。公正的结果。<br>"
+  },
+  "trialMessageBtnStart": {
+    "message": "开始吧"
+  },
+  "trialMessageBtnMore": {
+    "message": "更多细节"
+  },
+  "pw1": {
+    "message": "获取与AMZScout你的好处"
+  },
+  "pw2": {
+    "message": "尽量减少与可靠的销售数据风险"
+  },
+  "pw3": {
+    "message": "饶了自己2-3小时，每天和他们花费在其他重要的事情"
+  },
+  "pw4": {
+    "message": "唐`卡住数百未售出的产品"
+  },
+  "daily": {
+    "message": "1天"
+  },
+  "monthly": {
+    "message": "每月一次"
+  },
+  "annual": {
+    "message": "每年"
+  },
+  "lifetime": {
+    "message": "一生"
+  },
+  "forever": {
+    "message": "获得永远"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "try": {
+    "message": "尝试"
+  },
+  "tryDay": {
+    "message": "尝试1天"
+  },
+  "paywallTitleTop": {
+    "message": "尋找有利可圖的產品並擊敗競爭對手"
+  },
+  "paywallTitleBottom": {
+    "message": "继续赚更多！"
+  },
+  "paywallTagline": {
+    "message": "您在亞馬遜上的成功業務"
+  },
+  "selectYourPlan": {
+    "message": "选择您的计划"
+  },
+  "yourPlan": {
+    "message": "您的计划"
+  },
+  "payment": {
+    "message": "支付金额"
+  },
+  "paymentChooseMethod": {
+    "message": "选择你的付款方式"
+  },
+  "selectPlan": {
+    "message": "选择方案"
+  },
+  "benefits": {
+    "message": "优点"
+  },
+  "benefit1": {
+    "message": "查找利基 – 最大限度地降低风险"
+  },
+  "benefit2": {
+    "message": "精确的实时指标 – 利润最大化"
+  },
+  "benefit3": {
+    "message": "验证并有信心卖"
+  },
+  "licenceFull": {
+    "message": "付费"
+  },
+  "licenceTrial": {
+    "message": "审讯"
+  },
+  "alreadyPaid": {
+    "message": "我已经付款了"
+  },
+  "paymentDone": {
+    "message": "付款完成"
+  },
+  "skip": {
+    "message": "跳跃"
+  },
+  "next": {
+    "message": "下一个"
+  },
+  "startTrial": {
+    "message": "开始试用"
+  },
+  "s1h": {
+    "message": "没有更多的例行数据收集"
+  },
+  "s1f": {
+    "message": "您只需点击几下，<br>即可获得所有数据以作出决定。"
+  },
+  "s2h": {
+    "message": "寻找高潜力的产品"
+  },
+  "s2f": {
+    "message": "基于可靠的销售数据估算利基潜力。"
+  },
+  "s3h": {
+    "message": "最大限度地降低风险"
+  },
+  "s3f": {
+    "message": "你会知道你会在一个月内卖出多少产品。"
+  },
+  "s4h": {
+    "message": "获得您期望的结果"
+  },
+  "s4f": {
+    "message": "做出正确的决定。"
+  },
+  "tips": {
+    "message": "提示"
+  },
+  "stopShowingTips": {
+    "message": "我不想看到提示"
+  },
+  "strictFilterTooltip": {
+    "message": "过滤器参数太严格了。 尝试更改它们或关闭过滤器。"
+  },
+  "activeLimit": {
+    "message": "安装限制"
+  },
+  "activeExceed": {
+    "message": "已超出活动安装的数量"
+  },
+  "t0": {
+    "message": "栏标题有弹出提示。您可以单击任何标题并按照此指标排列电子表格中的数据。"
+  },
+  "t1": {
+    "message": "此产品电子表格中的所有蓝色数字和列都是可以点击的。"
+  },
+  "t2": {
+    "message": "单击左侧的星形图标将可能的产品添加到收藏夹，然后通过单击底部的“收藏夹”按钮进行检查。"
+  },
+  "t3": {
+    "message": "如果您点击 FBA 费用或净价栏中的值，您将打开利润计算器，可让您输入产品成本来计算利润和 ROI"
+  },
+  "t4": {
+    "message": "如果您将光标放到 LQS 值上几秒钟，将看到有关列表质量的更多详情。"
+  },
+  "t5": {
+    "message": "如果您点击某个价格值，将看到包含价格随时间变化的图表。"
+  },
+  "t6": {
+    "message": "如果您点击排名栏中的值，将看到排名随时间变化的图表。"
+  },
+  "t7": {
+    "message": "如果您将光标移到右侧的 3 个垂直排列的点上，将打开一个下拉菜单，可让您在阿里巴巴中查找类似产品。"
+  },
+  "t8": {
+    "message": "您只需点击右侧的3个垂直点并选择所需的操作，即可找到关键字提示，从而有效地推广您的产品。"
+  },
+  "t9": {
+    "message": "您可以通过单击列表中产品编号旁边的“+”按钮来跟踪AMZScout跟踪器中的任何产品。"
+  },
+  "t10": {
+    "message": "如果产品在BSR栏中有一个橙色的圆形标志，则该产品是畅销产品。<br>找出产品销售的最佳类别，将光标悬停在标志上方。"
+  },
+  "t11": {
+    "message": "产品具有增强品牌内容或A +列表时，EBC列会显示绿色复选标记。 EBC面向通过亚马逊品牌注册流程被批准为品牌所有者的卖家开放。"
+  },
+  "gotIt": {
+    "message": "得到它了"
+  },
+  "hideTips": {
+    "message": "隱藏這些提示"
+  },
+  "tooltip_1_beginner": {
+    "message": "点击此处查看利基中的需求和竞争细分，以便您对此充满信心。"
+  },
+  "tooltip_2_beginner": {
+    "message": "根据具体标准和图表中的期望筛选出产品。例如，您想要出售的价格、月度销售额、您计划的收入等等。"
+  },
+  "tooltip_3_beginner": {
+    "message": "根据需要选择您希望自定义菜单可见的列。"
+  },
+  "tooltip_4_beginner": {
+    "message": "通过单击其标题对任何列进行排序。您可以排序并查看最佳排名、最佳销售、最优惠的价格和最佳收入，并为您找到完美的组合。"
+  },
+  "tooltip_5_beginner": {
+    "message": "收入计算器在这里（点击蓝色数字）。您可以查看正在考虑的产品的所有利润和成本。这包括费用，就像您已经在销售产品一样！"
+  },
+  "tooltip_6_beginner": {
+    "message": "收入与点评比率确实可以帮助您找到一个收入很高但几乎没有评论的产品。很难获得评论 - 这就是这个工具如此重要的原因。"
+  },
+  "tooltip_7_beginner": {
+    "message": "这是清单质量得分，详细描述了产品页面的优缺点。只需将光标悬停在它上面即可。您将立即看到您可以改进的地方或复制已完成的工作。"
+  },
+  "tooltip_8_beginner": {
+    "message": "这是一个利基建议或查找器，旨在为您提供您可以开始的利基的思路。这将有助于您扩展对于在亚马逊上可以销售的产品的视野。"
+  },
+  "tooltip_9_beginner": {
+    "message": "產品分數顯示產品是否是基於其銷售，排名，評級，評論和其他指標銷售的好主意。"
+  },
+  "tooltip_10_beginner": {
+    "message": "这显示了在这个利基的标题中使用的关键字。频率显示在括号中。根据竞争对手已完成的工作上，使用最热门的词汇创建自己的标题。"
+  },
+  "tooltip_1_expert": {
+    "message": "潜在得分根据需求、竞争以及列表的质量和阶段进行评估。单击此处查看有关这些区域的更多详细信息。"
+  },
+  "tooltip_2_expert": {
+    "message": "设置筛选器，以便您可以使用预定的标准。这有助于您根据销售策略以合适的销售价格和正确的需求选择产品。"
+  },
+  "tooltip_3_expert": {
+    "message": "通过确定可见的列来自定义菜单以满足您的需求。"
+  },
+  "tooltip_4_expert": {
+    "message": "您可以通过单击标题对列进行排序。这有助于您找到收入最高的产品、最新产品等。查看较新的产品可以帮助您设定第一批库存的销售预期。"
+  },
+  "tooltip_5_expert": {
+    "message": "收入计算器可帮助您计算项目的利润。它包括FBA项目的实现费用，估计的存储费用和销售费用。输入您的成本以获得真实的利润估算。"
+  },
+  "tooltip_6_expert": {
+    "message": "评估收入和评论比率显示了收入和评论之间的关系。较高的比率表明，即使评价较少，该产品也可以赚钱。"
+  },
+  "tooltip_7_expert": {
+    "message": "列表质量得分可帮助您根据描述和图像的长度查看竞争对手列表中的弱点。这是一个很好的基线，但仍需要进行更仔细的检查以识别更具体的缺陷。"
+  },
+  "tooltip_8_expert": {
+    "message": "这是利基查找器工具，它可以为您提供一些好的思路和利基，可以开始探索，并激发新领域的深入研究。"
+  },
+  "tooltip_9_expert": {
+    "message": "產品分數顯示產品是否是基於其銷售，排名，評級，評論和其他指標銷售的好主意。"
+  },
+  "tooltip_10_expert": {
+    "message": "这显示了这个利基产品在其标题中使用的关键字。括号中的数字显示了它的使用次数。创建标题时，请务必在您自己的标题中突出显示最重要的关键字。"
+  },
+  "pw1ExpiredTitle": {
+    "message": "很遗憾，您的试用期已过期。"
+  },
+  "pw1ExpiredSubTitle": {
+    "message": "要继续使用AMZScout Pro扩展程序，请查看以下付款方案。"
+  },
+  "pw1BuyNowTitle": {
+    "message": "找到有利可图的产品，打败竞争对手"
+  },
+  "pw1PlanMonthlyName": {
+    "message": "每月"
+  },
+  "pw1PlanMonthlyHint": {
+    "message": "试试我们的产品没有任何界限！"
+  },
+  "pw1PlanAnnualName": {
+    "message": "每年"
+  },
+  "pw1PlanMostPopular": {
+    "message": "最受欢迎"
+  },
+  "pw1PlanAnnualHint": {
+    "message": "你喜欢我们的产品吗？ 太棒了，是时候救了！"
+  },
+  "pw1PlanAnnualPriceHint": {
+    "message": "节省高达20％"
+  },
+  "pw1PlanLifetimeName": {
+    "message": "一生"
+  },
+  "pw1PlanLifetimeHint": {
+    "message": "感觉如何？ 永远使用它！"
+  },
+  "pw1PlanLifetimePriceHint": {
+    "message": "节省高达50％"
+  },
+  "pw1PlansTitle": {
+    "message": "选择你的计划"
+  },
+  "pw1PaymentTitle": {
+    "message": "付款"
+  },
+  "pw1MainTitle": {
+    "message": "值"
+  },
+  "pw1PanelProfit1": {
+    "message": "找到 <span class='red-text'>有利可圖的產品</span> 內 <span class='red-text'>1天。</span>"
+  },
+  "pw1PanelProfit2": {
+    "message": "業內<span class='red-text'>最準確的數據。</span>"
+  },
+  "pw1PanelProfit3": {
+    "message": "我們<span class='red-text'>保護66,000多名賣家</span>免受錯誤決定的影響。"
+  },
+  "pw1PanelProfit4": {
+    "message": "<span class='red-text'>100%</span> 退款保證。"
+  },
+  "pw1PayWithCard": {
+    "message": "用银行卡付款"
+  },
+  "pw1PayWith": {
+    "message": "支付"
+  },
+  "pw1AlreadyPaid": {
+    "message": "我已经付了钱"
+  },
+  "pw1Or": {
+    "message": "要么"
+  },
+  "pw1StripePowered": {
+    "message": "由Stripe提供支持。"
+  },
+  "pw1Terms": {
+    "message": "条款"
+  },
+  "pw1Privacy": {
+    "message": "隐私。"
+  },
+  "pw1And": {
+    "message": "和"
+  },
+  "pw1StripeMoneyBack": {
+    "message": "您的付款受Stripe保護"
+  },
+  "pw1PayPalBuyerProtection": {
+    "message": "PayPal买家保护计划"
+  },
+  "pw1TrustpilotReviews": {
+    "message": ":reviews 评论"
+  },
+  "pw1FeedbackTitle": {
+    "message": "我们注意到您在购买时遇到了问题。 请在下方留下您的联系信息，以便我们为您提供帮"
+  },
+  "pw1FeedbackPlaceholder": {
+    "message": "在這裡寫下我們可以與您聯繫的電話號碼或電子郵件。"
+  },
+  "tutorial": {
+    "message": "教程"
+  },
+  "tutorialTitle": {
+    "message": "指南 AMZScout Pro Extension"
+  },
+  "freshNicheIdea": {
+    "message": "你有一個新的利基主意！"
+  },
+  "show": {
+    "message": "顯示"
+  },
+  "featureIsNotAvailable": {
+    "message": "該功能在付費版本中可用"
+  },
+  "allRowsAreNotAvailable": {
+    "message": "所有行都將在付費版本中提供。"
+  },
+  "product_score_high": {
+    "message": "一個很容易複製和銷售的好產品。"
+  },
+  "product_score_middle": {
+    "message": "您可以銷售具有一定經驗的產品。"
+  },
+  "product_score_low": {
+    "message": "一種努力獲得銷售的產品。"
+  },
+  "youCanSkipThisIn": {
+    "message": "請耐心等待"
+  },
+  "noCreditCard": {
+    "message": "無需信用卡"
+  },
+  "productScore": {
+    "message": "產品分數"
+  },
+  "productScoreTooltip": {
+    "message": "產品分數顯示產品與fba專家給出的主要標準的匹配程度。"
+  }
+}

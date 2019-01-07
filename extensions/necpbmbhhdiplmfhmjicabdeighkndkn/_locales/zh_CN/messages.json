@@ -1,0 +1,10 @@
+{
+  "appDesc": {
+    "description": "Description for the CWS",
+    "message": "立即查找与您当前浏览的网站类似的网站。探索网络，发现更多。"
+  },
+  "appName": {
+    "description": "Title for the CWS",
+    "message": "Similar Sites - 发现相关的网站"
+  }
+}

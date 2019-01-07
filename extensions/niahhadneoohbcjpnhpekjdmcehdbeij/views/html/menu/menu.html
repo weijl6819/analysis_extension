@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <title>sites.berg</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/menu.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../../css/selectable.css" media="screen"/>
+    <!-- Import javascript -->
+    <script src="../../js/ext/jquery-1.11.3.min.js"></script>
+    <script src="../../js/ext/jquery-ui-1.11.4.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/selectable.js"></script>
+    <script src="../../js/controllers/add-site.js"></script>
+    <script src="../../js/controllers/show-news.js"></script>
+    <script src="../../js/google-auth.js"></script>
+    <script src="../../js/facebook-auth.js"></script>
+    <script src="../../js/cni-auth.js"></script>
+    <script src="../../js/menu.js"></script>
+
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <title>SitesbergIcons</title>
+        <defs>
+            <symbol id="settings" viewBox="0 0 293 37.5">
+                <path d="M1106.26,200.93l-36.34-37.25,4.85-5-4.85-5-14.53,14.89-24.23-24.83L1060.27,114a35.32,35.32,0,0,0,37.5-8.65,37.36,37.36,0,0,0,7.57-40.67l-2-4.75-15.61,16-12.57.17,0.17-12.29,15.92-16.31-4.63-2.05a35.31,35.31,0,0,0-39.72,7.75,37.29,37.29,0,0,0-8.43,38.47l-29.1,29.83L968.17,79.26l4.85-5L946.38,47,931.83,61.87l26.65,27.32,4.84-5,41.19,42.21-29.11,29.84a35.31,35.31,0,0,0-37.53,8.64,37.33,37.33,0,0,0-7.56,40.71l2,4.74L948.24,194l12-.16-0.17,12.89-15.61,16,4.64,2a35.3,35.3,0,0,0,39.67-7.76,37.32,37.32,0,0,0,8.45-38.42l29.12-29.85,24.23,24.83L1036,188.52l4.85,5,4.84-5L1082,225.76a16.83,16.83,0,0,0,24.23,0A17.89,17.89,0,0,0,1106.26,200.93ZM941.53,61.87l4.85-5,17,17.38-4.84,5ZM990,179.17a30.26,30.26,0,0,1-6.14,32.92,28.59,28.59,0,0,1-27.12,8l10.08-10.33,0.3-23-21.81.3L935,197.73a30.13,30.13,0,0,1,7.76-27.86,28.58,28.58,0,0,1,32.16-6.27l2.14,0.95,69.53-71.27-0.92-2.19a30.22,30.22,0,0,1,6.12-33,28.61,28.61,0,0,1,27.17-8l-10.4,10.66-0.3,22.36,22.4-.31,10.09-10.34a30.17,30.17,0,0,1-7.77,27.8,28.62,28.62,0,0,1-32.14,6.28l-2.13-.94L989.12,177Zm111.38,41.63a10.1,10.1,0,0,1-14.54,0l-36.33-37.24,14.53-14.9,36.34,37.25A10.73,10.73,0,0,1,1101.42,220.79Z"
+                      transform="translate(-870 -100)">
+                </path>
+                <rect class="btn" x="0" y="-100" width="300" height="300"></rect>
+            </symbol>
+            <symbol id="log-in" viewBox="0 0 293 37.5">
+                <path d="M158.63,97.39h7.07V69.28h-7.07V97.39Zm38.89,56.22L180,136.2a49.5,49.5,0,1,0-35.63,0v94.68h35.35V206.42l10.71-10.65-10.71-10.65V171.29Zm-22.78,36.48,5.71,5.68-5.71,5.68-2.07,2.06v20.37H151.45V131.4l-4.53-1.74a41.88,41.88,0,0,1-27.18-39.3,42.43,42.43,0,0,1,84.85,0,41.88,41.88,0,0,1-27.14,39.29l-4.79,1.84v7.35l2.34,2.33,12.51,12.44-12.78,12.71-2.07,2.06V188Z"
+                      transform="translate(-10 -100)">
+
+                </path>
+                <rect class="btn" x="0" y="-100" width="300" height="300"></rect>
+            </symbol>
+            <symbol id="show-news" viewBox="0 0 293 37.5">
+                <path d="M336.15,132.69h80.58v-6.55H336.15v6.55Zm0,26.19h80.58v-6.55H336.15v6.55Zm0,26.19h53.72v-6.55H336.15v6.55ZM396.29,60.67a20.21,20.21,0,0,0-39.69,0H295.87V230.91H457V60.67H396.29ZM359.62,77.59L363,75.7V63.94a13.43,13.43,0,0,1,26.86,0V75.7l3.4,1.88a33.57,33.57,0,0,1,14.55,15.82H345.07A33.58,33.58,0,0,1,359.62,77.59Zm90.69,146.77H302.58V67.22H356.3v4.68A40,40,0,0,0,336.15,100h80.58a39.93,39.93,0,0,0-20.14-28.06V67.22h53.72V224.36Z"
+                      transform="translate(-220 -100)">
+
+                </path>
+                <rect class="btn" x="0" y="-100" width="300" height="300"></rect>
+            </symbol>
+            <symbol id="mark-site" viewBox="0 0 293 37.5">
+                <path d="M677,117.17L639.9,80.39,620.61,61.27,603.92,44.7l-2.54-2.52a15.14,15.14,0,0,0-21.3,0L560.84,61.26h0l-4.91,4.87h0L533.35,88.52l-20.76,20.6h0l-8.75,8.68V230.91H677.62V117.81Zm-162-.66,70-69.45a8.35,8.35,0,0,1,11.47,0l73.32,72.73-50,49.56-15.9-15.78-2.54-2.52a15.14,15.14,0,0,0-21.3,0l-18.72,18.56-50-49.56Zm41.48,58-0.52.52h0l-45.14,44.77V129.19ZM516.33,224l3.74-3.71h0L585,155.93a8.35,8.35,0,0,1,11.47,0l63.34,62.82h0l3.84,3.81,1.47,1.45H516.33Zm154.34-92.44v88.19L625.53,175h0l-0.79-.78,45.94-45.57v2.92Z"
+                      transform="translate(-440 -100)">
+
+                </path>
+                <rect class="btn" x="0" y="-100" width="300" height="300"></rect>
+            </symbol>
+            <symbol id="add-site" viewBox="0 0 225 37.5">
+                <path d="M823.84,139.5V79.26H786.18V139.5H725.94v37.65h60.24V237.4h37.65V177.15h60.24V139.5H823.84Zm52.71,15.06v15.06H816.31v60.24H793.71V169.62H733.47V147h60.24V86.79h22.59V147h60.24v7.53Z"
+                      transform="translate(-690 -120)">
+                </path>
+                <rect class="btn" x="0" y="-100" width="300" height="300"></rect>
+            </symbol>
+            <symbol id="log-out" viewBox="-7 -9 36 36">
+                <path d="M360,408 L360,430 L375,430 L375,423.5 L374,423.5 L374,429 L361,429 L361,409 L374,409 L374,414.5 L375,414.5 L375,408 L360,408 Z M377.050253,415.464466 L377.757359,414.757359 L382,419 L377.757359,423.242641 L377.050253,422.535534 L380.087349,419.498437 L367.00472,419.498437 L367.00472,418.5 L380.085786,418.5 L377.050253,415.464466 Z"
+                      transform="translate(-359 -407)">
+                </path>
+                <rect class="btn" x="0" y="-100" width="24" height="24"></rect>
+            </symbol>
+        </defs>
+    </svg>
+</head>
+<body class="background">
+
+<div id="d-container">
+    <div id="d-title">
+        <img src="../../img/logo_icon_and_title.svg" class="center" height="75" width="124" align="middle"/>
+    </div>
+    <hr id="hr-line-between-logo" class="hr-line"/>
+    <div id="d-menu-container">
+        <div id="d-menu-main">
+            <button id="addSite" class="transparent-button icon-big"
+                    style="position: relative; top: -15px">
+                <svg class="icon-big">
+                    <use xlink:href="#add-site"></use>
+                </svg>
+            </button>
+        </div>
+        <div id="d-menu-upper">
+            <button id="markAsUnread" type="button" class="transparent-button">
+                <svg class="icon">
+                    <use xlink:href="#mark-site"></use>
+                </svg>
+            </button>
+            <button id="showNews" type="button" class="transparent-button">
+                <svg class="icon">
+                    <use xlink:href="#show-news"></use>
+                </svg>
+            </button>
+            <button id="logIn" type="button" class="transparent-button">
+                <svg class="icon">
+                    <use xlink:href="#log-in"></use>
+                </svg>
+            </button>
+            <button id="logOut" type="button" class="transparent-button">
+                <svg class="icon">
+                    <use xlink:href="#log-out"></use>
+                </svg>
+            </button>
+            <button id="settings" type="button" class="transparent-button">
+                <svg class="icon">
+                    <use xlink:href="#settings"></use>
+                </svg>
+            </button>
+        </div>
+        <div id="d-messages">
+            <div id="d-hovered-button"></div>
+            <div id="d-message"></div>
+        </div>
+    </div>
+    <div id="d-selectable">
+        <div id="d-selectable-scroll" style="overflow:auto">
+            <div id="d-selectable-container" style="height:80px;margin-left: 10px;">
+                <ul id="selectable">
+                </ul>
+            </div>
+        </div>
+        <button id="backFromSelectable" type="button" class="b-rectangle" style="margin-top:10px; margin-bottom:10px">
+            BACK
+        </button>
+    </div>
+</div>
+</body>
+</html>
+

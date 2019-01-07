@@ -1,0 +1,81 @@
+.todos-view {
+    display: flex; height: 100%;
+
+    .left-part {
+        position: relative;
+        width: 350px; border-right: 1px solid $main-view-inner-bd;
+        padding: 20px 20px 100px 40px;
+    }
+    .right-part { width: calc(100% - 350px); position: relative; padding: 20px 30px; }
+    .add-btn {
+        position: absolute; bottom: 30px; left: 50%; margin-left: -30%;
+        background: $main-modal-btn-bg; border: none;
+        width: 60%; height: 40px; color: #fff;
+    }
+}
+
+.wt-todolist-view {
+    overflow: auto; height: 100%;
+
+    .wt-list-view-header { border-left: 3px solid #529556; padding: 2px 0 2px 10px; margin-bottom: 30px; }
+    .wt-list-view-item {
+        padding: 15px;
+
+        .wt-list-view-item-head {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 10px;
+
+            .wt-col { display: flex; align-items: center; }
+            .wt-list-view-item-time { font-weight: bold; margin-left: 10px; }
+            .wt-list-view-item-edit, .wt-list-view-item-remove {
+                width: 16px; height: 16px; opacity: .3;
+                background: $action_icon_color;
+
+                &:hover { transition: all .3s; cursor: pointer; opacity: 1; }
+            }
+            .wt-list-view-item-edit {   -webkit-mask: url(#{$imgsDir}/edit.svg)   center / 90% no-repeat; }
+            .wt-list-view-item-remove { -webkit-mask: url(#{$imgsDir}/remove.svg) center / contain no-repeat; }
+        }
+        .wt-list-view-item-msg {
+            font-size: 14px; line-height: 1.5; padding-bottom: 20px;
+            border-bottom: 1px solid $todolist-day-bd; color: #717171;
+        }
+        &.wt-list-view-item_done { opacity: .3; text-decoration: line-through; }
+    }
+    .wt-list-view-empty-item {
+        text-align: center; padding: 40px 0; color: $todo-empty-text-color; font-size: 12px;
+    }
+}
+
+
+label.wt-checkbox {
+    display: flex; align-items: center;
+    span.wt-psevdo-checkbox {
+        display: inline-block; width: 16px; height: 16px;
+        background-position: center; background-size: cover; cursor: pointer;
+    }
+    input {
+        display: none;
+        & + span.wt-psevdo-checkbox {
+            background-image: url(#{$imgsDir}/unchecked.png);
+        }
+        &:checked + span.wt-psevdo-checkbox  {
+            background-image: url(#{$imgsDir}/checked.png);
+        }
+    }
+}
+
+.wt-view-box {
+    $size1: 50px;
+    width: 300px;
+    position: absolute; top: 0; right: $size1;
+    border: 1px solid #e5e7eb;
+    border-right: none;
+    height: 100%;
+    box-sizing: border-box;
+    background: $modal-bg;
+    transition: all .2s;
+    overflow: auto;
+
+    &:empty { width: 0; border: none; }
+}

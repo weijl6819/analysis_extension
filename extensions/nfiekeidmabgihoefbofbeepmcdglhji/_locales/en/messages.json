@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Alice Keeler Webcam Snapshot",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Take webcam snapshots and saves them into Google Drive.",
+    "description": "The description of the application"
+  }
+}

@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Επαφές"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Ένα κλικ ανοίγει Google Επαφές σας σε ένα βολικό αναδυόμενο παράθυρο."
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Επαφές επιλογές"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Μέγεθος αναδυόμενο παράθυρο"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "πλάτος"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "ύψος"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "Save"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Saved"
+   }
+}

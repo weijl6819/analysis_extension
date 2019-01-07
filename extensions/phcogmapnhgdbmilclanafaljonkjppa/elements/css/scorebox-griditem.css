@@ -1,0 +1,44 @@
+
+td{
+  list-style: none;
+  font-size: 16px;
+  text-align: left !important;
+}
+.score{
+  max-width: 100px;
+  min-width: 50px;
+  padding-left: 5px;
+}
+
+.name{
+  width: 150px;
+}
+
+.gameInfo{
+  text-align: center; vertical-align: center;
+}
+
+tr{
+  margin-left: 30px !important;
+  width: 100%;
+}
+
+i{
+  padding-right: 5px;
+}
+
+.success{
+  font-weight: bold;
+}
+
+.danger{
+  font-style: italic;
+}
+
+.scoreBox{
+
+}
+
+.hide{
+  display: none;
+}

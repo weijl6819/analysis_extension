@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "ใช้การรู้จำเสียงในกล่องข้อความใด ๆ บนเว็บไซต์ใด ๆ"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

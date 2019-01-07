@@ -1,0 +1,34 @@
+{
+   "browseraction": {
+      "description": "Label for the BrowserAction",
+      "message": "Diese Seite per Mail senden"
+   },
+   "contextmenu": {
+      "description": "Displayed in the context menu",
+      "message": "Diesen Link per Mail senden"
+   },
+   "extdesc": {
+      "description": "Ext Description",
+      "message": "Sende einen Link aus der Toolbar oder dem Kontextmen\u00FC"
+   },
+   "extname": {
+      "description": "Ext Name",
+      "message": "Link per Mail"
+   },
+   "optInTab": {
+      "description": "",
+      "message": "Gmail in neuem Tab \u00F6ffnen"
+   },
+   "optInWin": {
+      "description": "",
+      "message": "Gmail in neuem Fenster \u00F6ffnen"
+   },
+   "optgmail": {
+      "description": "",
+      "message": "Gmail verwenden"
+   },
+   "optmailto": {
+      "description": "",
+      "message": "Den Standard-Mailclient verwenden"
+   }
+}

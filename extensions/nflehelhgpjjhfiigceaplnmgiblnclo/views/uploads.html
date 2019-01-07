@@ -1,0 +1,62 @@
+<div class='uploads'>
+	<div class='info'>
+		<div class='name'>Uploads</div>
+		<div class='controls'>
+			<a class='uploads' href='#notifications'>Notifications</a> |
+			<a class='clear' href='#' title='Clear finished uploads'>Clear</a>
+		</div>
+
+		<div class='clear'></div>
+	</div>
+
+	<% if(!uploads.length) { %>
+		<div class='upload empty'>
+			Nothing uploaded
+		</div>
+	<% } %>
+
+	<% uploads.forEach(function(upload) { %>
+		<div class='upload state-<%- upload.state %>' id='upload-<%= upload.id %>'>
+			<div class='top'>
+				<div class='filename text-overflow'>
+					<a href='<%- upload.gettUrl %>' title='<%= upload.filename || 'unknown' %>'>
+						<%= upload.filename || 'unknown' %>
+					</a>
+				</div>
+				<div class='copy-link'>
+					(<a href='<%- upload.gettUrl %>'>Copy link</a>)
+				</div>
+				<div class='date'><%= pejs.helpers.formatDate(upload.created) %></div>
+
+				<div class='clear'></div>
+			</div>
+			<div class='middle'>
+				<div class='progress-bar' title='0%'>
+					<div class='bar'>
+						<div class='slider'></div>
+					</div>
+				</div>
+			</div>
+			<div class='bottom'>
+				<div class='progress'>
+					<span class='remaining'>
+						<%= pejs.helpers.formatTime(upload.estimatedTimeLeft) %>
+					</span>
+					<span> remaining</span>
+					<span class='divider'> - </span>
+					<span class='percent'><%= upload.progress %>%</span>
+					<span> of </span>
+					<span class='size'><%= pejs.helpers.formatSize(upload.size) %></span> 
+					(<span class='speed'><%= pejs.helpers.formatSpeed(upload.speed) %></span>)
+				</div>
+
+				<div class='idle'>
+					<span class='size'><%= pejs.helpers.formatSize(upload.size) %></span>
+					<span title='<%= upload.lastError && upload.lastError.message %>' class='state'><%= upload.state %></span>
+					<span class='divider'> - </span>
+					<span class='url text-overflow' title='<%= upload.prettyUrl %>'><%= upload.prettyUrl %></span>
+				</div>
+			</div>
+		</div>
+	<% }) %>
+</div>

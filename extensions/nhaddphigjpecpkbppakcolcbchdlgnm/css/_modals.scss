@@ -1,0 +1,137 @@
+.modal-overlay {
+    position: absolute; top: 0; left: 0; z-index: 1099;
+    width: 100%; height: 100%; background: rgba(0, 0, 0, .6);
+    display: flex; justify-content: center; align-items: center;
+
+    .modal {
+        width: 700px; position: relative; border-radius: 0; z-index: 1100;
+        background: $modal-bg; color: $modal-color;
+        padding: 20px 30px;
+
+        .modal-head {
+            display: flex; align-items: center; justify-content: space-between;
+            padding-bottom: 10px; margin-bottom: 16px;
+            border-bottom: 1px solid $input-bd;
+
+            .modal-title { font-size: 16px; }
+            .icon { &:hover { transition: all .3s; opacity: .8; cursor: pointer; } }
+        }
+
+        .btns-box {display: flex; justify-content: flex-end; }
+        .modal-btn {
+            display: inline-flex; align-items: center;
+            padding: 10px; margin-left: 10px;
+            background: $modal-btn-bg; color: $modal-btn-color; transition: all 200ms;
+            border: none; user-select: none; font-size: 12px;
+
+            .icon { width: 15px; height: 15px; margin-right: 10px; }
+
+            &:hover { transition: all .3s; opacity: .8; cursor: pointer; }
+        }
+        .input-box {
+            margin-bottom: 20px;
+
+            label { display: block; line-height: 2; text-align: left; }
+            input {
+                display: block; width: 100%; height: 36px; padding: 0 10px;
+                line-height: 1; font-size: 12px;
+                background: $input-bg; color: #000; border: 1px solid $input-bd;
+            }
+        }
+    }
+}
+
+.bookmark-modal {
+    .modal {
+        width: 600px;
+
+        .box { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 10px; }
+        .preview-box {
+            position: relative;
+
+            .preview {
+                width: 150px; height: 100px; background: $input-bg; border: 1px solid $input-bd;
+                background-size: cover; background-position: center;
+            }
+
+            &.loading {
+                &:before {
+                    $w: 80px;
+                    $h: 50px;
+                    position: absolute; top: calc(50% - #{$h/2}); left: calc(50% - #{$w/2});
+                    content: ''; display: block; width: $w; height: $h;
+                    background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-facebook"><rect ng-attr-x="{{config.x1}}" ng-attr-y="{{config.y}}" ng-attr-width="{{config.width}}" ng-attr-height="{{config.height}}" ng-attr-fill="{{config.c1}}" x="17.5" y="30" width="15" height="40" fill="#9b9b9b"><animate attributeName="y" calcMode="spline" values="18;30;30" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate><animate attributeName="height" calcMode="spline" values="64;40;40" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1" begin="-0.2s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x2}}" ng-attr-y="{{config.y}}" ng-attr-width="{{config.width}}" ng-attr-height="{{config.height}}" ng-attr-fill="{{config.c2}}" x="42.5" y="30" width="15" height="40" fill="#afafaf"><animate attributeName="y" calcMode="spline" values="20.999999999999996;30;30" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1" begin="-0.1s" repeatCount="indefinite"></animate><animate attributeName="height" calcMode="spline" values="58.00000000000001;40;40" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1" begin="-0.1s" repeatCount="indefinite"></animate></rect><rect ng-attr-x="{{config.x3}}" ng-attr-y="{{config.y}}" ng-attr-width="{{config.width}}" ng-attr-height="{{config.height}}" ng-attr-fill="{{config.c3}}" x="67.5" y="30" width="15" height="40" fill="#b5b5b5"><animate attributeName="y" calcMode="spline" values="24;30;30" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1" begin="0s" repeatCount="indefinite"></animate><animate attributeName="height" calcMode="spline" values="52;40;40" keyTimes="0;0.5;1" dur="1" keySplines="0 0.5 0.5 1;0 0.5 0.5 1" begin="0s" repeatCount="indefinite"></animate></rect></svg>') center / contain no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.confirm-modal {
+    .modal {
+        width: 400px;
+        .modal-body {}
+        .modal-text { margin-bottom: 20px; }
+        .modal-btn { width: 100px; text-align: center; display: inline-block; }
+    }
+}
+
+.todo-modal {
+    .modal {
+        width: 400px;
+
+        select {  background: $modal-bg; border: none; }
+        .wt-calendar {
+            height: 240px;
+
+            .ic__header {
+                background: $modal-bg; height: 45px;
+                select { background: $modal-bg; font-weight: 300; border: none; }
+            }
+            .ic__week-head td { background: $todo-modal-day-bg; }
+            .ic__day { background: $todo-modal-day-bg; }
+            .ic__next, .ic__prev {  display: none; }
+            .ic__year { right: 0; width: 20%; }
+            .ic__month { left: 0; width: 30%; }
+            table.ic__days, table.ic__week-head {
+                td {
+                    font-size: 10px;
+                    border: none; font-weight: 100; padding: 8px;
+
+                    &.ic__day_state_selected,  &:hover { background: #1bc26e78; color: #fff; }
+                }
+            }
+            .ic__day-empty { background: $modal-bg; }
+        }
+        .wt-time-box {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 15px 0;
+            select {margin: 0 3px;}
+        }
+        textarea.wt-textarea {
+            width: 100%; height: 80px; padding: 5px;
+            border: 1px solid $todo-modal-textarea-bd;
+            resize: none;
+            margin-bottom: 20px;
+            background: $todo-modal-textarea-bg;
+        }
+        .wt-btn-box {
+            text-align: center;
+            button.wt-submit-btn {
+                width: 120px; height: 30px;
+                background: $todo-modal-btn-bg; color: $todo-modal-btn-color;
+                border: none;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.note-modal {
+    .modal {
+        width: 400px;
+
+        .modal-text { margin-bottom: 20px; }
+        .modal-btn { width: 100px; text-align: center; display: inline-block; }
+    }
+}

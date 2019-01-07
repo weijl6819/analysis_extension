@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+}
+h1 {
+	color: rgb(51, 51, 51);
+	cursor: auto;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	letter-spacing: -1px;
+	line-height: 33px;
+	padding: 0 1px;
+	margin: 10px;
+}
+#snap {
+	width: 73%;
+	margin: 1%;
+	float: left;
+	background: black;
+}
+#snap img {
+	width: 100%;
+}
+.mini {
+	width: 24%;
+	margin: 1% 1% 0 0;
+	float: left;
+}
+.mini img {
+	width: 100%;
+}

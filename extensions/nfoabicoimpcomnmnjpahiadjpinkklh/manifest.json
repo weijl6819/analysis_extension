@@ -1,0 +1,51 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "alternate_urls": [],
+      "encoding": "UTF-8",
+      "favicon_url": "http://www.bettersearchtools.com/favicon.png",
+      "image_url": "http://mps.eanswers.com/search/?category=images&s=sbpr&q={searchTerms}",
+      "image_url_post_params": "",
+      "instant_url": "",
+      "instant_url_post_params": "",
+      "is_default": true,
+      "keyword": "Safe Browsing",
+      "name": "Safe Browsing",
+      "search_url": "http://mps.eanswers.com/search/?category=web&s=sbpr&q={searchTerms}",
+      "search_url_post_params": "",
+      "suggest_url": "http://sug.eanswers.com/search/index_sg.php?q={searchTerms}",
+      "suggest_url_post_params": ""
+    }
+  },
+  "description": "Safe Browsing",
+  "short_name": "Safe Browsing",
+  "icons": {
+    "128": "icons/icon128.png",
+    "16": "icons/icon16.png"
+  },
+  "manifest_version": 2,
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon16.png"
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "omnibox": {
+    "keyword": "p"
+  },
+  "name": "Safe Browsing",
+  "permissions": [
+    "http://*/*",
+    "contextMenus",
+    "tabs",
+    "storage",
+    "cookies"
+  ],
+  "version": "1.0.2"
+}

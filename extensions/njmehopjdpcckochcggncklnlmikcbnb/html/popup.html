@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link href="css/lib/materialize.min.css" rel="stylesheet">
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/materialize.min.js"></script>
+    <script src="js/popup.js"></script>
+
+</head>
+<body style="width: 408px">
+<div class="modal1">
+    <div class="modal-wrapper">
+        <div class="modal-top">
+            <span class="txt">Enable Helium Extension</span>
+            <a href="javascript:void(0);" class="toggle toggle_on action-enable"></a>
+        </div>
+        <div class="modal-content">
+            <div class="block block-always-show action-black-box closed" style="cursor: pointer;">
+                <img src="images/icons/xray.png" style="margin-left: 15px;margin-bottom: -3px;">
+                <span class="txt">Xray - Amazon Product Research</span>
+            </div>
+
+            <div class="block-show action-asin-grabber closed" style="cursor: pointer;">
+                <i class="fa fa-list-ol icon" aria-hidden="true"></i>
+                <span class="txt">ASIN Grabber</span>
+            </div>
+            <div class="block action-profitabily-calculator closed" style="cursor: pointer;">
+                <i class="fa fa-percent icon" aria-hidden="true"></i>
+                <span class="txt">Profitability Calculator</span>
+            </div>
+            <div class="block action-stock-stats closed" style="cursor: pointer;">
+                <i class="fa fa-bar-chart icon" aria-hidden="true"></i>
+                <span class="txt">Inventory Level</span>
+            </div>
+
+            <div class="block review-downloader closed" data-class="action-review-downloader" style="cursor: pointer;">
+                <div class="action action-review-downloader" data-class="action-review-downloader">
+                    <i class="fa fa-sliders icon" aria-hidden="true"></i>
+                    <span class="txt">Review Downloader</span>
+                    <i class="fa fa-arrow-circle-right arrow" aria-hidden="true"></i>
+                </div>
+                <div class="action-review-downloader-content hide">
+                    <div class="container">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input placeholder="From, Date" id="from" type="text" class="datepicker">
+                                </div>
+                                <div class="input-field col s6">
+                                    <input placeholder="To, Date" id="to" type="text" class="datepicker">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="switch">
+                                        <input id="isOnlyVerifiedEnabled" type="checkbox">
+                                        <span class="selector option_disabled" data-id="isOnlyVerifiedEnabled"></span>
+                                        <label class="downloader-label">
+                                            Only Verified Purchase
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="switch">
+                                        <input id="isOnlyHelpfulEnabled" type="checkbox">
+                                        <span class="selector option_disabled" data-id="isOnlyHelpfulEnabled"></span>
+                                        <label class="downloader-label">
+                                            Only Helpful
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="switch">
+                                        <input id="isOnlyWithImagesEnabled" type="checkbox">
+                                        <span class="selector option_disabled" data-id="isOnlyWithImagesEnabled"></span>
+                                        <label class="downloader-label">
+                                            Only With Images
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="switch">
+                                        <input id="isOnlyWithVideosEnabled" type="checkbox">
+                                        <span class="selector option_disabled" data-id="isOnlyWithVideosEnabled"></span>
+                                        <label class="downloader-label">
+                                            Only With Videos
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s2">
+                                    <input type="checkbox" id="isStar1Enabled" checked="checked"/>
+                                    <i class='star fa fa-star star1' data-star="1"></i>
+                                    <div class="progress" id="rating1">
+                                        <div class="determinate" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <input type="checkbox" id="isStar2Enabled" checked="checked" />
+                                    <span class='star fa fa-star star2' data-star="2"></span>
+                                    <div class="progress" id="rating2">
+                                        <div class="determinate" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <input type="checkbox" id="isStar3Enabled" checked="checked" />
+                                    <span class='star fa fa-star star3' data-star="3"></span>
+                                    <div class="progress" id="rating3">
+                                        <div class="determinate" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <input type="checkbox" id="isStar4Enabled" checked="checked" />
+                                    <span class='star fa fa-star star4' data-star="4"></span>
+                                    <div class="progress" id="rating4">
+                                        <div class="determinate" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <div class="col s2">
+                                    <input type="checkbox" id="isStar5Enabled" checked="checked" />
+                                    <span class='star fa fa-star star5' data-star="5"></span>
+                                    <div class="progress" id="rating5">
+                                        <div class="determinate" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input placeholder="Search" id="search" type="text" class="">
+                                </div>
+                            </div>
+                            <div style="text-align: center;">
+                                <a id="extract" class="btn btn-normal waves-effect waves-light play">
+                                    <span><i class="material-icons left">unarchive</i><span>Extract</span></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="block error" id="login-notification" style="display: none">
+                <ul class="list" style="margin-left: 40px;">
+                    <li class="">Please log in at <a id="member-url" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="block error" id="module-notification" style="display: none">
+                <ul class="list">
+                    <li class=""><span id="module-name"></span> is currently undergoing maintenance.
+                        Please check back in a few hours</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-bottom">
+            <a class="action-all-tools" href="#">Launch Helium 10 Tools</a>
+            <span class="ver"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

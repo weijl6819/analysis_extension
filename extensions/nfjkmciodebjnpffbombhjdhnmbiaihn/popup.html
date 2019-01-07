@@ -1,0 +1,78 @@
+
+<html ng-app="stockWatchApp" >
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+  <body style="color:white;" ng-controller="stockWatchController">
+    <div style="margin:10px;">Enter stock symbol to add to watch list. Data updated every 5 minutes</div>
+    <div>{{message}}</div>
+    <div class="container-fluid">
+      <form class="navbar-form navbar-left">
+        <div class="form-group" style="display:inline-flex">
+          <input class="form-control" ng-keyup="$event.keyCode == 13 && addToWatchList()"  ng-model="tckrEntered" type="text" placeholder="Symbol">
+          <button style="margin-left:20px" type="button" class="btn btn-primary" ng-click="addToWatchList()">Add to watchlist</button>
+        </div>
+      </form>
+    </div>
+    <table ng-if="stocksData" class="table">
+      <tr>
+        <td></td><td>Stock</td><td>Change</td><td>Value</td><td></td>
+      </tr>
+      <tr>
+        <td style="padding:0px;" colspan="5"><hr style="margin:0px;"></td>
+      </tr>
+      <tr ng-repeat-start="data in stocksData">
+        <td>
+          <div class="divLink" ng-if="!data.expanded" ng-click="expandedClick(data)">+</div>
+          <div class="divLink" ng-if="data.expanded" ng-click="expandedClick(data)">-</div>
+        </td>
+        <td>{{data.Symbol | uppercase}}</td>
+        <td ng-class="data.PercentChange.includes('-') ? 'changeValueRed' : 'changeValueGreen'">
+          {{data.Change.slice(0,data.Change.indexOf('.')+3)}}&nbsp;&nbsp; |&nbsp;&nbsp; {{data.PercentChange.slice(0,data.PercentChange.indexOf('.')+3)}}%
+        </td>
+        <td>{{data.LastTradePriceOnly.slice(0,data.LastTradePriceOnly.indexOf('.')+3)}}</td>
+        <td><div class="divLink" ng-click="deleteTicker(data)">x</div></td>
+      </tr>
+      <tr>
+        <td ng-show="data.expanded" colspan="5" style="">
+          <table  class="table-bordered">
+            <tr>
+              <td colspan=4>
+                <div class="chart-container">
+                  <canvas ng-show="data.chartURL=='1d'" id="chart_div{{data.Symbol}}1d"></canvas>
+                  <canvas ng-show="data.chartURL=='1m'" id="chart_div{{data.Symbol}}1m"></canvas>
+                  <canvas ng-show="data.chartURL=='3m'" id="chart_div{{data.Symbol}}3m"></canvas>
+                  <canvas ng-show="data.chartURL=='6m'" id="chart_div{{data.Symbol}}6m"></canvas>
+                  <canvas ng-show="data.chartURL=='1y'" id="chart_div{{data.Symbol}}1y"></canvas>
+                  <canvas ng-show="data.chartURL=='5y'" id="chart_div{{data.Symbol}}5y"></canvas>
+                </div>
+                <div style="display:inline-flex">
+                  <div class="" data-toggle="buttons">
+                    <button ng-class="data.chartURL.includes('1d')?'btn btn-primary active' : 'btn btn-primary'" style="width: 52px;" ng-click="changeChartURL(data,'1d')">1D</button>
+                    <button ng-class="data.chartURL.includes('1m')?'btn btn-primary active' : 'btn btn-primary'" style="width: 52px;" ng-click="changeChartURL(data,'1m')">1M</button>
+                    <button ng-class="data.chartURL.includes('3m')?'btn btn-primary active' : 'btn btn-primary'" style="width: 52px;" ng-click="changeChartURL(data,'3m')">3M</button>
+                    <button ng-class="data.chartURL.includes('6m')?'btn btn-primary active' : 'btn btn-primary'" style="width: 52px;" ng-click="changeChartURL(data,'6m')">6M</button>
+                    <button ng-class="data.chartURL.includes('1y')?'btn btn-primary active' : 'btn btn-primary'" style="width: 52px;" ng-click="changeChartURL(data,'1y')">1Y</button>
+                    <button ng-class="data.chartURL.includes('5y')?'btn btn-primary active' : 'btn btn-primary'" style="width: 52px;" ng-click="changeChartURL(data,'5y')">5Y</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr ng-repeat-end>
+        <td style="padding:0px;" colspan="5"><hr style="margin:0px;"></td>
+      </tr>
+    </table>
+    <div class="modal"><!-- Place at bottom of page --></div>
+  </body>
+</html>
+

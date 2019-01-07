@@ -1,0 +1,99 @@
+.language-options {
+	height: auto!important;
+}
+.selectpick_div_box {
+	bottom: 0px!important;
+}
+
+.selectpick_div {
+	position: relative;
+	background-color: transparent;
+	cursor: pointer;
+	overflow: hidden;
+}
+.selectpick_div span:after {
+	margin-left: 4px;
+	font-size: 10px;
+	display: inline-block;
+	content: '\e833';
+	font-family: "mystart-font";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+}
+
+.selectpick_options {
+	position: relative;
+	text-align:left;
+	display:none;
+}
+
+.selectpick_options ul {
+	text-align: left;
+	list-style: none;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+}
+
+.selectpick_options ul li {
+	width: 80px;
+	text-align: left;
+	font-size: 13px;
+	display: inline-block;
+	background-color: transparent;
+}
+.selectpick_options ul li:after {
+	margin-left: 4px;
+	font-size: 10px;
+	display: inline-block;
+	content: '\e822';
+	font-family: "mystart-font";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+}
+.selectpick_options ul li.selectpick_options_selected:after {
+	margin-left: 4px;
+	font-size: 10px;
+	display: inline-block;
+	content: '\e823';
+	font-family: "mystart-font";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	speak: none;
+	text-decoration: inherit;
+	text-transform: none;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+}
+
+.selectpick_no_select {
+	cursor: default;
+	color: #9a9898;
+	background-color: #F5F5F5;
+}
+
+.select_hide {
+	display:none;
+	-moz-opacity: 0;
+	opacity: 0;
+	-webkit-opacity: 0;
+	filter: alpha(opacity =0);
+}
+
+.selectpick_options li{cursor:pointer;}
+.selectpick_options li label{cursor:pointer;}
+

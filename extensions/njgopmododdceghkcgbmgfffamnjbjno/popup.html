@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Set Page Color Popup</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/hint.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:900,400" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+  <body class="appBody">
+  	<div class="header">
+  		<span class="navRight">
+  			<a href="#search" id="appHome" class="navItem red hint--bottom" data-hint="Search Categories" data-toggle="tab">
+  				<i class="fa fa-search"></i>
+  			</a>
+        <a href="#about" id="appAbout" class="navItem blue hint--bottom" data-hint="About FindFlix" data-toggle="tab">
+          <i class="fa fa-question"></i>
+        </a>
+  			<a href="https://www.paypal.me/pricing" target="_blank" class="navItem green hint--bottom" data-hint="Donate">
+  				<i class="fa fa-heart"></i>
+  			</a>
+  			<a href="https://joshbarker.me/findflix/" target="_blank" class="navItem purple hint--bottom" data-hint="Homepage">
+  				<i class="fa fa-home"></i>
+  			</a>
+  		</span>
+  		<span class="title">Find<span class="flix">Flix</span></span>
+  		<span class="subTitle">Find Movies Quicker!</span>
+  	</div>
+    <div class="tab-content">
+
+    	<div id="search" class="tab-pane fade in active">
+  	  	<form>
+  	  		<input class="form-control" type="text" id="searchCategory" placeholder="Type to begin searching..." />
+  	  	</form>
+  	  	<div class="resultsSection">
+          <div id="resultsList"></div>
+  	  	</div>
+    	</div>
+
+    	<div id="about" class="tab-pane fade">
+    		<strong>FindFlix version 1.0.4</strong><br /><br />
+
+        <strong>Contribution:</strong><br />
+        Found a bug? Report it <a href="https://github.com/Jarker/FindFlix/issues" target="_blank">here</a>.<br />
+    		Fork this project on <a href="https://github.com/Jarker/FindFlix" target="_blank"><i class="fa fa-github"></i> GitHub</a>.<br /><br />
+        <strong>Notice:</strong><br />
+        Can't access one of the categories? It may not be broken, it may be the region you're accessing it from.<br /><br />
+        <strong>Credits:</strong><br />
+    		Extension Originally developed by <a href="http://kiwy.io/" target="_blank">Josh barker</a>.<br />
+    		Netflix secret categories from <a href="http://ogres-crypt.com/" target="_blank">Ogres-Crypt.com</a>.<br />
+    		Inspired by <a href="https://www.reddit.com/r/technology/comments/3zx1l8/unlock_netflixs_hidden_categories_with_these/" target="_blank">Reddit</a>!<br /><br />
+    		<small>This extension is in no way affiliated with Netflix</small>
+    	</div>
+
+      <div id="settings" class="tab-pane fade">
+        <div class="row">
+
+          <div class="col-xs-9">
+            <strong>Show Listings Before Searching?</strong>
+          </div>
+          <div class="col-xs-3">
+            <input type="checkbox" id="showListingsBeforeSearching" />
+          </div>
+
+          <div class="col-xs-9">
+            <strong>Use the FindFlix Dark Theme?</strong>
+          </div>
+          <div class="col-xs-3">
+            <input type="checkbox" id="useFindFlixDarkTheme" />
+          </div>
+
+        </div>
+      </div>
+
+      <div id="favourites" class="tab-pane fade">
+        Favourites
+      </div>
+
+    </div>
+  </body>
+</html>

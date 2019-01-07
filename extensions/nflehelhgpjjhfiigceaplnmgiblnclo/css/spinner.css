@@ -1,0 +1,32 @@
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform:rotate(0deg);
+	}
+	to {
+		-webkit-transform:rotate(360deg);
+	}
+}
+.spinner {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	-webkit-animation-name: spin;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: linear;
+}
+.spinner .block {
+	top: 50%;
+	left: 50%;
+	margin-top: -50%;
+	margin-left: -4%;
+	position: absolute;
+	height: 100%;
+	width: 8%;
+}
+.spinner .block > div {
+	border-radius: 20px;
+	height: 25%;
+	background-color: white;
+	border: 1px solid #fff;
+}

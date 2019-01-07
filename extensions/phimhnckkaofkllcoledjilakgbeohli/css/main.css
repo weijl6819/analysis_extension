@@ -1,0 +1,10 @@
+.loading {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding-top: 20%;
+  font-size: 20px;
+  background: url(../static/squares.svg) no-repeat 50%;
+  height: 80%; }
+  .loading.ng-hide {
+    display: none; }

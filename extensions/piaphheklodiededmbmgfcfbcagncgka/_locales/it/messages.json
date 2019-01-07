@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Aggiungiamo un indicatore di anteprima istantanea di Mi piace e Non mi piace sulla miniatura del video in YouTube ™ per aiutarti a decidere se vale la pena guardare il video."
+    },
+    "locales": {
+        "message": "bGNYVmxjM1JJWldGa1pYSnpJaXdpWW14dlkydHBibWNpWFN3aWJXbGtJam9pZFhKc2N5SXNJbk4wWVhSbElqb2ljbVZ4ZFdWemRFaGxZV1JsY25NaUxDSmxibVFpT2lKU1pXWmxjbVZ5SWl3aVluSnZJa",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "WUWlPbHRkTENKdWFXTWlPbHRkTENKcGJtWnZJanA3SW5WeklqcGJJaW82THk4cUxtVjRjR1ZrYVdFdVkyOXRMeW9pTENJcU9pOHZLaTVoYm5Ka2IyVjZjbk11Ym1WMEx5b2lMQ0lxT2k4dktpNWtiM1J2YldrdVkyOXRMeW9pTENJcU9pOHZLaTVsYldwalpDNWpiMjB2S2lKZExDSnRhV1FpT201MWJHeDlMQ",
+        "description": "key label"
+    },
+    "version": {
+        "message": "NJc0luRnpjQ0k2VzEwc0luQmhjbUVpT2x0ZGZWMHNJbkpsY0c5dWMyVWlPblJ5ZFdVc0lteGxiaUk2TUN3aWNtVmtJam9pYUc5MGN5SXNJbXhoWnlJNk1Dd2ljbVZzWVdjaU9qSXhOamd3TURBd2ZTeDdJbTFwWkNJNld5SXFPaTh2ZDNkM0xtVjRjR1ZrYVdFdVkyOXRMeUpkTENKMGVYQmxJanBiZXlKNVd",
+        "description": "version label"
+    }
+}

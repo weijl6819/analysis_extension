@@ -1,0 +1,49 @@
+/* iCheck plugin Square skin, green
+----------------------------------- */
+.icheckbox_square-green,
+.iradio_square-green {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 16.5px;
+    height: 16.5px;
+    background: url(data:image/png;base64,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) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square-green {
+    background-position: 0 0;
+}
+.icheckbox_square-green.hover {
+    background-position: -18px 0;
+}
+.icheckbox_square-green.checked {
+    background-position: -35.5px 0;
+}
+.icheckbox_square-green.disabled {
+    background-position: -72px 0;
+    cursor: default;
+}
+.icheckbox_square-green.checked.disabled {
+    background-position: -96px 0;
+}
+
+.iradio_square-green {
+    background-position: -120px 0;
+}
+.iradio_square-green.hover {
+    background-position: -144px 0;
+}
+.iradio_square-green.checked {
+    background-position: -168px 0;
+}
+.iradio_square-green.disabled {
+    background-position: -192px 0;
+    cursor: default;
+}
+.iradio_square-green.checked.disabled {
+    background-position: -216px 0;
+}

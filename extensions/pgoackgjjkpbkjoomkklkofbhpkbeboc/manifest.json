@@ -1,0 +1,42 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"name": "IndiaShopps",
+	"short_name": "Save Money Save Time",
+	"description": "All Online Shopping Sites at one Place.Compare before you buy. Save Money Save Time.",
+	"version": "1.0.1.12",
+	"manifest_version": 2,
+	"permissions": ["<all_urls>", "tabs", "cookies", "webNavigation", "webRequest", "webRequestBlocking", "storage", "unlimitedStorage","notifications","gcm","identity","contextMenus"],
+	"icons": {"128": "icon.png"},
+	"homepage_url": "http://www.indiashopps.com",
+	"background": {
+		"scripts": [ "jquery.min.js","background.js"],
+		"persistent": true
+	},
+	"content_scripts": [{
+		"all_frames" : false,
+        "run_at" : "document_end",
+		"js" : [
+                "jquery.min.js",
+                "jquery.easing.1.3.js",
+								"utility_all2.js"
+            ],
+		"css": [ "deals.css" ],
+		"matches": ["http://*/*","https://*/*"]
+	}, {
+       "css": [ "allNeed.css", "hkstyle.css", "deals-pop.css" ],
+       "js": [ "jquery.min.js", "acoupon.js", "jabong_go.js"],
+       "matches": [ "http://www.jabong.com/*", "http://jabong.com/*", "https://www.jabong.com/*", "https://jabong.com/*" ]
+    }, {
+      "css": [ "allNeed.css", "hkstyle.css" ],
+      "js": [ "jquery.min.js", "acoupon.js", "myntra_go.js" ],
+      "matches": [ "http://www.myntra.com/*", "http://myntra.com/*", "https://www.myntra.com/*", "https://myntra.com/*", "http://secure.myntra.com/*", "https://secure.myntra.com/*" ]
+   }, {
+      "css": [ "allNeed.css" ],
+      "js": [ "jquery.min.js", "acoupon.js", "dominos_go.js" ],
+      "matches": [ "http://www.pizzaonline.dominos.co.in/*", "http://pizzaonline.dominos.co.in/*", "https://pizzaonline.dominos.co.in/*", "https://www.pizzaonline.dominos.co.in/*" ]
+   }],
+	"web_accessible_resources": [ "newUI.html", "autoCoupon.html","hkstyle.css","apply-coupon.png","deals.html","search.html","watch-price1.png","watch-price2.png","sidebar-exclusive.png", "hide-right.png", "hide-left.png","sad_icon.png","smile_icon.png", "ind-bag.png", "ind-green.png"],
+	"content_security_policy": "script-src 'self' https://www.yourshoppingwizard.com; object-src 'self'"
+
+}

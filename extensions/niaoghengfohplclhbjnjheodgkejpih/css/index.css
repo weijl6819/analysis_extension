@@ -1,0 +1,76 @@
+body {
+	/*font-family: Verdana, Geneva, sans-serif;
+	 font-size: 11px;*/
+	width:1024px; /*480px;*/
+	height:600px; /*480px;*/
+	margin:0px;
+}
+/* sankey */
+.node rect {
+	cursor:pointer;
+	fill-opacity:.9;
+	shape-rendering:crispEdges;
+}
+.node text {
+	pointer-events:none;
+	text-shadow:0 1px 0 #fff;
+	font-size:smaller;
+}
+.link {
+	fill:none;
+	stroke:#000;
+	stroke-opacity:.2;
+}
+.link:hover {
+	stroke-opacity:.5;
+}
+/* end sankey */
+.modal {
+	font-size:smaller;
+	position:fixed;
+	top:12px;
+	left:12px;
+	z-index:1050;
+	width:460px;
+	margin-left:5px;
+	background-color:#fff;
+	border:1px solid #999;
+	border:1px solid rgba(0,0,0,0.3);
+	*border:1px solid #999;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	outline:0;
+	-webkit-box-shadow:0 3px 7px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 3px 7px rgba(0,0,0,0.3);
+	box-shadow:0 3px 7px rgba(0,0,0,0.3);
+	-webkit-background-clip:padding-box;
+	-moz-background-clip:padding-box;
+	background-clip:padding-box;
+}
+.modal.fade.in {
+	top:2px;
+}
+#modalHeader {
+	line-height:12px !important;
+	font-size:12px;
+}
+#modalHeader .favicon {
+	float:left;
+}
+.table-condensed th {
+	line-height:12px !important;
+	padding:1px 1px;
+}
+.table-condensed td {
+	line-height:12px !important;
+	padding:1px 1px;
+}
+.table-footer {
+	padding:7px 7px 7px !important;
+}
+.favicon {
+	width:16px;
+	height:16px;
+	margin-right:6px;
+}

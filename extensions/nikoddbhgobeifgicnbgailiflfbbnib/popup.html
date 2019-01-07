@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body{
+		width: 300px;
+		display: block;
+		height: 200px;
+		position: relative;
+	}
+	h1{font-size: 16px; text-align: center;}
+	.button--nCage{background: url("http://files.gamebanana.com/img/ico/sprays/516c32f08e03d.png") no-repeat;}
+	.button--God{background: url("http://sandbox.yoyogames.com/extras/image/name/san2/795/569795/original/MorganFreeman.png") no-repeat;}
+	.button--pepe{background: url("http://vignette4.wikia.nocookie.net/roblox/images/5/57/Pepe.png/revision/latest?cb=20150909113619") no-repeat;}
+	.button--Illuminati{background: url("http://vignette4.wikia.nocookie.net/clubpenguin/images/2/2d/Illuminati.png/revision/latest/scale-to-width-down/480?cb=20150117022611") no-repeat;}
+	.button--Money{background: url("http://i48.tinypic.com/v6m8eb.jpg") no-repeat;}
+	.button--Fedora{background: url("http://vignette1.wikia.nocookie.net/animalcrossing/images/5/5e/Fedora.png/revision/latest?cb=20140504124922") no-repeat;}
+	.button{
+		margin: 20px;
+		margin-bottom: 0;
+		height: 48px;
+		width: 48px;
+		background-size: contain;
+		display: inline-block;
+	}
+	.row{width: 280px; height: auto; margin: auto; display: block;}
+	.button:hover{opacity: 0.8;}
+	.halt-rain{
+		position: absolute;
+		bottom: 5px;
+		right: 10px;
+		cursor: pointer; 
+	}
+	.halt-rain:hover{text-decoration: underline; }
+</style>
+<body>
+	<h1>Select your desired raining element</h1>
+
+	<div class="row">
+		<div id="nCage" class="button button--nCage" title="nCage"></div>
+  		<div id="God" class="button button--God" title="God"></div>
+  		<div id="pepe" class="button button--pepe" title="pepe"></div>
+	</div>
+	<div class="row">
+		<div id="Illuminati" class="button button--Illuminati" title="Illuminati"></div>
+		<div id="Money" class="button button--Money" title="Money"></div>
+		<div id="Fedora" class="button button--Fedora" title="Fedora"></div>
+		
+	</div>
+  
+
+  	<div id="stopAll" class="halt-rain">Click here to stop!</div>
+	<script type="text/javascript" src="popup.js"></script>
+</body>
+</html>
+

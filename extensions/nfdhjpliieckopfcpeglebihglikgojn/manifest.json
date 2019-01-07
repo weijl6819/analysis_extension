@@ -1,0 +1,42 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "Debrid-Link",
+  "description":"__MSG_extensionDescription__",
+  "author": "Debrid-Link",
+  "version": "3.10.3",
+  "minimum_chrome_version": "42.0.0",
+  "permissions": ["downloads", "https://*/*", "http://*/*", "tabs", "contextMenus", "clipboardWrite", "webRequest", "webRequestBlocking"],
+  "browser_action": {"default_popup": "popup.html", "default_icon": "images/icon16.png"},
+  "background": {
+    "page": "background.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*","http://*/*"],
+      "js": ["js/inject-concat.js"],
+      "css": ["css/inject-concat.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://debrid-link.fr/webapp/stream/*", "https://debrid-link.com/webapp/stream/*"],
+      "js": ["js/inject/streamAuthWebapp.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "manifest_version": 2,
+  "icons": {
+    "128": "images/icon128.png",
+    "48": "images/icon48.png",
+    "32": "images/icon32.png",
+    "16": "images/icon16.png"
+  },
+  "web_accessible_resources": [
+    "images/icon128.png",
+    "images/icon48.png",
+    "images/icon25.png",
+    "images/icon16.png",
+    "player.html"
+  ],
+  "default_locale": "en"
+}

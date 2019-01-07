@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+# Start Watching
+../node_modules/.bin/watchify -v -t coffeeify src/options.coffee -o app/options.js &
+../node_modules/.bin/watchify -v -t coffeeify src/inject.coffee -o app/inject.js -t jstify &
+../node_modules/.bin/watchify -v -t coffeeify src/background.coffee -o app/background.js &
+../node_modules/.bin/watchify -v -t coffeeify src/popup.coffee -o app/popup.js -t jstify &
+
+grunt watch &
+
+wait
+
+# Kill jobs on termination.
+trap 'kill $(jobs -p)' SIGINT SIGTERM

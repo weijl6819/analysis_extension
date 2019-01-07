@@ -1,0 +1,236 @@
+html,body{
+height: 100%;
+font-family: Roboto, monospace;
+}
+
+body{
+  overflow: hidden;
+}
+#body_content{
+  width: 100%;
+}
+#collapse_button:focus{
+   outline: none !important;
+   box-shadow: none;
+}
+label{
+  font-size: 15px;
+}
+
+h2{
+  border-top: 1px solid rgba(255,255,255, 0.5);
+  border-bottom: 1px solid rgba(255,255,255, 0.5);
+}
+/*--------------------------------------------------------------------
+basic styles of body elements and their appeareance
+--------------------------------------------------------------------*/
+
+/*style of background youtube video*/
+#player{
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  top:0px;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+}
+#alert_box{
+  display: none;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 195px;
+  height: 89px;
+  padding: 10px;
+  background-color: rgba(1,1,1,0.8);
+  color: #ffffff;
+  font-size: 13px;
+  font-family: Roboto;
+  font-weight: 300;
+  line-height: 1.5;
+  z-index: 1000;
+  border: 1px solid #ffffff;
+}
+
+#alert_box p{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 0px;
+  padding: 7px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+#weather_alert{
+  margin-top: 50px;
+}
+/*--------------------------------------------------------
+Style searchbar-----------------------------------------*/
+
+#search{
+  width: 37%;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top:25px;
+  height: 52px;
+  border-radius: 36px;
+  background-color: transparent;
+  background-image: radial-gradient(transparent,rgba(0,0,0,0.08));
+  box-shadow: inset -0px -1px 0 1px rgba(255, 255, 255, 0.4);
+  border-color:white;
+  border-style: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 2;
+  color:  #010101;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 0px 60px rgba(45, 61, 83, 0.4)
+}
+#search:active + #SearchText{
+  display:none;
+}
+#search:focus + #SearchText{
+  display:none;
+}
+#search:focus{
+  outline:none;
+  background-color: rgba(255,255,255,0.7);
+  box-shadow: inset 0px -1px 0 1px rgba(255, 255, 255, 0.4);
+}
+#search:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+#search::-webkit-input-placeholder {
+  color:  rgba(255,255,255,0.28);
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 100;
+  text-align: center;
+  height:50px;
+  text-shadow: 0px 0px 60px rgba(45, 61, 83, 0.4);
+}
+
+#SearchText{
+  z-index: -1;
+  height: 33px;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 0.6;
+  text-align: center;
+  color: #000000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:423px;
+}
+/*Style clock*/
+
+#time{
+  display: inline;
+  width: auto;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0 0 30px rgba(45, 61, 83, 0.8);
+  cursor: pointer;
+  z-index: 1001;
+  position: absolute;
+  left:28px;
+}
+#str{
+  color: #ffffff;
+  text-shadow: 0 0 30px rgba(45, 61, 83, 0.8);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1001;
+  margin-left: 2px;
+}
+#date{
+  z-index: 1001;
+  font-size: 12px;
+  font-weight: 300;
+  color: #ffffff;
+  text-shadow: 0 0 30px rgba(45, 61, 83, 0.8);
+  position: relative;
+  top:40px;
+  left:15px;
+}
+#weather_container{
+  z-index: 1001;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+#current_weather{
+  color: white;
+  text-shadow: 0 0 30px rgba(45, 61, 83, 0.8);
+  z-index: 1001;
+  display: block;
+  cursor:pointer;
+  font-family: Roboto;
+  font-weight: 300;
+
+}
+#temperature{
+  font-size: 30px;
+  display: inline;
+  position: relative;
+}
+#unit{
+  font-size: 20px;
+  font-weight: 400;
+  display: inline;
+  color: #fff;
+  position: relative;
+}
+#current_description{
+  display:inline-block;
+  position: relative;
+  color:white;
+  text-shadow: 0 0 30px rgba(45, 61, 83, 0.8);
+  font-size: 12px;
+  font-weight: 300;
+  top:-10px;
+}
+#location{
+  display: inline;
+}
+#weather_description{
+  display: inline;
+}
+#weather_icon{
+  position: absolute;
+  height: 42px;
+  top: 35px;
+}
+
+#bmc{
+  z-index:1;
+  height: 40px;
+  color: white;
+  position: absolute;
+  top: 56px;;
+  width:auto;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}#bmc a{
+  display: inline;
+}
+#bmc a img{
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  width:20px;
+  margin-left: 15px;
+  position: relative;
+  display: inline;
+
+}

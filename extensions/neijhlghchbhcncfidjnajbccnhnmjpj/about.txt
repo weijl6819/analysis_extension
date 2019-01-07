@@ -1,0 +1,19 @@
+###############################################
+##      WIU Libraries Research Panel 0.4      #
+##           Chrome Browser Edition           #
+##                10.aug.2018                 #
+##          2018 All Rights Reserved          #
+##     Information Systems & Digitization     #
+##    Western Illinois University Libraries   #
+##   wiu.edu/libraries/infosysdig/rezpanel/   #
+###############################################
+################## Credits ####################
+##         Code: Isaac Hunter Dunlap          #
+##           Professor & Librarian            #
+##                                            #
+##       Font Awesome: by Dave Gandy          #
+##		  - http://fontawesome.io             #
+##                                            #
+##             Panel inspired by:             #
+## WIU Libraries Research Toolbar (2008-2017) #
+###############################################

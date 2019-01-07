@@ -1,0 +1,70 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"name": "__MSG_appName__",
+	"short_name": "__MSG_appShortName__",
+	"version": "0.0.6",
+	"manifest_version": 2,
+	"description": "__MSG_appDescription__",
+	"icons": {
+		"16": "images/icon-16.png",
+		"19": "images/icon-19.png",
+		"24": "images/icon-24.png",
+		"32": "images/icon-32.png",
+		"38": "images/icon-38.png",
+		"48": "images/icon-48.png",
+		"64": "images/icon-64.png",
+		"128": "images/icon-128.png"
+	},
+	"default_locale": "en",
+	"background": {
+		"scripts": [
+			"scripts/background.js"
+		],
+		"persistent": false
+	},
+	"permissions": [
+		"tabs",
+		"storage",
+		"https://www.youtube.com/watch?v=*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.youtube.com/watch?v=*"
+			],
+			"js": [
+				"lib/jquery-3.1.1.min.js",
+				"lib/jquery-ui.min.js",
+				"scripts/contentscript.js"
+			],
+			"css": [
+				"styles/content.css",
+				"lib/jquery-ui.min.css"
+			],
+			"run_at": "document_end",
+			"all_frames": false
+		}
+	],
+	"web_accessible_resources": [
+		"lib/youtube/www-widgetapi-vfl4Pu_oL/www-widgetapi.js",
+		"scripts/yt-embeded.js",
+		"images/icon-64-transparent.png",
+		"images/icon-close-24.png"
+	],
+	"browser_action": {
+		"default_icon": {
+			"16": "images/icon-16.png",
+			"19": "images/icon-19.png",
+			"24": "images/icon-24.png",
+			"32": "images/icon-32.png",
+			"38": "images/icon-38.png",
+			"48": "images/icon-48.png",
+			"64": "images/icon-64.png",
+			"128": "images/icon-128.png"
+		},
+		"default_title": "__MSG_appName__"
+	},
+	"author": "hirox.lab@gmail.com",
+	"homepage_url": "http://hiroxlab.hatenablog.com"
+}

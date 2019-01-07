@@ -1,0 +1,7 @@
+(function() {(function(){function h(a,d){if(a){d._ad=a;var b;if(b=d._AL){var c={};if(b.ports){var f,g;for(g in b.ports)if(f=e[b.ports[g]])c[f._ad]=f}else if(b.groups)for(var h in b.groups)if(f=k[b.groups[h]])for(g in f)c[f[g]._ad]=e[f[g]._ad];b=c}else b=e;delete d._AL;for(var l in b)c=b[l],c._ad!==a&&(d._AL=c._ad,c.port.postMessage(d))}}function m(a,d){var b=e[d._ad];if(b)b._aO=0;else{var c=d;if(!e[c._ad]){b={_ad:c._ad,port:a,groups:c.groups||[],_aO:0};e[b._ad]=b;for(var f in b.groups)c=b.groups[f],(k[c]||(k[c]=
+{}))[b._ad]=b;c={_aD:"listPeers"};c._ad=b._ad;c._Ar=[];for(var g in e)g!==b._ad&&c._Ar.push({_ad:e[g]._ad,groups:e[g].groups});a.postMessage(c);c={_aD:"addPeer",_AL:{}};c._AL.groups=b.groups;h(b._ad,c)}}}function n(a){if(a&&a.data){if("ack"==a.data._aD)return m(this,a.data);h(a.data._ad,a.data)}}var l=0,e={},k={};self.addEventListener("connect",function(a){a=a.ports[0];a.addEventListener("message",n);l++;a.postMessage({_ad:"P"+l,_aD:"connected"});a.start()});self.addEventListener("message",function(a){if(a&&
+a.data){if("ack"==a.data._aD)return m(this,a.data);if("close"==a.data._aD){a=a.data._ad;var d=e[a];if(d){d.port.postMessage({_AL:a,_aD:"disconnected"});for(var b in d.groups){var c=d.groups[b];k[c]&&k[c][a]&&delete k[c][a]}delete e[a];h(a,{_aD:"delPeer"})}}else{if("startPort"==a.data._aD)return l++,self.postMessage({_ad:"P"+l,_AF:a.data._AF,_aD:"connected"});h(a.data._ad,a.data)}}})})();})();
+
+/* Esna Technologies Inc (C) 2012-2013 */
+
+//@ sourceMappingURL=G:\PROJECTS\ESNATECH\JSLink\apps\src\app\common\jsc.worker.basic.lst.map

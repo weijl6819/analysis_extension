@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta name="http-equiv" content="Content-type: text/html; charset=UTF-8"/>
+		<title label="extension_name :: settings.label"></title>
+		<link rel="shortcut icon" href="/skin/foxsecurity_16.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/skin/options.css" />
+		<script type="text/javascript" src="/content/options.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/resource/utils.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/resource/i18n.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/resource/prefs.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/locale/supported.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/content/page_lock_template.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/resource/dns_servers.js" charset="utf-8"></script>
+
+		<link rel="stylesheet" type="text/css" href="/content/tabs/tabs.css" />
+		<script type="text/javascript" src="/content/tabs/tabs.js" charset="utf-8"></script>
+	</head>
+<body>
+<form id="s3security_form" action="#">
+<center>
+<table align="center" border="0" cellpadding="0" cellspacing="0" id="tabsBox">
+	<tr valign="bottom">
+		<td>
+			<span style="font-size: 1.5em;"><span label="extension_name"></span><span> - </span><span label="settings.label"></span></span><br/>
+		</td>
+		<td align="right"><div style="margin-bottom: 5px;"><span id="settings_saved" is_hidden="true" label="pref.settings.saved.label"></span></div></td>
+	</tr>
+	<tr>
+		<td class="tabsBox" colspan="2">
+			<div style="float: right; width: 200px; text-align: right;"><select id="current_locale" name="current_locale"></select></div>
+			<ul id="tabs" style="white-space: nowrap; padding-right: 210px;">
+				<li><a href="#security_tab_general" label="pref.tab.general.label"></a></li>
+				<li><a href="#security_tab_white_list" label="pref.tab.white_list.label"></a></li>
+				<li><a href="#security_tab_black_list" label="pref.tab.black_list.label"></a></li>
+				<li><a href="#security_tab_page_lock" label="pref.tab.page_lock.label"></a></li>
+				<li><a href="#security_tab_dns_servers" label="pref.tab.dns_servers.label"></a></li>
+<!--
+				<li><a href="#security_tab_statistics" label="pref.tab.statistics.label"></a></li>
+-->
+				<li><a href="#security_tab_others" label="pref.tab.others.label"></a></li>
+			</ul>
+
+<!-- General -->
+<div class="tabContent" id="security_tab_general">
+	<div><input type="checkbox" label="pref.security_enabled.label" id="security_enabled" name="security_enabled" oncommand="s3security.check_security_enabled();"/></div>
+	<!-- ============================== -->
+	<div class="groupbox" caption="true" id="password_box">
+		<div class="caption"><span label="pref.password_settings.label"/></div>
+		<span label="pref.password_value.label"></span>
+		<input type="password" name="password_value" id="password_value" value=""/>
+		<input type="checkbox" label="pref.password_show.label" id="password_show"/>
+		<input type="button" label="pref.password_save.label" id="password_save"/>
+	</div>
+	<!-- ============================== -->
+	<div id="s3security_dangerous_tabbox">
+		<div class="groupbox" caption="true" id="security_tab_infected">
+			<div class="caption"><span label="pref.security_infected.label"/></div>
+			<!-- ================== -->
+			<div label="pref.security_action.label"></div>
+			<div style="padding-left: 50px;">
+				<input type="radio" name="security_infected_action" id="security_infected_action_pagelock" label="pref.security_action.pagelock.label" value="pagelock"><br/>
+				<input type="radio" name="security_infected_action" id="security_infected_action_forbid" label="pref.security_action.forbid.label" value="forbid"><br/>
+				<input type="radio" name="security_infected_action" id="security_infected_action_none" label="pref.security_action.none.label" value="none"><br/>
+			</div>
+			<!-- ================== -->
+			<div label="pref.security_action_subrequest.label"></div>
+			<div style="padding-left: 50px;">
+				<input type="radio" name="security_infected_subrequest" id="security_infected_subrequest_block" label="pref.security_action_subrequest.block.label" value="block"><br/>
+				<input type="radio" name="security_infected_subrequest" id="security_infected_subrequest_block_alien_domain" label="pref.security_action_subrequest.block_alien_domain.label" value="block_alien_domain"><br/>
+				<input type="radio" name="security_infected_subrequest" id="security_infected_subrequest_none" label="pref.security_action_subrequest.none.label" value="none"><br/>
+			</div>
+			<!-- ================== -->
+			<input type="checkbox" label="pref.security_alert.label" id="security_infected_alert" name="security_infected_alert"/>
+		</div>
+		<!-- ============================== -->
+		<div class="groupbox" caption="true" id="security_tab_adult">
+			<div class="caption"><span label="pref.security_adult.label"/></div>
+			<!-- ================== -->
+			<div label="pref.security_action.label"></div>
+			<div style="padding-left: 50px;">
+				<input type="radio" name="security_adult_action" id="security_adult_action_pagelock" label="pref.security_action.pagelock.label" value="pagelock"><br/>
+				<input type="radio" name="security_adult_action" id="security_adult_action_forbid" label="pref.security_action.forbid.label" value="forbid"><br/>
+				<input type="radio" name="security_adult_action" id="security_adult_action_none" label="pref.security_action.none.label" value="none"><br/>
+			</div>
+			<!-- ================== -->
+			<div label="pref.security_action_subrequest.label"></div>
+			<div style="padding-left: 50px;">
+				<input type="radio" name="security_adult_subrequest" id="security_adult_subrequest_block" label="pref.security_action_subrequest.block.label" value="block"><br/>
+				<input type="radio" name="security_adult_subrequest" id="security_adult_subrequest_block_alien_domain" label="pref.security_action_subrequest.block_alien_domain.label" value="block_alien_domain"><br/>
+				<input type="radio" name="security_adult_subrequest" id="security_adult_subrequest_none" label="pref.security_action_subrequest.none.label" value="none"><br/>
+			</div>
+			<!-- ================== -->
+			<input type="checkbox" label="pref.security_alert.label" id="security_adult_alert" name="security_adult_alert"/>
+		</div>
+	</div>
+</div>
+
+<!-- White List -->
+<div class="tabContent" id="security_tab_white_list">
+	<table>
+		<tr valign="top">
+			<td>
+				<input type="checkbox" label="pref.security_white_list_enabled.label" id="security_white_list_enabled" name="security_white_list_enabled"/><br/>
+				<span id="security_white_list_settings">
+				<input type="checkbox" label="pref.security_alert.label" id="security_white_list_alert" name="security_white_list_alert"/><br/>
+				</span>
+			</td>
+			<td style="padding-left: 20px; padding-top: 3px;" id="security_white_list_action">
+				<div label="pref.security_action_subrequest.label"></div>
+				<input type="radio" name="security_white_list_subrequest_action" id="security_white_list_subrequest_action_none" label="pref.security_action_subrequest.none.label" value="none"/><br/>
+				<input type="radio" name="security_white_list_subrequest_action" id="security_white_list_subrequest_action_block_alien_domain" label="pref.security_action_subrequest.block_alien_domain.label" value="block_alien_domain"/>
+			</td>
+		</tr>
+	</table>
+	<textarea id="security_white_list_text" style="width: 100%; height: 300px;"></textarea>
+	<div label="pref.security_mask.hint"></div>
+	<div label="pref.security_mask.example1"></div>
+	<div label="pref.security_mask.example2"></div>
+</div>
+
+<!-- Black List -->
+<div class="tabContent" id="security_tab_black_list">
+	<table>
+		<tr valign="top">
+			<td>
+				<input type="checkbox" label="pref.security_black_list_enabled.label" id="security_black_list_enabled" name="security_black_list_enabled" oncommand="s3security.check_white_black_list_enabled('black');"/><br/>
+				<span id="security_black_list_settings">
+				<input type="checkbox" label="pref.security_alert.label" id="security_black_list_alert" name="security_black_list_alert"/><br/>
+				<input type="checkbox" label="pref.security_closetab.label" id="security_black_list_closetab" name="security_black_list_closetab"/><br/>
+				</span>
+			</td>
+			<td style="padding-left: 20px; padding-top: 3px;" id="security_black_list_action">
+				<div label="pref.security_action_all.label"></div>
+				<input type="radio" name="security_black_list_action" id="security_black_list_action_pagelock" label="pref.security_action.pagelock.label" value="pagelock"/><br/>
+				<input type="radio" name="security_black_list_action" id="security_black_list_action_forbid" label="pref.security_action.forbid.label" value="forbid"/><br/>
+			</td>
+		</tr>
+	</table>
+	<textarea id="security_black_list_text" style="width: 100%; height: 300px;"></textarea>
+	<div label="pref.security_mask.hint"></div>
+	<div label="pref.security_mask.example1"></div>
+	<div label="pref.security_mask.example2"></div>
+	<div label="pref.security_mask.deny_all"></div>
+</div>
+
+<!-- Page Lock -->
+<div class="tabContent" id="security_tab_page_lock">
+	<input type="checkbox" label="pref.pagelock.default.label" id="security_page_lock_default" name="security_page_lock_default"/><br/>
+	<textarea id="security_page_lock_source_text" style="width: 100%; height: 400px;"></textarea>
+</div>
+
+<div class="tabContent" id="security_tab_dns_servers">
+	<div id="dns_servers_list">
+		<div class="groupbox" caption="true">
+			<div class="caption"><span label="pref.dns_servers.test.label"/></div>
+			<span label="pref.dns_servers.test.host.label"></span>
+			<input type="text" id="dns_test_domain" value="google.com"/>
+			<input type="button" label="pref.dns_servers.test.start.label" id="dns_test_button"/>
+		</div>
+		<div class="groupbox" caption="true">
+			<div class="caption"><div class="dns_add" id="dns_add_button">&nbsp;</div><span label="pref.tab.dns_servers.label"></span></div>
+			<table id="dns_servers_rows" style="margin-left: -8px;"></table>
+			<div id="dns_default" label="pref.reset.settings.label"></div>
+		</div>
+		<a href="http://www.s3blog.org/fox-web-security/secure-dns.html" style="text-decoration: none;" target="_blank" label="pref.dns_servers.link.s3blog.label"></a>
+		<div class="groupbox"  caption="true">
+			<div class="caption"><span>FoxDNS</span></div>
+			<div style="padding-bottom: 5px;" label="pref.foxdns.text_1.label"></div>
+			<div style="padding-bottom: 5px;" label="pref.foxdns.text_2.label"></div>
+			<a href="https://foxdns.pro" style="text-decoration: none;" target="_blank">https://foxdns.pro</a>
+		</div>
+	</div>
+	<div id="dns_servers_edit" is_hidden="true">
+		<div class="groupbox">
+			<table width="100%">
+				<tr><td width="150"><span label="pref.dns_servers.edit.enabled.label"/></td><td><input type="checkbox" id="dns_servers_edit_enabled"/></td></tr>
+				<tr><td width="150"><span label="pref.dns_servers.edit.name.label"/></td><td><input type="text" id="dns_servers_edit_name" style="width: 100%"/></td></tr>
+				<tr><td width="150"><span label="pref.dns_servers.edit.dns_ip.label"/></td><td><input type="text" id="dns_servers_edit_iplist" style="width: 100%"/></td></tr>
+				<tr><td width="150"><span label="pref.dns_servers.edit.response.label"/></td><td>
+					<table width="100%">
+						<tr><td width="150"><span label="pref.dns_servers.edit.response.adult.label"/></td><td><input type="text" id="dns_servers_edit_result_adult" style="width: 100%"/></td></tr>
+						<tr><td width="150"><span label="pref.dns_servers.edit.response.infected.label"/></td><td><input type="text" id="dns_servers_edit_result_infected" style="width: 100%"/></td></tr>
+						<tr><td width="150"><span label="pref.dns_servers.edit.response.unknown_host.label"/></td><td><input type="text" id="dns_servers_edit_result_unknown_host" style="width: 100%"/></td></tr>
+					</table>
+				</td></tr>
+				<tr><td>&nbsp;</td><td>
+					<input type="button" label="pref.dns_servers.edit.save_check.label" id="dns_servers_edit_save_check"/>
+					<input type="button" label="pref.dns_servers.edit.save.label" id="dns_servers_edit_save"/>
+					<input type="button" label="pref.dns_servers.edit.check.label" id="dns_servers_edit_check"/>
+					<input type="button" label="pref.dns_servers.edit.close.label" id="dns_servers_edit_close"/>
+					<input type="button" label="pref.dns_servers.edit.delete.label" id="dns_servers_edit_delete"/>
+				</td></tr>
+			</table>
+		</div>
+		<div label="pref.dns_servers.edit.hint1.label"></div>
+	</div>
+	<div id="dns_servers_edit_wait" is_hidden="true">
+		<div class="groupbox" style="padding: 24px"><center>
+			<img id="dns_servers_edit_wait_loader" src="/skin/loader.gif" width="48" height="48"/>
+			<div id="dns_servers_edit_wait_percent"></div>
+			<div id="dns_servers_edit_wait_error" style="color: red;" is_hidden="true"></div>
+			<input type="button" label="pref.dns_servers.edit.back_to_editing.label"  id="dns_servers_edit_wait_return"/>
+		</center></div>
+	</div>
+</div>
+
+<!--
+<div class="tabContent" id="security_tab_statistics">
+</div>
+-->
+
+<!-- Others -->
+<div class="tabContent" id="security_tab_others">
+	<input type="checkbox" label="pref.show.context_menu.main.label" id="show_context_menu_main" name="show_context_menu_main"/><br/>
+	<input type="checkbox" label="pref.startup.tabs.reload.label" id="startup_tabs_reload" name="startup_tabs_reload"/><br/>
+
+	<div align="right"><a href="#" id="reset_settings" label="pref.reset.settings.label"></a></div>
+</div>
+
+		</td>
+	</tr>
+</table>
+</form></center>
+</body>
+</html>

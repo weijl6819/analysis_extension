@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: 'brandon_textregular';
+    src: url('./hvd_fonts_-_brandontext-regular-webfont.woff2') format('woff2'),
+    url('./hvd_fonts_-_brandontext-regular-webfont.woff') format('woff'),
+    url('./hvd_fonts_-_brandontext-regular-webfont.ttf') format('truetype'),
+    url('./hvd_fonts_-_brandontext-regular-webfont.svg#brandon_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('./lemonmilk-webfont.woff2') format('woff2'),
+    url('./lemonmilk-webfont.woff') format('woff'),
+    url('./lemonmilk-webfont.ttf') format('truetype'),
+    url('./lemonmilk-webfont.svg#lemonmilkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 

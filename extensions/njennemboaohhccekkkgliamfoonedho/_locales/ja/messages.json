@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "点灯する",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "ライトアップまだシンプルだが中毒性の高いパズルゲームです。グロー·フローを作成するためのパイプと一致する色を接続します。",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

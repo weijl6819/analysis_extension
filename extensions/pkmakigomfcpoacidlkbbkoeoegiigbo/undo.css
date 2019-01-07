@@ -1,0 +1,31 @@
+
+.card.blur .back{
+	text-shadow: 0px 0px 0px black !important;
+	-webkit-user-select: text !important;  /* Chrome all / Safari all */
+	-moz-user-select: text !important;     /* Firefox all */
+	-ms-user-select: text !important;      /* IE 10+ */   
+}.e
+.card {
+	overflow: visible !important;
+	height: 100% !important;
+	min-height: 300px !important;
+	
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow:none !important;
+	box-shadow:none !important;
+	
+	-webkit-user-select: text !important;  /* Chrome all / Safari all */
+	-moz-user-select: text !important;     /* Firefox all */
+	-ms-user-select: text !important;      /* IE 10+ */   
+	
+}
+.card:after, .cards-wrap .card:after{
+	background:linear-gradient(to top, rgba(255,255,255,0)50%,rgba(255,255,255,0) 100%) !important;
+
+}
+#section-1{
+	display: none !important;
+}
+.card-margin{
+	margin-bottom: 120px !important;
+}

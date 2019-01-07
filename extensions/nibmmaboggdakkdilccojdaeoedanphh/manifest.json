@@ -1,0 +1,17 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "Account Create New",
+  "description": "Learn how to create new accounts on the most popular social media networks",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.jpg",
+   "default_popup": "index.html"
+  },
+  "permissions": [
+   "activeTab"
+   ]
+}

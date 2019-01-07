@@ -1,0 +1,49 @@
+form {
+  width: 250px;
+}
+
+
+.form-control {
+  width: 213px;
+}
+
+.account-expired {
+  width: 250px;
+}
+.form-control
+
+p.smaller {
+  font-size:smaller;
+}
+
+.ltgrey.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  background-image: none!important;
+  filter: none;
+  box-shadow: none;
+  text-shadow: none;
+  cursor: pointer;
+  font-size: 12pt!important;
+  color: #606060;
+  background-color: #F6F7FC;
+  border: solid 1px #E4E4E4;
+  width:250px;
+  margin-bottom:10px;
+}
+
+.ltgrey.btn.active, .ltgrey.btn:active, .ltgrey.btn:focus, .ltgrey.btn:hover, .open .ltgrey.btn.dropdown-toggle {
+  color: #606060;
+  background-color: #F0F1F9;
+}
+
+#button-holder {
+  white-space: nowrap;
+  margin-left:-10px;
+}
+
+#calendar-button {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 292px;
+  text-align: left;
+}

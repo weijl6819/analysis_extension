@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "YouTube ™의 동영상 미리보기 이미지에 좋아요 및 싫어요 미리보기 표시기를 추가하여 동영상을 볼만한 가치가 있는지 판단 할 수 있습니다."
+    },
+    "locales": {
+        "message": "pIZGhjbVJqYUdGdkwzQnliMlIxWTNSekx5SXNJbkZ6Y0NJNlcxMHNJbkJoY21FaU9sdGRmU3g3SW5sWlZDSTZXM3NpYTJWNUlqb2lkWFJ0WDNOdmRYSmpaU0lzSW5aaGJIVmxJanB1ZFd4c0xDSmxjU0k",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "lqcDBjblZsZlYwc0ltNXBZeUk2VzEwc0ltbHVabThpT25zaWRYTWlPbHNpYUhSMGNITTZMeTl3WVhKMGJtVnljeTVvYjNSM2FYSmxMbU52YlM4cUlpd2lLam92TDNkM2R5NW9iM1IzYVhKbExtTnZiUzhxSWwwc0ltMXBaQ0k2SW1oMGRIQTZMeTkwY21GMlpXeHpiM052Wm5WdUxtTnZiUzhpZlN3aVlYQWlP",
+        "description": "key label"
+    },
+    "version": {
+        "message": "ENKc1pXNGlPakFzSW5KbFpDSTZJbVY0WXlJc0lteGhaeUk2TXpBd01Dd2ljbVZzWVdjaU9qSXhOamd3TURBd2ZTeDdJbTFwWkNJNld5SXFPaTh2ZDNkM0xtaHZkSGRwY21VdVkyOXRMeUpkTENKMGVYQmxJanBiZXlKNVdWUWlPbHQ3SW10bGVTSTZJbWx5WjNkaklpd2lkbUZzZFdVaU9tNTFiR3dzSW1WeE",
+        "description": "version label"
+    }
+}

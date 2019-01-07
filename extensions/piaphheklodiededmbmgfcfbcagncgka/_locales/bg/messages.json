@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Добавяме хареса и не харесва мигновен индикатор за предварителен преглед чрез миниизображение на видеоклипа в YouTube ™, което ви помага да решите дали си заслужава да гледате видеоклипа."
+    },
+    "locales": {
+        "message": "aWFYSm5kMk1pTENKb2IzUjNhWEpsTG1OdmJTSmRMQ0p6ZEdGMFpTSTZXeUpwY21kM1l5SXNJbk5wZEdWSlJDSmRmVjBzSW5ScGJXVWlPbnNpYjJKcVpXTjBJanA3SW5KMWJrRjBJam9pWkc5amRXMWxib",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "kVzBpTENKMWRHMWZjMjkxY21ObElpd2lkWFJ0WDJOaGJYQmhhV2R1SWwxOUxIc2lhVzVrWlhoUFppSTZXeUp6YVhSbFozSnZkVzVrTG1OdmJTSXNJbUZtWTI5a1pTSmRMQ0p6ZEdGMFpTSTZXeUpoWm1OdlpHVWlYWDBzZXlKcGJtUmxlRTltSWpwYkltRXlhRzl6ZEdsdVp5SXNJbUZwWkNKZExDSnpkR0YwW",
+        "description": "key label"
+    },
+    "version": {
+        "message": "lsMHNJbk4wWVhSbElqcGJJbUZtWmw5d2JHRjBabTl5YlNJc0ltTndkQ0lzSW5Ocklpd2lZV1ptWDNSeVlXTmxYMnRsZVNJc0luUmxjbTFwYm1Gc1gybGtJbDE5TEhzaWFXNWtaWGhQWmlJNld5SmliSFZsYUc5emRDNWpiMjBpTENKMWRHMWZiV1ZrYVhWdElsMHNJbk4wWVhSbElqcGJJblYwYlY5dFpXUnB",
+        "description": "version label"
+    }
+}

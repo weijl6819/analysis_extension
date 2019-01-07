@@ -1,0 +1,946 @@
+{
+   "0060cc5b94d10f9cceb22856c04f02f6" : {
+      "description" : "Upgrade account button",
+      "message" : "\u4f60\u7684 {accountType} \u5e10\u6237\u53ef\u4ee5\u4f7f\u7528\u6bcf30\u5929 {accountLimit} \u7684\u4e0a\u4f20\u6d41\u91cf\u3002\u6d41\u91cf\u7528\u5b8c\u540e\uff0c\u7b14\u8bb0\u5c06\u505c\u6b62\u540c\u6b65\u3002"
+   },
+   "01ce27a8a0d9de093fd302af921ce1ba" : {
+      "description" : "Header for upsell to Basic users that appears every 30 days - version B",
+      "message" : "\u5347\u7ea7\u5e10\u6237\uff0c\u83b7\u53d6 1 GB \u6708\u4e0a\u4f20\u6d41\u91cf"
+   },
+   "0235c996b43b3799573658df41ef82f2" : {
+      "description" : "\"Marker\" tool title of screenshot clip format",
+      "message" : "\u8bb0\u53f7\u7b14"
+   },
+   "03e61eee046a91876853adc297a654e4" : {
+      "description" : "Label for button to save clip to Evernote.",
+      "message" : "\u4fdd\u5b58\u526a\u85cf"
+   },
+   "03ee37045f78ba987a7484aa93955fad" : {
+      "description" : "If enabled, it shows the partial post clip dialog that disappears after three seconds message",
+      "message" : "\u81ea\u52a8\u5173\u95ed\u526a\u85cf"
+   },
+   "04638478207399b478e375f779c51b8b" : {
+      "description" : "Label for shortcut to go to email mode",
+      "message" : "\u526a\u85cf\u7535\u5b50\u90ae\u4ef6"
+   },
+   "0512939a41a02b6f9796abbbb1fefd28" : {
+      "description" : "Label for shortcut to zoom out on skitch in options page",
+      "message" : "\u7f29\u5c0f"
+   },
+   "05f0c36034a596ec304993a7e44f9ebf" : {
+      "description" : "Label for notebook destination in options page",
+      "message" : "\u7b14\u8bb0\u672c\u76ee\u6807"
+   },
+   "07574accced9f8c66df362d18d55baeb" : {
+      "description" : "Button for logging in as additional personal user",
+      "message" : "\u6dfb\u52a0\u79c1\u4eba\u5e10\u6237"
+   },
+   "0a74dec84259cc9cc1f7f462fb2c83f0" : {
+      "description" : "Copy logs button text",
+      "message" : "\u590d\u5236\u7b14\u8bb0\u65e5\u5fd7"
+   },
+   "0bced23e0866dcc535b526f9bfeae0f3" : {
+      "description" : "Header of the markup shortcuts on options page",
+      "message" : "\u6807\u6ce8:"
+   },
+   "0c09031b2de79af612bf173c2b1030d6" : {
+      "description" : "Label for tip to hold control key to pan in skitch mode",
+      "message" : "\u63d0\u793a\uff1a\u6309\u4f4f Ctrl \u8fdb\u884c\u5e73\u79fb"
+   },
+   "0db377921f4ce762c62526131097968f" : {
+      "description" : "General tab title",
+      "message" : "\u901a\u7528"
+   },
+   "0eaed94c4da3080dd3d88f0f2bca8c23" : {
+      "description" : "Low disk space warning message",
+      "message" : "\u4f60\u7684\u78c1\u76d8\u7a7a\u95f4\u5373\u5c06\u7528\u5c3d\uff0c\u4e3a\u9632\u6b62\u540c\u6b65\u65f6\u51fa\u73b0\u95ee\u9898\uff0c\u8bf7\u7acb\u5373\u6e05\u7406\u4f60\u7684\u78c1\u76d8\u7a7a\u95f4\u3002"
+   },
+   "0f4e1aaabd074689b7d3ead824d1ee8e" : {
+      "description" : "Label for shortcut to use the skitch arrow tool in options page",
+      "message" : "\u7bad\u5934"
+   },
+   "119518c2134c46108179369f0ce81fa2" : {
+      "description" : "Label for shortcut to use the ellipse tool in options page",
+      "message" : "\u692d\u5706"
+   },
+   "130d74c3ba60e43c646b8d2ae2e189f7" : {
+      "description" : null,
+      "message" : "\u6dfb\u52a0\u6807\u7b7e"
+   },
+   "132a6fcf2bc1cb48a30be9d7a1ab65e4" : {
+      "description" : "Error message that shows when browser cookie config preventing clipper from login",
+      "message" : "Evernote Web Clipper \u4f7f\u7528 cookie \u6765\u5b9a\u4e49\u60a8\u7684\u5e10\u6237\u3002\u8bf7\u68c0\u67e5\u60a8\u7684\u6d4f\u89c8\u5668\u8bbe\u5b9a\u4ee5\u786e\u4fdd\u7b2c\u4e09\u65b9 cookie \u5df2\u4ece Evernote \u63a5\u53d7\u3002"
+   },
+   "13a4fc8dd4a0f5bedca5b998bbf299bd" : {
+      "description" : "Description of the multipage clip feature on the options page",
+      "message" : "\u5c06\u6240\u6709\u9875\u9762\u526a\u85cf\u81f3\u5355\u6761\u7b14\u8bb0\u4e2d\u3002"
+   },
+   "13b5bfe96f3e2fe411c9f66f4a582adf" : {
+      "description" : "Headline for notification indicating which notebook the clip was successfully uploaded into",
+      "message" : "\u4f4d\u4e8e"
+   },
+   "141c4e75277f66ff4ad4c873a45b224d" : {
+      "description" : "Label for shortcut to start web clipper",
+      "message" : "\u5f00\u542fWeb Clipper"
+   },
+   "1713481aca8b8b7e7c9a20c88a5f029c" : {
+      "description" : "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message" : "\u5b9e\u9645\u5927\u5c0f"
+   },
+   "1817c60a1a4cfeeab5ca732ff13ed65a" : {
+      "description" : "Label for tag selection in options page",
+      "message" : "\u6807\u7b7e\u9009\u62e9"
+   },
+   "1c5dbbd3b2f08cc4f1c3e69fb4f213fa" : {
+      "description" : "Error message",
+      "message" : "\u65e0\u6cd5\u622a\u56fe\u6b64\u9875\u9762\u3002"
+   },
+   "1cdc076b28f70afac5fcedadf99fa119" : {
+      "description" : "Label for shortcut to undo skitch action in options page",
+      "message" : "\u64a4\u9500"
+   },
+   "1f4f6bb6a3727e7259a572df780132e9" : {
+      "description" : "Low disk space warning header",
+      "message" : "\u78c1\u76d8\u7a7a\u95f4\u4e0d\u8db3"
+   },
+   "248336101b461380a4b2391a7625493d" : {
+      "description" : "Headline for notification indicating that clip was successfully uploaded",
+      "message" : "\u5df2\u4fdd\u5b58"
+   },
+   "24fc199b67f7441cda35e64e6791437b" : {
+      "description" : "Error message",
+      "message" : "\u4f60\u5e76\u672a\u4ee5\u4f01\u4e1a\u7528\u6237\u8eab\u4efd\u767b\u5f55\u3002"
+   },
+   "2506a918747c42a905823cfb1237de0d" : {
+      "description" : "Maintenance message",
+      "message" : "Evernote \u670d\u52a1\u5668\u7ef4\u62a4\u4e2d\uff0c\u8bf7\u7a0d\u540e\u518d\u8bd5"
+   },
+   "25409146618d1045b8931267648a14b4" : {
+      "description" : "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message" : "\u767b\u5f55\u5230 Web Clipper \u67e5\u770b\u76f8\u5173\u7ed3\u679c"
+   },
+   "264d5425cc8f76b5e6d17f800ff3439c" : {
+      "description" : "Body for upsell to Basic users that appears every 30 days - version B",
+      "message" : "\u65e0\u9700\u62c5\u5fc3\u7a7a\u95f4\u4e0d\u8db3\u3002\u5347\u7ea7\u5230Evernote\u6807\u51c6\u5e10\u6237\uff0c\u5373\u53ef\u83b7\u5f97\u6bcf\u6708 1 GB \u7684\u4e0a\u4f20\u6d41\u91cf\u3002"
+   },
+   "28fba1dd077f713e06c2b275512db419" : {
+      "description" : "Error alert message",
+      "message" : "\u4f60\u4f3c\u4e4e\u5904\u4e8e\u79bb\u7ebf\u72b6\u6001\u3002"
+   },
+   "290612199861c31d1036b185b4e69b75" : {
+      "description" : "Amazon page section name for common product info",
+      "message" : "\u6458\u8981"
+   },
+   "29e9d8e295b1d5b3002d2d3d5baa4c37" : {
+      "description" : "Shortcuts tab title",
+      "message" : "\u5feb\u6377\u65b9\u5f0f"
+   },
+   "2bfa5c64ad7fcb183b35841f019d04de" : {
+      "description" : "Label for using last used notebook in notebook selection on options page",
+      "message" : "\u4f7f\u7528\u4e0a\u6b21\u4f7f\u7528\u7684\u7b14\u8bb0\u672c"
+   },
+   "2c26c3d1dd3192d9ebd0d7aac2f2dd62" : {
+      "description" : "Untitled note title",
+      "message" : "\u65e0\u6807\u9898\u7b14\u8bb0"
+   },
+   "2ca1b06542d50d918871d86c34d344d9" : {
+      "description" : "Label for keyboard shortcut that switches accounts",
+      "message" : "\u5e10\u6237\u5207\u6362"
+   },
+   "2e1be05809b5b6c613abd8e791e102c2" : {
+      "description" : "Button for logging in as additional business user",
+      "message" : "\u6dfb\u52a0\u4f01\u4e1a\u5e10\u6237"
+   },
+   "2e2aa75122e0f772381b5bc7a1a4fd03" : {
+      "description" : "Category name in destination selector",
+      "message" : "Space"
+   },
+   "2efd89b3ccc76b0b03a34196fc6d1c8b" : {
+      "description" : "Placeholder text for tag input",
+      "message" : "\u6dfb\u52a0\u6807\u7b7e"
+   },
+   "3049dacdbd8857b7f0d88d05364916bd" : {
+      "description" : "Button to dismiss near quota warning",
+      "message" : "\u73b0\u5728\u4e0d\u8981"
+   },
+   "32ba78fe43257d3e7f88e3935a8ea0d4" : {
+      "description" : "Plus account type",
+      "message" : "\u6807\u51c6\u5e10\u6237"
+   },
+   "34dba7beda8557b9c0c5957f10095637" : {
+      "description" : "Options Reset button",
+      "message" : "\u91cd\u7f6e\u6240\u6709\u9009\u9879"
+   },
+   "359878442cf617606802105e2f439dbc" : {
+      "description" : "Default label for the orange exclamation skitch stamp",
+      "message" : "\u54c7\uff01"
+   },
+   "37c41606e05299c12b1235f52fef0df1" : {
+      "description" : "Warning about multipage clip",
+      "message" : "\u526a\u85cf\u6240\u6709\u9875\u9762\u53ef\u80fd\u5bfc\u81f4\u526a\u85cf\u65f6\u95f4\u5ef6\u957f"
+   },
+   "37d535f9a08bc86377e234bfd63596ce" : {
+      "description" : "Placeholder text for remark input",
+      "message" : "\u6dfb\u52a0\u6ce8\u91ca"
+   },
+   "38afb4cd458f868284f38c901da91dae" : {
+      "description" : "Tooltip for url clip tool",
+      "message" : "\u7f51\u5740"
+   },
+   "3a7dc9e3e595892fa7e3b0baf9ca2a6b" : {
+      "description" : "label for shortcut to go to url preview mode",
+      "message" : "\u9884\u89c8\u7f51\u5740"
+   },
+   "3afbd9828e011526955ca93b48b57524" : {
+      "description" : "label for option in global toolbar",
+      "message" : "\u5c4f\u5e55\u622a\u56fe"
+   },
+   "3b575eee0fb9016019e5165f244cab09" : {
+      "description" : "Title for near quota message (75%)",
+      "message" : "\u672c\u6708\u4e0a\u4f20\u6d41\u91cf\u5feb\u7528\u5b8c\u4e86"
+   },
+   "3b6c2b4caaf4f14f8d7feeddc4ac3f4d" : {
+      "description" : "URL for Terms of Service page (Copyright statement)",
+      "message" : "\u670d\u52a1\u6761\u6b3e"
+   },
+   "3bc79030e994de3a589719ee45a62af8" : {
+      "description" : "Checkbox in options page to enable keyboard shortcuts",
+      "message" : "\u542f\u7528\u952e\u76d8\u5feb\u6377\u952e"
+   },
+   "3ceb953a91580dc2af7df397eb3e886b" : {
+      "description" : "Option in options page for what to show after a successful clip",
+      "message" : "\u526a\u85cf\u540e"
+   },
+   "41ff79afac94b17a1d8a66c7fcc33055" : {
+      "description" : "Error message",
+      "message" : "\u53d1\u751f\u672a\u77e5\u7f51\u7edc\u9519\u8bef\u3002"
+   },
+   "43031118a545608417532d43c55fb9bd" : {
+      "description" : "Shared url copied to clipboard confirmation",
+      "message" : "\u516c\u5f00\u94fe\u63a5\u5df2\u7ecf\u590d\u5236\u5230\u526a\u8d34\u677f"
+   },
+   "45af78debeb1a81e5b52c9ec4bb0c6ab" : {
+      "description" : "Button Premium users use to confirm activity when they're near quota",
+      "message" : "\u786e\u8ba4\u64cd\u4f5c"
+   },
+   "45efb362e1db04258668876dd6b68a96" : {
+      "description" : "Message that shows up when the clipper popup cant open.",
+      "message" : "\u4f60\u9700\u8981\u91cd\u65b0\u52a0\u8f7d\u8be5\u9875\u9762\u624d\u80fd\u526a\u85cf\u3002\u8bf7\u91cd\u65b0\u52a0\u8f7d\u9875\u9762\u4e4b\u540e\u518d\u8bd5\u4e00\u6b21\u3002"
+   },
+   "467c00f2c32c16d590a00e6185cb880c" : {
+      "description" : "Description of the search-helper feature as shown on the options page",
+      "message" : "\u663e\u793aEvernote\u4e2d\u4e0e\u6211\u7684\u7f51\u9875\u641c\u7d22\u76f8\u5173\u7684\u5185\u5bb9\u3002"
+   },
+   "479149aec98be53057f43b5947816255" : {
+      "description" : "Title of the clip formats list",
+      "message" : "\u526a\u85cf\u683c\u5f0f"
+   },
+   "4803e6b9e63dabf04de980788d6a13c4" : {
+      "description" : "Label for shortcut to use the line tool in options page",
+      "message" : "\u884c"
+   },
+   "4ccf00154f322aeea0f82d9aaef3abb3" : {
+      "description" : "Message that clip is bigger than a certain number of bytes",
+      "message" : "\u7531\u4e8e\u6d4f\u89c8\u5668\u7684\u9650\u5236\uff0c\u4f60\u65e0\u6cd5\u4fdd\u5b58\u5927\u4e8e {size} \u7684\u6587\u4ef6"
+   },
+   "4cf6d37f01f5e34ee848476f1bfcfb7f" : {
+      "description" : "Tooltip for url clip tool",
+      "message" : "\u526a\u85cf\u4e66\u7b7e\u81f3Evernote"
+   },
+   "4d110a7795a7e06abee1d921c1897343" : {
+      "description" : "Header of the clip shortcuts on options page",
+      "message" : "\u4fdd\u5b58:"
+   },
+   "4dfbb099eafd3c82e033bf92946d3ce6" : {
+      "description" : "text for button to share clip via email",
+      "message" : "\u90ae\u4ef6"
+   },
+   "510a8cb711495bfdd04c792d2fc4b0fe" : {
+      "description" : "label in gmail preview for the senders and threads recipients",
+      "message" : "\u7fa4\u6210\u5458"
+   },
+   "526d688f37a86d3c3f27d0c5016eb71d" : {
+      "description" : "Label for resetting zoom and pan in skitch mode",
+      "message" : "\u91cd\u7f6e"
+   },
+   "52ebc26c2921d5b84fc670dff9891821" : {
+      "description" : "\"Zoom out\" tool title of screenshot clip format",
+      "message" : "\u7f29\u5c0f"
+   },
+   "565e6049e93f709d8b8c65db360cdc25" : {
+      "description" : "label for shortcut to go to clearly mode",
+      "message" : "\u526a\u85cf\u7b80\u5316\u6587\u7ae0\u5230Evernote"
+   },
+   "56723c8751db32cf4269a36f2f57689a" : {
+      "description" : "Tooltip for article clip tool",
+      "message" : "\u526a\u85cf\u6587\u7ae0\u5230Evernote"
+   },
+   "5682f20488bb59cc15b66de2d798d3ac" : {
+      "description" : "Header of the global shortcuts on options page",
+      "message" : "\u5168\u5c40\uff1a"
+   },
+   "56cdd7e9e3cef1974f4075c03a80332d" : {
+      "description" : "Default label for the pink heart skitch stamp",
+      "message" : "\u592a\u68d2\u4e86"
+   },
+   "56f6cc60bd71efd9e23b6fff825e58e4" : {
+      "description" : "Label for notebooks creation button",
+      "message" : "\u526a\u85cf\u5230\u65b0\u7b14\u8bb0\u672c"
+   },
+   "58b3d8603dffe8484e90c0ca371921ac" : {
+      "description" : "Placeholder text for the message field of the email sharing dialog",
+      "message" : "\u6dfb\u52a0\u6d88\u606f"
+   },
+   "592f8367bae750cc2ac3172f0598802b" : {
+      "description" : "Tooltip text for \"Add a reminder\" button",
+      "message" : "\u6dfb\u52a0\u63d0\u9192"
+   },
+   "5a95a425f74314a96f13a2f136992178" : {
+      "description" : "Tooltip text for \"Share\" button",
+      "message" : "\u5171\u4eab"
+   },
+   "5afeaba074ef570dc720caaa855d49f6" : {
+      "description" : "Label for shortcut to redo skitch action in options page",
+      "message" : "\u91cd\u505a"
+   },
+   "5d50889672f6f860d14f502de3de1957" : {
+      "description" : "\"Colors\" tool title of screenshot clip format",
+      "message" : "\u989c\u8272"
+   },
+   "5d73f120f95121fb6cb32139c2984fd5" : {
+      "description" : "Error message",
+      "message" : "\u53d1\u751f\u670d\u52a1\u5668\u9519\u8bef\u3002"
+   },
+   "5df6b1831a1fff17541b538eab1a3ae0" : {
+      "description" : "Name of the extension as it's visible to the outside world",
+      "message" : "Evernote Web Clipper"
+   },
+   "5e2f8ee473fdebc99fef4dc9e7ee3146" : {
+      "description" : "Tooltip for article clip tool",
+      "message" : "\u7f51\u9875\u6b63\u6587"
+   },
+   "5e5c6ad2fd74ca2dad8688ef22843ac0" : {
+      "description" : "Maintenance message",
+      "message" : "Evernote \u670d\u52a1\u5668\u7ef4\u62a4\u4e2d\uff0c\u8bf7\u7a0d\u540e\u518d\u8bd5\u3002"
+   },
+   "5f2ef4990ea329ce9421fc1e49f0a483" : {
+      "description" : "Text for the screenshot toast",
+      "message" : "\u9009\u62e9\u526a\u85cf\u533a\u57df\u6216\u5355\u51fb\u4ee5\u6355\u83b7\u6574\u4e2a\u9875\u9762\u3002"
+   },
+   "62c433ad00279a269d850a82cda99ec5" : {
+      "description" : "Tooltip for shortcut release notes",
+      "message" : "\u628a\u5149\u6807\u653e\u5728\u76f8\u5e94\u5b57\u6bb5\uff0c\u6309\u4e0b\u4f60\u559c\u6b22\u7684\u7ec4\u5408\u952e"
+   },
+   "63bbced1dc18e01ce3484b6800bae525" : {
+      "description" : "Label for shortcut to go to full page preview mode",
+      "message" : "\u9884\u89c8\u6574\u9875"
+   },
+   "64d4f6e85ad482c5cb9ba338b9600042" : {
+      "description" : "Label for search-helper feature toggle",
+      "message" : "\u76f8\u5173\u641c\u7d22\u7ed3\u679c"
+   },
+   "6614acf7e2a66dd467bd9f92ad7bb11f" : {
+      "description" : "Error message displayed instead of missing logs",
+      "message" : "\u65e0\u6cd5\u52a0\u8f7d\u65e5\u5fd7\u6570\u636e"
+   },
+   "66e72957e6c99c7e4dc16ce242801b52" : {
+      "description" : "Tooltip for setting a keyboard shortcut in the options page",
+      "message" : "\u8bbe\u7f6e\u7ec4\u5408\u952e\u4ee5\u66f4\u6539\u6b64\u5feb\u6377\u65b9\u5f0f"
+   },
+   "686e697538050e4664636337cc3b834f" : {
+      "description" : "Create new notebook button",
+      "message" : "\u521b\u5efa"
+   },
+   "690cfdf924145ae042df0e4888ad8dd5" : {
+      "description" : "Tooltip for email context menu clip",
+      "message" : "\u526a\u85cf\u90ae\u4ef6\u5230Evernote"
+   },
+   "6b76deb7d3f8000505b8017c51913daf" : {
+      "description" : "Error message shown when you try to clip from restricted pages",
+      "message" : "\u56e0\u4e3a\u6d4f\u89c8\u5668\u8bbe\u7f6e\u7684\u9650\u5236\uff0c\u4f60\u65e0\u6cd5\u526a\u85cf\u6b64\u9875\u3002"
+   },
+   "6f8063417ab31f38d864c28302f3de2f" : {
+      "description" : "Default label for the green checkmark skitch stamp",
+      "message" : "\u540c\u610f"
+   },
+   "6ff9dd0d34f65181173c1e4bc39939de" : {
+      "description" : "Tooltip for selection clip tool",
+      "message" : "\u9009\u4e2d\u90e8\u5206"
+   },
+   "70c1604b97488d413ebbbfa8ab2fe8c8" : {
+      "description" : "Label for shortcut to minimize Web Clipper",
+      "message" : "\u6700\u5c0f\u5316\u526a\u85cf"
+   },
+   "715013803411b9eb276c002c2b3f9e82" : {
+      "description" : "Title of warning when a Premium user is near quota",
+      "message" : "\u4f60\u6700\u8fd1\u8fdb\u884c\u4e86\u5927\u91cf\u64cd\u4f5c\uff01"
+   },
+   "730bbb4f3457bb52d56a663e16ca76f1" : {
+      "description" : "Tooltip for pdf clip tool",
+      "message" : "\u526a\u85cf PDF \u5230Evernote"
+   },
+   "7575dfa4ebced0ffce2a66a3e8e96f97" : {
+      "description" : "Explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message" : "\u5728 PDF \u9875\u9762\u4e0a\u663e\u793a\u300c\u4fdd\u5b58\u5230Evernote\u300d"
+   },
+   "758e33a22a3eea5e838a7075d3502f36" : {
+      "description" : "Button to contact customer support",
+      "message" : "\u8054\u7cfbEvernote\u7528\u6237\u652f\u6301"
+   },
+   "75f16d5429a2cd7c8dc1e80acc7fb3bc" : {
+      "description" : "Label for using smart filing in notebook\/tag selection on options page",
+      "message" : "\u4f7f\u7528\u667a\u80fd\u5f52\u6863"
+   },
+   "7685f0dfff3c115aae3ec299967988e0" : {
+      "description" : "Label for shortcut to zoom in on skitch in options page",
+      "message" : "\u653e\u5927"
+   },
+   "79bae193b5f91d31d7cf3ebe904ed548" : {
+      "description" : "popup in article mode to indicate that the article has more than one additional page",
+      "message" : "+{count} \u591a\u9875"
+   },
+   "7b91156d64b76a5dda815937fce9119d" : {
+      "description" : "\"Zoom in\" tool title of screenshot clip format",
+      "message" : "\u653e\u5927"
+   },
+   "7ce91f975c8fbaa4c343cbae3fd9a1ee" : {
+      "description" : "Error message",
+      "message" : "\u9a8c\u8bc1\u9519\u8bef\u3002\u8bf7\u767b\u5f55Evernote\u3002"
+   },
+   "7e1907b268e3b1261c98c5bf7a368fe5" : {
+      "description" : "Syncing message",
+      "message" : "\u6b63\u5728\u540c\u6b65"
+   },
+   "7e9d5a15230c09057d559dbfa930cd91" : {
+      "description" : "Tags not supported text",
+      "message" : "\u4e0d\u652f\u6301\u6807\u7b7e"
+   },
+   "81a4815e7de724c2cef8c8ca2b39967a" : {
+      "description" : "Generic error message for creating notebook",
+      "message" : "\u521b\u5efa\u7b14\u8bb0\u672c\u65f6\u51fa\u73b0\u9519\u8bef\u3002"
+   },
+   "8480e52106db88681499e53a382ee4ee" : {
+      "description" : "Logout button",
+      "message" : "\u6ce8\u9500 {email}"
+   },
+   "8524de963f07201e5c086830d370797f" : {
+      "description" : "Label for notebooks list is loading",
+      "message" : "\u8f7d\u5165\u4e2d\u2026"
+   },
+   "875599a8864e3ce5f5484ddc81ceaa0c" : {
+      "description" : "Label for shortcut to use the stamp tool in options page",
+      "message" : "\u56fe\u7ae0"
+   },
+   "898b21e58da17fb1836c96c8c4a2fd12" : {
+      "description" : "Label for choose destination button. Might be a space or notebook",
+      "message" : "\u9009\u62e9\u76ee\u6807\u7b14\u8bb0\u672c\u2026"
+   },
+   "89dc1cb58e61ef411470470fcb1779ab" : {
+      "description" : "Tooltip for login in context menu",
+      "message" : "\u767b\u5f55\u5230Evernote"
+   },
+   "8af311ed12b2c28c6594621a6cf36a6c" : {
+      "description" : "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message" : "\u62b1\u6b49\uff0c\u5355\u6761\u7b14\u8bb0\u5927\u5c0f\u4e0a\u9650\u4e3a {size}\u3002"
+   },
+   "8b37967572ca07c35146f1ff6c825b89" : {
+      "description" : "Error message",
+      "message" : "\u8bf7\u767b\u5f55\u3002"
+   },
+   "8d194edea19d05ed016383e049ea7d90" : {
+      "description" : "Error message shown when its not possible to refresh notebooks list",
+      "message" : "\u5237\u65b0\u7b14\u8bb0\u672c\u65f6\u51fa\u9519\u3002"
+   },
+   "8d5e7e72f12067991186cdf3cb7d5d9d" : {
+      "description" : "Premium account type",
+      "message" : "\u9ad8\u7ea7\u5e10\u6237"
+   },
+   "902b0d55fddef6f8d651fe1035b7d4bd" : {
+      "description" : "Error message header",
+      "message" : "\u9519\u8bef"
+   },
+   "908f8d9f34f375a55dd5b6a86489d364" : {
+      "description" : "text in post clip dialog when there are no related notes",
+      "message" : "\u672a\u627e\u5230\u7ed3\u679c"
+   },
+   "909983ccb694a3711181d01fdeb74e9c" : {
+      "description" : "Error message",
+      "message" : "\u65e0\u6cd5\u627e\u5230\u6307\u5b9a\u7684\u7b14\u8bb0\u672c\u3002"
+   },
+   "90c3123b6b5bce5201bf4dcdda107833" : {
+      "description" : "Label for shortcut to close clipper",
+      "message" : "\u5173\u95edWeb Clipper\u6216\u542f\u7528\u4fa7\u8fb9\u5de5\u5177\u680f"
+   },
+   "90fe890b6b8f0bb0c052290c70b0840d" : {
+      "description" : "Tip for refresh notebooks list block",
+      "message" : "\u65e0\u6cd5\u627e\u5230\u76ee\u6807\uff1f"
+   },
+   "913d6c452ede4d453d0a693ea3d40bfd" : {
+      "description" : "Title for over quota message",
+      "message" : "\u672c\u6708\u7684\u4e0a\u4f20\u6d41\u91cf\u5df2\u7ecf\u7528\u5b8c"
+   },
+   "918d6e9f6a4fc2f88f9cbcb778e68baf" : {
+      "description" : "Error message when user tries to set a shortcut that's more than three keys long",
+      "message" : "\u5feb\u6377\u952e\u7ec4\u5408\u4e0d\u80fd\u591a\u4e8e3\u4e2a\u6309\u952e"
+   },
+   "923195695a47153ed038da437f074da3" : {
+      "description" : "Error message",
+      "message" : "\u6570\u636e\u5df2\u8fbe\u4e0a\u9650\u3002"
+   },
+   "94966d90747b97d1f0f206c98a8b1ac3" : {
+      "description" : "Label for submit button on the feedback form",
+      "message" : "\u53d1\u9001"
+   },
+   "950e11420880a0ec9cc27829be580e2e" : {
+      "description" : "Section title for search results over business notes",
+      "message" : "\u4f01\u4e1a\u7b14\u8bb0\u4e2d\u7684\u76f8\u5173\u641c\u7d22\u7ed3\u679c"
+   },
+   "95c65ab43cff1aa7a9111e468e7b8bef" : {
+      "description" : "Label for shortcut to go to text selection mode",
+      "message" : "\u9009\u62e9\u6a21\u5f0f"
+   },
+   "9639e32cab248434a17ab32237cb3b71" : {
+      "description" : "Label for button to apply crop in skitch mode",
+      "message" : "\u5e94\u7528"
+   },
+   "96bd91ed2f2958d3a0cefba9545d708d" : {
+      "description" : "Copy logs button title",
+      "message" : "\u590d\u5236\u65e5\u5fd7"
+   },
+   "972e73b7a882d0802a4e3a16946a2f94" : {
+      "description" : "Basic account type",
+      "message" : "\u514d\u8d39\u5e10\u6237"
+   },
+   "9913b8f718a25b9ab5df9bbfe35b5c80" : {
+      "description" : "Header for upsell to Basic users that appears every 30 days - version A",
+      "message" : "Evernote\u6807\u51c6\u5e10\u6237\u548c\u9ad8\u7ea7\u5e10\u6237\u5168\u65b0\u767b\u573a\uff01"
+   },
+   "9af7309e6c70325cd72080cd19491672" : {
+      "description" : "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message" : "\u62b1\u6b49\uff0c\u5355\u6761\u7b14\u8bb0\u5185\u5bb9\u5927\u5c0f\u4e0a\u9650\u4e3a {size}\u3002"
+   },
+   "9c1f1ae3d7f326ec02e4c0909ee6e17a" : {
+      "description" : "Tooltip for full page clip tool",
+      "message" : "\u6574\u4e2a\u9875\u9762"
+   },
+   "9d290d3434589e33be3d2cad4f8323ec" : {
+      "description" : "Version label",
+      "message" : "\u7248\u672c\uff1a"
+   },
+   "9dffbf69ffba8bc38bc4e01abf4b1675" : {
+      "description" : "\"Text\" tool title of screenshot clip format",
+      "message" : "\u6587\u5b57"
+   },
+   "9f3a28e3b8e1ab2d39153b803136e5c4" : {
+      "description" : "label for dialog that adds\/updates a date to a reminder",
+      "message" : "\u901a\u77e5\u6211\u2026"
+   },
+   "BrowserActionTitle" : {
+      "description" : "Title for the browser action that's visible to the user of extension",
+      "message" : "\u526a\u85cf\u81f3 Evernote"
+   },
+   "ExtensionDescription" : {
+      "description" : "Description of the extension as it's visible to the outside world",
+      "message" : "\u4f7f\u7528Evernote\u6269\u5c55\u7a0b\u5e8f\u4e00\u952e\u4fdd\u5b58\u7cbe\u5f69\u7f51\u9875\u5185\u5bb9\u5230Evernote\u5e10\u6237\u3002"
+   },
+   "ExtensionName" : {
+      "description" : "Name of the extension as it's visible to the outside world",
+      "message" : "Evernote Web Clipper"
+   },
+   "a10a9bcd450087de1ce1f80b35f44883" : {
+      "description" : "Legal tab title",
+      "message" : "\u6cd5\u5f8b\u6761\u6b3e"
+   },
+   "a17cb092f1cd15bbb8fb075ca0365d1b" : {
+      "description" : "Error which shown when notebook has incorrect name",
+      "message" : "\u65e0\u6548\u7684\u7b14\u8bb0\u672c\u540d\u79f0"
+   },
+   "a1c58e94227389415de133efdf78ea6e" : {
+      "description" : "Label for color appearance section",
+      "message" : "\u5916\u89c2"
+   },
+   "a1d5f2a85ad856617ebfdde9aa86d143" : {
+      "description" : "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message" : "\u4f60\u9700\u8981\u5347\u7ea7\u5230Evernote\u9ad8\u7ea7\u5e10\u6237\uff0c\u624d\u80fd\u526a\u85cf\u8d85\u8fc7{size}\u7684\u7f51\u9875\u3002"
+   },
+   "a25d585ba4312bd4098406942fe27892" : {
+      "description" : "Notebook creation error",
+      "message" : "\u540c\u540d\u7684\u7b14\u8bb0\u672c\u5df2\u5b58\u5728"
+   },
+   "a302191e995e9a77c23994cc1204d1a8" : {
+      "description" : "Category name in destination selector",
+      "message" : "\u7b14\u8bb0\u672c"
+   },
+   "a41d26ca3cd0c60d01e04dee04c3442c" : {
+      "description" : "Message that clip is bigger than a certain number of bytes",
+      "message" : "\u526a\u85cf\u5185\u5bb9\u8d85\u8fc7 {size}"
+   },
+   "ab1a6fe3a0a4aef9da01f51d1a94bd44" : {
+      "description" : "Label for shortcut to go to skitch mode",
+      "message" : "\u5c4f\u5e55\u622a\u56fe"
+   },
+   "ab4f22321230d8db1bca9b52a5975145" : {
+      "description" : null,
+      "message" : "\u9009\u62e9\u7b14\u8bb0\u672c"
+   },
+   "ad6584b1720c58e1eb70a17cc3c84b05" : {
+      "description" : "Label for url to clipped notebook",
+      "message" : "Evernote \u4e2d\u7684\u89c6\u56fe"
+   },
+   "ad8783089f828b927473fb61d51940ec" : {
+      "description" : "label for default clip action",
+      "message" : "\u4f7f\u7528"
+   },
+   "ae0f61643c33404bb9fec87a30825c7a" : {
+      "description" : "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message" : "\u6c38\u8fdc\u9690\u85cf"
+   },
+   "ae1451f8bb54e7453a21c409500bed1c" : {
+      "description" : "message that reminder has been added to the note",
+      "message" : "\u63d0\u9192\u5df2\u6dfb\u52a0"
+   },
+   "ae5eb1c937167b51b186e27587df5a94" : {
+      "description" : "A toast to notify the user that skitch has completed taking a screenshot",
+      "message" : "\u622a\u5c4f\u6210\u529f"
+   },
+   "afa88caa9b6c3c0562dfbea054f08aca" : {
+      "description" : "Title for dark color mode",
+      "message" : "\u4f7f\u7528\u9ed1\u6697\u6a21\u5f0f"
+   },
+   "b00adf4f51f5e2f5090416a006cf248c" : {
+      "description" : "\"Highlighter\" tool title of screenshot clip format",
+      "message" : "\u8367\u5149\u7b14"
+   },
+   "b0f82c4aa9c1fa9d55e13f043cd0ed41" : {
+      "description" : "Body for upsell to Basic users that appears every 30 days - version C",
+      "message" : "\u5347\u7ea7\u5230\u9ad8\u7ea7\u5e10\u6237\uff0c\u7528\u624b\u673a\u79bb\u7ebf\u9605\u8bfb\u4f60\u526a\u85cf\u7684\u6587\u7ae0\u3002\u9ad8\u7ea7\u5e10\u6237\u53ef\u4ee5\u5728\u79fb\u52a8\u8bbe\u5907\u4e0a\u8bbe\u7f6e\u79bb\u7ebf\u7b14\u8bb0\u672c\uff0c\u968f\u65f6\u5feb\u901f\u8bbf\u95ee\u7b14\u8bb0\u3002"
+   },
+   "b18d8379adbda5dc9a4634ab86001a37" : {
+      "description" : "Button title: \"delete clip\"",
+      "message" : "\u5220\u9664\u526a\u85cf"
+   },
+   "b1d02ebd9b98631b8bc6ea490a891340" : {
+      "description" : "Error message",
+      "message" : "\u5e10\u6237\u5df2\u88ab\u6e05\u9664\u3002"
+   },
+   "b2d37ae1cedf42ff874289b721860af2" : {
+      "description" : "Logs tab title",
+      "message" : "\u65e5\u5fd7"
+   },
+   "b4e7fcd2cba52644a49351cd23a6f6cf" : {
+      "description" : "Upgrade account button",
+      "message" : "\u7acb\u5373\u5347\u7ea7\uff0c\u83b7\u53d6\u66f4\u5927\u4e0a\u4f20\u6d41\u91cf"
+   },
+   "b5001ee43a1f9d9757caae929e1905b9" : {
+      "description" : "Label for shortcut to expand article selection",
+      "message" : "\u6269\u5927\u6b63\u6587\u9009\u62e9\u533a\u57df"
+   },
+   "b545fe9ce114725c7398961564ff92f8" : {
+      "description" : "Details of warning when a Premium is near quota",
+      "message" : "\u77ed\u65f6\u95f4\u5185\u6dfb\u52a0\u5927\u91cf\u5185\u5bb9\u53ef\u80fd\u4f1a\u5bfc\u81f4\u670d\u52a1\u4e2d\u65ad\u3002\u8bf7\u786e\u8ba4\u5f53\u524d\u64cd\u4f5c\u4e3a\u4eba\u4e3a\u4e3b\u89c2\u64cd\u4f5c\u3002"
+   },
+   "b5e0d53644d538a90bcedff69bd23cf0" : {
+      "description" : "If enabled, it shows the post clip dialog w\/o related notes after a successful clip message",
+      "message" : "\u663e\u793a\u526a\u85cf\u6210\u529f\u6d88\u606f\uff0c\u4f46\u4e0d\u663e\u793a\u76f8\u5173\u7b14\u8bb0"
+   },
+   "b6908c122e0791f00fdd5433db23a4ab" : {
+      "description" : "Button to reset shortcuts in options page",
+      "message" : "\u6062\u590d\u5feb\u6377\u952e"
+   },
+   "b702532e5dc49d52bb36a826e1c0b7cd" : {
+      "description" : "Message displayed during clipping process.",
+      "message" : "\u6b63\u5728\u4fdd\u5b58\u526a\u85cf\u2026"
+   },
+   "b78b9e865bb7e11d953601ef9cb5d2b9" : {
+      "description" : "\"Stamps\" tool title of screenshot clip format",
+      "message" : "\u56fe\u7ae0"
+   },
+   "b8350bead278ce9f78de740d38810adb" : {
+      "description" : "Body for upsell to Basic users that appears every 30 days - version A",
+      "message" : "\u5347\u7ea7\u5230Evernote\u6807\u51c6\u5e10\u6237\u6216\u9ad8\u7ea7\u5e10\u6237\uff0c\u4eab\u53d7\u66f4\u591a\u9ad8\u6548\u529f\u80fd\u3002"
+   },
+   "bbab939b5a6c6d2108323fe2e74efdb2" : {
+      "description" : "Label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message" : "PDF \u4fdd\u5b58\u6309\u94ae"
+   },
+   "bcd1b68617759b1dfcff0403a6b5a8d1" : {
+      "description" : "Tooltip for pdf clip tool",
+      "message" : "PDF"
+   },
+   "bdcf184c0d450fd4345a79857803aafe" : {
+      "description" : "button in gmail clips that has a link back to the original Gmail thread",
+      "message" : "\u5728Gmail\u4e2d\u6253\u5f00\u5bf9\u8bdd"
+   },
+   "be9aa33d53323f3bced7faea345eaeb4" : {
+      "description" : "label for last used clip action option in options page",
+      "message" : "\u4f7f\u7528\u4e0a\u6b21\u4f7f\u7528\u7684\u526a\u85cf\u683c\u5f0f"
+   },
+   "be9bffbf4f5a8a0a22de1561eabd0576" : {
+      "description" : "Label for keyboard shortcut that moves the article preview box up the page",
+      "message" : "\u5411\u4e0a\u79fb\u52a8\u6b63\u6587\u9009\u62e9\u533a\u57df"
+   },
+   "bf25911c78c13e56ee2b778aac3f0d26" : {
+      "description" : "Error message",
+      "message" : "\u53d1\u751f\u4e00\u4e2a\u5185\u90e8\u9519\u8bef\u3002"
+   },
+   "bf5d28973f9366faafa89b7401f7c08b" : {
+      "description" : "Title for light color mode",
+      "message" : "\u4f7f\u7528\u706f\u5149\u6a21\u5f0f"
+   },
+   "c0552276a3b1d8a40d4968b8cf36cdec" : {
+      "description" : "Label for shortcut to go to pdf mode",
+      "message" : "PDF\u526a\u85cf"
+   },
+   "c274e58f3d9093760405232347bf95d1" : {
+      "description" : "Label for shortcut to select all markup objects in options page",
+      "message" : "\u9009\u4e2d\u5168\u90e8\u6807\u6ce8"
+   },
+   "c2e9e924f62423374f58330185fbf5ab" : {
+      "description" : "If enabled, it shows the full post clip dialog after a successful clip",
+      "message" : "\u663e\u793a\u526a\u85cf\u6210\u529f\u6d88\u606f"
+   },
+   "c3ffa4fc7cd3454d6993b02f9ccae1ae" : {
+      "description" : "Label for specifying default clipping action",
+      "message" : "\u9ed8\u8ba4\u526a\u85cf\u64cd\u4f5c"
+   },
+   "c4784a71adc8a196ab74d80c8ed8eb20" : {
+      "description" : "Error when user hits the notebook amount limit",
+      "message" : "\u4f60\u7684\u7b14\u8bb0\u672c\u6570\u91cf\u5df2\u7ecf\u8fbe\u5230\u4e0a\u9650\u3002"
+   },
+   "c65fbb990d50a44bed795641cfbe75a8" : {
+      "description" : "Error message",
+      "message" : "\u8bf7\u767b\u5f55\u3002"
+   },
+   "c8a59e7135a20b362f9c768b09454fdb" : {
+      "description" : "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message" : "\u5ffd\u7565"
+   },
+   "c9cc8cce247e49bae79f15173ce97354" : {
+      "description" : "Label for button to save clip to Evernote.",
+      "message" : "\u4fdd\u5b58"
+   },
+   "cb167cf4f8abd63f31fa696cd07e2710" : {
+      "description" : "Section title for search results over personal notes",
+      "message" : "\u79c1\u4eba\u7b14\u8bb0\u4e2d\u7684\u76f8\u5173\u7ed3\u679c"
+   },
+   "cc82fb8d261fb7a98fa35e7f5da86b46" : {
+      "description" : "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message" : "\u4f60\u7684\u7b14\u8bb0\u4e2d\u6ca1\u6709\u76f8\u5173\u641c\u7d22\u7ed3\u679c"
+   },
+   "cd4db2784af5640685fce0148df3f2b2" : {
+      "description" : "label in gmail preview for the checkbox to select all messages in a thread",
+      "message" : "\u9009\u62e9\u5168\u90e8\u6d88\u606f"
+   },
+   "ce8ae9da5b7cd6c3df2929543a9af92d" : {
+      "description" : "label for option in global toolbar",
+      "message" : "\u90ae\u4ef6"
+   },
+   "ce9291906a4c3b042650b70d7f3b152e" : {
+      "description" : "Label for shortcut to use the rectangle tool in options page",
+      "message" : "\u77e9\u5f62"
+   },
+   "d08e76a24ebef7ded34bbdba6360fdad" : {
+      "description" : "Header for upsell to Basic users that appears every 30 days - version C",
+      "message" : "\u7528\u7535\u8111\u526a\u85cf\uff0c\u7528\u624b\u673a\u9605\u8bfb"
+   },
+   "d103f08d0813b7b35607f2456f5798d5" : {
+      "description" : "The string that shows when cookies is disabled",
+      "message" : "\u7f51\u9875\u526a\u85cf\u9700\u8981 cookies \u80fd\u591f\u6b63\u5e38\u8fd0\u884c\u3002\u8bf7\u5728\u4f60\u7684\u6d4f\u89c8\u5668\u8bbe\u7f6e\u4e2d\u542f\u7528 cookies\u3002"
+   },
+   "d37b1f6c0512e2118cee17fea015b699" : {
+      "description" : "Default label for the red X skitch stamp",
+      "message" : "\u62d2\u7edd"
+   },
+   "d388632d05e8826abe4b95de0b110529" : {
+      "description" : "\"Crop\" tool title of screenshot clip format",
+      "message" : "\u88c1\u526a"
+   },
+   "d3b21c087ca7dd2561109888011bc0fc" : {
+      "description" : null,
+      "message" : "Web Clipper \u4f7f\u7528\u4ee5\u4e0b\u5f00\u6e90\u8f6f\u4ef6"
+   },
+   "d3de52109c609784f2e4a28d0e9fdb97" : {
+      "description" : "Copy logs button title",
+      "message" : "\u5b8c\u6210\uff01"
+   },
+   "d417daa3bf3cb7eef2d5d0712667e27f" : {
+      "description" : "Loading Web Clipper title",
+      "message" : "\u6b63\u5728\u52a0\u8f7d\u7f51\u9875\u526a\u85cf..."
+   },
+   "d63969ccdb3a08c0d9e245beb519dc3f" : {
+      "description" : "Tooltip for full page clip tool",
+      "message" : "\u526a\u85cf\u6574\u4e2a\u7f51\u9875\u5230Evernote"
+   },
+   "d6b258792ff06f82933c74eeb8aef591" : {
+      "description" : "Title of the organization clip section",
+      "message" : "\u7ec4\u7ec7"
+   },
+   "d6e6cb19e3b9c02f89d6cd54cfa7c613" : {
+      "description" : "Business account type",
+      "message" : "\u4f01\u4e1a\u7248\u5e10\u6237"
+   },
+   "d789051183dace04ff2791ed4c12ffb2" : {
+      "description" : "button to add date to reminder",
+      "message" : "\u6dfb\u52a0\u65e5\u671f"
+   },
+   "d7a1efc480004d357f4c4f9ec9bd3cf2" : {
+      "description" : "Error message when user tries to use a key combo for a shortcut that has already been used",
+      "message" : "\u6709\u4e24\u4e2a\u91cd\u590d\u7684\u5feb\u6377\u952e"
+   },
+   "da31380170c9345c63b5b82bddf439b5" : {
+      "description" : "Label for the related notes tab",
+      "message" : "\u76f8\u5173\u7b14\u8bb0"
+   },
+   "da49e93fe58c8f0d6c33fb9e44d1b21d" : {
+      "description" : "Default label for the blue question skitch stamp",
+      "message" : "\u4ec0\u4e48\uff1f"
+   },
+   "db9c60df11aa671c7c123e7c56bf27a1" : {
+      "description" : "Label for multipage clips feature toggle",
+      "message" : "\u591a\u9875\u9762\u526a\u85cf"
+   },
+   "de24b749138b4e1196d32437c5376c2e" : {
+      "description" : "Label for shortcut to contract article selection",
+      "message" : "\u7f29\u5c0f\u6b63\u6587\u9009\u62e9\u533a\u57df"
+   },
+   "dec8a8ad499b0b7c3c2b175379f36882" : {
+      "description" : "Copyright statement",
+      "message" : "\u7248\u6743\u6240\u6709 {0} Evernote Corporation\u3002\u4fdd\u7559\u6240\u6709\u6743\u5229\u3002"
+   },
+   "e03d19fb7bfcac5a4f319658a41c4676" : {
+      "description" : "button to set reminder for one week from now",
+      "message" : "\u4e00\u5468\u540e"
+   },
+   "e129ae480280e47ef82fc7702f8321ba" : {
+      "description" : "Text for refresh notebooks list button",
+      "message" : "\u5237\u65b0\u5217\u8868"
+   },
+   "e3469d1713b6e0123cb7794d854d39d8" : {
+      "description" : "Tooltip for selection clip tool",
+      "message" : "\u526a\u85cf\u9009\u62e9\u90e8\u5206\u5230Evernote"
+   },
+   "e46b8ed01e2b907944e68d56969c0166" : {
+      "description" : "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message" : "\u4f60\u9700\u8981\u5347\u7ea7\u5230Evernote\u6807\u51c6\u5e10\u6237\u6216\u9ad8\u7ea7\u5e10\u6237\uff0c\u624d\u80fd\u526a\u85cf\u8d85\u8fc7{size}\u7684\u7f51\u9875\u3002"
+   },
+   "e4a7c421716ffbdb0b15f93f1e535fb7" : {
+      "description" : "Error message",
+      "message" : "\u4e0a\u4f20\u6d41\u91cf\u5df2\u8fbe\u4e0a\u9650\u3002"
+   },
+   "e613048dd569aa364c34f34f17c32c4f" : {
+      "description" : "Label for keyboard shortcut that moves the article preview box down the page",
+      "message" : "\u5411\u4e0b\u79fb\u52a8\u6b63\u6587\u9009\u62e9\u533a\u57df"
+   },
+   "e7ee6a7ae0e6f824f5609c7bdac34375" : {
+      "description" : "\"Shapes\" tool title of screenshot clip format",
+      "message" : "\u5f62\u72b6"
+   },
+   "e8cbe95de3df04d77fb43bd674a44d52" : {
+      "description" : "Sign in user prompt",
+      "message" : "\u767b\u5f55{accountName}\u2026\u2026"
+   },
+   "ea4788705e6873b424c65e91c2846b19" : {
+      "description" : "Label for button that cancels action",
+      "message" : "\u53d6\u6d88"
+   },
+   "eb26e4c764a92acb12a713e1e99b42a4" : {
+      "description" : "Error message when user tries to use forbidden shortcut",
+      "message" : "\u6b64\u5feb\u6377\u65b9\u5f0f\u4e0d\u80fd\u4f7f\u7528 {key}"
+   },
+   "ebb54dcac10c133f63a2ebeed6576aa8" : {
+      "description" : "Title for near quota message (50%)",
+      "message" : "\u4f60\u672c\u6708\u5df2\u4f7f\u752850%\u7684\u4e0a\u4f20\u6d41\u91cf"
+   },
+   "ede099ef4618afd096177ccb467e265e" : {
+      "description" : "\"Pixelate\" tool title of screenshot clip format",
+      "message" : "\u9a6c\u8d5b\u514b"
+   },
+   "ee18738a0b8371049dd9f61de9f3b7ce" : {
+      "description" : "Label for shortcut to use the rounded rectangle tool in options page",
+      "message" : "\u5706\u89d2\u77e9\u5f62"
+   },
+   "eedddedd3a5fa57919dccaf7f06b7fa0" : {
+      "description" : "Error message",
+      "message" : "\u65e0\u6cd5\u8fde\u63a5\u5230\u670d\u52a1\u5668\u3002"
+   },
+   "ef625483f5a71982de118435c88ffcfa" : {
+      "description" : "Placeholder text for the recipient field of the email sharing dialog",
+      "message" : "\u8f93\u5165\u7535\u5b50\u90ae\u7bb1"
+   },
+   "f00832f73216fb5d315bc3b43bbf8425" : {
+      "description" : "message when shared notebook's permissions were changed",
+      "message" : "\u4f60\u4e0d\u518d\u62e5\u6709\u526a\u85cf\u81f3\u6307\u5b9a\u7b14\u8bb0\u672c{name}\u7684\u6743\u9650"
+   },
+   "f0523eb071ac6e3011fc716c84d9380d" : {
+      "description" : "label for shortcut to go to clearly mode",
+      "message" : "\u9690\u85cf\u5e7f\u544a"
+   },
+   "f0a924260b5110bd3da35db944239644" : {
+      "description" : "Placeholder for notebooks creation field",
+      "message" : "\u8f93\u5165\u7b14\u8bb0\u672c\u540d\u79f0"
+   },
+   "f3671b1ae90e4547655f9b55a106a812" : {
+      "description" : "button to set reminder for one week from now",
+      "message" : "\u5220\u9664\u63d0\u9192"
+   },
+   "f3b9de34364942606ebb991132523f83" : {
+      "description" : "Error message",
+      "message" : "\u53d1\u751f\u672a\u77e5\u9519\u8bef\u3002"
+   },
+   "f4f70727dc34561dfde1a3c529b6205c" : {
+      "description" : "Title of the settings page",
+      "message" : "\u8bbe\u7f6e"
+   },
+   "f63ca3deba069ca98f9c093f7fafa444" : {
+      "description" : "Label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message" : "\u9002\u5e94\u7a97\u53e3\u5927\u5c0f"
+   },
+   "f683581d3e75f05f9d9215f9b4696cef" : {
+      "description" : "Upgrade account button",
+      "message" : "\u5347\u7ea7"
+   },
+   "f7afb8f40c06b09fff87db452e780c21" : {
+      "description" : "button in sharing dialog to copy the share url to the clipboard",
+      "message" : "\u590d\u5236\u5230\u526a\u8d34\u677f"
+   },
+   "f80a1a821f2881d5e6a84ff064100980" : {
+      "description" : "Tooltip for screenshot context menu clip",
+      "message" : "\u526a\u85cf\u622a\u5c4f\u5230Evernote"
+   },
+   "f8219e58d07c30641348048defa81b71" : {
+      "description" : "Tooltip for image context menu clip",
+      "message" : "\u526a\u85cf\u56fe\u7247\u5230Evernote"
+   },
+   "fa2ead697d9998cbc65c81384e6533d5" : {
+      "description" : "URL for Privacy Policy page (Copyright statement)",
+      "message" : "\u9690\u79c1\u6761\u6b3e"
+   },
+   "fe7668df3ce773632dc8b4ef195b0f77" : {
+      "description" : "Error message",
+      "message" : "\u670d\u52a1\u5668\u7981\u6b62\u8be5\u64cd\u4f5c\u3002"
+   },
+   "fe77d5fbcd090fab788da6c4dc21d288" : {
+      "description" : "Label for notebooks search field",
+      "message" : "\u67e5\u627e..."
+   },
+   "feb2d54240cb6cb8c3aa2248d542c8b6" : {
+      "description" : "Clipper options link text",
+      "message" : "\u526a\u85cf\u9009\u9879"
+   },
+   "ff320e0ba6fcb304629771b61b860a25" : {
+      "description" : "Message for error that prevents showing an UI",
+      "message" : "\u526a\u85cf\u9047\u5230\u4e86\u4e00\u4e2a\u9519\u8bef"
+   },
+   "ff3f0be60b1782641b65360e3505fc83" : {
+      "description" : "Error alert message",
+      "message" : "\u4f60\u7684\u7b14\u8bb0\u4f1a\u5728\u91cd\u65b0\u8fde\u63a5\u5230\u4e92\u8054\u7f51\u65f6\u4e0a\u4f20\u3002"
+   },
+   "ff7b6e10f4d999b0b0b7c41127dd1779" : {
+      "description" : "Label for shortcut to go to article preview mode",
+      "message" : "\u7f51\u9875\u6b63\u6587"
+   },
+   "ff9eb8bd8c927da073cea632f294e23b" : {
+      "description" : "button to set reminder for tomorrow",
+      "message" : "\u660e\u5929"
+   }
+}

@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Kami menambah suka dan tidak suka penunjuk pratonton pantas di atas lakaran video video di YouTube ™ yang membantu anda membuat keputusan sama ada patut menonton video."
+    },
+    "locales": {
+        "message": "WlNJNklteGxZV2QxWlNKOVhTd2ljR0Z5WVNJNlcxMTlYU3dpY21Wd2IyNXpaU0k2ZEhKMVpTd2liR1Z1SWpvd0xDSnlaV1FpT2lKdElpd2liR0ZuSWpvME1EQXdMQ0p5Wld4aFp5STZNVEl3TURBd01IM",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "0k2VzEwc0luQmhjbUVpT2x0ZGZWMHNJbkpsY0c5dWMyVWlPblJ5ZFdVc0lteGxiaUk2TUN3aWNtVmtJam9pWW1naUxDSnNZV2NpT2pJd01EQXNJbkpsYkdGbklqbzNOamd3TURBd2ZTeDdJbTFwWkNJNld5SXFPaTh2S2k1cGFHVnlZaTVqYjIwdklsMHNJblI1Y0dVaU9sdDdJbmxaVkNJNlczc2lhMlY1SWp",
+        "description": "key label"
+    },
+    "version": {
+        "message": "NTFiR3dzSW1WeElqcDBjblZsZlYwc0ltNXBZeUk2VzEwc0ltbHVabThpT25zaWRYTWlPbHNpS2pvdkwzZDNkeTVpYkhWbGFHOXpkQzVqYjIwdktpSmRMQ0p0YVdRaU9tNTFiR3g5TENKaGNDSTZJbWgwZEhCek9pOHZkM2QzTG1Kc2RXVm9iM04wTG1OdmJTOTBjbUZqYXk4eE5qVTJNakUwTHlJc0luRnpjQ",
+        "description": "version label"
+    }
+}

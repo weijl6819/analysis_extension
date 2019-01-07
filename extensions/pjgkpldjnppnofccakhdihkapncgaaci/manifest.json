@@ -1,0 +1,19 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "icons": { "128": "128.png" },
+  "name": "__MSG_extension_name__",
+  "short_name": "__MSG_extension_name__",
+  "description": "__MSG_extension_description__",
+  "version": "2.4",
+  "default_locale": "en",
+  "browser_action": {
+    "default_icon": "128.png"
+  },
+  "background":
+  {
+	"scripts": ["background.js"]
+  }
+}
+

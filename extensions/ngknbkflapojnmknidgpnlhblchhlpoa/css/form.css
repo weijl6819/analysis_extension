@@ -1,0 +1,724 @@
+.sw_sform {
+    margin: 0;
+    z-index: 9;
+}
+
+body .b_searchboxForm {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 0;
+}
+
+.b_searchboxForm {
+    display: inline-block;
+    position: relative;
+}
+.b_searchboxForm, #id_h .id_button, .id_avatar, .rwds_bep_head, .idp_ham {
+    display: inline-block;
+}
+.b_searchboxForm {
+    font: 18px "Segoe UI",Arial,Helvetica,sans-serif;
+}
+.b_searchboxForm {
+    background-color: #fff;
+}
+#hp_container .b_searchbox {
+    margin-left: 12px;
+    margin-top: 11px;
+    width: 581px;
+}
+body .b_searchbox {
+    background-color: #fff;
+    border-right: 0 none;
+    margin: 6px 1px 0 9px;
+    padding-right: 4px;
+    width: 474px;
+}
+.b_searchbox {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ccc;
+    border-image: none;
+    border-style: none solid none none;
+    border-width: 0 1px 0 0;
+    box-sizing: content-box;
+    height: 40px;
+    margin: 2px 0 3px 12px;
+    max-height: 30px;
+    outline: medium none;
+    padding: 0 10px 0 0;
+    position: relative;
+    width: 474px;
+}
+#hp_container .b_searchboxForm .b_searchboxSubmit {
+    border-width: 12px;
+    height: 53px;
+    margin: -1px -1px -1px 0;
+    width: 53px;
+}
+body .b_searchboxForm .b_searchboxSubmit {
+    background: #6B9FF6 url("../images/img/hpc20.png") no-repeat scroll -160px -57px;
+    border: 8px solid #0c8484;
+    height: 45px;
+    margin: -1px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 45px;
+}
+.b_searchboxSubmit {
+    cursor: pointer;
+    position: static;
+    right: 0;
+    text-indent: -99em;
+    top: 0;
+}
+input {
+    border-style: none none !important;
+}
+
+#hp_container .sa_as, #hp_container .pp_tile {
+    border-color: #e5e5e5;
+}
+#sw_as #sa_ul, #sw_as .pp_title {
+    font: 16px "Segoe UI",Arial,Helvetica,sans-serif;
+}
+#sw_as .sa_as .sa_drw, #sw_as .sa_as li.pp_tile, #sw_as .sa_as .sa_tm strong, #sw_as .sa_as table {
+    color: #111;
+}
+#sw_as .sa_drw {
+    margin: 0;
+}
+#sw_as html, #sw_as body, #sw_as h1, #sw_as h2, #sw_as h3, #sw_as h4, #sw_as h5, #sw_as h6, #sw_as p, #sw_as img, #sw_as ol, #sw_as ul, #sw_as li, #sw_as form, #sw_as table, #sw_as tr, #sw_as th, #sw_as td, #sw_as blockquote {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    padding: 0;
+}
+#sw_as #sa_ul li, #sw_as .nowrap {
+    white-space: nowrap;
+}
+#sw_as .sa_drw .sa_sg {
+    cursor: pointer;
+}
+#sw_as .b_searchboxSubmit, #sw_as .sa_sg {
+    cursor: pointer;
+}
+#sw_as html, #sw_as body, #sw_as h1, #sw_as h2, #sw_as h3, #sw_as h4, #sw_as h5, #sw_as h6, #sw_as p, #sw_as img, #sw_as ol, #sw_as ul, #sw_as li, #sw_as form, #sw_as table, #sw_as tr, #sw_as th, #sw_as td, #sw_as blockquote {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+#hp_container #sw_as ul#sa_ul div.sa_tm, #hp_container #sw_as #sa_ul .sa_hd {
+    margin-left: 12px;
+}
+#sw_as ul#sa_ul div.sa_tm, #sw_as #sa_ul .sa_hd {
+    margin-left: 10px;
+}
+#sw_as #sa_ul div.sa_tm, #sw_as #sa_ul .sa_hd {
+    margin-left: 17px;
+}
+#sw_as .sa_as .sa_sg .sa_tm, #sw_as .sa_as .b_tHeader, #sw_as .sa_as .b_demoteText, #sw_as .sa_as .b_secondaryText, #sw_as .sa_as .b_attribution, #sw_as .sa_as .b_factrow, #sw_as .sa_as #sa_ul .b_focusLabel, #sw_as .sa_as .b_footnote, #sw_as .sa_as .b_ad .b_adlabel, #sw_as .sa_as .b_expando .b_subModule, #sw_as .sa_as .b_expando .b_suppModule, #sw_as .sa_as .b_algo .b_vList td, #sw_as .sa_as .b_expando .b_secondaryText, #sw_as .sa_as .b_expando .b_attribution, #sw_as .sa_as .b_expando .b_factrow, #sw_as .sa_as .b_expando .b_footnote, #sw_as .sa_as .ctxtb {
+    color: #666;
+}
+#sw_as .sa_tm {
+    margin: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#sw_as .b_scopebar, #sw_as .b_scopebar li, #sw_as .sa_tm {
+    line-height: 30px;
+}
+#sw_as .sa_as .sa_drw, #sw_as .sa_as li.pp_tile, #sw_as .sa_as .sa_tm strong, #sw_as .sa_as table {
+    color: #111;
+}
+#sw_as .sa_tm strong {
+    color: #111;
+}
+#sw_as strong, #sw_as .b_active a, #sw_as .b_no h4, #sw_as .b_strong, #sw_as .cbtn, #sw_as .b_ad .b_adlabel strong, #sw_as .cbl {
+    font-weight: 700;
+}
+#sw_as strong {
+    font-family: "Segoe UI Semibold","Segoe UI",Arial,Helvetica,sans-serif;
+}
+#sw_as strong {
+    font-weight: 700;
+}
+strong, .pp_err span {
+    font-weight: 700;
+}
+#sw_as .sa_as {
+    background-color: #fff;
+}
+#sw_tfbb, #id_d, #id_f, #id_h, #sw_as, .sa_as {
+    display: none;
+}
+.sa_as {
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.sa_as {
+    border-color: #999;
+}
+.b_focus .b_searchboxForm, .sa_as {
+    border-color: #999;
+}
+.b_searchboxForm, .sa_as {
+    background-color: #fff;
+}
+#hp_bottomCell {
+  z-index: 5;
+}
+
+#hp_bottomCell {
+  z-index: 8;
+}
+
+#hp_bottomCell {
+  z-index: 5;
+}
+
+#hp_bottomCell {
+  bottom: 50;
+  position: absolute;
+  width: 100%;
+}
+
+#hp_ctrls {
+  -moz-user-select: none;
+  height: 48px;
+  position: relative;
+}
+
+#sh_rdiv {
+  z-index: 6;
+}
+
+#sh_rdiv {
+  position: absolute;
+  right: 40px;
+  top: 0;
+}
+
+html,
+body,
+#hp_table,
+#hp_cellCenter {
+  border-collapse: collapse;
+}
+
+table,
+td {
+  border-spacing: 0;
+}
+
+body #hp_cellCenter #hp_tbar,
+body #hp_cellCenter #sc_mdCrs {
+  max-width: 100%;
+  width: 100%;
+}
+
+#hp_tbar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55) 0px, rgba(0, 0, 0, 0.55) 100%);
+  height: 0;
+  max-width: 3366px;
+  min-width: 650px;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+
+#hp_tbar,
+#hp_bk {
+  display: none;
+}
+
+#sc_mdc,
+#sc_mdc .sc_mdi {
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+}
+
+#sc_mdc,
+#sc_mdc .sc_mdi {
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+}
+#sc_md, #sc_mdClps {
+  display: none;
+}
+#sc_md, #sc_mdClps {
+  display: none;
+}
+body #hp_cellCenter #hp_tbar, body #hp_cellCenter #sc_mdCrs {
+  max-width: 100%;
+  width: 100%;
+}
+#sc_mdCrs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.05) 100%);
+  height: 111px;
+  margin: 0;
+  padding: 0;
+  width: 1090px;
+}
+#sc_mdCrs {
+  width: 100%;
+}
+#sc_mdCrs {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0px, rgba(0, 0, 0, 0.05) 100%);
+  height: 111px;
+  margin: 0;
+  padding: 0;
+  width: 1090px;
+}
+#crs_btLeft {
+  border-right: medium none;
+  display: block;
+}
+.crs_bt_disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+.crs_bt {
+  background-color: transparent;
+  bottom: 0;
+  cursor: pointer;
+  height: 111px;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: 2;
+}
+.crs_bt_disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+.crs_bt {
+  background-color: transparent;
+  bottom: 0;
+  cursor: pointer;
+  height: 111px;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: 2;
+}
+a, #id_h a, #id_h a:hover, .b_toggle, .b_toggle:hover {
+  text-decoration: none;
+}
+a, body {
+  font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
+  font-size: small;
+  text-decoration: none;
+}
+.hpcCaroNavLeft {
+  right: 12px;
+}
+.hpcCaroNavRight, .hpcCaroNavLeft {
+  left: 12px;
+  top: 43px;
+}
+.hpcCaroNavLeft {
+  background-position: -206px -106px;
+}
+.hpcCaroNavLeft, .hpcCaroNavRight {
+  height: 26px;
+  position: absolute;
+  width: 17px;
+}
+.hpcBkP, .hpcLogoWhite, .hpcNext, .hpcCopyInfo, .hpcPlay, .hpcPause, .hpcPrevious, .hpcFull, .hpcSmall, .sw_qbtn, .hpcExpand, .hpcClose, .hpcDown, .pref, .img_uparrow, .img_rwds_sml, .img_downarrow, .hpcCaroNavRight, .hpcCaroNavLeft, .sw_qbtn, #sc_closer > div, #sc_opener > div, #sc_hide > div, #sc_interests_edit > div, .wpbClose {
+  background: transparent url("images/img/hpc20.png") no-repeat scroll 0 0;
+  overflow: hidden;
+}
+.hpcCaroNavLeft {
+  right: 12px;
+}
+.hpcCaroNavRight, .hpcCaroNavLeft {
+  left: 12px;
+  top: 43px;
+}
+.ltr #crs_btRight {
+  right: 0;
+}
+.ltr #crs_btRight {
+  right: 0;
+}
+#crs_btRight {
+  border-left: medium none;
+  display: block;
+}
+#crs_btRight {
+  border-left: medium none;
+  display: block;
+}
+.crs_bt {
+  background-color: transparent;
+  bottom: 0;
+  cursor: pointer;
+  height: 111px;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: 2;
+}
+.crs_bt {
+  background-color: transparent;
+  bottom: 0;
+  cursor: pointer;
+  height: 111px;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: 2;
+}
+a, #id_h a, #id_h a:hover, .b_toggle, .b_toggle:hover {
+  text-decoration: none;
+}
+a, body {
+  font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
+  font-size: small;
+  text-decoration: none;
+}
+.hpcCaroNavRight, .hpcCaroNavLeft {
+  left: 12px;
+  top: 43px;
+}
+.hpcCaroNavRight {
+  background-position: -177px -106px;
+}
+.hpcCaroNavLeft, .hpcCaroNavRight {
+  height: 26px;
+  position: absolute;
+  width: 17px;
+}
+.hpcBkP, .hpcLogoWhite, .hpcNext, .hpcCopyInfo, .hpcPlay, .hpcPause, .hpcPrevious, .hpcFull, .hpcSmall, .sw_qbtn, .hpcExpand, .hpcClose, .hpcDown, .pref, .img_uparrow, .img_rwds_sml, .img_downarrow, .hpcCaroNavRight, .hpcCaroNavLeft, .sw_qbtn, #sc_closer > div, #sc_opener > div, #sc_hide > div, #sc_interests_edit > div, .wpbClose {
+  background: transparent url("images/img/hpc20.png") no-repeat scroll 0 0;
+  overflow: hidden;
+}
+.hpcCaroNavRight, .hpcCaroNavLeft {
+  left: 12px;
+  top: 43px;
+}
+#crs_scroll {
+  margin: 0 5px;
+  min-height: 185px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+}
+
+#crs_pane {
+  left: 0;
+  list-style: outside none none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+#crs_pane {
+  left: 0;
+  list-style: outside none none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+ul {
+  padding: 0;
+}
+#crs_pane li {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+#sc_mdCrs li {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#crs_pane li {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+#sc_mdCrs li {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#crs_pane li {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+#sc_mdCrs li {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#crs_pane li {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+#sc_mdCrs li {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#crs_pane li a, #crs_pane li a:hover {
+  border: medium none;
+  display: inline-block;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  width: inherit;
+}
+#crs_pane li a, #crs_pane li a:hover {
+  border: medium none;
+  display: inline-block;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  width: inherit;
+}
+a, #id_h a, #id_h a:hover, .b_toggle, .b_toggle:hover {
+  text-decoration: none;
+}
+a, body {
+  font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
+  font-size: small;
+  text-decoration: none;
+}
+#sc_mdCrs h2, #sc_mdCrs div.hp_text {
+  color: #fff;
+  margin: 0;
+  padding: 6px 0 5px;
+}
+#sc_mdCrs h2, #sc_mdCrs div.hp_text {
+  color: #fff;
+  margin: 0;
+  padding: 6px 0 5px;
+}
+.crs_item h2, .crs_item div.hp_text {
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.crs_item h2, .crs_item div.hp_text {
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hp_text {
+  font-size: 13px;
+}
+.hp_text, .sc_pc li a, #sb_foot, #sb_foot li a, ul.hp_head_nav li a {
+  font-weight: 400;
+}
+#crs_pane a > .crs_item > img, #crs_pane a > .crs_item > .promoTile {
+  opacity: 0.9;
+}
+#crs_pane li a img {
+  border: medium none;
+}
+#crs_pane li a img {
+  border: medium none;
+}
+#sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  height: 75px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  height: 75px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#crs_pane li {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+#sc_mdCrs li {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#crs_pane li {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+#sc_mdCrs li {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#crs_pane li a, #crs_pane li a:hover {
+  border: medium none;
+  display: inline-block;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  width: inherit;
+}
+#crs_pane li a, #crs_pane li a:hover {
+  border: medium none;
+  display: inline-block;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  width: inherit;
+}
+a, #id_h a, #id_h a:hover, .b_toggle, .b_toggle:hover {
+  text-decoration: none;
+}
+a, body {
+  font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
+  font-size: small;
+  text-decoration: none;
+}
+#sc_mdCrs h2, #sc_mdCrs div.hp_text {
+  color: #fff;
+  margin: 0;
+  padding: 6px 0 5px;
+}
+#sc_mdCrs h2, #sc_mdCrs div.hp_text {
+  color: #fff;
+  margin: 0;
+  padding: 6px 0 5px;
+}
+.crs_item h2, .crs_item div.hp_text {
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.crs_item h2, .crs_item div.hp_text {
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hp_text {
+  font-size: 13px;
+}
+.hp_text, .sc_pc li a, #sb_foot, #sb_foot li a, ul.hp_head_nav li a {
+  font-weight: 400;
+}
+#crs_pane a > .crs_item > img, #crs_pane a > .crs_item > .promoTile {
+  opacity: 0.9;
+}
+#crs_pane li a img {
+  border: medium none;
+}
+#crs_pane li a img {
+  border: medium none;
+}
+#sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  height: 75px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  height: 75px;
+}
+#sc_mdCrs li, #sc_mdCrs img, #sc_mdCrs .crs_item_prm_bg {
+  width: 150px;
+}
+#b_results {
+    width: 560px;
+}
+#b_results, #b_context, #b_tween > span, .b_hList > li, .c_tlbxTrg, .b_hPanel > span, .ccal .ccali, .b_footerRight, .b_hPanel .b_xlText, .b_hPanel .cico, .b_moreLink, .b_label + .b_hList, .cbtn, .lc_bks, .lc_bkl, .fiw, .csrc, .b_algo .b_title H2, .b_algo .b_title div, h3 {
+    display: inline-block;
+}
+#b_results, #b_results .b_defaultText, #b_results > .b_pag a:hover, #b_tween .b_toggle:hover, #b_tween .b_highlighted {
+    color: #666;
+}
+#b_results > li::after, .b_clearfix::after, .b_imagePair::after, .b_vlist2col::after, .b_gridList::after, .b_overhangR::after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.b_clear, #b_results > li::after, .b_clearfix::after {
+    clear: both;
+}
+#b_results > li:first-child {
+    padding-top: 10px;
+}
+
+#b_results .b_no {
+    margin-bottom: 80px;
+}
+body, .b_promoteText, #b_tween a.ftrH, #b_tween a.ftrH:hover, .b_expando, .b_expando h2, .b_active a, .b_active a:visited, .b_active a:hover, #b_results > .b_pag a, #b_results .b_no, #b_content a.cbl:visited, #b_content a.cbl {
+    color: #666;
+}
+#b_results > li {
+    margin: 0 0 2px;
+    padding: 10px 20px;
+}
+
+h3, .b_no h1 {
+    font-size: 18px;
+}
+.b_lBottom, .b_caption, .b_moreLink, .b_footnote, .b_hList > li, #b_context h2, #b_results .b_subModule h2, #b_results .b_ad .b_factrow, .b_expando h2, .b_no h1, .b_no h4, .b_no li, .b_prominentFocusLabel, .b_locStr, .b_entitySubTitle {
+    padding-bottom: 10px;
+}
+h1, h2, h3 {
+    font: 13px/1.2em "Segoe UI",Arial,Helvetica,sans-serif;
+}
+
+strong, .b_active a, .b_no h4, .b_strong, .cbtn, .b_ad .b_adlabel strong, .cbl {
+    font-weight: 700;
+}
+body, .b_no h4, h2 .b_secondaryText, h2 .b_alert {
+    font: 13px Arial,Helvetica,sans-serif;
+}
+.b_lBottom, .b_caption, .b_moreLink, .b_footnote, .b_hList > li, #b_context h2, #b_results .b_subModule h2, #b_results .b_ad .b_factrow, .b_expando h2, .b_no h1, .b_no h4, .b_no li, .b_prominentFocusLabel, .b_locStr, .b_entitySubTitle {
+    padding-bottom: 10px;
+}

@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Majina"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Kufungua Majina yako Google katika dukizi."
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Mazingira"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Ukubwa wa dirisha dukizi"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "Upana"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "Urefu"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "Save"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Kuokolewa"
+   }
+}

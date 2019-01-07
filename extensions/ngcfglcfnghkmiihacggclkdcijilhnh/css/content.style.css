@@ -1,0 +1,610 @@
+
+/* ==================================================================*/
+/* ============================= PANE ===============================*/
+/* ==================================================================*/
+
+#clipto-container {
+  position: fixed !important;
+  /*top: 3% ;*/
+  right: -300px ;
+  max-height: 750px !important;
+  width: 300px !important;
+  box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;
+  border-radius: 8px!important;
+  z-index: 2147483647 !important;
+  height: calc(100% - 60px - 20px)!important;
+  bottom: 60px!important;
+}
+#clipto-container iframe {
+  height: 100% !important;
+  width: inherit !important;
+  border-width: 0 !important;
+}
+.cp-highlight-text {
+  /*background-color: rgb(255, 251, 120);*/
+  /*background-color: #fcff00;*/
+  position: relative !important;
+  background-color: rgb(255, 240, 94) !important;
+  padding: 2px 0 !important;
+  color: black !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  transition: 0.4s !important;
+  /*text-shadow: none;*/
+  cursor: pointer !important;
+  /*color: inherit !important;*/
+}
+.cp-highlight-text-active {
+  box-shadow: 0 5px 20px rgba(0,0,0,.16) !important;
+  transition: 0.4s;
+}
+.cp-highlight-text-yellow {
+  background-color: rgb(255, 240, 94) !important;
+}
+.cp-highlight-text-blue {
+  background-color: #b4e7f8 !important;
+}
+.cp-highlight-text-green {
+  background-color: #b4f8c5 !important;
+}
+.cp-highlight-text-red {
+  background-color: #f8b4e7 !important
+}
+/* expirimental - maybe add feature of underline */
+.clipto-underline-text {
+  border-bottom: 3px solid #b4e7f8 !important;
+  box-shadow: inset 0 -4px 0 #b4e7f8 !important;
+  /*border-bottom: 3px solid #fcff00;*/
+  /*box-shadow: inset 0 -4px 0 #fcff00;*/
+}
+#clipto-highlight-tools {
+  display: none;
+  z-index: 9999999 !important;
+  position: absolute !important;
+  height: 35px !important;
+  background-color: black !important;
+  opacity: 0.9;
+  border-radius: 3px !important;
+  /* width: 439px !important; */
+}
+
+.pane-open {
+  right: 15px !important;
+  transition: 0.2s;
+}
+.pane-closed {
+  right: -310px !important;
+  transition: 0.2s;
+}
+
+/* ==================================================================*/
+/* ========================== toolkit ===============================*/
+/* ==================================================================*/
+
+#clipto-toolkit-wrapper {
+  position: fixed;
+  right: -15px;
+  top: 100px;
+  height: 40px;
+  width: 15px;
+  z-index: 2147483647;
+  overflow: visible;
+  direction: ltr;
+}
+.cp-toolkit-wrapper-expand {
+  height: 163px;
+  width: 150px !important;
+  transition: 0.6s;
+}
+.cp-toolkit-wrapper-shrink {
+  width: 15px !important;
+  transition: 0.2s;
+}
+.cp-toolkit-wrapper-closed {
+  display: none;
+}
+.cp-toolkit-tools-wrapper {
+  position: relative;
+  overflow: visible;
+  direction: ltr;
+}
+.cp-toolkit-slot #cp-toolkit-open-app {
+  width: 165px;
+  /*right: 15px;*/
+  right: 0;
+  background: rgba(224,62,156,0.2);
+}
+.cp-toolkit-wrapper-expand #cp-toolkit-open-app {
+  background: rgba(224,62,156,0.55);
+}
+#cp-toolkit-open-app:hover {
+  background: rgba(224,62,156,0.95);
+}
+#cp-toolkit-add-highlight {
+  background: rgba(255,245,55,0.55);
+}
+#cp-toolkit-add-highlight:hover {
+  background: rgba(255,245,55,0.95);
+}
+#cp-toolkit-add-page {
+  background: rgba(0,194,209,0.55);
+}
+#cp-toolkit-add-page:hover {
+  background: rgba(0,194,209,0.95);
+}
+#cp-toolkit-add-note {
+  background: rgba(0,173,95,0.55);
+}
+#cp-toolkit-add-note:hover {
+  background: rgba(0,173,95,0.95);
+}
+#cp-toolkit-slot-actions {
+  height: 20px !important;
+  background: rgba(25,255,255, 0.95);
+  border: 1px solid;
+}
+#cp-toolkit-open-app,
+#cp-toolkit-add-highlight,
+#cp-toolkit-add-page,
+#cp-toolkit-add-note {
+  position: relative;
+  top: 0;
+  right: 0;
+  height: inherit;
+  border-radius: 3px 0 0 3px;
+  padding: 0 20px;
+}
+.cp-toolkit-slot {
+  position: relative;
+  /*height: 40px;*/
+  height: 40px;
+  width: 150px;
+  right: 0;
+  margin: 1px 0 0 0 !important;
+  /*padding: 0 20px;*/
+  direction: ltr !important;
+  cursor: pointer;
+  border-radius: 3px 0 0 3px;
+  /*background-color: rgba(255,255,255,0.7);*/
+}
+.cp-toolkit-slot-expand,
+.cp-toolkit-slot-active {
+  position: relative;
+  right: 50px !important;
+  width: 200px !important;
+  transition: 0.9s;
+  /*opacity: 0.8;*/
+  box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;
+}
+.cp-toolkit-slot-shrink {
+  position: relative;
+  right: 0;
+  width: 150px;
+  transition: 0.3s;
+  box-shadow: none
+}
+.cp-toolkit-wrapper-expand .cp-toolkit-slot-inner.cp-toolkit-slot-expand,
+.cp-toolkit-wrapper-expand #cp-toolkit-slot-inner.cp-toolkit-slot-active {
+  /*width: 150px;*/
+  right: 50px !important;
+  width: 200px !important;
+}
+.cp-toolkit-wrapper-expand #cp-toolkit-open-app.cp-toolkit-slot-shrink {
+  /*width: 150px;*/
+  right: 0;
+  width: 150px;
+}
+.cp-toolkit-slot-active-highlight {
+  background: rgba(255,245,55,0.9) !important;
+}
+.cp-toolkit-slot-active-note {
+  background: rgba(0,173,95,0.9) !important;
+}
+.cp-toolkit-slot-text{
+  color: #000000;
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  font-style: italic;
+  font-family: 'Arimo', 'Open-Sans', sans-serif;
+}
+
+
+/* ==================================================================*/
+/* ========================== toolkit note ==========================*/
+/* ==================================================================*/
+
+#cp-toolkit-note-wrapper {
+  position: fixed;
+  right: 15px ;
+  max-height: 210px;
+  width: 350px;
+  /*box-shadow: 0 5px 40px rgba(0,0,0,.16)!important;*/
+  /*box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 8px !important;*/
+  border-radius: 4px !important;
+  z-index: 2147483647;
+  height: calc(100% - 240px - 200px)!important;
+  top: 300px!important;
+}
+/*.cp-toolkit-note-wrapper-open {*/
+  /*right: 15px !important;*/
+  /*transition: 0.5s;*/
+/*}*/
+/*.cp-toolkit-note-wrapper-close {*/
+  /*right: -360px !important;*/
+  /*transition: 0.2s;*/
+/*}*/
+.cp-toolkit-note-wrapper {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.99);
+  box-shadow: rgba(0, 0, 0, 0.156863) 0 2px 8px !important;
+  border-radius: 4px !important;
+  padding: 10px 20px;
+  top: -10px;
+}
+.cp-toolkit-note-wrapper-collapsed {
+  height: 130px;
+  transition: 0.5s;
+}
+.cp-toolkit-note-wrapper-expand {
+  height: 100%;
+  transition: 0.5s;
+}
+.cp-toolkit-note-header-wrapper,
+.cp-toolkit-note-footer-wrapper {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+}
+.cp-toolkit-note-header-wrapper {
+  direction: ltr !important;
+  top: 0;
+  border-bottom: 1px solid #f6f6f6;
+}
+.cp-toolkit-note-footer-wrapper {
+  bottom: 0;
+}
+.cp-toolkit-note-header,
+.cp-toolkit-note-footer {
+  position: relative;
+  height: inherit;
+  font-family: "Open-Sans", sans-serif !important;
+}
+.cp-toolkit-note-header {
+}
+.cp-toolkit-note-title {
+  display: inline-block;
+  position: relative !important;
+  text-transform: capitalize !important;
+  font-size: 12px !important;
+  color: #5a5a5a !important;
+  margin: 0 !important;
+  text-align: left !important;
+  top: 2px;
+}
+.cp-toolkit-note-highlight-colors-wrapper {
+  position: relative !important;
+  display: inline-block;
+  /*background: red;*/
+  width: 120px;
+  margin: 0 10px !important;
+  height: 16px;
+  top: 4px;
+}
+.cp-toolkit-note-highlight-color {
+  position: relative;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-left: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.cp-toolkit-note-close-wrapper {
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: top;
+  -webkit-box-sizing: content-box;
+  right: 0;
+  top: 2px;
+}
+.cp-toolkit-note-close {
+  vertical-align: top;
+  -webkit-box-sizing: content-box;
+  width: 13px;
+  height: 13px;
+  padding: 4px;
+  cursor: pointer;
+}
+.cp-toolkit-note-close-icon {
+  padding: 0;
+  vertical-align: top;
+  -webkit-box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+}
+.cp-toolkit-note-body-wrapper {
+  position: relative !important;;
+  display: block !important;;
+  width: 100% !important;;
+  padding: 15px 0 !important;;
+  height: calc((100% - 30px) - 60px) !important;;
+  box-sizing: content-box !important;
+}
+.cp-toolkit-note-body {
+  /*direction: ltr !important;*/
+  font-size: 16px !important;;
+  line-height: 20px !important;;
+  font-weight: 100 !important;;
+  font-family: "Open-Sans", sans-serif !important;
+  position: relative !important;;
+  height: 100% !important;;
+  overflow: scroll !important;;
+}
+.cp-toolkit-note-body::-webkit-scrollbar {
+  display: none;
+}
+.cp-toolkit-note-textarea {
+  /*color: rgba(0,0,0,0.87);*/
+  border-color: rgba(0,0,0,0.12) !important;
+  resize: none !important;
+  padding: 0 !important;
+  vertical-align: top !important;
+  width: calc(100% - 20px) !important;
+  height: 100% !important;
+  font-weight: 200 !important;
+  line-height: 20px !important;
+  position: relative !important;
+  color: #5d5d5d !important;
+  font-size: 15px !important;
+  overflow: scroll !important;
+  background-color: transparent !important;
+  font-family: "Open-Sans", sans-serif !important;
+}
+.cp-toolkit-note-textarea::-webkit-scrollbar {
+  display: none !important;
+}
+.cp-toolkit-note-footer-button-wrapper {
+  display: inline-block !important;
+  max-width: 100px !important;
+  height: 20px !important;
+  padding: 2px 0 20px !important;
+}
+.cp-toolkit-note-save-wrapper {
+  position: absolute !important;
+  right: 5px !important;
+}
+.cp-toolkit-note-remove-wrapper {
+  position: absolute !important;
+  right: 60px !important;
+}
+.cp-toolkit-note-footer-button {
+  position: relative !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  font-weight: 200 !important;
+  text-align: center !important;
+  cursor: pointer !important;
+}
+.cp-toolkit-note-save {
+  color: #008000 !important;
+}
+.cp-toolkit-note-remove {
+  color: #5d5d5d !important;
+  transition: 0.3s;
+}
+.cp-toolkit-note-remove:hover {
+  /*color: #ff8484 !important;*/
+  /*color: #ff5151 !important;*/
+  color: #b70000 !important;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+/*.cp-toolkit-note-save-active {*/
+  /*color: #008000 !important;*/
+  /*cursor: pointer !important;*/
+/*}*/
+
+/* ==================================================================*/
+/* ========================== notification ==========================*/
+/* ==================================================================*/
+
+.clipto-notification-wrapper {
+  position: fixed;
+  height: 130px;
+  width: 300px;
+  background-color: rgba(0,0,0, 0.8);
+  box-shadow: 0 5px 10px rgba(0,0,0,.16)!important;
+  right: -320px;
+  /*right: 15px;*/
+  bottom: 60px;
+  z-index: 2147483647;
+  overflow: hidden;
+  direction: ltr;
+  font-family: "Open-Sans", sans-serif;
+  -webkit-box-sizing: content-box;
+}
+.cp-notification-open {
+  right: 15px !important;
+  transition: 0.1s;
+}
+.cp-notification-closed {
+  right: -320px !important;
+  transition: 0.1s;
+}
+.cp-notification-header-wrapper,
+.cp-notification-footer-wrapper {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+}
+.cp-notification-header-wrapper {
+  top: 0;
+}
+.cp-notification-footer-wrapper {
+  bottom: 0;
+}
+.cp-notification-header,
+.cp-notification-footer {
+  position: relative;
+  padding: 10px;
+  height: 20px;
+  font-family: "Open-Sans", sans-serif;
+}
+.cp-notification-logo-wrapper,
+.cp-notification-close-wrapper {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: top;
+  -webkit-box-sizing: content-box;
+}
+.cp-notification-logo-wrapper {
+  left: 0;
+}
+.cp-notification-close-wrapper {
+  right: 0;
+}
+.cp-notification-logo,
+.cp-notification-close {
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  -webkit-box-sizing: content-box;
+}
+.cp-notification-logo,
+.cp-notification-close {
+  vertical-align: top;
+  -webkit-box-sizing: content-box;
+}
+.cp-notification-close {
+  cursor: pointer;
+}
+.cp-notification-title-wrapper {
+  position: relative;
+  display: inline-block;
+  height: 22px;
+  width: calc(100% - 20px - 20px);
+  overflow: hidden;
+}
+.cp-notification-title {
+  padding: 2px 8px 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.cp-notification-body-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(100% - 40px - 40px);
+}
+.cp-notification-body {
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 100;
+  font-family: "Open-Sans", sans-serif;
+}
+.cp-notification-decline-wrapper {
+  position: relative;
+  display: inline-block;
+  left: 80px;
+  max-width: 100px;
+  height: 20px;
+  margin-right: 20px;
+}
+.cp-notification-decline {
+  position: relative;
+  padding: 2px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+}
+.cp-notification-accept-wrapper {
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  max-width: 100px;
+  height: 20px;
+
+}
+.cp-notification-accept {
+  position: relative;
+  padding: 2px;
+  color: greenyellow;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+/* ==================================================================*/
+/* ====================== mini notification =========================*/
+/* ==================================================================*/
+
+.cp-mimi-notification-wrapper {
+  position: fixed;
+  min-height: 40px;
+  height: auto;
+  width: 200px;
+  background-color: rgba(0,0,0, 0.8);
+  box-shadow: 0 5px 10px rgba(0,0,0,.16)!important;
+  /*right: -320px;*/
+  right: 20px;
+  bottom: 40px;
+  z-index: 2147483647;
+  overflow: hidden;
+  direction: ltr;
+  font-family: "Open-Sans", sans-serif;
+  -webkit-box-sizing: content-box;
+  border-radius: 5px;
+  text-align: center;
+}
+.cp-mini-notification-body {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+.cp-mini-notification-title {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Open-Sans", sans-serif;
+}
+
+/* ==================================================================*/
+/* ========================== common css ============================*/
+/* ==================================================================*/
+
+.cp-no-border {
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+

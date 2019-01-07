@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "불이 붙다",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "빛은 최대 아직 간단하지만 매우 중독성 퍼즐 게임이다. 빛의 흐름을 만들 수있는 파이프 일치 색상을 연결합니다.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

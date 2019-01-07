@@ -1,0 +1,137 @@
+﻿.jsc_popout {
+  position:           fixed;
+  bottom:             32px;
+  right:              0px;
+  height:             41px;
+  width:              32px;
+  display:            block!important;
+  z-index:            99999;
+
+  transition:         all  0.25s ease-out;
+  -moz-transition:    all  0.25s ease-out; /* Firefox 4 */
+  -webkit-transition: all  0.25s ease-out; /* Safari and Chrome */
+  -o-transition:      all  0.25s ease-out; /* Opera */
+
+  opacity:            0.5;
+  overflow:           hidden;
+}
+.jsc_hidden {
+  display:            none!important;
+}
+.jsc_popout iframe {
+  background-color:   white;
+  position:           absolute;
+  top:                0px;
+  right:              32px;
+  height:             100%;
+  width:              100%;
+  border:             solid 1px black;
+  border-radius:      4px 4px 4px 0px;
+  box-sizing:         border-box;
+  -moz-box-sizing:    border-box;
+}
+.jsc_popout_force {
+  height:             600px;
+  max-height:         90%;
+  width:              320px;
+  max-width:          50%;
+  opacity:            1;
+
+  transition:         all  0.25s ease-out;
+  -moz-transition:    all  0.25s ease-out; /* Firefox 4 */
+  -webkit-transition: all  0.25s ease-out; /* Safari and Chrome */
+  -o-transition:      all  0.25s ease-out; /* Opera */
+  overflow:           visible;
+}
+.jsc_hotspot {
+  position:           absolute;
+  height:             41px;
+  width:              32px;
+  bottom:             0px;
+  right:              0px;
+  border-top:         solid 1px transparent;
+  border-left:        solid 1px transparent;
+  border-bottom:      solid 1px transparent;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color:   #222222;
+  background:         -webkit-gradient(linear, left top, left bottom, from(#444444), to(#000000));
+  background:         -moz-linear-gradient(top, #444444, #000000);
+  filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+  box-sizing:         border-box;
+  -moz-box-sizing:    border-box;
+  cursor:             pointer;
+}
+.jsc_hotspot > div {
+  background-repeat:    no-repeat;
+  background-position:  center center;
+  width:                100%;
+  height:               100%;
+}
+
+.jsc_popout_force .jsc_hotspot {
+  border-radius:        0px;
+}
+.jsc_popout_force iframe {
+  -display:             block;
+  box-shadow:           0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media print, screen and (max-width: 320px) {
+ .jsc_popout {
+    display: none!important;
+  }
+}
+
+/* new ui */
+.jsc_popout:hover, .jsc_popout_force {
+  opacity:        1;
+}
+.jsc_hotspot {
+  background:     white;
+  border-color:   #73D0E6;
+  border-width:   2px;
+  border-radius:  6px 0 0 6px;
+}
+.jsc_popout iframe {
+  border-color:   #EAEAEA;
+}
+.jsc_alerts:not(.jsc_app_aura) {
+  -webkit-animation:                  alerts 1s;
+  -webkit-animation-iteration-count:  infinite;
+  animation:                          alerts 1s;
+  animation-iteration-count:          infinite;
+}
+@-webkit-keyframes alerts {
+  0%   { border-color: #73D0E6; }
+  50%  { border-color: #EE4A2A; }
+  100% { border-color: #73D0E6; }
+}
+@keyframes alerts {
+  0%   { border-color: #73D0E6; }
+  50%  { border-color: #EE4A2A; }
+  100% { border-color: #73D0E6; }
+}
+
+/* skinned ui */
+.jsc_app_aura {
+  --background:     #3C5064;
+  --border-color:   transparent;
+  border-color: #5A646E;
+}
+.jsc_app_aura.jsc_alerts {
+  -webkit-animation:                  alerts_aura 1s;
+  -webkit-animation-iteration-count:  infinite;
+  animation:                          alerts_aura 1s;
+  animation-iteration-count:          infinite;
+}
+@-webkit-keyframes alerts_aura {
+  0%   { border-color: #5A646E; }
+  50%  { border-color: #EC1C24; }
+  100% { border-color: #5A646E; }
+}
+@keyframes alerts_aura {
+  0%   { border-color: #5A646E; }
+  50%  { border-color: #EC1C24; }
+  100% { border-color: #5A646E; }
+}

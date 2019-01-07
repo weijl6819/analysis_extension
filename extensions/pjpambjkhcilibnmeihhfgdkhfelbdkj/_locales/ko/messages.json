@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "접촉부"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "팝업 창에 액세스 구글 연락처"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "접촉부 옵션"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "팝업 창 크기"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "폭"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "신장"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "저장"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "저장 됨"
+   }
+}

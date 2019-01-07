@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+        <style type="text/css">
+            body{
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+                font-size: 13px;
+            }
+            .aliorders-popup-wrap {
+                position: relative;
+                padding-top: 20px;
+            }
+            .popup-close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            .popup-icon {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .popup-content {
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-top: 15px; 
+            }
+            .popup-content h1 {
+                margin: 0;
+                font-size: 17px;
+                font-weight: 600;
+                color: #7009FF;
+            }
+            .popup-content p {
+                margin: 5px 0 0;
+                line-height: 1.8em;
+            }
+            .popup-learnmore {
+                padding-top: 20px;
+            }
+            .popup-learnmore a {
+                display: block;
+                width: 100%;
+                line-height: 40px;
+                border-top: 1px solid #E9E9F0;
+                color: #7009FF;
+                text-decoration: none;
+                text-align: center;
+                border-radius: 0 0 2px 2px;
+                font-weight: 500;
+            }
+            .popup-learnmore a:hover {
+                background: #7009FF;
+                color: #FFF;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body style="width: 250px">
+        <div class="aliorders-popup-wrap">
+            <div class="popup-icon">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAABQ5JREFUWIW9mEtsVUUYx3/fnDP30fKyvPoAlERDXBg2xIXBR1xo3KEEw8ZIwFSiNl0gC3VhJdG4MCg+oqlGiAtiggtjjG6UsNAEE4wihJCIJIo8CgVatO255zGfi0trb3vuPfdcCv/VnZlvvu935tzzzcwntKiHUP9umO9DO0WKKEVPKQAkQohQoUIlhrFhuHYASVqJI3mMe1FrYJktsFCUcp65RhiPQ0ZDuDSIRHMK2Itav0ynF7NEwOQBmykFh8+lygRDzYA2BJxLsJmaBD02wYVDSFzPrkFQlXKZLj9m2VzDAQgYiVm+tkw3aN2FSh3YhHrLC9xllPa5BkuTE8aGQn5P+5BSV+ZWwgEYpb27yJ2pYzM7+su66lbCTUod8/rLumpmfw1gH7pUY5beOqxaaczSPrQm/hTgAOo7y8pbjzVDlhUDqD/ZnAK8Wqbby5m4b4YEzMUyXdPasAktdFnuuRHHiWOFZ9khcJ8IXiNbVRTH66p8mToObnHEsQEkNgA9JbpvBM457vALfGqE+9PgVDnnEt5MEl4FLoog4tFXz5+AuVquMhkAca1/tc6xxrfsFeioYzLsAjaTcNIoZ11IryoB1w8W9WQS5gOYLWgpUUqtwCms8y2fIFVn6U/Aj86jQyx7xWNQIQYOOxht5DtRSlvQkmmDRa3AAeuNx/tI41ONCgs8iIAxBxeThFGgZDIAAdpgkdESbbnRhEeMx24R/GxTHhRDjwZsIGCjtawRWJe1ggBaos0vKFbzwT0php1INQOockgcZ/B4qo69UY93xfANQofAAwhGHKNZcQuK9ROl0OxRxRh6MfTWdCq/OeUzYn4SjzeAK+r4AeWI+AwILDJCCeGJWu5sQKP4vio2CyyKwBZ5BcPjswaVyvVfhzXh4SnnESU8ivVSvzbzihVrLLgsw0KJnSYNrqpr6ZN4rNEH1AwggBGhmfvBhlkBlMA5doch36YCGB5t5FA1G1CEyDih7nH7f2+cqG0ypBGbcey3df4g6viuAVyFhF+ywjohNmEzKxgzoHBlGmBBPda6qEGCVr5Qx68p/WMu4TkxnMsKGwqRkYDxLEM1nCVkO8o/AAZu8zxe80t8Lx7v1J3o+LiWjRGN2CZwNCsmgASM++MwsgB6moA8rRHPYxk0cn1rFIzA+ihisW+5jGO5KbAfWJjiYlhDnsHwdzNwAOMwYvYhgScETc0wnCChH63939oC9xJRFMueVDjljAt5Og+cJwT7kMAAVLw6qSJdPycxL6PT0pNhq5TYIzL74qPKqThgC4ahHDGYCBmpugYuTTCUQNM7nggHnWPXtPZqEdalwB13AVuNbS7nTSoBPUn1gQzAASRMonxPiPI1CW/VHVaOaMCzYrM/wlmAEUOT1YapbbgTzhvIVYFyyueasG82HQfjgBewU9tg0zKQdML5yXbNTrkN7Wi3rM7rFMNLxrARQB1fhRV21UvgWYoiTn+IXE0FBNiO9hQsnXkdK6yV6hs43hoahBEXPkLOTu9LPWv0F3WNOua1GqgVeYbRtytyamZ/6lHwaIU/nBDefKyqPCFcWOF02liDi7pKf5mVN7sUkngMfxDwF0hqmsusJOxAl0SW2+ceDYKIPweR4UY2TZU6+tCiK9FpExa7GyyPGFDP43IYcOE9JDMN5S6il8t0xTFL8tZx8tamWwKcrhfR9vEyHSah3YLnwIu1eg31hdhAEkEiIf9W4MogkntHAfgPGq7kwPW0TXwAAAAASUVORK5CYII=" alt="">
+            </div>
+            <div class="popup-content">
+                <h1>Ali Orders Extensions</h1>
+                <p>You can use this extension in AliExpress order, order list, product, product category and wishlist pages.</p>
+            </div>
+            <div class="popup-learnmore">
+                <a href="https://help.fireapps.io/welcome-to-fireapps/get-started/how-to-use-fireapps-chrome-extension" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./bookindy-logo.html">
+
+<dom-module id="bookindy-container">
+  <style media="screen">
+    :host {
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      background: #ff9d00;
+      background: -webkit-linear-gradient(top, #ff9d00, #f19400);
+      color: #FFF;
+      line-height: 50px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      padding-right: 15px;
+    }
+
+    :host ::content .BookIndy-content {
+      margin: 0;
+      flex: 1;
+      padding: 0 25px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    :host ::content .BookIndy-btn,
+    :host ::content .BookIndy-icon-btn {
+      align-self: center;
+      margin-left: 10px;
+      height: 36px;
+      line-height: 36px;
+      background: #d38407;
+      border-radius: 3px;
+      padding: 0 10px;
+      color: white !important;
+      font-size: 16px;
+      border: none;
+      text-decoration: none;
+    }
+
+    :host ::content .BookIndy-btn:hover,
+    :host ::content .BookIndy-icon-btn:hover {
+      background-color: #b26b00;
+      color: white !important;
+    }
+
+    :host ::content .BookIndy-icon-btn {
+      padding-left: 0;
+    }
+
+    :host ::content .BookIndy-icon-btn:hover,
+    :host ::content .BookIndy-btn:hover {
+      text-decoration: none;
+    }
+
+    :host ::content .BookIndy-btn-icon {
+      display: inline-block;
+      vertical-align: middle;
+      height: 36px;
+      fill: #694203;
+      margin-right: -5px;
+    }
+
+    :host ::content .BookIndy-product-link {
+      color: #333333 !important;
+      font-family: Georgia, serif;
+    }
+  </style>
+
+  <template>
+      <bookindy-logo></bookindy-logo>
+      <content></content>
+  </template>
+
+  <script>
+    Polymer({is: "bookindy-container"});
+  </script>
+</dom-module>

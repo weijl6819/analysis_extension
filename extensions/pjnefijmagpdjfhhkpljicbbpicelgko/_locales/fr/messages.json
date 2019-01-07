@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Utiliser la reconnaissance vocale dans une zone de texte sur un site Web"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

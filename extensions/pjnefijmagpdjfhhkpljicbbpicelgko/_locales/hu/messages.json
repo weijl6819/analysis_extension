@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Használja beszédfelismerő BÁRMELYIK mezőbe bármilyen honlapon"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

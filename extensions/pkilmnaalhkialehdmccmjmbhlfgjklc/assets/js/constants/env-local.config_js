@@ -1,0 +1,30 @@
+(function() {
+  angular.module('maybe.constants')
+    .constant('ENV', {
+      'FACEBOOK': {
+        'APP_ID': '321608658298112',
+        'OPTIONS': 'public_profile,email',
+        'OAUTH_URL': 'https://www.facebook.com/dialog/oauth?client_id=321608658298112&redirect_uri=http%3A%2F%2Flocal.maybe.xyz%3A3000%2Fapp%2Ffacebook&scope=email'
+      },
+      'PARSE': {
+        'APP_ID': 'PVfbZu1TDmnIgwAp5IS8mCESwaTc7u2ivmpjjsQe',
+        'JS_KEY': 'rFkKm5m56QkI0w5rdXOYkQJ717MXVlC1BT6OAKGQ',
+        'REST_KEY': 'XOwsIahc9doFDwk9MVS9txuGjg5PhC0uvUfgnCQE',
+        'URL': 'http://localhost:8080/1'
+      },
+      'APP': {
+        'URL': 'http://local.maybe.xyz'
+      },
+      'GA': {
+        'PROPERTY_ID': 'UA-63307495-1'
+      },
+      'AWS': {
+        'CLOUDFRONT': 'https://d2uz83lkewjsw1.cloudfront.net'
+      },
+      'HOKO': {
+        'ID': 'ecef8aab13004e4e'
+      },
+      'TEMPORARY_USER_TIMEOUT':  60 * 1000,         // Set timeout to only 1 minute for testing
+      'DEBUG': true
+    });
+})();

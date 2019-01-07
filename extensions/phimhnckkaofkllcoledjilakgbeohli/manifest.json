@@ -1,0 +1,78 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "MonkiBu TV y Radios Online",
+  "version": "2.0.23",
+  "version_name": "2.0.23",
+  "manifest_version": 2,
+  "description": "Mira Televisión y escucha Radios Online, las mejores señales del mundo directamente en tu computador.",
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "static/tvIcon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://app.juicedev.me/*",
+        "*://*.monkibu.net/*"
+      ],
+      "js": [
+        "script/jquery.min.js",
+        "script/jdev.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://ext.juicedev.me/*"
+      ],
+      "js": [
+        "script/jquery.min.js",
+        "script/jdev-config.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    "static/*",
+    "pages/*",
+    "script/*"
+  ],
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://s-static.ak.fbcdn.net https://*.twitter.com https://apis.google.com; object-src 'self'",
+  "permissions": [
+    "bookmarks",
+    "unlimitedStorage",
+    "webRequest",
+    "webRequestBlocking",
+    "notifications",
+    "http://*.mdstrm.com/*",
+    "http://*.mdstrm.cl/*",
+    "http://*.13.cl/*",
+    "http://*.chilevision.cl/*",
+    "http://*.mega.cl/*",
+    "http://*.livestream.com/*",
+    "http://*.tvn.cl/*",
+    "http://*.digitalproserver.com/*",
+    "http://*.appspot.com/*",
+    "*://*.juicedev.me/*",
+    "http://*.akamaihd.net/*",
+    "http://*.qaotic.net/*",
+    "http://*.ztreaming.com/*",
+    "http://*.grupoz.cl/*",
+    "http://*.cloudfront.net/*",
+    "http://*.janus.cl/*",
+    "*://*.monkibu.net/*"
+  ],
+  "optional_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "256": "static/monki_1.png"
+  }
+}

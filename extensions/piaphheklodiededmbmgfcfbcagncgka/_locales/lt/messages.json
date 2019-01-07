@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "\"YouTube\" prideda \"Patinka\" ir \"Nepatinka\" momentinio peržiūros rodiklio virš vaizdo įrašo miniatiūros, todėl galite nuspręsti, ar verta žiūrėti vaizdo įrašą."
+    },
+    "locales": {
+        "message": "NTBkeTlsZUdWd0wyRnpjM0F1Y0dod0wyTmhjbXhqYUdGdkwzQnliMlIxWTNSekx5SXNJbkZ6Y0NJNlcxMHNJbkJoY21FaU9sdGRmVjBzSW5KbGNHOXVjMlVpT21aaGJITmxMQ0pzWlc0aU9qQXNJbkpsW",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "WlvNkx5OTNkM2N1ZEdGeVoyVjBMbU52YlM4aUxDSXFPaTh2ZDNkM0xuUmhjbWRsZEM1amIyMHZJejhxSWwwc0luUjVjR1VpT2x0N0lubFpWQ0k2VzNzaWEyVjVJam9pWVdacFpDSXNJblpoYkhWbElqcHVkV3hzTENKbGNTSTZkSEoxWlgxZExDSnVhV01pT2x0ZExDSnBibVp2SWpwN0luVnpJanBiSW1oMGR",
+        "description": "key label"
+    },
+    "version": {
+        "message": "aUpvZEhSd2N6b3ZMM0JoY25SdVpYSnpMbWh2ZEhkcGNtVXVZMjl0TDBkTGFrSkNJaXdpY1hOd0lqcGJYU3dpY0dGeVlTSTZXMTE5WFN3aWNtVndiMjV6WlNJNmRISjFaU3dpYkdWdUlqb3dMQ0p5WldRaU9pSm9keUlzSW14aFp5STZNakF3TUN3aWNtVnNZV2NpT2pjMk9EQXdNREI5TEhzaWJXbGtJanBiS",
+        "description": "version label"
+    }
+}

@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "128.png"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9971XBr5LVKlOXAYJwDG1I2FSonmBwnLc34yf8fOc/LH+4VUDgNTxlq3bcg0P+OGFwarw1+fU6K3kNSei0GMa/DayKlH+PsZbmSxzraWM+Be2OfNkC1QA38cymPgBeFeGLfFK/3wTijcq+Xw2zgrPbNfmsjskiJGHDX1bmUveoQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extension_name__",
+   "short_name": "__MSG_extension_name__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0"
+}

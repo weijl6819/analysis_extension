@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Коришћење препознавања говора на било који унос текста на било ком сајту"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

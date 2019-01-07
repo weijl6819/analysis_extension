@@ -1,0 +1,54 @@
+Copyright (c) 2018 by Farsight Security, Inc.
+
+Permission is hereby granted to any person or organization obtaining a copy
+of the Google Chrome Extension software "DNSDB Scout" (the "Software") to
+run the Software on their computer[s]. Your use of the Software and any
+output produced by the Software is governed by your DNSDB API Key License
+Agreement and Farsight Security Terms of Use.
+
+This license prohibits you from copying, publishing, and/or distributing
+source code in either original or modified form. This license prohibits you
+from making the Software available for public use, commercial or
+non-commercial, in either original or modified form. This license prohibits
+you from claiming ownership or authorship of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY AND
+FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR
+SOFTWARE AUTHORS BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR
+CONSEQUENTIAL DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN
+CONNECTION WITH, THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Other Bundled Software:
+
+jQuery
+	Copyright: 2018 The jQuery Foundation.
+	License: jQuery License, available at https://jquery.org/license/
+	More information available at https://jquery.org/
+
+Semantic UI
+	Copyright: 2018 Semantic Organization
+	License: MIT License, available at https://semantic-ui.mit-license.org/
+	More information available at https://semantic-ui.com/
+
+DataTables
+	Copyright: 2007-2018 SpryMedia Ltd
+	License: MIT License, available at https://datatables.net/license/mit
+	More information available at https://datatables.net/
+
+Punycode.js
+	Copyright: 2016 Mathias Bynens
+	License: MIT License, available at https://mths.be/mit
+	More information available at https://github.com/bestiejs/punycode.js/
+
+Lato
+	Copyright: 2014 Lato
+	License: SIL Open Font License, available at https://scripts.sil.org/ofl
+	More information available at https://fonts.google.com/specimen/Lato
+
+Montserrat
+	Copyright: 2011 The Montserrat Project Authors
+	License: SIL Open Font License, available at https://scripts.sil.org/ofl
+	More information available at https://fonts.google.com/specimen/Montserrat

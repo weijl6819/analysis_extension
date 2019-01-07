@@ -1,0 +1,37 @@
+{
+  "buildVars": {
+        "extensionId": "_paMembers_@www.filmfanatic.com",
+    "configDefId": "100000428",
+    "toolbarDisplayName": "FilmFanatic",
+    "internalProductName": "FilmFanatic",
+    "filenamePrefix": "pa",
+    "version": "13.781.13.56745",
+    "buildDate": "2018-08-20T16:00:49.096Z",
+    "localStorageUrl": "http://filmfanatic2.dl.myway.com/blank.jhtml",
+    "localStorageKeys": [],
+    "downloadDomain": ".filmfanatic.com",
+    "livePing": {
+      "url": "http://live.tb.ask.com/tr.gif",
+      "interval": 21600000
+    },
+    "toolbarDataTimeout": 3000,
+    "pixelUrl": "http://filmfanatic2.dl.tb.ask.com/install_pixels.jhtml?partner=${partnerID}",
+    "unifiedLoggingUrl": "http://anx.tb.ask.com/anx.gif",
+    "newTabURL": "http://hp.myway.com/filmfanatic/ttab02chr/index.html?p2=${partnerID}&n=${installDateHex}&st=tab&ptb=${toolbarID}&si=${partnerSubID}",
+    "track": "TTAB02",
+    "coId": "Z1",
+    "uninstallSurveyUrl": "http://filmfanatic2.dl.myway.com/uninstall.jhtml?surveyUrl=http%3A%2F%2Fwww.research.net%2Fr%2FHYSCVNM%3Fc%3D<!--toolbarID-->%26ptb%3D<!--partnerID-->",
+    "defaultPartnerId": "^Z1^chr999^TTAB02^",
+    "searchExtensionEnabled": true,
+    "searchExtensionUrl": "http://ext.ask.com/index.jhtml?productName={{productName}}&installDate={{installDate}}&partnerId={{partnerID}}&si={{partnerSubID}}&tbGuid={{toolbarGUID}}&coId={{coID}}",
+    "remoteExtensionSettingsURL": "http://ak.imgfarm.com/images/nocache/native/extension-config.json",
+    "remoteExtensionDevSettingsURL": "http://ak.imgfarm.com/images/nocache/native/extension-dev-config.json"
+  },
+  "csw": {
+    "nativemessagingHostName": "com.mindspark.filmfanatic"
+  },
+  "widgets": [
+      ],
+  "executablePackages": [
+      ]
+}

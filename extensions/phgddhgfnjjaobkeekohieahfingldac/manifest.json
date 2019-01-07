@@ -1,0 +1,25 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+
+  "name": "M*Modal Fluency Direct Web Extension",
+  "description": "Enables level 3 support for many web applications.",
+  "version": "4.5.0",
+
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "<all_urls>"
+  ],
+
+  "web_accessible_resources": [
+    "injected_script.js",
+    "connect_injected_script.js",
+    "disconnect_injected_script.js"
+  ],
+
+  "background": {
+    "page": "background.html"
+  }
+}

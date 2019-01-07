@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Kontakte"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Zugriff auf Google-Kontakte in einem Popup-Fenster"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Kontakte-Einstellungen"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Größe des Pop-up-Fenster"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "Breite"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "Höhe"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "Speichern"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Gespeichert"
+   }
+}

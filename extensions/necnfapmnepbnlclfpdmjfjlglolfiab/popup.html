@@ -1,0 +1,260 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pagezii</title>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .glyphicon-fire:before {
+            content: "\e104";
+        }
+        /**
+         * Tooltip Styles
+         */
+
+        /* Add this attribute to the element that needs a tooltip */
+        [data-tooltip] {
+          position: relative;
+          z-index: 2;
+          cursor: pointer;
+        }
+
+        /* Hide the tooltip content by default */
+        [data-tooltip]:before,
+        [data-tooltip]:after {
+          visibility: hidden;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        /* Position tooltip above the element */
+        [data-tooltip]:before {
+          position: absolute;
+          bottom: 150%;
+          left: 50%;
+          margin-bottom: 5px;
+          margin-left: -52px;
+          padding: 7px;
+          width: 103px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          background-color: #000;
+          background-color: hsla(0, 0%, 20%, 0.9);
+          color: #fff;
+          content: attr(data-tooltip);
+          text-align: center;
+          font-size: 14px;
+          line-height: 1.2;
+        }
+
+        /* Triangle hack to make tooltip look like a speech bubble */
+        [data-tooltip]:after {
+          position: absolute;
+          bottom: 150%;
+          left: 50%;
+          margin-left: -5px;
+          width: 0;
+          border-top: 5px solid #000;
+          border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+          border-right: 5px solid transparent;
+          border-left: 5px solid transparent;
+          content: " ";
+          font-size: 0;
+          line-height: 0;
+        }
+
+        /* Show tooltip content on hover */
+        [data-tooltip]:hover:before,
+        [data-tooltip]:hover:after {
+          visibility: visible;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+          opacity: 1;
+        }
+    </style>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+      #loading {
+          text-align: center;
+      }
+      #loading img {
+          width: 300px;
+      }
+      #ad-result {
+          width: 710px;
+          padding: 30px;
+      }
+      #ad-result p {
+          padding: 0;
+          margin: 0;
+          margin-bottom: 5px;
+      }
+      #ad-result h3 {
+          margin-top: 0;
+          border: 1px solid #ddd;
+          padding: 15px;
+          display: inline-flex;
+          width: 96%;
+          color: #000;
+          font-size: 16px;
+          font-family: arial, sans-serif;
+          font-weight: normal;
+      }
+      .ad-wrapper {
+          width: 100%;
+          padding: 15px;
+          background-color: #f6f6f6;
+          margin-bottom: 20px;
+          border: 1px solid #C4C6C8;
+          -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+          -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+          box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+          border-radius: 4px;
+          display: inline-flex;
+      }
+      .ad-wrapper p {
+          margin: 0 !important;
+          line-height: 20px;
+      }
+      .ad-details {
+          width: 100%;
+          display: inline-block;
+          word-wrap: break-word;
+          font-family: arial, sans-serif;
+      }
+      .ad-details p:nth-child(2){
+          color: #1a0dab;
+          font-size: 18px;
+      }
+      .ad-details p:nth-child(3){
+          color: #006621;
+          font-size: 14px;
+      }
+      .ad-details p:nth-child(4){
+          color: #545454;
+          font-size: 14px;
+      }
+      .ad-grade {
+          display: inline-block;
+          width: 30px;
+          float: right;
+          font-size: 41px;
+          margin-top: -20px;
+          margin-right: -12px;
+      }
+      .ad-grade span {
+          color: #55AD77;
+      }
+      .ad-grade span.improve {
+          color: #EDA54C;
+      }
+      .ad-grade span.failed {
+          color: #D95847;
+      }
+      .cta-wrapper {
+          position: relative;
+      }
+      .cta-wrapper p {
+          text-align: center;
+          display: block;
+          width: 100%;
+          margin-bottom: 15px !important;
+          line-height: 22px;
+          color: #4D4D4D;
+          font-size: 18px;
+      }
+      .cta-wrapper .btn {
+          background-color: #35857D;
+          color: #fff !important;
+          padding: 10px 20px;
+          border-radius: 4px;
+          border-bottom: 3px solid #1f615b !important;
+          font-size: 14px;
+          text-decoration: none !important;
+      }
+      .ad-details .pagezii-icon {
+          display: inline-block;
+          font-size: 16px;
+          padding-right: 15px;
+          margin-top: 25px;
+          margin-bottom: 5px;
+      }
+      .ad-details .pagezii-icon i {
+          color: #DDD;
+      }
+      .ad-details .pagezii-icon .pass i {
+          color: #4D4D4D;
+      }
+      .ad-details .pagezii-icon .improve i {
+          color: #4D4D4D;
+      }
+      .ad-details .pagezii-icon .failed i {
+          color: #4D4D4D;
+      }
+      .ad-details .ad-type {
+          /*background: #d1d9dc;*/
+          border: 2px solid #d1d9dc;
+          padding: 6px 12px;
+          border-radius: 5px;
+          color: #4D4D4D;
+          font-weight: bold;
+          font-size: 14px;
+          margin-left: 10px;
+          text-transform: uppercase;
+      }
+      .ad-details .ad-extensions, .ad-details .ad-callouts {
+          color: #545454;
+          font-size: 14px;
+      }
+      .ad-details .ad-extensions span {
+           color: #1a0dab;
+      }
+      .ad-details .ad-extensions>span+span:before {
+          content: ' · ';
+          color: #545454;
+      }
+      .ad-details p.ad-extensions._wEo span {
+        width: 240px;
+        display: inline-block;
+        padding-left: 20px;
+      }
+      .ad-details p.ad-extensions._wEo>span+span:before {
+          content: none;
+      }
+      .sub-action-link {
+          position:absolute;
+          right:15px;
+          bottom:15px;
+          font-size:13px;
+      }
+    </style>
+
+    <script src="popup.js"></script>
+  </head>
+  <body style="min-width: 580px; min-height: 320px; position: relative;">
+    <div id="loading"><img src="loading1.gif"></div>
+    <div id="status"></div>
+    <div id="page-result" hidden></div>
+
+    <div id="status2"></div>
+  </body>
+</html>

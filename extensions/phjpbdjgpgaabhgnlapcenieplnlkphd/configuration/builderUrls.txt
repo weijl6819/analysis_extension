@@ -1,0 +1,33 @@
+﻿[
+
+{
+"network":"sussex", 
+"urls": ["localhost","mcilreavy.com"],
+"enabled": "false"
+},
+
+{
+"network":"london", 
+"urls": ["london.my-air.uk"],
+"enabled": "true"
+},
+
+{
+"network":"sussex", 
+"urls": ["sussex.my-air.uk","sussex-air.net"],
+"enabled": "true"
+},
+
+{
+"network":"hampshire", 
+"urls": [],
+"enabled": "true"
+},
+
+{
+"network":"leicester", 
+"urls": [],
+"enabled": "true"
+}
+
+]

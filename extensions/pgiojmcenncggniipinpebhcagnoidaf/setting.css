@@ -1,0 +1,22 @@
+#wrapper{
+    width:450px;
+    height:auto;
+    background:#CCCCCC;
+    margin:20px auto;
+    border:1px solid #000;
+}
+td{
+    width:50%;
+    height:30px;
+    font:normal 12px Arial, Helvetica, sans-serif;
+
+}
+select{
+    width:150px;
+    margin-left:10px
+}
+
+input{
+    width:150px;
+    margin-left:10px
+}

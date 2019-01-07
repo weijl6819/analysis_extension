@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Iluminar",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up es un juego de rompecabezas simple todavía, pero altamente adictivo.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Kami menambahkan suka dan tidak suka indikator pratinjau instan atas thumbnail video di YouTube ™ membantu Anda memutuskan apakah itu layak menonton video."
+    },
+    "locales": {
+        "message": "3aWFYSndhV1FpTENKak0yNXBaQ0lzSW1NelkyZ2lMQ0poWm1ad1lYUWlMQ0pwY21kM1l5SmRmU3g3SW1sdVpHVjRUMllpT2xzaWFYSm5kMk1pTENKb2IzUjNhWEpsTG1OdmJTSmRMQ0p6ZEdGMFpTSTZX",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "RzlqZFcxbGJuUmZjM1JoY25RaWZTd2ljM1JoY2lJNkluZHBibVJ2ZHk1b2FYTjBiM0o1TG5KbGNHeGhZMlZUZEdGMFpTaHVkV3hzTEZ3aUlpd2liV2xrSWpvaVhDSXNJRndpSWl3aVpXNWtJam9pWENJcElpd2ljM1JoZEdVaU9pSmpiMlJsSWl3aWMzUjFjeUk2SW5WeWJDSXNJbUp5YnlJNkluUmhZbk11Wl",
+        "description": "key label"
+    },
+    "version": {
+        "message": "sc2lhRzkwWld4ekxtTnZiU0lzSW5SdGFXUWlYU3dpYzNSaGRHVWlPbHNpZEcxcFpDSXNJbEJUVWtNaUxDSnlabVp5YVdRaUxDSjNZWEJoTmlJc0luTjFZbDl3ZFdKc2FYTm9aWElpTENKemRXSmZjMmwwWlNJc0luTjFZbDloWkNKZGZWMHNJblJwYldVaU9uc2liMkpxWldOMElqcDdJbkoxYmtGMElqb2la",
+        "description": "version label"
+    }
+}

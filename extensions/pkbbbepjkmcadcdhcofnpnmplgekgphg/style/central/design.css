@@ -1,0 +1,204 @@
+html,body{
+height: 100%;
+font-family: Roboto, monospace;
+}
+
+label{
+  font-size: 15px;
+}
+
+h2{
+  border-top: 1px solid rgba(255,255,255, 0.5);
+  border-bottom: 1px solid rgba(255,255,255, 0.5);
+}
+/*--------------------------------------------------------------------
+basic styles of body elements and their appeareance
+--------------------------------------------------------------------*/
+#weather_alert{
+  margin-top: 15px;
+}
+/*style of background youtube video*/
+#player{
+  z-index: 0;
+  position: absolute;
+  left: 0px;
+  top:0px;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+}
+#alert_box{
+  display: none;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 195px;
+  height: 89px;
+  padding: 10px;
+  background-color: rgba(1,1,1,0.8);
+  color: #ffffff;
+  font-size: 13px;
+  font-family: Roboto;
+  font-weight: 300;
+  line-height: 1.5;
+  z-index: 1000;
+  border: 1px solid #ffffff;
+}
+
+#alert_box p{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 0px;
+  padding: 7px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+/*--------------------------------------------------------
+Style searchbar-----------------------------------------*/
+
+#body_content{
+  position: absolute;
+  top:46%;
+  left:50%;
+  transform: translateY(-50%) translateX(-50%);
+  height: auto;
+  width: 50%;
+}
+
+#search{
+  width: 95%;
+  height: 72px;
+  margin-top: 65px;
+  border-radius: 36px;
+  background-color: transparent;
+  background-image: radial-gradient(transparent,rgba(0,0,0,0.08));
+  box-shadow: inset -0px -1px 0 1px rgba(255, 255, 255, 0.4);
+  border-color:white;
+  border-style: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 2;
+  color:  #f6f1ee;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 100;
+  text-align: center;
+  text-shadow: 0px 0px 60px rgba(45, 61, 83, 0.4)
+}
+#search:active + #SearchText{
+  display:none;
+}
+#search:focus + #SearchText{
+  display:none;
+}
+#search:focus{
+  outline:none;
+}
+#search:focus::-webkit-input-placeholder {
+  color:transparent;
+}
+#search::-webkit-input-placeholder {
+  color:  #f6f1ee;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 100;
+  text-align: center;
+  height:50px;
+  text-shadow: 0px 0px 60px rgba(45, 61, 83, 0.4);
+}
+
+#SearchText{
+  z-index: -1;
+  height: 33px;
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 0.6;
+  text-align: center;
+  color: #f6f1ee;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:423px;
+}
+
+/*Style clock*/
+
+#time{
+  width:auto;
+  height: 94px;
+  font-family: Roboto,sans-serif;
+  font-size: 94px;
+  font-weight: 100;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 30px rgba(45, 61, 83, 0.8);
+  cursor: pointer;
+  z-index: 5;
+}
+#str{
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 0 0 65px rgba(45, 61, 83, 0.8);
+  cursor: pointer;
+  z-index: 5;
+}
+#date{
+  z-index: 5;
+  width: auto;
+  height: auto;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #f6f1ee;
+  margin-top: 20px;
+  text-shadow: 0 1px 3px rgba(45, 61, 83, 0.8);
+}
+
+#current_weather{
+  color: white;
+  z-index: 1001;
+  position: relative;
+  display: inline-block;
+  margin-left:24px;
+  margin-top:16px;
+  cursor:pointer;
+  font-family: Roboto;
+  font-weight:100;
+}
+#temperature{
+  font-size: 36px;
+  display: inline;
+
+}
+#unit{
+  font-size: 24px;
+  display: inline;
+}
+#current_description{
+  display:inline-block;
+  position: relative;
+  margin-left: 10px;
+  color:white;
+}
+#location{
+  font-size: 14px;
+  position: absolute;
+  top:10px;
+  font-weight: 300;
+  display: inline;
+}
+#weather_description{
+  font-size: 11px;
+
+  font-weight: 300;
+  display:inline;
+}
+#weather_icon{
+  position: absolute;
+  height: 42px;
+  top: 20px;
+}

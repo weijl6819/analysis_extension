@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "TabText. Synchronized notepad in each new tab"
+  },
+  "appDesc": {
+    "message": "Every time you open a new tab, a notepad synchronized between all your computers appear."
+  }
+}

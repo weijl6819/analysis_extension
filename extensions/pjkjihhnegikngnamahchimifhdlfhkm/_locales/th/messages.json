@@ -1,0 +1,9 @@
+﻿{
+  "extLocale"   : {"message" : "TH", "description" : ""},
+  "extNameFull" : {"message" : "Esna iLink Pro", "description" : "" },
+  "extNameDial" : {"message" : "Esna iLink", "description" : "" },
+  "extNameJabber" : {"message" : "Esna iLink สำหรับ Cisco Jabber", "description" : "" },
+  "extNameAvaya"  : {"message" : "Avaya Communicator สำหรับ Web", "description" : "" },
+  "extName2600Office"  : {"message" : "Avaya Office", "description" : "" },
+  "extNameAura" : {"message" : "Avaya Equinox สำหรับ Web", "description" : "" }
+}

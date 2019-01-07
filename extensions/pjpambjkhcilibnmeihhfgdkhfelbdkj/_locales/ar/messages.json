@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "اتصالات"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "فتح جهات اتصال Google في نافذة منبثقة مفيد."
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "إعدادات"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "حجم نافذة منبثقة"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "عرض"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "ارتفاع"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "حفظ"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "حفظ"
+   }
+}

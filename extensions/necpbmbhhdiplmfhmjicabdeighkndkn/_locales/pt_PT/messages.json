@@ -1,0 +1,10 @@
+{
+  "appDesc": {
+    "description": "Description for the CWS",
+    "message": "Encontre sítios parecidos com o que você esta navegando agora. Explore o sítios, descubra mais."
+  },
+  "appName": {
+    "description": "Title for the CWS",
+    "message": "Similar Sites - Encontre Sítios similares"
+  }
+}

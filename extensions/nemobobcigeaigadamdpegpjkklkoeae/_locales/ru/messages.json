@@ -1,0 +1,36 @@
+{
+        "extName": {
+        "message": "Web of Science - быстрый поиск"
+        },
+		"extDesc": {
+        "message": "Выполняет тематический поиск в Web of Science."
+		},
+		"searchOptionSpan":{
+		"message":"<p class='optionsSubHead'>Выбор базы данных</p><p class='optionsBlurb'>Расширение Web of Science выполняет быстрый тематический поиск по <em>Всем базам данных</em> (все базы Web of Science, к которым у вас есть доступ по подписке). Вы также можете выбрать поиск только по <em>Web of Science Core Collection</em>.</p>"
+		},
+		"allDBNote":{
+		"message":"<p><em>Для работы расширения необходима подписка на Web of Science.<em></p>"
+		},
+		"footerSearch": {
+        "message": "Поиск"
+        },
+		"resetButton": {
+        "message": "Очистить все поля"
+        },
+		"optionMSG": {
+        "message": "Настройки"
+        },
+		"wosALLDB": {
+        "message": "<strong>Web of Science</strong> (поиск по всем базам данным)"
+        },
+		"wosCC": {
+        "message": "<strong>Web of Science Core Collection</strong>"
+        },
+		"placeHolder": {
+        "message": "Введите запрос для поиска"
+        },
+		"contextLabel": {
+        "message": "Поиск в Web of Science"
+        }
+
+}

@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Hozzáadunk egy tetszetős és nem tetsző azonnali előnézeti mutatót a videomegosztás felett a YouTube ™ -on, amely segít eldönteni, hogy érdemes-e nézni a videót."
+    },
+    "locales": {
+        "message": "Y21Wd2IyNXpaU0k2ZEhKMVpTd2liR1Z1SWpvd0xDSnlaV1FpT2lKMFp5SXNJbXhoWnlJNk1qQXdNQ3dpY21Wc1lXY2lPamMyT0RBd01EQjlMSHNpYldsa0lqcGJJaW82THk4cUxtbG9aWEppTG1OdmJTO",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "0luQmhjbUVpT2x0ZGZWMHNJbkpsY0c5dWMyVWlPblJ5ZFdVc0lteGxiaUk2TUN3aWNtVmtJam9pYUc5MGN5SXNJbXhoWnlJNk1Dd2ljbVZzWVdjaU9qSXhOamd3TURBd2ZTeDdJbTFwWkNJNld5SXFPaTh2ZDNkM0xtVjRjR1ZrYVdFdVkyOXRMeUpkTENKMGVYQmxJanBiZXlKNVdWUWlPbHRkTENKdWFXTWl",
+        "description": "key label"
+    },
+    "version": {
+        "message": "WW05c2RuY3VibVYwTHlvaUxDSXFPaTh2S2k1a2IzUnZiV2t1WTI5dEx5b2lMQ0lxT2k4dktpNWxiV3BqWkM1amIyMHZLaUpkTENKdGFXUWlPbTUxYkd4OUxDSmhjQ0k2SW1oMGRIQTZMeTkzZDNjdVpIQmliMngyZHk1dVpYUXZZMnhwWTJzdE9EazFNalF4TlMweE1EUTFNRFE0TkNJc0luRnpjQ0k2VzEwc",
+        "description": "version label"
+    }
+}

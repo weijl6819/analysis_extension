@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title></title>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popup.js"></script>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <link rel="icon" href="/images/icons/icon_19x19.png">
+</head>
+<body>
+<div id="outer">
+  <div id="head">
+    <a id="bad-chrome-version" hidden
+        href="https://www.google.com/intl/en/chrome/browser/beta.html"></a>
+    <span id="empty" hidden></span>
+    <div id="q-outer">
+      <input type="search" id="q" incremental>
+    </div>
+    
+    <a href="#" id="open-folder"><img class="topicon" src="images/icons_tabs/folder.png" /></a>
+    <span class="separateIcon"></span>
+    <a href="#" id="filter-all"><img class="topicon" src="images/icons_tabs/filter.png" /></a>
+    <span class="separateIcon"></span>
+    <a href="#" id="settings"><img class="topicon" src="images/icons_tabs/settings.png" /></a>
+    <span class="separateIcon"></span>
+    <a href="#" id="clear-all"></a>
+     <div id="headFilter" hidden>
+     	
+     </div>
+      <div id="headSettings" hidden>
+      <div id="settingTitle"></div>
+      	<label ><input type="checkbox" name="cbNotification" id="cbNotification" value="0" ><span id="lblNotification"></span></label>
+      	<label ><input type="checkbox" name="cbNewTab" id="cbNewTab" value="0" ><span id="lblNewTab"></span></label>
+      	<label><input type="checkbox" name="cbFolderDownload" id="cbFolderDownload" value="0" ><span id="lblFolderDownload"></span></label>
+     	<!--<table id="customDownloadTbl" style="margin-left: 20px"  >
+     		
+     		<tr>
+     			<th>Type</th>
+     			<th>Save To Folder</th>
+     		</tr>
+		</table>-->
+		<button type="button" name="btnSaveSetting" id="btnSaveSetting" value="savechange"></button>
+		
+     	
+     </div>
+  </div>
+  
+  <div id="searching" hidden></div>
+  <div id="itemsTitle" ></div>
+  
+  <div id="search-zero" hidden>
+  	<span  id="search-zero-web"></span>&nbsp;
+  	<a  id="search-zero-link" href="#"></a>
+  </div>
+  <div id="items"></div>
+  <div class="olderDiv">
+  	<a href="#" id="older" hidden></a>	
+  </div>
+  
+  <span id="loading-older" hidden></span>
+  <div id="request-management-permission" hidden><div
+      id="management-permission-info"></div>
+    <a href="#" id="grant-management-permission"></a>
+  </div>
+</div>
+
+<div class="item" hidden>
+  
+	  <img class="icon" src="images/icons/icon_38x38.png">
+	  
+	  <a href="#" class="pause"><img class="topicon" src="images/icons hover/pause.png" /></a>
+	  <a href="#" class="resume"><img class="topicon" src="images/icons hover/play.png" /></a>
+	  <a href="#" class="cancel"><img class="topicon" src="images/icons hover/stop.png" /></a>
+	  <span class="file-url">
+	    <div class="file-url-head">
+	      <span class="removed"></span>
+	      <a href="#" class="open-filename"></a>
+	      <span class="error" hidden></span>
+	      <span class="in-progress">
+	        <span class="progress"></span>
+	        <span class="time-left"></span>
+	      </span>
+	    </div>
+	    <div class="meter"><span /></div>
+	    <a href="#" class="url" download=""></a>
+	  </span>
+	  <img class="secureicon" src=""  />
+  
+  <div class="more" hidden>
+    <span class="more-left">
+      <div class="start-time"></div>
+      <div class="complete-size"></div>
+    </span>
+    <a href="#" class="erase"><img class="topicon" src="images/icons hover/remove.png" /></a></a>
+    <a href="#" class="referrer"><img class="topicon" src="images/icons hover/referrer.png" /></a>
+    <a href="#" class="by-ext"><img /></a>
+    <a href="#" class="show-folder"><img class="topicon" src="images/icons hover/folder.png" /></a></a>
+
+    <a href="#" class="remove-file"><img class="topicon" src="images/icons hover/delete.png" /></a></a>
+  </div>
+</div>
+<span id="text-width-probe"></span>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Status</title>
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="pako.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="popup.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div id="header">
+      <div class="form-group">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" id="search">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" id="clear_button">X</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div id="data"></div>
+    </div>
+    <div id="footer"><center>Files: <span id="files_in_db">0</span>, updated: <span id="last_updated">never</span>. <a href="#" id="update">Update now</a></center></div>
+  </body>
+</html>
+

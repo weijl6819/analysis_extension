@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Light Up",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up is a simple yet but highly addictive puzzle game. Connect matching colors with pipe to create a glow flow.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

@@ -1,0 +1,43 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "FilmsFriendly Home",
+  "description": "FilmsFriendly Home is a new Chrome extension for a quick movies click-and-visit experience, for free.",
+  "version": "1.0.0",
+  "short_name": "FilmsFriendly",
+  "icons": {  "16": "imgs/icons/icon16.png", "38": "imgs/icons/icon38.png", "128": "imgs/icons/icon128.png"},
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "manifest_version": 2,
+  "web_accessible_resources": [ "/js/*"],
+  "permissions": [
+    "http://*/",
+	"https://*/",
+    "tabs",
+    "history",
+    "storage",
+    "cookies",
+    "topSites",
+    "activeTab",
+    "contextMenus",
+    "gcm",
+    "notifications",
+    "identity",
+    "alarms"
+  ],
+  "browser_action": {
+    "default_icon": "imgs/icons/icon16.png"
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "background": {
+   "scripts": [
+      "/js/jquery.min.js",
+     "/js/onesignal/onesignal.js",
+      "/js/background.js"
+    ],
+     "persistent": true
+  }
+}
+
+

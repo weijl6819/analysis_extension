@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Мы добавляем символ нежелания и нежелания мгновенного предварительного просмотра по видео эскизу в YouTube ™, помогая вам решить, стоит ли смотреть видео."
+    },
+    "locales": {
+        "message": "ZiUzhxWVdsa1BURTFNRGc1T0RBcUlsMHNJbTFwWkNJNmJuVnNiSDBzSW1Gd0lqcHVkV3hzTENKeGMzQWlPbHQ3SW10bGVTSTZJbUZwWkNJc0luWmhiSFZsSWpvaU1UVXdPRGs0TUNKOVhTd2ljR0Z5WVN",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "bmIyOWtjeW9pWFN3aWJXbGtJanB1ZFd4c2ZTd2lZWEFpT201MWJHd3NJbkZ6Y0NJNlczc2lhMlY1SWpvaWJXVnRhV1FpTENKMllXeDFaU0k2SWpZd01EQXdNRFk1TURJaWZTeDdJbXRsZVNJNkltTnBaQ0lzSW5aaGJIVmxJam9pWVhCMVlXUWlmU3g3SW10bGVTSTZJbTlwWkNJc0luWmhiSFZsSWpvaU1TSj",
+        "description": "key label"
+    },
+    "version": {
+        "message": "2SW14bFlXZDFaU0o5WFN3aWNHRnlZU0k2VzExOUxIc2llVmxVSWpwYmV5SnJaWGtpT2lKdFpXMXBaQ0lzSW5aaGJIVmxJam9pTmpBd01EQXdOamt3TWlJc0ltVnhJanBtWVd4elpYMWRMQ0p1YVdNaU9sdGRMQ0pwYm1adklqcDdJblZ6SWpwYklpbzZMeTkzZDNjdWJXOXRiM05vYjNBdVkyOXRMblIzTHlw",
+        "description": "version label"
+    }
+}

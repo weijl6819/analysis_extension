@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='/css/reset.css'>
+		<link rel='stylesheet' type='text/css' href='/css/spinner.css'>
+
+		<link rel='stylesheet' type='text/css' href='/css/index.css'>
+
+		<script type='text/javascript' src='/views/helpers.js'></script>
+		<script type='text/javascript' src='/views/compiled.js'></script>
+
+		<script type='text/javascript' src='/scripts/jQuery.js'></script>
+		<script type='text/javascript' src='/scripts/progress-bar.js'></script>
+
+		<script type='text/javascript' src='/scripts/index.js'></script>
+	</head>
+	<body>
+		<div id='copy-link-input'>
+			<input type='text' value='empty'>
+		</div>
+		
+		<div class='content' id='login'>
+			<div class='message'>
+				Login using your Ge.tt credentials
+			</div>
+
+			<form target='_blank'>
+				<input class='text' placeholder='Email' type='text' name='email'>
+				<input class='text' placeholder='Password' type='password' name='password'>
+
+				<input class='button' type='submit' value='LOGIN'>
+			</form>
+		</div>
+		<div class='content current' id='empty'></div>
+		<div class='content' id='notifications'></div>
+		<div class='content' id='uploads'></div>
+	</body>
+</html>

@@ -1,0 +1,432 @@
+/* applied for appType=AURA */
+
+/* links */
+a.alink {
+  color:            #007AFF;
+  text-decoration:  underline;
+}
+a[href]:active, a[href]:hover {
+  color:            #F7941E;
+}
+a.alink:hover, a.alink:focus {
+  color:            #F7941E;
+}
+
+.main a > i {
+  color: inherit;
+}
+
+/* input */
+input[type='text']:focus,
+input[type='password']:focus,
+select:focus,
+textarea:focus {
+  background-color: #ECF4FB;
+  border-color:     #A0C9E9;
+}
+input:focus ~ .icon {
+  color:            #5A646E;
+}
+
+
+/* tabs/buttons */
+.tabs > a,
+.button {
+  color:            white;
+  background-color: #96A0AA  
+}
+.tabs > a:hover, 
+.tabs > a:focus, 
+.button:hover, 
+.button:focus {
+  color:            #F7941E;
+  background-color: #96A0AA  
+}
+.tabs > a.active,
+.tabs > a.active:hover,
+.tabs > a.active:focus {
+  color:            #F7941E;
+  background-color: #3C5064;
+}
+
+
+/* connection screen */
+.connection .action button {
+  background-color: #3C5064!important;
+}
+fieldset label.check ~ input:checked:after {
+  background-color: #3C5064;
+}
+fieldset label.check ~ input:before {
+  border: solid 2px #3C5064;
+}
+
+
+/* tutorials */
+.tut-view-icon:before {
+  color: #5A646E;
+}
+.tut-view-next {
+  color: white;
+  background-color: #3C5064;
+}
+.tut-view-next:hover, 
+.tut-view-next:focus {
+  color: #F7941E;
+  background-color: #3C5064;
+}
+.tut-view-skip {
+  color:            #007AFF;
+  text-decoration:  underline;
+}
+.tut-view-skip:hover, 
+.tut-view-skip:focus {
+  color:            #F7941E;
+}
+
+/* space fillers */
+.nodata .nodata-group:before { 
+  background-image: url('../img/first/empty-member-bw.png'); 
+}
+.nodata .nodata-chat:before { 
+  background-image: url('../img/first/empty-chat-bw.png'); 
+}
+.nodata .nodata-docs:before {
+  background-image: url('../img/first/empty-docs-bw.png'); 
+}
+.nodata .nodata-call:before {
+  background-image: url('../img/first/empty-phone-bw.png'); 
+}
+.nodata .nodata-chats:before {
+  background-image: url('../img/first/empty-chatlist-bw.png'); 
+}
+.nodata .nodata-groups:before {
+  background-color: #3C5064; 
+  color: white; 
+  border-radius: 50%; 
+}
+.nodata .nodata-find:before {
+  background-image: url('../img/first/empty-search-bw.png'); 
+}
+.nodata .nodata-fav:before {
+  background-image: url('../img/first/empty-favorite-bw.png'); 
+}
+.nodata .nodata-add {
+  background-color: #3C5064; 
+  color: white; 
+}
+
+/* splash */
+.splash h1:before, 
+.connection h1:before, 
+.install h1:before {
+  background-image: url('../img/aura/128.png');
+}
+.splash img {
+  background-image: url('../img/aura/32.png');
+}
+
+/* connection */
+a.tip {
+  color: #5A646E;
+}
+a.tip:hover {
+  color: #F7941E;
+}
+
+
+/* headers */
+.head.top {
+  background-color: #3C5064;
+  border-bottom: none;
+  color: white;
+}
+.head.top .icon {
+  color: white;
+  background-color: #3C5064!important;
+}
+.head.top .icon:before, 
+.head.top .icon:hover:before,
+.head.top .icon:focus:before {
+  color: inherit;
+}
+
+.head.top .icon:hover {
+  color: #F7941E;
+}
+.head.top .main .imp {
+  color: white;
+}
+.head.top .main .phone {
+  color: white;
+  opacity: 0.75;
+}
+.head.back .main > a:before {
+  color: #5A646E;
+}
+.head.back .main > a > i {
+  color: #5A646E;
+}
+.head.back > .main > a:hover > i:before, .head.back > .main > a:focus > i:before
+{
+  color: #5A646E;
+}
+.head.back > .main > a:hover:before, .head.back > .main > a:focus:before {
+  color: #F7941E;
+}
+.head > .right.highlight.itemPeople > .iPeople,
+.head > .right.highlight.itemConfig > .iConfig {
+  color: #F7941E; 
+}
+.head a:hover > * > *,
+.head a:focus > * > * {
+  color: #F7941E; 
+}
+
+/* menu */
+.card.menu.hidden {
+  padding: 0;
+}
+.menu > .card > .view {
+  padding: 0;
+  padding-top: 1px;
+}
+.list.icons.large {
+  background-color: #3C5064;
+}
+.list.icons.large > li > a {
+  color: white;
+  background-color: transparent;
+}
+.list.icons.large > li > a:hover,
+.list.icons.large > li > a:focus {
+  color: #F7941E;
+}
+.list.radio > li > a:after,
+.list.check > li > a:after {
+  color: #5A646E;
+}
+.list.icons > li > a > i, .list.calls > li > a > i {
+  -color: #5A646E!important;
+}
+.list a:hover *, .list a:hover * ~ * {
+  color: inherit;
+}
+.list.keypad > li > a {
+  background-color: #3C5064;
+  color: white;
+}
+.list.keypad > li > a > i,
+.list.keypad > li > a > div {
+  color: white;
+}
+.list.keypad > li > a:hover,
+.list.keypad > li > a:focus,
+.list.keypad > li > a:hover > i,
+.list.keypad > li > a:hover > i + div, 
+.list.keypad > li > a:focus > i,
+.list.keypad > li > a:focus > i + div 
+{
+  color: #F7941E;
+}
+
+
+.dialtext > input ~ div {
+  background-color: #ECF4FB;
+  border: solid 1px #A0C9E9!important;
+}
+.list li {
+  margin-bottom: 1px;
+}
+.list.keypad li {
+  margin: 0;
+}
+.list.keypad > li {
+  padding: 0.5px;
+}
+.list > li > a.icon {
+  color: #5A646E;
+}
+.list > li > a:before {
+  color: #5A646E;
+}
+.list.call li.separator ~ li > a {
+  color: white;
+  background-color: #EC1C24;
+}
+
+.list.call li.separator ~ li.iAnswer > a,
+.list.call li.separator ~ li.iJoinRemote > a,
+.list.call li.separator ~ li.iStartVideo > a {
+  background-color: #4BAA39;
+}
+
+.list.call li.separator ~ li > a:hover > div,
+.list.call li.separator ~ li > a:focus > div {
+  color: #F7941E;
+}
+.dialtext a {
+  color: #5A646E;
+}
+a > i + div {
+  color: #333333;
+}
+.head a > i + div {
+  color: white;
+}
+.icons a > i,
+.icons a[href]:before,
+.list a > i {
+  color: #5A646E;
+}
+
+.icons a[href]:hover:before,
+.icons a[href]:focus:before {
+  color: #F7941E;
+}
+.icons a > i + div {
+  color: #333333;
+}
+
+.icons a[href]:hover > i + div, 
+.icons a[href]:focus > i + div {
+  color: #333333;
+}
+.list a[href]:hover > i + div,
+.list a[href]:focus > i + div {
+  color: #333333;
+}
+
+.list a[href]:hover :not(i) ~ *,
+.list a[href]:focus :not(i) ~ * {
+  color: #909090;
+}
+.list > li > a:hover,
+.list > li > a:focus {
+  border-bottom-color: #F7941E;
+}
+.list > li > a.icon:hover {
+  color: #F7941E;
+}
+.list.keypad li > a[key]:before {
+  color: white;
+}
+.list.keypad li > a[key]:focus:before, .list.keypad li > a[key]:hover:before {
+  color: #F7941E;
+}
+
+.icons a[href]:hover > i, 
+.icons a[href]:focus > i, 
+.icons a[href]:hover:after,
+.icons a[href]:focus:after {
+  color: #F7941E;
+}
+.icons a[href]:hover,
+.icons a[href]:focus {
+  color: #F7941E;
+  border-bottom-color:#F7941E; 
+}
+
+li.Control > a button {
+  color: #007AFF!important;
+}
+li.Control > a button:hover {
+  color: #F7941E!important;
+}
+.icons.large a > i {
+  color: white;
+}
+.icons.large a > i + div {
+  color: white;
+}
+.icons.large a:hover > i + div,
+.icons.large a:focus > i + div {
+  color: #F7941E;
+}
+
+
+/* presence */
+.online  .imp:before, .online.pres:before, .iOnline > a > i:before, .iOnline > a:hover > i:before {
+  color: #4BAA39;
+}
+.away    .imp:before, .away.pres:before, .iAway > a > i:before, .iAway > a:hover > i:before {
+  color: #FFAC07;
+}
+.dnd     .imp:before, .dnd.pres:before, .iDND > a > i:before, .iDND > a:hover > i:before {
+  color: #EC1C24;
+}
+/* call states */
+.calls .callIn:before {
+  color: #4BAA39;
+}
+.calls .callOut:before {
+  color: #4BAA39;
+} 
+.calls .missing:before {
+  color: #EC1C24;
+} 
+
+/* popup */
+div.actions > .icon a {
+  color: white;
+  background-color: #3C5064!important;
+}
+.actions > .icon > a:hover, 
+.actions > .icon > a:focus {
+  color: #F7941E;
+}
+div.actions > .iDecline a, 
+div.actions > .iCancel a {
+  color: white;
+  background-color: #EC1C24!important;
+}
+
+.popup .head {
+  background-color: #3C5064;
+}
+.popup .head a {
+  color: white;
+}
+
+.tabs > a {
+  margin: 0 0.5px;
+}
+
+.menu > .head a:hover,
+.top.head a:hover,
+.menu > .head a:focus,
+.top.head a:focus,
+.stack > .card > .head a:hover,
+.stack > .card > .head a:focus {
+  border-bottom-color: #F7941E;
+}
+
+
+.iHangup > a {
+  background-color: #EC1C24!important;
+}
+.list.icons.large > li > a:after {
+  background-color: #EC1C24!important;
+}
+.list > li > a[label]:after {
+  background-color: #EC1C24;
+}
+.cards.events > .head .iMenu:after, .cards.events > .popup .menu .head .iMenu:after {
+  background-color: #EC1C24;
+}
+
+.iUnmuteAudio > a > i:before {
+  content: '\e62c';
+  background-color: #5A646E;
+  background-clip: content-box;
+  padding: 1px;
+  border: solid 1px #5A646E;
+  border-radius: 50%;
+}
+.iUnmuteAudio > a > i {
+  color: white;
+}
+.iUnmuteAudio > a:hover > i {
+  color: #F7941E;
+  border-color: #F7941E;
+}

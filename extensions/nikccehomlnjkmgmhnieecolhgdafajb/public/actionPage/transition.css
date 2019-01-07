@@ -1,0 +1,160 @@
+
+/* Cross-fade transition */
+
+.cross-fade-leave {
+  opacity: 1;
+}
+.cross-fade-leave.cross-fade-leave-active {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.cross-fade-enter {
+  opacity: 0;
+}
+.cross-fade-enter.cross-fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.cross-fade-height {
+  transition: height .5s ease-in-out;
+}
+
+
+/* Fade out, then fade in transition */
+
+.fade-wait-leave {
+  opacity: 1;
+}
+.fade-wait-leave.fade-wait-leave-active {
+  opacity: 0;
+  transition: opacity .4s ease-in;
+}
+
+.fade-wait-enter {
+  opacity: 0;
+}
+.fade-wait-enter.fade-wait-enter-active {
+  opacity: 1;
+  /* Delay the enter animation until the leave completes */
+  transition: opacity .4s ease-in .6s;
+}
+
+.fade-wait-height {
+  transition: height .6s ease-in-out;
+}
+
+
+/* Carousel-like transition */
+
+.carousel-swap-leave {
+  transition: transform .3s ease-in-out;
+  transform: translate(0, 0);
+}
+.carousel-swap-leave-active {
+  transform: translate(-100%, 0);
+}
+
+.carousel-swap-enter {
+  transition: transform .3s ease-in-out;
+  transform: translate(100%, 0);
+}
+.carousel-swap-enter-active {
+  transform: translate(0, 0);
+}
+
+.carousel-swap-height {
+  transition: height .3s ease-in-out;
+}
+
+
+/* Roll-up transition */
+
+.roll-up-leave {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.roll-up-leave.roll-up-leave-active {
+  transform: translate(-100%, 0);
+  opacity: 0;
+  transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+}
+
+.roll-up-enter {
+  transform: translate(-100%, 0);
+  opacity: 0;
+}
+.roll-up-enter.roll-up-enter-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+}
+
+.roll-up-height {
+  transition: height .8s ease-in-out;
+}
+
+
+// Right to Left
+.right-to-left-enter {
+  opacity: 0;
+  transform: translate(5%, 0);
+}
+
+.right-to-left-enter.right-to-left-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 150ms linear, transform 200ms ease-out;
+}
+
+.right-to-left-leave {
+    display: none;  // set this to let react unmount the element immediately.
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.right-to-left-leave.right-to-left-leave-active {
+    display: none;
+  opacity: 0;
+  transform: translate(1%, 0);
+  transition: opacity 100ms linear, transform 200ms linear;
+}
+
+
+
+// Left to Right
+.left-to-right-enter {
+  opacity: 0;
+  transform: translate(-5%, 0);
+}
+
+.left-to-right-enter.left-to-right-enter-active {
+  opacity: 1;
+  transition-delay: 1s;
+  transform: translate(0, 0);
+  transition: opacity 150ms linear, transform 200ms ease-out;
+}
+
+.left-to-right-enter-leave {
+    display: none;  // set this to let react unmount the element immediately.
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.right-to-left-leave.right-to-left-leave-active {
+    display: none;
+  opacity: 0;
+  transform: translate(-1%, 0);
+  transition: opacity 100ms linear, transform 200ms linear;
+}
+
+
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}

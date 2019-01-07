@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery/jquery.mobile.css">
+<link rel="stylesheet" href="css/styles.css">
+<script type="text/javascript" src="js/jquery/jquery.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.mobile.js"></script>
+<script type="text/javascript" src="js/bookscore.js"></script>
+</head>
+<body>
+	<div data-role="page" id="mainPage">
+		<div data-role="panel" id="filterPanel" data-position="left">
+			<a href="#filterPanel" data-rel="close" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Close</a>
+			<form>
+				<label> <input type="checkbox" id="checkOnlyRecommended">Show
+					only Recommended Books
+				</label>
+				<fieldset data-role="controlgroup" id="genresChecks">
+					<legend>Genres:</legend>
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="header" data-role="header" data-position="fixed">
+			<form id="formHeader">
+				<fieldset id="sourceSelector" data-role="controlgroup"
+					data-type="horizontal"></fieldset>
+				<table>
+					<tr valign="middle">
+						<td style="padding: 0; margin: 0;">
+							<a id="btnSubscribe" href="#subscribePopup" data-rel="popup"
+								class="ui-btn ui-corner-all">Subscribe</a>
+							<input id="filterBasic-input" style="display: inline-block;" data-type="search">
+							<a id="filterButton" href="#filterPanel" class="ui-btn ui-btn-inline ui-corner-all">Filter by Genres</a>
+							<div id="sortDiv" class="no-wrap">
+								<label class="ui-label-inline">Sorting:</label>
+								<select name="selectSorting" id="selectSorting" data-inline="true">
+									<option value="none">none</option>
+									<option value="genre">By Genre</option>
+								</select>
+							</div>
+						</td>
+						<td align="right">
+							<a id="btnBookOfDay" class="ui-btn ui-corner-all ui-btn-inline">Featured Books</a>
+						</td>
+					</tr>
+					<tr valign="middle">
+						<td>
+							<a id="btnBlog" class="ui-btn ui-corner-all">Visit Blog for Latest Free Books</a>
+						</td>
+						<td align="right">
+							<a id="btnZFB" class="ui-btn ui-corner-all">Visit ZFB Free Book Site</a>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<div id="topHint">Please Scroll Down for More Free Books.<br />Check Price BEFORE Buying!</div>
+		</div>
+		
+		<div class="ui-content">
+			<ul id="list" data-role="listview" data-filter="true" data-input="#filterBasic-input"></ul>
+			<div id="centerMessage"></div>
+		</div>
+		
+		<!-- <div id="footer" data-role="footer" data-position="fixed">
+			<a id="btnBlog" class="ui-btn ui-corner-all align-left">Visit Blog for Latest Free Books</a>
+			<a id="btnZFB" class="ui-btn ui-corner-all align-right">Visit ZFB Free Book Site</a>
+		</div> -->
+
+		<div id="loadingPopup" data-role="popup" data-overlay-theme="b"
+			data-dismissible="false" data-position-to="window"
+			data-transition="pop" data-history="false">
+			<img src="img/ajax-loader.gif" />
+			<p>Please wait</p>
+		</div>
+
+		<div id="subscribePopup" data-role="popup" data-overlay-theme="b"
+			data-dismissible="true" data-position-to="window"
+			data-transition="pop" data-history="false" class="ui-content">
+			<a href="#" data-rel="back"
+				class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<iframe width="500" height="300"></iframe>
+		</div>
+		
+		<div id="booksOfTheDayPopup" data-role="popup" data-overlay-theme="b"
+			data-dismissible="true" data-position-to="window"
+			data-transition="pop" data-history="false">
+			<a href="#" data-rel="back"
+				class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<div id="booksOfDayHeaderPopup" data-role="header" data-theme="a">
+    			<h1 id="booksOfDayPopupTitle">Featured Books</h1>
+    			<form>
+					<fieldset id="sourceSelectorPopup" data-role="controlgroup" data-type="horizontal" data-mini="true"></fieldset>
+				</form>
+    		</div>
+			<ul id="listPopup" data-role="listview" class="ui-content"></ul>
+		</div>
+
+	</div>
+</body>
+</html>

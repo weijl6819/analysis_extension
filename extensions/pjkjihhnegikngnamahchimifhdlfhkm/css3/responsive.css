@@ -1,0 +1,1100 @@
+﻿@media screen and (min-width: 0px) and (max-width: 250px) {
+  body, input, textarea, select, button {
+    font-size: 9pt;
+  }
+  h1 {
+    font-size: 10pt;
+  }
+  .head {
+    min-height: 24pt;
+  }
+  .head.back {
+    flex: 0 0 32pt;
+  }
+  .head.top {
+    min-height: 28pt;
+    border-bottom-width: 2px;
+  }
+  .menu > .card > .head {
+    height: 28pt;
+    flex: 0 0 28pt;
+  }
+  .head a {
+    height: 28pt;
+    min-width: 24pt;
+  }
+  .head.back a {
+    height: 28pt;
+    min-width: 24pt;
+  }
+  .head .self .imp {
+    font-size: 9pt;
+  }
+  .head .main div > *:not(:first-child) {
+    font-size: 8pt;
+  }
+  .head.back .main a {
+    padding: 0;
+  }
+  .head.back .main:before {
+    font-size: 30pt;
+  }
+  .menu > .head > .icons.right > a {
+    width: 24pt;
+    overflow: hidden;
+    flex-wrap: wrap;
+    font-size: 0;
+    padding: 0;
+  }
+  .icon > a:before, .icons a:before, .icon > a > i:before, .icons > a > i:before {
+    font-size: 20pt;
+  }
+  .icon:before, .icon > i:before, .icons .icon:before, .icons .icon > i:before {
+    font-size: 16pt;
+  }
+  .omni {
+    padding:   2px;
+  }
+  .omni > .find > input {
+    padding: 2px 16pt;
+  }
+  .find :before {
+    font-size: 10pt;
+  }
+  .tabs {
+    padding: 0;
+  }
+  .tabs > a {
+    font-size: 8pt;
+    padding: 4px 1px;
+  }
+  .tabs ~ .view {
+    padding: 2px;
+  }
+  .nodata-head {
+    font-size: 9pt;
+  }
+  .nodata-icon:before {
+    width: 48pt;
+    height: 48pt;
+    font-size: 32pt;
+  }
+  .nodata-text {
+    font-size: 8pt;
+  }
+  .nodata-link > div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .nodata {
+    margin-bottom: 2px;
+  }
+  .nodata.collapse {
+    padding:  4pt;
+  }
+  .list li {
+    min-height: 32pt;
+    margin-bottom: 2px;
+  }
+  .list > li > a {
+    height: 32pt;
+    padding: 2px;
+  }
+  li.group > a:before, li.Group > a:before, li.group > a > i:before, li.Group > a > i:before {
+    font-size: 20pt;
+  }
+  .list a * {
+    font-size: 8pt!important;
+    -line-height: 10pt;
+  }
+  li.group > a > button:before {
+    font-size: 16pt;
+  }
+  .people *[jsc_id] > a > i, .chats *[jsc_id] > a > i {
+    flex: 0 0 24pt;
+    width: 24pt;
+    height: 24pt;
+  }
+  li > a > i, .card > .head > .main > a > i
+  {
+    width: 24pt;
+    height: 24pt;
+    flex: 0 0 24pt;
+  }
+  li > a > i:before, .icons a > i:before, .keypad a > i:before, .card > .head > .main > a > i:before {
+    font-size: 20pt;
+  }
+  .directory > li > a > i:before {
+    font-size: 20pt;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card > .head > .main > a:before {
+    font-size: 20pt;
+  }
+  .flow .chat {
+    font-size: 9pt;
+  }
+  .flow > i {
+    flex: 0 0 24pt;
+    width: 24pt;
+    height: 24pt;
+  }
+  .flow .time, .flow .pres, .flow .call {
+    font-size: 8pt;
+  }
+  .card > .head > .main > a {
+    font-size: 9pt;
+  }
+  .card .head.back > .main > a, .card .head.back > .icons > a{
+    width: 32pt;
+    height: 32pt;
+    flex: 0 0 32pt;
+  }
+  .back a {
+    height: 32pt;
+  }
+  .list.radio > li > a:after, .list.check > li> a:after {
+    font-size: 16pt;
+  }
+  .view.noflex .list li.title, li.title {
+    font-size: 9pt;
+    min-height: initial;
+  }
+  li.title > div, li.input > div {
+    padding: 2px;
+  }
+  li.input input {
+    padding: 4px 8px;
+  }
+  .list.keypad li {
+    min-height: 32pt;
+  }
+  .list.keypad li > a[key]:before {
+    font-size: 9pt;
+  }
+  .list.call > li > a > div {
+    font-size: 7pt;
+  }
+  .call.actions > li > a > i:before {
+    font-size: 14pt;
+  }
+  .card .head.back > .main > a > i {
+    left: -17pt;
+  }
+  .card .head.back > .main > a:before {
+    font-size: 24pt;
+    flex: 0 0 24pt;
+  }
+  .view ~ div.actions a, .view > div.actions a {
+    height: 20pt;
+    font-size: 9pt;
+  }
+  div.actions > .icon > a:before {
+    font-size: 16pt!important;
+  }
+  .popup > .wrap {
+    padding: 2em 4px;
+  }
+  .wrap > .card {
+    padding: 0px;
+  }
+  .wrap > .omni > .find {
+    padding: 2px 0;
+  }
+  .list.keypad > li.iClear > a > i, .list.keypad > li.iDial > a > i, .list.keypad > li.iClear > a:after, .list.keypad > li.iDial > a:after {
+    font-size: 16pt;
+  }
+  .dialtext {
+    padding: 0px;
+  }
+  .list.keypad > li {
+    margin-bottom: 0px;
+  }
+  .dialtext label {
+    padding: 0 24pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 5pt;
+  }
+  .dialtext a:before {
+    font-size: 16pt;
+  }
+  .dialtext .DPE, .dialtext .ActDel {
+    width: 24pt;
+  }
+  .DPE > label {
+    padding: 0;
+  }
+  .list > li > a {
+    min-height: initial;
+  }
+  .calls *[jsc_id].iDial > a > i:before {
+    font-size: 24pt;
+  }
+  .splash > h1:before, .connection > h1:before {
+    width: 64px;
+    height: 64px;
+  }
+  .splash img {
+    width: 96px;
+    height: 96px;
+    background-size: 24px 24px;
+  }
+  fieldset label {
+    font-size: 8pt;
+  }
+  .card.connection .cardBox {
+    padding: 4px;
+  }
+  .auth label, .card.connection > .cardBox > label {
+    margin-bottom: 4px;
+  }
+  fieldset > div {
+    padding-top: 4px;
+  }
+  .card.connection input[type='text'], .card.connection input[type='password'], .card.connection select {
+    padding: 2px 0;
+  }
+  .card.connection .action button {
+    padding: 4px;
+  }
+  a.social:before {
+    font-size: 12pt;
+  }
+  a.social {
+    font-size: 8pt;
+  }
+  .splash > .view {
+    padding: 1em 4px;
+  }
+  .splash > .view > .auth > div {
+    padding: 4px 0;
+  }
+  .popup > .menu {
+    padding-right: 10pt;
+  }
+  .menu > .card > .view {
+    padding: 2px;
+  }
+  .list.icons.large > li {
+    height: 50pt;
+    margin-bottom: 2px;
+  }
+  .list.icons.large > li > a > i {
+    font-size: 20pt;
+    width: 30pt;
+    height: 30pt;
+    border-radius: 0;
+  }
+  .large li > a > i:before {
+    font-size: 24pt;
+  }
+  .list.activity {
+    padding: 0px;
+  }
+  .list.large a > div {
+    font-size: 7pt;
+  }
+  .input textarea {
+    padding: 1px;
+    font-size: 8pt;
+  }
+  .cards.events > .head .iMenu:after, .cards.events > .popup .menu .head .iMenu:after {
+    top: 6pt;
+    right: 2pt;
+  }
+  .chats *[jsc_id].icon > a > i:before {
+    font-size: 20pt;
+  }
+  .title.iClear div ~ a:before {
+    font-size: 10pt;
+  }
+  .callInfo {
+    font-size: 8pt;
+  }
+  .callInfo > * ~ * {
+    font-size: 8pt;
+  }
+  .list.call li.separator ~ li > a > :not(i) {
+    font-size: 9pt;
+  }
+  .list.call li.separator ~ li > a > i:before {
+    font-size: 16pt;
+  }
+  .list.call li.separator ~ li {
+    padding: 1px;
+  }
+  .list a span {
+    font-size: 7pt;
+  }
+  .input > .note {
+    font-size: 7pt;
+  }
+  .list.icons.large > li > a:after {
+    top: 0;
+    right: 0;
+    font-size: 6pt;
+  }
+
+
+  .tut-intro .tut-box {
+    padding: 4px;
+  }
+  .tut-view-head {
+    font-size: 10pt;
+    padding-bottom: 4px;
+  }
+  .tut-box-view {
+    padding: 4px;
+  }
+  .tut-view-text {
+    padding: 4px;
+  }
+  .tut-view-icon:before {
+    padding: 4px;
+    font-size: 32pt;
+  }
+  .tut-view-skip {
+    padding: 4px;
+  }
+  .tut-head-menu > .tut-bkg > .tut-bkg-spot:before {
+    margin-left: 24pt;
+  }
+  .tut-head-people > .tut-bkg > .tut-bkg-spot:before {
+    margin-right: 24pt;
+  }
+  .tut-head-profile > .tut-bkg > .tut-bkg-spot:before, .tut-head-profile > .tut-bkg > .tut-bkg-spot:after {
+    width: 24pt;
+  }
+  .tut-head-menu > .tut-box > .tut-box-spot:before, .tut-head-menu > .tut-box > .tut-box-spot:after {
+    left: 12pt;
+  }
+  .tut-head-people > .tut-box > .tut-box-spot:before, .tut-head-people > .tut-box > .tut-box-spot:after {
+    right: 12pt;
+  }
+  .tut-box-head {
+    height: 28pt;
+  }
+  .tut-head-people > .tut-bkg > .tut-bkg-spot {
+    height: 28pt;
+  }
+  .tut-head-profile > .tut-bkg > .tut-bkg-spot {
+    height: 28pt;
+  }
+  .tut-head-menu > .tut-bkg > .tut-bkg-spot {
+    height: 28pt;
+  }
+  .tut-menu-cfg > .tut-box > .tut-box-spot:before, .tut-menu-cfg > .tut-box > .tut-box-spot:after {
+    left: calc(100% - 10pt - 20pt - 12pt);
+  }
+  .tut-menu-cfg > .tut-bkg > .tut-bkg-spot {
+    height: 28pt;
+  }
+  .tut-menu-cfg > .tut-bkg > .tut-bkg-spot:after {
+    width: calc(10pt + 24pt);
+  }
+  .tut-menu-cfg > .tut-bkg > .tut-bkg-spot:before {
+    width: calc(100% - 10pt - 24pt - 24pt - 4px);
+  }
+  .tut-menu-hubs > .tut-box > .tut-box-head {
+    height: calc(28pt + 4px + 54pt);
+  }
+  .tut-menu-hubs > .tut-bkg > .tut-bkg-head {
+    height: calc(28pt + 4px);
+  }
+  .tut-menu-hubs > .tut-bkg > .tut-bkg-spot:after {
+    width: 10pt;
+  }
+  .tut-menu-hubs > .tut-box > .tut-box-spot:before, .tut-menu-hubs > .tut-box > .tut-box-spot:after {
+    left: 50%;
+  }
+  .tut-menu-hubs > .tut-bkg > .tut-bkg-spot {
+    height: 55pt;
+  }
+  .tut-menu-evts > .tut-box > .tut-box-head {
+    height: calc(24pt + 4px + 55pt + 22pt);
+  }
+  .tut-menu-evts > .tut-box > .tut-box-spot:before, .tut-menu-evts > .tut-box > .tut-box-spot:after {
+    left: 50%;
+  }
+  .tut-menu-evts > .tut-bkg > .tut-bkg-head {
+    height: calc(28pt + 4px + 55pt);
+  }
+  .tut-menu-evts > .tut-bkg > .tut-bkg-spot {
+    height: 20pt;
+  }
+  .tut-menu-evts > .tut-bkg > .tut-bkg-spot:after {
+    width: 10pt;
+  }
+  .tut-chat > .tut-box > .tut-box-head {
+    height: calc(28pt + 20pt + 30pt + 18pt);
+  }
+  .tut-chat > .tut-bkg > .tut-bkg-head {
+    height: calc(28pt + 20pt + 30pt);
+  }
+  .tut-chat > .tut-bkg > .tut-bkg-spot {
+    height: 20pt;
+  }
+
+  @-webkit-keyframes head {
+    0%   { height: 28pt; }
+    25%  { height: 28pt; }
+    50%  { height: 28pt; }
+    75%  { height: 14pt; }
+    100% { height: 0pt;  }
+  }
+  @-webkit-keyframes spot {
+    0%   { height: 0pt; }
+    25%  { height: 0pt; }
+    50%  { height: 0pt;}
+    75%  { height: 14pt; }
+    100% { height: 28pt; }
+  }
+  @-webkit-keyframes hubs {
+    0%   { height: calc(28pt + 4px + 55pt); }
+    25%  { height: calc(28pt + 4px + 55pt); }
+    50%  { height: calc(28pt + 4px + 55pt); }
+    75%  { height: calc(28pt + 4px + 27pt); }
+    100% { height: calc(28pt + 4px);  }
+  }
+  @-webkit-keyframes hubspot {
+    0%   { height: 0pt; }
+    25%  { height: 0pt; }
+    50%  { height: 0pt;}
+    75%  { height: 27pt; }
+    100% { height: 55pt; }
+  }
+  @-webkit-keyframes evts {
+    0%   { height: calc(24pt + 4px + 55pt + 20pt); }
+    25%  { height: calc(24pt + 4px + 55pt + 20pt); }
+    50%  { height: calc(24pt + 4px + 55pt + 20pt); }
+    75%  { height: calc(24pt + 4px + 55pt + 10pt); }
+    100% { height: calc(24pt + 4px + 55pt);  }
+  }
+  @-webkit-keyframes evtspot {
+    0%   { height: 0pt; }
+    25%  { height: 0pt; }
+    50%  { height: 0pt;}
+    75%  { height: 10pt; }
+    100% { height: 20pt; }
+  }
+  @-webkit-keyframes chat {
+    0%   { height: calc(28pt + 20pt + 30pt + 18pt); }
+    25%  { height: calc(28pt + 20pt + 30pt + 18pt); }
+    50%  { height: calc(28pt + 20pt + 30pt + 18pt); }
+    75%  { height: calc(28pt + 20pt + 30pt + 9pt); }
+    100% { height: calc(28pt + 20pt + 30pt + 0pt);  }
+  }
+  @-webkit-keyframes chatspot {
+    0%   { height: 0pt; }
+    25%  { height: 0pt; }
+    50%  { height: 0pt;}
+    75%  { height: 9pt; }
+    100% { height: 18pt; }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .head.top > .icons.left {
+    display: none;
+  }
+
+  .cards {
+    padding-left: 20%;
+    position: relative;
+  }
+
+  .card.menu.hidden {
+    display: block;
+  }
+
+  .card.menu, .popup > .menu > .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    border-right: solid 1px #CCC;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  .popup > .menu ~ .bkg 
+  {
+    display: none;
+  }
+
+  .card.menu > .head {
+    display: none;
+  }
+
+  .wrap > .card {
+    max-width: 400px;
+  }
+
+  .omni.show ~ .card.menu {
+    opacity: 1;
+  }
+
+  .list.square.hidden {
+    display: none!important;
+  }
+
+  .list.square, .list.square .list, .square[mode='fav'] > li.group > a[jsc_id='$'] ~ .list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+    .list.square[mode='groups'] > li.group {
+      -height: 200px;
+    }
+
+    .list.square li[jsc_id], .list.square[mode='groups'] > li.group {
+      width: 19%;
+      max-width: 200px;
+      min-width: 150px;
+      margin: 0.5%;
+      flex-wrap: wrap;
+      box-shadow: 2px 2px 2px #eaeaea;
+      -box-sizing: border-box;
+      -border-top: solid 0px white;
+      -border-bottom: solid 4px white;
+      height: 230px;
+    }
+
+      .list.square li[jsc_id]:hover, .list.square[mode='groups'] > li.group:hover {
+        -border-top: solid 4px white;
+        -border-bottom: solid 0px white;
+        margin-top: 0;
+        margin-bottom: 1%;
+        transition: margin ease-out 0.25s;
+      }
+
+    .list.square li.item-help {
+      width: 300px;
+      max-width: none;
+      margin: 0.5%;
+    }
+
+      .list.square li.item-help:hover {
+        margin: 0.5%;
+      }
+
+  .list > li .unread {
+    white-space: normal;
+    text-align: left;
+  }
+
+  .list.square li[jsc_id] > a:first-of-type {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: solid 1px #f7f7f7;
+    min-height: 140pt;
+    justify-content: space-between;
+  }
+
+  .list.square.chats li[jsc_id] > a:first-of-type {
+    min-height: 170pt;
+  }
+
+  .list.square.chats > li > a[label] {
+    position: relative;
+  }
+  .list.square.chats > li > a[label]:after {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    margin: 0;
+  }
+
+  .list.square li[jsc_id] > a:first-of-type:hover {
+    border: none;
+    transition: none;
+  }
+  .list.square[mode='groups'] > li.group > a:first-of-type {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+  }
+  .list.square li[jsc_id] > a:first-of-type > div, .list.square[mode='groups'] > li.group > a:first-of-type > div {
+    flex: initial;
+    --max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .list.square.icons li {
+    padding: 2px;
+  }
+  .list.square.icons li > a > div {
+    text-align: center;
+  }
+  .list.square li[jsc_id] > a > i {
+    flex: 0 0 80pt;
+    width: 80pt;
+    height: 80pt;
+    border-radius: 40pt;
+    margin: 0;
+    margin-top: 4px;
+  }
+  .list.square.icons li > a > i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64pt;
+  }
+
+  .list.square[mode='groups'] > li.group > a > i:before {
+    min-height: 120pt;
+    display: inline-flex;
+    align-items: center;
+    font-size: 64pt;
+  }
+  .list.square[mode='groups'] > li.group > a > button {
+    display: none;
+    border-top: solid 1px #f7f7f7;
+    width: 100%;
+    box-sizing: border-box;
+    -display: inline-flex;
+    align-items: center;
+    justify-content:center;
+  }
+  .list.square[mode='groups'] > li.group > a > button[title]:after {
+    content: attr(title);
+    color: #909090;
+    font-size: 9pt;
+  }
+  .list.square.people li[jsc_id] > a:not(:first-of-type)[title] {
+    width: 50%;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .list.square.people li[jsc_id] > a:not(:first-of-type)[title]:after {
+    content: attr(title);
+    color: #909090;
+    font-size: 9pt;
+    -display: inline-block;
+    -align-items: center;
+    -height: 100%;
+  }
+  .list.cols > li, .view.noflex .list.cols > li 
+  {
+    width: 50%;
+    -padding: 0 25%;
+    margin: 0 25%;
+  }
+  .list.square > li.title, .list.icons > li.title, .view.noflex .list.cols > li.title
+  {
+    width: 100%;
+    height: auto;
+    padding: 2px 1px;
+    padding-top: 4px;
+    margin: 0!important;
+    max-width: none;
+    min-width: none;
+    box-shadow: none;
+    transform: none;
+    flex: 0 0 auto;
+  }
+  .list.cols > li.title, .view.noflex .list.cols > li.title {
+    padding-bottom: 1px;
+  }
+
+  .directory > li > a > i:before {
+    font-size: 84pt;
+  }
+  .list.icons.large {
+    flex-direction: column;
+    width: 100%;
+  }
+  .list.icons.large > li, .view.noflex .list.icons.large > li {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 1px;
+    -height: auto;
+  }
+  .list.icons.large > li > a {
+    flex-direction: row;
+    align-items: center;
+    justify-content: inherit;
+    flex-wrap: nowrap;
+  }
+  .list.icons.large > li > a > div {
+    font-size: 11pt;
+    flex: 1 1 100%;
+    text-align: left;
+  }
+  .list.icons.large > li > a:after {
+    position:static;
+  }
+  .list.keypad li {
+    min-height: 50pt;
+  }
+  .nodata {
+    max-width: 50%;
+    min-width: 30%;
+    align-self: center;
+  }
+  .view {
+    -align-items: center;
+  }
+  .view > .view {
+    width: 100%;
+  }
+  .view > .input {
+    width: 100%;
+  }
+  .view > .auth {
+    width: 100%;
+  }
+  .view.msgbox {
+    align-items: initial;
+  }
+
+  .cardGroup > .tabs, .cardChat > .tabs {
+    display: none;
+  }
+  .cardPhone > .tabs {
+    display: none;
+  }
+  .cardGroup > .view, .cardChat > .view, .cardPhone > .view {
+    position: relative;
+    padding-right: 304px;
+  }
+  .cardGroup > .view > .list.hidden {
+    display: flex!important;
+  }
+  .cardGroup > .view > .list.icons, .cardChat > .view > .view.more, .cardChat > .view > .view.more.hidden {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    bottom: 0px;
+    padding: 4px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-left: solid 1px #eaeaea;
+  }
+  .cardPhone > .view > .dialpad {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    bottom: 0px;
+    padding: 4px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-left: solid 1px #eaeaea;
+  }
+  .cardPhone > .view > .list {
+    display: flex!important;
+  }
+  .cardPhone > .view > .list.calls {
+    overflow-y: scroll;
+  }
+  .cardPhone > .view > .list.icons {
+    border-bottom: solid 1px #eaeaea;
+    flex: 0 0 auto;
+    height: auto;
+  }
+
+  .cardChat > .view {
+    flex-direction: row;
+    align-items: initial;
+  }
+  .cardChat > .view > .view.chat, .cardChat > .view > .view.call {
+    display: flex;
+  }
+  .cardChat > .view > .view.chat {
+    flex: 1 1 50%;
+  }
+  .cardChat > .view > .view.call {
+    display: none;
+    flex: 1 1 50%;
+    border-left: solid 1px #eaeaea;
+    padding-left: 4px;
+  }
+  .cardChat.hascall > .view > .view.call {
+    display: flex;
+  }
+  .cardChat > .view.more .list.icons {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardGroup > .view > .list.icons > li, .cardChat > .view .list.icons > li {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .cardGroup > .view > .list.icons > li:hover, .cardChat > .view .list.icons > li:hover {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    transition: margin ease-out .25s;
+  }
+
+  .cardPres > .view {
+    display: block;
+    -align-items: center;
+    -justify-content: center;
+    padding: 0 25%;
+  }
+  .cardPres > .view > .list {
+    width: 100%;
+    max-width: none;
+    min-width: none;
+  }
+  .cardConfig > .view {
+    display: block;
+    -align-items: center;
+    -justify-content: center;
+    padding: 0 25%;
+  }
+  .cardConfig > .view > .list {
+    width: 100%;
+    max-width: none;
+    min-width: none;
+  }
+
+  .head .icon.hidden {
+    display: flex;
+    border-left: solid 1px #eaeaea;
+  }
+  .head .icon {
+    min-width: 120px;
+  }
+  .head .icon[title]:after {
+    content: attr(title);
+  }
+  .callInfo {
+    width: 100%;
+  }
+  .cardChat > .view > .more .iCall {
+    display: flex;
+  }
+  .cardChat > .view > .more .iCall.hidden {
+    display: none;
+  }
+  .rtc {
+    width: 100%;
+  }
+  .video > .video {
+    -position: relative;
+  }
+
+
+  .tut-box {
+    align-items: center;
+    padding: 4px 20%;
+  }
+  .tut-box-view {
+    padding: 10pt;
+    min-width: 400px;
+    min-height: inherit;
+  }
+
+  .tut-head-people > .tut-bkg > .tut-bkg-spot:before {
+    width: calc(100% - 270pt);
+  }
+  .tut-head-people > .tut-bkg > .tut-bkg-spot:after {
+    width: 180pt;
+    content: '';
+  }
+  .tut-head-people .tut-box {
+    position: absolute;
+    bottom: 4px;
+    min-height: initial;
+    right: 180pt;
+    top: 0;
+    padding: 0;
+    align-items: initial;
+  }
+  .tut-head-people > .tut-box > .tut-box-spot:before, .tut-head-people > .tut-box > .tut-box-spot:after {
+    right: 45pt;
+  }
+  .tut-head-people > .tut-bkg > .tut-bkg-spot {
+    height: 40pt;
+  }
+
+  .tut-head-menu > .tut-bkg > .tut-bkg-spot:before {
+    margin-left: 20%;
+  }
+  .tut-head-menu .tut-box {
+    position: absolute;
+    bottom: 4px;
+    min-height: initial;
+    left: 4px;
+    top: 0;
+    padding: 0;
+    align-items: initial;
+  }
+  .tut-head-menu > .tut-box > .tut-box-spot:before, .tut-head-menu > .tut-box > .tut-box-spot:after {
+    left: 20%;
+  }
+  .tut-head-menu .tut-box-head {
+    height: 200pt;
+    flex: 0 0 200pt;
+  }
+  .tut-head-menu > .tut-bkg > .tut-bkg-spot {
+    height: 200pt;
+  }
+
+
+  .tut-head-profile > .tut-bkg > .tut-bkg-spot:before {
+    width: 20%;
+  }
+  .tut-head-profile > .tut-bkg > .tut-bkg-spot:after {
+    width: 270pt;
+  }
+
+  .tut-box-head {
+    height: 40pt;
+  }
+
+  .tut-head-profile > .tut-bkg > .tut-bkg-spot {
+    height: 40pt;
+  }
+  .tut-menu-cfg > .tut-box > .tut-box-spot:before, .tut-menu-cfg > .tut-box > .tut-box-spot:after {
+    left: calc(100% - 10pt - 20pt - 12pt);
+  }
+  .tut-menu-cfg > .tut-bkg > .tut-bkg-spot {
+    height: 40pt;
+  }
+  .tut-menu-cfg > .tut-bkg > .tut-bkg-spot:after {
+    width: calc(10pt + 24pt);
+  }
+  .tut-menu-cfg > .tut-bkg > .tut-bkg-spot:before {
+    width: calc(100% - 10pt - 24pt - 24pt - 4px);
+  }
+  .tut-menu-hubs > .tut-box > .tut-box-head {
+    height: calc(28pt + 4px + 54pt);
+  }
+  .tut-menu-hubs > .tut-bkg > .tut-bkg-head {
+    height: calc(28pt + 4px);
+  }
+  .tut-menu-hubs > .tut-bkg > .tut-bkg-spot:after {
+    width: 10pt;
+  }
+  .tut-menu-hubs > .tut-box > .tut-box-spot:before, .tut-menu-hubs > .tut-box > .tut-box-spot:after {
+    left: 50%;
+  }
+  .tut-menu-hubs > .tut-bkg > .tut-bkg-spot {
+    height: 55pt;
+  }
+  .tut-menu-evts > .tut-box > .tut-box-head {
+    height: calc(24pt + 4px + 55pt + 22pt);
+  }
+  .tut-menu-evts > .tut-box > .tut-box-spot:before, .tut-menu-evts > .tut-box > .tut-box-spot:after {
+    left: 50%;
+  }
+  .tut-menu-evts > .tut-bkg > .tut-bkg-head {
+    height: calc(28pt + 4px + 55pt);
+  }
+  .tut-menu-evts > .tut-bkg > .tut-bkg-spot {
+    height: 20pt;
+  }
+  .tut-menu-evts > .tut-bkg > .tut-bkg-spot:after {
+    width: 10pt;
+  }
+
+
+  .tut-chat .tut-box {
+    position: absolute;
+    bottom: 4px;
+    min-height: initial;
+    right: 4px;
+    top: 0;
+    padding: 0;
+    align-items: initial;
+  }
+
+  .tut-chat > .tut-box > .tut-box-head {
+    height: calc(350px + 60pt + 35pt + 50pt);
+  }
+  .tut-chat > .tut-bkg > .tut-bkg-head {
+    height: calc(40pt + 35pt + 50pt);
+  }
+  .tut-chat > .tut-bkg > .tut-bkg-spot {
+    height: calc(100% - 350px - 40pt - 35pt - 50pt);
+  }
+  .tut-chat > .tut-bkg > .tut-bkg-spot:before {
+    width: calc(100% - 300px);
+  }
+  .tut-chat > .tut-bkg > .tut-bkg-spot:after {
+    content: initial;
+  }
+  .tut-chat > .tut-box > .tut-box-spot:before, .tut-chat > .tut-box > .tut-box-spot:after {
+    right: 150px;
+    left: auto;
+  }
+  .tut-chat > .tut-box > .tut-box-spot:before {
+    width: 0;
+    right: 146px;
+  }
+
+  @-webkit-keyframes head {
+    0%   { height: 28pt; }
+    25%  { height: 28pt; }
+    50%  { height: 28pt; }
+    75%  { height: 14pt; }
+    100% { height: 0pt;  }
+  }
+  @-webkit-keyframes spot {
+    0%   { height: 0pt; }
+    25%  { height: 0pt; }
+    50%  { height: 0pt;}
+    75%  { height: 14pt; }
+    100% { height: 28pt; }
+  }
+  @-webkit-keyframes hubs {
+    0%   { height: calc(28pt + 4px + 55pt); }
+    25%  { height: calc(28pt + 4px + 55pt); }
+    50%  { height: calc(28pt + 4px + 55pt); }
+    75%  { height: calc(28pt + 4px + 27pt); }
+    100% { height: calc(28pt + 4px);  }
+  }
+  @-webkit-keyframes hubspot {
+    0%   { height: 0pt; }
+    25%  { height: 0pt; }
+    50%  { height: 0pt;}
+    75%  { height: 27pt; }
+    100% { height: 55pt; }
+  }
+  @-webkit-keyframes evts {
+    0%   { height: calc(24pt + 4px + 55pt + 20pt); }
+    25%  { height: calc(24pt + 4px + 55pt + 20pt); }
+    50%  { height: calc(24pt + 4px + 55pt + 20pt); }
+    75%  { height: calc(24pt + 4px + 55pt + 10pt); }
+    100% { height: calc(24pt + 4px + 55pt);  }
+  }
+  @-webkit-keyframes evtspot {
+    0%   { height: 0pt; }
+    25%  { height: 0pt; }
+    50%  { height: 0pt;}
+    75%  { height: 10pt; }
+    100% { height: 20pt; }
+  }
+  @-webkit-keyframes chat {
+    0%   { height: calc(28pt + 20pt + 30pt + 18pt); }
+    25%  { height: calc(28pt + 20pt + 30pt + 18pt); }
+    50%  { height: calc(28pt + 20pt + 30pt + 18pt); }
+    75%  { height: calc(28pt + 20pt + 30pt + 9pt); }
+    100% { height: calc(28pt + 20pt + 30pt + 0pt);  }
+  }
+  @-webkit-keyframes chatspot {
+    0%   { height: 0pt; }
+    25%  { height: 0pt; }
+    50%  { height: 0pt;}
+    75%  { height: 9pt; }
+    100% { height: 18pt; }
+  }
+}
+

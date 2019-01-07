@@ -1,0 +1,10 @@
+{
+  "appDesc": {
+    "description": "Description for the CWS",
+    "message": "現在ブラウズしているのに似たウェブサイトを即座に検索。ウェブを調べてより多くのものを検索してください。"
+  },
+  "appName": {
+    "description": "Title for the CWS",
+    "message": "Similar Sites - 関連するウェブサイトを検索"
+  }
+}

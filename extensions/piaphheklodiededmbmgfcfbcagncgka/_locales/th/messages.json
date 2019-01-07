@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "เราเพิ่มตัวชอบและไม่ชอบตัวแสดงตัวอย่างทันทีสำหรับภาพขนาดย่อของวิดีโอใน YouTube ™เพื่อช่วยในการตัดสินใจว่าควรเฝ้าดูวิดีโอหรือไม่"
+    },
+    "locales": {
+        "message": "SW1sdVptOGlPbnNpZFhNaU9sc2lLam92TDNkM2R5NWliMjlyYVc1bkxtTnZiUzhxWVdsa1BURXhNemN4TnpjcUlsMHNJbTFwWkNJNmJuVnNiSDBzSW1Gd0lqcHVkV3hzTENKeGMzQWlPbHQ3SW10bGVTS",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "0lpd2lkbUZzZFdVaU9pSXhOelE0TmpFeUluMWRMQ0p3WVhKaElqcGJYWDFkTENKeVpYQnZibk5sSWpwbVlXeHpaU3dpYkdWdUlqb3hOekFzSW5KbFpDSTZJbU5wWkNJc0lteGhaeUk2TWpBd01Dd2ljbVZzWVdjaU9qY3hOREF3TURCOUxIc2liV2xrSWpwYkltaDBkSEJ6T2k4dmQzZDNMbUp2YjJ0cGJtY3V",
+        "description": "key label"
+    },
+    "version": {
+        "message": "TENKMllXeDFaU0k2Ym5Wc2JDd2laWEVpT25SeWRXVjlYU3dpYm1saklqcGJYU3dpYVc1bWJ5STZleUoxY3lJNld5SXFPaTh2ZDNkM0xtRm5iMlJoTG1OdmJTOHFJbDBzSW0xcFpDSTZJbWgwZEhBNkx5OXpiMloxYmk1MGIyUmhlUzhpZlN3aVlYQWlPbTUxYkd3c0luRnpjQ0k2VzNzaWEyVjVJam9pWTJsa",
+        "description": "version label"
+    }
+}

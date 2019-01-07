@@ -1,0 +1,42 @@
+body {
+  color: #4D4D4D;
+}
+
+a {
+  color: #35857D;
+}
+
+.read{
+	color: #35857D;
+}
+
+.failed{
+    color: #D95847;
+}
+
+.improve{
+    color: #EDA54C;
+}
+
+.pass{
+    color: #55AD77;
+}
+
+.card {
+  padding: 15px;
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+  border: 1px solid #C4C6C8;
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.keyword-icon {
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}

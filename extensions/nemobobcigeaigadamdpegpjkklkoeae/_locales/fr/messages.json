@@ -1,0 +1,36 @@
+{
+        "extName": {
+        "message": "Web of Science - Recherche rapide"
+        },
+		"extDesc": {
+        "message": "Recherchez le Web of Science par sujet."
+		},
+		"searchOptionSpan":{
+		"message":"<p class='optionsSubHead'>Choisir une base de données</p><p class='optionsBlurb'>L'extension Web of Science - Recherche rapide effectue une recherche par sujet sur  <em>Toutes les bases</em> (Toutes les bases Web of Science auxquelles vous avez accès), ou alors vous pouvez choisir de ne chercher que le <em>Web of Science Core Collection</em>.</p>"
+		},
+		"allDBNote":{
+		"message":"<p><em>Vous devez etre abonné au Web of Science pour que cette extension fonctionne.<em></p>"
+		},
+		"footerSearch": {
+        "message": "Rechercher"
+        },
+		"resetButton": {
+        "message": "Effacer"
+        },
+		"optionMSG": {
+        "message": "Paramètres"
+        },
+		"wosALLDB": {
+        "message": "<strong>Web of Science</strong> (Toutes les bases de données)"
+        },
+		"wosCC": {
+        "message": "<strong>Web of Science Core Collection</strong>"
+        },
+		"placeHolder": {
+        "message": "Entrez une recherche par sujet"
+        },
+		"contextLabel": {
+        "message": "Rechercher Web of Science"
+        }
+
+}

@@ -1,0 +1,44 @@
+<html>
+<head><title>Just a Clock - the Minutes : Options</title></head>
+<script src="options.js"></script>
+<style>
+  body { font-family: arial, verdana, sans-serif; }
+  #optionsForm { margin-left: 20px; }
+  .option { font-weight: bold; font-size: 1.5em; margin-bottom: .2em; color: #02a; }
+  .options { padding: 0 0 .7em 20px; }
+  .black { padding: 5px; background:white; }
+  .white { padding: 5px 20px 5px 5px; background:#666; display: inline-block; color: white; }
+  .save { font-size: 1.5em; height: 1.7em; }
+  #statusMsg { opacity: 0; display: inline-block; margin-left: 20px; background: #ffa; padding: 7px 12px; border-radius: 5px; }
+</style>
+
+<body>
+
+<h1><span class="i18n" data-msg="optionsFor">Options for</span> <span class="i18n" data-msg="extName">Just a Clock - the Minutes</span>:</h1>
+<form id="optionsForm" name="optionsForm">
+
+<p class="option"><span class="i18n" data-msg="blackWhiteSetting">Black / White numbers</span>:</p>
+<div class="options">
+	<div class="black">
+		<input type="radio" name="clockColor" value="black" id="black">
+		<label for="black">
+			<span class="i18n" data-msg="blackLabel">black</span> &nbsp; <img src="12o.png" valign="bottom" /> <img src="0-19.png" valign="bottom" />
+		</label>
+	</div>
+	<div class="white">
+		<input type="radio" name="clockColor" value="white" id="white">
+		<label for="white">
+			<span class="i18n" data-msg="whiteLabel">white</span> &nbsp; <img src="12ow.png" valign="bottom" /> <img src="0w-19.png" valign="bottom" /> - <span class="i18n" data-msg="whiteLabelClarification">for dark backgrounds</span>
+		</label>
+	</div>
+</div>
+
+<br><br>
+<button class="save i18n" id="button1" data-msg="saveButton">Save</button>
+<span id="statusMsg">
+	<span class="i18n" data-msg="saveStatus" style="font-weight:bold;">Saved</span> - <span class="i18n" data-msg="saveNotice">may take up to 6 seconds to take effect</span>
+</span>
+
+</form>
+</body>
+</html>

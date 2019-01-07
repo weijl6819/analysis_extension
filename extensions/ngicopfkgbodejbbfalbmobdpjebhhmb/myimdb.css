@@ -1,0 +1,21 @@
+.enhanced-title-link {
+  font-weight:bold !important;
+  padding:0 5px;
+}
+.enhanced-rating-link {
+  font-weight:bold !important;
+  font-size:100% !important;
+  margin-right:3px;
+  padding:0 5px;
+}
+.enhanced-title-main {
+  font-weight:bold !important;
+  font-size:21px !important;
+  padding:0 5px;
+}
+.enhanced-rating-main {
+  font-weight:bold !important;
+  font-size:21px !important;
+  margin-right:3px;
+  padding:0 5px;
+}

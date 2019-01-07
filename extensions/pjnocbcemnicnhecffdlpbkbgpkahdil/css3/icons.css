@@ -1,0 +1,295 @@
+﻿/* presence */
+.online .imp:before, .online.pres:before { content: '\e603'; }
+.away   .imp:before, .away.pres:before   { content: '\e61b'; }
+.busy   .imp:before, .busy.pres:before   { content: '\e64b'; }
+.dnd    .imp:before, .dnd.pres:before    { content: '\e64b'; }
+.AVAYA .offline .imp:before, .offline.pres:before    { content: '\e64b'; transform: rotateZ(90deg); display: inline-block; }
+
+.self.offline .imp:before { content: '\e64b'; transform: rotateZ(90deg); display: inline-block; }
+
+/* phone status */
+.self .phone:before  { content: '\e616'; }
+
+/* global actions */
+.icon.iPeople:before { content: '\e631'; display: inline-block; }
+a.icon.iPhone:before  { content: '\e625'; display: inline-block; }
+.icon.iMenu:before   { content: '\e629'; display: inline-block; }
+.icon.iConfig:before { content: '\e63d'; display: inline-block; }
+.icon.iLogout:before { content: '\e640'; display: inline-block; }
+.icon.iSearch:before { content: '\e63c'; }
+.icon.iExpand:before { content: '\e65f'; }
+.expanded .icon.iExpand:before { content: '\e65e'; }
+.icon.iPopout:before { content: '\e632'; }
+
+.find .iSearch:before { content: '\e63c'; }
+.find .iClear:before  { content: '\e610'; }
+
+
+.icon.iCall:before { content: '\e608'; display: inline-block; }
+.icon.iMore:before { content: '\e60d'; display: inline-block; }
+
+.icon.iPlus:before { content: '\e602'; }
+.icon.iDelete > a:before { content: '\e649'; }
+.icon.iDelete:before { content: '\e649'; }
+
+div.icon.iDelete:before { content: ''; }
+.icon.iManage:before { content: '\e613'; display: inline-block; }
+.icon.iMUCAdd:before { content: '\e601'; display: inline-block; }
+
+/* unknown */
+/* .icons a:before, */
+.icons > a > i:before { content: '\e64b' }
+
+/* embedded actions */
+.-iPeople      > a:before, .iPeople      > a > i:before { content: '\e631'; }
+.-iPhone       > a:before, .iPhone       > a > i:before { content: '\e625'; }
+.-iDocs        > a:before, .iDocs        > a > i:before { content: '\e617'!important; background-size: 100% 100%; background-clip: content-box; }
+
+.-iSettings    > a:before, .iSettings    > a > i:before { content: '\e63d'; }
+.-iProfile     > a:before, .iProfile     > a > i:before { content: '\e603'; }
+.-iLogout      > a:before, .iLogout      > a > i:before { content: '\e640'; }
+
+.-iMap         > a:before, .iMap         > a > i:before { content: '\e61e'; }
+.-iCall        > a:before, .iCall        > a > i:before { content: '\e608'; }
+.-iDial        > a:before, .iDial        > a > i:before { content: '\e608'; }
+.-DPE.iDial    > a:before, .DPE.iDial    > a > i:before { content: '\e608'!important; }
+.-iCallIn      > a:before, .iCallIn      > a > i:before { content: '\e609'; }
+.-iMore        > a:before, .iMore        > a > i:before { content: '\e60d'; }
+.-iChat        > a:before, .iChat        > a > i:before { content: '\e60b'; }
+.-iClear       > a:before, .iClear       > a > i:before { content: '\e60e'; }
+.-iClose       > a:before, .iClose       > a > i:before { content: '\e610'; }
+.-iGroups      > a:before, .iGroups      > a > i:before { content: '\e620'; }
+.-iHistory     > a:before, .iHistory     > a > i:before { content: '\e61b'; }
+.-iPerson      > a:before, .iPerson      > a > i:before { content: '\e631'; }
+.-iMessage     > a:before, .iMessage     > a > i:before { content: '\e62a'!important; font-family: 'symthin'; font-size: 20pt; }
+.-iDepartment  > a:before, .iDepartment  > a > i:before { content: '\e613'!important; }
+.-iUp          > a:before, .iUp          > a > i:before { content: '\e65e'!important; }
+
+.-iShareMap    > a:before, .iShareMap    > a > i:before { content: '\e63e'; }
+.-iSharePC     > a:before, .iSharePC     > a > i:before { content: '\e63b'; }
+.-iStartVideo  > a:before, .iStartVideo  > a > i:before { content: '\e659'; }
+.-iStopVideo   > a:before, .iStopVideo   > a > i:before { content: '\e652'; }
+
+.-iShareDoc    > a:before, .iShareDoc    > a > i:before { content: '\e617'; }
+.-iShareDoc2   > a:before, .iShareDoc2   > a > i:before { content: '\e617'; }
+.-iShareUrl    > a:before, .iShareUrl    > a > i:before { content: '\e617'; }
+.-iShareUrl2   > a:before, .iShareUrl2   > a > i:before { content: '\e617'; }
+.-iPlus        > a:before, .iPlus        > a > i:before { content: '\e621'; }
+
+.-iSubscribe   > a:before, .iSubscribe   > a > i:before { content: '\e601'; }
+.-iUnsubscribe > a:before, .iUnsubscribe > a > i:before { content: '\e63a'; }
+.-iAccept      > a:before, .iAccept      > a > i:before { content: '\e600'; }
+.-iDecline     > a:before, .iDecline     > a > i:before { content: '\e614'; }
+.-iRemove      > a:before, .iRemove      > a > i:before { content: '\e647'; }
+
+.-iOK          > a:before, .iOK          > a > i:before { content: '\e600'; }
+.-iCancel      > a:before, .iCancel      > a > i:before { content: '\e614'; }
+
+.actions > .iOK > a:before { content: '\e600'; display: inline-block; }
+.actions > .iAccept > a:before { content: '\e600'; display: inline-block; }
+.actions > .iCancel > a:before { content: '\e614'; display: inline-block; }
+.actions > .iDecline > a:before { content: '\e614'; display: inline-block; }
+
+
+.head .iSFPick:before { font-family: 'social'; content: '\e603'; }
+.head .iDCPick { background-image: url('../img/common/dynamics.png'); background-repeat: no-repeat; background-size: 60%; background-position: center; background-origin: border-box; }
+
+.-iSFPicker    > a:before, .iSFPicker    > a > i:before { font-family: 'social'; content: '\e603'; }
+.-iDCPicker    > a:before, .iDCPicker    > a > i { background-image: url('../img/common/dynamics.png'); background-repeat: no-repeat; background-size: contain; 
+  background-position: center; 
+  background-color: white!important;
+  background-size: 60%!important;
+  border: solid 2px transparent;
+  box-sizing: border-box;
+  margin: 0 4px;
+}
+
+
+.-iKeypad      > a:before, .iKeypad      > a > i:before { content: '\e625'; }
+.-iKeypadOff   > a:before, .iKeypadOff   > a > i:before { content: '\e624'; }
+.-iMuteAudio   > a:before, .iMuteAudio   > a > i:before { content: '\e62c'; }
+.-iMute        > a:before, .iMute        > a > i:before { content: '\e62c'; }
+.-iUnmuteAudio > a:before, .iUnmuteAudio > a > i:before { content: '\e64f'; }
+.-iUnmute      > a:before, .iUnmute      > a > i:before { content: '\e64f'; }
+.-iHold        > a:before, .iHold        > a > i:before { content: '\e630'; }
+.-iResume      > a:before, .iResume      > a > i:before { content: '\e62e'; }
+.-iInitTransfer> a:before, .iInitTransfer> a > i:before { content: '\e648'; }
+.-iTransfer    > a:before, .iTransfer    > a > i:before { content: '\e648'; }
+.-iCancelTransfer    > a:before, .iCancelTransfer    > a > i:before { content: '\e610'; }
+.-iCancelJoin  > a:before, .iCancelJoin  > a > i:before { content: '\e610'; }
+.-iJoin        > a:before, .iJoin        > a > i:before { content: '\e612'; }
+.-iInitJoin    > a:before, .iInitJoin    > a > i:before { content: '\e612'; }
+.-iHangup      > a:before, .iHangup      > a > i:before { content: '\e621'; }
+.-iDivert      > a:before, .iDivert      > a > i:before { content: '\e621'; }
+.-iJoinRemote  > a:before, .iJoinRemote  > a > i:before { content: '\e608'; }
+
+.-iAnswer      > a:before, .iAnswer      > a > i:before { content: '\e608'; }
+.-iAnswerRec   > a:before, .iAnswerRec   > a > i:before { content: '\e608'; }
+.-iTakeMessage > a:before, .iTakeMessage > a > i:before { content: '\e638'; }
+.-iCallback    > a:before, .iCallback    > a > i:before { content: '\e608'; }
+.-iHandover    > a:before, .iHandover    > a > i:before { content: '\e608'; }
+.-iRecall      > a:before, .iRecall      > a > i:before { content: '\e608'; }
+
+.-iRecordStart > a:before, .iRecordStart > a > i:before { content: '\e636'; }
+.-iRecordPause > a:before, .iRecordPause > a > i:before { content: '\e637'; }
+.-iRecordResume> a:before, .iRecordResume> a > i:before { content: '\e636'; }
+.-iRecordStop  > a:before, .iRecordStop  > a > i:before { content: '\e637'; }
+.-iTransferUC  > a:before, .iTransferUC  > a > i:before { content: '\e648'; }
+.-iTransferSS  > a:before, .iTransferSS  > a > i:before { content: '\e648'; }
+
+
+.-iPick        > a:before, .iPick        > a > i:before { content: '\e628'; }
+
+.-iOnline      > a:before, .iOnline      > a > i:before { content: '\e603'; }
+.-iAway        > a:before, .iAway        > a > i:before { content: '\e61b'; }
+.-iDND         > a:before, .iDND         > a > i:before { content: '\e64b'; }
+
+.iBusy         > a > i:before { content: '\e64b'; }
+.iOffline      > a > i:before { content: '\e64b'; transform: rotateZ(90deg); display: inline-block; }
+
+.-iSearch      > *:before, .iSearch      > a > i:before { content: '\e63c'; }
+.-iMenu        > *:before, .iMenu        > a > i:before { content: '\e629'; }
+.-iLoad        > *:before, .iLoad        > a > i:before { content: '\e63d'!important; }
+
+.iSearch > *:before, .iLoad > *:before {
+  content: '\e63c';
+  color: transparent;
+  background-image: url('../img/common/loader50.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+.-iSFContact   > a:before, .iSFContact   > a > i:before { content: '\e631'; }
+.-iSFContactN  > a:before, .iSFContactN  > a > i:before { content: '\e601'; }
+.-iSFLead      > a:before, .iSFLead      > a > i:before { content: '\e620'; }
+.-iSFLeadN     > a:before, .iSFLeadN     > a > i:before { content: '\e65c'; }
+
+
+.-iCalendar    > a:before, .iCalendar    > a > i:before { content: '\e606'; }
+.-iHangouts    > a:before, .iHangouts    > a > i:before { content: '\e605'; font-family: 'social'; }
+.-iEmbed       > a:before, .iEmbed       > a > i:before { content: '\e632'; }
+
+.-iSubscribe   > a:before, .iSubscribe   > a > i:before { content: '\e601'!important; }
+
+.-iHangout     > a:before, .iHangout     > a > i:before { content: '\e605'; font-family: 'social'; }
+.-iWebEx       > a:before, .iWebEx       > a > i:before { content: '\e602'; font-family: 'social';  }
+.-iScopia      > a:before, .iScopia      > a > i:before { content: '\e60a'; font-family: 'social';  }
+.-iSpaces      > a:before, .iSpaces      > a > i:before { content: '\e60d'; font-family: 'social';  font-size: 32pt; }
+.-iWeLink      > a:before, .iWeLink      > a > i:before { content: '\e65a'; }
+.-iLabels      > a:before, .iLabels      > a > i:before { content: '\e619'; }
+
+.-iTutorial    > a:before, .iTutorial    > a > i:before { content: '\e64d'; }
+.-iNtf         > a:before, .iNtf         > a > i:before { content: '\e62d'; }
+.-iGear        > a:before, .iGear        > a > i:before { content: '\e63d'; }
+.-iSndUse      > a:before, .iSndUse      > a > i:before { content: '\e643'; }
+.-iSndSilent   > a:before, .iSndSilent   > a > i:before { content: '\e642'; }
+
+.-iPlus        > a:before, .iPlus        > a > i:before { content: '\e602'!important; }
+.-iMUC         > a:before, .iMUC         > a > i:before { content: '\e61f'!important; }
+
+/*!!*/
+.MUC          > a > i:before { content: '\e61f'!important; }
+
+
+.-Ringer       > a:before, .Ringer       > a > i:before { content: '\e62d'; }
+.-Tones        > a:before, .Tones        > a > i:before { content: '\e62d'; }
+.-Playback     > a:before, .Playback     > a > i:before { content: '\e643'; }
+.-Recording    > a:before, .Recording    > a > i:before { content: '\e64f'; }
+.-Capture      > a:before, .Capture      > a > i:before { content: '\e659'; }
+.-Control      > a:before, .Control      > a > i:before { content: '\e641'; }
+
+.self .phone:before, .-iPhoneOther  > a:before, .iPhoneOther  > a > i:before { content: '\e616'; }
+.self[phone='soft'] .phone:before, .-iPhoneSoft   > a:before, .iPhoneSoft   > a > i:before { content: '\e641'; }
+.self[phone='desk'] .phone:before, .-iPhoneDesk   > a:before, .iPhoneDesk   > a > i:before { content: '\e615'; }
+.self[phone='cell'] .phone:before, .-iPhoneCell   > a:before, .iPhoneCell   > a > i:before { content: '\e62b'; }
+
+.self[phoneFail] .phone:before
+{
+  color: #EE4A2A;
+}
+
+a.icon.iClear
+{
+  display: inline-flex;
+}
+a.icon.iClear:before { content: '\e610'; }
+a.icon.iEdit:before { content: '\e619'; display: inline-block; }
+a.icon.iClose:before { content: '\e610'; }
+a.icon.iBack:before { content: '\e640'; }
+
+/* inline statuses */
+.flow .call:before { content: '\e608'; }
+.flow .map:before { content:  '\e61e'; }
+.calls .callIn:before 
+{
+  content:      '\e609';
+  font-family:  symbold;
+  font-weight:  bold;
+  color:        #0AA400;
+  margin-right: 2px;
+}
+.calls .callOut:before 
+{
+  content:      '\e60a';
+  font-family:  symbold;
+  font-weight:  bold;
+  color:        #0AA400;
+  margin-right: 2px;
+}
+.calls .missing:before 
+{
+  color:        #EE4A2A;
+}
+
+.calls li.iDial > a> i:before
+{
+  content:      '\e608';
+  font-size:    32pt;
+  font-family:  symthin;
+  display:      flex;
+  align-items:  center;
+  justify-content: center;
+}
+
+.list > li.unchecked > a:after {
+  content: '';
+}
+
+.-LOCOFF > a:before, .LOCOFF > a > i:before, :not(.locs) > .LOCOFF .imp:before, .LOCOFF.pres:before  { content: '\e62f'; }
+.-LOCLUN > a:before, .LOCLUN > a > i:before, :not(.locs) > .LOCLUN .imp:before, .LOCLUN.pres:before  { content: '\e627'; }
+.-LOCHOM > a:before, .LOCHOM > a > i:before, :not(.locs) > .LOCHOM .imp:before, .LOCHOM.pres:before  { content: '\e622'; }
+.-LOCMET > a:before, .LOCMET > a > i:before, :not(.locs) > .LOCMET .imp:before, .LOCMET.pres:before  { content: '\e628'; }
+.-LOCBUS > a:before, .LOCBUS > a > i:before, :not(.locs) > .LOCBUS .imp:before, .LOCBUS.pres:before  { content: '\e64a'; }
+.-LOCVAC > a:before, .LOCVAC > a > i:before, :not(.locs) > .LOCVAC .imp:before, .LOCVAC.pres:before  { content: '\e651'; }
+.-LOCABS > a:before, .LOCABS > a > i:before, :not(.locs) > .LOCABS .imp:before, .LOCABS.pres:before  { content: '\e61b'; }
+.-LOCTMP > a:before, .LOCTMP > a > i:before, :not(.locs) > .LOCTMP .imp:before, .LOCTMP.pres:before  { content: '\e64d'; }
+.-LOCMOB > a:before, .LOCMOB > a > i:before, :not(.locs) > .LOCMOB .imp:before, .LOCMOB.pres:before  { content: '\e62b'; }
+.-LOCREM > a:before, .LOCREM > a > i:before, :not(.locs) > .LOCREM .imp:before, .LOCREM.pres:before  { content: '\e639'; }
+
+.-LOCOVL > a:before, .LOCOVL > a > i:before { content: '\e603'; }
+.-LOCUVL > a:before, .LOCUVL > a > i:before { content: '\e64b'; }
+
+.-LOCCAL > a:before, .LOCCAL > a > i:before { content: '\e606'; }
+.-LOCNXT > a:before, .LOCNXT > a > i:before { content: '\e61b'; }
+.-LOCDUR > a:before, .LOCDUR > a > i:before { content: '\e604'; }
+
+
+.nodata-icon:before {
+  background-color: transparent;
+  color: transparent;
+  background-size: 100% 100%;
+  border-radius: 0;
+}
+
+
+.nodata-icon.nodata-group:before { content: '\e620'; background-image: url('../img/first/empty-member.png'); }
+.nodata-icon.nodata-chat:before { content: '\e60b'; background-image: url('../img/first/empty-chat.png'); }
+.nodata-icon.nodata-docs:before { content: '\e617'; background-image: url('../img/first/empty-docs.png'); }
+.nodata-icon.nodata-call:before { content: '\e625'; background-image: url('../img/first/empty-phone.png'); }
+.nodata-icon.nodata-chats:before { content: '\e61f'; background-image: url('../img/first/empty-chatlist.png'); }
+.nodata-icon.nodata-groups:before { content: '\e620'; background-color: #73D0E6; color: white; border-radius: 50%; }
+.nodata-icon.nodata-find:before { content: '\e63c'; background-image: url('../img/first/empty-search.png'); }
+.nodata-icon.nodata-fav:before { content: '\e61c'; background-image: url('../img/first/empty-favorite.png'); }
+.nodata-link.nodata-add:before { content: '\e602'; }

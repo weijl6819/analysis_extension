@@ -1,0 +1,34 @@
+{
+   "browseraction": {
+      "description": "Label for the BrowserAction",
+      "message": "Send this Page as Mail"
+   },
+   "contextmenu": {
+      "description": "Displayed in the context menu",
+      "message": "Mail this link"
+   },
+   "extdesc": {
+      "description": "Ext Description",
+      "message": "Send A Link from Toolbar or ContextMenu"
+   },
+   "extname": {
+      "description": "Ext Name",
+      "message": "Mail this link"
+   },
+   "optInTab": {
+      "description": "",
+      "message": "Open Gmail in a new tab"
+   },
+   "optInWin": {
+      "description": "",
+      "message": "Open Gmail in a new tab"
+   },
+   "optgmail": {
+      "description": "",
+      "message": "Use Gmail"
+   },
+   "optmailto": {
+      "description": "",
+      "message": "Use default mail client"
+   }
+}

@@ -1,0 +1,97 @@
+﻿body {overflow: auto !important; margin: 0 !important;height: auto;}
+#search{
+	position: relative;
+	display: block;
+	width: 400px;
+	height: 40px;
+	background-color: white !important;
+}
+
+#search-button{
+	position: absolute;
+	top: 12px;
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+	left: 10px;
+}
+
+#search-input{
+	margin:0;
+	border: none;
+	color: black;
+	outline: none;
+	padding: 12px 0px 8px 30px;
+	width: 340px;
+	font-size: 13px;
+	background-color: white;
+	-webkit-appearance: none;
+}
+
+#autocomplete.center{text-align:center;}
+
+.hidden{
+	display: none !important;
+}
+
+#reset_container{
+	display: inline-block;
+	float:	right;
+}
+
+#reset {
+	display: block;
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	margin: 12px 10px 0px 0px;
+	font-size:16px;
+}
+
+.alert_div{
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: rgb(224, 63, 63);
+	color:	white;
+}
+
+.autocomplete_element.selected{
+	background-color: #cdcdcd;
+}
+
+.autocomplete_element{
+	height: 20px;
+	line-height: 20px;
+	font-size: 13px;
+	padding-left: 10px;
+	background-color: white;
+	white-space: nowrap;
+	border-top: 1px solid #cdcdcd;
+	color: black;
+}
+
+.autocomplete_element.selected:hover{
+	cursor: pointer;
+	color: white;
+}
+
+.autocomplete_element:hover{
+	cursor: pointer;
+	color: #cdcdcd;
+}
+
+
+.torrent_element{
+	word-wrap:break-word;
+	line-height: 20px;
+	font-size: 13px;
+	padding-left: 10px;
+	background-color: white;
+	border-top: 1px solid #cdcdcd;
+	color: black;
+}
+.torrent_element:hover{
+	cursor: pointer;
+	background: #cdcdcd;
+}

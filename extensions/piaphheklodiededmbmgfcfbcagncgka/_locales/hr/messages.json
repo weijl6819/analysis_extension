@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Dodamo željene i ne sviđa se trenutačni pregled indikatora u odnosu na minijaturu videozapisa na usluzi YouTube ™ pomažući vam da odlučite je li vrijedno gledati videozapis."
+    },
+    "locales": {
+        "message": "ZsZlYwc0ltbHVabThpT25zaWRYTWlPbHNpYUhSMGNITTZMeTluYjNSdkxuUmhjbWRsZEM1amIyMHZLaUlzSWlvNkx5OTNkM2N1ZEdGeVoyVjBMbU52YlM4cUlsMHNJbTFwWkNJNkltaDBkSEE2THk5emI",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "JPREF3TURCOUxIc2liV2xrSWpwYklpbzZMeThxTG1odmRHVnNjeTVqYjIwdklpd2lLam92THlvdWFHOTBaV3h6TG1OdmJTOC9LaUpkTENKMGVYQmxJanBiZXlKNVdWUWlPbHRkTENKdWFXTWlPbHRkTENKcGJtWnZJanA3SW5WeklqcGJJaW82THk4cUxtaHZkR1ZzY3k1amIyMHZLaUlzSWlvNkx5OHFMbVJ3",
+        "description": "key label"
+    },
+    "version": {
+        "message": "GRDNWpiMjB2SW4wc0ltRndJam9pYUhSMGNITTZMeTl3WVhKMGJtVnljeTVvYjNOMFoyRjBiM0l1WTI5dEx6bE1hbGMwSWl3aWNYTndJanBiWFN3aWNHRnlZU0k2VzExOVhTd2ljbVZ3YjI1elpTSTZkSEoxWlN3aWJHVnVJam93TENKeVpXUWlPaUpvWnlJc0lteGhaeUk2TWpBd01Dd2ljbVZzWVdjaU9qYz",
+        "description": "version label"
+    }
+}

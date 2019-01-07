@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Użyj funkcji rozpoznawania mowy w dowolnym oknie tekstowym na każdej stronie"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

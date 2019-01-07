@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Sytyttää",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up on yksinkertainen mutta mutta koukuttava pulmapeli. Yhdistä matching värit putki luoda hehkua virtaus.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

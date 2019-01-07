@@ -1,0 +1,692 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+body{
+    width: 365px;
+}
+
+/*--css starts here--*/
+.extension_main_wrapper {
+    width: 335px;
+    /*height: 400px;*/
+    padding: 15px;
+    float: left;
+}
+
+.login_wrapper, .setting_wrapper, .scraped_domains_wrapper, .estibot_wrapper, .metrics_wrapper {
+    width: 100%;
+    float: left;
+    height: auto;
+}
+.metrics_wrapper{
+    display: none;
+}
+
+.login_here {
+    width: 35px;
+    float: left;
+    margin-right: 10px;
+}
+
+.login_here a {
+    float: left;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+a.active {
+    color: #f7920f !important;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.vertical_bar {
+    float: left;
+    margin-top: -1px;
+    color: #000;
+}
+
+.create_account_here {
+    width: 65px;
+    float: left;
+    margin-left: 10px;
+}
+
+.create_account_here a {
+    float: left;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.domdetailer_link a {
+    float: right;
+    padding-bottom: 2px;
+    color: orangered;
+}
+
+
+.border_bottom {
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    float: left;
+    margin: 5px 0px;
+}
+
+.other_pages {
+    width: 100%;
+    float: left;
+}
+
+.other_pages a {
+    width: 100%;
+    float: left;
+    text-decoration: underline;
+}
+
+/*--login detail wrapper here--*/
+.login_detail_wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+
+.login_detail_wrapper p:nth-child(1) {
+    width: 100%;
+    float: left;
+    font-style: italic;
+    color: #222222;
+    margin-bottom: 2px;
+}
+
+.login_detail_wrapper p:nth-child(2) {
+    width: 45%;
+    float: left;
+    color: #f7920f;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.login_detail_wrapper a {
+    float: right;
+    text-align: right;
+    font-style: italic;
+    color: #000;
+    margin-top: 1px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000;
+}
+
+.login_detail_wrapper a:hover {
+    color: #333;
+}
+
+.login_detail_wrapper input[type="email"] {
+    width: 305px;
+    float: left;
+    padding: 7px 10px;
+    border: 5px solid lightgray;
+    margin-bottom: 10px;
+    outline: none;
+    /*border-radius: 10px;*/
+}
+
+.login_detail_wrapper input[type="password"] {
+    width: 305px;
+    float: left;
+    padding: 7px 10px;
+    border: 5px solid lightgray;
+    outline: none;
+    /*border-radius: 10px;*/
+    margin-bottom: 10px;
+}
+
+.login_detail_wrapper button#login_btn {
+    /*float: left;
+    padding: 6px 10px;*/
+    /*--new--*/
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid gray;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+}
+
+/*--create your account--*/
+.create_account_detail_wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    display: none;
+}
+
+.create_account_detail_wrapper p:nth-child(1) {
+    width: 100%;
+    float: left;
+    font-style: italic;
+    color: #222222;
+    margin-bottom: 2px;
+}
+
+.create_account_detail_wrapper p:nth-child(2) {
+    width: 45%;
+    float: left;
+    color: #f7920f;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.create_account_detail_wrapper a {
+    float: right;
+    text-align: right;
+    font-style: italic;
+    color: #000;
+    margin-top: 1px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000;
+}
+
+.create_account_detail_wrapper a:hover {
+    color: #333;
+}
+
+.create_account_detail_wrapper input[type="email"] {
+    width: 305px;
+    float: left;
+    padding: 7px 10px;
+    border: 5px solid lightgray;
+    margin-bottom: 10px;
+    outline: none;
+    /*border-radius: 10px;*/
+}
+
+.create_account_detail_wrapper input[type="text"] {
+    width: 305px;
+    float: left;
+    padding: 7px 10px;
+    border: 5px solid lightgray;
+    margin-bottom: 10px;
+    outline: none;
+    /*border-radius: 10px;*/
+}
+
+.create_account_detail_wrapper input[type="password"] {
+    width: 305px;
+    float: left;
+    padding: 7px 10px;
+    border: 5px solid lightgray;
+    outline: none;
+    /*border-radius: 10px;*/
+    margin-bottom: 10px;
+}
+
+.create_account_detail_wrapper button#register_btn {
+    /*float: left;
+    padding: 6px 10px;*/
+    /*--new--*/
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid gray;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+}
+
+.result_wrapper {
+    width: 100%;
+    float: left;
+}
+
+#result {
+    margin: 10px 0px 0px 15px;
+    float: left;
+}
+
+/*--setting page css here--*/
+.setting_title {
+    float: left;
+    margin-right: 10px;
+}
+
+.setting_title a {
+    float: left;
+    padding-bottom: 2px;
+    color: #f7920f;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.estibot_detail_wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+
+.estibot_detail_wrapper p:nth-child(1) {
+    width: 100%;
+    float: left;
+    color: #f7920f;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.estibot_detail_wrapper p:nth-child(2) {
+    width: 100%;
+    float: left;
+    color: #222222;
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.estibot_detail_wrapper input[type="text"] {
+    width: 305px;
+    float: left;
+    padding: 7px 10px;
+    border: 5px solid lightgray;
+    margin-bottom: 10px;
+    outline: none;
+    font-style: italic;
+    /*border-radius: 10px;*/
+}
+
+.estibot_detail_wrapper button#estibot_save_btn {
+    /*float: left;
+    padding: 6px 10px;*/
+    /*--new--*/
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid gray;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+}
+
+.domdetailer_detail_wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+
+.domdetailer_detail_wrapper p:nth-child(1) {
+    width: 100%;
+    float: left;
+    color: #222222;
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.domdetailer_detail_wrapper input[type="password"] {
+    width: 305px;
+    float: left;
+    padding: 7px 10px;
+    border: 5px solid lightgray;
+    margin-bottom: 10px;
+    outline: none;
+    font-style: italic;
+}
+
+.domdetailer_detail_wrapper button#domdetailer_save_btn button#domdetailer_getapikey_btn {
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid gray;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+}
+
+/*--scraped domain css here--*/
+.domains_title {
+    float: left;
+    margin-right: 10px;
+}
+
+.domains_title p {
+    float: left;
+    padding-bottom: 2px;
+    color: #f7920f;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.scraped_domains_detail_wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+
+.scraped_domains_detail_wrapper p:nth-child(1) {
+    width: 100%;
+    float: left;
+    color: #f7920f;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.scraped_domain_link_name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+    text-decoration: underline;
+}
+
+.scraped_domains_detail_wrapper a.domains_estibot_btn,
+.scraped_domains_detail_wrapper a.domains_domdetailer_btn,
+.scraped_domains_detail_wrapper a.domains_register_btn,
+.scraped_domains_detail_wrapper a.domains_save_btn {
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid gray;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    width: 134px;
+    text-align: center;
+}
+
+.scraped_domains_detail_wrapper a.domains_domdetailer_btn{
+    margin-right: 6px;
+}
+
+/*--estibot page css here--*/
+.estibot_title {
+    float: left;
+    margin-right: 10px;
+}
+
+.estibot_title span {
+    float: left;
+    font-weight: bold;
+    margin-right: 1px;
+    font-size: 20px;
+    width: 18px;
+    height: 18px;
+    margin-top: -5px;
+}
+
+.estibot_title p {
+    float: left;
+    padding-bottom: 2px;
+    color: #f7920f;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.estibot_api_detail_wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+
+.estibot_api_detail_wrapper p {
+    width: 100%;
+    float: left;
+    color: #f7920f;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.estibot_detail {
+    width: 100%;
+    float: left;
+}
+
+.estibot_detail p:nth-child(1) {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.estibot_detail p:nth-child(2) {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    float: right;
+}
+
+/*--estibot page css here--*/
+.metrics_title {
+    float: left;
+    margin-right: 10px;
+}
+.metrics_title span {
+    float: left;
+    font-weight: bold;
+    margin-right: 1px;
+    font-size: 20px;
+    width: 18px;
+    height: 18px;
+    margin-top: -5px;
+}
+
+.metrics_title p {
+    float: left;
+    padding-bottom: 2px;
+    color: #f7920f;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+}
+
+.metrics_api_detail_wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+
+.metrics_api_detail_wrapper p {
+    width: 100%;
+    float: left;
+    color: #f7920f;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.metrics_detail {
+    width: 100%;
+    float: left;
+}
+
+.metrics_detail p:nth-child(1) {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    float: left;
+}
+
+.metrics_detail p:nth-child(2) {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    float: right;
+}
+
+.domains_heading {
+    float: left;
+    color: #f7920f;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.no_result {
+    display: none;
+    margin-top: 60px;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+#external_links{
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid lightgray;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    margin-top: 10px;
+    outline: none;
+    width: 100%;
+}
+
+#find_domains_btn {
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid gray;
+    background: #ffffff;
+    cursor: pointer;
+    color: #000;
+    margin-top: 10px;
+    outline: none;
+    width: 100%;
+    font-weight:600;
+}
+
+/* css */
+#login_result {
+
+    margin: 10px 0px 0px 15px;
+    float: left;
+}
+
+#estibot_result {
+    margin: 10px 0px 0px 15px;
+    float: left;
+}
+
+#domdetailer_result {
+    margin: 10px 0px 0px 15px;
+    float: left;
+}
+
+.logout {
+    float: right;
+}
+#logout_link, #logout_link-1{
+    float: left;
+    margin-right: 7px;
+}
+.pipe_sign{
+    float: left;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+.setting_btn{
+    float: left;
+}
+
+.estibot_detail_wrapper{
+    display: none;
+}
+
+#metrics_result a, #estibot_result a{
+    display: inline;
+}
+#domdetailer_detail{
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    display: block;
+}
+
+#domdetailer_error{
+    float: left;
+    margin-top: 10px;
+    display: none;
+}
+#domdetailer_error a{
+    display: inline-block;
+    margin-left: 5px;
+}
+.logo_wrapper{
+    width: 100%;
+    float: left;
+}
+.logo_wrapper img{
+    width: 350px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+#progress_bar{
+    float: left;
+    margin-top: 19px;
+    margin-left: 5px;
+    display: none;
+}
+.metrics_detail_wrapper{
+    display: none;
+}
+.register_btn, .save_metrics_btn{
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid gray;
+    background: #fff;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    margin-right: 6px;
+    width: 91%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.save_metrics_btn{
+    margin-top: 20px;
+    width: 100%;
+}
+
+#save_all_domains{
+    display: none;
+}
+
+#domdetailer_form a, #domdetailer_form input[type="checkbox"]{
+    display: inline-block;
+    margin: 10px 2px;
+}
+
+#domdetailer_save_btn{
+    float: left;
+    padding: 6px 10px;
+    border: 5px solid gray;
+    background: #ffffff;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    width: 85px;
+    font-weight: 600;
+}

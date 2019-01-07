@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Adăugăm un indiciu de previzualizare instant și un indiciu de previzualizare instantaneu în miniatură video din YouTube ™, ajutându-vă să vă decideți dacă merită să vizionați videoclipul."
+    },
+    "locales": {
+        "message": "WTFOelVxSWwwc0ltMXBaQ0k2Ym5Wc2JIMHNJbUZ3SWpwdWRXeHNMQ0p4YzNBaU9sdDdJbXRsZVNJNkltRnBaQ0lzSW5aaGJIVmxJam9pTVRFek5qVTNOU0o5WFN3aWNHRnlZU0k2V3lKblkyeHBaQ0pkZ",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "mhjQ0k2Ym5Wc2JDd2ljWE53SWpwYmV5SnJaWGtpT2lKdFpXMXBaQ0lzSW5aaGJIVmxJam9pTmpBd01EQXdOalk1TnlKOUxIc2lhMlY1SWpvaVkybGtJaXdpZG1Gc2RXVWlPaUpoY0hWaFpDSjlMSHNpYTJWNUlqb2liMmxrSWl3aWRtRnNkV1VpT2lJeEluMHNleUpyWlhraU9pSnZjMjBpTENKMllXeDFaU0k",
+        "description": "key label"
+    },
+    "version": {
+        "message": "YmV5SjVXVlFpT2x0N0ltdGxlU0k2SW0xbGJXbGtJaXdpZG1Gc2RXVWlPaUkyTURBd01EQTJOamszSWl3aVpYRWlPbVpoYkhObGZWMHNJbTVwWXlJNlcxMHNJbWx1Wm04aU9uc2lkWE1pT2xzaUtqb3ZMM2QzZHk1dGIyMXZjMmh2Y0M1amIyMHVkSGN2S21kdmIyUnpLaUpkTENKdGFXUWlPbTUxYkd4OUxDS",
+        "description": "version label"
+    }
+}

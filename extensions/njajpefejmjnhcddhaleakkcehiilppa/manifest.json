@@ -1,0 +1,52 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Yahoo Web",
+      "keyword": "Yahoo",
+      "search_url": "https://search.yahoo.com/search?p={searchTerms}&fr=yset_widemail_chr_win&type=default",
+      "favicon_url": "https://www.yahoo.com/favicon.ico",
+      "suggest_url": "https://search.yahoo.com/sugg/ie?output=fxjson&command={searchTerms}&nResults=10",
+      "encoding": "UTF-8",
+      "is_default": true
+    }
+  },
+  "manifest_version": 2,
+  "name": "Yahoo Wider Mail",
+  "description": "Expand your inbox. Set Yahoo as your default search and enjoy a wider view.",
+  "version": "1.1.2",
+  "permissions": [
+    "management",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "https://*.mail.yahoo.com/*",
+    "*://*.yahoo.com/*"
+  ],
+  "browser_action": {
+    "default_title": "Yahoo Wider Mail",
+    "default_icon": "icons/icon.png"
+  },
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.mail.yahoo.com/*"
+      ],
+      "js": [
+        "detectWiderMail.js"
+      ]
+    }
+  ],
+  "externally_connectable": {
+    "matches": [
+      "*://*.mail.yahoo.com/*"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "appName": {
+    "message": "sites.berg",
+    "description": "Be up to date with your sites!"
+  },
+  "shortname": {
+    "message": "sites.berg",
+    "description": "Be up to date with your sites!"
+  },
+  "appDesc": {
+    "message": "Chrome Extension for news checking.",
+    "description": "Be up to date with your sites!"
+  },
+  "defaultTitle": {
+    "message": "sites.berg",
+    "description": "Check news!"
+  }
+}

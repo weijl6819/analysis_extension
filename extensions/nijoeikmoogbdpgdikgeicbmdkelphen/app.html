@@ -1,0 +1,166 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Daily Coin Feed</title>
+    <meta name="application-name" content="Daily Coin Feed">
+    <meta name="description" content="Daily crypto news. Most convenient way to track cryptocurrency news.">
+
+    <link rel="stylesheet" type="text/css" href="/js/_external/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="/css/app/main.css">
+    <link rel="stylesheet" href="/css/app/formfeed.css">
+    <link rel="stylesheet" href="/css/app/formmodal.css">
+    <link rel="stylesheet" href="/css/app/style.css">
+
+    <script type="text/javascript" src="/js/_external/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="/js/_external/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="/js/app/util.js"></script>
+    <script type="text/javascript" src="/js/app/formfeed.js"></script>
+    <script type="text/javascript" src="/js/app/formmodal.js"></script>
+    <script type="text/javascript" src="/js/app/category.js"></script>
+    <script type="text/javascript" src="/js/app/feed.js"></script>
+    <script type="text/javascript" src="/js/app/ticker.js"></script>
+    <script type="text/javascript" src="/js/app/app.js"></script>
+
+</head>
+<body>
+    <div class="js-app-loading login-container" style="display: none;"></div>
+    <div class="js-message-banner message-banner is-hidden"></div>
+    <div class="js-app application">
+		<header class="js-app-header pin-all app-header">
+			 <div class="pin-v app-header-inner">
+		        <div class="app-header-action margin-bm padding-ts">
+		          	<a class="link-clean cf app-nav-link padding-h--10 margin-tm" id="collapse-navigator-header">
+		            	<div class="obj-left margin-l--2"><i class="icon icon-arrow-l-double icon-medium"></i><i class="icon icon-arrow-r-double icon-medium"></i></div>
+		            	<div class="nbfc padding-ts hide-collapsed txt-size--16">Collapse</div>
+		          	</a>
+		       	</div>
+				<div class="js-column-nav-scroller column-navigator antiscroll-wrap">
+					<nav id="column-navigator" class="js-column-nav scroll-v antiscroll-inner">
+						<div class="js-column-nav-list">
+							<div class="js-search-input-control search-input-control ">
+								<input type="text" class="js-app-search-input app-search-input search-input hide-collapsed" data-title="" placeholder="Search Category" value="">
+								<a href="#" class="js-perform-search txt-size--14 search-input-perform-search" tabindex="-1">
+									<i class="icon icon-search txt-size--16"></i>
+								</a>
+							</div>
+							<div class="js-compose-search-item column-search-item">
+								<div class="js-compose-search-title column-search-title hide-collapsed" title="">
+									<span class="title-manager column-head-title"></span>
+								</div>
+								<div class="js-search-delete-item manager-search-delete hide-collapsed">
+									<i class="icon icon-close icon-large-select position-rel"></i>
+								</div>
+								<div class="column-search-icon show-collapsed" title="">
+									<img class="js-compose-search-icon icon-large-column">
+								</div>
+								<!--div class="manager-search-icon-delete show-collapsed">
+									<i class="icon icon-close icon-small position-rel"></i>
+								</div-->
+							</div>
+							<ul class="js-int-scroller" id="container-navigator">
+							</ul>
+							<a class="link-clean cf app-nav-link padding-h--10 margin-tm" id="mark-all-feeds">
+								<div class="obj-left margin-l--2"> <i class="icon icon-mark-read icon-medium"></i> </div>
+								<div class="nbfc padding-ts hide-collapsed txt-size--16">Mark all as read </div>
+							</a>
+							<a class="link-clean cf app-nav-link padding-h--10 margin-tm" id="show-unmark">
+								<div class="obj-left margin-l--2"> <i class="icon icon-verified icon-medium"></i> </div>
+								<div class="js-show-unmark-label nbfc padding-ts hide-collapsed txt-size--16">New posts only</div>
+							</a>
+							<a class="link-clean cf app-nav-link padding-h--10 margin-tm" id="add-category">
+								<div class="obj-left margin-l--2"> <i class="icon icon-plus icon-medium"></i> </div>
+								<div class="nbfc padding-ts hide-collapsed txt-size--16">Add Category</div>
+							</a>
+							<a class="link-clean cf app-nav-link padding-h--10 margin-tm" id="manager-category">
+								<div class="obj-left margin-l--2"> <i class="icon icon-settings icon-medium"></i> </div>
+								<div class="nbfc padding-ts hide-collapsed txt-size--16">Manage categories</div>
+							</a>
+							<div class="app-nav-info margin-t--20" id="marcet-ticker">
+								<div class="app-nav-info-elem">
+									<div class="app-nav-info-label hide-collapsed txt-size--16">BTC Dominance:</div>
+									<div class="js-app-dominance app-nav-info-text txt-size--16"></div>
+								</div>
+								<div class="app-nav-info-elem">
+									<div class="app-nav-info-label hide-collapsed txt-size--16">Market Cap:</div>
+									<div class="js-app-market-cap app-nav-info-text txt-size--16"></div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+		        <div class="app-footer-action margin-bm padding-ts">
+					<a class="link-clean cf app-nav-link padding-h--10 margin-tm" id="addon-suggestion">
+						<div class="obj-left margin-l--2"> <i class="icon icon-message icon-medium"></i> </div>
+						<div class="nbfc padding-ts hide-collapsed txt-size--16">Submit suggestion</div>
+					</a>
+					<a class="link-clean cf app-nav-link padding-h--10 margin-tm" id="addon-settings">
+						<div class="obj-left margin-l--2"> <i class="icon icon-settings icon-medium"></i> </div>
+						<div class="nbfc padding-ts hide-collapsed txt-size--16">Settings</div>
+					</a>
+		          	<a class="link-clean cf app-nav-link padding-h--10 margin-tm" id="collapse-navigator-footer">
+		            	<div class="obj-left margin-l--2"><i class="icon icon-arrow-l-double icon-medium"></i><i class="icon icon-arrow-r-double icon-medium"></i></div>
+		            	<div class="nbfc padding-ts hide-collapsed txt-size--16">Collapse</div>
+		          	</a>
+		       	</div>
+		    </div>
+		</header>
+		<div class="js-progress-indicator"></div>
+		<div class="js-app-content app-content" id="app-content">
+
+			<!--      form edit category   -->
+			<div class="js-formfeed formfeed">
+				<div class="js-docked-compose compose txt-size--14">
+					<div class="js-compose-scroller compose-content antiscroll-wrap pin-all">
+						<div class="padding-l--15">
+							<header class="js-compose-header compose-header">
+								<div class="position-rel compose-title inline-block">
+									<h1 class="js-compose-title compose-title-text txt-ellipsis inline-block">Categories</h1>
+								</div>
+								<i class="js-formfeed-close compose-formfeed-close is-actionable icon icon-close margin-vm pull-right"></i>
+							</header>
+							<div class="js-inline-confirmation margin-bxl"></div>
+
+							<div class="js-filter-input-categories filter-input-control ">
+								<input type="text" class="js-app-filter-input app-filter-input" data-title="" placeholder="Filter Categories" value="">
+								<a href="#" class="js-perform-filter txt-size--14 filter-input-perform-search" tabindex="-1">
+									<i class="icon icon-search txt-size--16 filter-icon-perform-search"></i>
+                  					<i class="icon icon-close txt-size--16 filter-icon-perform-close"></i>
+								</a>
+							</div>
+
+							<!-- Compose list -->
+							<div class="js-compose-list-enable position-rel compose-list-container scroll-list-category scroll-v scroll-styled-v scroll-formfeed">
+								<ul class="js-compose-list">
+								</ul>
+							</div>
+							<!-- End compose list -->
+
+							<!-- Compose move -->
+							<div class="js-compose-move-enable position-rel compose-list-container scroll-move-category scroll-v scroll-styled-v scroll-formfeed">
+								<ul class="js-compose-move ui-sortable">
+								</ul>
+							</div>
+							<!-- End compose list -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--      /form edit category   -->
+
+			<!--      column category   -->
+			<div class="js-app-columns-container app-columns-container scroll-h needs-scroll-bottom-offset scroll-styled-h">
+				<div class="js-app-columns app-columns horizontal-flow-container without-feed-drag-handles" id="container">
+				</div>
+			</div>
+			<!--      /column category   -->
+		</div>
+	</div>
+	<div class="js-modals-container"></div>
+	<div class="js-message-container"></div>
+	<div class="js-search-categories-button"></div>
+
+</body>
+</html>

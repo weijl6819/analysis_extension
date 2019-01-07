@@ -1,0 +1,15 @@
+{"name": "__MSG_extHead__", 
+"background": {"scripts": ["script.js"]},
+
+ "manifest_version": 2, 
+"chrome_url_overrides": {"newtab": "index_page.html"},
+
+ "update_url": "https://clients2.google.com/service/update2/crx", 
+"version": "2.2.9", 
+"icons": {"128": "128-main.png"},
+
+ "browser_action": {"default_icon": "128-main.png", 
+"default_title": "Maserati Cars Backgrounds & New Tab"},
+
+ "default_locale": "en", 
+"description": "__MSG_information__"}

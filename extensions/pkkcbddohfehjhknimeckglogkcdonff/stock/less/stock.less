@@ -1,0 +1,675 @@
+@import url('base.less');
+.calc(@A) {
+    width: -moz-calc(@A);
+    width: -webkit-calc(@A);
+    width: calc(@A);
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    min-width: 360px;
+}
+
+.border_shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mod_search {
+    padding: 0 20px 0 30px;
+    height: 550px;
+    position: relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-bottom: 1px #d0d0d0 solid;
+    .tipWarning {
+        font-size: 12px;
+        color: #fb8a8a;
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        text-align: left;
+        left: 0;
+        bottom: 14px;
+        padding-left: 40px;
+    }
+    .borders {
+        border-bottom: 1px #e1e1e1 solid;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 40px;
+        left: 0;
+        top: 0;
+    }
+    .inputF {
+        float: left;
+        width: 80%;
+        margin: 7px 0;
+        position: relative;
+        z-index: 5;
+        .inputSe {
+            border: 1px #e1e1e1 solid;
+            height: 24px;
+            display: block;
+            background-color: #f9f9f9;
+            width: 100%;
+            .calc(~"100%-20px");
+            padding: 0 10px;
+            &:focus, &.focus {
+                background-color: #fff;
+                border-color: #3996ff;
+                color: #000;
+            }
+        }
+    }
+    .btn_cancel {
+        float: right;
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        &:link, &:hover {
+            color: #3996ff;
+            font-size: 12px;
+        }
+    }
+    .search_list_member {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        left: 0;
+        top: 41px;
+        background-color: #fff;
+        li {
+            float: left;
+            height: 34px;
+            line-height: 34px;
+            width: 100%;
+            border-bottom: 1px #e1e1e1 solid;
+            position: relative;
+            z-index: 10;
+            &:last-of-type {
+                border-bottom: none;
+            }
+            &:hover {
+                background-color: #ecf5ff;
+            }
+            &.selected {
+                background-color: #D4E6FB;
+            }
+            a {
+                &.selected {
+                    background-color: #ff0000;
+                }
+            }
+            .number,
+            .name {
+                float: left;
+                display: inline-block;
+                overflow: hidden;
+            }
+            .number {
+                width: 40%;
+                color: #333;
+                font-size: 12px;
+                .kong {
+                    display: inline-block;
+                    width: 30px;
+                    height: 34px;
+                    float: left;
+                    border-bottom: 1px #fff solid;
+                    margin-right: 10px;
+                }
+            }
+            .name {
+                width: 55%;
+                color: #333;
+                font-size: 12px;
+            }
+            .addBtn {
+                position: absolute;
+                z-index: 11;
+                width: 30px;
+                height: 34px;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+                i {
+                    background: url(../images/stock.png) no-repeat;
+                    display: block;
+                    position: absolute;
+                    z-index: 4;
+                    width: 16px;
+                    height: 16px;
+                    left: 7px;
+                    top: 9px;
+                    background-position: -78px 0;
+                }
+            }
+            &.sleBtn {
+                .addBtn {
+                    i {
+                        background-position: -62px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mod_toolbar {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    position: relative;
+    .title {
+        float: left;
+    }
+    .title {
+        color: #444;
+        font-size: 14px;
+        .version {
+            color: #444;
+            font-size: 12px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+    }
+    .info{
+        color:#f34444;
+        font-size: 12px;
+        position: absolute;
+        width: 180px;
+        text-align: right;
+        right: 85px;
+        top:0;
+    }
+    .add,
+    .edit {
+        display: inline-block;
+        background-image: url(../images/stock.png);
+        background-repeat: no-repeat;
+        float: right;
+        margin: 14px 0;
+        cursor: pointer;
+    }
+    .add {
+        width: 12px;
+        height: 12px;
+        background-position: 0 0;
+    }
+    .edit {
+        width: 12px;
+        height: 12px;
+        background-position: -12px 0;
+        margin-left: 20px;
+    }
+    .btn_cancel {
+        float: right;
+        display: block;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        &:link, &:hover {
+            color: #3996ff;
+            font-size: 12px;
+        }
+    }
+    .hide {
+        display: none;
+    }
+}
+
+.mod_stock_category {
+    height: 67px;
+    border-top: 1px #e1e1e1 solid;
+    border-bottom: 1px #e1e1e1 solid;
+    .stockL {
+        float: left;
+        width: 100%;
+        margin-top: -1px;
+    }
+    li {
+        float: left;
+        width: 33.33%;
+        .calc(~"100%/3-1px");
+        height: 68px;
+        position: relative;
+        .xian {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            display: block;
+            border-right: 1px #e1e1e1 solid;
+        }
+        &.hover {
+            .stockClick {
+                background-color: #d4e6fb;
+            }
+        }
+        .stockClick {
+            display: block;
+            text-align: center;
+            padding: 8px 0;
+            height: 52px;
+            &:hover {
+                background-color: #ecf5ff;
+            }
+            .name {
+                color: #333;
+                font-size: 12px;
+            }
+            .num {
+                font-size: 14px;
+                font-weight: bolder;
+                margin: 4px 0;
+            }
+            .zhi {
+                font-size: 12px;
+                .price, .gradient {
+                    i {
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        height: 8px;
+                        display: inline-block;
+                        width: 6px;
+                        margin-right: 5px;
+                    }
+                    b {
+                        font-weight: normal;
+                    }
+                }
+                .gradient {
+                    margin-left: 10px;
+                }
+            }
+            &.rise {
+                .num {
+                    color: #ea0000;
+                }
+                .zhi {
+                    color: #ea0000;
+                    .price, .gradient {
+                        i {
+                            background-image: url(../images/stock.png);
+                            background-position: -30px 0;
+                        }
+                    }
+                }
+            }
+            &.drop {
+                .num {
+                    color: #00b857;
+                }
+                .zhi {
+                    color: #00b857;
+                    .price, .gradient {
+                        i {
+                            background-image: url(../images/stock.png);
+                            background-position: -24px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mod_stock_self {
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+    &.border_shadow {
+        border-bottom: 1px #e1e1e1 solid;
+    }
+    .stock_list,
+    .sortable {
+        position: relative;
+        &.btnListHide {
+            .stock_member {
+                .deletBtn, .dragBtn {
+                    display: none;
+                }
+                .stock_deD {
+                    width: 85%;
+                    margin-left: 30px;
+                }
+            }
+        }
+        .stock_member {
+            .stock_deD {
+                width: 85%;
+                margin-left: 30px;
+            }
+        }
+    }
+    .noCount {
+        height: 180px;
+        text-align: center;
+        p {
+            line-height: 20px;
+            color: #999;
+            font-size: 12px;
+            height: 40px;
+            padding: 70px 0 0 0;
+        }
+    }
+}
+
+.stock_member {
+    position: relative;
+    z-index: 2;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    width: 100%;
+    border-bottom: 1px #e1e1e1 solid;
+    .stock_deD {
+        width: 85%;
+        margin-left: 30px;
+    }
+    &.hightLight {
+        background-color: #fde1e1;
+        &:hover {
+            background-color: #fde1e1;
+        }
+    }
+    &.drags {
+        background-color: #D4E6FB;
+        &:hover {
+            background-color: #D4E6FB;
+        }
+    }
+    &:last-of-type {
+        border-bottom: none;
+    }
+    &:hover {
+        background-color: #ecf5ff;
+    }
+    .deletBtn,
+    .dragBtn {
+        position: absolute;
+        z-index: 3;
+        i {
+            background: url(../images/stock.png) no-repeat;
+            display: block;
+            position: absolute;
+            z-index: 4;
+        }
+    }
+    .deletBtn {
+        width: 30px;
+        height: 34px;
+        border-bottom: 1px #fff solid;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+        i {
+            width: 11px;
+            height: 11px;
+            left: 9px;
+            top: 12px;
+            background-position: -36px 0;
+        }
+    }
+    .dragBtn {
+        width: 35px;
+        height: 35px;
+        right: 0;
+        top: 0;
+        cursor: move;
+        i {
+            width: 15px;
+            height: 10px;
+            right: 10px;
+            top: 13px;
+            background-position: -47px 0;
+        }
+    }
+    .number,
+    .name,
+    .price,
+    .gradient {
+        float: left;
+        display: inline-block;
+        height: 34px;
+        overflow: hidden;
+    }
+    .number {
+        color: #333;
+        font-size: 12px;
+        width: 20%;
+        padding-left: 8px;
+    }
+    .name {
+        color: #333;
+        font-size: 12px;
+        width: 35%;
+    }
+    .price {
+        font-size: 12px;
+        width: 20%;
+    }
+    .gradient {
+        width: 20%;
+        font-size: 12px;
+        text-align: center;
+        .rate {
+            display: inline-block;
+            border-radius: 2px;
+            height: 16px;
+            padding: 0 5px;
+            line-height: 16px;
+            margin: 9px 0;
+        }
+    }
+    &.rise {
+        .price {
+            color: #ea0000;
+        }
+        .gradient {
+            color: #fff;
+            .rate {
+                background-color: #ea0000;
+            }
+        }
+    }
+    &.drop {
+        .price {
+            color: #00b857;
+        }
+        .gradient {
+            color: #fff;
+            .rate {
+                background-color: #00b857;
+            }
+        }
+    }
+}
+
+.mod_stock_detail {
+    height: 329px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px #d0d0d0 solid;
+    .delet {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        width: 10px;
+        height: 10px;
+        background: url(../images/stock.png) no-repeat -108px 5px;
+        right: 5px;
+        top: 5px;
+        padding: 5px;
+    }
+    .exponent {
+        .exponent_number, .zhong {
+            float: left;
+            height: 28px;
+            margin: 20px 0 15px 0;
+        }
+        .exponent_number {
+            line-height: 28px;
+            font-weight: bolder;
+            font-size: 30px;
+            min-width: 135px;
+            width: 40%;
+            border-right: 1px #e1e1e1 solid;
+            text-align: center;
+        }
+        .zhong {
+            .calc(~"100% - 40% - 1px -5px");
+            .name {
+                color: #333;
+                font-size: 14px;
+                display: block;
+                width: 100%;
+                margin-left: 5px;
+            }
+            .price,
+            .gradient,
+            .times {
+                font-size: 12px;
+            }
+            .price {
+                margin-left: 5px;
+            }
+            .price,
+            .gradient {
+                i {
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    height: 8px;
+                    display: inline-block;
+                    width: 6px;
+                    margin-right: 5px;
+                }
+                b {
+                    font-weight: normal;
+                }
+            }
+            .gradient {
+                margin-left: 10px;
+            }
+            .times {
+                color: #666;
+                margin-left: 10px;
+            }
+        }
+        &.rise {
+            .exponent_number {
+                color: #ea0000;
+            }
+            .zhong {
+                color: #ea0000;
+                .price, .gradient {
+                    i {
+                        background-image: url(../images/stock.png);
+                        background-position: -30px 0;
+                    }
+                }
+            }
+        }
+        &.drop {
+            .exponent_number {
+                color: #00b857;
+            }
+            .zhong {
+                color: #00b857;
+                .price, .gradient {
+                    i {
+                        background-image: url(../images/stock.png);
+                        background-position: -24px 0;
+                    }
+                }
+            }
+        }
+        .performance {
+            float: left;
+            display: block;
+            width: 100%;
+            .summary {
+                background-color: #f8f8f8;
+                border-bottom: 1px #e1e1e1 solid;
+                height: 40px;
+                padding: 2px 0;
+                li {
+                    float: left;
+                    line-height: 20px;
+                    width: 30%;
+                    .calc(~"30%-1px");
+                    &:nth-of-type(3n) {
+                        width: 39%;
+                    }
+                    label {
+                        color: #333;
+                        font-size: 12px;
+                        margin-left: 25px;
+                    }
+                    span {
+                        font-size: 12px;
+                    }
+                    .now_open,
+                    .highest,
+                    .volume,
+                    .zuo_shou,
+                    .lowest,
+                    .turnover {
+                        &.rise {
+                            color: #ea0000;
+                        }
+                        &.drop {
+                            color: #00b857;
+                        }
+                    }
+                }
+            }
+            .stockImg {
+                display: block;
+                width: 400px;
+                margin: 10px auto 0 auto;
+            }
+        }
+    }
+}
+
+.mod_copyRight {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    /* border-top: 1px #d0d0d0 solid; */
+    
+    border-bottom: 1px #d0d0d0 solid;
+    position: relative;
+    z-index: 3;
+    /* float: left; */
+    /* width: 100%; */
+    
+    background-color: #fff;
+    .guan {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        right: 15px;
+        top: 8px;
+        background: url(../images/stock.png) no-repeat -94px 0;
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.hide {
+    display: none;
+}

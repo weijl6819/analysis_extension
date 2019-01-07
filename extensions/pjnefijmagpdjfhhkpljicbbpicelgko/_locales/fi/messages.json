@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Käytä puheentunnistus tahansa tekstikenttään tahansa verkkosivuilla"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

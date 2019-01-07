@@ -1,0 +1,44 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+#media {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+video {
+  height: 240px;
+  width: 320px;
+  margin: 8px;
+  border: dotted 1px white;
+  background-color: black;
+}
+
+#console {
+  height: 100%;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+#term {
+  background-color: black;
+  border: dotted 1px white;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.terminal, .terminal-output, .terminal-output div {
+  user-select: text;
+}

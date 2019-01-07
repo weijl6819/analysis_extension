@@ -1,0 +1,10 @@
+﻿{
+  "appName": {
+    "message": "Aufleuchten",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "Light Up ist ein einfaches dennoch aber sehr süchtig machenden Puzzle-Spiel. Schließen Sie passenden Farben mit Rohr.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

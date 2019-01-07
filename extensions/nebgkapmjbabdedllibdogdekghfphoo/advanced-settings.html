@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Advanced Extension Settings :: FreePriceAlerts.com</title>
+    <script type="text/javascript" src="shared/jquery-1.7.js"></script>
+    <script type="text/javascript" src="advanced-settings.js"></script>
+  </head>
+  <body>
+
+    <h1>Advanced Extension Settings :: FreePriceAlerts.com</h1>
+
+    <div id="warning" class="container">
+      <p><strong>Warning:</strong> Advanced settings for the FreePriceAlerts.com extension, edit at your own risk.</p>
+      <p><a id="understandButton" href="#">I understand</a></p>
+    </div>
+
+    <div id="content" class="container" style="display: none">
+      <form>
+
+        <div class="form-row">
+          <label for="api.host">api.host</label>
+          <textarea  name="api.host" id="api.host"></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="fe.host">fe.host</label>
+          <input type="text" name="fe.host" id="fe.host" />
+        </div>
+
+        <div class="form-row">
+          <label for="distributionPartner">distributionPartner</label>
+          <input type="text" name="distributionPartner" id="distributionPartner" />
+        </div>
+
+        <div class="form-row">
+          <label for="debug">debug</label>
+          <input type="checkbox" name="debug" id="debug" />
+        </div>
+
+        <div class="form-row">
+          <label for="confirm_search">confirm_search</label>
+          <input type="checkbox" name="confirm_search" id="confirm_search" />
+        </div>
+
+        <div class="form-row indent">
+          <p>The <code>confirm_search</code> setting will show a modal alert before the extension does a search.</p>
+        </div>
+
+        <div class="form-row">
+          <label for="avoid_hash_in_tests">avoid_hash_in_tests</label>
+          <input type="checkbox" name="avoid_hash_in_tests" id="avoid_hash_in_tests" />
+        </div>
+
+        <div class="form-row indent">
+          <p class="small">The <code>avoid_hash_in_tests</code> setting will prevent the extension from adding <code>#freepricealerts-&lt;TOKEN&gt;</code> to the URL when running tests and will always run the in-memory PDL if one is loaded.</p>
+        </div>
+
+        <div class="form-row">
+          <p class="label">uid</p>
+          <p class="setting" name="uid" id="uid"></p>
+        </div>
+
+        <div class="form-row"><input type="submit" value="SAVE" /></div>
+
+      </form>
+    </div>
+
+  </body>
+</html>

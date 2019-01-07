@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40">
+    <g fill="none" fill-rule="evenodd" transform="translate(1)">
+        <ellipse cx="22.5" cy="17.716" fill="#FFA23C" fill-opacity=".6" fill-rule="nonzero" rx="17.5" ry="17.716"/>
+        <path stroke="#323E53" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 27.84v7.086"/>
+        <ellipse cx="18.002" cy="38.467" fill="#323E53" fill-rule="nonzero" rx="1.5" ry="1.519" transform="rotate(-30 18.002 38.467)"/>
+        <path stroke="#323E53" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 27.84v7.086h-3"/>
+        <ellipse cx="6.502" cy="34.928" fill="#323E53" fill-rule="nonzero" rx="1.5" ry="1.519" transform="rotate(-30 6.502 34.928)"/>
+        <path stroke="#323E53" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 27.84v7.086h3"/>
+        <ellipse cx="29.502" cy="34.925" fill="#323E53" fill-rule="nonzero" rx="1.5" ry="1.519" transform="rotate(-60 29.502 34.925)"/>
+        <path stroke="#323E53" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 27.84h-5m-4.545-.087l-1.135-.045a6.672 6.672 0 0 1-6.132-3.204 6.85 6.85 0 0 1-.08-6.985 6.676 6.676 0 0 1 6.057-3.346c1.267-4.157 4.863-7.148 9.137-7.599 4.274-.45 8.402 1.725 10.488 5.529a9.11 9.11 0 0 1 .83-.04c4.063-.078 7.492 3.042 7.846 7.14.354 4.1-2.486 7.775-6.501 8.414l-1.415.162"/>
+        <path stroke="#323E53" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.92 19.862c.018-2.1.86-4.106 2.34-5.577a7.77 7.77 0 0 1 5.55-2.268"/>
+    </g>
+</svg>

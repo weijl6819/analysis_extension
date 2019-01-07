@@ -1,0 +1,38 @@
+/*-----------------------------------------------------------
+style position of images for starting and stopping slideshow
+and showing next image
+-----------------------------------------------------------*/
+
+#images{
+  position: absolute;
+  left:9px;
+  bottom: 24px;
+  z-index: 999;
+}
+#next_span{
+  position: absolute;
+  display: none;
+  left: 65px;
+  bottom:22px;
+  z-index:999;
+  color:white;
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 14px;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.8);
+  padding: 3px;
+}
+#images:hover + #next_span{
+  display:inline;
+}
+.navigation{
+  z-index: 1001;
+  cursor: pointer;
+  color: white;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+#next{
+  margin-left: 30px;
+}

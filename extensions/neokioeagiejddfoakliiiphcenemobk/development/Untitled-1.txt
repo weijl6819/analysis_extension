@@ -1,0 +1,13 @@
+curl -H "Content-Type: application/json" -X POST -d \
+    '{
+       "type": "product.import",
+       "data": {
+         "myshopify_domain": "yenhn.myshopify.com",
+         "access_token": "sddfdf",
+         "shop_id": "welcome-email"
+       },
+       "options" : {
+         "attempts": 5,
+         "priority": "high"
+       }
+     }' http://localhost:3000/job 

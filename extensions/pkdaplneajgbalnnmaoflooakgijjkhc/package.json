@@ -1,0 +1,28 @@
+{
+    "author": "",
+    "bugs": {
+        "url": "https://github.com/lifesize/Lifesize.sky.webclient.plugins.all/issues"
+    },
+    "dependencies": {
+        "gulp": "^3.9.1",
+        "gulp-if": "^2.0.1",
+        "gulp-json-editor": "^2.2.1",
+        "gulp-replace": "^0.5.4",
+        "yargs": "^4.8.1"
+    },
+    "description": "Lifesize.sky.webclient.plugins.all ================================== To test: Download the repository unzipped into a folder. Use chrome://extensions page and choose 'load unpacked extension'. Point to the directory of the downloaded repository.",
+    "homepage": "https://github.com/lifesize/Lifesize.sky.webclient.plugins.all#readme",
+    "license": "ISC",
+    "main": "js/content-script.js",
+    "name": "lifesize.sky.webclient.plugins.all",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lifesize/Lifesize.sky.webclient.plugins.all.git"
+    },
+    "scripts": {
+        "build:beta": "npm i && gulp build --beta",
+        "build:dev": "npm i && gulp build --dev",
+        "build:production": "npm i && gulp build --production"
+    },
+    "version": "1.7.52"
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="/app/options.js"></script>
+  </head>
+
+  <body id="container">
+    <h4 id="loading" class="title container narrow">
+      <i class="glyphicon glyphicon-glass"></i>
+      <span>Loading...</span>
+    </h4>
+
+    <div id="main" class="container narrow">
+      <form class="state-control form-horizontal" role="form">
+        <div class="form-group">
+          <label for="host" class="col-sm-2 control-label">
+            Host
+          </label>
+          <div class="col-sm-10">
+            <input id="host" type="text" class="form-control" disabled>
+          </div>
+        </div>
+
+        <div class="col-sm-offset-2 col-sm-10">
+          <div class="checkbox">
+            <label class="control-label">
+              <input id="showRelated" type="checkbox"> Include results from my history when searching Google
+            </label>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <div id="hints" class="container narrow">
+      <p class="options-hint">
+        Click the <img width="28" src="/icons/star-empty-38.png"/> in the URL bar to bookmark, tag, and add notes.
+      </p>
+      <p class="options-hint cloud-only">
+        Type <code>f &lt;query term&gt;</code> in the URL bar to search.
+      </p>
+      <p class="options-hint">
+        Visit <a data-ref="host-link" href="http://app.fetching.io">Fetching</a> to search, manage and filter your content.
+      </p>
+      <p class="options-hint">
+        Return to this page by visiting <code>Options</code> -&gt; <code>Extensions</code>.
+      </p>
+      <p class="options-hint">
+        This extension is disabled in incognito mode.
+      </p>
+      <p class="options-hint">
+        If you need help or have suggestions please visit our <a href="http://support.fetching.io">support center</a>.
+      </p>
+    </div>
+
+  </body>
+</html>

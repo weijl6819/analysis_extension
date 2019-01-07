@@ -1,0 +1,856 @@
+:root {
+	--boxWidth: 23vw;
+	--boxMarginRight: 10px;
+}
+
+body {
+	/** font-size: 15px !important; we're on desktop, okay? */
+	overflow-y: unset !important; /** de-opts scrolling */
+}
+
+/*----------  Performance  ----------*/
+/** Outer parent of the image */
+header + div,
+video {
+	contain: layout style;
+	z-index: 1;
+}
+
+form > textarea,
+header > a {
+	contain: strict;
+}
+
+/** Improve picture quality */
+div > img {
+	contain: layout style;
+	/** Moves the img over the "prevent right click copy"-element */
+	z-index: 1;
+	/* autoprefixer: off */
+	image-rendering: -webkit-optimize-contrast;
+}
+
+/** Likes & comments amount */
+a:hover > div + div {
+	z-index: 0;
+}
+
+img + video {
+	z-index: 2;
+}
+
+/** Remove width limit */
+main > section {
+	flex-direction: column !important;
+	max-width: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	z-index: 1;
+}
+
+/** Make the flex box layout row instead of column */
+main > section > div:not(#rcr-anchor) > div:not([class]) > div {
+	flex-direction: row !important;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 10px !important;
+	contain: layout style;
+}
+
+/**
+ * Previous DOM structure
+ * @deprecated @TODO
+ */
+main
+> section
+> div:not(#rcr-anchor)
+> div:not([class])
+> div:first-child
+> div {
+	flex-direction: row !important;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 10px !important;
+	contain: layout style;
+}
+
+/** Make boxes equal in height and width */
+main > section div > article {
+	width: var(--boxWidth) !important;
+	min-width: var(--boxWidth) !important;
+	max-width: var(--boxWidth) !important;
+	height: auto;
+	max-height: 70rem;
+	margin-right: var(--boxMarginRight) !important;
+	margin-bottom: 10px !important;
+	contain: layout style;
+	z-index: 0;
+}
+
+/** Remove stories thumb focus outline */
+canvas + span:focus {
+	outline: none;
+}
+
+/*=============================================
+						Slimmer Post Header
+=============================================*/
+body > div > div[role='dialog'] article > header,
+#react-root:not(.profile):not(.explore) article > header {
+	height: 53px !important;
+	padding: 16px 8px !important;
+	contain: strict;
+}
+
+#react-root.post.post.post article > header {
+	padding: 5px !important;
+}
+
+body > div > div[role='dialog'] article > header,
+#react-root.post article > header {
+	right: 8px;
+	width: 305px;
+}
+
+body > div > div[role='dialog'] article > header {
+	padding: 16px 4px !important;
+}
+
+div > main:first-child {
+	margin-top: 10px !important;
+}
+
+div > main:only-child {
+	flex-grow: 1;
+}
+
+body > div > div[role='dialog'] header + div + div,
+.post header + div + div {
+	top: 55px !important;
+}
+
+/*----------  Improve new post layout  ----------*/
+/** Row layout */
+body > div > div[role='dialog'] header + div + div,
+#react-root:not(.profile):not(.stories) header + div + div {
+	/* @TODO: Min Chrome v60 */
+	display: grid;
+	flex: auto;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: normal;
+	height: max-content;
+	max-height: 100%;
+	padding: 8px 12px 0 !important;
+	contain: layout style;
+	grid-template:
+		'date likes' min-content
+		'c c' 1fr
+		'buttons comment' 56px
+		/ auto 2fr;
+}
+
+body > div > div[role='dialog'] header + div + div,
+#react-root.post.post.post header + div + div {
+	height: auto !important;
+	padding: 0 8px 0 24px !important;
+
+	grid-template:
+		'date likes' min-content
+		'c c' 1fr
+		'buttons comment' 56px
+		/ auto 2fr;
+}
+
+/** Views / likes */
+div > section + section {
+	/* @todo: Remove flex */
+	flex: 999 1 50%;
+	align-self: flex-start;
+
+	order: 1 !important;
+	max-width: 100%;
+	text-align: right;
+	grid-area: likes;
+}
+
+/* Liker's Avatars */
+div > section + section > div {
+	flex: 0;
+}
+
+div > section + section > div > div {
+	justify-content: flex-end !important;
+}
+
+/** Posted date */
+div > section + div + div {
+	flex: 1 1 auto;
+	/* higher than views / likes to push it to the right */
+	order: 0 !important;
+	margin-bottom: 4px !important;
+	grid-area: date;
+}
+
+/** Larger timestamp */
+div > a > time {
+	font-size: 14px !important;
+	text-transform: none;
+}
+
+/** Grow comments */
+body
+> div
+> div[role='dialog']
+header
++ div
++ div
+> div:first-of-type:not(:only-child),
+#react-root:not(.stories)
+header
++ div
++ div
+> div:first-of-type:not(:only-child) {
+	flex-grow: 1;
+	order: 2 !important;
+	margin: 0 !important;
+	padding: 0 0 5px !important;
+
+	contain: content;
+	overflow-y: auto;
+	overflow-x: hidden;
+	grid-area: c;
+}
+
+/** Heart / Comment / Save */
+header + div + div > section:first-child {
+	align-self: flex-end;
+	order: 4 !important;
+	width: auto;
+	height: 56px;
+	margin-top: 0 !important;
+	margin-right: 0 !important;
+	border-top: 1px solid #efefef;
+	contain: content;
+	grid-area: buttons;
+}
+
+/** Icons */
+article > div > section:first-child > span {
+	display: flex;
+}
+
+/** Hide useless comment icon */
+section > a[role='button']:first-child + a[role='button']:not([aria-disabled]),
+article > div > section > span:first-child + span {
+	display: none;
+}
+
+/** Hide useless share icon */
+article > div > section > span:first-child + span + span:not(:last-child) {
+	display: none;
+}
+
+/** Save button */
+article > div > section:first-child > span:last-child {
+	margin-left: -8px;
+}
+
+/** Heart */
+article > div > section:first-child > span:first-child {
+}
+
+/** "Add comment" */
+article > div > section:last-child {
+	flex: 1;
+	align-self: flex-end;
+	order: 5;
+	width: auto;
+	height: 56px;
+	margin: 0;
+	contain: strict;
+	grid-area: comment;
+}
+
+/** Comments */
+ul > li > div > div > div {
+	user-select: auto;
+}
+
+/*=============================================
+								Media Controls
+=============================================*/
+/** Always show media controls when playing */
+video::-webkit-media-controls-overlay-enclosure,
+video[loop]::-webkit-media-controls-enclosure,
+video[loop]::-webkit-media-controls,
+video::-internal-media-controls-overflow-menu-list {
+	z-index: 5;
+}
+
+video[loop] {
+	z-index: 4;
+}
+
+video::-webkit-media-controls {
+	display: flex !important;
+	contain: strict;
+	z-index: 1;
+}
+
+/** @TODO: Replace IG's play button with the native one once its been rolled out */
+body
+> div
+> div[role='dialog']
+video:not([loop])::-webkit-media-controls-overlay-play-button,
+#react-root:not(.stories)
+video:not([loop])::-webkit-media-controls-overlay-play-button {
+	display: none;
+}
+
+/** Tags not showing issues/#17 */
+div > div + a + div,
+div > div + [style][href],
+div > div + [style][href] ~ a,
+
+/** Sprites */
+/*#react-root:not(.profile) div[role='button'] + div, /* Heart Animation */
+.coreSpriteSidecarIconLarge, /* @TODO: Update me */
+div[role='button'] ~ a, /* Multiple dots arrows */
+div[role='button'] ~ a ~ div, /* Multiple videos/images dots */
+div[role='button'] > div[role='dialog'] > div + div > div + div > span, /* Tiny video icon */
+div[role='button'] > div[role='dialog'] > div + div > div + div + a, /* Big video icon */
+.coreSpriteLikeAnimationHeart,
+.coreSpriteSidecarIconLarge,
+.coreSpriteUserTagIndicator,
+.coreSpriteVideoIconLarge,
+.coreSpriteRightChevron,
+.videoSpritePlayButton,
+.coreSpriteLeftChevron {
+	z-index: 3;
+}
+
+div[role='button']:hover ~ a {
+	opacity: 1;
+}
+
+div[role='button'] > div {
+	contain: layout style;
+}
+
+/** Multiple dots */
+.home
+article
+> div
+> div[role='button']
+> div
+> div
+> div
++ div
++ div:not(:last-child) {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.home
+article
+> div
+> div[role='button']
+> div:not([role='dialog'])
+> div
+> div
++ div
++ div:not(:last-child)
+> div {
+	margin-top: 10px;
+	margin-bottom: -6px;
+}
+
+/*=============================================
+						Mark Videos in the Feed
+=============================================*/
+/** Outer div */
+.home
+div[role='button']
+> div[role='dialog']
+> div
+> div:first-child
++ div:nth-child(2) {
+	contain: content;
+	z-index: 3;
+}
+
+/** Small play button */
+.home
+div[role='button']
+> div[role='dialog']
+> div
+> div:first-child
++ div:nth-child(2)
+> div
++ div {
+	opacity: 1 !important;
+}
+
+.home
+div[role='button']
+> div[role='dialog']
+> div
+> div:first-child
++ div:nth-child(2)
+> div
++ div
+> span {
+	right: initial;
+	left: 0;
+}
+
+/** Hide "Click video for audio" */
+.home
+div[role='button']
+> div[role='dialog']
+> div
+> div:first-child
++ div:nth-child(2)
+> div:first-child {
+	display: none;
+}
+
+/*=============================================
+										Nav Bar
+=============================================*/
+section > nav,
+section > nav > div,
+section > nav > div:first-child {
+	width: 0;
+}
+
+nav > div + div > div {
+	contain: layout style; /** See issues#16 */
+	z-index: 9 !important;
+	/*will-change: transform; composited already anyway */
+}
+
+/** Hide "Open in App" */
+nav > div > div > div:last-of-type:not(:only-child) {
+	display: none;
+}
+
+/** Search arrow */
+nav input + span + div + div > div:first-of-type {
+	border: solid 11px #e6e6e6;
+}
+
+/*=============================================
+										Stories
+=============================================*/
+/* Fix main feed */
+main > section > div:first-child:not(#rcr-anchor) {
+	max-width: none;
+	margin-right: 0;
+	float: none;
+	contain: layout style;
+}
+
+/* Sidebar container */
+main > section > div:first-child:not(#rcr-anchor) ~ div:last-child {
+	top: 50px !important;
+	left: unset !important;
+	height: auto !important;
+	margin-bottom: 0;
+	padding-top: 45px;
+	padding-bottom: 45px;
+	transform: translateX(80%);
+	transition: transform 300ms ease-out, opacity 300ms ease-out;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background-color: white;
+	box-shadow: 0 0 8px 0 #bdbdbd;
+	opacity: 0.8;
+	contain: content;
+	z-index: 10;
+}
+
+main > section > div:first-child:not(#rcr-anchor) ~ div:last-child:hover {
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+/* Remove the layer of the empty div */
+main > section > div:first-child:not(#rcr-anchor) + div:empty {
+	width: 0;
+	contain: strict;
+	z-index: 9;
+}
+
+/* Box container */
+main > section > div:first-child:not(#rcr-anchor) ~ div:last-child > div {
+	border-right: 0;
+	border-left: 0;
+	border-radius: 0;
+}
+
+main
+> section
+> div:first-child:not(#rcr-anchor)
+~ div:last-child:not(:hover)
+> div
+> div,
+main
+> section
+> div:first-child:not(#rcr-anchor)
+~ div:last-child:not(:hover)
+> div
+> div
+> div
+> div
+> div
+> div {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+main
+> section
+> div:first-child:not(#rcr-anchor)
+~ div:last-child:not(:hover)
+> div
+> div
+> div {
+	margin-right: 7px;
+	margin-left: 7px;
+}
+
+/* Only story box */
+main
+> section
+> div:first-child:not(#rcr-anchor)
+~ div:last-child
+> div:first-child
++ div
+> div
++ div
+> div
+> div {
+	height: 43vh !important;
+}
+
+/* Copyright etc */
+main
+> section
+> div:first-child:not(#rcr-anchor)
+~ div:last-child
+> div:last-child {
+	padding-right: 17px;
+	padding-bottom: 0;
+	padding-left: 17px;
+}
+
+.ige_hideOwnerStory,
+.ige_hideSuggestions {
+	display: none;
+}
+
+/*=============================================
+										Spinner
+=============================================*/
+/** Profile spinner */
+.home
+main
+> section
+> div:not(#rcr-anchor):first-child
+> div:last-child:not(:first-child) {
+	/* 	order: 3;
+	height: 60px;
+	margin: 10px 0;
+	contain: strict;
+	z-index: 2; */
+}
+
+.home
+main
+> section
+> div:not(#rcr-anchor):first-child
+> div:last-child:not(:first-child)
+> div {
+	/* 	top: 30%; */
+}
+
+/*=============================================
+										Toast
+=============================================*/
+section > footer + div {
+	contain: content;
+}
+
+/*=============================================
+										Post
+=============================================*/
+/** Enlargen modal */
+body > div > div[role='dialog'] article,
+.post article {
+	min-height: 50vh;
+	max-height: 90vh;
+	margin-bottom: 0;
+	contain: layout style;
+}
+
+body > div > div[role='dialog'] > div > div {
+	/* max-width: 52vh !important; */
+	/* max-width: 935px; /* container size */
+}
+
+/** Arrow container */
+body > div > div[role='dialog'] > div:first-child > div > div {
+	/* max-width: 52vh !important; */
+}
+
+body > div > div[role='dialog'] article > header + div {
+	margin-right: 320px !important;
+}
+
+/** Center the image */
+body > div > div[role='dialog'] article,
+#react-root:not(.home) article {
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.post > section > main {
+	justify-content: center;
+}
+
+/** Sometimes IG sets a max-width on elements */
+.post > section > main > div {
+	flex-grow: 0;
+	max-width: 51vw !important;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+
+.post > section > main > div > div {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+/** More image, less wasted space */
+.post header + div {
+	margin-right: 322px !important;
+}
+
+/*=============================================
+									Profile
+=============================================*/
+/** Show likes and so on on hover */
+.profile a:hover > div:last-child {
+	z-index: 3;
+}
+
+.profile section > main > div > * {
+	margin-bottom: 20px;
+}
+
+/*=============================================
+									Footer
+=============================================*/
+footer > div {
+	max-width: fit-content !important;
+	padding: 0 !important;
+}
+
+footer > div > nav {
+	margin: auto;
+}
+
+/*=============================================
+									Extended
+=============================================*/
+.extended--btn {
+	transform: translateY(1px) scale(2);
+	text-shadow: 0 0 2px #2196f3;
+}
+
+/** Extended Marker */
+.extended--btn__new::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	margin: 0 auto;
+	border-radius: 2px;
+	background: #03a9f4;
+	content: '';
+}
+
+.ige_watch::before,
+.ige_watched::before {
+	display: inline-block;
+	position: absolute;
+	padding: 0.25em 0.4em;
+	transform: translateY(-15px);
+	border-radius: 0.25rem;
+	background-color: #6c757d;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	content: 'Watch';
+	cursor: pointer;
+	vertical-align: baseline;
+}
+
+.ige_watch::before {
+	background-color: #007bff;
+}
+
+.ige_watched::before {
+	content: 'Watching ' attr(data-ige-watched);
+}
+
+/*=============================================
+										Options
+=============================================*/
+
+/*----------  Picture Only Mode  ----------*/
+.ige_picturesOnly:not(.profile):not(.explore) article > header {
+	height: 40px !important;
+}
+
+.ige_picturesOnly:not(.profile):not(.explore)
+article
+> header
+> div:last-child
+> div:last-child {
+	display: flex;
+}
+
+.ige_picturesOnly:not(.stories)
+header
++ div
++ div
+> div:first-of-type:not(:only-child) {
+	height: 0;
+}
+
+/* Hide comments */
+.ige_picturesOnly header + div + div > div:first-of-type:not(:only-child) > ul {
+	display: none;
+}
+
+/*----------  Hide Stories  ----------*/
+.ige_hideStories
+main
+> section
+> div:first-child:not(#rcr-anchor)
+~ div:last-child {
+	display: none;
+}
+
+/*----------  NoSpaceBetweenPosts  ----------*/
+.ige_noSpaceBetweenPosts main > section div > article {
+	margin: 0 !important;
+	border-bottom: 0 !important;
+	border-radius: 0 !important;
+}
+
+.ige_noSpaceBetweenPosts main > section div > article:not(:nth-child(4n)) {
+	border-right: 0 !important;
+}
+
+/* @TODO: Make this work for 2 row layout too */
+.ige_noSpaceBetweenPosts
+main
+> section
+div
+> article:not(:first-child):not(:nth-child(5n)) {
+	border-left: 0 !important;
+}
+
+.ige_noSpaceBetweenPosts
+main
+> section
+> div:not(#rcr-anchor)
+> div:not([class])
+> div {
+	justify-content: center;
+}
+
+/*=============================================
+						"Chrome IG Story" fixes
+=============================================*/
+#rcr-anchor {
+	justify-content: flex-start;
+	margin-bottom: -20px;
+	overflow: auto;
+	contain: content;
+}
+
+#rcr-anchor > div {
+	margin-bottom: 0;
+}
+
+/*=============================================
+									Media Querys
+=============================================*/
+@media (max-width: 1366px) {
+	:root {
+	}
+
+	main > section > div:not(#rcr-anchor) > div:not([class]) > div {
+		justify-content: space-evenly;
+	}
+
+	.post > section > main > div {
+		max-width: 75vw !important;
+	}
+}
+
+/*=============================================
+								Mac OS Scrollbar
+=============================================*/
+::-webkit-scrollbar {
+	width: 9px;
+	border-radius: 100px;
+	background-color: rgba(0, 0, 0, 0);
+	contain: strict;
+	/*transition: background-color 1s linear;*/
+}
+
+::-webkit-scrollbar:horizontal {
+	height: 9px;
+}
+
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+	background-color: rgba(0, 0, 0, 0.07);
+}
+
+/* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+::-webkit-scrollbar-thumb {
+	/*transition: background-color 1s linear;*/
+}
+
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+	min-height: 30px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 100px;
+	background-color: #afafaf;
+	background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:vertical:active,
+::-webkit-scrollbar-thumb:horizontal:active {
+	border-radius: 100px;
+	background-color: #727272; /* Some darker color when you click it */
+}

@@ -1,0 +1,273 @@
+{
+  "extName": {
+    "message": "Ali Orders",
+    "description": "Extension name."
+  },
+  "extDescription": {
+    "message": "Ali Orders - Automate your dropshipping",
+    "description": "Extension description."
+  },
+  "extAuthor": {
+    "message": "FireApps fireapps@youngworld.vn",
+    "description": "Extension author."
+  },
+  "variantExistButNoLonger": {
+    "message": "Can not select SKU button. Check your order details.",
+    "description": "Variant still displayed on web but can not select"
+  },
+  "variantNoLonger": {
+    "message": "This item is no longer available!",
+    "description": "This item no longer avialabe, diff with product not exists"
+  },
+  "pageLoading": {
+    "message": "Waiting for the page load...",
+    "description": "Waiting for the page load..."
+  },
+  "selectSku": {
+    "message": "Selecting SKU...",
+    "description": "Select SKU"
+  },
+  "waitingAddToCartProduct": {
+    "message": "Waiting add product to cart..."
+  },
+  "productAddToCart": {
+    "message": "Product added to cart..."
+  },
+  "submitCart": {
+    "message": "Submitting cart...",
+    "description": "Go to shopping cart and click button buy all"
+  },
+  "initCustomerInfo": {
+    "message": "Initialising form data...",
+    "description": "Prepare customer information, load from chrome storage sync"
+  },
+  "clearOldCustomerInfo": {
+    "message": "Clear old data...",
+    "description": "Click button edit address if exists, else filling new data"
+  },
+  "fillingSection": {
+    "message": "Filling section $section$",
+    "description": "Filling input in address form",
+    "placeholders": {
+      "section": {
+        "content": "$1",
+        "example": "Fullname"
+      }
+    }
+  },
+  "errorFillingCustomer": {
+    "message":
+      "Ali Orders can't fulfill shipping address info. Please fill this form manually.",
+    "description": "Some input can not filling"
+  },
+  "savingForm": {
+    "message": "Saving form...",
+    "description": "Click save this address"
+  },
+  "shippingAndNoteFulfilled": {
+    "message": "Shipping selected and form filling complete."
+  },
+  "shippingPriceOverflow": {
+    "message":
+      "Warning: shipping price higher than your setting, check it before pay."
+  },
+  "totalMoneySpend": {
+    "message": "Total money you earn: ",
+    "description": "Not total money spend before pay confirm"
+  },
+  "errorFilterCurrentOrderItem": {
+    "message":
+      "Ali Orders can't choose the product being ordered. Please order manually.",
+    "description":
+      "Message displayed when aliorders_order_items can not filter by apply currentOrder"
+  },
+  "shoppingCartEmpty": {
+    "message": "The shopping cart is empty!"
+  },
+  "globalError": {
+    "message": "Sorry! An error occurs, please contact our Customer Support!"
+  },
+  "startingSyncOrder": {
+    "message": "Starting sync Aliexpress order number..."
+  },
+  "syncOrderNumberManual": {
+    "message": "Please go to Order List for manual sync AliExpress orders."
+  },
+  "syncOrderSuccessful": {
+    "message": "Aliexpress order number sync successfully."
+  },
+  "importingProduct": {
+    "message": "Importing product..."
+  },
+  "importingProductError": {
+    "message": "There was an error when importing product. Try again!"
+  },
+  "importedProduct": {
+    "message": "The product was imported successfully!"
+  },
+  "productRemovedSuccess": {
+    "message": "The product was removed successfully!"
+  },
+  "canNotRemoveProduct": {
+    "message": "Sorry! Can not remove this product"
+  },
+  "skusPayloadNotExists": {
+    "message":
+      "Your SKUs doesn't exist, please check your order and try again!"
+  },
+  "sourceProductLinEmpty": {
+    "message":
+      "Your product link is empty. Please check your orders or contact to support"
+  },
+  "cannotFillCustomer": {
+    "message":
+      "Can't fill customer address, please check the address and try again or contact Support."
+  },
+  "cannotFillCountry": {
+    "message":
+      "Can't fill COUNTRY, please check your address and try again or contact Support."
+  },
+  "cannotFillProvince": {
+    "message":
+      "Can't fill PROVINCE, please check your address and try again or contact Support."
+  },
+  "cannotFillCity": {
+    "message":
+      "Can't fill CITY, please check your address and try again or contact Support."
+  },
+  "cannotFillMobiNo": {
+    "message":
+      "Can't fill PHONE NUMBER, please check your address and try again or contact Support."
+  },
+
+  "errorGetShopSetting": {
+    "message": "There was an error while get shop settings."
+  },
+  "aliorders_is_selected_shipping_method": {
+    "message": "Selecting shipping method..."
+  },
+  "fillMessageSupplierError": {
+    "message": "Filling message from supplier errors."
+  },
+
+  "pleaseLoginOberlo": {
+    "message": "Please log in the same account on Oberlo and Ali Orders."
+  },
+  "updateAliExpressLinkSuccess": {
+    "message": "Updated AliExpress link to Ali Orders successfully!"
+  },
+  "productCanNotUpdated": {
+    "message": "Products can't be updated, please contact to Ali Orders Support."
+  },
+  "sorryCouldNotGetProduct": {
+    "message": "Sorry! Could not get product information!"
+  },
+  "sorryCouldNotRetreiveAliExpress": {
+    "message": "Sorry! Could not retrieve AliExpress URL of this product!"
+  },
+  "sorryProductNotAvailable": {
+    "message": "Sorry! This product is not available."
+  },
+  "pleaseContactAliorders": {
+    "message": "Problem found, please contact the Ali Orders Customer Service."
+  },
+  "productNotAvailavleStock": {
+    "message": "This product is no longer available or out of stock! Please check this product manually"
+  },
+  "allProductIntoShoppingCart": {
+    "message": "All products are added to the shopping cart. Going to the shopping cart!"
+  },
+  "beginFulfillment": {
+    "message": "Begin fulfillment..."
+  },
+  "settingDefaultPhoneNumber": {
+    "message": "Please set the default phone number! Fullfillment can't continue without the phone number!<br>You can manual input phone number then press Save button to continue."
+  },
+  "notFulfillmentCity": {
+    "message": "Sorry! The Ali Orders can't fill <b>City</b>, please do it manually."
+  },
+  "shippingNameEmpty": {
+    "message": "Name is empty!"
+  },
+  "shippingAddressEmpty": {
+    "message": "<br>Address is empty!"
+  },
+  "shippingCityEmpty": {
+    "message": "<br>City is empty!"
+  },
+  "shippingCountryCodeEmpty": {
+    "message": "<br>Country code is empty!"
+  },
+  "shippingProvinceEmpty": {
+    "message": "<br>Province is empty!"
+  },
+  "shippingZipEmpty": {
+    "message": "<br>Zip code is empty!"
+  },
+  "shippingPhoneNumberEmpty": {
+    "message": "<br>Phone number is empty, please set default phone number in Ali Orders Settings"
+  },
+  "checkMissingFulfillment": {
+    "message": "<br>Please check missing settings in Ali Orders app!<br> Fullfillment can't continue!"
+  },
+  "addressSaveSuccess": {
+    "message": "Address has been saved successfully!"
+  },
+  "tooMuchAddressYourAccount": {
+    "message": "Sorry! Too much address were created in your account.<br>Please go to <a href='http://ilogisticsaddress.aliexpress.com/addressList.htm' target='_blank'>Aliexpress address list</a> and delete unused address!"
+  },
+  "aliordersNotCompleteFulfillment": {
+    "message": "Sorry! The Ali Orders can't complete fulfillment, please do it manually."
+  },
+  "notFillPhoneNumber": {
+    "message": "Can not fill phone number, you can manual input phone number to continue!"
+  },
+  "thanksUsingAliOrdersFulfillment": {
+    "message": "The process has stop immediately! Thanks for using Ali Orders auto fulfill tool!"
+  },
+  "maximumCostFulfillment": {
+    "message": "Maximum cost"
+  },
+  "selectExistingAddress": {
+    "message": "Auto select the existing address!"
+  },
+  "pleaseContactCustomerSupport": {
+    "message": "Sorry! An error occurs in this step. Please contact our Customer Support!"
+  },
+  "wrongShippingAddress": {
+    "message": "Sorry! There are something wrong with this shipping address.<br>Please manually change this address to continue, or close this tab to cancel this order!"
+  },
+  "fillSupplierNote": {
+    "message": "Filling Supplier note..."
+  },
+  "allOrdersFulfillmentComplete": {
+    "message": "All orders have been fulfilled completely!"
+  },
+  "maximumProductImport": {
+    "message": "You reach maximum product in the Import List (200/200). Please push to shop or remove before import more."
+  },
+  "thisOrderfailed": {
+    "message": "Sorry, this order is failed due to internet connection problems. Return to shopping cart page!"
+  },
+  "pageErrorNotFound": {
+    "message": "Page error found! Return to shopping cart detail page."
+  },
+  "syncOrdersWithAliOrders": {
+    "message": "Sync orders with Ali Orders"
+  },
+  "syncOrdersInPage": {
+    "message": "Sync orders in this page"
+  },
+  "syncAllOrders": {
+    "message": "Sync all orders"
+  },
+  "syncThisOrder": {
+    "message": "Sync this order"
+  },
+  "syncOrdersInProgress": {
+    "message": "Syncing Orders with Ali Orders"
+  },
+  "startSyncAliOrder": {
+    "message": "Syncing Order with Ali Orders"
+  }
+}

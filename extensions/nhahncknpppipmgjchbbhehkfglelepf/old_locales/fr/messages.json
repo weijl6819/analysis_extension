@@ -1,0 +1,11 @@
+{
+   "chrome_extension_description": {
+      "message": "Cette extension met en \u00E9vidence les mots cl\u00E9s de recherche Google dans les pages web. De cette fa\u00E7on vous pouvez trouver instantan\u00E9ment les parties pertinentes de la page. La capture d'\u00E9cran montre le r\u00E9sultat apr\u00E8s Wikipedia la recherche de la \u00ABWorld Peace\u00BB terme avec Google. La fl\u00E8che dans la capture d'\u00E9cran des points au bouton que activer / d\u00E9sactiver cette fonctionnalit\u00E9."
+   },
+   "chrome_extension_name": {
+      "message": "Mots-cl\u00E9s Highlight for Google Search"
+   },
+   "chrome_extension_title": {
+      "message": "Mots-cl\u00E9s Highlight for Google Search"
+   }
+}

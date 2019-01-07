@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fontello.eot?81216584');
+  src: url('../fontello.eot?81216584#iefix') format('embedded-opentype'),url('../fonts/fontello.woff?81216584') format('woff'),url('../fonts/fontello.ttf?81216584') format('truetype'),url('../fonts/.svg?81216584#fontello') format('svg');
+  font-weight: 400;
+  font-style: normal
+}
+
+[class*=" icon-"]:before,[class^=icon-]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.icon-ok:before {
+  content: '\e800'
+}
+
+.icon-cancel:before {
+  content: '\e801'
+}
+
+.icon-comment-empty:before {
+  content: '\e802'
+}
+
+.icon-vote-no-nc:before {
+  content: '\e803'
+}
+
+.icon-vote-yes-nc:before {
+  content: '\e804'
+}
+
+.icon-comment:before {
+  content: '\e805'
+}
+
+.icon-facebook-official:before {
+  content: '\e806'
+}
+
+.icon-spinner:before {
+  content: '\e807'
+}
+
+.icon-arrows-cw:before {
+  content: '\e808'
+}
+
+.icon-left-open:before {
+  content: '\e809'
+}
+
+.icon-vote-no:before {
+  content: '\e80a'
+}
+
+.icon-vote-yes:before {
+  content: '\e80b'
+}
+
+.icon-lg {
+  font-size: 1.33333em;
+  line-height: .75em;
+  vertical-align: -15%
+}
+
+.icon-2x {
+  font-size: 2em
+}
+
+.icon-3x {
+  font-size: 3em
+}
+
+.icon-4x {
+  font-size: 4em
+}
+
+.icon-5x {
+  font-size: 5em
+}
+
+.icon-spin {
+  -webkit-animation: icon-spin 2s infinite linear;
+  animation: icon-spin 2s infinite linear
+}
+
+@-webkit-keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
+}

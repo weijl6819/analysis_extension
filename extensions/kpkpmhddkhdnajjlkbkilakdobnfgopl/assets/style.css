@@ -1,0 +1,83 @@
+@font-face {font-family: 'Roboto'; src: url('roboto.ttf');}
+
+body{padding: 0; margin: 0 !important; top: 0; left: 0; font-family: Roboto !important; }
+button, a, a:hover{outline: none !important; text-decoration: none !important; color: inherit; cursor: pointer;}
+.main{width: 350px; height: auto; display: block; overflow: hidden;}
+.main header{font-family: Klavika; width: 100%; height: 40px; background-color: #ffffff; text-align: center; position: relative; box-shadow: 0px 1px 12px rgba(0,0,0,0.16);}
+.main header img{margin-top: 9px;}
+.main .search-box{position: relative; width: 100%; height: auto; display: block;  overflow: hidden; background-color: #f1f3f5; padding: 18px 15px}
+.main .search-box input{width: 100%; outline: none; font-size: 13px; border: none; height: 32px; padding: 0 40px 0 20px; border-radius: 50px; color: #444444;}
+.main .search-box input::-webkit-input-placeholder { color: #aaa;}
+.main .search-box .search-icon{width: 20px; height: 20px; position: absolute; top: 24px; right: 24px}
+.main .search-box .search-icon img{vertical-align: top;}
+.main .search-box .validation{position: absolute; color: #FC0562; font-size: 10px; bottom: 8px; display: none;}
+.main .post-body{position: relative; width: 100%; height: 362px; overflow-y: auto; position: relative; display: block; padding: 15px 15px 0px 15px; }
+.main .post-body::-webkit-scrollbar {width: 3px;}
+.main .post-body::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+.main .post-body::-webkit-scrollbar-thumb { background-color: darkgrey; outline: 1px solid slategrey;}
+.main .post-body ul{padding: 0; margin: 0; list-style: none; }
+.main .post-body ul li{padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px dotted #ccc;}
+.main .post-body ul li:last-child{border-bottom: none; margin-bottom: 0}
+.main .post-body ul li a{text-decoration: none; outline: none; color: #777777;}
+.main .post-body .postend{height: 1px; width: 100%; border-bottom: 1px dotted #999;}
+.main .post-body .load-more{width: 100%; display: none; height: auto; margin: 5px 0px; text-align: center; }
+.main .post-body .load-more img{width: 70px; opacity: 0.5; margin-top: -5px}
+.main .social-box{width: 100%; height: auto; display: block; overflow: hidden; background-color: #f1f3f5; padding: 14px 15px}
+.main .social-box .left{float: left; width: 160px}
+.main .social-box .left img{margin-right: 6px}
+.main .social-box .right{float: right; width: 155px; height: auto; text-align: center; font-size: 15px; background-image: linear-gradient(to bottom right, #ff8a00, #ff113c); border-radius: 27px; padding: 2px;}
+.main .social-box .right a{font-size: 15px; background: #f1f1f1; height: 31px; width: 100%; display: block; line-height: 30px; border-radius: 50px;}
+.main .social-box .right a:hover{background: transparent; color: #ffffff}
+.main footer{width: 100%; height: 30px; font-size: 14px; text-align: center; padding-top: 4px; box-shadow: 0px -1px 12px rgba(0,0,0,0.16); background-color: #ffffff; color: #777777}
+.main footer a, .main footer a:hover{border-bottom: 1px solid #ff113c; color: #777777 }
+.news-box{width: 100%; height: 65px;}
+.news-box .img{width: 104px; height: 65px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.news-box .imgbg{width: 104px; height: 65px; background-image: url(../img/tg-placeholder.png); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.news-box .img img{height: 100%;}
+.news-box .content{ width: 100%; height: 65px; display: block; overflow: hidden; margin-top: -65px;padding: 0px 0px 0px 112px;}
+.news-box .content h1{height: auto; font-size: 13px; line-height: 16px; color: #444444; font-weight: 400; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; margin-top: -2px;}
+.news-box .content .time{font-size: 11px; line-height: 28px; color: #999}
+.main .post-body .preloader{position: absolute; top: 0; left: 0; width: 100%; height: 362px; background-color: #ffffff; padding: 15px 15px 0px 15px; display: none;}
+.main .post-body .preloader .txt-lg{width: 208px; height: 16px; }
+.main .post-body .preloader .txt-sm{width: 150px; height: 16px; margin-top: 8px}
+.main .post-body .preloader .txt-xs{width: 80px; height: 16px; margin-top: 9px}
+.main .post-body .notfound{position: absolute; top: 0; left: 0; width: 100%; height: 362px; background-color: #ffffff; text-align: center; display: none}
+.main .post-body .notfound p{margin-top: 70px; color: #999}
+.main .post-body .notfound button{height: 36px; margin-top: 30px; width: 120px; outline: none; border: none; background-color: #e5e5e5; color: #a1a1a1; font-size: 14px}
+.main .post-body .nointernet{position: absolute; padding-top: 90px; top: 0; left: 0; width: 100%; height: 362px; background-color: #ffffff; text-align: center; display: none;}
+.main .post-body .nointernet p{color: #999; padding-top: 10px}
+@keyframes placeHolderShimmer { 0% { background-position: -468px 0 } 100% { background-position: 468px 0 } }
+.anim-bg { animation-duration: 1.2s; animation-fill-mode: forwards; animation-iteration-count: infinite; animation-name: placeHolderShimmer; animation-timing-function: linear; background: #f6f7f8; background: #eeeeee; background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%); background-size: 800px 104px; position: relative; }
+section{width: 100%; height: auto; display: block; overflow: hidden;}
+section h1{font-weight: 400; color: #777; font-size: 50px; padding: 60px 0px 40px 0px}
+section button{	width: 220px; height: 48px; background-image: linear-gradient(to bottom right, #ff8a00, #ff113c); border-radius: 27px; font-size: 18px; color: #ffffff; background-color: #fc0562; border: none;}
+.centerimg{margin-bottom: 70px}
+.image-left{padding-top: 70px; margin-bottom: 50px}
+.image-left img{margin-left: -40%; }
+.image-left h1{font-weight: 300; width: 450px; font-size: 50px; margin-left: 100px; margin-top: 140px}
+.footer-div{background-color: #000000; color: #ffffff; padding: 30px 0px}
+.footer-div a, .footer-div a:hover{color: #ffffff;}
+@media only screen and (min-width: 1330px) and (max-width: 1440px) { 
+.image-left img{margin-left: -50%; }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1329px) { 
+.image-left img{    margin-left: -85%; }
+section h1{font-size: 42px;}
+.image-left h1{width: 370px; font-size: 40px; margin-left: 110px;}
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1099px) { 
+.image-left img{    margin-left: -120%; }
+section h1{font-size: 42px;}
+.image-left h1{width: 370px; font-size: 40px; margin-left: 60px;}
+}
+
+@media only screen and (max-width: 1200px) { 
+.centerimg{ width: 100%}
+}
+
+
+
+

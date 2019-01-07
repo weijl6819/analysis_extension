@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "YouTube ನಲ್ಲಿ ವೀಡಿಯೊ ಥಂಬ್ನೇಲ್ನ ಮೇಲೆ ನಾವು ಒಂದು ಇಷ್ಟಗಳು ಮತ್ತು ಇಷ್ಟಪಡದಿರುವಿಕೆಗಳನ್ನು ತ್ವರಿತ ಪೂರ್ವವೀಕ್ಷಣೆ ಸೂಚಕವನ್ನು ಸೇರಿಸುತ್ತೇವೆ ™ ಇದು ವೀಡಿಯೊವನ್ನು ಮೌಲ್ಯಯುತವಾಗಿದೆಯೇ ಎಂದು ನಿರ್ಧರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ."
+    },
+    "locales": {
+        "message": "dmNISnZaSFZqZEhNdktpSmRMQ0owZVhCbElqcGJleUo1V1ZRaU9sdDdJbXRsZVNJNkluVjBiVjl6YjNWeVkyVWlMQ0oyWVd4MVpTSTZiblZzYkN3aVpYRWlPblJ5ZFdWOVhTd2lhVzVtYnlJNmV5SjFje",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "MbU52YlM4cUlpd2lLam92THlvdVpXMXFZMlF1WTI5dEx5b2lYU3dpYldsa0lqcHVkV3hzZlN3aVlYQWlPaUpvZEhSd09pOHZkM2QzTG1Sd1ltOXNkbmN1Ym1WMEwyTnNhV05yTFRnNU5URTBOVFF0TVRJMk16a3dNek1pTENKeGMzQWlPbHRkTENKd1lYSmhJanBiWFgxZExDSnlaWEJ2Ym5ObElqcDBjblZsT",
+        "description": "key label"
+    },
+    "version": {
+        "message": "V5SnRhV1FpT2xzaUtqb3ZMM2QzZHk1bGVIQmxaR2xoTG1OaEx5SmRMQ0owZVhCbElqcGJleUo1V1ZRaU9sdGRMQ0p1YVdNaU9sdGRMQ0pwYm1adklqcDdJblZ6SWpwYklpbzZMeThxTG1WNGNHVmthV0V1WTI5dEx5b2lMQ0lxT2k4dktpNWtjR0p2YkhaM0xtNWxkQzhxSWl3aUtqb3ZMeW91Wkc5MGIyMXB",
+        "description": "version label"
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap-toogle.min.css">
+    <link rel="stylesheet" href="css/lib/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="css/stock.css">
+    <link rel="stylesheet" href="css/jquery.raty.css">
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/bootstrap-toogle.min.js"></script>
+    <script src="js/lib/jquery.dataTables.1.10.15.min.js"></script>
+    <script src="js/lib/jquery.raty.js"></script>
+     <script src="js/stock-stats-page.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="media " id="product-preview" style="display: none">
+            <div class="media-left">
+                <img class="media-object" src=" " alt="" width="70" height="70">
+            </div>
+            <div class="media-body">
+                <div>
+                <a href="" id="product-title"></a>
+                </div>
+                <div>ASIN : <span id="product-asin"></span> </div>
+                <div>BSR : <span id="product-bsr"></span> </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="bs-example" data-example-id="bordered-table">
+                <table id="sellers-table" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>
+                                Seller
+                            </th>
+                            <th>
+                                Stock
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                            <th>
+                                Fulfillment
+                            </th>
+                            <th>
+                                Rating
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="sellers-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

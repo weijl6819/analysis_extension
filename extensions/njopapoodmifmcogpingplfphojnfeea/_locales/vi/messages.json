@@ -1,0 +1,908 @@
+{
+  "appName": {
+    "message": "AMZScout Pro"
+  },
+  "appDesc": {
+    "message": "AMZScout mở rộng sẽ giúp bạn đưa ra quyết định chọn một niche dựa trên dữ liệu thực tế, không phải trực giác."
+  },
+  "extendTrial": {
+    "message": "Mở rộng thời gian dùng thử"
+  },
+  "extendTrialMessage": {
+    "message": "Nâng cấp lên tới 2 tháng miễn phí"
+  },
+  "number": {
+    "message": "#"
+  },
+  "in": {
+    "message": "trong"
+  },
+  "results": {
+    "message": "Kết quả"
+  },
+  "avgSalesRank": {
+    "message": "Thứ hạng doanh số trung bình"
+  },
+  "avgSalesTrend": {
+    "message": "Xu hướng bán hàng trung bình"
+  },
+  "opScore": {
+    "message": "điểm số cơ hội"
+  },
+  "avgMonthlyRevenue": {
+    "message": "Lợi tức trung bình hàng tháng"
+  },
+  "avgMonthlySales": {
+    "message": "Doanh thu hàng tháng trung bình"
+  },
+  "variants": {
+    "message": "Loại sản phẩm"
+  },
+  "variantsTooltip": {
+    "message": "Số lượng của loại sản phẩm"
+  },
+  "avgPrice": {
+    "message": "Giá trung bình"
+  },
+  "avgMarginImpact": {
+    "message": "Lợi nhuận ròng trung bình"
+  },
+  "avgReviews": {
+    "message": "Số đánh giá trung bình"
+  },
+  "rank" : {
+    "message": "Thứ hạng"
+  },
+  "sales" : {
+    "message": "bán"
+  },
+  "bsr30Tooltip": {
+    "message": "Trung bình bán chạy nhất Rang trong 30 ngày qua"
+  },
+  "price30": {
+    "message": "Giá 30"
+  },
+  "price30Tooltip": {
+    "message": "Giá trung bình trong 30 ngày qua"
+  },
+  "reviewsCount" : {
+    "message": "Số lượng đánh giá"
+  },
+  "productName": {
+    "message": "Tên sản phẩm"
+  },
+  "brand": {
+    "message": "Nhãn hàng"
+  },
+  "price": {
+    "message": "Giá"
+  },
+  "minPrice": {
+    "message": "Giá tối thiểu"
+  },
+  "net": {
+    "message": "Ròng"
+  },
+  "fbaFees": {
+    "message": "Chi phí FBA"
+  },
+  "lqs": {
+    "message": "LQS"
+  },
+  "lqsTooltip": {
+    "message": "Điểm chất lượng danh sách"
+  },
+  "category": {
+    "message": "Hạng mục"
+  },
+  "sellers": {
+    "message": "Người bán"
+  },
+  "enablePS": {
+    "message": "Bật Popup Điểm số tiềm năng AMZScout"
+  },
+  "extractOneProductOnly": {
+    "message": "Chỉ trích xuất một Sản phẩm tại Trang sản phẩm"
+  },
+  "options": {
+    "message": "Tuỳ chọn"
+  },
+  "headers": {
+    "message": "Tiêu đề"
+  },
+  "columns": {
+    "message": "Cột"
+  },
+  "data": {
+    "message": "dữ liệu"
+  },
+  "error": {
+    "message": "lỗi"
+  },
+  "sellersTooltip": {
+    "message": "Số lượng người bán"
+  },
+  "estSales": {
+    "message": "Doanh số ước tính"
+  },
+  "estSalesTooltip": {
+    "message": "Doanh số ước tính hàng tháng"
+  },
+  "estRevenue": {
+    "message": "Lợi tức ước tính"
+  },
+  "estRevenueTooltip": {
+    "message": "Lợi tức ước tính hàng tháng"
+  },
+  "nameLength": {
+    "message": "Độ dài tên"
+  },
+  "reviews": {
+    "message": "Số lượng đánh giá"
+  },
+  "ebc": {
+    "message": "EBC"
+  },
+  "ebcTooltip": {
+    "message": "Danh sách nội dung thương hiệu nâng cao"
+  },
+  "rpr": {
+    "message": "RPR"
+  },
+  "rprTooltip": {
+    "message": "Lợi tức hàng tháng cho mỗi đánh giá"
+  },
+  "availableFrom": {
+    "message": "Có hàng từ"
+  },
+  "availableFromTooltip": {
+    "message": "Ngày đầu tiên có hàng"
+  },
+  "rating": {
+    "message": "Định mức"
+  },
+  "sellerIsFBA": {
+    "message": "Người bán là FBA"
+  },
+  "descriptionLength": {
+    "message": "Độ dài mô tả"
+  },
+  "imagesCount": {
+    "message": "Số lượng hình ảnh"
+  },
+  "seller": {
+    "message": "Người bán"
+  },
+  "url": {
+    "message": "URL"
+  },
+  "asin": {
+    "message": "ASIN"
+  },
+  "monthlyPayment": {
+    "message": "Thanh toán hàng tháng"
+  },
+  "onetimePayment": {
+    "message": "Thanh toán một lần"
+  },
+  "oversize": {
+    "message": "Ngoại khổ"
+  },
+  "weight": {
+    "message": "Cân nặng"
+  },
+  "buyAtGoogle": {
+    "message": "Mua tại Google Chrome Store"
+  },
+  "needPermissions": {
+    "message": "Vui lòng đăng nhập trước khi tiếp tục"
+  },
+  "filters": {
+    "message": "Bộ lọc"
+  },
+  "from": {
+    "message": "từ"
+  },
+  "to": {
+    "message": "đến"
+  },
+  "fbaOnly": {
+    "message": "chỉ mỗi FBA"
+  },
+  "bulletsCount": {
+    "message": "Số lượng dấu đầu dòng"
+  },
+  "apply": {
+    "message": "Áp dụng"
+  },
+  "clear": {
+    "message": "Xoá"
+  },
+  "close": {
+    "message": "Đóng"
+  },
+  "nextPage": {
+    "message": "Trang tiếp"
+  },
+  "filter": {
+    "message": "Bộ lọc"
+  },
+  "trends": {
+    "message": "Xu hướng"
+  },
+  "export": {
+    "message": "Xuất ra CSV"
+  },
+  "import": {
+    "message": "Nhập từ CSV"
+  },
+  "wrongPage": {
+    "message": "Có vẻ như bạn không đang ở trang Amazon Search hoặc trang Sản phẩm."
+  },
+  "pageLoading": {
+    "message": "Xin vui lòng chờ trang này tải xong"
+  },
+  "cantGetProductsErr": {
+    "message": "AMZScout không thể lấy thông tin sản phẩm từ trang này. Vui lòng thử trang khác."
+  },
+  "instanceUnsupportedErr": {
+    "message": "Phiên bản AMZScout này không còn được hỗ trợ. Vui lòng cập nhật AMZScout lên phiên bản mới nhất."
+  },
+  "instanceBlockedErr": {
+    "message": "Thể hiện của AMZScout này đã bị chặn. Vui lòng liên hệ với bộ phận hỗ trợ."
+  },
+  "unhandledErr": {
+    "message": "Có vẻ như bạn vào sai trang. Vui lòng thử trang khác."
+  },
+  "providerInitErr": {
+    "message": "Không thể khởi chạy nhà cung cấp dịch vụ thanh toán."
+  },
+  "paymentRejectedErr": {
+    "message": "Thanh toán bị từ chối. Vui lòng kiểm tra chi tiết thanh toán của bạn và thử lại."
+  },
+  "POUND": {
+    "message": "pao"
+  },
+  "KG": {
+    "message": "kilogam"
+  },
+  "RUB": {
+    "message": "₽"
+  },
+  "USD": {
+    "message": "$"
+  },
+  "EUR": {
+    "message": "€"
+  },
+  "GBP": {
+    "message": "£"
+  },
+  "INR": {
+    "message": "₹"
+  },
+  "ILS": {
+    "message": "₪"
+  },
+  "UAH": {
+    "message": "₴"
+  },
+  "VND": {
+    "message": "₫"
+  },
+  "marginImpact": {
+    "message": "Lợi nhuận ròng"
+  },
+  "marginImpactTooltip": {
+    "message": "Phần trăm của lợi nhuận"
+  },
+  "refresh": {
+    "message": "Làm mới"
+  },
+  "feedback": {
+    "message": "Phản hồi"
+  },
+  "paymentInfo": {
+    "message": "Thông tin thanh toán"
+  },
+  "choosePaymentMethod": {
+    "message": "Chọn phương thức thanh toán"
+  },
+  "paymentMethod_card": {
+    "message": "Thẻ ngân hàng"
+  },
+  "chromeStore": {
+    "message": "Cửa hàng Chrome"
+  },
+  "noFees": {
+    "message": "Không có phí phát sinh"
+  },
+  "moneyBack": {
+    "message": "Đảm bảo hoàn 100% tiền"
+  },
+  "paymentFooterMessage": {
+    "message": "Gia nhập hơn <strong>40 000+</strong> người bán thành đạt trên Amazon bằng AMZScout"
+  },
+  "keepTracking": {
+    "message": "Nhận lợi nhuận khoảng $ 500 trong tháng đầu tiên bằng cách chọn một sản phẩm mang lại lợi nhuận"
+  },
+  "buy": {
+    "message": "Mua"
+  },
+  "buyNow": {
+    "message": "Mua ngay giờ"
+  },
+  "oneTimeFee": {
+    "message": "Phí thanh toán một lần"
+  },
+  "monthlyFee": {
+    "message": "Thanh toán hàng tháng"
+  },
+  "freeLaunchesLeft": {
+    "message": ":freeLaunchesLeft chạy tự do rời"
+  },
+  "faq": {
+    "message": "FAQ"
+  },
+  "trialEnded": {
+    "message": "Thời hạn dùng thử của bạn đã hết"
+  },
+  "trialEndedAlert": {
+    "message": "Bạn nên mua ứng dụng AMZScout để được dùng thêm nhiều tính năng"
+  },
+  "buyPrice": {
+    "message": "Giấy phép Lifetime với :price::currency"
+  },
+  "buyPriceRecurring": {
+    "message": "thuê bao 1 tháng với :price::currency"
+  },
+  "sponsored": {
+    "message": "Được tài trợ"
+  },
+  "hideSponsored": {
+    "message": "Ẩn tài trợ"
+  },
+  "signUp": {
+    "message": "Đăng kí bằng"
+  },
+  "signUpWithChrome": {
+    "message": "Chrome"
+  },
+  "signUpWithGoogle": {
+    "message": "Google"
+  },
+  "signUpWithFacebook": {
+    "message": "Facebook"
+  },
+  "signUpWithWeibo": {
+    "message": "Weibo"
+  },
+  "signUpWithEmail": {
+    "message": "Email"
+  },
+  "signUpTitle": {
+    "message": "Đăng ký để tìm sản phẩm có lợi nhuận của bạn."
+  },
+  "signUpMessage1": {
+    "message": "Không cần thẻ tín dụng"
+  },
+  "signUpMessage2": {
+    "message": "Giấy phép của bạn sẽ được liên kết với tài khoản này"
+  },
+  "signUpMessage3": {
+    "message": "Khả năng sử dụng trên nhiều thiết bị"
+  },
+  "signUpMessage4": {
+    "message": "Dữ liệu cá nhân của bạn an toàn"
+  },
+  "faq_q_0": {
+    "message": "Hỏi: Phí mua ứng dụng mở rộng thuộc loại chi phí thanh toán một lần hay hàng tháng?"
+  },
+  "faq_a_0": {
+    "message": "Đáp: Chi phí này là loại chi phí thanh toán một lần. Bạn không cần thanh toán thêm nữa. Tất cả các tính năng của ứng dụng đều đã được bao hàm."
+  },
+  "faq_q_1": {
+    "message": "Hỏi: Tôi đã mua ứng dụng, làm sao sử dụng nó?"
+  },
+  "faq_a_1": {
+    "message": "Đáp: Mở trang web Amazon, tìm kiếm một số sản phẩm, bấm nút ứng dụng. Bạn sẽ thấy màn hình bật lên kèm với một thanh tải. Sau vài giây sẽ xuất hiện thông tin về những sản phẩm được tìm thấy."
+  },
+  "faq_q_2": {
+    "message": "Hỏi: Các giá trị ước tính theo tháng, ngày hay năm?"
+  },
+  "faq_a_2": {
+    "message": "Đáp: các giá trị ước tính là theo tháng."
+  },
+  "faq_q_3": {
+    "message": "Hỏi: Làm sao tính ra được các giá trị ước tính?"
+  },
+  "faq_a_3": {
+    "message": "Đáp: Những giá trị này tính toán bằng công thức dựa trên hạng mục cấp trên cùng của Amazon (ví dụ như Nhà cửa & Vườn tược, Sách) và xếp hạng theo một trong những hạng mục này."
+  },
+  "faq_q_4": {
+    "message": "Hỏi: Cột Ròng nghĩa là gì?"
+  },
+  "faq_a_4": {
+    "message": "Đáp: Cột Ròng nghĩa là giá cả sau khi trừ Chi phí FBA và trừ 15% phí Amazon Referral (Giới thiệu qua Amazon). Nếu không có Chi phí FBA, giá ròng được tính theo công thức."
+  },
+  "faq_q_5": {
+    "message": "Hỏi: Cột LQS nghĩa là gì?"
+  },
+  "faq_a_5": {
+    "message": "Đáp: LQS là Listing Quality Score (Điểm chất lượng danh sách). AMZScout phân tích nhiều tiêu chí mô tả sản phẩm và tính điểm theo đó. Điểm càng cao thì vị trí trong kết quả tìm kiếm sẽ càng cao. Để biết chi tiết, hãy đưa con trỏ chuột vào giá trị LQS."
+  },
+  "faq_q_6": {
+    "message": "Hỏi: Cột RPR nghĩa là gì?"
+  },
+  "faq_a_6": {
+    "message": "Đáp: RPR là revenue per review (lợi tức cho mỗi đánh giá). Giá trị RPR càng cao thì bạn càng có nhiều cơ hội bán hàng ở Amazon."
+  },
+  "faq_q_7": {
+    "message": "Hỏi: Chi phí FBA tính theo đơn vị mặt hàng hay theo số lượng lớn?"
+  },
+  "faq_a_7": {
+    "message": "Đáp: Chi phí FBA tính theo đơn vị mặt hàng với phí lưu trữ được kèm theo trong 1 tháng. Nó tính toán dựa trên kích cỡ và khối lượng khi vận chuyển hàng, với thông tin được lấy từ trang sản phẩm."
+  },
+  "faq_q_8": {
+    "message": "Hỏi: Nếu tôi có thắc mắc hay vấn đề nào khác với AMZScout, làm sao tôi nhận được hỗ trợ?"
+  },
+  "faq_a_8": {
+    "message": "Đáp: Cách nhanh nhất để nhận được hỗ trợ là gửi email câu hỏi của bạn đến địa chỉ <a href='mailto:amazondevcrew@gmail.com'>amazondevcrew@gmail.com</a>"
+  },
+  "rankHistory": {
+    "message": "Lịch sử Rank"
+  },
+  "salesHistory": {
+    "message": "Lịch sử bán hàng"
+  },
+  "priceHistory": {
+    "message": "Lịch sử giá"
+  },
+  "productCost": {
+    "message": "Chi phí sản phẩm"
+  },
+  "productPrice": {
+    "message": "Giá sản phẩm"
+  },
+  "additionalProductCost": {
+    "message": "Chi phí bổ sung cho mỗi đơn vị"
+  },
+  "additionalMonthlyCosts": {
+    "message": "Chi phí bổ sung hàng tháng"
+  },
+  "productWeight": {
+    "message": "Trọng lượng sản phẩm"
+  },
+  "productSize": {
+    "message": "Kích cỡ sản phẩm"
+  },
+  "orderHandling": {
+    "message": "Xử lí đơn hàng"
+  },
+  "monthlyStorage": {
+    "message": "Lưu trữ hàng tháng"
+  },
+  "pickPack": {
+    "message": "Chọn & đóng gói"
+  },
+  "weightHandling": {
+    "message": "Chọn & đóng gói"
+  },
+  "referralFee": {
+    "message": "Phí giới thiệu"
+  },
+  "estimatedSales": {
+    "message": "Doanh số ước tính hàng tháng"
+  },
+  "piece": {
+    "message": "cái."
+  },
+  "totalFee": {
+    "message": "Tổng chi phí FBA"
+  },
+  "estimatedRevenueTooltip": {
+    "message": "Lợi tức ước tính hàng tháng dựa trên Doanh số ước tính hàng tháng và Tác động lợi nhuận"
+  },
+  "estimatedRevenue": {
+    "message": "Lợi tức ước tính hàng tháng"
+  },
+  "profit": {
+    "message": "Lợi nhuận"
+  },
+  "roi": {
+    "message": "ROI"
+  },
+  "roiTooltip": {
+    "message": "Lợi nhuận đầu tư"
+  },
+  "profitCalculator": {
+    "message": "Máy tính Lợi nhuận"
+  },
+  "INCH": {
+    "message": "inch"
+  },
+  "CM": {
+    "message": "cm"
+  },
+  "closingFee": {
+    "message": "Phí đóng cửa"
+  },
+  "deliveryFee": {
+    "message": "Phí giao hàng"
+  },
+  "cessFee": {
+    "message": "Dịch vụ & sau trung học Phí"
+  },
+  "referralMessage": {
+    "message": "Chia sẻ liên kết này với bạn bè của bạn và bạn sẽ nhận được 1 tuần nữa cho miễn phí cho tất cả các bạn, những người sẽ đăng ký. bạn của bạn sẽ nhận được 1 tuần miễn phí quá."
+  },
+  "estimatedProfit": {
+    "message": "Ước tính lợi nhuận hàng tháng"
+  },
+  "estimatedProfitTooltip": {
+    "message": "lợi nhuận hàng tháng ước tính dựa trên doanh hàng tháng ước tính và Margin Impact"
+  },
+  "favorites": {
+    "message": "Yêu thích"
+  },
+  "favoritesTooltip":{
+    "message": "Sản phẩm yêu thích của bạn"
+  },
+  "getNicheIdea":{
+    "message": "Ý tưởng Niche"
+  },
+  "inventory": {
+    "message": "Hàng tồn kho"
+  },
+  "inventoryTooltip": {
+    "message": "Số lượng hàng hoá trong kho"
+  },
+  "searchAli": {
+    "message": "Tìm tại AliBaba"
+  },
+  "copyASIN": {
+    "message": "Sao chép ASIN"
+  },
+  "getKeywords": {
+    "message": "Lấy thêm từ khoá"
+  },
+  "keyword": {
+    "message": "từ khóa"
+  },
+  "keywords": {
+    "message": "Từ khóa"
+  },
+  "nicheKeywords": {
+    "message": "Từ khóa thích hợp"
+  },
+  "getNicheKeywords": {
+    "message": "Nhận từ khóa thích hợp"
+  },
+  "keywordsNotFound": {
+    "message": "Thật không may, chúng tôi đã không tìm thấy bất kỳ từ khóa"
+  },
+  "occurrencesNumber": {
+    "message": "Số lần xuất hiện"
+  },
+  "maxImport": {
+    "message": "Số lượng tối đa cho việc nhập khẩu ::count sản phẩm"
+  },
+  "emptyImport": {
+    "message": "Không tìm thấy sản phẩm, hãy kiểm tra tệp của bạn"
+  },
+  "cancel": {
+    "message": "Hủy"
+  },
+  "modalTitle": {
+    "message": "Thông điệp"
+  },
+  "yes": {
+    "message": "Vâng"
+  },
+  "no": {
+    "message": "Không"
+  },
+  "bestSeller": {
+    "message": "BS"
+  },
+  "bestSellerTooltip": {
+    "message": "Lãnh đạo bán hàng"
+  },
+  "bestSellerCategory": {
+    "message": "Người bán tốt nhất trong"
+  },
+  "bestSellerLink": {
+    "message": "Thể loại URL bán tốt nhất"
+  },
+  "toggleFilterTitle": {
+    "message": "Bật/tắt bộ lọc"
+  },
+  "aboutModalTitle": {
+    "message": "Giới thiệu về ứng dụng"
+  },
+  "aboutAppVersion": {
+    "message": "Phiên bản ứng dụng"
+  },
+  "aboutRegisteredTo": {
+    "message": "Đăng ký vào"
+  },
+  "aboutLicenceType": {
+    "message": "Loại giấy phép"
+  },
+  "aboutExpires": {
+    "message": "Hết hạn"
+  },
+  "monthly": {
+    "message": "Hàng tháng"
+  },
+  "annual": {
+    "message": "Hàng năm"
+  },
+  "save": {
+    "message": "Tiết kiệm"
+  },
+  "lifetime": {
+    "message": "Cả đời"
+  },
+  "forever": {
+    "message": "Nhận mãi mãi"
+  },
+  "try": {
+    "message": "Thử"
+  },
+  "paywallTitleTop": {
+    "message": "Tìm sản phẩm có lợi nhuận và đánh bại đối thủ cạnh tranh của bạn"
+  },
+  "paywallTitleBottom": {
+    "message": "Tiếp tục kiếm thêm tiền!"
+  },
+  "paywallTagline": {
+    "message": "Doanh nghiệp thành công của bạn trên Amazon"
+  },
+  "selectYourPlan": {
+    "message": "Chọn kế hoạch của bạn"
+  },
+  "yourPlan": {
+    "message": "Kế hoạch của bạn"
+  },
+  "payment": {
+    "message": "Số tiền thanh toán"
+  },
+  "paymentChooseMethod": {
+    "message": "Сhọn cách thanh toán của bạn"
+  },
+  "selectPlan": {
+    "message": "Chọn Kế hoạch"
+  },
+  "benefits": {
+    "message": "Lợi ích"
+  },
+  "benefit1": {
+    "message": "Tìm hốc – giảm thiểu rủi ro"
+  },
+  "benefit2": {
+    "message": "Chính xác thời gian thực số liệu – tối đa hóa lợi nhuận"
+  },
+  "benefit3": {
+    "message": "Xác nhận và bán với sự tự tin"
+  },
+  "licenceFull": {
+    "message": "Đã thanh toán"
+  },
+  "licenceTrial": {
+    "message": "Thử nghiệm"
+  },
+  "alreadyPaid": {
+    "message": "Tôi đã thanh toán"
+  },
+  "paymentDone": {
+    "message": "thanh toán được thực hiện"
+  },
+  "skip": {
+    "message": "Nhảy"
+  },
+  "next": {
+    "message": "Kế tiếp"
+  },
+  "startTrial": {
+    "message": "Bắt đầu thử nghiệm"
+  },
+  "s1h": {
+    "message": "Thói quen không có thu <br>thập dữ liệu"
+  },
+  "s1f": {
+    "message": "được tất cả các dữ liệu để đưa ra quyết <br>định trong vài cú nhấp chuột."
+  },
+  "s2h": {
+    "message": "Tìm sản phẩm có tiềm năng lớn"
+  },
+  "s2f": {
+    "message": "ước tính tiềm năng thích hợp dựa trên dữ <br>liệu bán hàng đáng tin cậy."
+  },
+  "s3h": {
+    "message": "Giảm thiểu rủi ro của bạn"
+  },
+  "s3f": {
+    "message": "biết bao nhiêu sản phẩm bạn sẽ bán <br>trong vòng 1 tháng."
+  },
+  "s4h": {
+    "message": "Lấy kết quả mà bạn mong đợi"
+  },
+  "s4f": {
+    "message": "bằng cách làm cho quyết định đúng đắn."
+  },
+  "tips": {
+    "message": "Gợi ý"
+  },
+  "stopShowingTips": {
+    "message": "Không hiển thị"
+  },
+  "strictFilterTooltip": {
+    "message": "Các thông số bộ lọc quá nghiêm ngặt. Hãy thử thay đổi chúng hoặc tắt bộ lọc."
+  },
+  "activeLimit": {
+    "message": "Giới hạn cài đặt"
+  },
+  "activeExceed": {
+    "message": "Đã vượt quá số lượng thiết bị đang hoạt động"
+  },
+  "t0": {
+    "message": "Các tiêu đề của cột có các gợi ý bật ra. Bạn có thể bấm vào bất kì tiêu đề nào và sắp dữ liệu trong bảng tính theo chỉ số này."
+  },
+  "t1": {
+    "message": "Tất cả các số màu xanh lam và các hàng trong bảng tính sản phẩm đều có thể bấm vào được."
+  },
+  "t2": {
+    "message": "Nếu ông bấm vào một giá trị bằng Phí FBA hoặc cột Giá ròng, bạn sẽ mở Trình tính toán Lợi nhuận, vốn sẽ cho phép bạn nhập chi phí sản phẩm để tính toán lợi nhuận và ROI"
+  },
+  "t3": {
+    "message": "NẾu bạn rê con trỏ lên trên giá trị LQS trong vài giây, bạn sẽ thấy thêm chi tiết về chất lượng của bản kê."
+  },
+  "t4": {
+    "message": "Nếu bạn bấm vào giá trị của giá, bạn sẽ thấy biểu đồ với giá thay đổi theo thời gian."
+  },
+  "t5": {
+    "message": "Nếu bạn bấm vào giá trị ở cột HẠng, bạn sẽ thấy biểu đồ của hạng xếp thay đổi theo thời gian."
+  },
+  "t6": {
+    "message": "Nếu bạn di chuyển con trỏ ở trên ba chấm dọc ở bên phải, bạn sẽ mở menu xổ xuống, vốn cho phép bạn tìm thấy sản phẩm tương tự trên Alibaba."
+  },
+  "t7": {
+    "message": "Bạn có thể tìm ý tưởng từ khóa để quảng cáo sản phẩm của bạn hiệu quả chỉ bằng cách nhấp vào 3 chấm dọc bên phải và chọn hành động cần thiết."
+  },
+  "t8": {
+    "message": "Bạn có thể theo dõi bất kỳ sản phẩm nào trong trình theo dõi AMZScout bằng cách nhấp vào \"+\" bên cạnh số sản phẩm trong danh sách."
+  },
+  "t9": {
+    "message": "Sản phẩm là người bán tốt nhất với xếp hạng 1 nếu có dấu tròn màu cam trong cột BSR. Tìm hiểu loại sản phẩm nào bán được tốt nhất để di chuột qua dấu."
+  },
+  "t10": {
+    "message": "Thêm sản phẩm tiềm năng vào mục yêu thích bằng cách nhấp vào dấu sao ở bên trái và kiểm tra chúng bất cứ khi nào bạn muốn bằng cách nhấp vào nút Ưa thích ở cuối trang."
+  },
+  "t11": {
+    "message": "Cột EBC hiển thị dấu kiểm màu xanh lục khi sản phẩm có Nội dung thương hiệu nâng cao hoặc danh sách A +.<br>EBC mở cửa cho người bán đã được chấp nhận làm chủ sở hữu thương hiệu thông qua quy trình Brand Registry của Amazon"
+  },
+  "pw1ExpiredTitle": {
+    "message": "Rất tiếc, thời gian dùng thử của bạn đã hết hạn."
+  },
+  "pw1ExpiredSubTitle": {
+    "message": "Để tiếp tục sử dụng phần mở rộng AMZScout Pro, hãy xem kế hoạch thanh toán bên dưới."
+  },
+  "pw1BuyNowTitle": {
+    "message": "Tìm sản phẩm có lợi nhuận và đánh bại đối thủ cạnh tranh của bạn"
+  },
+  "pw1PlanMonthlyName": {
+    "message": "Mỗi tháng"
+  },
+  "pw1PlanMonthlyHint": {
+    "message": "Hãy thử sản phẩm của chúng tôi mà không có bất kỳ ranh giới nào!"
+  },
+  "pw1PlanAnnualName": {
+    "message": "Mỗi năm"
+  },
+  "pw1PlanMostPopular": {
+    "message": "Phổ biến nhất"
+  },
+  "pw1PlanAnnualHint": {
+    "message": "Bạn yêu thích sản phẩm của chúng tôi? Tuyệt vời, đó là thời gian để tiết kiệm!"
+  },
+  "pw1PlanAnnualPriceHint": {
+    "message": "Tiết kiệm tới 500%"
+  },
+  "pw1PlanLifetimeName": {
+    "message": "Cả đời"
+  },
+  "pw1PlanLifetimeHint": {
+    "message": "Cảm thấy cam kết? Sử dụng nó mãi mãi!"
+  },
+  "pw1PlanLifetimePriceHint": {
+    "message": "Tiết kiệm tới ∞"
+  },
+  "pw1PlansTitle": {
+    "message": "chọn kế hoạch của bạn"
+  },
+  "pw1PaymentTitle": {
+    "message": "Thanh toán"
+  },
+  "pw1MainTitle": {
+    "message": "Giá trị"
+  },
+  "pw1PanelProfit1": {
+    "message": "Giảm thiểu rủi ro"
+  },
+  "pw1PanelProfit2": {
+    "message": "Tối đa hóa lợi nhuận"
+  },
+  "pw1PanelProfit3": {
+    "message": "Bán với niềm tin"
+  },
+  "pw1PanelProfit4": {
+    "message": "Đảm bảo lại tiền"
+  },
+  "pw1PayWithCard": {
+    "message": "Thanh toán bằng thẻ ngân hàng"
+  },
+  "pw1PayWith": {
+    "message": "Thanh toán bằng"
+  },
+  "pw1AlreadyPaid": {
+    "message": "Tôi đã thanh toán rồi"
+  },
+  "pw1Or": {
+    "message": "hoặc là"
+  },
+  "pw1StripePowered": {
+    "message": "Được hỗ trợ bởi Stripe."
+  },
+  "pw1Terms": {
+    "message": "Điều kiện"
+  },
+  "pw1Privacy": {
+    "message": "Riêng tư."
+  },
+  "pw1And": {
+    "message": "và"
+  },
+  "pw1StripeMoneyBack": {
+    "message": "Thanh toán của bạn được bảo vệ bởi Stripe"
+  },
+  "pw1PayPalBuyerProtection": {
+    "message": "Chương trình bảo vệ người mua PayPal"
+  },
+  "pw1TrustpilotReviews": {
+    "message": ":reviews đánh giá"
+  },
+  "tutorial": {
+    "message": "Hướng dẫn"
+  },
+  "tutorialTitle": {
+    "message": "Hướng dẫn AMZScout Pro Extension"
+  },
+  "freshNicheIdea": {
+    "message": "Bạn có một ý tưởng thích hợp mới!"
+  },
+  "show": {
+    "message": "Chỉ"
+  },
+  "featureIsNotAvailable": {
+    "message": "Tính năng này có sẵn trong phiên bản trả tiền"
+  },
+  "allRowsAreNotAvailable": {
+    "message": "Tất cả các hàng sẽ có sẵn trong phiên bản trả tiền."
+  },
+  "product_score_high": {
+    "message": "Một sản phẩm tuyệt vời để dễ dàng sao chép và bán."
+  },
+  "product_score_middle": {
+    "message": "Một sản phẩm mà bạn có thể bán có một số kinh nghiệm."
+  },
+  "product_score_low": {
+    "message": "Một sản phẩm làm việc chăm chỉ để đạt được doanh thu."
+  },
+  "youCanSkipThisIn": {
+    "message": "Vui lòng đợi"
+  },
+  "noCreditCard": {
+    "message": "Không cần thẻ tín dụng"
+  }
+}

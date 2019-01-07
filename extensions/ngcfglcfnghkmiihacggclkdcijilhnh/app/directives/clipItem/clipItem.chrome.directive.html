@@ -1,0 +1,46 @@
+<div>
+
+  <div class="cp-page-clip-bar">
+
+    <!--<div ng-show="clip.showHidden">-->
+    <div>
+
+      <!--<div class="cp-page-clip-bar-highlight-action-wrapper">-->
+        <!--<div class="cp-page-clip-bar-icon-wrapper cp-page-clip-bar-icon-highlight-wrapper">-->
+          <!--<img class="cp-page-clip-bar-icon" src="../app/icons/marker.png">-->
+        <!--</div>-->
+        <!--<div class="cp-page-clip-bar-icon-wrapper cp-page-clip-bar-delete-highlight-icon-wrapper">-->
+          <!--<img class="cp-page-clip-bar-icon cp-page-clip-bar-icon-delete-highlight-icon"-->
+               <!--ng-class="clip.highlightText ? 'cp-page-clip-bar-icon-transform-45 ': 'cp-page-clip-bar-icon-transform-0'"-->
+               <!--src="../app/icons/plus.png">-->
+        <!--</div>-->
+      <!--</div>-->
+
+
+      <div class="cp-page-clip-bar-icon-wrapper cp-page-clip-bar-icon-delete-wrapper cp-no-border"
+           ng-click="homeCtrl.onRemoveClipFromPage($event, clip)">
+        <img class="cp-page-clip-bar-icon-delete" src="../app/icons/delete-x.png">
+      </div>
+    </div>
+
+  </div>
+
+  <div ng-if="clip.highlightText" class="cp-page-clip-highlight cp-no-border"
+       ng-click="homeCtrl.scrollToHighlight(homeCtrl.activeNote.properties.url, clip.itemId)"
+       ng-class="!!clip.showHidden ? 'cp-page-clip-highlight-hover': 'cp-page-clip-highlight-no-hover'"
+      >
+    <p>{{clip.highlightText}}</p>
+  </div>
+  <div class="cp-page-clip-note cp-no-border">
+    <form name="noteForm" style="margin: 0">
+      <md-input-container style="width:100%" flex>
+        <label></label>
+        <textarea style="height: auto" ng-model="clip.note" columns="1"
+                  placeholder="Add Note..."
+                  lc-enter="homeCtrl.onNoteEnter(clip.note)"
+                  lc-focus-me="homeCtrl.activeNote.properties.activeItemId === clip.itemId ">
+        </textarea>
+      </md-input-container>
+    </form>
+  </div>
+</div>

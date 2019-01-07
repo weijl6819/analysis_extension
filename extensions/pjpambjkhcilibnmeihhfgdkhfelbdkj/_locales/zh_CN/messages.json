@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "往来"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "访问谷歌在弹出窗口我们联系"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "触点选项"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "弹出窗口的大小"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "宽度"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "高度"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "节省"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "保存的"
+   }
+}

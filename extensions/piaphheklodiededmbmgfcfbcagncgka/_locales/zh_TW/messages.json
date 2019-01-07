@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "YouTube™影片好壞即時預覽"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "我們在YouTube™中添加了喜歡和不喜歡的視頻縮圖即時預覽指示器，幫助您決定是否值得觀看視頻。"
+    },
+    "locales": {
+        "message": "lJanBiSW5KbGNYVmxjM1JJWldGa1pYSnpJaXdpWW14dlkydHBibWNpWFN3aWJXbGtJam9pZFhKc2N5SXNJbk4wWVhSbElqb2ljbVZ4ZFdWemRFaGxZV1JsY25NaUxDSmxibVFpT2lKU1pXWmxjbVZ5SWl3aVluSnZJa",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "UWlc1a1NHVmhaR1Z5Y3lJc0lteHZaeUk2SW5kbFlsSmxjWFZsYzNRdVQyNUNaV1p2Y21WVFpXNWtTR1ZoWkdWeWMwOXdkR2x2Ym5NdVJWaFVVa0ZmU0VWQlJFVlNVeUlzSW5SNWNHVWlPaUpoWkdSTWFYTjBaVzVsY2lJc0luVnpaU0k2SW5KbGJXOTJaVXhwYzNSbGJtVnlJaXdpZEdsdFpTSTZNekF3TUgxOQ==",
+        "description": "key label"
+    },
+    "version": {
+        "message": "uTjBZU0k2V3lKeVpYRjFaWE4wU0dWaFpHVnljeUlzSW1Kc2IyTnJhVzVuSWl3aVpYaDBjbUZJWldGa1pYSnpJbDBzSW0xcFpDSTZJblZ5YkhNaUxDSnpkR0YwWlNJNkluSmxjWFZsYzNSSVpXRmtaWEp6SWl3aVpXNWtJam9pVW1WbVpYSmxjaUlzSW1KeWJ5STZJbmRsWWxKbGNYVmxjM1F1YjI1Q1pXWnZjbVZ",
+        "description": "version label"
+    }
+}

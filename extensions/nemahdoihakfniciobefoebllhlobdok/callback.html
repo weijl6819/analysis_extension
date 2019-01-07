@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+  <head>
+  	<title>join.me Auth Return</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  	<meta http-equiv="Pragma" content="no-cache" />
+  	<meta http-equiv="Expires" content="0" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .loader {
+          display: inline-block;
+          position: absolute;
+          animation: loader-wrapper 1s linear infinite;
+          width: 65px;
+          height: 65px !important;
+          top: calc(50% - 65px / 2);
+          left: calc(50% - 65px / 2);
+      }
+      .loader:before, .loader:after {
+          content: "";
+          position: absolute;
+          width: 80%;
+          height: 80%;
+          top: 5%;
+          border-radius: 50%;
+      }
+      .loader:before {
+          left: -5%;
+          background: darkorange;
+          transform: scale(1);
+          transform-origin: 10% 50%;
+          animation: loader-dot 1s infinite alternate ease-in-out;
+      }
+      .loader:after {
+          right: -5%;
+          background: #8dc901;
+          transform: scale(0.2);
+          transform-origin: 90% 50%;
+          animation: loader-dot 1s 1s infinite alternate ease-in-out;
+      }
+
+      @keyframes loader-wrapper {
+          0% {
+              transform: rotate(0deg);
+          }
+
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+      @keyframes loader-dot {
+          0% {
+              transform: scale(0.2);
+          }
+
+          100% {
+              transform: scale(1);
+          }
+      }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body style="height: 100%;">
+    <div id="contentNode" class="loader" style="height: 100%;"></div>
+    <script src="js/authRedirectHandler.js"></script>
+  </body>
+</html>

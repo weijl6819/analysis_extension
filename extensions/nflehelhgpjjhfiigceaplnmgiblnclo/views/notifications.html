@@ -1,0 +1,32 @@
+<div class='info'>
+	<div class='name'><%= user.fullname || user.email %></div>
+	<div class='controls'>
+		<a class='uploads' href='#uploads'>Uploads</a> | 
+		<a href='http://ge.tt'>Open Ge.tt</a> |
+		<a class='logout' href='#'>Logout</a>
+	</div>
+
+	<div class='clear'></div>
+</div>
+
+<div class='notifications'>
+	<% for(var i = 0; i < notifications.length; i++) { 
+		var notification = notifications[i];
+	%>
+		<a class='notification-wrapper <%= notification.type %> <%= notification.unread ? 'unread' : 'read' %>' 
+				href='http://ge.tt<%- notification.url %>'>
+			<div class='notification <%= notification.type %> <%= notification.unread ? 'unread' : 'read' %>'>
+				<div class='icon' style='background-image:url(<%- pejs.helpers.notificationIcon(notification) %>);'></div>
+				<div class='message'>
+					<%- pejs.helpers.formatMessage(notification.message) %>
+				</div>
+
+				<div class='clear'></div>
+			</div>
+
+			<div class='date'><%= pejs.helpers.formatDate(notification.updated) %></div>
+		</a>
+	<% } %>
+
+	<a class='notification-wrapper all-notifications' href='http://ge.tt/notifications'>See all notifications</a>
+</div>

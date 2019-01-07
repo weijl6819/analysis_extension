@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "TabText. Un notepad dans chaque nouvel onglet"
+  },
+  "appDesc": {
+    "message": "À chaque fois que vous ouvrez un nouvel onglet, un bloc-notes synchronisé entre tous vos ordinateurs apparait."
+  }
+}

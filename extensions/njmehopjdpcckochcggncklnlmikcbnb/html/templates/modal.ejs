@@ -1,0 +1,312 @@
+<div class="h10-overlay">
+    <div class="container6 xray-modal">
+        <div class="top-tabs">
+            <span>Xray - Amazon Product Research</span>
+            <span id="h10-bb-search-term"></span>
+            <span id="h10-bb-search-volume"></span>
+            <i class="fa fa-spinner fa-spin" id="h10-bb-activity-indicator"></i>
+            <a href="#" class="close-btn">
+                <img id="close-icon" src="<%= close %>" style="height:36px;vertical-align: middle;"/>
+            </a>
+        </div>
+        <div id="black-box-tab">
+            <div class="content-div" id="black-box">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="bs-example">
+                            <table id="black-box-table-summary">
+                                <thead>
+                                <tr>
+                                    <th class="h10-bb-summary-labels" title="Total revenue (excluding sponsored listings)">
+                                        Total Revenue
+                                    </th>
+
+
+                                    <th class="h10-bb-summary-labels" title="Average revenue (excluding sponsored listings)">
+                                        Avg. Revenue
+                                    </th>
+
+
+                                    <th class="h10-bb-summary-labels" title="Average Best Seller Rank (excluding sponsored listings)">
+                                        Avg. BSR
+                                    </th>
+
+
+                                    <th class="h10-bb-summary-labels" title="Average price (excluding sponsored listings)">
+                                        Avg. Price
+                                    </th>
+
+
+                                    <th class="h10-bb-summary-labels" title="Average number of reviews (excluding sponsored listings)">
+                                        Avg. Reviews
+                                    </th>
+                                    <th class="h10-bb-summary-labels h10-bb-viability-score-column" title="Likelihood of successful as 0-5 star rating and 0-100 numeric score.">
+                                        Success Score (beta)
+                                    </th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td id="h10-bb-sales-number" class="h10-bb-summary-numbers">
+                                        <i class="fa fa-spinner fa-spin fa-fw"></i>
+                                    </td>
+                                    <td id="h10-bb-avg-monthly-sales" class="h10-bb-summary-numbers">
+                                        <i class="fa fa-spinner fa-spin fa-fw"></i>
+                                    </td>
+                                    <td id="h10-bb-avg-sales-rank" class="h10-bb-summary-numbers">
+                                        <i class="fa fa-spinner fa-spin fa-fw"></i>
+                                    </td>
+                                    <td id="h10-bb-avg-price" class="h10-bb-summary-numbers">
+                                        <i class="fa fa-spinner fa-spin fa-fw"></i>
+                                    </td>
+                                    <td id="h10-bb-avg-reviews-number" class="h10-bb-summary-numbers">
+                                        <i class="fa fa-spinner fa-spin fa-fw"></i>
+                                    </td>
+                                    <td id="h10-bb-viability-score" class="h10-bb-summary-numbers h10-bb-viability-score-column">
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+                                        <i class="fa fa-star-o"></i>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table id="black-box-table" class="table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>ASIN</th>
+                                    <th>Brand</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Buybox</th>
+                                    <th>Seller #</th>
+                                    <th>Seller Type </th>
+                                    <th>Price</th>
+                                    <th>FBA Fee</th>
+                                    <th>Sales</th>
+                                    <th>Sales graph</th>
+                                    <th>Revenue</th>
+                                    <th>BSR</th>
+                                    <th>Rating</th>
+                                    <th>Reviews</th>
+                                    <th>Reviews Velocity</th>
+                                    <th>Dimensions</th>
+                                    <th>Weight</th>
+                                    <th>Size Tier</th>
+                                    <th>Images</th>
+
+                                    <th>Settings</th>
+                                </tr>
+                                </thead>
+                                <tbody id="black-box-table-body">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="h10-bb-asin-preview hide">
+                <img class="h10-bb-asin-preview-img" src=""/>
+                <div class="h10-bb-asin-preview-description">
+                    <span class="h10-bb-asin-preview-rating"> </span>
+                    <span class="h10-bb-asin-preview-rating-count">   </span>
+                    <div class="h10-bb-asin-preview-title"></div>
+                    <div class="h10-bb-asin-preview-price"></div>
+                </div>
+
+            </div>
+            <div class="h10-bb-settings-popup hide">
+                <table>
+                    <thead>
+                    <tr>
+                        <th colspan="2" rowspan="2">Columns</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <input data-column="0" id="h10-bb-column-0" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-0">
+                                #
+                            </label>
+
+                        </td>
+                        <td>
+                            <input data-column="1" id="h10-bb-column-1" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-1">ASIN</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input data-column="2" id="h10-bb-column-2" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-2">Brand</label>
+                        </td>
+
+                        <td>
+                            <input data-column="3" id="h10-bb-column-3" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-3">Title</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input data-column="4" id="h10-bb-column-4" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-4">
+                                Category
+                            </label>
+
+                        </td>
+                        <td>
+                            <input data-column="5" id="h10-bb-column-5" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-5">BuyBox</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <input data-column="6" id="h10-bb-column-6" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-6">
+                                Number of Sellers
+                            </label>
+                        </td>
+                        <td>
+                            <input data-column="7" id="h10-bb-column-7" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-7">Delivery</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input data-column="8" id="h10-bb-column-8" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-8">Price</label>
+                        </td>
+
+                        <td>
+                            <input data-column="9" id="h10-bb-column-9" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-9">FBA Fee</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input data-column="10" id="h10-bb-column-10" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-10">Sales</label>
+
+                        </td>
+                        <td>
+                            <input data-column="11" id="h10-bb-column-11" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-11">Sales Graph</label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input data-column="12" id="h10-bb-column-12" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-12">Revenue</label>
+
+                        </td>
+                        <td>
+                            <input data-column="13" id="h10-bb-column-13" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-13">BSR</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input data-column="14" id="h10-bb-column-14" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-14">Rating</label>
+                        </td>
+
+                        <td>
+                            <input data-column="15" id="h10-bb-column-15" type="checkbox" checked
+                                   class="h10-bb-columns-options">
+                        </td>
+                        <td>
+                            <label for="h10-bb-column-15">Reviews</label>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="bb-footer content-div">
+                <a href="https://www.helium10.com/" target="_blank">
+                    <img src="" id="bb-helium-logo">
+                </a>
+                <span id="h10-bb-uses-summary" class="hide">
+                   Uses used  <span id="h10-bb-uses-summary-used">20</span> / <span
+                            id="h10-bb-uses-summary-total">1000</span>
+                </span>
+                <span id="h10-bb-export-wrapper">
+                    <a href="https://members.helium10.com/black-box/my-list" target="_blank">
+                        <i class="fa fa-thumb-tack h10-bb-list-action"></i>
+                    </a>
+                    <i class="fa fa-camera h10-bb-screenshot-action"></i>
+                    <i class="fa fa-download h10-bb-csv-action"></i>
+                </span>
+
+            </div>
+
+        </div>
+        <div class="h10-bb-graph-popup hide">
+            <div class="h10-bb-graph-popup-header">
+                <div class="h10-bb-graph-popup-header-title">
+                </div>
+                <i class="fa fa-window-close h10-bb-graph-popup-header-close"></i>
+            </div>
+            <div style="text-align: center;">
+                <iframe id="h10-bb-10-chart-iframe" src="" style="display:none;border: 0 none; overflow: hidden; height: 440px; width: 880px;" scrolling="no"></iframe>
+                <img id="h10-bb-graph-popup-spinner" style="height:440px" src="<%= spinner %>"></img>
+            </div>
+         </div>
+    </div>
+</div>

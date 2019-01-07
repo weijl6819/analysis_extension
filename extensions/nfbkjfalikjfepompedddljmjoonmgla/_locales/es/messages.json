@@ -1,0 +1,8 @@
+{
+  "appName": {
+    "message": "TabText. Bloc de notas en cada nueva pestaña"
+  },
+  "appDesc": {
+    "message": "Cada vez que abra una nueva pestaña, aparece un bloc de notas sincronizado entre todos sus ordenadores."
+  }
+}

@@ -1,0 +1,52 @@
+<div class="tabs-area">
+  <md-tabs md-dynamic-height md-border-bottom>
+
+    <md-tab label="pages">
+      <div>
+
+        <cp-toolbar></cp-toolbar>
+
+        <cp-search-bar ng-if="homeCtrl.isSearchFilterMode"></cp-search-bar>
+        <cp-tags-bar ng-if="homeCtrl.isTagsFilterMode"></cp-tags-bar>
+
+        <div class="cp-toolbar-separator"></div>
+
+        <div class="cp-notes-list">
+          <div class="cp-notes-list-bg">
+
+
+            <div class="items-list-wrapper">
+
+              <!------- Notes List ----------->
+
+              <cp-pages-list></cp-pages-list>
+
+              <!------- End of Notes List ----------->
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </md-tab>
+
+    <md-tab label="Collections">
+
+      <!-- no notes to show-->
+      <div class="cp-no-border cp-no-notes-container">
+        <!--<div class="cp-no-notes-image"></div>-->
+        <img class="cp-no-notes-image" src="../app/img/no-notes.png">
+
+        <div
+            style="color: gray; line-height:20px; font-size:20px; margin: auto; display: block; position: relative; width: 200px; text-align: center">
+          <p>Coming Soon...</p>
+        </div>
+      </div>
+      <!-- / no notes to show-->
+
+    </md-tab>
+
+  </md-tabs>
+</div>
+

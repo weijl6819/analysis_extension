@@ -1,0 +1,3721 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/* line 19, ../../../app/assets/stylesheets/import/base.css.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 20, ../../../app/assets/stylesheets/import/base.css.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 21, ../../../app/assets/stylesheets/import/base.css.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 22, ../../../app/assets/stylesheets/import/base.css.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+/* line 34, ../../../app/assets/stylesheets/import/base.css.scss */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 35, ../../../app/assets/stylesheets/import/base.css.scss */
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/* line 45, ../../../app/assets/stylesheets/import/base.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 46, ../../../app/assets/stylesheets/import/base.css.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 47, ../../../app/assets/stylesheets/import/base.css.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 48, ../../../app/assets/stylesheets/import/base.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 49, ../../../app/assets/stylesheets/import/base.css.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 50, ../../../app/assets/stylesheets/import/base.css.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 51, ../../../app/assets/stylesheets/import/base.css.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 53, ../../../app/assets/stylesheets/import/base.css.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Redeclare monospace font family: h5bp.com/j */
+/* line 56, ../../../app/assets/stylesheets/import/base.css.scss */
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* Improve readability of pre-formatted text in all browsers */
+/* line 59, ../../../app/assets/stylesheets/import/base.css.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 61, ../../../app/assets/stylesheets/import/base.css.scss */
+q {
+  quotes: none;
+}
+
+/* line 62, ../../../app/assets/stylesheets/import/base.css.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 64, ../../../app/assets/stylesheets/import/base.css.scss */
+small {
+  font-size: 85%;
+}
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+/* line 67, ../../../app/assets/stylesheets/import/base.css.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 68, ../../../app/assets/stylesheets/import/base.css.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 69, ../../../app/assets/stylesheets/import/base.css.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 71, ../../../app/assets/stylesheets/import/base.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 78, ../../../app/assets/stylesheets/import/base.css.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 79, ../../../app/assets/stylesheets/import/base.css.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 80, ../../../app/assets/stylesheets/import/base.css.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
+ */
+/* line 92, ../../../app/assets/stylesheets/import/base.css.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+/* line 98, ../../../app/assets/stylesheets/import/base.css.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/* line 105, ../../../app/assets/stylesheets/import/base.css.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/* line 112, ../../../app/assets/stylesheets/import/base.css.scss */
+form {
+  margin: 0;
+}
+
+/* line 113, ../../../app/assets/stylesheets/import/base.css.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Indicate that 'label' will shift focus to the associated form element */
+/* line 116, ../../../app/assets/stylesheets/import/base.css.scss */
+label {
+  cursor: pointer;
+}
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+/* line 123, ../../../app/assets/stylesheets/import/base.css.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal;
+}
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+/* line 131, ../../../app/assets/stylesheets/import/base.css.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ */
+/* line 137, ../../../app/assets/stylesheets/import/base.css.scss */
+button, input {
+  line-height: normal;
+}
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ * 3. Correct inner spacing displayed oddly in IE7 (doesn't effect IE6)
+ */
+/* line 145, ../../../app/assets/stylesheets/import/base.css.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+
+/*
+ * Re-set default cursor for disabled elements
+ */
+/* line 151, ../../../app/assets/stylesheets/import/base.css.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/*
+ * Consistent box sizing and appearance
+ */
+/* line 157, ../../../app/assets/stylesheets/import/base.css.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px;
+}
+
+/* line 158, ../../../app/assets/stylesheets/import/base.css.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+/* line 159, ../../../app/assets/stylesheets/import/base.css.scss */
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+/* line 165, ../../../app/assets/stylesheets/import/base.css.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+/* line 172, ../../../app/assets/stylesheets/import/base.css.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* Colors for form validity */
+/* line 176, ../../../app/assets/stylesheets/import/base.css.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* line 183, ../../../app/assets/stylesheets/import/base.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 184, ../../../app/assets/stylesheets/import/base.css.scss */
+td {
+  vertical-align: top;
+}
+
+/* =============================================================================
+   Chrome Frame Prompt
+   ========================================================================== */
+/* line 191, ../../../app/assets/stylesheets/import/base.css.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0;
+}
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+/* .hidden { display: none !important; visibility: hidden; } */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+/* line 203, ../../../app/assets/stylesheets/import/base.css.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+/* line 206, ../../../app/assets/stylesheets/import/base.css.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 209, ../../../app/assets/stylesheets/import/base.css.scss */
+.invisible {
+  opacity: 0;
+}
+
+/* Contain floats: h5bp.com/q */
+/* line 212, ../../../app/assets/stylesheets/import/base.css.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 213, ../../../app/assets/stylesheets/import/base.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 214, ../../../app/assets/stylesheets/import/base.css.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 224, ../../../app/assets/stylesheets/import/base.css.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 225, ../../../app/assets/stylesheets/import/base.css.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 226, ../../../app/assets/stylesheets/import/base.css.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 227, ../../../app/assets/stylesheets/import/base.css.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 228, ../../../app/assets/stylesheets/import/base.css.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 229, ../../../app/assets/stylesheets/import/base.css.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 230, ../../../app/assets/stylesheets/import/base.css.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 231, ../../../app/assets/stylesheets/import/base.css.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 232, ../../../app/assets/stylesheets/import/base.css.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 234, ../../../app/assets/stylesheets/import/base.css.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 235, ../../../app/assets/stylesheets/import/base.css.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+@font-face {
+  font-family: 'Blogmate';
+  src: url("/assets/blogmate.eot");
+  src: url("/assets/blogmate.eot?#iefix") format("embedded-opentype"), url("/assets/blogmate.svg#IcoMoon") format("svg"), url("/assets/blogmate.woff") format("woff"), url("/assets/blogmate.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 13, ../../../app/assets/stylesheets/import/icons.css.scss */
+[data-icon]:before {
+  font-family: 'Blogmate';
+  content: attr(data-icon);
+  speak: none;
+}
+
+/* line 19, ../../../app/assets/stylesheets/import/icons.css.scss */
+[class^="icon_"], [class*=" icon_"], .icon {
+  position: relative;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/* line 22, ../../../app/assets/stylesheets/import/icons.css.scss */
+[class^="icon_"]:before, [class*=" icon_"]:before, .dropdown:after {
+  font-family: 'Blogmate';
+  font-style: normal;
+  speak: none;
+  display: inline;
+}
+
+/* line 30, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_stack:before {
+  content: "\e000";
+}
+
+/* line 31, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_blogmate:before {
+  content: "\e001";
+}
+
+/* line 32, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_twitter:before {
+  content: "\e002";
+}
+
+/* line 33, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_facebook:before {
+  content: "\e003";
+}
+
+/* line 35, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_author:before,
+.icon_edit:before {
+  content: "\e004";
+}
+
+/* line 36, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_right:before {
+  content: "\e005";
+}
+
+/* line 37, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_up:before {
+  content: "\e006";
+}
+
+/* line 38, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_down:before {
+  content: "\e007";
+}
+
+/* line 39, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_left:before {
+  content: "\e008";
+}
+
+/* line 40, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_email:before {
+  content: "\e009";
+}
+
+/* line 41, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_lock:before {
+  content: "\e00a";
+}
+
+/* line 42, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_search:before {
+  content: "\e00b";
+}
+
+/* line 43, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_expand:before {
+  content: "\e00c";
+}
+
+/* line 44, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_add:before {
+  content: "\e00d";
+}
+
+/* line 45, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_gear:before {
+  content: "\e00e";
+}
+
+/* line 46, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_user:before {
+  content: "\e00f";
+}
+
+/* line 47, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_day:before {
+  content: "\e010";
+}
+
+/* line 48, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_condensed:before {
+  content: "\e014";
+}
+
+/* line 49, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_expanded:before {
+  content: "\e015";
+}
+
+/* line 50, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_night:before {
+  content: "\e016";
+}
+
+/* line 51, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_delete:before {
+  content: "\e017";
+}
+
+/* line 52, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_handle:before {
+  content: "\e018";
+}
+
+/* line 53, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_x:before {
+  content: "\e019";
+}
+
+/* line 54, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_check:before {
+  content: "\e01a";
+}
+
+/* line 55, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_move:before {
+  content: "\e01b";
+}
+
+/* line 56, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_settings:before {
+  content: "\e01c";
+}
+
+/* line 58, ../../../app/assets/stylesheets/import/icons.css.scss */
+.dropdown:after {
+  content: "\e007";
+}
+
+/* line 59, ../../../app/assets/stylesheets/import/icons.css.scss */
+.active .dropdown:after {
+  content: '\e006';
+}
+
+/* line 61, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_day:before {
+  content: "\e01e";
+}
+
+/* line 62, ../../../app/assets/stylesheets/import/icons.css.scss */
+.icon_night:before {
+  content: "\e01d";
+}
+/* Imports */
+/*------------------------------------
+1. Variables & Imports
+------------------------------------*/
+/* Colors */
+/* Font Sizes */
+/* Paddings */
+/* Font Families */
+/*------------------------------------
+2. Defaults
+------------------------------------*/
+/* line 8, ../../../app/assets/stylesheets/import/defaults.css.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, ../../../app/assets/stylesheets/import/defaults.css.scss */
+html, button, input, select, textarea {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #41494d;
+}
+
+/* line 14, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme,
+.dark_theme button,
+.dark_theme input,
+.dark_theme select,
+.dark_theme textarea {
+  color: #fcfcfa;
+}
+
+/* line 16, ../../../app/assets/stylesheets/import/defaults.css.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 17, ../../../app/assets/stylesheets/import/defaults.css.scss */
+body {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-size: 125%;
+  line-height: 1.6;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+/* line 18, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme {
+  background: #242e33;
+}
+
+/* Custom Scrollbar */
+/* line 23, ../../../app/assets/stylesheets/import/defaults.css.scss */
+::-webkit-scrollbar {
+  width: 0.8em;
+  background: #fcfcfa;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1) inset;
+  border-left: 1px solid #e5e5e1;
+}
+
+/* line 24, ../../../app/assets/stylesheets/import/defaults.css.scss */
+::-webkit-scrollbar-corner {
+  background: #fcfcfa;
+}
+
+/* line 25, ../../../app/assets/stylesheets/import/defaults.css.scss */
+::-webkit-scrollbar-thumb {
+  background: #e5e5e1;
+  border: 1px solid #c2c9cc;
+  border-right: none;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 252, 0.3) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 252, 0.3) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 252, 0.3) inset;
+}
+
+/* line 27, ../../../app/assets/stylesheets/import/defaults.css.scss */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(115, 123, 128, 0.4);
+  border-color: #a1adb3;
+}
+
+/* line 29, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme ::-webkit-scrollbar {
+  background: #1c2429;
+  border-color: #0d151a;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* line 31, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme ::-webkit-scrollbar-thumb {
+  background: #41494d;
+  border-color: #0d151a;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 33, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme ::-webkit-scrollbar-thumb:hover {
+  background: #737b80;
+}
+
+/* Selection */
+/* line 37, ../../../app/assets/stylesheets/import/defaults.css.scss */
+::-moz-selection {
+  background: rgba(13, 21, 26, 0.2);
+  text-shadow: none;
+}
+
+/* line 38, ../../../app/assets/stylesheets/import/defaults.css.scss */
+::selection {
+  background: rgba(13, 21, 26, 0.2);
+  text-shadow: none;
+}
+
+/* line 39, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme ::-moz-selection {
+  background: rgba(255, 255, 252, 0.1);
+}
+
+/* line 40, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme ::selection {
+  background: rgba(255, 255, 252, 0.1);
+}
+
+/* Basic Links */
+/* line 44, ../../../app/assets/stylesheets/import/defaults.css.scss */
+a {
+  text-decoration: none;
+  color: #63a6c7;
+  border-bottom: 1px solid rgba(51, 153, 204, 0.2);
+  outline: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* line 46, ../../../app/assets/stylesheets/import/defaults.css.scss */
+a:hover,
+a:focus {
+  color: #3399cc;
+  border-color: #3399cc;
+}
+
+/* Basic Text Elements */
+/* line 50, ../../../app/assets/stylesheets/import/defaults.css.scss */
+p {
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  margin-bottom: 1.5em;
+}
+
+/* Headings */
+/* line 53, ../../../app/assets/stylesheets/import/defaults.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 54, ../../../app/assets/stylesheets/import/defaults.css.scss */
+h1 {
+  font-size: 2.25em;
+  margin-bottom: 0.5em;
+}
+
+/* line 55, ../../../app/assets/stylesheets/import/defaults.css.scss */
+h2 {
+  font-size: 1.5em;
+}
+
+/* line 56, ../../../app/assets/stylesheets/import/defaults.css.scss */
+h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+/* line 57, ../../../app/assets/stylesheets/import/defaults.css.scss */
+h6 {
+  font-size: 0.875em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Media */
+/* line 60, ../../../app/assets/stylesheets/import/defaults.css.scss */
+img {
+  max-width: 100%;
+}
+
+/* Lists */
+/* line 63, ../../../app/assets/stylesheets/import/defaults.css.scss */
+ul, ol {
+  margin: 0 0 1em 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 64, ../../../app/assets/stylesheets/import/defaults.css.scss */
+ul > li {
+  position: relative;
+}
+
+/* line 65, ../../../app/assets/stylesheets/import/defaults.css.scss */
+ul > li:after {
+  content: '\2022';
+  color: #c2c9cc;
+  position: absolute;
+  top: 0;
+  left: -1em;
+}
+
+/* line 66, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme ul > li:after {
+  color: #737b80;
+}
+
+/* line 67, ../../../app/assets/stylesheets/import/defaults.css.scss */
+dl {
+  font-size: 0.875em;
+}
+
+/* line 68, ../../../app/assets/stylesheets/import/defaults.css.scss */
+dt {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75em;
+  color: #c2c9cc;
+}
+
+/* line 69, ../../../app/assets/stylesheets/import/defaults.css.scss */
+dd {
+  margin: 0 0 1em 0;
+}
+
+/* Blockqutoes */
+/* line 72, ../../../app/assets/stylesheets/import/defaults.css.scss */
+blockquote {
+  position: relative;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  font-style: italic;
+  color: #a1adb3;
+  padding: 1em 2em;
+  margin: 0 0 1em 0;
+}
+
+/* line 73, ../../../app/assets/stylesheets/import/defaults.css.scss */
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2em;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 74, ../../../app/assets/stylesheets/import/defaults.css.scss */
+cite {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-style: normal;
+  color: #c2c9cc;
+}
+
+/* line 75, ../../../app/assets/stylesheets/import/defaults.css.scss */
+cite:before {
+  content: '\2014 \2003';
+}
+
+/* Inputs */
+/* line 83, ../../../app/assets/stylesheets/import/defaults.css.scss */
+[type="text"],
+[type="email"],
+[type="password"],
+[type="search"],
+textarea,
+.checkbox_dropdown {
+  position: relative;
+  display: block;
+  height: 3em;
+  width: 100%;
+  padding: 0.5em 1em;
+  padding-left: 2.5em;
+  background: none;
+  border: 1px solid #e5e5e1;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 90, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme [type="text"],
+.dark_theme [type="email"],
+.dark_theme [type="password"],
+.dark_theme [type="search"],
+.dark_theme textarea,
+.dark_theme .checkbox_dropdown {
+  border-color: #41494d;
+}
+
+/* line 92, ../../../app/assets/stylesheets/import/defaults.css.scss */
+*:focus {
+  outline: none;
+}
+
+/* line 97, ../../../app/assets/stylesheets/import/defaults.css.scss */
+[type="text"]:focus,
+[type="email"]:focus,
+[type="password"]:focus,
+[type="search"]:focus,
+textarea:focus {
+  border-color: #c2c9cc;
+}
+
+/* line 103, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme [type="text"]:focus,
+.dark_theme [type="email"]:focus,
+.dark_theme [type="password"]:focus,
+.dark_theme [type="search"]:focus,
+.dark_theme textarea:focus {
+  border-color: #737b80;
+}
+
+/* line 105, ../../../app/assets/stylesheets/import/defaults.css.scss */
+[type="submit"] {
+  border: none;
+}
+
+/* line 106, ../../../app/assets/stylesheets/import/defaults.css.scss */
+[type="checkbox"] {
+  position: relative;
+}
+
+/* line 107, ../../../app/assets/stylesheets/import/defaults.css.scss */
+textarea {
+  height: 5em;
+  max-height: 5em;
+  padding: 1em;
+  position: relative;
+  overflow: hidden;
+  line-height: 1.6;
+}
+
+/* line 108, ../../../app/assets/stylesheets/import/defaults.css.scss */
+textarea:before {
+  content: '';
+  position: absolute;
+  top: 2em;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #e5e5e1;
+}
+
+/* line 109, ../../../app/assets/stylesheets/import/defaults.css.scss */
+textarea:after {
+  content: '';
+  position: absolute;
+  top: 3.5em;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #e5e5e1;
+}
+
+/* line 110, ../../../app/assets/stylesheets/import/defaults.css.scss */
+textarea:focus:before, textarea:focus:after {
+  border-color: #c2c9cc;
+}
+
+/* line 111, ../../../app/assets/stylesheets/import/defaults.css.scss */
+label {
+  position: relative;
+  display: block;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
+}
+
+/* line 112, ../../../app/assets/stylesheets/import/defaults.css.scss */
+label > em {
+  text-transform: none;
+  letter-spacing: normal;
+  color: #a1adb3;
+}
+
+/* line 113, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.no_icon {
+  padding-left: 1em;
+}
+
+/* line 115, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.input_error,
+input:invalid {
+  border-color: #e56c5c;
+  background: none;
+}
+
+/* line 117, ../../../app/assets/stylesheets/import/defaults.css.scss */
+::-webkit-input-placeholder {
+  color: #c2c9cc;
+}
+
+/* line 118, ../../../app/assets/stylesheets/import/defaults.css.scss */
+:-moz-placeholder {
+  color: #c2c9cc;
+}
+
+/* line 120, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme ::-webkit-input-placeholder {
+  color: #737b80;
+}
+
+/* line 121, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme :-moz-placeholder {
+  color: #737b80;
+}
+
+/* Forms */
+/* line 127, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.form_header {
+  padding: 1em;
+  margin-bottom: 1.5em;
+  background: #e5e5e1;
+  text-align: center;
+}
+
+/* line 128, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.form_field {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+/* line 129, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.form_field:last-child {
+  margin-bottom: 0;
+}
+
+/* line 130, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.form_field .icon {
+  z-index: 5;
+  position: absolute;
+  left: 1em;
+  bottom: 0.8em;
+  color: #c2c9cc;
+  font-size: 0.875em;
+}
+
+/* line 132, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme .form_field .icon {
+  color: #41494d;
+}
+
+/* Form Links */
+/* line 135, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.remember_me {
+  float: left;
+}
+
+/* line 136, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.forgot_password {
+  float: right;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.2em;
+}
+
+/* Checkbox Dropdown */
+/* line 139, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.checkbox_dropdown {
+  position: relative;
+  padding-left: 1em;
+  cursor: pointer;
+  line-height: 2em;
+}
+
+/* line 140, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.checkbox_dropdown .icon {
+  left: auto;
+  right: 1em;
+  bottom: auto;
+}
+
+/* line 141, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.checkbox_list {
+  overflow: hidden;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: 3em;
+  padding: 0;
+  margin: -1px 0 0 0;
+  height: 0;
+  background: #fff;
+  border-right: 1px solid #e5e5e1;
+  border-left: 1px solid #e5e5e1;
+  z-index: 5;
+}
+
+/* line 142, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.checkbox_list_item {
+  list-style-type: none;
+}
+
+/* line 143, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.checkbox_list_item > label {
+  overflow: hidden;
+  display: block;
+  padding: 0.5em 1.334em;
+  border-bottom: 1px solid #e5e5e1;
+  margin: 0;
+  font-size: 0.75em;
+  color: #737b80;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* line 144, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.checkbox_list_item input {
+  position: absolute;
+  top: 50%;
+  right: 1.334em;
+  margin-top: -6px;
+}
+
+/* line 146, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.checkbox_list_item > label:hover {
+  background: #fffeeb;
+}
+
+/* line 148, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.checkbox_dropdown:hover .checkbox_list {
+  height: auto;
+}
+
+/********** Non-Semantic Helper Classes **********/
+/* line 155, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.light_text {
+  color: #c2c9cc;
+}
+
+/* line 156, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.dark_theme .light_text {
+  color: #737b80;
+}
+
+/* line 157, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.center {
+  text-align: center;
+}
+
+/* line 158, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.clear {
+  height: 0;
+  clear: both;
+}
+
+/* line 159, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+/* line 160, ../../../app/assets/stylesheets/import/defaults.css.scss */
+.clone {
+  position: absolute;
+  bottom: -5em;
+  visibility: hidden;
+}
+/*------------------------------------
+1. Variables & Imports
+------------------------------------*/
+/* Colors */
+/* Font Sizes */
+/* Paddings */
+/* Font Families */
+/*------------------------------------
+3. Patterns
+------------------------------------*/
+/**********  Buttons  **********/
+/* Default Button */
+/* line 10, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.btn {
+  position: relative;
+  display: inline-block;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1.5em;
+  background: #e56c5c;
+  color: #fffffc;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: none;
+  background: rgba(99, 166, 199, 0.6);
+  color: #fffffc;
+  font-weight: bold;
+}
+
+/* line 11, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.btn:hover {
+  color: #fffffc;
+  background: rgba(99, 166, 199, 0.9);
+}
+
+/* line 12, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.btn:active {
+  color: #fffffc;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  -webkit-box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+/* line 13, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.btn .icon {
+  margin-right: 0.25em;
+  top: 1px;
+}
+
+/* Success Button */
+/* line 17, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.success_btn {
+  background: rgba(107, 178, 113, 0.6);
+}
+
+/* line 18, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.success_btn:hover {
+  background: rgba(107, 178, 113, 0.9);
+}
+
+/* Warning Button */
+/* line 21, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.warning_btn {
+  background: rgba(229, 108, 92, 0.6);
+}
+
+/* line 22, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.warning_btn:hover {
+  background: rgba(229, 108, 92, 0.9);
+}
+
+/* Wide Button */
+/* line 25, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.wide_btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+/* Large Button */
+/* line 28, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.large_btn {
+  height: 3em;
+  line-height: 3em;
+  font-size: 1em;
+}
+
+/* Icon Button */
+/* line 31, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.icon_btn {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  padding: 0;
+  text-align: center;
+  border: none;
+  color: #a1adb3;
+  text-align: center;
+}
+
+/* line 32, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.icon_btn .icon {
+  margin: 0;
+}
+
+/* line 33, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.icon_btn:hover {
+  color: #737b80;
+}
+
+/* line 34, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.icon_btn:active {
+  color: #63a6c7;
+}
+
+/* Alt Button */
+/* line 37, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.alt_btn {
+  height: 2.5em;
+  line-height: 2.5em;
+  padding: 0 1em;
+  background: #fff;
+  border: 2px solid #e5e5e1;
+  color: #c2c9cc;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 38, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.alt_btn:hover {
+  border-color: #c2c9cc;
+  background: #fff;
+  color: #a1adb3;
+}
+
+/* line 39, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.alt_btn:active {
+  border: 2px solid #c2c9cc;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #c2c9cc;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 40, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .alt_btn {
+  background: #242e33;
+  border-color: #41494d;
+  color: #a1adb3;
+}
+
+/* line 41, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .alt_btn:hover {
+  border-color: #737b80;
+  color: #c2c9cc;
+}
+
+/* line 42, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .alt_btn:active {
+  background: #737b80;
+}
+
+/* Button Group */
+/* line 45, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.btn_group {
+  overflow: hidden;
+}
+
+/* line 46, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.btn_group .btn {
+  display: block;
+  float: left;
+}
+
+/* line 47, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.btn_group .btn:first-child {
+  -webkit-border-radius: 0.25em 0 0 0.25em;
+  -moz-border-radius: 0.25em 0 0 0.25em;
+  -ms-border-radius: 0.25em 0 0 0.25em;
+  -o-border-radius: 0.25em 0 0 0.25em;
+  border-radius: 0.25em 0 0 0.25em;
+}
+
+/* line 48, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.btn_group .btn:last-child {
+  margin-left: -1px;
+  -webkit-border-radius: 0 0.25em 0.25em 0;
+  -moz-border-radius: 0 0.25em 0.25em 0;
+  -ms-border-radius: 0 0.25em 0.25em 0;
+  -o-border-radius: 0 0.25em 0.25em 0;
+  border-radius: 0 0.25em 0.25em 0;
+}
+
+/* line 50, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.half_btn {
+  width: 50%;
+}
+
+/**********  Messages  **********/
+/* line 55, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.message {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  z-index: 1337;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0.5em;
+  -webkit-border-radius: 0 0 0.25em 0.25em;
+  -moz-border-radius: 0 0 0.25em 0.25em;
+  -ms-border-radius: 0 0 0.25em 0.25em;
+  -o-border-radius: 0 0 0.25em 0.25em;
+  border-radius: 0 0 0.25em 0.25em;
+  text-align: center;
+  font-weight: bold;
+  color: #41494d;
+  background: rgba(255, 255, 128, 0.6);
+}
+
+/* line 56, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.message.hidden {
+  opacity: 0;
+}
+
+/* line 57, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.message.success {
+  background: rgba(107, 178, 113, 0.8);
+  color: #fffffc;
+}
+
+/* line 58, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.message.error {
+  background: rgba(229, 108, 92, 0.8);
+  color: #fffffc;
+}
+
+/* line 59, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.message_item {
+  display: block;
+}
+
+/**********  App Overlay  **********/
+/* line 63, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 252, 0.75);
+  opacity: 1;
+  z-index: 1337;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 64, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.overlayed {
+  -webkit-filter: blur(0.1em);
+  -moz-filter: blur(0.1em);
+  filter: blur(0.1em);
+}
+
+/* line 65, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.overlay.hidden {
+  opacity: 0;
+}
+
+/* line 66, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.overlay_content {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  text-align: left;
+  background: #fff;
+  top: 50%;
+  padding: 1.5em;
+  border: 1px solid #c2c9cc;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 0 0 0.5em rgba(115, 123, 128, 0.2);
+  -moz-box-shadow: 0 0 0 0.5em rgba(115, 123, 128, 0.2);
+  box-shadow: 0 0 0 0.5em rgba(115, 123, 128, 0.2);
+  font-weight: normal;
+  opacity: 1;
+}
+
+/* line 67, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.overly_content.wide {
+  left: 10%;
+  width: 80%;
+}
+
+/* line 68, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.overlay_title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* line 69, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.overlay_text {
+  text-align: center;
+  font-style: italic;
+  color: #c2c9cc;
+}
+
+/* line 70, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.close_overlay_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  width: 1.5em;
+}
+
+/* line 71, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.confirmation_btns {
+  text-align: center;
+}
+
+/* line 72, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .overlay {
+  background: rgba(13, 21, 26, 0.75);
+}
+
+/* line 73, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .overlay_content {
+  color: #fffffc;
+  background: #242e33;
+  border-color: #0d151a;
+  -webkit-box-shadow: 0 0 0 0.5em rgba(13, 21, 26, 0.8);
+  -moz-box-shadow: 0 0 0 0.5em rgba(13, 21, 26, 0.8);
+  box-shadow: 0 0 0 0.5em rgba(13, 21, 26, 0.8);
+}
+
+/*********  Toggle  **********/
+/* line 78, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.toggle {
+  display: inline-block;
+  position: relative;
+  width: 2.25em;
+  height: 0.75em;
+  border: 1px solid #c2c9cc;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  margin: 0 0.25em;
+  background: #e5e5e1;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 79, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.toggle:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.75em;
+  width: 0.75em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 0 1px #c2c9cc;
+  -moz-box-shadow: 0 0 0 1px #c2c9cc;
+  box-shadow: 0 0 0 1px #c2c9cc;
+  background: #fff;
+}
+
+/* NOTE: active = toggle is on the right side */
+/* line 83, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.toggle.active:before,
+.active .toggle:before {
+  left: auto;
+  right: 0;
+}
+
+/* line 84, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .toggle {
+  background: #1c2429;
+  border-color: #0d151a;
+}
+
+/* line 85, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .toggle:before {
+  background: #737b80;
+  -webkit-box-shadow: 0 0 0 1px #0d151a;
+  -moz-box-shadow: 0 0 0 1px #0d151a;
+  box-shadow: 0 0 0 1px #0d151a;
+}
+
+/**********  Logos  **********/
+/* line 90, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.logo {
+  display: inline-block;
+  font-family: 'Blogmate';
+  color: #a1adb3;
+  border: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 91, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.logo_part {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 92, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.i {
+  color: rgba(99, 166, 199, 0.6);
+}
+
+/* line 94, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.l {
+  margin-left: -0.4em;
+}
+
+/* line 95, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.o {
+  margin-left: -0.35em;
+}
+
+/* line 96, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.g {
+  margin-left: -0.1em;
+}
+
+/* line 99, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.t {
+  margin-left: -0.4em;
+}
+
+/* line 100, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.e {
+  margin-left: -0.35em;
+}
+
+/* line 102, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.logo:hover .i {
+  color: rgba(99, 166, 199, 0.9);
+}
+
+/* line 103, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .logo {
+  color: #e5e5e1;
+}
+
+/* line 104, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .logo:hover {
+  color: #fffffc;
+}
+
+/* line 106, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.large_logo {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+}
+
+/* line 107, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.small_logo .logo_part {
+  margin-left: -0.2em;
+}
+
+/**********  Tooltip  **********/
+/* line 111, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip {
+  position: absolute;
+  z-index: 1337;
+  margin-top: -0.5em;
+  display: block;
+  visibility: visible;
+  font-size: 0.75em;
+  padding: 0.5em;
+  letter-spacing: 1px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+/* line 112, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+/* line 113, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.top {
+  margin-top: -0.1em;
+}
+
+/* line 114, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.right {
+  margin-left: 0.1em;
+}
+
+/* line 115, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.bottom {
+  margin-top: 0.1em;
+}
+
+/* line 116, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.left {
+  margin-left: -0.1em;
+}
+
+/* line 117, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip-inner {
+  padding: 0.1em 0.5em;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #242e33;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 118, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 120, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.top .tooltip-arrow,
+.tooltip.top-left .tooltip-arrow {
+  bottom: 1px;
+  left: 50%;
+  margin-left: -0.5em;
+  border-width: 0.5em 0.5em 0;
+  border-top-color: #242e33;
+}
+
+/* line 121, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -0.5em;
+  border-width: 0.5em 0.5em 0.5em 0;
+  border-right-color: #242e33;
+}
+
+/* line 122, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -0.5em;
+  border-width: 0.5em 0 0.5em 0.5em;
+  border-left-color: #242e33;
+}
+
+/* line 123, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -0.5em;
+  border-width: 0 0.5em 0.5em;
+  border-bottom-color: #242e33;
+}
+
+/* line 125, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .tooltip-inner {
+  background-color: #0d151a;
+}
+
+/* line 126, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .tooltip.top .tooltip-arrow {
+  border-top-color: #0d151a;
+}
+
+/* line 127, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .tooltip.right .tooltip-arrow {
+  border-right-color: #0d151a;
+}
+
+/* line 128, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .tooltip.left .tooltip-arrow {
+  border-left-color: #0d151a;
+}
+
+/* line 129, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #0d151a;
+}
+
+/* line 130, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .tooltip.top-left .tooltip-arrow {
+  border-top-color: #0d151a;
+}
+
+/**********  Loading  **********/
+/* line 134, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 252, 0.5);
+  opacity: 1;
+  z-index: 1337;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/* line 135, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.loading.hidden {
+  opacity: 0;
+}
+
+/* line 136, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.loading_text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 137, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.loading.hidden .loading_text {
+  top: -50%;
+}
+
+/**********  Separator  **********/
+/* line 141, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.separator {
+  clear: both;
+  display: block;
+  height: 0;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 4em 0;
+  font-family: 'Blogmate';
+}
+
+/* line 142, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.separator:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #c2c9cc;
+}
+
+/* line 143, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.separator:after {
+  content: "\e001";
+  position: absolute;
+  margin-top: -0.5em;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.5em;
+  color: #c2c9cc;
+  background: #fff;
+  padding: 0 2em;
+  width: 1em;
+  text-align: center;
+  height: 1em;
+  line-height: 1em;
+}
+
+/* line 144, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .separator:before {
+  background: #41494d;
+}
+
+/* line 145, ../../../app/assets/stylesheets/import/patterns.css.scss */
+.dark_theme .separator:after {
+  color: #41494d;
+  background: #242e33;
+}
+/* Imports */
+/*------------------------------------
+1. Variables & Imports
+------------------------------------*/
+/* Colors */
+/* Font Sizes */
+/* Paddings */
+/* Font Families */
+/*------------------------------------
+4. Application Layout
+------------------------------------*/
+/**********  Application Wrapper  **********/
+/* line 10, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_wrapper {
+  position: absolute;
+  top: 3em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-top: -2px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 11, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_wrapper.expanded {
+  top: 0;
+  margin-top: 0;
+}
+
+/**********  Application Header  **********/
+/* line 16, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_header {
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3em;
+  border-bottom: 1px solid #c2c9cc;
+  background: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 17, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_header.collapsed {
+  top: -4em;
+}
+
+/* line 18, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_header.hover {
+  top: 0;
+}
+
+/* line 19, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_header {
+  background: #242e33;
+  border-color: #0d151a;
+}
+
+/* Application Header Logo */
+/* line 22, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_header_logo {
+  float: left;
+  display: block;
+  padding: 0 0 0 2em;
+  height: 3em;
+  line-height: 3em;
+}
+
+/* App Nav */
+/* line 25, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav {
+  height: 100%;
+  padding-right: 0.8em;
+  position: relative;
+  float: right;
+  text-align: right;
+}
+
+/* line 26, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav_link {
+  position: relative;
+  display: block;
+  float: right;
+  height: 4em;
+  line-height: 4em;
+  padding: 0 1em;
+  border-top: none;
+  border-bottom: none;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75em;
+  color: #a1adb3;
+}
+
+/* line 27, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav_link:hover {
+  color: #63a6c7;
+}
+
+/* line 29, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav_link:active,
+.app_nav_link.active {
+  color: #63a6c7;
+}
+
+/* line 30, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_nav_link {
+  color: #a1adb3;
+}
+
+/* line 31, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_nav_link:hover {
+  color: #fffffc;
+}
+
+/* App Nav Dropdown */
+/* line 34, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav_dropdown {
+  z-index: 10;
+  position: fixed;
+  right: 0.8em;
+  top: -20em;
+  width: 12em;
+  border: 1px solid #cccbc8;
+  border-top: none;
+  border-right: none;
+  margin-top: -1px;
+  background: #fff;
+  text-align: left;
+  -webkit-box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 35, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav_dropdown.shown {
+  top: 3em;
+}
+
+/* line 36, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav_dropdown_link {
+  display: block;
+  padding: 1em;
+  font-size: 0.75em;
+  border-color: #e5e5e1;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #737b80;
+}
+
+/* line 37, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav_dropdown_link:last-child {
+  border: none;
+}
+
+/* line 38, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_nav_dropdown_link:hover {
+  color: #63a6c7;
+  border-color: #e5e5e1;
+}
+
+/* line 39, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.feedback_link {
+  font-weight: bold;
+}
+
+/* line 42, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_nav_dropdown {
+  background: #242e33;
+  border-color: #0d151a;
+}
+
+/* line 43, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_nav_dropdown a {
+  border-color: #1c2429;
+  color: #a1adb3;
+}
+
+/* line 44, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_nav_dropdown a:hover {
+  color: #fffffc;
+}
+
+/* Add Article Button */
+/* line 47, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.add_article_btn {
+  float: right;
+  top: 1em;
+  margin-right: 1.5em;
+  font-size: 0.75em;
+  height: 2em;
+  line-height: 2em;
+  width: 3em;
+  text-align: center;
+  padding: 0;
+}
+
+/* line 48, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.add_article_btn .icon {
+  margin: 0;
+}
+
+/* App Search */
+/* line 51, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_search {
+  float: right;
+  position: relative;
+  margin: 0.75em 2em 0 0;
+  height: 1.5em;
+}
+
+/* line 52, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_search .form_field {
+  overflow: visible;
+}
+
+/* line 53, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_search .icon {
+  font-size: 0.75em;
+  bottom: 0.1em;
+}
+
+/* line 54, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_search_input {
+  font-size: 0.75em;
+  height: 2em;
+  line-height: 1.5em;
+  padding: 0.25em 0.25em 0.25em 2.5em;
+  width: 10em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+}
+
+/* line 55, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_search_input:focus {
+  width: 16em;
+}
+
+/* App Settings Toggle */
+/* line 58, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.settings_btn {
+  overflow: hidden;
+}
+
+/* line 59, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.settings_btn_label {
+  float: left;
+  width: 40%;
+  color: #737b80;
+}
+
+/* line 60, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.settings_btn_toggle {
+  float: left;
+  width: 60%;
+  text-align: center;
+}
+
+/* Show Header Hover Area */
+/* line 64, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_header_expand {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  height: 3em;
+  background: none;
+  border: none;
+  opacity: 0;
+}
+
+/**********  Application Content **********/
+/* line 69, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_content {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-bottom: 1.8em;
+}
+
+/* line 70, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_content_loading {
+  opacity: 0;
+}
+
+/* line 71, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_content_transition {
+  opacity: 0.25;
+}
+
+/* line 72, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_content:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  background: #fcfcfa;
+  border-left: 1px solid #e5e5e1;
+}
+
+/* line 73, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.full_page .app_content:after {
+  display: none;
+}
+
+/* line 74, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_content:after {
+  border-color: #0d151a;
+  background: #1c2429;
+}
+
+/* Content Header */
+/* line 77, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_content_header {
+  padding: 2em 0;
+  border-bottom: 1px solid #e5e5e1;
+  overflow: hidden;
+}
+
+/* line 78, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_content_header {
+  border-color: #0d151a;
+}
+
+/* Content Main */
+/* line 81, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_main {
+  position: relative;
+  margin-right: 30%;
+  right: 1px;
+  background: #fff;
+  z-index: 2;
+}
+
+/* line 82, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.page {
+  padding: 2em;
+}
+
+/* line 83, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .content_main {
+  background: #242e33;
+}
+
+/* Content Sub */
+/* line 86, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_sub {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-height: 100%;
+}
+
+/* line 87, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_sub_inner {
+  padding: 1.5em;
+  position: relative;
+}
+
+/* line 88, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_sub.floated {
+  float: right;
+  position: relative;
+}
+
+/* line 89, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_sub.fixed {
+  z-index: 1;
+  position: fixed;
+  top: 3em;
+  right: 0.8em;
+  height: 100%;
+  margin-right: -1px;
+  overflow: hidden;
+  width: 29.75%;
+}
+
+/* line 90, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_sub.fixed .content_sub_inner {
+  position: absolute;
+  padding-bottom: 4em;
+  left: 0;
+  right: -0.8em;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* line 91, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.no_header .content_sub.fixed {
+  top: 0;
+}
+
+/* Content Wide */
+/* line 94, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_wide {
+  padding: 2em;
+}
+
+/* Content Default */
+/* line 97, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_default {
+  max-width: 40em;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+/* line 98, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.content_default h1 {
+  text-align: center;
+}
+
+/**********  Application Footer  **********/
+/* line 103, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_footer {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 2em;
+  border-top: 1px solid #e5e5e1;
+  background: #fff;
+  font-size: 0.6em;
+  color: #a1adb3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* line 104, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_footer_links {
+  float: right;
+}
+
+/* line 105, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.app_footer_link {
+  line-height: 3em;
+  display: inline-block;
+  border: none;
+  margin-left: 1.5em;
+  color: #c2c9cc;
+}
+
+/* line 106, ../../../app/assets/stylesheets/import/layouts.css.scss */
+.dark_theme .app_footer {
+  background: #242e33;
+  border-color: #1c2429;
+}
+/* Imports */
+/*------------------------------------
+1. Variables & Imports
+------------------------------------*/
+/* Colors */
+/* Font Sizes */
+/* Paddings */
+/* Font Families */
+/*------------------------------------
+5. Modules
+------------------------------------*/
+/**********  Page Info Module  **********/
+/* line 10, ../../../app/assets/stylesheets/import/modules.css.scss */
+.page_title {
+  margin-bottom: 0.22em;
+}
+
+/* line 11, ../../../app/assets/stylesheets/import/modules.css.scss */
+.page_info {
+  float: left;
+  width: 70%;
+  padding: 0 2em;
+}
+
+/* line 12, ../../../app/assets/stylesheets/import/modules.css.scss */
+.page_desc {
+  font-size: 1.125em;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+}
+
+/* line 13, ../../../app/assets/stylesheets/import/modules.css.scss */
+.page_numbers {
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  color: #a1adb3;
+  margin-top: 0.5em;
+}
+
+/* line 14, ../../../app/assets/stylesheets/import/modules.css.scss */
+.page_stats {
+  float: right;
+  width: 30%;
+  padding: 0 1.5em;
+}
+
+/********** Article **********/
+/* line 21, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article {
+  position: relative;
+  padding: 2em;
+}
+
+/* line 22, ../../../app/assets/stylesheets/import/modules.css.scss */
+.no_articles {
+  position: relative;
+  padding: 2em;
+  text-align: center;
+}
+
+/* Article Link */
+/* line 25, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_link {
+  color: #242e33;
+  border: none;
+}
+
+/* line 26, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .article_link {
+  color: #fffffc;
+}
+
+/* line 27, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .article_link:hover {
+  color: #63a6c7;
+}
+
+/* Article Meta */
+/* line 31, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_meta {
+  overflow: hidden;
+  padding: 0.5em 0 0 0;
+  margin-bottom: 1em;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  font-size: 0.875em;
+}
+
+/* line 32, ../../../app/assets/stylesheets/import/modules.css.scss */
+.byline a, .byline span {
+  margin-right: .25em;
+}
+
+/* line 33, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_meta_author {
+  float: left;
+}
+
+/* line 34, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_meta_date {
+  float: right;
+  text-align: right;
+}
+
+/* line 35, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_meta i {
+  color: #737b80;
+  font-size: 0.75em;
+  padding-right: .25em;
+  position: relative;
+  top: -0.1em;
+}
+
+/* Article Excerpt */
+/* line 39, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_excerpt {
+  margin-bottom: 1em;
+}
+
+/* Article Description */
+/* line 42, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_description {
+  position: relative;
+  margin-bottom: 1em;
+  font-size: 0.875em;
+  font-style: italic;
+  color: #a1adb3;
+}
+
+/* line 43, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_description:before {
+  content: '\201C';
+  line-height: 0.5em;
+  position: absolute;
+  top: 0.25em;
+  left: -0.75em;
+  color: #c2c9cc;
+  font-size: 2em;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 45, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .article_description:before {
+  color: #41494d;
+}
+
+/* Article Tags */
+/* line 49, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_tags:hover .add_article_tag {
+  opacity: 1;
+}
+
+/* Article Tag */
+/* line 52, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_tag {
+  z-index: 2;
+  position: relative;
+  height: auto;
+  line-height: 1.75em;
+  font-size: 0.875em;
+  display: inline-block;
+  padding: 0 0.75em;
+  margin: 0 0.5em 0.5em 0;
+  border: none;
+  background: rgba(161, 173, 179, 0.6);
+  color: #fff;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+}
+
+/* line 54, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_tag:hover {
+  color: #fff;
+  background: rgba(161, 173, 179, 0.9);
+}
+
+/* line 55, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_tag:active {
+  -webkit-box-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 0 0.1em 0.25em rgba(0, 0, 0, 0.4) inset;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+/* Delete Article Tag */
+/* line 58, ../../../app/assets/stylesheets/import/modules.css.scss */
+.delete_article_tag {
+  position: absolute;
+  opacity: 0;
+  top: -1em;
+  right: -1em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  -webkit-border-radius: 3em;
+  -moz-border-radius: 3em;
+  -ms-border-radius: 3em;
+  -o-border-radius: 3em;
+  border-radius: 3em;
+  background: rgba(229, 108, 92, 0.6);
+  color: #fffffc;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+/* line 60, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_tag.hover .delete_article_tag,
+.article_tag:hover .delete_article_tag {
+  opacity: 0.5;
+}
+
+/* line 61, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_tag .delete_article_tag:hover {
+  opacity: 1;
+}
+
+/* Add Article Tag */
+/* line 64, ../../../app/assets/stylesheets/import/modules.css.scss */
+.add_article_tag {
+  width: 6em;
+  opacity: 0;
+  line-height: 1.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: rgba(161, 173, 179, 0.4);
+  color: #fffffc;
+}
+
+/* line 65, ../../../app/assets/stylesheets/import/modules.css.scss */
+.add_article_tag::-webkit-input-placeholder {
+  color: #fffffc;
+}
+
+/* line 66, ../../../app/assets/stylesheets/import/modules.css.scss */
+.add_article_tag:-moz-placeholder {
+  color: #fffffc;
+}
+
+/* line 69, ../../../app/assets/stylesheets/import/modules.css.scss */
+.add_article_tag:hover,
+.add_article_tag:active,
+.add_article_tag:focus {
+  background: rgba(161, 173, 179, 0.6);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 70, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_tags .add_article_user_tag:focus {
+  opacity: 1;
+}
+
+/* Feed Article */
+/* line 76, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article {
+  border-bottom: 1px solid #e5e5e1;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+/* line 77, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article.hidden {
+  opacity: 0;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
+
+/* line 78, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .feed_article {
+  border-color: #0d151a;
+}
+
+/* Feed Article Buttons */
+/* line 81, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article_btns {
+  position: absolute;
+  top: 0.25em;
+  right: 0.25em;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+/* line 82, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article:hover .feed_article_btns {
+  opacity: 1;
+}
+
+/* line 83, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article_btn {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  margin-left: 0.5em;
+  font-size: 1.25em;
+  text-align: center;
+  border: none;
+  color: #e5e5e1;
+}
+
+/* line 85, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article_handle:hover {
+  color: #a1adb3;
+}
+
+/* line 87, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article .add_article_user_tag {
+  opacity: 0 !important;
+}
+
+/* Feed Article Dragging */
+/* line 91, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article.ui-draggable-dragging {
+  z-index: 5;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  width: 70%;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  border: 1px solid #e5e5e1;
+  background: #fff;
+}
+
+/* line 92, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .feed_article.ui-draggable-dragging {
+  background: #242e33;
+  border-color: #0d151a;
+}
+
+/* Save Article Button */
+/* line 95, ../../../app/assets/stylesheets/import/modules.css.scss */
+.save_article_btn {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  opacity: 0;
+}
+
+/* line 96, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_article:hover .save_article_btn {
+  opacity: 1;
+}
+
+/* Condensed Feed Article */
+/* line 102, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_excerpt,
+.article_description,
+.article_tags {
+  max-height: 50em;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 104, ../../../app/assets/stylesheets/import/modules.css.scss */
+.condensed_feed .feed_article .article_description {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 105, ../../../app/assets/stylesheets/import/modules.css.scss */
+.condensed_feed .feed_article .article_excerpt {
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* line 106, ../../../app/assets/stylesheets/import/modules.css.scss */
+.condensed_feed .feed_article .article_tags {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Full Article */
+/* line 111, ../../../app/assets/stylesheets/import/modules.css.scss */
+.full_article_header {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e5e5e1;
+  margin-bottom: 2em;
+}
+
+/* line 112, ../../../app/assets/stylesheets/import/modules.css.scss */
+.app_content_header .article_meta {
+  padding-bottom: 1.5em;
+}
+
+/* line 113, ../../../app/assets/stylesheets/import/modules.css.scss */
+.app_content_header .article_user_meta {
+  padding: 0;
+  border: none;
+}
+
+/* line 114, ../../../app/assets/stylesheets/import/modules.css.scss */
+.full_article_content {
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+}
+
+/* line 115, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .full_article_header {
+  border-color: #242e33;
+}
+
+/* Article User Meta */
+/* line 118, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_user_meta {
+  position: relative;
+  padding-top: 1em;
+  border-top: 1px solid #e5e5e1;
+}
+
+/* line 119, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .article_user_meta {
+  border-color: #242e33;
+}
+
+/* line 122, ../../../app/assets/stylesheets/import/modules.css.scss */
+.articles_list {
+  margin-bottom: 0.25em;
+}
+
+/* Iframe */
+/* line 126, ../../../app/assets/stylesheets/import/modules.css.scss */
+.iframe .app_wrapper {
+  overflow: hidden;
+}
+
+/* line 127, ../../../app/assets/stylesheets/import/modules.css.scss */
+.iframe_article {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* line 128, ../../../app/assets/stylesheets/import/modules.css.scss */
+.iframe_article_save_btn {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+/* Artile Parsing */
+/* line 132, ../../../app/assets/stylesheets/import/modules.css.scss */
+.article_parsing {
+  z-index: 5;
+  padding: 2em;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+/**********  Highlight/Annotation  **********/
+/* Highlight */
+/* line 138, ../../../app/assets/stylesheets/import/modules.css.scss */
+.highlight {
+  background: rgba(255, 255, 128, 0.6);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 139, ../../../app/assets/stylesheets/import/modules.css.scss */
+.highlight_hidden {
+  background: rgba(255, 255, 128, 0) !important;
+}
+
+/* line 141, ../../../app/assets/stylesheets/import/modules.css.scss */
+.highlight:hover,
+.highlight.hover {
+  background: #ffff80;
+}
+
+/* line 142, ../../../app/assets/stylesheets/import/modules.css.scss */
+.highlight_overlay {
+  z-index: 2;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: -20em;
+  background: #fff;
+  padding: 1.5em;
+  border: 1px solid #c2c9cc;
+  margin: -5.5em auto;
+  -webkit-box-shadow: 0 0 0 0.5em rgba(115, 123, 128, 0.2);
+  -moz-box-shadow: 0 0 0 0.5em rgba(115, 123, 128, 0.2);
+  box-shadow: 0 0 0 0.5em rgba(115, 123, 128, 0.2);
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+/* line 143, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .highlight {
+  background: rgba(42, 161, 152, 0.4);
+}
+
+/* line 145, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .highlight:hover,
+.dark_theme .highlight.hover {
+  background: rgba(42, 161, 152, 0.8);
+}
+
+/* Annotation */
+/* line 150, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 1em 4em 1em 2em;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: #e5e5e1;
+  margin: -0.5em 0 0 -1px;
+  background: #fcfcfa;
+  font-size: 0.75em;
+  color: #a1adb3;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+/* line 151, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation.hidden {
+  opacity: 0;
+}
+
+/* line 153, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation:hover,
+.annotation.hover {
+  color: #41494d;
+  z-index: 2;
+  background: #fff;
+  padding: 1em 4em 1em 2em;
+}
+
+/* line 155, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation.edit:hover,
+.annotation.edit {
+  padding: 1em 4em 1em 2em;
+  background: #fffce1;
+  border-width: 1px 0 1px 1px;
+  -webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+/* line 156, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation.edit:before {
+  border-color: transparent #c2c9cc transparent transparent;
+}
+
+/* line 157, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation.edit:after {
+  border-color: transparent #fffce1 transparent transparent;
+  margin-left: 1px;
+}
+
+/* line 158, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_text {
+  margin: 0;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  font-style: italic;
+}
+
+/* line 159, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_text.edit {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 160, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation {
+  background: #242e33;
+  border-color: #0d151a;
+}
+
+/* line 163, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation:hover,
+.dark_theme .annotation.hover,
+.dark_theme .annotation.edit {
+  color: #fffffc;
+  background: #41494d;
+}
+
+/* Annotation Expand Button */
+/* line 166, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_expand_btn {
+  position: absolute;
+  top: 50%;
+  left: -2em;
+  margin-top: -1em;
+  width: 2em;
+  height: 2em;
+  border: none;
+}
+
+/* line 168, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_expand_btn:before,
+.annotation_expand_btn:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1em;
+  border-width: 1em;
+  border-style: solid;
+  border-color: transparent #e5e5e1 transparent transparent;
+}
+
+/* line 169, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_expand_btn:after {
+  margin-left: 2px;
+  border-color: transparent #fcfcfa transparent transparent;
+}
+
+/* line 170, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation.edit .annotation_expand_btn:before {
+  border-right-color: #c2c9cc;
+}
+
+/* line 171, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation.edit .annotation_expand_btn:before {
+  border-right-color: #a1adb3;
+}
+
+/* line 175, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_expand_btn:hover:after,
+.annotation:hover .annotation_expand_btn:after,
+.annotation.hover .annotation_expand_btn:after,
+.annotation.edit .annotation_expand_btn:after {
+  border-right-color: #fff;
+}
+
+/* line 176, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation_expand_btn:before {
+  border-right-color: #0d151a;
+}
+
+/* line 177, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation_expand_btn:after {
+  border-right-color: #242e33;
+}
+
+/* line 178, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation.edit .annotation_expand_btn:before {
+  border-right-color: #737b80;
+}
+
+/* line 181, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation:hover .annotation_expand_btn:after,
+.dark_theme .annotation.hover .annotation_expand_btn:after,
+.dark_theme .annotation.edit .annotation_expand_btn:after {
+  border-right-color: #41494d;
+}
+
+/* Annotation Buttons */
+/* line 184, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_btns {
+  position: absolute;
+  top: 0;
+  right: 1px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 185, ../../../app/assets/stylesheets/import/modules.css.scss */
+.edit .annotation_btns {
+  background: #fffce1;
+}
+
+/* line 186, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_btn {
+  border: none;
+  background: none;
+  text-align: center;
+}
+
+/* line 187, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation_btn.active {
+  color: #63a6c7;
+}
+
+/* line 191, ../../../app/assets/stylesheets/import/modules.css.scss */
+.annotation:hover .annotation_btns,
+.annotation.hover .annotation_btns,
+.annotation.active .annotation_btns,
+.annotation.edit .annotation_btns {
+  opacity: 1;
+}
+
+/* line 192, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation_btns {
+  background: #41494d;
+}
+
+/* line 193, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation_btn {
+  background: #41494d;
+  color: #c2c9cc;
+}
+
+/* line 194, ../../../app/assets/stylesheets/import/modules.css.scss */
+.dark_theme .annotation_btn:hover {
+  color: #fffffc;
+}
+
+/* Feed Modules */
+/* line 199, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_module {
+  margin-bottom: 3em;
+}
+
+/* line 200, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_module_title {
+  margin-bottom: 1em;
+}
+
+/* line 201, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_module_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 202, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_module_list > li:after {
+  display: none;
+}
+
+/* line 203, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_module_list_item {
+  position: relative;
+  display: block;
+  margin: 0 -1.5em;
+  padding: 0 4em 0 1.5em;
+  border: none;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* line 204, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_module_list_item:hover {
+  background: rgba(99, 166, 199, 0.6);
+  color: #fffffc;
+}
+
+/* line 205, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_module_list_item.drop_hover {
+  background: rgba(107, 178, 113, 0.6);
+  color: #fffffc;
+}
+
+/* line 206, ../../../app/assets/stylesheets/import/modules.css.scss */
+.feed_module_list_item_number {
+  position: absolute;
+  top: 0;
+  right: 2em;
+  height: 2em;
+  line-height: 2em;
+}
+
+/* line 209, ../../../app/assets/stylesheets/import/modules.css.scss */
+.new_list_btn {
+  margin-top: 1em;
+}
+
+/**********  Search  **********/
+/* Searched Annotation */
+/* line 216, ../../../app/assets/stylesheets/import/modules.css.scss */
+.searched_annotation {
+  margin-bottom: 1em;
+}
+
+/* line 218, ../../../app/assets/stylesheets/import/modules.css.scss */
+.searched_annotation_text,
+.searched_annotation_highlight {
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+}
+
+/* line 219, ../../../app/assets/stylesheets/import/modules.css.scss */
+.searched_annotation_text {
+  color: #a1adb3;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+/* line 221, ../../../app/assets/stylesheets/import/modules.css.scss */
+.searched_annotation_highlight,
+.searched_annotation_highlight:hover {
+  color: inherit;
+  border: none;
+}
+
+/**********  Settings Page  **********/
+/* line 227, ../../../app/assets/stylesheets/import/modules.css.scss */
+.change_password_link {
+  margin-bottom: 1.5em;
+}
+
+/* line 228, ../../../app/assets/stylesheets/import/modules.css.scss */
+.change_password {
+  margin-bottom: 1.5em;
+}
+
+/* line 229, ../../../app/assets/stylesheets/import/modules.css.scss */
+.cancel_account {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* line 231, ../../../app/assets/stylesheets/import/modules.css.scss */
+.account_stat {
+  margin-bottom: 1em;
+  text-align: center;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  background: #e5e5e1;
+  padding: 1em;
+}
+
+/* line 232, ../../../app/assets/stylesheets/import/modules.css.scss */
+.account_stat_number {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/**********  Teaser Page **********/
+/* line 238, ../../../app/assets/stylesheets/import/modules.css.scss */
+.teaser_wrapper {
+  position: relative;
+  max-width: 45em;
+  padding: 2em 5.5em;
+  margin: 0 auto;
+}
+
+/* line 239, ../../../app/assets/stylesheets/import/modules.css.scss */
+.teaser_header {
+  margin-bottom: 2em;
+}
+
+/* line 240, ../../../app/assets/stylesheets/import/modules.css.scss */
+.teaser_text {
+  font-size: 1.25em;
+}
+
+/* line 241, ../../../app/assets/stylesheets/import/modules.css.scss */
+.teaser_form {
+  max-width: none;
+  padding: 1.5em 1.5em 2em 1.5em;
+  border-top: 1px solid #e5e5e1;
+  border-bottom: 1px solid #e5e5e1;
+  margin-bottom: 2em;
+}
+
+/* line 242, ../../../app/assets/stylesheets/import/modules.css.scss */
+.teaser_form:before {
+  content: '';
+  position: absolute;
+  top: .25em;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #e5e5e1;
+}
+
+/* line 243, ../../../app/assets/stylesheets/import/modules.css.scss */
+.teaser_form:after {
+  content: '';
+  position: absolute;
+  bottom: .25em;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #e5e5e1;
+}
+
+/* line 244, ../../../app/assets/stylesheets/import/modules.css.scss */
+.teaser_launch {
+  font-style: italic;
+  color: #a1adb3;
+  text-align: center;
+}
+
+/* line 245, ../../../app/assets/stylesheets/import/modules.css.scss */
+.teaser .annotation {
+  margin-top: 0;
+}
+
+/**********  Home Page **********/
+/* line 250, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_content {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+/* line 251, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_header {
+  overflow: hidden;
+}
+
+/* line 252, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_subtitle {
+  font-size: 1.5em;
+}
+
+/* line 253, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_subtitle > em {
+  color: #a1adb3;
+}
+
+/* Home Modules */
+/* line 256, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_modules {
+  margin-left: -1%;
+  overflow: hidden;
+}
+
+/* line 257, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_module {
+  float: left;
+  width: 32.3%;
+  margin-left: 1%;
+  padding: 1em;
+  text-align: center;
+}
+
+/* line 258, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_module_icon {
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  margin: 0 auto 0.5em auto;
+  background: rgba(99, 166, 199, 0.7);
+  -webkit-border-radius: 4em;
+  -moz-border-radius: 4em;
+  -ms-border-radius: 4em;
+  -o-border-radius: 4em;
+  border-radius: 4em;
+  text-align: center;
+}
+
+/* line 259, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_module_icon > .icon {
+  color: #fffffc;
+}
+
+/* line 260, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_module_title {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+/* line 261, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_module_text {
+  font-size: 1.25em;
+}
+
+/* Home Invitation Request */
+/* line 264, ../../../app/assets/stylesheets/import/modules.css.scss */
+.home_request {
+  max-width: 40em;
+  margin: 0 auto 2em auto;
+  font-size: 1.25em;
+}
+
+/********** Error Pages **********/
+/* line 270, ../../../app/assets/stylesheets/import/modules.css.scss */
+.error_page_content {
+  padding: 2em;
+  margin: 0 auto;
+  max-width: 40em;
+  text-align: center;
+}
+
+/* line 271, ../../../app/assets/stylesheets/import/modules.css.scss */
+.error_page_title {
+  font-size: 10em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+
+/* line 272, ../../../app/assets/stylesheets/import/modules.css.scss */
+.error_page_subtitle {
+  letter-spacing: 0.2em;
+  font-size: 1.25em;
+  margin: -1em 0 1em 0;
+}
+
+/* line 273, ../../../app/assets/stylesheets/import/modules.css.scss */
+.error_page_quote {
+  font-size: 1.5em;
+}
+
+/* line 274, ../../../app/assets/stylesheets/import/modules.css.scss */
+.error_page_quote:before {
+  display: none;
+}
+
+/* line 275, ../../../app/assets/stylesheets/import/modules.css.scss */
+.error_page_quote > p {
+  margin-bottom: 0.5em;
+}
+
+/* line 276, ../../../app/assets/stylesheets/import/modules.css.scss */
+.error_page_quote cite:after {
+  content: '\2003 \2014';
+}
+
+/********** Blog **********/
+/* line 280, ../../../app/assets/stylesheets/import/modules.css.scss */
+.blog_article {
+  margin: 0 auto;
+  max-width: 50em;
+  border-bottom: 1px solid #e5e5e1;
+}
+/* Imports */
+/*------------------------------------
+1. Variables & Imports
+------------------------------------*/
+/* Colors */
+/* Font Sizes */
+/* Paddings */
+/* Font Families */
+/*------------------------------------
+6. Media Queries
+------------------------------------*/
+/********** Desktop / Tablet (landscape) **********/
+/********** Wide Screens **********/
+@media screen and (min-width:1400px) {
+  /* line 18, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  body {
+    font-size: 140%;
+    line-height: 1.7;
+  }
+}
+/********** Short Screens **********/
+@media screen and (max-height:800px) {
+  /* line 26, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  body {
+    font-size: 110%;
+    line-height: 1.5;
+  }
+}
+/********** Tablet-Portrait **********/
+@media screen and (max-width:800px) {
+  /* line 34, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  body {
+    font-size: 100%;
+    line-height: 1.5;
+  }
+
+  /* line 36, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .content_main {
+    margin-right: 0;
+  }
+
+  /* line 37, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .content_sub {
+    right: auto;
+    left: 100%;
+    width: 40%;
+  }
+
+  /* line 40, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .app_content.show_sub {
+    left: -40%;
+  }
+
+  /* line 43, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .home_module {
+    width: auto;
+    float: none;
+    margin: 0;
+  }
+
+  /* line 45, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .overlay_content {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media screen and (max-width:600px) {
+  /* line 51, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  body {
+    font-size: 100%;
+  }
+
+  /* line 53, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .app_footer {
+    height: auto;
+    text-align: center;
+  }
+
+  /* line 54, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .app_footer_links {
+    float: none;
+  }
+}
+@media screen and (max-width:400px) {
+  /* line 60, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  body {
+    font-size: 80%;
+  }
+
+  /* Header Logo */
+  /* line 63, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .app_header_logo .logo_part {
+    display: none;
+  }
+
+  /* line 64, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+  .app_header_logo .i {
+    display: inline;
+  }
+}
+/* line 70, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+.blank {
+  color: #a1adb3;
+  font-style: italic;
+}
+
+/* line 71, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+.edit {
+  outline: none;
+  color: #41494d;
+  font-style: normal;
+  padding: 0.5em;
+  border: 1px solid #c2c9cc;
+  background: #fffce1;
+}
+
+/* line 72, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+.dark_theme .edit {
+  border-color: #737b80;
+  background: rgba(255, 252, 225, 0.1);
+  color: #fffffc;
+}
+
+/* line 73, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+.shown {
+  opacity: 1 !important;
+}
+
+/* line 74, ../../../app/assets/stylesheets/import/media_queries.css.scss */
+.not_found {
+  color: #a1adb3;
+  font-style: italic;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ *
+ * TABLE OF CONTENTS
+ *
+ * 1. Variables
+ * 2. Defaults
+ * 3. Patterns
+ * 4. Layouts
+ * 5. Modules
+ * 6. Media Queries
+ *
+ *
+
+
+
+
+
+
+
+
+*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+*/

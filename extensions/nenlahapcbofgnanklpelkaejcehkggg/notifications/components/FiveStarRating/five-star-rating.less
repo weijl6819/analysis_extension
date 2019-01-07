@@ -1,0 +1,61 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy .five-star-rating-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
+  .star-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .star {
+    max-width: 35px;
+    width: 35px;
+    height: 35px;
+    padding: 0 2px;
+    &:first-child {
+      margin-left: -2px;
+    }
+  }
+  &.product-page {
+    width: auto;
+    .star {
+      max-width: 21px;
+      min-width: 21px;
+      height: 35px;
+      padding: 0 2px;
+    }
+    h5 {
+      color: @gray;
+      margin-left: 4px;
+      font-size: 13px;
+    }
+  }
+  &.rateable {
+    .star-wrapper {
+      &:hover {
+        flex-direction: row-reverse;
+        .star {
+          cursor: pointer;
+          &:last-child {
+            margin-left: -2px;
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+        svg path, svg ~ svg path {
+          fill: #ccc !important;
+          cursor: pointer;
+        }
+        svg:hover path,
+        svg:hover ~ svg path {
+          fill: #f9c319 !important;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

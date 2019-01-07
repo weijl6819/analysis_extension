@@ -1,0 +1,62 @@
+{
+    "name":
+    {
+        "message":"uCoz – outil d`autorisation sûre"
+    },
+    "description":
+    {
+        "message":"Autorisation sûre avec un clic sur les sites d`uCoz. Plus qu`un million de sites soutiennent ce système d`autorisation."
+    },
+    "register":
+    {
+        "message":"Enregistrement"
+    },
+    "email":
+    {
+        "message":"Email"
+    },
+
+    "password":
+    {
+        "message":"Mot de passe"
+    },
+
+    "forgot":
+    {
+        "message":"Oublié?"
+    },
+    "save":
+    {
+        "message":"Sauvegarder"
+    },
+    "create_site":
+    {
+       "message":"Créer un site avec uCoz"
+    },
+    "login_error":
+    {
+        "message":"Erreur d`autorisation"
+    },
+    "enter_login":
+    {
+        "message":"Inscrivez votre email et mot de passe"
+    },
+    "data_saved":
+    {
+        "message":"Les données sont sauvegardées"
+    },
+    "please_wait":
+    {
+        "message":"Attendez s'il vous plaît"
+    },
+    "site":
+    {
+        "message":"http://www.ucoz.fr"
+    },
+    "remind_link":
+    {
+        "message":"http://www.uid.me/remind/?l=fr"
+    }
+
+}
+

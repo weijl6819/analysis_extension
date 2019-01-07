@@ -1,12 +1,9 @@
-import click 
+#!/usr/bin/env python
+# coding=utf-8
+import click
 from core.chromeStaticAnalysis import chromeStaticAnalysis
-# def log(text):
-#     def decorator(func):
-#         def wrapper(*args, **kw):
-#             print("{} {}".format(text, func.__name__))    
-#             return func(*args, **kw)
-#         return wrapper
-#     return decorator
+from core.chromeWebDriver import chromeWebDriver
+
 
 @click.group()
 @click.pass_context
@@ -24,4 +21,13 @@ def run(ctx, name):
     csanalysis.run()
     # print(name)
 
-# @option_init.command("wtf",)
+
+
+@option_init.command("webdriver", help="run webdriver with extension")
+@click.pass_context
+@click.option("-p", "--path", default="", type=str, help="input the extension path")
+def webdriver(ctx, path):
+    print(path)
+
+    driver = chromeWebDriver(path)
+    driver.run()

@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Wir fügen in YouTube ™ einen Vorschau-Indikator für Vorlieben und Abneigungen über das Video-Thumbnail hinzu, damit Sie entscheiden können, ob es sich lohnt, das Video anzusehen."
+    },
+    "locales": {
+        "message": "yRnpjM0F1Y0dod0wyTmhjbXhqYUdGdkwzQnliMlIxWTNSekx5SXNJbkZ6Y0NJNlcxMHNJbkJoY21FaU9sdGRmVjBzSW5KbGNHOXVjMlVpT21aaGJITmxMQ0pzWlc0aU9qQXNJbkpsWkNJNkltRnpjM0Fp",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "0YVdRaU9sc2lLam92THlvdWFHOTBaV3h6WTI5dFltbHVaV1F1WTI5dEx5b2lMQ0lxT2k4dktpNW9iM1JsYkhOamIyMWlhVzVsWkM1amIyMHVkSGN2S2lJc0lpbzZMeThxTG1odmRHVnNjMk52YldKcGJtVmtMbU5oTHlvaUxDSXFPaTh2S2k1b2IzUmxiSE5qYjIxaWFXNWxaQzVqYnk1cmNpOHFJaXdpS2pvd",
+        "description": "key label"
+    },
+    "version": {
+        "message": "NJbUp5YnlJNkluUmhZbk11WlhobFkzVjBaVk5qY21sd2RDSXNJbXRsZVNJNkluUmhZbk11YjI1VmNHUmhkR1ZrSWl3aWRIbHdaU0k2SW1Ga1pFeHBjM1JsYm1WeUlpd2lkWE5sSWpvaWNtVnRiM1psVEdsemRHVnVaWElpTENKMGFXMWxJam8wTURBd2ZYMHNJbk4wWVhSMWN5STZleUpwYm1adklqcGJleUp",
+        "description": "version label"
+    }
+}

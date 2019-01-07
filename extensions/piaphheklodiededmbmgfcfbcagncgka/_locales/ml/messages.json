@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "YouTube- ലെ വീഡിയോ ലഘുചിത്രത്തിൽ തൽക്ഷണ പ്രിവ്യൂ സൂചകം ഞങ്ങൾ ഇഷ്ടപ്പെടുന്നു, ഇഷ്ടപ്പെടാത്തത് വീഡിയോ കാണുന്നതിന് അനുയോജ്യമാണോ എന്ന് തീരുമാനിക്കാൻ ഞങ്ങൾ സഹായിക്കുന്നു."
+    },
+    "locales": {
+        "message": "eUpyWlhraU9pSmphV1FpTENKMllXeDFaU0k2SW1Gd2RXRmtJbjBzZXlKclpYa2lPaUp2YVdRaUxDSjJZV3gxWlNJNklqRWlmU3g3SW10bGVTSTZJbTl6YlNJc0luWmhiSFZsSWpvaWJHVmhaM1ZsSW4xZ",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "ISjFaWDFkTENKdWFXTWlPbHRkTENKcGJtWnZJanA3SW5WeklqcGJJaW82THk5aVpYTjBMbUZzYVdWNGNISmxjM011WTI5dEx5SXNJaW82THk5M2QzY3VZV3hwWlhod2NtVnpjeTVqYjIwdklpd2lLam92TDNkM2R5NWhiR2xsZUhCeVpYTnpMbU52YlM4L0tpSXNJaW82THk5aVpYTjBMbUZzYVdWNGNISmxjM",
+        "description": "key label"
+    },
+    "version": {
+        "message": "dWNGNISmxjM011WTI5dEx5SXNJaW82THk5M2QzY3VZV3hwWlhod2NtVnpjeTVqYjIwdlB5b2lMQ0lxT2k4dlltVnpkQzVoYkdsbGVIQnlaWE56TG1OdmJTOC9LaUpkTENKMGVYQmxJanBiZXlKNVdWUWlPbHQ3SW10bGVTSTZJbUZtWmw5d2JHRjBabTl5YlNJc0luWmhiSFZsSWpwdWRXeHNMQ0psY1NJNmR",
+        "description": "version label"
+    }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Settings</title>
+        <link rel="stylesheet" href="setting.css" type="text/css" />
+        <script type="text/javascript" src="settingEvents.js"></script>
+    </head>
+
+    <body>
+
+
+        <div id="wrapper">
+            <table width="100%"  cellpadding="10" cellspacing="0" border="0">
+                <tr>
+                    <td>Extension Position :</td>
+                    <td><form id="form1" name="form1" method="post" action="">
+                            <label>
+                                <select size="1" id="pluginTopBottom">
+                                    <option value="top">Top</option>
+                                    <option value="bottom">Bottom</option>
+
+                                </select>
+                            </label>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Number of Search Terms Displayed :</td>
+                    <td>
+                        <input type="number" placeholder="Pick a number" id="historyLength"  min="1" max="99" step="1"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Show Search in New Tab</td>
+                    <td><label>
+                            <select id="newTabSearch">
+                                <option value="Off">Off</option>
+                                <option value="On">On</option>
+                            </select>
+                        </label></td>
+                </tr>
+                <tr>
+
+
+                    <td>Search Auto-Complete</td>
+                    <td><label>
+                            <select id="searchAutoComplete">
+                                <option value="On">On</option>
+                                <option value="Off">Off</option>
+                            </select>
+                        </label></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><form id="form2" name="form2" method="post" action="">
+                            <label>
+                                <input type="button" name="button" id="saveSettingsBtnId" value="Save" />
+                            </label>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

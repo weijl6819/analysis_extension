@@ -1,0 +1,460 @@
+﻿.People > a, .ActPeople > a, ul.people li > a, .vcard, ul.timeline li > a
+{
+  background-image: url('../img/common/people32.png');
+}
+.Group > a, .gcard
+{
+  background-image: url('../img/common/group32.png');
+}
+.Department > a, .ActDir > a
+{
+  background-image: url('../img/common/address32.png')!important;
+}
+.ActUp > a
+{
+  background-image: url('../img/common/top32.png')!important;
+}
+.Timeline > a
+{
+  background-image: url('../img/common/timeline32.png');
+}
+.Mail > a, ul.timeline li.Mail > a
+{
+  background-image: url('../img/common/mail32.png');
+}
+.Fax > a
+{
+  background-image: url('../img/common/fax32.png');
+}
+.GroupSource > a, .ActDoc > a
+{
+  background-image: url('../img/common/docs32.png');
+}
+.Voice > a
+{
+  background-image: url('../img/common/voice32.png');
+}
+.Chats > a, .ActChat > a, .Chat > a, a.ActChat
+{
+  background-image: url('../img/common/chat32.png');
+}
+.MUC > a, .ActMUC > a, ul.chats li.MUC > a, ul.Chat li.MUC:before
+{
+  background-image: url('../img/common/muc32.png');
+}
+.Browser > a
+{
+  background-image: url('../img/common/chrome32.png');
+}
+.Calls > a
+{
+  background-image: url('../img/common/call32.png')!important;
+}
+.Dial > a, .ActCall > a, a.ActDial, li.ActDial > a:before
+{
+  background-image: url('../img/common/send32.png')!important;
+}
+.DialSoft > a, ul.timeline li.DialSoft > a
+{
+  background-image: url('../img/common/call32.png');
+}
+.Geo > a, .ActGeo > a
+{
+  background-image: url('../img/common/map32.png');
+}
+.Webex > a, .ActWebex > a
+{
+  background-image: url('../img/common/webex32.png?a');
+}
+.Scopia > a, .ActScopia > a
+{
+  background-image: url('../img/common/scopia32.png');
+}
+.Spaces > a, .ActSpaces > a
+{
+  background-image: url('../img/common/spaces32.png');
+}
+.Playback > a
+{
+  background-image: url('../img/common/playback32.png');
+}
+.Recording > a
+{
+  background-image: url('../img/common/recording32.png');
+}
+.Capture > a
+{
+  background-image: url('../img/common/capture32.png');
+}
+.Control > a
+{
+  background-image: url('../img/common/chrome32.png');
+}
+
+.Groups > a
+{
+  background-image: url('../img/common/group32.png');
+}
+.Rename > a
+{
+  background-image: url('../img/common/modify32.png');
+}
+.Delete > a, .ActClear > a, li.ActClear > a:before
+{
+  background-image: url('../img/common/delete32.png');
+}
+.Subscribe > a, ul.people li.Subscribe > a
+{
+  background-image: url('../img/common/pin32.png');
+}
+.Unsubscribe > a
+{
+  background-image: url('../img/common/delete32.png');
+}
+.Sound > a
+{
+  background-image: url('../img/common/sound32.png');
+}
+.Mute > a
+{
+  background-image: url('../img/common/audio.mute32.png');
+}
+.Map > a
+{
+  background-image: url('../img/common/map32.png');
+}
+.Event > a:before
+{
+  -background-image: url('../img/common/event16.png');
+}
+.Timer > .Event > a:before
+{
+  background-image: none;
+}
+.title > a
+{
+  background-image: none;
+}
+ul.list > li.DPE > a:before, a.DPE:before
+{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  content: "";
+  display: inline-block;
+  background-image:    url('../img/common/dpe.png');
+  background-position: inherit;
+}
+a.DPE
+{
+  position: relative;
+  background-position: -384px -480px;
+}
+
+.Progress > a
+{
+  background-image: url('../img/common/ajax32.gif')!important;
+}
+.Presence > a, .Events > a
+{
+  background-image: url('../img/common/events32.png');
+}
+.Online > a
+{
+  background-image: url('../img/common/online32.png');
+}
+.Away > a
+{
+  background-image: url('../img/common/away32.png');
+}
+.DND > a
+{
+  background-image: url('../img/common/dnd32.png');
+}
+.Checked > a:after
+{
+  background-image: url('../img/common/check24.png');
+}
+
+.ActBack > a
+{
+  background-image: url('../img/common/back32.png');
+}
+.ActMenu > a
+{
+  background-image: url('../img/common/menu32.png');
+}
+.ActCalendar > a
+{
+  background-image: url('../img/common/calendar32.png');
+}
+.ActHangouts > a, .ActHangout > a
+{
+  background-image: url('../img/common/hangout32.png');
+}
+
+ul > li.group > a
+{
+  background-image: url('../img/common/gc16.png');
+}
+ul > li.collapsed > a
+{
+  background-image: url('../img/common/ge16.png');
+}
+
+
+.Finished > a, .vcard.Finished
+{
+  background-image: url('../img/common/calls/finished.png');
+}
+.Calling > a, .vcard.Calling
+{
+  background-image: url('../img/common/calls/calling.png');
+}
+.Connected > a, .vcard.Connected
+{
+  background-image: url('../img/common/calls/connected.png');
+}
+.Held > a, .vcard.Held
+{
+  background-image: url('../img/common/calls/onhold.png');
+}
+
+.vcard.Finished
+{
+  background-image: url('../img/common/calls/finished64.png');
+}
+.vcard.Calling
+{
+  background-image: url('../img/common/calls/calling64.png');
+}
+.vcard.Connected
+{
+  background-image: url('../img/common/calls/connected64.png');
+}
+.vcard.Held
+{
+  background-image: url('../img/common/calls/onhold64.png');
+}
+
+
+.Answer > a
+{
+  background-image: url('../img/common/actions/answer.png');
+}
+.AnswerRec > a
+{
+  background-image: url('../img/common/actions/answer.record.png');
+}
+.TakeMessage > a
+{
+  background-image: url('../img/common/actions/take.message.png');
+}
+.Callback > a
+{
+  background-image: url('../img/common/actions/callback.png');
+}
+.Handover > a
+{
+  background-image: url('../img/common/actions/handover.png');
+}
+.Recall > a
+{
+  background-image: url('../img/common/actions/recall.png');
+}
+.RecordStart > a
+{
+  background-image: url('../img/common/actions/record.start.png');
+}
+.RecordPause > a
+{
+  background-image: url('../img/common/actions/record.pause.png');
+}
+.RecordResume > a
+{
+  background-image: url('../img/common/actions/record.continue.png');
+}
+.RecordStop > a
+{
+  background-image: url('../img/common/actions/record.stop.png');
+}
+.TransferUC > a
+{
+  background-image: url('../img/common/actions/transfer.png');
+}
+.AnswerVideo > a
+{
+  background-image: url('../img/common/actions/answer.png');
+}
+.Hangup > a
+{
+  background-image: url('../img/common/actions/hangup.png');
+}
+.Remove > a
+{
+  background-image: url('../img/common/actions/hangup.png');
+}
+.Keypad > a, .ActDial > a, a.Keypad
+{
+  background-image: url('../img/common/actions/keypad.png');
+}
+a.NoKeypad
+{
+  background-image: url('../img/common/actions/nkeypad.png');
+}
+.Divert > a
+{
+  background-image: url('../img/common/actions/divert.png');
+}
+.Hold > a
+{
+  background-image: url('../img/common/actions/hold.png');
+}
+.Resume > a
+{
+  background-image: url('../img/common/actions/stop.hold.png');
+}
+.Transfer > a
+{
+  background-image: url('../img/common/actions/transfer.png');
+}
+.InitTransfer > a
+{
+  background-image: url('../img/common/actions/addcall.png');
+}
+.Join > a, .ActWeLink > a
+{
+  background-image: url('../img/common/actions/join.png');
+}
+.CancelTransfer > a
+{
+  background-image: url('../img/common/actions/cancel.png');
+}
+
+
+.MuteAudio > a
+{
+  background-image: url('../img/common/actions/audio.mute32-2.png');
+}
+.UnmuteAudio > a
+{
+  background-image: url('../img/common/actions/audio.unmute32.png');
+}
+.StartVideo > a, .ActRTC > a
+{
+  background-image: url('../img/common/actions/video.start32.png');
+}
+.StopVideo > a
+{
+  background-image: url('../img/common/actions/video.stop32.png');
+}
+.MuteVideo > a, .overlay
+{
+  background-image: url('../img/common/actions/video.mute32.png');
+}
+.UnmuteVideo > a
+{
+  background-image: url('../img/common/actions/video.unmute32.png');
+}
+.FullVideo > a
+{
+  background-image: url('../img/common/popout32.png');
+}
+.ActMain > a
+{
+  background-image: url('../img/common/actions/video.start32.png');
+}
+
+
+.LOCGEN > a
+{
+  background-image: url('../img/common/locations/location24.png');
+}
+.LOCOFF > a
+{
+  background-image: url('../img/common/locations/office24.png');
+}
+.LOCLUN > a
+{
+  background-image: url('../img/common/locations/lunch24.png');
+}
+.LOCHOM > a
+{
+  background-image: url('../img/common/locations/home24.png');
+}
+.LOCMET > a
+{
+  background-image: url('../img/common/locations/meeting24.png');
+}
+.LOCBUS > a
+{
+  background-image: url('../img/common/locations/away24.png');
+}
+.LOCVAC > a
+{
+  background-image: url('../img/common/locations/vacation24.png');
+}
+.LOCABS > a
+{
+  background-image: url('../img/common/locations/extended24.png');
+}
+.LOCTMP > a
+{
+  background-image: url('../img/common/locations/temp24.png');
+}
+.LOCMOB > a
+{
+  background-image: url('../img/common/locations/mobile24.png');
+}
+.LOCREM > a
+{
+  background-image: url('../img/common/locations/remote24.png');
+}
+.LOCSCH > a
+{
+  background-image: url('../img/common/calendar32.png');
+}
+.LOCADV > a
+{
+  background-image: url('../img/common/menu32.png');
+}
+.LOCSUVL > a
+{
+  background-image: url('../img/common/locations/au32.png');
+}
+.LOCSAVL > a
+{
+  background-image: url('../img/common/locations/ua32.png');
+}
+
+.LOCAVLA > a:before
+{
+  background-image: url('../img/common/locations/available16.png');
+}
+.LOCAVLU > a:before
+{
+  background-image: url('../img/common/locations/unavailable16.png');
+}
+
+.ActDel
+{
+  background-image: url('../img/common/bs32.png');
+  background-size: 24px 24px;
+}
+
+.DevUnk > a, footer.DevUnk li.Calls a
+{
+  background-image: url('../img/common/devunk32.png')!important;
+}
+.DevBOT > a, footer.DevBOT li.Calls a
+{
+  background-image: url('../img/common/devbot32.png')!important;
+}
+.DevSEP > a, footer.DevSEP li.Calls a
+{
+  background-image: url('../img/common/devsep32.png')!important;
+}
+.DevCSF > a, footer.DevCSF li.Calls a
+{
+  background-image: url('../img/common/devcsf32.png')!important;
+}

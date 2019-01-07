@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Använd taligenkänning i en textruta på en webbplats"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

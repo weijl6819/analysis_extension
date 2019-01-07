@@ -1,0 +1,66 @@
+<html data-ng-app="clipto" data-ng-csp="">
+  <head lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>clipto</title>
+    <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+    <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+    <!--<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/angular/angular-csp.css">
+    <link rel="stylesheet" href="app/css/pane.style.css">
+    <!--<link rel="stylesheet" href="dist/application.min.css">-->
+  </head>
+
+  <body ng-controller="mainPaneController as mainPaneCtrl">
+    <section data-ui-view layout="column" flex>
+    </section>
+
+    <script id="clipto-script" src=""></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="lib/angular-resource/angular-resource.min.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/angular-aria/angular-aria.min.js"></script>
+    <script src="lib/angular-material/angular-material.min.js"></script>
+    <script src="app/application.js"></script>
+
+    <script src="app/envConfig/production/envConfig.js"></script>
+    <!--<script src="app/envConfig/development/envConfig.js"></script>-->
+
+    <!--<script src="dist/application.min.js"></script>-->
+
+    <script src="./static/js/uri.min.js"></script>
+    <script src="./static/js/lodash.core.min.js"></script>
+    <!--<script src="./lc_utils.js"></script>-->
+    <script src="app/services/lodash.chrome.service.js"></script>
+    <script src="app/services/uri.chrome.service.js"></script>
+    <script src="app/services/authHttp.chrome.service.js"></script>
+    <script src="app/services/LCUtils.js"></script>
+    <script src="app/services/appData.chrome.service.js"></script>
+    <script src="app/services/note.chrome.service.js"></script>
+    <script src="app/services/user.chrome.service.js"></script>
+    <script src="app/services/events.chrome.service.js"></script>
+    <script src="app/filters/truncate.chrome.filter.js"></script>
+    <script src="app/filters/getDomain.chrome.filter.js"></script>
+    <script src="app/filters/remove_protocol.chrome.filter.js"></script>
+    <script src="app/controllers/main.pane.chrome.controller.js"></script>
+    <script src="app/controllers/home.chrome.controller.js"></script>
+    <script src="app/controllers/authentication.chrome.controller.js"></script>
+    <script src="app/controllers/notifications.chrome.controller.js"></script>
+    <script src="app/directives/mdChipsExtend.chrome.directive.js"></script>
+    <script src="app/directives/enter.chrome.directive.js"></script>
+    <script src="app/directives/focusMe.chrome.directive.js"></script>
+    <script src="app/directives/checkMdInputFocus.chrome.directive.js"></script>
+    <script src="app/directives/toolbar/toolbar.chrome.directive.js"></script>
+    <script src="app/directives/searchBar/searchBar.chrome.directive.js"></script>
+    <script src="app/directives/tagsBar/tagsBar.chrome.directive.js"></script>
+    <script src="app/directives/pagesList/pagesList.chrome.directive.js"></script>
+    <script src="app/directives/pageItem/pageItem.chrome.directive.js"></script>
+    <script src="app/directives/clipsList/clipsList.chrome.directive.js"></script>
+    <script src="app/directives/clipItem/clipItem.chrome.directive.js"></script>
+    <script src="app/directives/auth/header/auth.header.chrome.directive.js"></script>
+  </body>
+</html>

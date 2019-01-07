@@ -1,0 +1,919 @@
+#YouTubeVideo {
+	display: none;
+	position: fixed;
+	width: 300px;
+	min-width: 300px;
+	height: 150px;
+	right: 6px;
+	top: 6px;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+	border: none;
+	border-radius: 4px 4px 0 0;
+	background: transparent;
+	z-index: 9999999997;
+	-webkit-transition: width 150ms linear, height 150ms linear, border-radius 300ms linear;
+	overflow: visible;
+}
+#YouTubeVideo.without_featured {
+	border-radius: 4px;
+}
+
+#YouTubeSideplayerButton {
+	display: block;
+    margin: 1px 3px 0 10px;
+    padding: 1px 7px 0 7px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    background: #FAFAFA;
+    font-size: 11px;
+    color: #7F7F7F;
+    line-height: 22px;
+    cursor: pointer;
+    float: left;
+}
+
+#YouTubeSideplayerButton:hover {
+	border-color: #808080;
+	color: #808080;
+}
+
+#YouTubeVideo, #YouTubeVideo * {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+#YouTubeVideo.resizing {
+	-webkit-transition: none !important;
+}
+
+#YouTubeVideo > img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	border: none;
+	border-radius: 4px 4px 0 0;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	-webkit-transition: border-radius 300ms linear;
+}
+#YouTubeVideo.without_featured > img {
+	border-radius: 4px;
+}
+
+#YouTubeVideo > #YouTubeVideoControls {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	border-radius: 4px 4px 0 0;
+	opacity: 0;
+	cursor: pointer;
+	-webkit-transition: opacity 150ms linear, border-radius 300ms linear;
+	/*background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABiCAQAAAA7fHH2AAAAP0lEQVQY03WOwQoAMAhCtfr/b95hFMoaeHiaYAADEPEBtRQYS7fRHJIoREt5lA75SS6XJ/Tr2pyh2hbpnft2HrldAW1dbRCXAAAAAElFTkSuQmCC') repeat-x center bottom;*/
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 75%,rgba(0,0,0,0.65) 100%);
+	overflow: hidden;
+}
+
+#YouTubeVideo.without_featured > #YouTubeVideoControls {
+	border-radius: 4px;
+}
+
+#YouTubeVideo.moving > #YouTubeVideoControls {
+	cursor: move !important;
+}
+
+#YouTubeVideo:hover > #YouTubeVideoControls, #YouTubeVideo.scrolling #YouTubeVideoControls, #YouTubeVideo.scrollingOpacity #YouTubeVideoControls {
+	opacity: 1 !important;
+}
+#YouTubeClosePlayer {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	right: 7px;
+	top: 7px;
+	margin: 0;
+	padding: 0;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 26 26" version="1.1"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-1323.000000, -149.000000)"><g transform="translate(1323.000000, 149.000000)"><g><circle fill="#FFFFFF" cx="13" cy="13" r="13"/><g fill="#000000"><path d="M9.4 10.3 C11.5 12.4 13.5 14.5 15.6 16.6 C16.3 17.2 17.2 16.3 16.6 15.6 C14.6 13.5 12.4 11.4 10.3 9.3 C9.7 8.7 8.7 9.7 9.3 10.3 L9.4 10.3 L9.4 10.3 Z"/><path d="M15.7 9.3 C13.6 11.4 11.4 13.5 9.3 15.6 C8.8 16.3 9.7 17.2 10.3 16.6 C12.5 14.5 14.5 12.4 16.6 10.3 C17.3 9.7 16.3 8.7 15.6 9.3 L15.7 9.3 L15.7 9.3 Z"/></g></g></g></g></g></svg>') no-repeat center center;
+	background-size: cover;
+	filter: drop-shadow(rgba(0, 0, 0, 0.5) 2px 2px 3px);
+	opacity: .6;
+	-webkit-transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+#YouTubeClosePlayer:hover {
+	opacity: 1;
+}
+
+#YouTubeVideo > #YouTubeVideoControls > #YouTubeVideoControlsPanel {
+	position: absolute;
+	width: 96.25%;
+	height: 36px;
+	margin: 0 auto;
+	padding: 3px 0 0 0;
+	left: 0; right: 0;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transition: opacity .25s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+#YouTubeVideo:hover > #YouTubeVideoControls > #YouTubeVideoControlsPanel, #YouTubeVideo.scrolling #YouTubeVideoControlsPanel, #YouTubeVideo.scrollingOpacity #YouTubeVideoControlsPanel {
+	opacity: 1 !important;
+}
+#YouTubeVideo #YouTubePlayPauseFading {
+	visibility: hidden;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	margin: auto;
+	border: none;
+	border-radius: 50%;
+	background: rgba(0,0,0,.5) url('data:image/svg+xml;utf8,<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="100%" version="1.1" viewBox="0 0 40 40" width="100%"><defs><path fill="#FFFFFF" d="m 12.22,11.11 0,17.77 6.66,0 0,-17.77 -6.66,0 z m 10,0 0,17.77 6.66,0 0,-17.77 -6.66,0 z" id="ytp-svg-29"></path></defs><use class="ytp-svg-shadow" xlink:href="#ytp-svg-29"></use><use class="ytp-svg-fill" xlink:href="#ytp-svg-29"></use></svg>') no-repeat center center; /* Pause image */
+	background-size: 40px auto;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-webkit-transition: opacity .5s linear, -webkit-transform .5s linear;
+}
+
+#YouTubePlayPauseFading.animate {
+	visibility: visible !important;
+	opacity: 0 !important;
+	-webkit-transform: scale(2) !important;
+}
+
+#YouTubeVideo.paused #YouTubePlayPauseFading {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" height="100%" version="1.1" viewBox="0 0 40 40" width="100%"><defs><path fill="#FFFFFF" d="m 12.22,28.88 0,-17.77 16.66,8.91 -16.66,8.86 z" id="ytp-svg-30"></path></defs><use class="ytp-svg-shadow" xlink:href="#ytp-svg-30"></use><use class="ytp-svg-fill" xlink:href="#ytp-svg-30"></use></svg>'); /* Play image */
+}
+
+#YouTubeVideo > #YouTubeVideoControls > #YouTubeVideoControlsPanel > #YouTubeVideoToggle {
+	width: 46px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" style="filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="ytp-2" fill="#FFFFFF" d="M 11 10 L 17 10 L 17 26 L 11 26 M 20 10 L 26 10 L 26 26 L 20 26"><animate attributeType="XML" attributeName="d" fill="freeze" from="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28" to="M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26" dur="0.2s" keySplines=".4 0 1 1" repeatCount="1"></animate></path></defs><use xlink:href="#ytp-2" class="ytp-svg-shadow"></use><use xlink:href="#ytp-2" class="ytp-svg-fill"></use></svg>') no-repeat center center;
+	background-size: 37px auto;
+	/*filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));*/
+}
+
+#YouTubeVideo > #YouTubeVideoControls > #YouTubeVideoControlsPanel > .YouTubeButtons {
+	opacity: .9;
+	-webkit-transition: opacity .1s cubic-bezier(0.4,0.0,1,1);
+}
+#YouTubeVideo > #YouTubeVideoControls > #YouTubeVideoControlsPanel > .YouTubeButtons:hover {
+	opacity: 1;
+}
+#YouTubeVideo > #YouTubeVideoControls > #YouTubeVideoControlsPanel > * {
+	float: left;
+}
+
+#YouTubeVideoSound {
+	width: 0;
+	height: 36px;
+	margin: 0;
+	padding: 0 0 0 36px;
+	background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" style="filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));" viewBox="0 0 36 36" version="1.1" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path class="ytp-svg-shadow" d="M12.39,15.54 L10,15.54 L10,20.44 L12.4,20.44 L17,25.50 L17,10.48 L12.39,15.54 Z" opacity="1"></path><path class="ytp-svg-fill" d="M12.39,15.54 L10,15.54 L10,20.44 L12.4,20.44 L17,25.50 L17,10.48 L12.39,15.54 Z" opacity="1"></path><path class="ytp-svg-shadow" d="M22,17.99 C22,16.4 20.74,15.05 19,14.54 L19,21.44 C20.74,20.93 22,19.59 22,17.99 Z" opacity="1"></path><path class="ytp-svg-fill" d="M22,17.99 C22,16.4 20.74,15.05 19,14.54 L19,21.44 C20.74,20.93 22,19.59 22,17.99 Z" opacity="1"></path><path class="ytp-svg-shadow" d="M19,24.31 L19,26 C22.99,25.24 26,21.94 26,18 C26,14.05 22.99,10.75 19,10 L19,11.68 C22.01,12.41 24.24,14.84 24.24,18 C24.24,21.15 22.01,23.58 19,24.31 Z" opacity="1"></path><path class="ytp-svg-fill" d="M19,24.31 L19,26 C22.99,25.24 26,21.94 26,18 C26,14.05 22.99,10.75 19,10 L19,11.68 C22.01,12.41 24.24,14.84 24.24,18 C24.24,21.15 22.01,23.58 19,24.31 Z" opacity="1"></path></svg>') no-repeat center left;
+	background-size: 36px auto;
+	-webkit-transition: width .2s cubic-bezier(0.4,0.0,1,1), opacity .1s cubic-bezier(0.4,0.0,1,1) !important;
+	overflow: hidden;
+}
+#YouTubeVideoSound:hover, #YouTubeVideo.scrollingVolume #YouTubeVideoSound {
+	width: 50px;
+}
+#YouTubeVideoSound > #YouTubeVideoSoundScroll {
+	position: relative;
+	width: 49px;
+	height: 3px;
+    margin: 12px 0;
+    padding: 5px 0;
+	background: transparent;
+}
+#YouTubeVideoSoundScroll:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 0;
+}
+#YouTubeVideoSound > #YouTubeVideoSoundScroll > p {
+	width: 100%;
+	height: 3px;
+	margin: 0;
+	padding: 0;
+	background: red;
+	float: left;
+}
+#YouTubeVideoSound > #YouTubeVideoSoundScroll > p:after {
+	content: '';
+	display: block;
+	width: 4px;
+	height: 13px;
+	margin: -6px 0 0 0;
+	padding: 0;
+	background: white;
+	float: right;
+}
+#YouTubeVideo.muted #YouTubeVideoSound {
+	background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" style="filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));" viewBox="0 0 36 36" fill="#FFFFFF" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path class="ytp-svg-shadow" d="M12.39,15.54 L10,15.54 L10,20.44 L12.4,20.44 L17,25.50 L17,10.48 L12.39,15.54 Z" opacity="1"></path><path class="ytp-svg-fill" d="M12.39,15.54 L10,15.54 L10,20.44 L12.4,20.44 L17,25.50 L17,10.48 L12.39,15.54 Z" opacity="1"></path><path class="ytp-svg-shadow" d="M19.63,15.92 L20.68,14.93 L22.81,16.94 L24.94,14.93 L26,15.92 L23.86,17.93 L26,19.93 L24.94,20.92 L22.81,18.92 L20.68,20.92 L19.63,19.93 L21.76,17.93 L19.63,15.92 Z" opacity="1"></path><path class="ytp-svg-fill" d="M19.63,15.92 L20.68,14.93 L22.81,16.94 L24.94,14.93 L26,15.92 L23.86,17.93 L26,19.93 L24.94,20.92 L22.81,18.92 L20.68,20.92 L19.63,19.93 L21.76,17.93 L19.63,15.92 Z" opacity="1"></path></svg>');
+}
+
+#YouTubeTiming {
+	width: auto;
+	height: 35px;
+	margin: 0;
+	padding: 0 5px;
+	font-size: 11px;
+	font-weight: 300;
+	text-align: center;
+	text-shadow: 0 0 2px rgba(0,0,0,.5);
+	color: #eee;
+	line-height: 36px;
+}
+
+#YouTubeVideoScrollBox {
+	position: absolute;
+	width: 100%;
+	height: 13px;
+	margin: -6px 0 0 0;
+	padding: 0;
+}
+#YouTubeVideoScrollBox > #YouTubeVideoScroll {
+	position: relative;
+	width: 100%;
+	height: 3px;
+	margin: 5px 0;
+	padding: 0;
+	background: rgba(255, 255, 255, .2);
+	z-index: 9999999998;
+}
+#YouTubeVideoScrollBox:hover > #YouTubeVideoScroll {
+	height: 5px;
+	margin: 4px 0;
+}
+#YouTubeVideoScrollBox > #YouTubeVideoScroll > * {
+	position: absolute;
+	width: 0;
+	height: 100%;
+	left: 0
+	top: 0;
+	margin: 0;
+	padding: 0;
+	background: rgba(255, 255, 255, .4);
+}
+#YouTubeVideoScrollBox > #YouTubeVideoScroll > .YouTubeNow {
+	background: #f12b24;
+}
+#YouTubeVideoScrollBox:hover > #YouTubeVideoScroll > .YouTubeNow:after {
+	content: '';
+	display: block;
+	width: 13px;
+	height: 13px;
+	margin: -4px -6px 0 0;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background: #f12b24;
+	float: right;
+}
+#YouTubeUpNext {
+	display: none;
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	left: 0;
+    top: 0;
+	margin: 0;
+	padding: 10px 1px;
+	background: rgba(0, 0, 0, .50);
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+	text-shadow: 0 0 2px rgba(0,0,0,.5);
+	color: white;
+}
+#YouTubeVideo.upnext #YouTubeUpNext {
+	display: block;
+}
+#YouTubeVideo.upnext #YouTubeVideoControls, #YouTubeVideo.repeat #YouTubeVideoControls {
+	display: none !important;
+}
+#YouTubeVideo.upnext, #YouTubeVideo.repeat {
+	-webkit-transition: top 300ms ease-in;
+}
+#YouTubeUpNext p {
+	display: block;
+	margin: 20px 0 5px 0;
+	font-size: 18px;
+}
+#YouTubeUpNext button, #YouTubeRepeat > button {
+	display: block;
+    position: absolute;
+	width: 46px;
+	height: 25px;
+	bottom: 16px;
+    left: 50%;
+	margin: 0 0 0 -22px;
+	padding: 5px;
+	border: none;
+	border-radius: 3px;
+	background: transparent;
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+}
+#YouTubeUpNext button:hover, #YouTubeRepeat > button:hover {
+	background: rgba(255, 255, 255, .25);
+}
+
+#YouTubeUpNextPlay {
+	display: block;
+	width: 98px;
+	height: 98px;
+	max-height: 31%;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url('data:image/svg+xml;utf8,<svg height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 98 98" width="100%"><circle class="ytp-svg-autoplay-circle" cx="49" cy="49" fill="#000" fill-opacity="0.8" r="48"></circle><circle class="ytp-svg-autoplay-ring" cx="-49" cy="49" fill-opacity="0" r="46.5" stroke="#FFFFFF" stroke-dasharray="293" stroke-dashoffset="-293" stroke-width="4" transform="rotate(-90)"></circle><polygon class="ytp-svg-autoplay-triangle" fill="#fff" points="32,27 72,49 32,71"></polygon></svg>');
+	background-size: contain;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	-webkit-transition: opacity 500ms linear;
+}
+
+#YouTubeLogo {
+	position: absolute;
+	display: block;
+	width: 34px;
+	height: 14px;
+	right: 0;
+	margin: -21px 0 0 0;
+	padding: 0;
+	background: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="34px" height="14px" viewBox="0 0 34 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><defs><path id="path-1" d="M0.00406374502,0.0615333333 L33.9338287,0.0615333333 L33.9338287,13.996 L0.00406374502,13.996 L0.00406374502,0.0615333333 Z"></path><path id="path-3" d="M0.00406374502,0.0615333333 L33.9338287,0.0615333333 L33.9338287,13.996 L0.00406374502,13.996"></path></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="Video---hovered-&amp;-resized" sketch:type="MSArtboardGroup" transform="translate(-1308.000000, -317.000000)"><g id="YouTube-logo-light" sketch:type="MSLayerGroup" transform="translate(1308.000000, 317.000000)"><path d="M12.6653386,11.3412667 L11.3784861,11.3412667 L11.3784861,10.6079333 C10.8906335,11.1583333 10.4770797,11.4363333 10.0262749,11.4363333 C9.63073705,11.4363333 9.35609562,11.2526667 9.21853785,10.9208667 C9.13496016,10.7190667 9.07569721,10.4040667 9.07569721,9.94126667 L9.07569721,4.60793333 L10.3625498,4.60793333 L10.3625498,9.60793333 L10.3625498,10.0746 C10.3925538,10.2617333 10.4732869,10.3300667 10.6369203,10.3300667 C10.883251,10.3300667 11.1061474,10.1194 11.3784861,9.74126667 L11.3784861,4.60793333 L12.6653386,4.60793333 L12.6653386,11.3412667" id="Fill-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path><g id="Group-5"><mask id="mask-2" sketch:name="Clip 3" fill="white"><use xlink:href="#path-1"></use></mask><g id="Clip-3"></g><path d="M6.84063745,9.34126667 C6.90836653,10.0079333 6.69827092,10.3387333 6.29866932,10.3387333 C5.89913546,10.3387333 5.68924303,10.0079333 5.75697211,9.34126667 L5.75697211,6.6746 C5.68924303,6.00793333 5.89920319,5.69546667 6.29880478,5.69546667 C6.69840637,5.69546667 6.90904382,6.00793333 6.84131474,6.6746 L6.84063745,9.34126667 L6.84063745,9.34126667 Z M8.12749004,6.80793333 C8.12749004,6.0884 7.98065339,5.54806667 7.72111554,5.20793333 C7.37827092,4.7474 6.84063745,4.55886667 6.29880478,4.55886667 C5.68551793,4.55886667 5.21879681,4.7474 4.87649402,5.20793333 C4.6128247,5.54806667 4.47140637,6.09426667 4.47140637,6.8138 L4.47011952,9.20793333 C4.47011952,9.92346667 4.59589243,10.4178667 4.85962948,10.7546667 C5.20193227,11.2138 5.75697211,11.4570667 6.29880478,11.4570667 C6.84063745,11.4570667 7.40543028,11.2138 7.74820717,10.7546667 C8.00774502,10.4178667 8.12749004,9.92346667 8.12749004,9.20793333 L8.12749004,6.80793333 L8.12749004,6.80793333 Z" id="Fill-2" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path><path d="M3.04780876,7.6746 L3.04780876,11.3412667 L1.69322709,11.3412667 L1.69322709,7.6746 C1.69322709,7.6746 0.289541833,3.1792 0,2.34126667 L1.42231076,2.34126667 L2.37288845,5.853 L3.3187251,2.34126667 L4.74103586,2.34126667 L3.04780876,7.6746" id="Fill-4" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path></g><path d="M25.9010916,5.67886667 C25.6991912,5.67886667 25.4679641,5.78373333 25.2629482,5.98293333 L25.2615259,10.026 C25.4666096,10.2278 25.6991912,10.3300667 25.9010916,10.3300667 C26.2547052,10.3300667 26.4143426,10.0746 26.4143426,9.40793333 L26.4143426,6.54126667 C26.4143426,5.8746 26.2547052,5.67886667 25.9010916,5.67886667" id="Fill-6" fill="#FFFFFF" sketch:type="MSShapeGroup"></path><g id="Group-10"><mask id="mask-4" sketch:name="Clip 8" fill="white"><use xlink:href="#path-3"></use></mask><g id="Clip-8"></g><path d="M30.9521912,6.4802 C30.9521912,5.864 30.7903865,5.67886667 30.3838765,5.67886667 C29.9743865,5.67886667 29.8007968,5.8488 29.8007968,6.47186667 L29.8007968,7.2092 L30.9521912,7.20793333 L30.9521912,6.4802" id="Fill-7" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path><path d="M30.395255,10.3300667 C30.6971235,10.3300667 30.8730837,10.1684667 30.9430478,9.84586667 C30.9544263,9.78006667 30.952259,9.4922 30.952259,9.00793333 L32.2390438,9.00793333 L32.2390438,9.19686667 C32.2390438,9.5858 32.2065339,9.86106667 32.195494,9.98193333 C32.1541116,10.2494667 32.0578008,10.4915333 31.9087291,10.7050667 C31.5695418,11.1888 31.0663825,11.4272 30.4257331,11.4272 C29.7842709,11.4272 29.296012,11.2 28.9415179,10.7448 C28.6810319,10.4114667 28.5139442,9.91586667 28.5139442,9.20793333 L28.5139442,6.8746 C28.5139442,6.1626 28.6659283,5.6122 28.9264143,5.27526667 C29.2810438,4.8194 29.7693028,4.57813333 30.395255,4.57813333 C31.0103705,4.57813333 31.4986295,4.8194 31.8423546,5.27526667 C32.0987092,5.6122 32.2411434,6.13306667 32.2411434,6.84506667 L32.2414143,8.20793333 L29.8007968,8.20793333 L29.8007968,9.40513333 C29.7965976,10.0203333 29.9743865,10.3300667 30.395255,10.3300667 L30.395255,10.3300667 Z M27.7011952,9.34126667 C27.7011952,9.9574 27.6476215,10.3922 27.5657371,10.6746 C27.4021036,11.1699333 27.0453068,11.4272 26.5570478,11.4272 C26.1210757,11.4272 25.6743347,11.169 25.2646414,10.6700667 L25.2629482,11.3412667 L24.0438247,11.3412667 L24.0438247,2.40793333 L25.2629482,2.40793333 L25.2615259,5.32046667 C25.6576056,4.84073333 26.1059721,4.56766667 26.5570478,4.56766667 C27.0453068,4.56766667 27.3735219,4.84526667 27.5371554,5.34426667 C27.6190398,5.6122 27.7011952,6.0436 27.7011952,6.6746 L27.7011952,9.34126667 L27.7011952,9.34126667 Z M23.0278884,11.3412667 L21.7410359,11.3412667 L21.7410359,10.6079333 C21.2531833,11.1583333 20.8396295,11.4363333 20.3888247,11.4363333 C19.9932869,11.4363333 19.7186454,11.2526667 19.5810876,10.9208667 C19.49751,10.7190667 19.438247,10.4040667 19.438247,9.94126667 L19.438247,4.6746 L20.7250996,4.6746 L20.7250996,9.60793333 L20.7250996,10.0746 C20.7551036,10.2617333 20.8358367,10.3300667 20.9994701,10.3300667 C21.2458008,10.3300667 21.4686972,10.1194 21.7410359,9.74126667 L21.7410359,4.6746 L23.0278884,4.6746 L23.0278884,11.3412667 L23.0278884,11.3412667 Z M18.1513944,11.3412667 L16.7968127,11.3412667 L16.7968127,3.6746 L15.374502,3.6746 L15.374502,2.40933333 L19.6414343,2.40793333 L19.6414343,3.6746 L18.1513944,3.6746 L18.1513944,11.3412667 L18.1513944,11.3412667 Z M33.7318606,3.06846667 C33.7318606,3.06846667 33.5342271,1.7028 32.9278486,1.1014 C32.1588526,0.312133333 31.2966614,0.308133333 30.9013944,0.262 C28.0713347,0.0615333333 23.8260757,0.0615333333 23.8260757,0.0615333333 L23.8172032,0.0615333333 C23.8172032,0.0615333333 19.5718765,0.0615333333 16.7418167,0.262 C16.3464143,0.308133333 15.4845618,0.312133333 14.7153625,1.1014 C14.1089163,1.7028 13.9115538,3.06846667 13.9115538,3.06846667 C13.9115538,3.06846667 13.7093147,4.67213333 13.7093147,6.27593333 L13.7093147,7.77946667 C13.7093147,9.38306667 13.9115538,10.9867333 13.9115538,10.9867333 C13.9115538,10.9867333 14.1089163,12.3523333 14.7153625,12.9538 C15.4845618,13.7432667 16.4953506,13.7181333 16.9453426,13.8008 C18.5633227,13.953 23.8216056,14 23.8216056,14 C23.8216056,14 28.0713347,13.9937333 30.9013944,13.7934 C31.2966614,13.7471333 32.1588526,13.7432667 32.9278486,12.9538 C33.5342271,12.3523333 33.7318606,10.9867333 33.7318606,10.9867333 C33.7318606,10.9867333 33.9338287,9.38306667 33.9338287,7.77946667 L33.9338287,6.27593333 C33.9338287,4.67213333 33.7318606,3.06846667 33.7318606,3.06846667 L33.7318606,3.06846667 Z" id="Fill-9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path></g></g></g></g></svg>') no-repeat center center;
+	background-size: auto 14px;
+	opacity: .5;
+	cursor: pointer;
+}
+
+#YouTubeLogo:hover {
+	opacity: 1;
+}
+
+#YouTubeSettingsButton, #YouTubeFeaturedVideosTrigger {
+	width: 17px;
+	height: 17px;
+	margin: 10px 3px 10px 10px;
+	padding: 0;
+	background: url('data:image/svg+xml;utf8,<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="320" height="320"> <g id="full-svg-transform" transform="translate(5 5) scale(18.52498182314303) translate(-0.043465614318847656 -0.184539794921875)"> <g id="full-svg-wrapper"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" style=""><g id="Video---hovered-&amp;-resized" transform="translate(-1323.000000, -355.000000)" style=""><g id="Group" transform="translate(1323.000000, 355.000000)" style=""><path d="M14.2335,10.2820435 C15.3535,10.0970145 16.25,10.0785362 16.25,10.0785362 C16.52525,10.0728696 16.75,9.84644928 16.75,9.57543478 L16.75,7.81753623 C16.75,7.54652174 16.526,7.30581159 16.25175,7.28265217 C16.25175,7.28265217 14.95775,7.17350725 14.2565,7.00473913 L14.19975,6.99118841 C14.14175,6.96753623 14.048,6.8202029 13.9915,6.66326087 C13.935,6.50631884 13.7915,5.95024638 13.835,5.75684058 C13.835,5.75684058 13.835,5.75684058 13.9685,5.57205797 C14.627,4.66095652 15.23275,4.03786957 15.23275,4.03786957 C15.423,3.84224638 15.4195,3.52515942 15.22525,3.33372464 L13.9635,2.09050725 C13.76925,1.89882609 13.4475,1.89537681 13.24875,2.08286957 C13.24875,2.08286957 12.55925,2.73330435 11.63275,3.23886957 L11.429,3.34998551 C11.18125,3.36723188 10.84575,3.32436232 10.684,3.25488406 C10.522,3.1854058 10.06675,3.0025942 10.05425,2.95775362 C10.05425,2.95775362 10.05425,2.95775362 10.04675,2.91315942 C9.8595,1.80963768 9.83875,0.677289855 9.83875,0.677289855 C9.83375,0.406275362 9.6045,0.184536232 9.32975,0.184536232 L7.54575,0.184536232 C7.27075,0.184536232 7.0415,0.406275362 7.0365,0.677289855 C7.0365,0.677289855 7.0135,1.88749275 6.72075,2.89123188 L6.7025,2.95356522 C6.6725,3.01713043 6.5545,3.10114493 6.4405,3.14007246 C6.3265,3.179 5.8085,3.29331884 5.5335,3.2883913 C5.5335,3.2883913 5.511,3.28814493 5.27425,3.15904348 C4.347,2.65347826 3.65775,2.00378261 3.65775,2.00378261 C3.45925,1.81628986 3.1375,1.81973913 2.943,2.01142029 L1.68175,3.2543913 C1.48725,3.44607246 1.48375,3.76291304 1.674,3.95853623 C1.674,3.95853623 2.27925,4.58137681 2.93825,5.49223188 L3.05775,5.65730435 C3.1045,5.83149275 3.07725,6.11310145 2.997,6.28285507 C2.91675,6.45285507 2.68775,6.94955072 2.615,6.98404348 C2.615,6.98404348 2.615,6.98404348 2.54325,7.00449275 C1.52475,7.29349275 0.571,7.31394203 0.571,7.31394203 C0.296,7.3196087 0.071,7.54627536 0.071,7.81728986 L0.071,9.57518841 C0.071,9.8462029 0.296,10.0728696 0.571,10.0785362 C0.571,10.0785362 1.446,10.0967681 2.56625,10.2817971 L2.62175,10.290913 C2.6775,10.305942 2.7725,10.458942 2.83275,10.630913 C2.893,10.8026377 3.05425,11.4015797 3.01225,11.6023768 C3.01225,11.6023768 3.01225,11.6023768 2.87325,11.7945507 C2.214,12.7051594 1.60875,13.3282464 1.60875,13.3282464 C1.4185,13.5238696 1.422,13.8409565 1.6165,14.0323913 L2.878,15.2756087 C3.0725,15.4670435 3.394,15.4707391 3.59275,15.2832464 C3.59275,15.2832464 4.282,14.6325652 5.20925,14.1274928 C5.44175,14.0003623 5.45525,14.0001159 5.45525,14.0001159 C5.73025,13.9932174 6.048,14.0262319 6.1615,14.0742754 C6.27525,14.1218261 6.6225,14.302913 6.67025,14.3921014 C6.67025,14.3921014 6.67025,14.3921014 6.6965,14.4822754 C6.98925,15.4857681 7.01,16.425942 7.01,16.425942 C7.016,16.6972029 7.24575,16.9186957 7.52075,16.9186957 L9.30475,16.9186957 C9.57975,16.9186957 9.80975,16.6972029 9.8155,16.425942 C9.8155,16.425942 9.8345,15.5633768 10.022,14.4598551 L10.03275,14.3975217 C10.0505,14.3356812 10.194,14.2423043 10.35125,14.1900725 C10.5085,14.1378406 11.13275,13.9796667 11.407,13.9895217 C11.407,13.9895217 11.407,13.9895217 11.6325,14.1122174 C12.559,14.618029 13.2485,15.2682174 13.2485,15.2682174 C13.44725,15.4557101 13.769,15.4520145 13.96325,15.2605797 L15.225,14.0166232 C15.41925,13.8251884 15.42275,13.5083478 15.2325,13.3127246 C15.2325,13.3127246 14.62675,12.6903768 13.96825,11.7792754 L13.8285,11.5861159 C13.7865,11.3845797 13.81225,11.0857246 13.8855,10.9223768 C13.959,10.759029 14.14775,10.3005217 14.1905,10.288942 C14.19075,10.2891884 14.19075,10.2891884 14.2335,10.2820435 L14.2335,10.2820435 Z M8.42,12.1515507 C6.47925,12.1515507 4.90575,10.6013478 4.90575,8.68847826 C4.90575,6.77536232 6.47925,5.2254058 8.42,5.2254058 C10.3615,5.2254058 11.93425,6.77536232 11.93425,8.68847826 C11.934,10.6013478 10.36125,12.1515507 8.42,12.1515507 L8.42,12.1515507 Z" id="Shape" fill="#E6E5E5" style=""></path><path d="M14.2335,10.2820435 C15.3535,10.0970145 16.25,10.0785362 16.25,10.0785362 C16.52525,10.0728696 16.75,9.84644928 16.75,9.57543478 L16.75,7.81753623 C16.75,7.54652174 16.526,7.30581159 16.25175,7.28265217 C16.25175,7.28265217 14.95775,7.17350725 14.2565,7.00473913 L14.19975,6.99118841 C14.14175,6.96753623 14.048,6.8202029 13.9915,6.66326087 C13.935,6.50631884 13.7915,5.95024638 13.835,5.75684058 C13.835,5.75684058 13.835,5.75684058 13.9685,5.57205797 C14.627,4.66095652 15.23275,4.03786957 15.23275,4.03786957 C15.423,3.84224638 15.4195,3.52515942 15.22525,3.33372464 L13.9635,2.09050725 C13.76925,1.89882609 13.4475,1.89537681 13.24875,2.08286957 C13.24875,2.08286957 12.55925,2.73330435 11.63275,3.23886957 L11.429,3.34998551 C11.18125,3.36723188 10.84575,3.32436232 10.684,3.25488406 C10.522,3.1854058 10.06675,3.0025942 10.05425,2.95775362 C10.05425,2.95775362 10.05425,2.95775362 10.04675,2.91315942 C9.8595,1.80963768 9.83875,0.677289855 9.83875,0.677289855 C9.83375,0.406275362 9.6045,0.184536232 9.32975,0.184536232 L7.54575,0.184536232 C7.27075,0.184536232 7.0415,0.406275362 7.0365,0.677289855 C7.0365,0.677289855 7.0135,1.88749275 6.72075,2.89123188 L6.7025,2.95356522 C6.6725,3.01713043 6.5545,3.10114493 6.4405,3.14007246 C6.3265,3.179 5.8085,3.29331884 5.5335,3.2883913 C5.5335,3.2883913 5.511,3.28814493 5.27425,3.15904348 C4.347,2.65347826 3.65775,2.00378261 3.65775,2.00378261 C3.45925,1.81628986 3.1375,1.81973913 2.943,2.01142029 L1.68175,3.2543913 C1.48725,3.44607246 1.48375,3.76291304 1.674,3.95853623 C1.674,3.95853623 2.27925,4.58137681 2.93825,5.49223188 L3.05775,5.65730435 C3.1045,5.83149275 3.07725,6.11310145 2.997,6.28285507 C2.91675,6.45285507 2.68775,6.94955072 2.615,6.98404348 C2.615,6.98404348 2.615,6.98404348 2.54325,7.00449275 C1.52475,7.29349275 0.571,7.31394203 0.571,7.31394203 C0.296,7.3196087 0.071,7.54627536 0.071,7.81728986 L0.071,9.57518841 C0.071,9.8462029 0.296,10.0728696 0.571,10.0785362 C0.571,10.0785362 1.446,10.0967681 2.56625,10.2817971 L2.62175,10.290913 C2.6775,10.305942 2.7725,10.458942 2.83275,10.630913 C2.893,10.8026377 3.05425,11.4015797 3.01225,11.6023768 C3.01225,11.6023768 3.01225,11.6023768 2.87325,11.7945507 C2.214,12.7051594 1.60875,13.3282464 1.60875,13.3282464 C1.4185,13.5238696 1.422,13.8409565 1.6165,14.0323913 L2.878,15.2756087 C3.0725,15.4670435 3.394,15.4707391 3.59275,15.2832464 C3.59275,15.2832464 4.282,14.6325652 5.20925,14.1274928 C5.44175,14.0003623 5.45525,14.0001159 5.45525,14.0001159 C5.73025,13.9932174 6.048,14.0262319 6.1615,14.0742754 C6.27525,14.1218261 6.6225,14.302913 6.67025,14.3921014 C6.67025,14.3921014 6.67025,14.3921014 6.6965,14.4822754 C6.98925,15.4857681 7.01,16.425942 7.01,16.425942 C7.016,16.6972029 7.24575,16.9186957 7.52075,16.9186957 L9.30475,16.9186957 C9.57975,16.9186957 9.80975,16.6972029 9.8155,16.425942 C9.8155,16.425942 9.8345,15.5633768 10.022,14.4598551 L10.03275,14.3975217 C10.0505,14.3356812 10.194,14.2423043 10.35125,14.1900725 C10.5085,14.1378406 11.13275,13.9796667 11.407,13.9895217 C11.407,13.9895217 11.407,13.9895217 11.6325,14.1122174 C12.559,14.618029 13.2485,15.2682174 13.2485,15.2682174 C13.44725,15.4557101 13.769,15.4520145 13.96325,15.2605797 L15.225,14.0166232 C15.41925,13.8251884 15.42275,13.5083478 15.2325,13.3127246 C15.2325,13.3127246 14.62675,12.6903768 13.96825,11.7792754 L13.8285,11.5861159 C13.7865,11.3845797 13.81225,11.0857246 13.8855,10.9223768 C13.959,10.759029 14.14775,10.3005217 14.1905,10.288942 C14.19075,10.2891884 14.19075,10.2891884 14.2335,10.2820435 L14.2335,10.2820435 Z M8.42,12.1515507 C6.47925,12.1515507 4.90575,10.6013478 4.90575,8.68847826 C4.90575,6.77536232 6.47925,5.2254058 8.42,5.2254058 C10.3615,5.2254058 11.93425,6.77536232 11.93425,8.68847826 C11.934,10.6013478 10.36125,12.1515507 8.42,12.1515507 L8.42,12.1515507 Z" id="Shape" fill="#FFFFFF" style=""></path></g></g></g></g> <rect id="highlight-rect" fill="none" stroke="#f00" stroke-width="2"></rect> </g> </svg>');
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: right !important;
+	opacity: .9;
+	-webkit-transform: rotateZ(0deg);
+	-webkit-transition: -webkit-transform 150ms ease-out;
+}
+#YouTubeSettingsButton:hover, #YouTubeVideo.settings #YouTubeSettingsButton, #YouTubeFeaturedVideosTrigger:hover {
+	opacity: 1;
+}
+#YouTubeVideo.settings #YouTubeSettingsButton {
+	-webkit-transform: rotateZ(90deg);
+}
+
+#YouTubeAutoNext {
+	width: 37px;
+    height: 15px;
+    margin: 5px 0;
+    padding: 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 17px;
+	background: rgba(68, 68, 68, .68) url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg width="9px" height="7px" viewBox="0 0 9 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"><g id="Video---hovered-&amp;-resized" sketch:type="MSArtboardGroup" transform="translate(-1303.000000, -360.000000)" fill="#FFFFFF"><g id="AP" sketch:type="MSLayerGroup" transform="translate(1256.000000, 356.000000)"><g id="Active" transform="translate(41.000000, 0.000000)" sketch:type="MSShapeGroup"><path d="M14.3680673,5.74285718 L10.0546219,10.0806725 C9.90840338,10.2268909 9.73781514,10.3000002 9.54285716,10.3000002 C9.34789917,10.3000002 9.15294119,10.2268909 9.03109245,10.0806725 L6.86218488,7.91176482 C6.5697479,7.61932783 6.5697479,7.15630261 6.86218488,6.88823537 C7.15462185,6.59579839 7.61764706,6.59579839 7.88571429,6.88823537 L9.54285716,8.54537828 L13.3445378,4.71932774 C13.6369748,4.42689075 14.1,4.42689075 14.3680673,4.71932774 C14.6605042,5.01176472 14.6605042,5.47478995 14.3680673,5.74285718 L14.3680673,5.74285718 Z" id="Shape"></path></g></g></g></g></svg>') no-repeat 3px center;
+	background-size: 9px auto;
+	/*float: right !important;*/
+	-webkit-transition: opacity 150ms cubic-bezier(0.4,0.0,1,1);
+	opacity: .75;
+}
+#YouTubeVideo.hideautoplay #YouTubeAutoNext {
+	opacity: 0;
+}
+
+#YouTubeAutoNext:hover {
+	opacity: 1;
+}
+#YouTubeAutoNext > p {
+	width: 11px;
+    height: 11px;
+    margin: 2px 2px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #FFF;
+    -webkit-transition: margin-left 150ms ease-in;
+}
+#YouTubeAutoNext.enabled {
+	border-color: #F12B24;
+	background-color: #F12B24;
+}
+#YouTubeAutoNext.enabled > p {
+	margin-left: 23px;
+}
+#YouTubeAutoNext > span {
+    position: absolute;
+    display: block;
+    height: 17px;
+    margin: -1px 0 0 -45px;
+    padding: 0 10px 0 0;
+    font-size: 9px;
+    text-align: left;
+    color: #FFF;
+    line-height: 17px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px;
+}
+#YouTubeVideo > .YouTubeResizeElement {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	cursor: nwse-resize;
+}
+#YouTubeVideo > .YouTubeResizeElement.YREBottom {
+	top: initial;
+	bottom: -60px;
+}
+#YouTubeVideo.without_featured > .YouTubeResizeElement.YREBottom {
+	bottom: 0;
+}
+#YouTubeVideo.resizing > #YouTubeVideoControls {
+	opacity: 0 !important;
+}
+
+#YouTubeRepeat {
+	display: none;
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	left: 0;
+    top: 0;
+	margin: 0;
+	padding: 10px 1px;
+	background: rgba(0, 0, 0, .50);
+	font-size: 16px;
+	font-weight: 300;
+	text-align: center;
+	text-shadow: 0 0 2px rgba(0,0,0,.5);
+	color: white;
+}
+#YouTubeRepeat > #YouTubeRepeatButton {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 40%;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	margin: auto;
+	padding: 0;
+	background: url('data:image/svg+xml;utf8,<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" fill="#FFFFFF" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1792 1792" id="svg3037" version="1.1" width="100" height="100"><defs id="defs3045"/><g transform="matrix(1,0,0,-1,121.49153,1277.8305)" id="g3039"><path d="M1536 1280V832q0-26-19-45-19-19-45-19h-448q-42 0-59 40-17 39 14 69l138 138Q969 1152 768 1152 664 1152 569.5 1111.5 475 1071 406 1002 337 933 296.5 838.5 256 744 256 640 256 536 296.5 441.5 337 347 406 278 475 209 569.5 168.5 664 128 768 128q169 0 304 99.5 135 99.5 185 261.5 7 23 30 23h199q16 0 25-12 10-13 7-27Q1479 298 1370.5 161 1262 24 1104.5-52 947-128 768-128 612-128 470-67 328-6 225 97 122 200 61 342 0 484 0 640q0 156 61 298 61 142 164 245 103 103 245 164 142 61 298 61 147 0 284.5-55.5Q1190 1297 1297 1196l130 129q29 31 70 14 39-17 39-59z" id="path3041" fill="#FFFFFF"/></g></svg>') no-repeat center center;
+	background-size: contain;
+	cursor: pointer;
+	-webkit-transition: -webkit-transform 150ms linear;
+}
+#YouTubeRepeat > #YouTubeRepeatButton:hover {
+	-webkit-transform: scale(1.1);
+}
+#YouTubeVideo.repeat > #YouTubeRepeat {
+	display: block;
+}
+
+#YouTubeNextVideo {
+	width: 36px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%" version="1.1" viewBox="0 0 36 36" width="100%"><defs><path d="M16.2,12.5 L16.2,16.49 L9,12.5 L9,23.5 L16.2,19.50 L16.2,23.5 L24.5,19.1 L24.5,23.5 L27,23.5 L27,12.5 L24.5,12.5 L24.5,17.45 L16.2,12.5 Z" id="ytp-svg-28"></path></defs><use class="ytp-svg-shadow" xlink:href="#ytp-svg-28"></use><use class="ytp-svg-fill" xlink:href="#ytp-svg-28"></use></svg>') no-repeat center center;
+	background-size: contain;
+}
+
+.YouTubeSideplayerButtonSmall {
+	visibility: hidden;
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	right: 26px;
+	bottom: 2px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #d3d3d3;
+	border-radius: 2px;
+    background: #f8f8f8 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAAAflBMVEUAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACfVNzSAAAAKXRSTlMAAAwRLTA0NTZJVFdYXV5panB0dXl6fH1+gIKPr9XY3uDi5Ojr7fD6/GUxi9gAAACFSURBVHjajZDXDoJAEEWPDRXb0paitEUE/v8HTRaj6BjjfZmbk8mUy0zqKwPHVX6ktY7CwDvtNgBZ2Q0v9VUKyfCpmMLWaWtObette3kyQzOaOUfzYC3taFawOF/f2RLg8KtPzGswYm9NLu4riMUfCaRVPwFdmQGs98oLQpuMr1wH/s30Dg/jJHbi6NRUAAAAAElFTkSuQmCC') no-repeat center center;
+    background-size: 14px auto;
+	cursor: pointer;
+	z-index: 3;
+}
+.yt-lockup-thumbnail:hover > .YouTubeSideplayerButtonSmall, .video-list-item.related-list-item:hover .YouTubeSideplayerButtonSmall {
+	visibility: visible;
+}
+body.SidePlayerLoading .YouTubeSideplayerButtonSmall {
+	visibility: hidden !important;
+}
+.SidePlayerHoverMessage {
+	display: block;
+	position: absolute;
+	width: auto;
+	height: 15px;
+	margin: -31px 0 0 -53px;
+    padding: 6px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.25);
+    background: #000;
+    font-size: 11px;
+    font-weight: 500;
+    color: #fff;
+    white-space: nowrap;
+    opacity: 0;
+    -webkit-transition: opacity 150ms linear;
+    z-index: 99999999;
+}
+.SidePlayerHoverMessage.showSidePlayerMessage {
+	opacity: 1;
+}
+.SidePlayerHoverMessage:before {
+	content: '';
+	position: absolute;
+	display: block;
+	left: 50%;
+	bottom: -5px;
+	width: 0;
+	height: 0;
+	margin: 0 0 0 -2px;
+	border: 1px solid rgba(0, 0, 0, 0);
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+
+#YouTubeSettingsPanel {
+	visibility: hidden;
+	position: absolute;
+	width: 220px;
+	height: 108px;
+	right: 0;
+	bottom: 42px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 5px;
+	background: rgba(27, 27, 27, .9);
+	opacity: 0;
+	-webkit-transition: opacity 150ms linear;
+}
+#YouTubeVideo.scrollingOpacity #YouTubeSettingsPanel {
+	visibility: visible;
+	opacity: 1;
+}
+#YouTubeVideo.settings #YouTubeSettingsPanel {
+	opacity: 1;
+}
+#YouTubeSettingsPanel > div {
+	box-sizing: border-box;
+	width: 100%;
+	height: 27px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid rgba(216, 216, 216, .2);
+}
+#YouTubeSettingsPanel > div:last-child {
+	border-bottom: none;
+}
+#YouTubeSettingsPanel > div > p {
+	width: 50px;
+	height: 27px;
+	margin: 0;
+	padding: 0 0 0 9px;
+	font-size: 10px;
+	text-align: left;
+	color: rgba(255, 255, 255, .8);
+	line-height: 27px;
+	float: left;
+}
+#YouTubeVideoBlockOpacityScroll {
+	position: relative;
+	width: 140px;
+	height: 3px;
+	margin: 12px 0;
+	padding: 0;
+	background: #D8D8D8;
+}
+#YouTubeVideoBlockOpacityScroll > p {
+	width: 100%;
+	height: 3px;
+	margin: 0;
+	padding: 0;
+	background: #F42714;
+}
+#YouTubeVideoBlockOpacityScroll > p:after {
+	content: '';
+	display: block;
+	width: 4px;
+	height: 13px;
+	margin: -6px 0 0 0;
+	padding: 0;
+	background: white;
+	float: right;
+}
+#YouTubeVideoSpeedChoice, #YouTubeVideoQualityChoice {
+	width: 160px;
+	height: 27px;
+	margin: 0 -2px 0 0 !important;
+}
+#YouTubeVideoSpeedChoice > p, #YouTubeVideoQualityChoice > p {
+	display: inline-block;
+	width: auto;
+	height: 27px;
+	margin: 0 4px;
+	padding: 0;
+	font-size: 10px;
+	text-align: center;
+	color: white;
+	line-height: 27px;
+	opacity: .5;
+	float: left;
+}
+#YouTubeVideoSpeedChoice > p:hover, #YouTubeVideoQualityChoice > p:hover {
+	opacity: .75;
+}
+#YouTubeVideoSpeedChoice > p.choosen, #YouTubeVideoQualityChoice > p.choosen {
+	opacity: 1;
+}
+#YouTubeVideoQualityChoice {
+    width: 100px;
+}
+
+#YouTubeSettingsPanel > div > div {
+	float: right !important;
+	margin-right: 9px;
+}
+
+.YouTubeVideoPlayerEmbededButton {
+	width: 36px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: url('data:image/svg+xml;utf8,<svg width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Video---hovered-&amp;-resized" transform="translate(-1289.000000, -354.000000)"><g id="Rectangle-4-+-youtube" transform="translate(1289.000000, 354.000000)" fill="#ffffff"><path d="M0,8.0539993 L0,4 L0,4 L0,2 L19,2 L19,4 L19,4 L19,14 L19,16 L9.36173053,16 C9.45391056,15.4301731 9.5,14.4301796 9.5,13 L16,13 L16,13 L16,5 L3,5 L3,8.04244018 C2.83745888,8.0419245 2.67079222,8.04166667 2.5,8.04166667 L0.863425926,8.04166667 C0.559987832,8.04327216 0.272179234,8.04738303 -8.37385716e-14,8.0539993 Z" id="Rectangle-4" fill="#ffffff" transform="translate(9.500000, 9.000000) rotate(-180.000000) translate(-9.500000, -9.000000) "></path><path d="M17,0.458333333 C18.8518611,0.458333333 20.0246889,0.500771181 20.5185185,0.585648148 C21.1358056,0.701389468 21.5408941,0.948300579 21.7337963,1.32638889 C21.9035502,1.65046458 21.9922839,2.31789618 22,3.3287037 L22,4 C22,5.21142581 21.9537042,5.990739 21.8611111,6.33796296 C21.7376537,6.80092824 21.4598787,7.11342512 21.0277778,7.27546296 C20.5802447,7.4452169 19.6273221,7.53395058 18.1689815,7.54166667 L17,7.54166667 C15.1481389,7.54166667 13.9753111,7.49922882 13.4814815,7.41435185 C12.8641944,7.29861053 12.4591059,7.05169942 12.2662037,6.67361111 C12.0964498,6.34953542 12.0077161,5.68210382 12,4.6712963 L12,4 C12,2.78857419 12.0462958,2.009261 12.1388889,1.66203704 C12.2623463,1.19907176 12.5401213,0.886574884 12.9722222,0.724537037 C13.4197553,0.554783102 14.3726779,0.466049421 15.8310185,0.458333333 L17,0.458333333 L17,0.458333333 Z M15.75,5.875 L18.875,4 L15.75,2.125 L15.75,5.875 Z" id="youtube" fill="#FFFFFF"></path></g></g></g></svg>') no-repeat center center;
+	background-size: 61.5% auto;
+    background-position: center 45%;
+	float: right;
+	opacity: .9;
+	-webkit-transition: opacity .1s cubic-bezier(0.4,0.0,1,1);
+	filter: drop-shadow(0 0 1px rgba(0, 0, 0, .4));
+	cursor: pointer;
+	outline: none;
+}
+.YouTubeVideoPlayerEmbededButton:hover {
+	opacity: 1;
+}
+
+#YouTubeVideoName {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height: 40px;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0 35px 0 16px;
+	border: none;
+	background: none;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: left;
+	text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	color: white !important;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-decoration: none;
+	overflow: hidden;
+	line-height: 40px;
+	outline: none;
+	opacity: .9;
+	-webkit-transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
+}
+#YouTubeVideoName:hover {
+	opacity: 1;
+}
+
+#YouTubeFeaturedVideosTrigger {
+	margin-left: 3px;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="11px" viewBox="0 0 16 11" version="1.1"><defs><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Recommended-videos" transform="translate(-1001.000000, -484.000000)" stroke="#FFFFFF" filter="url(#filter-1)" fill="#FFFFFF" opacity="0.9"><path d="M1004.90306 495.096506C1005.00511 495.198923 1005.13847 495.25 1005.27209 495.25 1005.40571 495.25 1005.53907 495.198923 1005.64111 495.096506L1011.09713 489.620214C1011.30096 489.415642 1011.30096 489.084031 1011.09713 488.879459L1005.64111 483.403429C1005.43729 483.198857 1005.10689 483.198857 1004.90306 483.403429 1004.69924 483.608001 1004.69924 483.939612 1004.90306 484.144183L1009.99006 489.249836 1004.90306 494.355489C1004.69898 494.560323 1004.69898 494.891672 1004.90306 495.096506L1004.90306 495.096506Z" id="Up" transform="translate(1008.000000, 489.250000) rotate(-90.000000) translate(-1008.000000, -489.250000) "/></g></g></svg>');
+	background-position: center;
+	-webkit-transform: rotateZ(0);
+}
+#YouTubeVideo.without_featured #YouTubeFeaturedVideosTrigger {
+	-webkit-transform: rotateZ(180deg);
+}
+#YouTubeFeaturedVideosBlock {
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	left: 0;
+	top: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0 0 4px 4px;
+	box-shadow: inset 0 12px 5px -5px rgba(0, 0, 0, .5), 0 7px 5px -5px rgba(0, 0, 0, 0.5);
+	background: #212020;
+	overflow: hidden;
+	-webkit-transition: top 150ms ease-out, height 150ms ease-out;
+}
+#YouTubeVideo.without_featured #YouTubeFeaturedVideosBlock {
+	height: 0;
+	box-shadow: none;
+}
+#YouTubeFeaturedVideosFeed {
+	position: absolute;
+	width: auto;
+	/*min-width: 500%;*/
+	height: 60px;
+	margin: 0;
+	padding: 0 10px;
+	opacity: 0;
+	-webkit-transition: opacity 300ms linear, left 500ms ease-out;
+}
+#YouTubeVideo.resizing #YouTubeFeaturedVideosFeed, #YouTubeFeaturedVideosFeed.loseanims {
+	-webkit-transition: none;
+}
+#YouTubeFeaturedVideosFeed > a {
+	position: relative;
+	display: inline-block;
+	width: 66px;
+	height: 37px;
+	margin: 12px 3px;
+	padding: 0;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+	background: black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	overflow: hidden;
+}
+#YouTubeFeaturedVideosFeed > a:hover {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 0 0px 1px rgba(255, 255, 255, .28);
+}
+#YouTubeFeaturedVideosFeed > a > p {
+	visibility: hidden;
+	position: static;
+    display: inline-block;
+	width: auto;
+	height: auto;
+	margin: 12px 0;
+	padding: 1px 2px;
+	border: none;
+	background: #252525;
+	font-size: 9px;
+	text-align: center;
+	color: white;
+}
+#YouTubeFeaturedVideosFeed > a:hover > p {
+	visibility: visible;
+}
+.YouTubeFeaturedBlockShade {
+	position: absolute;
+	width: 52px;
+	height: 60px;
+	left: 0;
+	bottom: 0;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9px" height="12px" viewBox="0 0 9 12" version="1.1"><defs><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Recommended-videos" transform="translate(-640.000000, -526.000000)" filter="url(#filter-1)" fill="#FFFFFF" opacity="0.6"><path d="M642.105967 537.171458C642.176612 537.242103 642.268939 537.277335 642.361445 537.277335 642.453952 537.277335 642.546279 537.242103 642.616923 537.171458L646.394168 533.394033C646.535277 533.252923 646.535277 533.024186 646.394168 532.883077L642.616923 529.105832C642.475814 528.964723 642.247077 528.964723 642.105967 529.105832 641.964858 529.246941 641.964858 529.475679 642.105967 529.616788L645.627734 533.138555 642.105967 536.660321C641.964678 536.801611 641.964678 537.030168 642.105967 537.171458L642.105967 537.171458Z" id="Shape-Copy-2" transform="translate(644.250000, 533.138668) rotate(-180.000000) translate(-644.250000, -533.138668) "/></g></g></svg>') no-repeat 15% center, -webkit-linear-gradient(left, rgba(31,30,30,1) 0%,rgba(32,31,31,0) 100%);
+	background-size: auto;
+	cursor: pointer;
+	-webkit-transition: background-position-x 100ms ease-out, left 150ms linear, right 150ms linear;
+}
+.YouTubeFeaturedBlockShade:hover {
+	background-position-x: 5%;
+}
+.YouTubeFeaturedBlockShade.rightSide {
+	left: initial;
+	right: 0;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9px" height="12px" viewBox="0 0 9 12" version="1.1"><title>Shape Copy</title><desc>Created with Sketch.</desc><defs><filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"/><feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Recommended-videos" transform="translate(-1042.000000, -526.000000)" filter="url(#filter-1)" fill="#FFFFFF" opacity="0.6"><path d="M1044.10597 537.171458C1044.17661 537.242103 1044.26894 537.277335 1044.36145 537.277335 1044.45395 537.277335 1044.54628 537.242103 1044.61692 537.171458L1048.39417 533.394033C1048.53528 533.252923 1048.53528 533.024186 1048.39417 532.883077L1044.61692 529.105832C1044.47581 528.964723 1044.24708 528.964723 1044.10597 529.105832 1043.96486 529.246941 1043.96486 529.475679 1044.10597 529.616788L1047.62773 533.138555 1044.10597 536.660321C1043.96468 536.801611 1043.96468 537.030168 1044.10597 537.171458L1044.10597 537.171458Z" id="Shape-Copy" transform="translate(1046.250000, 533.138668) scale(-1, 1) rotate(-180.000000) translate(-1046.250000, -533.138668) "/></g></g></svg>'), -webkit-linear-gradient(left, rgba(32,31,31,0) 0%,rgba(31,30,30,1) 100%);
+	background-position: 85% center;
+}
+.YouTubeFeaturedBlockShade.rightSide:hover {
+	background-position-x: 95%;
+}
+
+#YouTubeFeaturedVideosTooltip {
+	position: absolute;
+	width: auto;
+	max-width: 153px;
+	height: 23px;
+	margin: 0;
+	padding: 0 4px;
+	left: -100%;
+	bottom: -81px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	background: rgba(255, 255, 255, .8);
+	font-size: 10px;
+	font-weight: normal;
+	color: black;
+	line-height: 23px;
+	text-align: left;
+	white-space: nowrap;
+	opacity: 0;
+	-webkit-transition: opacity 150ms linear;
+}
+#YouTubeFeaturedVideosTooltip.YFVScroll {
+	width: 153px;
+}
+#YouTubeFeaturedVideosTooltip.YFVScroll:before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 23px;
+	height: 23px;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 2px 0 0 2px;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	z-index: 2;
+}
+#YouTubeFeaturedVideosTooltip.YFVScroll:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 23px;
+	height: 23px;
+	right: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0 2px 2px 0;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); 
+	z-index: 2;
+}
+#YouTubeFeaturedVideosTooltip > p {
+	position: relative;
+	display: block;
+	width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+#YouTubeFeaturedVideosTooltip.YFVScroll > p > span {
+	position: absolute;
+	/*-webkit-animation: ticker 7s 1s linear infinite, ticker2 7s 7s linear infinite;*/
+}
+@-webkit-keyframes ticker {
+  0%   { transform: translateX(0%); }
+  100%  { transform: translateX(-102%); }
+}
+@-webkit-keyframes ticker2 {
+  0%   { transform: translateX(153px); }
+  100%  { transform: translateX(-102%); }
+}
+#YouTubeFeaturedVideosTooltip > span {
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: -6px;
+	margin: 0 0 0 -5px;
+	border-right: 5px solid transparent;
+    border-bottom: 6px solid rgba(255, 255, 255, .8);
+    border-left: 5px solid transparent;
+}
+#YouTubeFeaturedVideosTooltip.showTooltip {
+	opacity: 1;
+}

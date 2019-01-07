@@ -1,0 +1,37 @@
+html[fb-intel-debug] div[data-fb-intel-triaged = 'no'].fb-intel-ad {
+    border: medium dashed gray;
+}
+html[fb-intel-debug] div[data-fb-intel-triaged = 'sponsored'].fb-intel-ad {
+    border: medium dashed green;
+}
+html[fb-intel-debug] div[data-fb-intel-triaged = 'not-sponsored'].fb-intel-ad {
+    border: medium dashed yellow;
+}
+html[fb-intel-debug] div[data-fb-intel-triaged = 'complete'].fb-intel-ad {
+    border: thick dashed red;
+}
+html[fb-intel-debug] div[data-fb-intel-saved = 'saved'].fb-intel-ad {
+    border: thick solid green;
+}
+html[fb-intel-debug] div[data-fb-intel-saved = 'success'].fb-intel-ad {
+    border: thick solid blue;
+}
+html[fb-intel-debug] div[data-fb-intel-saved = 'failed'].fb-intel-ad {
+    border: thick solid red;
+}
+.missing {
+    font-weight: bold;
+    color: red;
+}
+html[fb-intel-debug] div.fb-intel-debug {
+    display:block!important;
+}
+html[fb-intel-debug] div.fb-intel-debug p {
+    margin: 0;
+    padding: 0;
+}
+html[fb-intel-debug] div.fb-intel-debug {
+    max-height:200px!important;
+    overflow-scrolling: auto;
+    overflow-y: auto;
+}

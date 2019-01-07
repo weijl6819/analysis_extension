@@ -1,0 +1,8 @@
+{
+    "chrome_extension_name": {
+        "message": "if ipv6"
+    },
+    "chrome_extension_description": {
+        "message": "Checks if your website ipv6 address and whether it is used at the moment. Helps test the ipv6."
+    }
+}

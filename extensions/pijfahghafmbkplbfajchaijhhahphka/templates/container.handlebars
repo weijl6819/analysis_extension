@@ -1,0 +1,102 @@
+<link rel="stylesheet" href="{{ data.routeCss }}" />
+<div class="sidebar-shadow" ></div>
+<div class="sidebar-safe-area" ></div>
+<div class="bt-photo" style="display:none">
+    <svg width="16" height="14" viewBox="0 0 24 21" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 3h-2.867L17.2 1c-.216-.498-1.075-1-1.826-1H8.76c-.752 0-1.612.502-1.827 1L6 3H3C.61 3 0 5 0 5v14s1.5 2 3 2h18l3-2V5s-.504-2-3-2zm-9 15c-3.313 0-6-2.686-6-6 0-3.313 2.687-6 6-6 3.314 0 6 2.687 6 6 0 3.314-2.686 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
+    </svg>
+</div>
+
+
+<div id="wrapper">
+    {{#if data.user }}
+    <section id="sections">
+
+        <!-- HEADER -->
+        <header>
+            <div class="user" >
+                <div class="label" >
+                    <div class="username" >
+                        <span><a href="#">{{ data.user.display_name }}</a></span>
+                    </div>
+                </div>
+                <div class="user-thumb" >
+                    <a href="#"><img src="{{ data.user.image }}" height="40" width="auto" ></a>
+                </div>
+            </div>
+            <div class="main-menu menu">
+                <a class="hamburguer" >
+                    <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" width="16.875px" height="15px" viewBox="0 0 16.875 15" xml:space="preserve">
+                    <g id="menu-main">
+                        <path fill="#010101" d="M1,6h15v3H1V6z M1,14h15v-3H1V14z M1,4h15V1H1V4z"/>
+                    </g>
+                </a>
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="http://www.awwwards.com/{{ data.user.username }}"><span tabindex="0">Profile</span></a></li>
+                        <li><a href="http://www.awwwards.com/{{ data.user.username }}/collections/"><span tabindex="2">Collections</span></a></li>
+                        <li><a class="auto-open-btn"><span tabindex="3">Auto-open</span></a></li>
+                        <li><a class="logout"><span tabindex="4">Logout</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- COLLECTIONS -->
+        <div id="collections">
+            <section id="collections-list">
+            </section>
+        </div>
+
+        <div id="exclusions" >
+            <div class="title" >Add exclusion ( Disable auto open in this domain when drag image )</div>
+            <form id="new-exclusion-form" action="#">
+                <div class="form-field form-field-id-url">
+                    <div class="form-error-display" ></div>
+                    <label for="url" class="field-label">URL</label>
+                    <input type="text" id="url" class="form-field" maxlength="40" value="" placeholder="http://"  />
+                </div>
+                <div class="form-field form-field-button">
+                    <button type="button"  class="form-field aw-new-exclusion" ><span class="bt-content">ADD</span><div class="updating-spinner"></div></button>
+                    <a class="exclusion-form-cancel-btn form-cancel-btn" >Cancel</a>
+                </div>
+            </form>
+            <div class="title" >Exclusions</div>
+
+            <ul class="exclusions-list" >
+                {{#each data.exclusions as |exclusion| }}
+                    <li>{{exclusion}}
+                        <div class="delete-exclusion-btn aw-delete-exclusion"  data-url="{{exclusion}}">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve"><g id="Cancel"><path fill="#121313" d="M8.5,0C3.805,0,0,3.805,0,8.5C0,13.194,3.805,17,8.5,17c4.694,0,8.5-3.805,8.5-8.5S13.194,0,8.5,0z
+                                M8.5,15.938c-4.108,0-7.438-3.33-7.438-7.438S4.392,1.062,8.5,1.062s7.438,3.33,7.438,7.438S12.608,15.938,8.5,15.938z"/><path fill="#121313" d="M12.074,11.301l-2.798-2.8l2.783-2.76c0.21-0.208,0.21-0.543,0-0.751c-0.21-0.207-0.549-0.207-0.758,0
+                                l-2.78,2.757l-2.82-2.821c-0.209-0.21-0.549-0.21-0.758,0c-0.209,0.21-0.209,0.551,0,0.761l2.816,2.816l-2.832,2.809
+                                c-0.209,0.208-0.209,0.544,0,0.751c0.209,0.208,0.549,0.208,0.759,0l2.828-2.805l2.803,2.803c0.21,0.21,0.549,0.21,0.759,0
+                                C12.284,11.851,12.284,11.511,12.074,11.301z"/></g></svg>
+                        </div>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+
+        <!-- ERROR SCREEN -->
+        <div id="error-screen" class="" >
+            <div class="error-title" >Sorry<br/>there is<br/>an error.</div>
+            <div class="error-description" ></div>
+            <button type="submit" class="form-field aw-close-error" ><span class="bt-content ">Try Again</span></button>
+        </div>
+
+    </section>
+    {{/if}}
+
+
+    <!-- PRELOADER -->
+    <div id="preloader" class="animated {{#if data.isLoading }}showing{{/if}}">
+        <div class="preloader-wrapper">
+            <div class="preloader-spinner"></div>
+            <div class="preloader-description">Loading...</div>
+        </div>
+    </div>
+</div>
+

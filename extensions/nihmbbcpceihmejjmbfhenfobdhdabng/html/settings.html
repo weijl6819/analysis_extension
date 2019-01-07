@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>Green Boost - Setting</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/dashboard-common.css">
+<link rel="stylesheet" type="text/css" href="../css/cloud-ui.css">
+<link rel="stylesheet" type="text/css" href="../css/whitelist.css">
+<style type="text/css">
+    #wrapper{
+        min-height: 200px;
+        padding: 10px;
+        width:800px;
+        margin:0 auto;
+    }
+    .title{
+        margin-bottom: 1px;
+    }
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+    <nav class="navbar navbar-default" style="margin-top: 30px;">
+        <div class="container-fluid" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header col-xs-6" style="position:relative;width:320px">
+                <span class="navbar-brand" style="font-size: 24px;color:black;padding-right: 5px;">GreenBoost</span>
+                <span style="position:absolute;bottom:10px;">- Boost & Clean </span>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse col-xs-6" id="bs-example-navbar-collapse-1">
+
+                <ul id="myTab" class="nav navbar-nav" style="font-size: 24px;">
+                    <li class="active">
+                        <a href="#home" data-toggle="tab">
+                            Save
+                        </a>
+                    </li>
+                    <li><a href="#clean" data-toggle="tab">Clean</a></li>
+                    <li><a href="#block" data-toggle="tab">Block</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+            <div class="col-xs-12" style="margin-bottom: 5px;padding-left: 0px;">
+                <img src="../images/save32.png" /> &nbsp;&nbsp;&nbsp;Automatically close tabs after:
+            </div>
+            <div class="col-xs-2">
+                <select class="form-control">
+                    <option>6 hours</option>
+                </select>
+            </div>
+            <div class="col-xs-12">
+                <div v-for="option in save_options" class="checkbox">
+                    <label><input type="checkbox" v-model="selected_save" :value="option.key">{{option.label}}</label>
+                </div>
+            </div>
+            <div class="row">
+                <div v-show="save_stats==0" class="col-xs-12" style="margin-bottom: 5px; ">
+                    <!-- <button class="btn btn-primary" @click="save_save" type="submit">Save</button> -->
+                    <span class="btn btn-default" @click="save_save">
+                        <img src="../images/save32.png"/> &nbsp;Save
+                    </span>
+                </div>
+                <div v-show="save_stats==1" class="col-xs-4" style="margin-bottom: 5px; ">
+                    <span class="btn btn-default" style="pointer-events:none">
+                        <img  src="../images/right.png"/>&nbsp;&nbsp;&nbsp;Success
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="clean">
+            <div class="row">
+                <div class="col-xs-1" style="margin-bottom: 5px; width: 50px">
+                    <img src="../images/clean32.png" />
+                </div>
+                <div class="col-xs-11" style="margin-bottom: 5px;">
+                    My Google Chrome is getting too slow. </br>What can I do?
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" style="margin-bottom: 5px; ">
+                    Make your Chrome browser more faster and protect your privacy!
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" style="margin-bottom: 5px; ">
+                    <strong>Cleaner Options</strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6" style="margin-bottom: 5px; width: 120px">
+                    Select target
+                </div>
+                <div class="col-xs-6" style="margin-bottom: 5px; ">
+                    <button class="btn btn-default btn-xs" @click="select_all" type="submit">Check all</button>
+                    <button class="btn btn-default btn-xs" @click="unselect_all" type="submit">Uncheck all</button>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div v-for="option in clean_options" class="checkbox">
+                    <label><input type="checkbox" v-model="selected_clean" :value="option.key">{{option.label}}</label>
+                </div>
+            </div>
+            <div class="row">
+                <div v-show="clean_stats==0" class="col-xs-4" style="margin-bottom: 5px; ">
+                    <!-- <button class="btn btn-primary" @click="do_clean" type="submit">Clean Now</button> -->
+                    <span class="btn btn-default" @click="do_clean">
+                        <img src="../images/clean32.png"/> &nbsp;Clean Now
+                    </span>
+                </div>
+                <div v-show="clean_stats==1" class="col-xs-4" style="margin-bottom: 5px; ">
+                    <span class="btn btn-default" style="pointer-events:none">
+                        <img src="../images/cleaning.gif"/> &nbsp;Cleaning...
+                    </span>
+                </div>
+                <div v-show="clean_stats==2" class="col-xs-4" style="margin-bottom: 5px; ">
+                    <span class="btn btn-default" style="pointer-events:none">
+                        <img  src="../images/right.png"/>&nbsp;&nbsp;&nbsp;Done
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="block">
+            <!-- <div class="col-xs-12" style="margin-bottom: 5px;padding-left: 0px;">
+                <img src="../images/block32.png" /> &nbsp;&nbsp;&nbsp;Block Ads
+            </div>
+            <div class="col-xs-12">
+                <div v-for="option in block_options" class="checkbox">
+                    <label><input type="checkbox" v-model="selected_block" :value="option.key">{{option.label}}</label>
+                </div>
+            </div>
+            <div class="row">
+                <div v-show="block_stats==0" class="col-xs-12" style="margin-bottom: 5px; ">
+                    <button class="btn btn-primary" @click="save_block" type="submit">Save</button>
+                    <span class="btn btn-default" @click="save_block">
+                        <img src="../images/block32.png"/> &nbsp;Save
+                    </span>
+                </div>
+                <div v-show="block_stats==1" class="col-xs-4" style="margin-bottom: 5px; ">
+                    <span class="btn btn-default" style="pointer-events:none">
+                        <img  src="../images/right.png"/>&nbsp;&nbsp;&nbsp;Success
+                    </span>
+                </div>
+            </div> -->
+            <!-- new Start -->
+            <!-- <div id="cloudWidget" class="hide" data-cloud-entry="whitelistPane"></div> -->
+
+            <p ><span data-i18n="whitelistPrompt"></span>
+            
+            <p><section id="whitelist">
+                <textarea dir="auto" spellcheck="false"></textarea>
+                <div>E</div>
+                </section>
+
+            <p style="margin-top: 14px;">
+                <button id="whitelistApply" class="custom important" type="button" disabled="true" data-i18n="whitelistApply"></button>
+            <!-- new END -->
+        </div>
+        
+    </div>
+</div>
+    <script type="text/javascript" src="../lib/vue-csp/vue.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/ext.js"></script>
+    <script type="text/javascript" src="../js/settings.js"></script>
+
+    <script src="../core/lib/punycode.js"></script>
+    <script src="../core/js/vapi.js"></script>
+    <script src="../core/js/vapi-common.js"></script>
+    <script src="../core/js/vapi-client.js"></script>
+    <script src="../core/js/udom.js"></script>
+    <script src="../core/js/i18n.js"></script>
+    <script src="../core/js/dashboard-common.js"></script>
+    <script src="../core/js/cloud-ui.js"></script>
+    <script src="../core/js/whitelist.js"></script>
+</body>
+</html>

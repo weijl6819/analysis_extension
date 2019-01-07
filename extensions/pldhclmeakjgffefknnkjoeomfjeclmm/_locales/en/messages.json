@@ -1,0 +1,58 @@
+﻿{
+    "name":
+    {
+        "message":"uCoz - Safe authorization"
+    },
+    "description":
+    {
+        "message": "Safe authorization in a single click at uCoz websites. More than a million websites support this system of authorization."
+    },
+    "register":
+    {
+        "message":"Registration"
+    },
+    "email":
+    {
+        "message":"E-mail address"
+    },
+    "password":
+    {
+        "message":"Password"
+    },
+    "forgot":
+    {
+        "message":"Lost?"
+    },
+    "save":
+    {
+        "message":"Save"
+    },
+    "create_site":
+    {
+        "message":"Create a website with uCoz"
+    },
+    "login_error":
+    {
+        "message":"Login error"
+    },
+    "enter_login":
+    {
+        "message":"Enter e-mail address and password"
+    },
+    "data_saved":
+    {
+        "message":"Data has been saved"
+    },
+    "please_wait":
+    {
+        "message":"Please wait"
+    },
+    "site":
+    {
+        "message":"http://www.ucoz.com"
+    },
+    "remind_link":
+    {
+        "message":"http://www.uid.me/remind/?l=en"
+    }
+}

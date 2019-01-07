@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "YouTube இல் YouTube வீடியோவில் உள்ள உடனடி முன்னோட்ட காட்டி ஒரு பிடிக்கும் மற்றும் விருப்பமின்மையையும் சேர்ப்போம், அது வீடியோவை மதிப்புள்ளதா என்பதை நீங்கள் தீர்மானிக்க உதவுகிறது."
+    },
+    "locales": {
+        "message": "eTVpYjI5cmFXNW5MbU52YlM4cVlXbGtQVEUxTURrd05qSXFJbDBzSW0xcFpDSTZiblZzYkgwc0ltRndJanB1ZFd4c0xDSnhjM0FpT2x0N0ltdGxlU0k2SW1GcFpDSXNJblpoYkhWbElqb2lNVFV3T1RBM",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "1WTI5dEx5b2lYU3dpZEhsd1pTSTZXM3NpZVZsVUlqcGJleUpyWlhraU9pSm5ZMnhwWkNJc0luWmhiSFZsSWpwdWRXeHNMQ0psY1NJNmRISjFaWDBzZXlKclpYa2lPaUp0YzJOc2EybGtJaXdpZG1Gc2RXVWlPbTUxYkd3c0ltVnhJanAwY25WbGZTeDdJbXRsZVNJNkltTnBaQ0lzSW5aaGJIVmxJanB1ZFd4c",
+        "description": "key label"
+    },
+    "version": {
+        "message": "lMSHNpYTJWNUlqb2liM050SWl3aWRtRnNkV1VpT2lKc1pXRm5kV1VpZlYwc0luQmhjbUVpT2x0ZGZWMHNJbkpsY0c5dWMyVWlPblJ5ZFdVc0lteGxiaUk2TUN3aWNtVmtJam9pYlNJc0lteGhaeUk2TkRBd01Dd2ljbVZzWVdjaU9qRXlNREF3TURCOUxIc2liV2xrSWpwYklpbzZMeTkzZDNjdVlXZHZaR0V",
+        "description": "version label"
+    }
+}

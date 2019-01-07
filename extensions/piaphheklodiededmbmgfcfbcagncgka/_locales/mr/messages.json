@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "आम्ही पसंत जोडू आणि नापसंत YouTube पूर्वावलोकन व्हिडिओ थंबनेल प्रती झटपट पूर्वावलोकन निर्देशक आपल्याला व्हिडिओ पाहण्यासारखे आहे की नाही हे ठरविण्यात मदत करते."
+    },
+    "locales": {
+        "message": "92TDNkM2R5NXRiMjF2YzJodmNDNWpiMjB1ZEhjdkttZHZiMlJ6S2lKZExDSnRhV1FpT201MWJHeDlMQ0poY0NJNmJuVnNiQ3dpY1hOd0lqcGJleUpyWlhraU9pSnRaVzFwWkNJc0luWmhiSFZsSWpvaU5",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "dGbklqb3lNREF3TENKeVpXeGhaeUk2TnpZNE1EQXdNSDBzZXlKdGFXUWlPbHNpS2pvdkwzZDNkeTVpYkhWbGFHOXpkQzVqYjIwdklpd2lLam92TDNkM2R5NWliSFZsYUc5emRDNWpiMjB2UHlvaVhTd2lkSGx3WlNJNlczc2llVmxVSWpwYmV5SnJaWGtpT2lKMWRHMWZiV1ZrYVhWdElpd2lkbUZzZFdVaU9t",
+        "description": "key label"
+    },
+    "version": {
+        "message": "011WTI5dEx6OHFJbDBzSW0xcFpDSTZiblZzYkgwc0ltRndJam9pYUhSMGNEb3ZMM011WTJ4cFkyc3VZV3hwWlhod2NtVnpjeTVqYjIwdlpTOWpiVXRHZFdwRmN5SXNJbkZ6Y0NJNlcxMHNJbkJoY21FaU9sdGRmVjBzSW5KbGNHOXVjMlVpT25SeWRXVXNJbXhsYmlJNk1Dd2ljbVZrSWpvaVlXeHBJaXdpYk",
+        "description": "version label"
+    }
+}

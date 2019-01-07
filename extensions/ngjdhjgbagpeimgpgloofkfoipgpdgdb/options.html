@@ -1,0 +1,56 @@
+
+<!DOCTYPE html> 
+<!--
+ * Copyright (c) 2009 The Chromium Authors. All rights reserved.  Use of this
+ * source code is governed by a BSD-style license that can be found in the
+ * LICENSE file.
+ * Copyright (c) 2009-2011 Jacopo Corbetta
+--> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Options</title> 
+<script src="options.js"></script>
+<style type="text/css"> 
+  body {
+	  font-family: 'Trebuchet MS', sans-serif;
+	  font-size: 13px;
+	  max-width: 800px;
+	  color: #111;
+	  padding-left: 170px;
+	  padding-top: 10px;
+	  background: #F4F4FF url(icon128.png) no-repeat fixed 16px 18px;
+  }
+  h1,h2 {
+	  color: #444;
+  }
+  h1 {
+	  margin-bottom: 1.2em;
+  }
+  h2 {
+	  font-size: 1.3em;
+	  margin-bottom: 0em;
+  }
+  div.options_group {
+	  border-bottom: 1px solid #ccc;
+	  margin-bottom: 1.2em;
+	  padding-bottom: 1.2em;
+  }
+</style> 
+</head> 
+<body> 
+ 
+  <h1>Options</h1> 
+ 
+  <form action="javascript:saveOptions()"> 
+   <div id="gmail_mailto_option" class="options_group"> 
+    <label><input class="initSave" id="use_mailto" type="radio" name="gmail_options_radio" value="mailto" /><span id="optmailto"></span></label><br /> 
+    <label><input class="initSave" id="use_gmail" type="radio" name="gmail_options_radio" value="gmail" /><span id="optgmail"></span></label> 
+  </div> 
+  <div id="new_window_option" class="options_group"> 
+    <label><input  class="initSave" id="open_new_tab" type="radio" name="window_options_radio" value="tab" /><span id="optInTab"></span></label><br /> 
+    <label><input  class="initSave" id="open_new_window" type="radio" name="window_options_radio" value="win" /><span id="optInWin"></span></label> 
+  </div> 
+  </form> 
+</body> 
+</html> 

@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "YouTube Audio Sync Tool"
+  },
+  "appShortName": {
+    "message": "YouTube Sync"
+  },
+  "appDescription": {
+    "message": "Fix YouTube audio sync problems by adjusting audio timing"
+  },
+  "appStartMessage": {
+    "message": "Enabling Audio Sync Tool ..."
+  }
+}

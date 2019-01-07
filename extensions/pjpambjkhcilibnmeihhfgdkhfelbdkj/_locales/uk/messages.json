@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "контакти"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Доступ Google Contacts в спливаючому вікні"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "контакти настройки"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Розмір спливаючому вікні"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "Ширина"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "висота"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "врятувати"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Збережені"
+   }
+}

@@ -1,0 +1,90 @@
+﻿body
+{
+  height:         auto; 
+  font-family:    Tahoma;
+  font-size:      12px;
+  min-height:     48px;
+  margin:         0px;
+}
+
+body > div
+{
+  padding-left:   48px;
+  min-height:     48px;
+}
+
+body > div > div
+{
+  border-left:    solid 1px lightgray;
+  padding:        4px;
+  min-height:     48px;
+  box-sizing:     border-box;
+  -moz-box-sizing: border-box;
+}
+
+div > div > img
+{
+  margin-top:    4px;
+  width:         100%;
+  max-width:     100px;
+}
+
+div > div > label
+{
+  display:       block;
+  opacity:       0.5;
+}
+
+div > div > label:first-of-type
+{
+  font-weight:   bold;
+  opacity:       1.0;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+}
+
+body > div > span
+{
+  position:             absolute;
+  top:                  4px;
+  left:                 4px;
+  border-left:          3px solid transparent;
+  background-repeat:    no-repeat;
+  background-position:  center center;
+  box-sizing:           border-box;
+  -moz-box-sizing: border-box;
+  width:                40px;
+  height:               40px;
+}
+
+span > img
+{
+  width:                100%;
+  height:               100%;
+}
+
+.Chat, .Presence
+{
+  background-image:     url('../img/common/people32.png');
+}
+.Call, .Dial
+{
+  background-image:     url('../img/common/call32.png');
+}
+.Mail
+{
+  background-image:     url('../img/common/mail32.png');
+}
+
+.Online
+{
+  border-color:         green;
+}
+.Away
+{
+  border-color:         orange;
+}
+.DND
+{
+  border-color:         red;
+}

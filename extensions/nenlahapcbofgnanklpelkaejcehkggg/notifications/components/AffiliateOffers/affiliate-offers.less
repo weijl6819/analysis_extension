@@ -1,0 +1,93 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy .affiliate-offers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  .show-more {
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .slide {
+    margin-bottom: 12px;
+    width: 100%;
+    cursor: auto;
+    .slide-wrapper {
+      border-bottom: 1px solid rgba(226, 230, 233, 0.62);
+      margin-bottom: 10px;
+    }
+    .show-more {
+      display: flex;
+      width: 120px;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 10px 0;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .collapse {
+      border-left: 2px solid @lightGray;
+      padding-left: 20px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    .disclosure {
+      position: relative;
+      width: 6px;
+      height: 6px;
+      display: inline-block;
+      transition: transform 100ms;
+      &:after {
+        bottom: 0;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: @darkGray;
+        border-width: 6px;
+        margin-left: -6px;
+      }
+    }
+    .disclosure.more {
+      transform: rotate(180deg);
+    }
+    &:last-child {
+      .slide-wrapper {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// ab test
+#__wikibuy__ .__wikibuy .affiliate-offers.totals-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  .slide {
+    margin-bottom: 12px;
+    width: 100%;
+    cursor: auto;
+    margin-botom: 0;
+    .other-offer-tile-run {
+      background: transparent;
+      margin-bottom: 0;
+      .flex {
+        padding-right: 0;
+      }
+    }
+    &:last-child {
+      .other-offer-tile-run {
+        border-bottom: none;
+      }
+    }
+  }
+}

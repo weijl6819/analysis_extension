@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Contacts"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Bring Google Contacts front and center with this handy shortcut."
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Settings"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Enter size values for the popup window"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "Width"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "Height"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "Save"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Saved"
+   }
+}

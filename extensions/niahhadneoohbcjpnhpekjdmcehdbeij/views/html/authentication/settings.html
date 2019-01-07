@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <link href='https://fonts.googleapis.com/css?family=Dosis&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../css/views.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/selectable.css"/>
+    <title>Settings</title>
+    <script src="../../js/ext/jquery-1.11.3.min.js"></script>
+    <script src="../../js/settings.js"></script>
+    <script src="../../js/selectable.js"></script>
+
+    <svg display="none" xmlns="http://www.w3.org/2000/svg">
+        <title>SitesbergIcons</title>
+        <defs>
+            <symbol id="remove" viewBox="0 0 20 20" stroke="#CE1717" stroke-width="4" fill="none" fill-rule="evenodd"
+                    stroke-linecap="square">
+                <path d="M17.142 3L3 17.142M3 3l14.142 14.142"></path>
+            </symbol>
+            <rect x="0" y="0" width="100" height="100" fill="black"></rect>
+        </defs>
+    </svg>
+</head>
+<body>
+<div class="d-logo">
+    <img src="../../img/logo.svg" align="middle"/>
+</div>
+<div class="d-settings-form">
+    <form id="f-settings" class="f-form">
+       <fieldset>
+            <div id="d-your-websites" class="d-form-field d-information-text">
+                YOUR WEBSITES
+            </div>
+            <hr id="hr-line-between-logo" class="hr-line"/>
+        </fieldset>
+        <fieldset>
+            <div id="d-message" class="d-message"></div>
+            <ul id="selectable"></ul>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

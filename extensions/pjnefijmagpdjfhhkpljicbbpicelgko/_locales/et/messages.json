@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Kasutage kõnetuvastuse Tekstiruutudesse tahes veebisaidile"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

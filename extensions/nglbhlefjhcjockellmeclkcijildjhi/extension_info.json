@@ -1,0 +1,66 @@
+{
+    "framework_package_id": "dev", 
+    "content_scripts": [
+        "lingualeo/js/config.js", 
+        "lingualeo/js/helper_string.js", 
+        "lingualeo/js/lib/jquery.min.js", 
+        "lingualeo/js/helpers.js", 
+        "lingualeo/js/lib/readability.js", 
+        "lingualeo/js/content/wizardDialog.js", 
+        "lingualeo/js/content/wizardManager.js", 
+        "lingualeo/js/content/enjoyContentControls.js", 
+        "lingualeo/js/content/simplified.js", 
+        "lingualeo/js/content/dialogs.js", 
+        "lingualeo/js/content/lyrics.js", 
+        "lingualeo/js/content/content.js"
+    ], 
+    "description": "", 
+    "short_name": "LinguaLeo English Translator", 
+    "creator": "LinguaLeo", 
+    "name": "LinguaLeo English Translator", 
+    "author": "Lingualeo, support@lingualeo.com", 
+    "framework_version": "1.7.7 5298d0272e11", 
+    "background_scripts": [
+        "lingualeo/js/lib/jquery.min.js", 
+        "lingualeo/js/lib/guessLanguage/_languageData.js", 
+        "lingualeo/js/lib/guessLanguage/guessLanguage.js", 
+        "lingualeo/js/default_options.js", 
+        "lingualeo/js/helper_string.js", 
+        "lingualeo/js/helpers.js", 
+        "lingualeo/js/config.js", 
+        "lingualeo/js/server.js", 
+        "lingualeo/js/ext.js", 
+        "lingualeo/js/localDictionary.js", 
+        "lingualeo/js/history.js", 
+        "lingualeo/js/NodeWordsWrapper.js", 
+        "lingualeo/js/contextmenu.js", 
+        "lingualeo/js/lingualeo.js"
+    ], 
+    "homepage_url": "http://lingualeo.com/", 
+    "version": "2.0.3.3", 
+    "options_page": "options.html", 
+    "default_locale": "en", 
+    "settings": {
+        "port": 1001
+    }, 
+    "id": "{0E243E70-1FC3-4894-B5BE-E7A557ED595B}", 
+    "locales": [
+        "en", 
+        "es", 
+        "es_419", 
+        "pt", 
+        "pt_br", 
+        "ru", 
+        "tr"
+    ], 
+    "browser_button": {
+        "caption": "LinguaLeo", 
+        "tooltipText": "LinguaLeo", 
+        "popup": {
+            "url": "popup.html", 
+            "width": 500, 
+            "height": 120
+        }, 
+        "icon": "lingualeo/images/i19bw.png"
+    }
+}

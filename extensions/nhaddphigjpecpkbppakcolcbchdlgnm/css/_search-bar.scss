@@ -1,0 +1,14 @@
+.search-bar {
+    $w: 600px;
+    $h: 45px;
+
+    position: absolute; top: calc(50% - 60px); left: calc(50% - #{$w/2});
+    background: rgba(255,255,255,.8);
+    display: flex; align-items: center;
+
+    .icon { width: $h; height: 20px; }
+    input {
+        width: $w - $h; height: $h; line-height: $h; padding: 0 5px;
+        border: none; background-color: transparent; font-size: 14px;
+    }
+}

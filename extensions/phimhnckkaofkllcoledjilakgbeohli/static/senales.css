@@ -1,0 +1,255 @@
+/* Senales */
+#atv, .ATV {
+	background: url("/img/atv.png") 50% no-repeat;
+}
+#chv, .CHV {
+	background: url("/img/chv-2015.png") 50% no-repeat;
+}
+#canal_13-v2, .Canal_13 {
+	background: url("/img/13.png") 50% no-repeat;
+}
+#trece_c, .t13C {
+	background: url("/img/13c.png") 50% no-repeat;
+}
+#tvn, .TVN {
+	background: url("/img/tvn.png") 50% no-repeat;
+}
+#ucv, .UCV {
+	background: url("/img/ucv-2.png") 50% no-repeat;
+}
+#cnn_chile, .CNN_Chile {
+	background: url("/img/cnnchile.png") 50% no-repeat;
+}
+#mega, .Mega {
+	background: url("/img/mega.png") 50% no-repeat;
+}
+#lared, .La_Red {
+	background: url("/img/lared.png") 50% no-repeat;
+}
+#cdo, .CDO {
+	background: url("/img/cdo_2.png") 50% no-repeat;
+}
+#canal_2, .Canal_2 {
+	background: url("/img/canal_2.png") 50% no-repeat;
+}
+/* Regionales */
+#aricatv {
+	background: url("/img/aricatv.png") 50% no-repeat;
+}
+#iquiquetv {
+	background: url("/img/iquiquetv.png") 50% no-repeat;
+}
+#antofagastatv {
+	background: url("/img/antofagastatv.png") 50% no-repeat;
+}
+#thema {
+	background: url("/img/thema.png") 50% no-repeat;
+}
+#cuatro {
+	background: url("/img/cuatro.png") 50% no-repeat;
+}
+#nasa {
+	background: url("/img/nasa.png") 50% no-repeat;
+}
+#antena_3 {
+	background: url("/img/antena3.png") 50% no-repeat;
+}
+#vtv_valle {
+	background: url("/img/vtv.png") 50% no-repeat;
+}
+#livtv {
+	background: url("/img/livtv.png") 50% no-repeat;
+}
+#inet {
+	background: url("/img/inet.png") 50% no-repeat;
+}
+#canal_21_chillan {
+	background: url("/img/canal21.png") 50% no-repeat;
+}
+#tvu {
+	background: url("/img/tvu.png") 50% no-repeat;
+}
+#uatv {
+	background: url("/img/uatv.png") 50% no-repeat;
+}
+#canal_9 {
+	background: url("/img/canal9.png") 50% no-repeat;
+}
+#itv {
+	background: url("/img/itv.png") 50% no-repeat;
+}
+/* Internacionales */	
+#aljazeera {
+	background: url("/img/aljazeera.png") 50% no-repeat;
+}
+#azteca {
+	background: url("/img/aztecanoticias.png") 50% no-repeat;
+}
+#cnni_2 {
+	background: url("/img/cnn.png") 50% no-repeat;
+}
+#bbc_2{
+	background: url("/img/bbcworldnews.png") 50% no-repeat;
+}
+#abc{
+	background: url("/img/abc.png") 50% no-repeat;
+}
+#skynews{
+	background: url("/img/skynews.png") 50% no-repeat;
+}
+#telesur {
+	background: url("/img/telesur.png") 50% no-repeat;
+}
+#tvchile {
+	background: url("/img/tvchile.png") 50% no-repeat;
+}
+#msnbc_2 {
+	background: url("/img/msnbc.png") 50% no-repeat;
+}
+#nhk_2 {
+    background: url("/img/nhkworld.png") 50% no-repeat;
+}
+#tv_publica_arg{
+	background: url("/img/tvpublica.png") 50% no-repeat;
+}
+#dw-tv {
+	background: url("/img/dwtv.png") 50% no-repeat;
+}
+#tn {
+	background: url("/img/tn_v2.png") 50% no-repeat;
+}
+#tve_24h {
+	background: url("/img/tve_24h.png") 50% no-repeat;
+}
+#euronews {
+	background: url("/img/euronews.png") 50% no-repeat;
+}
+#france_24 {
+	background: url("/img/france24.png") 50% no-repeat;
+}
+#cdtv {
+	background: url("/img/cdtv.png") 50% no-repeat;
+}
+#tvsenado {
+	background: url("/img/tvsenado-3.png") 50% no-repeat;
+}
+#rt {
+	background: url("/img/rt.png") 50% no-repeat;
+}
+#cctv {
+	background: url("/img/cctv.png") 50% no-repeat;
+}
+#canal_5 {
+	background: url("/img/canal_5.png") 50% no-repeat;
+}
+#tas {
+	background: url("/img/tas.png") 50% no-repeat;
+}
+#ep {
+	background: url("/img/ep.png") 50% no-repeat;
+}
+#tec {
+	background: url("/img/tec.png") 50% no-repeat;
+	background-size: 70px;
+}
+#caracol {
+	background: url("/img/caracol.png") 50% no-repeat;
+}
+#nbc {
+	background: url("/img/nbc.png") 50% no-repeat;
+}
+#cbs {
+	background: url("/img/cbs.png") 50% no-repeat;
+}
+#la_sexta {
+	background: url("/img/lasexta.png") 50% no-repeat;
+}
+#el_trece {
+	background: url("/img/el-trece.png") 50% no-repeat;
+}
+#canal_vasco {
+	background: url("/img/canal-vasco.png") 50% no-repeat;
+}
+#vive {
+	background: url("/img/vive.png") 50% no-repeat;
+	background-size: 70px;
+}
+#umag_tv {
+	background: url("/img/umag-tv.png") 50% no-repeat;
+}
+#telesur_aysen {
+	background: url("/img/telesur_aysen.png") 50% no-repeat;
+}
+#canal11_curico {
+	background: url("/img/canal11_curico.png") 50% no-repeat;
+}
+#vtv {
+	background: url("/img/vtv_ven.png") 50% no-repeat;
+}
+#globovision {
+	background: url("/img/globovision.png") 50% no-repeat;
+}
+#telefe {
+	background: url("/img/telefe.png") 50% no-repeat;
+}
+#arirang {
+	background: url("/img/arirang.png") 50% no-repeat;
+}
+#tvn24h {
+	background: url("/img/tvn24h.png") 50% no-repeat;
+	display: none;
+}
+#globonews {
+	background: url("/img/globonews.png") 50% no-repeat;
+}
+#etctv {
+	background: url("/img/etc.png") 50% no-repeat;
+	background-size: 70px;
+}
+#cdn_curico {
+	background: url("/img/cdn-curico.png") 50% no-repeat;
+}
+#telecauquenes {
+	background: url("/img/telecauquenes.png") 50% no-repeat;
+}
+#america {
+	background: url("/img/america.png") 50% no-repeat;
+}
+#foxsports {
+	background: url("/img/foxsports.png") 50% no-repeat;
+}
+#bbc_one {
+	background: url("/img/bbcone.png") 50% no-repeat;
+}
+#bbc_two {
+	background: url("/img/bbctwo.png") 50% no-repeat;
+}
+#campustv {
+	background: url("/img/campustv.png") 50% no-repeat;
+}
+#ntn {
+	background: url("/img/ntn.png") 50% no-repeat;
+}
+#primitivos {
+	background: url("/img/primitivos.png") 50% no-repeat;
+}
+#dch {
+	background: url("/img/dch.png") 50% no-repeat;
+}
+#ufrovision {
+	background: url("/img/ufro.png") 50% no-repeat;
+}
+#canal_5 {
+	background: url("/img/Canal5.png") 50% no-repeat;
+}
+#tvo {
+	background: url("/img/tvo.png") 50% no-repeat;
+}
+#c5n {
+	background: url("/img/c5n.png") 50% no-repeat;
+	background-size: 70px;
+}
+#canal26 {
+	background: url("/img/canal26.png") 50% no-repeat;
+	background-size: 70px;
+}

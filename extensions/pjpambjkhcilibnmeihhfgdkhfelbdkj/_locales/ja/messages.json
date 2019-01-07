@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "連絡先"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "ポップアップウィンドウにアクセスGoogleの連絡先"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "連絡先オプション"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "ポップアップウィンドウのサイズ"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "幅"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "高さ"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "保存"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "保存された"
+   }
+}

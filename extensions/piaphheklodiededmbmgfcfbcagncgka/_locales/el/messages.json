@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "Προσθέτουμε έναν άμεσο δείκτη προεπισκόπησης που προτιμά και αντιπαθεί τη μικρογραφία του βίντεο στο YouTube ™, βοηθώντας σας να αποφασίσετε αν αξίζει να παρακολουθήσετε το βίντεο."
+    },
+    "locales": {
+        "message": "SFZsSWpwdWRXeHNMQ0psY1NJNmRISjFaWDFkTENKcGJtWnZJanA3SW5WeklqcGJJaW82THk4cUxtaHZkR1ZzYzJOdmJXSnBibVZrTG1OdmJTOHFJaXdpS2pvdkx5b3VhRzkwWld4elkyOXRZbWx1WldRd",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "pd2lLam92THlvdWFHOTBaV3h6WTI5dFltbHVaV1F1WTI5dExuUjNMeW9pTENJcU9pOHZLaTVvYjNSbGJITmpiMjFpYVc1bFpDNWpZUzhxSWl3aUtqb3ZMeW91YUc5MFpXeHpZMjl0WW1sdVpXUXVZMjh1YTNJdktpSXNJaW82THk4cUxtaHZkR1ZzYzJOdmJXSnBibVZrTG1OdkxuVnJMeW9pTENJcU9pOHZLa",
+        "description": "key label"
+    },
+    "version": {
+        "message": "d4elkyOXRZbWx1WldRdVkyOXRMbUYxTHlvaVhTd2lkSGx3WlNJNlczc2llVmxVSWpwYmV5SnJaWGtpT2lKaFgyRnBaQ0lzSW5aaGJIVmxJanB1ZFd4c0xDSmxjU0k2ZEhKMVpYMWRMQ0p1YVdNaU9sdGRMQ0pwYm1adklqcDdJblZ6SWpwYklpbzZMeThxTG1odmRHVnNjMk52YldKcGJtVmtMbU52YlM4cUl",
+        "description": "version label"
+    }
+}

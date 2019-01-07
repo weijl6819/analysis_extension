@@ -1,0 +1,14 @@
+{
+  "appDesc": {
+    "description": "Expired Domain Scraper searches for and finds expired domain names on webpages you visit. Infinite scrolling for Google, Youtube, Bing, and Yandex.",
+    "message": "Extract Expired Domain Names From Websites You Visit"
+  },
+  "appName": {
+    "description": "Expired Domain Scraper",
+    "message": "Expired Domain Scraper"
+  },
+  "appShortName": {
+    "description": "Expired Domain Scraper",
+    "message": "Expired Domain Scraper"
+  }
+}

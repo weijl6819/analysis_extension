@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8" />
+	<!-- injector:css -->
+	<link rel="stylesheet" href="css/popup-concat.css">
+	<!-- endinjector -->
+
+	<!-- injector:js -->
+	<script src="js/popup-concat.js"></script>
+	<!-- endinjector -->
+</head>
+<body>
+	<div class="menu" id="menu">
+		<ul>
+			<li><a data-target="downloader" data-event="getPage">
+				<i class="fa fa-cloud-download"></i><u data-lang="downloader"></u>
+			</a></li>
+			<li><a data-target="seedbox" data-event="getPage">
+				<i class="fa fa-magnet"></i>Seedbox
+			</a></li>
+			<li><a data-target="account" data-event="getPage">
+				<i class="fa fa-user"></i><u data-lang="account"></u>
+			</a></li>
+			<li><a data-target="settings" data-event="getPage">
+				<i class="fa fa-cog"></i><u data-lang="settings"></u>
+			</a></li>
+		<ul>
+	</div>
+	<div class="content">
+
+		<div class='page' id='loading'>
+			<div class="alert-info">
+				<div class='load' style="margin:5px"></div> <u data-lang="load_progress"></u>
+			</div>
+		</div>
+
+		<div class='page' id='account'>
+			<h1 class="page_title"><u data-lang="account_infos"></u></h1>
+			<div class="page_content">
+				<div class='infoMember list'>
+					<div>
+						<u data-lang="account_user"></u> :
+						<span id='pseudo'><div class='load'></div></span>
+					</div>
+					<div>
+						<u data-lang="account_type"></u> :
+						<span id='accountType'><div class='load'></div></span>
+					</div>
+					<div>
+						Premium :
+						<span id='premiumLeft'><div class='load'></div></span>
+					</div>
+					<div>
+						Points :
+						<span id='ptsLeft'><div class='load'></div></span>
+					</div>
+					<div class="justify-content-center">
+						<div>
+							<button data-event="upgrade">
+								<i class="fa fa-star-o"></i>
+								<u data-lang="account_upgrade"></u>
+							</button>
+							<button data-event="logout" class="warning">
+								<i class="fa fa-power-off"></i>
+								<u data-lang="account_logout"></u>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='page' id='downloader'>
+			<h1 class="page_title">
+				<u data-lang="downloader"></u>
+			</h1>
+			<div class="page_content">
+				<div class="panel">
+
+					<h1 style="margin-top:0"><u data-lang="downloader_detect_link"></u></h1>
+					<div id='links' class="list text-small"></div>
+					<div id='noLink' class="alert-info alert-icon">
+						<u data-lang="downloader_no_link_page"></u>
+					</div>
+
+					<h1><u data-lang="downloader_old_links"></u></h1>
+					<div class="list text-small" id="downloaderOldLinks"></div>
+					<div class="alert-info alert-icon" id="noOldLink" style="display:none">
+						<u data-lang="downloader_no_old_links"></u>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class='page' id='seedbox'>
+			<div id='viewTorrent'>
+				<h1 class="page_title">Seedbox - <u data-lang="your_torrents"></u></h1>
+				<div class="page_content">
+					<div class="panel">
+						<div id='torrents' class="text-small">
+							<div style='padding:10px 0;'>
+								<div class='load' style='margin-left:20px;margin-right:10px;'></div>
+								<u data-lang="load_progress"></u>
+							</div>
+						</div>
+						<div class="alert-info alert-icon" style="display:none" id="noTorrent">No torrent</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class='page' id='settings'>
+			<h1 class="page_title">
+				<u data-lang="settings_addon"></u>
+			</h1>
+			<div class="page_content">
+				<div class='list'>
+					<h1 style="margin-top:0">Informations</h1>
+					<div>
+						Version: <span><a data-event="openUpdatedUrl"><strong id="version-extension"></strong>-<strong id="version-core"></strong></a></span>
+					</div>
+					<div>
+						<a data-event="openSupportUrl"><u data-lang="reportBug"></u></a>
+					</div>
+					<h1>
+						<u data-lang="settings_general"></u>
+					</h1>
+					<div>
+						<input type='checkbox' id='rightClick' data-event="saveOption">
+						<label for='rightClick' data-lang="settings_right_click_debrid"></label>
+					</div>
+					<div>
+						<input type='checkbox' id='rightClickStream' data-event="saveOption">
+						<label for='rightClickStream' data-lang="settings_right_click_stream"></label>
+					</div>
+					<div>
+						<input type='checkbox' id='rightClickCopy' data-event="saveOption">
+						<label for='rightClickCopy' data-lang="settings_right_click_copy"></label>
+					</div>
+					<div>
+						<input type='checkbox' id='oneClickLink' data-event="saveOption">
+						<label for='oneClickLink' data-lang="settings_one_click_link"></label>
+					</div>
+					<div>
+						<input type='checkbox' id='oneClickIframe' data-event="saveOption">
+						<label for='oneClickIframe' data-lang="settings_one_click_iframe"></label>
+					</div>
+					<div class="hidden-edge">
+						<input type='checkbox' id='downloadBrowser' data-event="saveOption">
+						<label for='downloadBrowser' data-lang="settings_download_browser"></label>
+					</div>
+					<!--<h1 style="margin-top:0">
+						<u data-lang="downloader"></u>
+					</h1>
+					<div>
+						<input type='checkbox' id='linkInPage' data-event="saveOption">
+						<label for='linkInPage' data-lang="settings_detect_link_page"></label>
+					</div>
+					<div>
+						<input type='checkbox' id='linkInTab' data-event="saveOption">
+						<label for='linkInTab' data-lang="settings_detect_link_tab"></label>
+					</div>
+					<div>
+						<input type='checkbox' id='downloadDownloader' data-event="saveOption">
+						<label for='downloadDownloader' data-lang="settings_download_file"></label>
+					</div>-->
+					<h1>Seedbox</h1>
+					<div class="hidden-edge">
+						<input type='checkbox' id='notifTorrent' data-event="saveOption"><label for='notifTorrent'><u data-lang="settings_notif_add_torrent"></u></label>
+					</div>
+
+					<h1 style="padding-bottom:0"><u data-lang="settings_hosts_detection"></u></h1>
+					<p class="text-muted"><u data-lang="settings_hosts_detection_infos"></u></p>
+					<div class='list' id="hostsDectionList"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>

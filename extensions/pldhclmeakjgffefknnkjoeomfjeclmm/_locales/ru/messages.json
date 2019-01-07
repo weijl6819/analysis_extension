@@ -1,0 +1,58 @@
+{
+    "name":
+    {
+        "message":"uCoz - Безопасный вход"
+    },
+    "description":
+    {
+        "message":"Безопасная авторизация в один клик на сайтах uCoz. Более миллиона сайтов поддерживают эту систему авторизации."
+    },
+    "register":
+    {
+        "message":"Регистрация"
+    },
+    "email":
+    {
+        "message":"Адрес электронной почты"
+    },
+    "password":
+    {
+        "message":"Пароль"
+    },
+    "forgot":
+    {
+        "message":"Забыли?"
+    },
+    "save":
+    {
+        "message":"Сохранить"
+    },
+    "create_site":
+    {
+        "message":"Создать сайт с uCoz"
+    },
+    "login_error":
+    {
+        "message":"Ошибка входа"
+    },
+    "enter_login":
+    {
+        "message":"Введите адрес электронной почты и пароль"
+    },
+    "data_saved":
+    {
+        "message":"Данные сохранены"
+    },
+    "please_wait":
+    {
+        "message":"Подождите пожалуйста"
+    },
+    "site":
+    {
+        "message":"http://www.ucoz.ru"
+    },
+    "remind_link":
+    {
+        "message":"http://www.uid.me/remind/?l=ru"
+    }
+}

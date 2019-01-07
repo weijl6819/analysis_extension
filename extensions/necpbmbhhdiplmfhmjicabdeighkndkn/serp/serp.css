@@ -1,0 +1,17 @@
+.similarsite_button {
+    font-size: 13px;
+    text-align: left;
+    color: #9b9b9b;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px;
+}
+
+.ojo {
+    margin-top: 9px;
+}
+
+.similarsite_button:hover {
+    filter: brightness(110%);
+    text-decoration: underline;
+}

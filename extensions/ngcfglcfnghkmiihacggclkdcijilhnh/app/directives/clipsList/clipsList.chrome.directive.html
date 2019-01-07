@@ -1,0 +1,14 @@
+<div class="cp-page-clips-wrapper">
+  <div class="cp-page-clips">
+    <div class="cp-page-clip-wrapper"
+         ng-class="{ 'cp-page-clip-wrapper-active' : homeCtrl.activeNote.properties.activeItemId === clip.itemId }"
+         ng-repeat="clip in homeCtrl.activeNote.properties.items track by $index ">
+
+      <cp-clip-item
+          ng-mouseenter="homeCtrl.itemHover(clip, true)"
+          ng-mouseleave="homeCtrl.itemHover(clip, false)">
+      </cp-clip-item>
+
+    </div>
+  </div>
+</div>

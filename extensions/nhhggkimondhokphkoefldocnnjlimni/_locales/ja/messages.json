@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "YouTube オーディオ同期ツール"
+  },
+  "appShortName": {
+    "message": "YouTube同期"
+  },
+  "appDescription": {
+    "message": "YouTubeのオーディオタイミングを調整して音ズレを解消します"
+  },
+  "appStartMessage": {
+    "message": "オーディオ同期ツールを起動中 ..."
+  }
+}

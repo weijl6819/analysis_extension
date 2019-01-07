@@ -1,0 +1,11 @@
+﻿{
+   "chrome_extension_description": {
+      "message": "This extension highlights the Google search keywords in web pages. This way you can instantly find the relevant parts of a page. The screenshot shows the Wikipedia result after searching for the term 'World Peace' with Google. The arrow in the screenshot points to the button that enable/disable this functionality."
+   },
+   "chrome_extension_name": {
+      "message": "Markera sökord för Google-sökning"
+   },
+   "chrome_extension_title": {
+      "message": "Markera sökord för Google-sökning"
+   }
+}

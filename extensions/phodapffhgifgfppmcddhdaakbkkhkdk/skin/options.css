@@ -1,0 +1,167 @@
+*[is_hidden="true"] {
+	display: none;
+}
+body {
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+	font-size: 15px;
+	color: #222222;
+	background-color: #FFFFFF;
+}
+a {
+	color: #0000FF;
+}
+a:hover {
+	color: #990000;
+}
+#current_locale {
+	border: none;
+	border-radius: 5px;
+	width: 150px;
+}
+label[for]:not([disabled]), input[type="checkbox"]:not([disabled]) {
+	cursor: pointer;
+}
+label[for]:not([disabled]):hover {
+	text-decoration: underline;
+}
+label[for="security_enabled"] {
+	font-weight: bold;
+}
+.groupbox {
+	border: 1px #E0E0E0 solid;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 5px 0;
+}
+.groupbox:hover {
+	border: 1px #AF5CCB solid;
+}
+.groupbox:hover > .caption span, .groupbox:hover > .caption div {
+	background-color: #E3C5ED;
+	border: 1px #AF5CCB solid;
+}
+.groupbox[caption] {
+	margin-top: 1.5em;
+}
+.groupbox .caption {
+	position: relative;
+	margin-top: -1.05em;
+	margin-bottom: 3px;
+	margin-left: -5px;
+}
+.groupbox > .caption span {
+	background-color: #E0E0E0;
+	border-radius: 5px;
+	padding: 0 5px;
+}
+input[type=text], input[type=password] {
+	width: 150px;
+}
+
+.s3security-button,
+.s3security-button > .button-box {
+	padding: 0px;
+	margin: 0px;
+	border: 0px; 
+	background-color: transparent;
+	-moz-user-focus: none;
+}
+ 
+.s3security-button {
+	background: url("/skin/foxsecurity_gray_16.png") center no-repeat;
+	background-size: contain;
+	width: 16px;
+	height: 16px;
+}
+.s3security-button[domain_status="unknown"] {
+	background: url("/skin/foxsecurity_gray_16.png") center no-repeat;
+	background-size: contain;
+}
+.s3security-button[domain_status="white"] {
+	background: url("/skin/foxsecurity_green_16.png") center no-repeat;
+	background-size: contain;
+}
+.s3security-button[domain_status="adult"],
+.s3security-button[domain_status="infected"] {
+	background: url("/skin/foxsecurity_red_16.png") center no-repeat;
+	background-size: contain;
+}
+.s3security-button[domain_status="error"] {
+	background: url("/skin/foxsecurity_alert_16.png") center no-repeat;
+	background-size: contain;
+}
+.s3security-button[domain_status="disabled"] {
+	background: url("/skin/foxsecurity_disabled_16.png") center no-repeat;
+	background-size: contain;
+}
+.s3security-button[domain_status="danger"] {
+	background: url("/skin/foxsecurity_yellow_16.png") center no-repeat;
+	background-size: contain;
+}
+.s3security-button[domain_status="user"] {
+	background: url("/skin/foxsecurity_user_16.png") center no-repeat;
+	background-size: contain;
+}
+.dns_edit {
+	padding: 3px;
+	margin: 0px;
+	border: 0px; 
+	width: 16px;
+	height: 16px;
+	background: url("/skin/edit.png") center no-repeat;
+	background-color: transparent;
+	cursor: pointer;
+}
+.dns_edit:hover {
+	border: 1px #6070FB solid !important;
+	padding: 2px !important;
+	border-radius: 3px;
+}
+.dns_edit:active {
+	border: 1px #FEA29C solid !important;
+	padding: 2px !important;
+	border-radius: 3px;
+	background-color: #E0E0E0;
+}
+.dns_add {
+	padding: 2px;
+	margin: 0px;
+	margin-right: 5px;
+	margin-top: -1px;
+	border: 1px #E0E0E0 solid;
+	border-radius: 5px;
+	width: 16px;
+	height: 16px;
+	background: url("/skin/add_dns.png") center no-repeat;
+	background-color: #E0E0E0;
+	float: left;
+	cursor: pointer;
+}
+.dns_add:hover {
+	border: 1px #6070FB solid !important;
+	background-color: #EEEEEE !important;
+}
+.dns_add:active {
+	border: 1px #FEA29C solid !important;
+	background-color: #E0E0E0 !important;
+}
+#dns_default {
+	color: #0000FF;
+	cursor: pointer;
+}
+#dns_default:hover {
+	color: #990000;
+}
+#dns_default:active {
+	color: #990000;
+}
+#dns_servers_edit_name[value2=""], #dns_servers_edit_iplist[value2=""] {
+	-moz-appearance: none;
+	border: 1px #FF0000 solid !important;
+}
+#settings_saved {
+	color: #009900;
+	border: 1px dotted #009900;
+	border-radius: 7px;
+	padding: 1px 4px;
+}

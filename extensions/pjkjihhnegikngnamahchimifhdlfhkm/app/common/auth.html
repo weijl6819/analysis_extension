@@ -1,0 +1,48 @@
+OK
+<script>
+(function () {
+  'use strict';
+  console.info('s4b-token.redirect loaded');
+
+  function extractResult() {
+    var res = (location.hash || location.search || '#').substr(1);
+    return res.split('&').reduce(function (r, item) {
+      var kv = item.split('=');
+      var key = kv.shift();
+      var val = kv.join('=');
+      r[key] = val;
+      return r;
+    }, {});
+  }
+
+  function reportResult() {
+    var res = extractResult();
+    console.info('res:', res);
+
+    var rso = { authInfo: res, authEmbedded: (window.self !== window.top) };
+    var jso = JSON.stringify(rso);
+
+    if (!rso.authEmbedded) {
+      var state = (res.state || '').split('---');
+      if (state.length > 1) {
+        if (location.protocol !== 'ichrome-extension:') {
+          var extId = state[1];
+          location.replace('ichrome-extension://' + extId + '/app/common/auth.html' + (location.hash || location.search || ''));
+        } else {
+          window.opener.localStorage.setItem(res.state, jso);
+        }
+        return;
+      }
+    }
+    
+
+    var parent = rso.authEmbedded ? window.parent : window.opener;
+    if (parent) {
+      parent.postMessage(jso, '*');
+      window.name = jso;
+    }
+  }
+
+  reportResult();
+})();
+</script>

@@ -1,0 +1,162 @@
+{
+  "extensionDescription": {"message":"Débrideur & Seedbox. Générateur de lien premium et téléchargement de torrent"},
+
+  "plural":{
+    "message":"s",
+    "description": "Plural of words with plural placeholder"
+  },
+
+  "month":{
+    "message":"Mois"
+  },
+  "week":{
+    "message":"Semaine$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Semaine|Semaines"
+      }
+    }
+  },
+  "day":{
+    "message":"Jour$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Jour|Jours"
+      }
+    }
+  },
+  "hour":{
+    "message":"Heure$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Heure|Heures"
+      }
+    }
+  },
+  "minute":{
+    "message":"Minute$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Minute|Minutes"
+      }
+    }
+  },
+  "second":{
+    "message":"Seconde$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Seconde|Secondes"
+      }
+    }
+  },
+
+  "error":{"message":"Erreur"},
+  "send_progress": {"message":"Envoi en cours"},
+  "added_success": {"message":"Ajouté avec succès"},
+  "copied_to_clipboard":{"message":"Copié dans le presse papier"},
+  "send_to_seedbox":{"message": "Envoyer sur la seedbox"},
+  "debrid_with_debridlink":{"message": "Débrider avec Debrid-Link"},
+  "watch_with_debridlink":{"message": "Visionner si possible avec Debrid-Link"},
+  "debrid_and_copy": {"message": "Débrider et copier dans le presse papier"},
+  "check_or_uncheck_all": {"message": "Tout cocher / décocher"},
+
+  "downloader": {"message":"Débrideur"},
+  "account":{"message": "Compte"},
+  "settings":{"message": "Réglages"},
+  "reportBug":{"message": "Signaler un bug"},
+
+  "download":{"message":"Télécharger"},
+  "watch":{"message": "Visionner"},
+  "generate":{"message":"Génération..."},
+  "startTranscoding":{"message":"Transcodage ..."},
+  "generated":{"message":"Généré"},
+  "generate_links_progress":{"message":"Génération des lien(s) ..."},
+  "links": {"message": "lien(s)"},
+  "download_all":{"message":"Tout télécharger"},
+  "back":{"message":"Retour"},
+  "start_downloads": {"message": "Lancement des téléchargements"},
+
+  "account_infos": {"message": "Infos du compte"},
+  "account_user":{"message":"Pseudo"},
+  "account_type":{"message":"Type de compte"},
+  "account_upgrade": {"message":"Evoluer mon compte"},
+  "account_logout":{"message":"Déconnexion"},
+
+  "downloader_detect_link":{"message":"Détection des liens"},
+  "downloader_no_link_page":{"message": "Aucun lien trouvé sur la page"},
+  "check_all":{"message":"Tout sélectionner"},
+  "download_checked":{"message": "Télécharger la selection"},
+  "downloader_old_links": {"message": "Liens récents"},
+  "downloader_no_old_links": {"message": "Aucun lien récent sur votre compte"},
+  "downloader_type_host": {
+    "message":"Hébergeur$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Hébergeur|Hébergeurs"
+      }
+    }
+  },
+  "downloader_type_stream": {"message": "Streaming"},
+  "downloader_type_protect": {
+    "message":"Protecteur$PLURAL$",
+    "placeholders":{
+      "plural": {
+        "content":"$1",
+        "example":"Protecteur|Protecteurs"
+      }
+    }
+  },
+
+  "your_torrents":{"message":"Vos torrents"},
+  "load_progress":{"message":"Chargement en cours..."},
+  "files": {"message": "Fichier(s)"},
+  "downloading": {"message": "Téléchargement"},
+
+  "settings_addon":{"message":"Réglages extension"},
+  "settings_general":{"message":"Général"},
+  "settings_right_click_debrid":{"message":"Proposer de débrider le lien lors d'un clique droit"},
+  "settings_one_click_link": {"message": "Proposer de débrider lors du survole d'un lien"},
+  "settings_right_click_stream":{"message":"Proposer de visionner le lien lors d'un clique droit"},
+  "settings_one_click_iframe": {"message": "Remplacer les lecteurs streaming"},
+  "settings_right_click_copy":{"message":"Proposer de copier le lien débridé lors d'un clique droit"},
+  "settings_download_browser":{"message":"Télécharger les fichiers avec le gestionnaire du navigateur"},
+  "settings_download_auto_close":{"message":"Fermer automatiquement l'onglet ouvert lors d'un téléchargement. (En test, peut être instable)"},
+  "settings_detect_link_page":{"message":"Vérifier les liens disponibles sur une page"},
+  "settings_detect_link_tab":{"message":"Vérifier le lien de l'onglet courant"},
+  "settings_download_file":{"message":"Télécharger les fichiers après génération"},
+  "settings_notif_add_torrent":{"message":"Afficher une notification lors du téléchargement d'un fichier torrent pour l'envoyer sur la seedbox"},
+  "settings_hosts_detection": {"message": "Détection des hébergeurs"},
+  "settings_hosts_detection_infos": {"message": "Sélectionnez les hébergeurs à détecter:"},
+
+  "plugin_updated":{"message":"Plugin mis à jour"},
+  "plugin_view_changelog":{"message": "Afficher les changements"},
+
+  "badLink": {"message": "Le lien ne semble pas supporté"},
+  "notDebrid": {"message": "Le fichier n'a pas été débridé"},
+  "fileNotFound": {"message": "Le fichier n'est pas présent sur l'hébergeur"},
+  "badFileUrl": {"message": "Le format du lien est invalide"},
+  "hostNotValid": {"message": "L'hébergeur n'est pas supporté"},
+  "disabledHost": {"message": "L'hébergeur est en maintenance"},
+  "noGetFilename": {"message": "Impossible de récupérer le nom du fichier"},
+  "notFreeHost": {"message": "Hébergeur reservé pour les membres premium"},
+  "notGetTorrentFile": {"message": "Impossible de récupérer le fichier torrent"},
+  "badTorrentFile": {"message": "Le fichier ne semble pas être un torrent"},
+  "notAddTorrent": {"message": "Impossible d'ajouter le torrent."},
+  "notPts": {"message": "Vous n'avez pas assez de points sur votre compte"},
+  "duplicateTorrent": {"message": "Ce torrent a déjà été ajouté"},
+  "needPremium": {"message": "Vous devez être membre premium pour utiliser cette fonctionnalité"},
+  "badToken": {"message":"Vous devez vous conneter pour utiliser le plugin"},
+  "maxLink": {"message": "Vous avez ajouté trop de liens. Veuillez patienter 24H"},
+  "maxLinkHost": {"message": "Nombre maximum de liens atteint pour cet hébergeur aujourd'hui"},
+  "freeServerOverload": {"message": "Les serveurs des membres gratuits sont surchargés. Veuillez réessayer dans quelques minutes."},
+  "serverNotAllowed": {"message": "Les serveurs dédiés ne sont pas autorisés. Contactez nous"},
+  "disabledServerHost": {"message": "Cet hébergeur n'est pas disponible depuis un VPN. Contactez nous"},
+  "maxFilesTorrent": {"message": "Trop de fichiers sont présent dans ce torrent"},
+  "noMediaInSelection": {"message": "Fichier non valide pour le streaming"}
+}

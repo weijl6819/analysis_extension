@@ -1,0 +1,340 @@
+body {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Sans', 'Sans-serif';
+	font-size: 12px;
+	color: #666;
+}
+a {
+	text-decoration: none;
+	color: #5c99ac;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+h1 {
+	color: #666;
+	font-size: 38px;
+}
+input.button {
+	margin-top: 3px;
+	width: 60px;
+	height: 22px;
+	font-size: 11px;
+	line-height: 22px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7CC0D5), to(#5C99AC));
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	border: 1px #4E7A87 solid;
+	/*padding: 5px 15px;*/
+	padding: 0 5px;
+	text-shadow: #4E7A87 0px -1px 0px;
+}
+input.button.weak {
+	border: 1px #666 solid;
+	background: -webkit-gradient(linear, left top, left bottom, from(#CFD0D0), to(#A9AAAB));
+}
+
+.fancy-font {
+	font-style: italic;
+	font-family: 'Georgia', 'Century Schoolbook L';
+}
+.clear {
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+.text-overflow {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.content {
+	display: none;
+}
+.content.current {
+	display: block;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.6);
+}
+.overlay .spinner {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin: -25px 0 0 -25px;
+}
+
+.overlay .dialog {
+	padding: 10px;
+}
+.overlay .dialog .dialog-content {
+	border: 1px solid #444;
+	background-color: white;
+	margin: 0 auto;
+}
+.overlay .dialog .dialog-content .dialog-data {
+	float: left;
+	padding: 10px;
+}
+.overlay .dialog .dialog-content .dialog-data .text {
+	line-height: 17px;
+}
+.overlay .dialog .dialog-content .dialog-data .inputs {
+	float: right;
+	margin-top: 15px;
+}
+
+.content .info {
+	padding: 10px;
+	padding-top: 9px;
+}
+.content .info .name {
+	font-weight: bold;
+	float: left;
+	font-size: 13px;
+}
+.content .info .controls {
+	font-size: 10px;
+	float: right;
+	margin-top: 5px;
+}
+
+#copy-link-input {
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+#copy-link-input input {
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+	text-indent: -20em;
+}
+
+#options {
+	font-size: 13px;
+	padding: 10px;
+}
+#options .title {
+	line-height: 48px;
+}
+#options .title .icon {
+	float: left;
+	background: url(/images/icons/gett_48.png) no-repeat;
+	height: 48px;
+	width: 48px;
+	border-radius: 5px;
+}
+#options .title .header {
+	float: left;
+	margin-left: 20px;
+}
+#options .options-group {
+	position: relative;
+	margin-top: 20px;
+	padding: 25px 0 0 20px;
+	border-top: 1px solid #666;
+}
+#options .options-group .group-title {
+	position: absolute;
+	font-size: 14px;
+	top: -9px;
+	left: 10px;
+	background-color: white;
+	padding: 0 3px;
+}
+#options .options-group .option {
+}
+#options .options-group .option input {
+	margin-right: 15px;
+	float: left;
+	display: block;
+}
+#options .options-group .option label {
+}
+
+#login {
+	background-color: #484848;
+	padding: 10px;
+}
+#login .message {
+	color: white;
+	margin-bottom: 10px;
+	text-shadow: #4E7A87 0px -1px 0px;
+}
+#login input.text {
+	width: 200px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	border: 2px solid #cdcdcd;
+	padding: 1px 0 1px 5px;
+	font-size: 12px;
+	line-height: 15px;
+	height: 15px;
+}
+#login input.text:focus {
+	outline: 0;
+	border-color: #5c99ac;
+}
+#login .status .status-message {
+	color: #ff5252;
+	margin-top: 10px;
+	line-height: 22px;
+}
+
+#empty {
+	height: 100px;
+	width: 200px;
+}
+
+#notifications {
+	width: 400px;
+}
+#notifications .notification-wrapper {
+	display: block;
+	text-decoration: none;
+	color: #666;
+	border-top: 1px solid #999;
+	padding: 15px;
+	position: relative;
+}
+#notifications .notification-wrapper:hover, #notifications .notification-wrapper.unread:hover {
+	text-decoration: none;
+	background-color: #7cc0d5;
+	color: #ffffff;
+}
+#notifications .notification-wrapper.unread {
+	background-color: #dbedf3;
+}
+#notifications .notification-wrapper .notification .icon {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 16px;
+}
+#notifications .all-notifications {
+	text-align: center;
+	background-color: #EDF4F6;
+	padding: 10px 0;
+}
+#notifications .notification-wrapper .notification .message {
+	padding-left: 30px;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#notifications .notification-wrapper .date {
+	font-size: 10px;
+	padding-left: 30px;
+	margin-top: 10px;
+}
+
+#uploads {
+	width: 400px;
+}
+#uploads .upload {
+	border-top: 1px solid #999;
+	padding: 10px 10px 10px 20px;
+}
+#uploads .upload.empty {
+	padding: 10px;
+	text-align: center;
+}
+
+#uploads .upload.state-pending .top .copy-link, 
+#uploads .upload.state-download .top .copy-link,
+#uploads .upload.state-error .top .copy-link {
+	display: none;
+}
+
+#uploads .upload.state-pending .middle,
+#uploads .upload.state-done .middle,
+#uploads .upload.state-error .middle {
+	display: none;
+}
+#uploads .upload.state-pending .bottom .progress,
+#uploads .upload.state-done .bottom .progress,
+#uploads .upload.state-error .bottom .progress {
+	display: none;
+}
+
+#uploads .upload.state-pending .bottom .idle .size {
+	display: none;
+}
+#uploads .upload.state-done .bottom .idle .state {
+	display: none;
+}
+
+#uploads .upload.state-error .bottom .idle .size {
+	display: none;
+}
+#uploads .upload.state-error .bottom .idle .state {
+	color: darkRed;
+}
+
+#uploads .upload.state-download .bottom .idle,
+#uploads .upload.state-upload .bottom .idle {
+	display: none;
+}
+
+#uploads .upload .top .filename {
+	float: left;
+	max-width: 230px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#uploads .upload .top .copy-link {
+	float: left;
+	font-size: 10px;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+#uploads .upload .top .date {
+	float: right;
+	font-size: 10px;
+	margin-top: 3px;
+}
+#uploads .upload .middle .progress-bar {
+	margin: 5px 0;
+}
+#uploads .upload .middle .progress-bar .bar {
+	height: 15px;
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 0 5px #ccc;
+}
+#uploads .upload .middle .progress-bar .bar .slider {
+	/*width: 50px;*/
+	width: 0;
+	height: 100%;
+	background-color: #ddd;
+	border-radius-left: 4px;
+	box-shadow: inset 0 0 5px #ccc;
+}
+#uploads .upload .bottom {
+	margin-top: 5px;
+	font-size: 13px;
+}
+#uploads .upload .bottom .divider {
+	margin: 0 5px;
+}
+#uploads .upload .bottom .idle .state {
+	color: green;
+}
+#uploads .upload .bottom .idle .url {
+	display: inline-block;
+	max-width: 230px;
+}

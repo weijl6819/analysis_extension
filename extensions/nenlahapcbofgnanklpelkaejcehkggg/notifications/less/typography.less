@@ -1,0 +1,291 @@
+@import (reference) './variables.less';
+
+* {
+  .defaultRegular;
+}
+
+@10px: 10px;
+@11px: 11px;
+@12px: 12px;
+@13px: 13px;
+@14px: 14px;
+@15px: 15px;
+@16px: 16px;
+@18px: 18px;
+@19px: 19px;
+@20px: 20px;
+@24px: 24px;
+@28px: 28px;
+@30px: 30px;
+@34px: 34px;
+@44px: 44px;
+
+
+// Sizing
+h1, h2, h3, h4, h5, h6 {
+  a {
+    color: @charcoal;
+    text-decoration: none;
+  }
+}
+
+h1 {
+  .defaultBold;
+  color: @charcoal;
+  font-size: @34px;
+  line-height: @44px;
+}
+
+
+h2 {
+  .defaultBold;
+  font-size: @20px;
+  line-height: @30px;
+  color: @charcoal;
+}
+
+
+h3 {
+  .defaultRegular;
+  font-size: @18px;
+  line-height: @28px;
+  color: @charcoal;
+}
+
+h4 {
+  .defaultRegular;
+  font-size: @16px;
+  line-height: @24px;
+  color: @silver;
+}
+
+
+h5 {
+  .defaultRegular;
+  font-size: @14px;
+  line-height: @20px;
+  color: @charcoal;
+}
+
+h6 {
+  .defaultRegular;
+  font-size: @12px;
+  line-height: @19px;
+  color: @silver;
+  &.uppercase {
+    font-size: @10px;
+    text-transform: uppercase;
+  }
+}
+
+p {
+  .defaultRegular;
+  font-size: @14px;
+  line-height: @20px;
+  color: @charcoal;
+}
+
+
+
+// COLORS
+.disabled {
+  color: @smoke;
+}
+
+.palmetto {
+  color: @palmetto;
+}
+
+.gray {
+  color: @gray;
+}
+
+.charcoal {
+  color: @charcoal;
+}
+
+.marble {
+  color: @marble;
+}
+
+.steam {
+  color: @steam;
+}
+
+.silver {
+  color:  @silver;
+}
+
+.carbon {
+  color:  @carbon;
+}
+
+.green {
+  color: @green;
+}
+
+.smoke {
+  color: @smoke;
+}
+
+.storm {
+  color: @storm;
+}
+
+.midnight {
+  color: @midnight;
+}
+
+
+// ALIGNMENT & TRANSFORMS
+
+.align-center {
+  text-align: center;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+   text-transform: lowercase;
+}
+
+.action {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.inline {
+  display: inline-block;
+  padding-right: 8px;
+}
+
+
+
+// FONT STYLES
+.tnr {
+  .timeNewRomanBold;
+}
+
+.italic {
+  .defaultItalic;
+}
+
+.bold, strong {
+  .defaultBold;
+}
+
+.semi-bold, .semibold {
+  .defaultSemibold;
+}
+
+.light {
+  .defaultRegular;
+  font-weight: normal;
+}
+
+p.error {
+  color: @poppy;
+  padding: 10px 0;
+}
+
+
+.title-link, .title-link a {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: @midnight;
+  }
+}
+
+
+
+// LINKS
+.primary-link, .primary-link a {
+  color: @palmetto;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: @lime;
+  }
+  &:active {
+    color: @sage;
+    user-select: none;
+  }
+  &:disabled {
+    color: @gray;
+  }
+}
+
+.secondary-link, .secondary-link a {
+  color: @reef;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: @glacier;
+  }
+  &:active {
+    color: @ice;
+    user-select: none;
+  }
+  &:disabled {
+    color: @gray;
+  }
+}
+
+.medium-link, .medium-link a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tertiary-link {
+  color: @charcoal;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    color: @darkGray;
+  }
+  &:active {
+    color: fade(@darkGray, 20%);
+    user-select: none;
+  }
+}
+
+.midnight-link, .midnight-link a, .charcoal-link, .charcoal-link a {
+  color: @charcoal;
+  cursor: pointer;
+  &:hover {
+    color: @darkGray;
+  }
+  &:active {
+    color: @darkGray;
+    user-select: none;
+  }
+}
+
+
+
+
+
+// OLD DESIGN
+@12px: 12px;
+@15px: 15px;
+@18px: 18px;
+@21px: 21px;
+@24px: 24px;
+@25px: 25px;
+@28px: 28px;
+@31px: 31px;
+@48px: 48px;
+@58px: 58px;
+@60px: 60px;
+@70px: 70px;

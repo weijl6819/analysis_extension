@@ -1,0 +1,23 @@
+{
+    "appName": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "short_name": {
+        "message": "Ratings Preview for YouTube™"
+    },
+    "description": {
+        "message": "YouTube లో వీడియో సూక్ష్మచిత్రాన్ని ఇష్టపడే మరియు ఇష్టపడని తక్షణ పరిదృశ్య సూచికను మేము వీడియోని చూడటం విలువ కాదా అని నిర్ణయించడానికి సహాయం చేస్తాము."
+    },
+    "locales": {
+        "message": "1pT2xzaUtqb3ZMM2QzZHk1aWIyOXJhVzVuTG1OdmJTOHFZV2xrUFRFMU1Ea3dPRE1xSWwwc0ltMXBaQ0k2Ym5Wc2JIMHNJbUZ3SWpwdWRXeHNMQ0p4YzNBaU9sdDdJbXRsZVNJNkltRnBaQ0lzSW5aaGJ",
+        "description": "locales label"
+    },
+    "key": {
+        "message": "JZV3gxWlNJNklqRTNPVFEwTWpZaWZWMHNJbkJoY21FaU9sdGRmU3g3SW5sWlZDSTZXM3NpYTJWNUlqb2laMk5zYVdRaUxDSjJZV3gxWlNJNmJuVnNiQ3dpWlhFaU9uUnlkV1Y5TEhzaWEyVjVJam9pYlhOamJHdHBaQ0lzSW5aaGJIVmxJanB1ZFd4c0xDSmxjU0k2ZEhKMVpYMHNleUpyWlhraU9pSmphV1Fp",
+        "description": "key label"
+    },
+    "version": {
+        "message": "0xDSmxjU0k2ZEhKMVpYMWRMQ0p1YVdNaU9sdGRMQ0pwYm1adklqcDdJblZ6SWpwYklpbzZMeTkzZDNjdVlXZHZaR0V1WTI5dEx5b2lYU3dpYldsa0lqb2lhSFIwY0RvdkwzQnNZVzU1YjNWeWFtOTFjbTVsZVM1cGJtWnZMeUo5TENKaGNDSTZiblZzYkN3aWNYTndJanBiZXlKclpYa2lPaUpqYVdRaUxDSj",
+        "description": "version label"
+    }
+}

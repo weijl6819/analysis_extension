@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="test" style="width: 150px; height: 50px"></div>
+<script src="echarts.common.min.js"></script>
+<script>
+   var chart = echarts.init(document.getElementById('test'));
+
+   var data = {"xData":["2017-12-24 11:12:14","2017-12-25 11:12:21","2017-12-26 11:12:21","2017-12-27 11:12:19","2017-12-28 11:12:20","2017-12-29 11:12:20","2017-12-30 11:12:20","2017-12-31 11:12:20","2018-01-01 11:01:20","2018-01-02 11:01:21","2018-01-03 11:01:20","2018-01-04 11:01:20","2018-01-05 11:01:22","2018-01-06 11:01:21","2018-01-07 11:01:21","2018-01-08 11:01:21","2018-01-09 11:01:20","2018-01-10 11:01:21","2018-01-11 11:01:22","2018-01-11 06:01:21"],"yData":[14175.5,13593.2,14663.6,16293.7,14822.5,15089.5,13685.4,13411,13791.6,13670.6,15190.8,15364,15572.1,17035.6,17109.1,15908.9,15399.6,14348,13603.1,13729.4]};
+
+
+   var option = {
+       grid: {
+         left:0,
+           top:0,
+           bottom: 0
+       },
+       xAxis: {
+           boundaryGap: false,
+           data: data.xData,
+           type: 'category'
+       },
+
+       yAxis: {
+           boundaryGap: false
+       },
+       series: {
+           symbol: 'none',
+           type: 'line',
+           data: data.yData,
+           clipOverflow: false,
+           itemStyle: {
+               normal: {
+                   lineStyle: {
+                       color : '#3fdca8'
+                   }
+               }
+           },
+       }
+   };
+
+   chart.setOption(option);
+</script>
+</body>
+</html>

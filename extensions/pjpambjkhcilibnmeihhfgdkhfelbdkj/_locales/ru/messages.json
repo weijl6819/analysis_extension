@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Контакты"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Доступ к Google Contacts в всплывающем окне"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Контакты Варианты"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Размер всплывающем окне"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "ширина"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "высота"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "сохранять"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Сохраненные"
+   }
+}

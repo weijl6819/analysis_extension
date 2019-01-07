@@ -1,0 +1,10 @@
+{
+  "appDesc": {
+    "description": "Description for the CWS",
+    "message": "Миттєво знайти веб-сайти, схожі на той, що Ви переглядаєте зараз. Переглядайте веб-мережу, знайдіть більше. "
+  },
+  "appName": {
+    "description": "Title for the CWS",
+    "message": "Similar Sites - Знайти схожі веб-сайти"
+  }
+}

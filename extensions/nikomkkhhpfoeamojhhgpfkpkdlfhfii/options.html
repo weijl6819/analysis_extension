@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+<title>TabsPlus Options</title>
+<style>
+select {
+   font-family: tahoma;
+   font-size: 16px;
+   width: 140px;
+}
+.title {
+   color: black;
+   font-family: tahoma;
+   font-size:   24px;
+   font-weight: bold;
+}
+.prompt {
+   background-color: #DEE0E0;
+   color: black;
+   font-family: tahoma;
+   font-size:   14px;
+   text-align: left;
+}
+.options_table {
+   position: absolute;
+   top: 25%;
+   width: 100%;
+   border: none;
+}
+.options {
+   background-image: url("background.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 592px;
+   height: 285px;
+}
+</style>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="options.js"></script>
+</head>
+
+<body>
+<table cellspacing=0 cellpadding=0 class=options_table>
+<tr><td class=options align=center>
+<table cellspacing=3 cellpadding=3 border=0 width=330px>
+<tr>
+<td nowrap class=prompt>&nbsp;&nbsp;Position of a new tab:&nbsp;&nbsp;</td>
+<td nowrap align=right width=100%>
+<select id="tabsBehaviour">
+<option value="default" selected>*** default ***</option>
+<option value="first">first</option>
+<option value="left">next left</option>
+<option value="right">next right</option>
+<option value="last">last</option>
+</select>
+</td>
+</tr>
+<tr>
+<td nowrap class=prompt>&nbsp;&nbsp;After closing go to:&nbsp;&nbsp;</td>
+<td nowrap align=right width=100%>
+<select id="tabsActivate">
+<option value="default">*** default ***</option>
+<option value="last_used">last used tab</option>
+<option value="left">left tab</option>
+<option value="right">right tab</option>
+</select>
+</td>
+</tr>
+<tr>
+<td nowrap class=prompt>&nbsp;&nbsp;Open a new tab in:&nbsp;&nbsp;</td>
+<td nowrap align=right width=100%>
+<select id="tabsOpenMethod">
+<option value="default">*** default ***</option>
+<option value="foreground">foreground</option>
+<option value="background">background</option>
+</select>
+</td>
+</tr>
+<tr>
+<td nowrap class=prompt>&nbsp;&nbsp;Use pin-unpin button:&nbsp;&nbsp;</td>
+<td nowrap align=right width=100%>
+<select id="useIcon">
+<option value="yes">yes</option>
+<option value="no">no</option>
+</select>
+</td>
+</tr>
+<tr>
+<td nowrap class=prompt>&nbsp;&nbsp;Use context menu:&nbsp;&nbsp;</td>
+<td nowrap align=right width=100%>
+<select id="useContextMenuIcon">
+<option value="yes">yes</option>
+<option value="no">no</option>
+</select>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</body>

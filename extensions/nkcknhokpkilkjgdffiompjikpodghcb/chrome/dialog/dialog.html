@@ -1,0 +1,101 @@
+<html>
+<!--
+ - Copyright (c) 2011, Jose Enrique Bolanos Gudino
+ - All rights reserved.
+ -
+ - Redistribution and use in source and binary forms, with or without
+ - modification, are permitted provided that the following conditions are met:
+ -
+ -  * Redistributions of source code must retain the above copyright notice,
+ -    this list of conditions and the following disclaimer.
+ -  * Redistributions in binary form must reproduce the above copyright notice,
+ -    this list of conditions and the following disclaimer in the documentation
+ -    and/or other materials provided with the distribution.
+ -  * Neither the name of Jose Enrique Bolanos nor the names
+ -    of its contributors may be used to endorse or promote products derived
+ -    from this software without specific prior written permission.
+ -
+ - THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ - "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ - LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ - A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+ - OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ - EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ - PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ - PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ - LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ - NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Destroy the Web</title>
+  <link rel="stylesheet" type="text/css" href="dialog.css" />
+</head>
+<body>
+
+  <div id="background"></div>
+
+  <h1>TIME!</h1>
+  <div id="pageTitle"></div>
+  <div id="pageUrl"></div>
+
+  <table>
+    <tr>
+      <td>Hyperlinks</td>
+      <td class="value" id="links"></td>
+    </tr>
+    <tr>
+      <td>Images</td>
+      <td class="value" id="images"></td>
+    </tr>
+    <tr>
+      <td>Divs</td>
+      <td class="value" id="divs"></td>
+    </tr>
+    <tr>
+      <td>Headings</td>
+      <td class="value" id="headings"></td>
+    </tr>
+    <tr>
+      <td>Tables</td>
+      <td class="value" id="tables"></td>
+    </tr>
+    <tr>
+      <td>Form Elements</td>
+      <td class="value" id="inputs"></td>
+    </tr>
+    <tr>
+      <td>Embeds, Objects</td>
+      <td class="value" id="embeds"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td class="value" id="other"></td>
+    </tr>
+    <tr>
+      <td>Time Bonus</td>
+      <td class="value" id="timeBonus"></td>
+    </tr>
+    <tr>
+      <td>No Miss Bonus</td>
+      <td class="value" id="noMissBonus"></td>
+    </tr>
+  </table>
+
+  <div id="scoreLabel">Score</div>
+  <div id="score"></div>
+
+  <div>
+    <button id="button-submit">Submit Score</button>
+    <button id="button-close">Dismiss</button>
+  </div>
+
+  <form style="display:none" id="scoreForm" method="post" target="_blank">
+  </form>
+
+</body>
+<script type="text/javascript" src="../common/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="../background/game.js"></script>
+<script type="text/javascript" src="dialog.js"></script>
+</html>

@@ -1,0 +1,11 @@
+{"background": {"scripts": ["background_script.js"]}, 
+"chrome_url_overrides": {"newtab": "my_index.html"}, 
+"description": "Fans Of Dirt Bikes Must Install This New Tab Extension To Get Motocross, Motorcycle & Dirt Bikes Wallpapers, Added Features And More", 
+"default_locale": "en", 
+"manifest_version": 2, 
+"update_url": "https://clients2.google.com/service/update2/crx", 
+"name": "__MSG_localeAddTitle__", 
+"browser_action": {"default_icon": "128-picture.png", 
+"default_title": "Dirt Bikes New Tab"}, 
+"version": "2.6.4", 
+"icons": {"128": "128-picture.png"}}

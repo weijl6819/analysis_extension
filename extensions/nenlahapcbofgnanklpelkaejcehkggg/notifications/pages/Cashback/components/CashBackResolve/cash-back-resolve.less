@@ -1,0 +1,115 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy .cashback-notification {
+  .cash-back-resolve {
+    position: relative;
+    padding: 8px 16px 16px;
+    overflow: auto;
+    max-height: 560px;
+    .close {
+      position: fixed;
+      right: 0px;
+      top: 4px;
+      font-size: 11px;
+      color: #ccc;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-gear-icon {
+      top: 13px;
+    }
+    h2 {
+      font-weight: bold;
+      .icon-circle-check {
+        display: inline-block;
+        vertical-align: baseline;
+      }
+      .green {
+        color: @palmetto;
+      }
+    }
+
+    h4 {
+      margin-bottom: 16px;
+      &.activate-later {
+        padding-top: 5px;
+        text-align: center;
+        margin-bottom: 4px;
+        font-size: 14px;
+        width: 103px;
+        margin: 0 auto;
+        color: @silver;
+      }
+    }
+    .button-wrapper {
+      margin-top: 10px;
+      button {
+        font-weight: bold;
+        width: 100%;
+        .icon-circle-check {
+          vertical-align: middle;
+          margin-right: 3px;
+          display: inline-block;
+          margin-top: 3px;
+        }
+      }
+    }
+    .button-note {
+      .defaultRegular;
+      color: @gray;
+      display: block;
+      font-size: 16px;
+      margin-top: 5px;
+      text-align: center;
+    }
+    .tertiary-link-lighter {
+      color: #737373;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        color: #999;
+      }
+    }
+  }
+  &.large-cb-notification {
+    .icon-credit {
+      width: 160px;
+      height: 160px;
+      background:  url('https://cdn.ivaws.com/wikibuy-assets/images/wb_credits.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    .credit-prompt {
+      .rewards-activation {
+        h2 {
+          font-size: 26px;
+          line-height: 34px;
+          text-align: center;
+        }
+        h4 {
+          margin-top: 3px;
+          margin-bottom: 18px;
+          text-align: center;
+        }
+        .primary-btn-large {
+          font-size: 16px;
+          height: 46px;
+        }
+      }
+    }
+    .activate-later  {
+      color: #cbcbcb;
+      margin-top: 10px;
+      &:hover {
+        color: #a6a6a6;
+      }
+    }
+  }
+}

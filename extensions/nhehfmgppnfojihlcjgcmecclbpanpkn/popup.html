@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+    <title>Facebook Group Management</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="node_modules/systemjs/dist/system.src.js"></script>
+    <script type="text/javascript" src="systemjs.popupconfig.js"></script>
+</head>
+<body>
+    <div class="extension-popup">
+        <div class="mc-logo">Make Cents</div>
+        <div hidden class="login-row">
+            Please, login via email or Facebook:
+            <div class="row with-input">
+                <p>Email:</p> <input type="email" id="email">
+            </div>
+            <div class="row with-input">
+                <p>Password:</p> <input type="password" id="pass">
+            </div>
+            <div class="row">
+                <input type="button" id="send" value="Sign In">
+            </div>
+        </div>
+        <div hidden class="donate-repost-row">
+            <input type="button" id="makepay" class="btn-default" value="Donate $0.99">
+            <input hidden type="button" id="share-new" class="btn-default" value="Repost to Facebook">
+        </div>
+        <div class="close"><a id="close-message" href="#close"></a></div>
+        <div id="status"></div>
+        <!--<hr>-->
+<!--TODO сделать авторизацию через facebook сделать запрос на backgound-->
+        <div class="facebook--signup-container">
+            <input id="facebook-btn" type="button" value="Facebook">
+            <span id="signup-container">Don’t have an account? <a target="_blank" href="https://makecents.online/auth/signup">Sign Up</a></span>
+        </div>
+
+        <div class="not-logged-bottom-row">
+            <a target="_blank" href="https://makecents.online">My Make Cents Account</a>
+        </div>
+        <div class="logged-bottom-row" hidden>
+            <a target="_blank" href="https://makecents.online">My Make Cents Account</a>
+            <a type="button" id="logout">Logout</a>
+        </div>
+        <!--<button id="signin">Signin</button>-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,2293 @@
+﻿section.frame
+{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+section.view, section.splash
+{
+  width: 100%;
+  height: 100%;
+}
+section.splash
+{
+  text-align: center;
+  color: white;
+}
+section.splash div
+{
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+section.splash img
+{
+  display: inline-block;
+  width: 70%;
+  height: 16px;
+}
+section.splash select
+{
+  margin-bottom: 8px;
+  -webkit-appearance: none;
+  border: solid 1px #AAA;
+  background: transparent;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+
+  width: 90%;
+  max-width: 300px;
+}
+section.splash select > option
+{
+  background: #444444;
+  color: white;
+}
+section.splash .hidden
+{
+  display: none;
+}
+section.splash a
+{
+  margin-left: 4px;
+  margin-right: 4px;
+  color: white;
+  text-decoration: underline;
+}
+section.splash a:focus, section.splash a:hover
+{
+  color: orange;
+}
+
+
+section.content
+{
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  bottom: 40px;
+}
+
+section.content > section
+{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #EEE;
+  overflow: hidden;
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+footer > ul
+{
+  height: 100%;
+}
+footer > ul > li
+{
+  width: 40px;
+  height: 100%;
+}
+footer > ul > li > a, header > ul > li > a
+{
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  -background-size: 32px 32px;
+}
+footer > ul > li > a:before
+{
+  background-position: right top;
+  content: "";
+}
+footer > ul > li > a > label
+{
+  display: none;
+}
+
+header
+{
+  display: block;
+  position: relative;
+  overflow: visible;
+  height: 40px;
+  text-align: center;
+}
+
+header > h1
+{
+  font-size:  14px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+header > ul
+{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  display: none;
+}
+header > ul:nth-of-type(1)
+{
+  left: 0;
+  display: inline-block;
+}
+header > ul:nth-of-type(2)
+{
+  right: 0;
+  display: inline-block;
+}
+header > ul > li
+{
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+  position: relative;
+}
+
+section > header + diva
+{
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  top: 42px;
+  bottom: 0px;
+  width: 100%;
+  padding: 2px;
+
+  overflow-y: auto;
+}
+
+ul.popup
+{
+  position: absolute;
+  top: 45px;
+  right: 20%;
+  width: 400%;
+  display: none;
+  z-index: 2;
+  text-align: left;
+}
+
+li.popup > ul.popup
+{
+  display: inline-block;
+}
+
+ul.popup > li
+{
+  width: 100%;
+  font-size: 12px;
+  height: 24px;
+}
+
+ul.popup > li > a
+{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 4px 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  cursor: pointer;
+}
+
+ul.popup:before
+{
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  left: auto;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 0px solid #444444;
+  border-bottom: 5px solid #444444;
+}
+
+
+/* list */
+ul.list
+{
+  width: 100%;
+  font-size: 12px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+ul.list > li
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: block;
+
+  width: 100%;
+  height: 40px;
+}
+ul.list > li.chat, ul.list > li.dial
+{
+  padding-right: 32px;
+}
+ul.list > li.chat.dial
+{
+  padding-right: 64px;
+}
+ul.list > li > div
+{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: auto;
+  width: auto;
+  display: none;
+  height: 100%;
+  text-align: right;
+}
+ul.list > li > div > a
+{
+  display: none;
+  height: 100%;
+  width: 32px;
+  padding: 2px 2px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px 24px;
+  opacity: 0.7;
+}
+ul.list > li > div > a:hover
+{
+  opacity: initial;
+}
+
+ul.list > li.chat > div, ul.list > li.dial > div
+{
+  display: block;
+}
+ul.list > li.chat > div > a.ActChat, ul.list > li.dial > div > a.ActDial
+{
+  display: inline-block;
+}
+ul.list > li.events > div > a.ActChat
+{
+  background-color: orange;
+}
+
+ul.list > li > a
+{
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 4px 40px;
+  padding-right: 2px;
+
+  cursor: pointer;
+
+  background-size: 32px 32px;
+  background-position: 5px center;
+}
+
+ul.people li > a:before, ul.timeline li > a:before, ul.locations li > a:before
+{
+  left: -3px;
+  border: solid 1px transparent;
+  border-radius: 6px;
+  position: absolute;
+  top: 10px;
+  width: 6px;
+  height: 20px;
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/*
+ul.people li > a:before, ul.timeline li > a:before
+{
+  left: 1px;
+  border: solid 0px;
+  border-left: solid 3px transparent;
+  position: absolute;
+  top: 4px;
+  width: 0px;
+  height: 32px;
+  content: "";
+  display: inline-block;
+}
+*/
+ul.calls li > a:before
+{
+  left: 2px;
+  top: 4px;
+}
+ul.list li.Checked > a
+{
+  padding-right: 40px;
+}
+ul.list li.Checked > a:after
+{
+  right: 2px;
+  position: absolute;
+  top: 4px;
+  width: 32px;
+  height: 32px;
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+ul.list > li > a, .vcard
+{
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+ul.list > li.title
+{
+  height: auto;
+  margin-top: 4px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: solid 1px lightGray;
+}
+ul.list > li.title > a
+{
+  background-image: none;
+  padding-left: 0px;
+}
+ul.list > li.title:only-of-type
+{
+  display: none;
+}
+
+ul.list > li.single > a:first-line
+{
+  font-size: 14px;
+  line-height: 32px;
+}
+
+ul.list > li.group
+{
+  height: auto;
+  padding-top: 4px;
+  padding-left: 0px;
+  cursor: auto;
+  border-bottom: none;
+}
+ul.list > li.group > a:before, ul.list > li.group > a:after
+{
+  display: none;
+}
+ul.list > li.group > a
+{
+  height: 20px;
+  cursor: pointer;
+  padding-top: 2px;
+  padding-left: 20px;
+  background-position: 0px center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+}
+ul.list > li.group > ul.list
+{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 8px;
+}
+ul.chats > li.group > a, ul.calls > li.group > a
+{
+  display: none;
+}
+ul.chats > li.group > ul.list, ul.calls > li.group > ul.list
+{
+  padding-left: 0px;
+}
+ul.list > li.pin > ul.list
+{
+  padding-left: 0px;
+}
+ul.list > li.pin > a
+{
+  display: none;
+}
+ul.list > li.pin
+{
+  padding-top: 0px;
+  padding-left: 0px;
+}
+ul.list > li.collapsed > ul.list
+{
+  display: none;
+}
+ul.list > li.hidden
+{
+  display: none;
+}
+
+section.cardBox
+{
+  position:   absolute;
+  top:        42px;
+  bottom:     0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding:    4px;
+  width:      100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+fieldset
+{
+  width:      100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin:     4px 0px;
+}
+fieldset > *
+{
+  width:      100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding:    2px;
+  position:   relative;
+}
+
+fieldset label
+{
+  display:    inline-block;
+  width:      100%;
+  padding:    2px 4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size:  11px;
+}
+fieldset label.check
+{
+  padding-left: 20px;
+}
+fieldset label.check + input[type=checkbox]
+{
+  position:   absolute;
+  left:       2px;
+}
+fieldset select
+{
+  width: 100%;
+}
+
+select
+{
+  box-sizing:     border-box;
+  -moz-box-sizing: border-box;
+  border:         solid 1px transparent;
+}
+
+input
+{
+  box-sizing:     border-box;
+  -moz-box-sizing: border-box;
+  height:         18px;
+  padding-left:   3px;
+  padding-right:  20px;
+}
+input[type=text], input[type=password]
+{
+  width:          100%;
+}
+input[type=checkbox]
+{
+  margin:         0px 3px 0px 4px;
+  vertical-align: middle;
+}
+
+button
+{
+  cursor:         pointer;
+
+  display:        block;
+  margin:         auto;
+  margin-top:     4px;
+  height:         24px;
+  width:          50%;
+  max-width:      150px;
+}
+
+.vcard
+{
+  position: relative;
+  background-color: white;
+  padding-top: 2px;
+  padding-left: 72px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 68px;
+  width: 100%;
+
+  line-height: 20px;
+
+  background-size: 64px 64px;
+  background-origin: padding-box;
+  background-position: 4px center;
+}
+.vcard:first-line
+{
+  font-weight: bold;
+}
+.vcard:before
+{
+  position: absolute;
+  top: 16px;
+  left: -7px;
+  width: 8px;
+  height: 32px;
+
+  content: "";
+  display: inline-block;
+  border: solid 1px transparent;
+  border-radius: 6px;
+}
+.vcard ~ section.cardBox
+{
+  top: 74px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.vcard.hidden ~ section.cardBox
+{
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.video > .vcard ~ section.cardBox
+{
+  top: 274px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.myself, .myphone
+{
+  border-bottom: solid 1px lightGray;
+}
+.myself ~ section.cardBox
+{
+  top: 108px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-top: solid 1px lightGray;
+}
+.myphone ~ section.dialMain, .myphone ~ section.dialPad
+{
+  position:   absolute;
+  top:        82px;
+  bottom:     0px;
+  left:       0px;
+  right:      0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+}
+
+section.dialPad
+{
+  outline:    none;
+}
+section.dialPad > div
+{
+  position:   absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top:        48px;
+  bottom:     0px;
+  width:      100%;
+}
+section.dialPad > section
+{
+  display:    table;
+  width:      100%;
+  border-bottom: 1px solid lightgray;
+}
+section.dialPad > section > div
+{
+  display:    table-row;
+}
+section.dialPad > section > div > div
+{
+  display:    table-cell;
+  vertical-align: top;
+  padding:    2px;
+  text-align: left;
+  white-space:nowrap;
+  line-height: 0px;
+}
+section.dialPad > section > div > div:nth-of-type(2)
+{
+  width:      100%;
+  vertical-align: middle;
+  font-size:  125%;
+  font-weight: bold;
+  white-space:normal;
+  word-break: break-all;
+  word-wrap:  break-word;
+  line-height: normal;
+  -outline: #359EE7;
+  position: relative;
+  -color: rgba(255, 0, 0, 0.5);
+}
+section.dialPad > section > div > div:nth-of-type(2) > input
+{
+  position: absolute;
+  left: 0px;
+  /* right: 0px; */
+  opacity: 0;
+  height: 100%;
+  /* width: auto; */
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
+  /* z-index: -1; */
+  box-sizing: border-box;
+  padding: 0px;
+  top: 0;
+  -background-color: transparent;
+  -outline: none;
+  -border: solid 1px transparent;
+  -font-size: 125%;
+}
+section.dialPad > section > div > div:nth-of-type(3)
+{
+  text-align: right;
+}
+section.dialPad > section a
+{
+  width:      40px;
+  height:     40px;
+  display:    inline-block;
+}
+section.dialPad > section a.hidden
+{
+  display: none;
+}
+section.dialPad > section a.DPE:before
+{
+  top:4px;
+  left: 4px;
+}
+section.dialPad > section a > label
+{
+  color:            #FFF;
+  text-decoration:  none;
+  display:          inline-block;
+  background:       #F00;
+  margin-top:       4px;
+  height:           10px;
+  min-width:        10px;
+  font-size:        9px;
+  vertical-align:   top;
+  line-height:      8px;
+  text-align:       center;
+  border-radius:    2px;
+}
+section.dialPad > section a > label.hidden
+{
+  display:          none;
+}
+section.dialPad > section a:hover, section.dialPad > section a:focus
+{
+  background-color: lightblue;
+}
+section.dialPad > ul
+{
+  padding-top: 4px;
+}
+section.dialMain > section.cardBox
+{
+  top: 0px;
+}
+
+.chats ~ section.cardBox, .presence ~ section.cardBox, .group ~ section.cardBox, .destination ~ section.cardBox
+{
+  top: 70px;
+  border-top: solid 1px lightGray;
+}
+
+.Input
+{
+  position:   relative;
+  padding:    4px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.Input input
+{
+  width:      100%;
+  padding-right: 20px;
+}
+.Input a
+{
+  position:   absolute;
+  display:    inline-block;
+  height:     16px;
+  width:      16px;
+  top:        5px;
+  right:      6px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:     solid 1px transparent;
+  border-radius: 4px;
+  background-image: url("../img/common/clear16.png");
+  opacity:    0.7;
+}
+.Input a:first-of-type
+{
+  right:      26px;
+  background-size: 25px 25px;
+  background-image: url("../img/common/speech16.gif");
+}
+.Input.speech a:first-of-type
+{
+  background-image: url("../img/common/speech16a.gif");
+}
+.Input a:hover, .Input a:focus
+{
+  opacity:    1;
+}
+
+
+div.Chat
+{
+  position:   absolute;
+  bottom:     0px;
+  left:       0px;
+  right:      0px;
+  padding:    2px;
+  height:     44px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow:   hidden;
+}
+
+.Chat textarea
+{
+  /* to colors */
+  border: solid 1px #E8E8E8;
+  border-radius: 4px;
+
+  /* to base */
+  font-family: Tahoma;
+  font-size: 11px;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width:      100%;
+  max-width:  100%;
+  padding:    2px;
+  padding-right: 25px;
+
+  height:     100%;
+  max-height: 40px;
+}
+
+.Chat input.speech
+{
+  font-size:  25px;
+  width:      25px;
+  height:     25px;
+  cursor:     pointer;
+  border:     none;
+  position:   absolute;
+  outline:    none;
+  background: transparent;
+  right:      6px;
+  top:        6px;
+  box-sizing: initial;
+  -moz-box-sizing: initial;
+  padding:    0px;
+  overflow:   hidden;
+}
+div.Chat > a
+{
+  width:      25px;
+  height:     25px;
+  cursor:     pointer;
+  position:   absolute;
+  right:      6px;
+  top:        10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding:    0px;
+
+  opacity:    0.75;
+  background-size: 50px 50px;
+  background-image: url("../img/common/speech16.gif");
+}
+div.Chat.speech > a
+{
+  background-image: url("../img/common/speech16a.gif");
+}
+.Chat a:hover, .Chat a:focus
+{
+  opacity:    1;
+}
+
+ul.Chat
+{
+  position:   absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  top:        42px;
+  bottom:     44px;
+  left:       0px;
+  right:      0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+ul.Chat > li
+{
+  display:          block;
+  width:            100%;
+  box-sizing:       border-box;
+  -moz-box-sizing: border-box;
+  margin-top:       2px;
+  min-height:       38px;
+}
+ul.Chat > li:before
+{
+  width:            34px;
+  height:           32px;
+  display:          inline-block;
+  position:         absolute;
+  top:              2px;
+  content:          "";
+  box-sizing:       border-box;
+  -moz-box-sizing: border-box;
+  border:           solid 0px;
+  background-size:  32px 32px;
+  background-image: url('../img/common/people32.png');
+}
+ul.Chat > li.ChatIn
+{
+  padding-left:     45px;
+  padding-right:    45px;
+}
+ul.Chat > li.ChatIn:before
+{
+  left:             4px;
+}
+ul.Chat > li.ChatOut:before
+{
+  left:             auto;
+  right:            4px;
+}
+ul.Chat > li.ChatIn:after
+{
+  left:             -3px;
+  box-sizing:       border-box;
+  -moz-box-sizing: border-box;
+  border:           solid 1px transparent;
+  border-radius:    6px;
+  width:            6px;
+  height:           20px;
+  top:              10px;
+  content:          "";
+  display:          inline-block;
+  position:         absolute;
+}
+ul.Chat > li.ChatOut:after
+{
+  left:             auto;
+  right:            -3px;
+  box-sizing:       border-box;
+  -moz-box-sizing: border-box;
+  border:           solid 1px transparent;
+  border-radius:    6px;
+  width:            6px;
+  height:           20px;
+  top:              10px;
+  content:          "";
+  display:          inline-block;
+  position:         absolute;
+}
+ul.Chat > li.ChatOut
+{
+  padding-right:    45px;
+  padding-left:     45px;
+}
+ul.Chat > li > div
+{
+  border:           solid 1px #E8E8E8;
+  border-radius:    4px;
+  min-height:       32px;
+  padding:          1px;
+}
+/*
+ul.Chat > li.ChatIn > div
+{
+  text-align:       left;
+}
+ul.Chat > li.ChatOut > div
+{
+  text-align:       right;
+}
+*/
+
+ul.Chat > li.ChatIn > div:before
+{
+  left:             40px;
+  border-left:      0px solid #E8E8E8;
+  border-right:     5px solid #E8E8E8;
+}
+ul.Chat > li.ChatIn > div:after
+{
+  left:             41px;
+  border-left:      0px solid white;
+  border-right:     5px solid white;
+}
+ul.Chat > li.ChatOut > div:before
+{
+  left:             auto;
+  right:            40px;
+  border-left:      5px solid #E8E8E8;
+  border-right:     0px solid #E8E8E8;
+}
+ul.Chat > li.ChatOut > div:after
+{
+  left:             auto;
+  right:            41px;
+  border-left:      5px solid white;
+  border-right:     0px solid white;
+}
+ul.Chat > li > div:before, ul.Chat > li > div::after
+{
+  width:            0px;
+  height:           0px;
+  display:          inline-block;
+  position:         absolute;
+  top:              10px;
+  content:          "";
+  border-top:       5px solid transparent;
+  border-bottom:    5px solid transparent;
+}
+
+ul.Chat > li > div > span
+{
+  width:            100%;
+  display:          inline-block;
+  padding-bottom:   4px;
+  word-break:       break-word;
+}
+ul.Chat > li > div > span > img
+{
+  max-width:        100%;
+}
+ul.Chat > li > div > label
+{
+  width:            100%;
+  display:          inline-block;
+  padding-bottom:   4px;
+  color:            #A8A8A8;
+  text-overflow:    ellipsis;
+  overflow:         hidden;
+  text-wrap:        none;
+  white-space:      nowrap;
+}
+
+ul.Chat > li.ChatIn > div > label.Typing
+{
+  display:          none;
+}
+ul.Chat > li.Typing
+{
+  display:          none;
+}
+ul.Chat.Typing > li.Typing:last-of-type
+{
+  display:          block;
+}
+ul.Chat.Typing > li.ChatIn:last-of-type > div > label.Typing:last-of-type
+{
+  display:          inline-block;
+}
+
+
+
+
+section > div.video 
+{
+  position:   absolute;
+  left:       4px;
+  right:      4px;
+  top:        42px;
+  bottom:     2px;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:     solid 1px #e8e8e8;
+  border-radius: 6px;
+  display:    none;
+  background-color: white;
+  text-align: center;
+}
+.video > .video, .preVideo > .video
+{
+  display:    block;
+}
+.video > ul
+{
+  position:   absolute;
+  top:        2px;
+  left:       5px;
+  right:      5px;
+  width:      auto;
+  text-align:     center;
+  background:     -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DDDDDD));
+  border-top:     groove 1px #ffffff;
+  border-left:    groove 1px #ffffff;
+  border-right:   groove 1px #ffffff;
+  border-top-left-radius:  4px;
+  border-top-right-radius:  4px;
+}
+.video > ul li ul
+{
+  width: auto!important;
+  display: inline-block!important;
+  border-right: groove 2px #FFF;
+}
+.video > ul li ul li
+{
+  display:        inline-block;
+  width:          40px;
+  overflow:       hidden;
+  margin-right:   1px;
+  border-left:    groove 2px #FFFFFF;
+  background-color: transparent;
+}
+.video > ul li ul li > a
+{
+  background-position: 3px center;
+}
+.video > ul li ul li.hidden
+{
+  display:        none;
+}
+.video > object
+{
+  box-sizing:       border-box;
+  -moz-box-sizing: border-box;
+  width:            100%;
+  height:           100%;
+  display:          inline-block;
+  background-color: transparent;
+}
+.video > .overlay
+{
+  box-sizing:       border-box;
+  -moz-box-sizing: border-box;
+  width:            100%;
+  height:           100%;
+  display:          inline-block;
+  background-color: transparent;
+  position:         absolute;
+  top:              0px;
+  left:             0px;
+  opacity:          0;
+  z-index:          2;
+}
+.video > .overlay:hover
+{
+  opacity:          1;
+  background-position: center center;
+  cursor:           pointer;
+}
+
+.video > .selfView
+{
+  position:         absolute;
+  width:            20%;
+  height:           20%;
+  top:              10px;
+  right:            10px;
+  border:           none;
+  border-bottom:    solid 1px #359EE7;
+  background-color: #359EE7;
+  box-sizing:       border-box;
+  -moz-box-sizing: border-box;
+  padding:          1px;
+  overflow:         hidden;
+  z-index:          2;
+}
+
+.rtcVideo
+{
+  -webkit-perspective:          1000;
+}
+
+.rtcVideo > div.video
+{
+  position:                     relative;
+  width:                        100%;
+  height:                       100%;
+  -webkit-transition-property:  rotation;
+  -webkit-transition-duration:  2s;
+  -webkit-transform-style:      preserve-3d;
+}
+
+.rtcVideo > div.video > .local
+{
+  position:                     absolute;
+  width:                        100%;
+  height:                       100%;
+  z-webkit-transform:            scale(-1, 1);
+  -webkit-backface-visibility:  hidden;
+}
+.rtcVideo > div.video .remote 
+{
+  position:                     absolute;
+  width:                        100%;
+  height:                       100%;
+  -webkit-transform:            rotateY(180deg);
+  -webkit-backface-visibility:  hidden;
+}
+.rtcVideo > div.video .mini 
+{
+  position:                     absolute;
+  height:                       30%;
+  width:                        30%;
+  bottom:                       32px;
+  right:                        4px;
+  z-webkit-transform:            scale(-1, 1);
+  opacity:                      1.0;
+}
+.rtcVideo > div.video video
+{
+  width:                        100%;
+  height:                       100%;
+  opacity:                      0;
+  -webkit-transition-property:  opacity;
+  -webkit-transition-duration:  2s;
+  cursor:                       pointer;
+}
+
+.frame > .video
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  border: none;
+}
+
+ul.timeline > li
+{
+  height: auto;
+}
+ul.list > li.dateTitle
+{
+  height: auto;
+  margin-top: 4px;
+  text-align: right;
+  border-bottom: solid 1px lightGray;
+  background-color: transparent;
+}
+ul.list > li.timeTitle
+{
+  margin-top: 4px;
+  color: transparent;
+  background-color: transparent;
+  height: 0px;
+}
+
+ul.timeline > li > a
+{
+  min-height: 40px;
+  padding-right: 40px;
+  background-position: 5px 4px;
+}
+
+ul.list > li > a > label
+{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  opacity: .5;
+  font-size: 10px;
+  padding: 2px;
+}
+
+
+
+.keypad ~ section.cardBox
+{
+  top: 70px;
+  border-top: solid 1px lightGray;
+}
+
+.keypad > a
+{
+  display: none;
+}
+
+ul.keypad li ul
+{
+  text-align: center;
+}
+
+ul.keypad li ul li
+{
+  display: inline-block;
+  width: 28%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: transparent;
+}
+
+ul.keypad li ul li.Action
+{
+  display: inline-block;
+  width: 43%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+ul.keypad li ul li > a
+{
+  padding-left: 0px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#CCCCCC));
+  border-radius: 6px;
+  border: solid 1px #CCCCCC;
+  font-weight: bold;
+}
+ul.keypad li ul li.Action > a
+{
+  font-weight: normal;
+  padding-left: 32px;
+  text-align: left;
+}
+ul.keypad li ul li.Action > a:before
+{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: 20px 20px;
+}
+ul.keypad li ul li.Action > a
+{
+  background:  none!important;
+}
+
+ul.keypad li ul li > a:focus
+{
+  border-color: #359EE7;
+}
+
+ul.keypad li ul li > a:hover, ul.keypad li ul li > a:active, ul.keypad li ul li.pressed > a
+{
+  border-color: #359EE7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#EEEEEE));
+}
+
+ul.textActions li ul li > a
+{
+  padding-left: 8px;
+}
+
+section.license
+{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width:      100%;
+  height:     100%;
+  padding:    20px;
+  text-align: center;
+}
+
+section.license > h1
+{
+  text-align: left;
+  font-size:  20px;
+}
+section.license > hr
+{
+  display:    none;
+}
+section.license > button
+{
+  display:    inline-block;
+  font-size:  12px;
+  margin:     4px;
+}
+section.license > iframe
+{
+  width:      100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:     solid 1px gray;
+  min-height: 75%;
+}
+
+ul.list > li.DPE > a:before
+{
+  left: 2px;
+  top:  4px;
+}
+
+ul.list > li[jsc_id="-1"]
+{
+  display: none!important;
+}
+
+ul.locations ul.list li > a
+{
+  background-size: 24px 24px;
+}
+
+
+footer li.Menu > ul.Menu
+{
+  position: absolute;
+  bottom: 45px;
+  left: -1px;
+  width: 40px;
+  border: solid 1px black;
+  display: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+footer ul.Menu:after
+{
+  position: absolute;
+  width:    0px;
+  height:   0px;
+  content:  "";
+  bottom:   -6px;
+  left:     15px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #222222;
+  border-bottom: 0px solid #222222;
+}
+
+
+footer li.popup > ul.Menu
+{
+  display: block;
+}
+
+footer li.Menu > ul.Menu > li
+{
+  display: block;
+  width:  40px;
+  height: 40px;
+  background-color: #222222;
+  background: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#000000));
+}
+footer li.Menu > ul.Menu > li > a
+{
+  display: block;
+  width:  100%;
+  height: 100%;
+}
+footer li.Menu > ul.Menu > hr
+{
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 0px;
+  border: none;
+  border-bottom: solid 1px white;
+}
+
+.LOCSCHON .LOCSCH
+{
+  display: none!important;
+}
+.LOCSCHON .LOCSCH + hr
+{
+  display: none!important;
+}
+
+.LOCAVLU .LOCSUVL
+{
+  display: none!important;
+}
+.LOCAVLA .LOCSAVL
+{
+  display: none!important;
+}
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 280px)
+{
+  section.frame
+  {
+    font-size: 10px;
+  }
+  section.splash select
+  {
+    font-size: 10px;
+  }
+  fieldset > *
+  {
+    padding: 0px;
+  }
+  fieldset label
+  {
+    font-size: 10px;
+    padding: 2px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+  }
+  fieldset label.check 
+  {
+    padding-left: 22px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+  }
+  button
+  {
+    height: 16px;
+  }
+  header, footer
+  {
+    height: 24px;
+  }
+  header > h1
+  {
+    padding-top: 4px;
+    font-size: 12px;
+  }
+  header > ul > li, footer > ul > li
+  {
+    width: 24px;
+    height: 24px;
+  }
+  header > ul > li > a, footer > ul > li > a, footer li.Menu > ul.Menu > li > a
+  {
+    background-size: 20px 20px;
+  }
+  footer li.Menu > ul.Menu
+  {
+    width: 24px;
+    bottom: 29px;
+  }
+  footer li.Menu > ul.Menu > li
+  {
+    height: 24px;
+    width: 24px;
+  }
+  footer ul.Menu:after
+  {
+    left: 7px;
+  }
+  section.cardBox
+  {
+    top: 26px;
+  }
+  section.content
+  {
+    bottom: 24px;
+  }
+  ul.popup
+  {
+    top: 29px;
+  }
+  ul.popup > li
+  {
+    font-size: 10px;
+    height:    16px;
+  }
+  ul.popup > li > a
+  {
+    padding: 2px 4px;
+  }
+  ul.popup:before
+  {
+    right: 2px;
+  }
+  .myself ~ section.cardBox, .myphone ~ section.cardBox
+  {
+    top: 84px;
+  }
+  .chats ~ section.cardBox, .presence ~ section.cardBox, .group ~ section.cardBox, .destination ~ section.cardBox
+  {
+    top: 54px;
+  }
+  .myphone ~ section.dialMain, .myphone ~ section.dialPad
+  {
+    top: 54px;
+  }
+  ul.Chat
+  {
+    top: 26px;
+    font-size: 10px;
+  }
+  ul.Chat > li:before
+  {
+    width: 24px;
+    background-size: 24px 24px;
+  }
+  ul.Chat > li.ChatIn:after, ul.Chat > li.ChatOut:after
+  {
+    top: 4px;
+  }
+  ul.Chat > li.ChatOut:after
+  {
+    right: -3px;
+  }
+  ul.Chat > li.ChatIn, ul.Chat > li.ChatOut 
+  {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  ul.Chat > li.ChatIn > div:before
+  {
+    left: 32px;
+  }
+  ul.Chat > li.ChatOut > div:before
+  {
+    right: 32px;
+  }
+  ul.Chat > li.ChatIn > div:after
+  {
+    left: 33px;
+  }
+  ul.Chat > li.ChatOut > div:after
+  {
+    right: 33px;
+  }
+  ul.list
+  {
+    font-size: 10px;
+  }
+  ul.list > li
+  {
+    height: 32px;
+  }
+  ul.timeline > li
+  {
+    height: auto;
+  }
+  ul.timeline > li > a
+  {
+    min-height: 32px;
+  }
+  ul.list > li > a
+  {
+    padding: 4px 32px;
+    padding-right: 0px;
+    background-size: 24px 24px;
+  }
+  ul.list > li.group > a
+  {
+    height: 16px;
+    background-size: 12px 12px;
+    padding-left: 12px;
+  }
+  ul.list > li.single > a:first-line
+  {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  ul.people li > a:before, ul.timeline li > a:before, ul.locations li > a:before
+  {
+    top: 6px;
+  }
+  ul.list > li > div > a
+  {
+    width: 20px;
+    background-size: 16px 16px;
+  }
+  .vcard
+  {
+    padding-left: 56px;
+    height: 52px;
+    line-height: 16px;
+    font-size: 10px;
+    background-size: 48px 48px;
+  }
+  .vcard:before
+  {
+    top: 10px;
+  }
+  .vcard ~ section.cardBox
+  {
+    top: 56px;
+  }
+  ul.list li.Checked > a 
+  {
+    padding-right: 32px;
+  }
+  ul.list li.Checked > a:after 
+  {
+    width: 24px;
+    height: 24px;
+    background-size: 16px 16px;
+  }
+  ul.list > li.title > a 
+  {
+    padding: 4px;
+  }
+  ul.list > li.DPE > a:before 
+  {
+    left: 0px;
+    top: 0px;
+  }
+  input, .Chat textarea
+  {
+    font-size: 10px!important;
+  }
+  .Chat input.speech
+  {
+    width: 12px;
+  }
+  section.dialPad > section a 
+  {
+    width:   20px;
+    height:  40px;
+    display: inline-block;
+    background-size: 16px 16px;
+  }
+  section.dialPad > section a.DPE
+  {
+    width: 32px;
+  }
+  section.dialPad > section > div > div:nth-of-type(2)
+  {
+    font-weight: normal;
+    font-size: 100%;
+  }
+  section.dialPad > section a.DPE:before
+  {
+    width: 32px;
+    height: 32px;
+    top: 8px;
+    left: 0px;
+  }
+  .video > ul li ul li
+  {
+    width: 32px;
+  }
+}
+
+/* Mac OS 10.9 or chrome books */
+.NOCWIC > *
+{
+  display: none;
+}
+.CWICError
+{
+  display: none;
+}
+
+.NOCWIC > header
+{
+  display: block;
+}
+.NOCWIC > .CWICError
+{
+  display: block;
+  padding: 8px;
+  font-size: 10pt;
+
+  color: red;
+}
+
+@media screen and (min-width: 401px) and (max-width: 1151px)
+{
+  section.content
+  {
+    left: 0px;
+    right: 0px;
+    width: auto;
+    bottom: 0px;
+  }
+  section.frame
+  {
+    font-size: 14px;
+  }
+
+  section.content > section > *
+  {
+    margin-left: 66px;
+  }
+  section.content > section > header
+  {
+    margin-left: 0px;
+  }
+  section.content > section > section.cardBox
+  {
+    width: auto;
+    left: 0px;
+    right: 0px;
+  }
+
+  header > ul:nth-of-type(1) > li
+  {
+    width: 63px;
+  }
+
+  footer
+  {
+    top: 40px;
+    bottom: 0px;
+    height: auto;
+    width: 64px;
+    border-right: 1px solid #000000;
+  }
+
+  footer > ul
+  {
+    width: 100%;
+  }
+
+  footer > ul > li
+  {
+    width: 100%;
+    height: 48px;
+    border-left: none!important;
+    border-bottom: 2px groove #333333!important;
+    display: block;
+  }
+  footer > ul > li:last-of-type
+  {
+    border-right: none!important;
+  }
+  footer > ul > li > a
+  {
+    text-decoration: none;
+    background-position: center 4px;
+  }
+  footer > ul > li > a > label
+  {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer li.Menu > ul.Menu
+  {
+    left: 70px;
+    height: 40px;
+    bottom: 2px;
+    width: 240px;
+  }
+
+  footer li.Menu.LOCSCHON > ul.Menu
+  {
+    width: 200px;
+  }
+
+  footer li.Menu > ul.Menu > li
+  {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+  footer li.Menu > ul.Menu > hr
+  {
+    display: none;
+  }
+  footer ul.Menu:after 
+  {
+    top: 15px;
+    left: -6px;
+    border-left: 0px solid #222222;
+    border-right: 5px solid #222222;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+  }
+
+  ul.locations ul.list > li.single
+  {
+    display: inline-block;
+    width: 49%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+  }
+
+  section#People .cardBox ul.people ul.list > li, ul.groups ul.list > li
+  {
+    display: inline-block;
+    width: 24%;
+    min-width: 132px;
+    max-width: 180px;
+    height: 132px;
+    margin-right: 4px;
+    border-radius: 6px;
+  }
+
+  section#People .cardBox ul.people ul.list > li > a, ul.groups ul.list > li > a
+  {
+    background-size: 92px 92px;
+    background-position: 4px 4px;
+    padding: 96px 4px 4px 4px;
+  }
+  section#People .cardBox ul.people ul.list > li > a:before
+  {
+    height: 76px;
+  }
+
+
+  /*--*/
+  ul.people > li.group > ul.list
+  {
+    padding-left: 0px;
+  }
+
+  ul.people > li.group
+  {
+    border:         solid 1px lightgray!important;
+    border-radius:  4px;
+    margin-top:     4px;
+  }
+  ul.people > li.group:first-of-type
+  {
+    margin-top:     0px;
+  }
+  ul.people > li.pin
+  {
+    border: none!important;
+  }
+  ul.list > li.chat > div, ul.list > li.dial > div
+  {
+    display: block;
+    width: 32px;
+    -height: 96px;
+    height: auto;
+    border-left: dotted 1px lightGray;
+    border-bottom: dotted 1px lightGray;
+    border-bottom-left-radius: 8px;
+  }
+  ul.list > li > div > a
+  {
+    height: 32px;
+  }
+  ul.list > li.chat.dial 
+  {
+    padding-right: 0px;
+  }
+  ul.list > li.chat, ul.list > li.dial 
+  {
+    padding-right: 0px;
+  }
+  ul.list > li.chat, ul.list > li.dial 
+  {
+    padding-right: 0px;
+  }
+
+  fieldset label
+  {
+    font-size: 14px;
+    font-weight: bolder!important;
+  }
+  select, input
+  {
+    height: 24px!important;
+    font-size: 14px!important;
+  }
+  button, .Chat textarea
+  {
+    font-size: 14px!important;
+  }
+  header > h1
+  {
+    font-size: 16px!important;
+  }
+  ul.popup > li
+  {
+    font-size: 14px;
+    height: 26px;
+  }
+
+  .myself ~ section.cardBox
+  {
+    top: 116px;
+  }
+  .Input a
+  {
+    top: 8px;
+  }
+
+  ul.list
+  {
+    line-height: 16px;
+    font-size: 14px;
+  }
+
+  ul.Chat > li > div > span, ul.Chat > li > div > label
+  {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1151px)
+{
+  section.content
+  {
+    left: 0px;
+    right: 0px;
+    width: auto;
+    bottom: 0px;
+  }
+  section.frame
+  {
+    font-size: 14px;
+  }
+
+  footer
+  {
+    display: none;
+  }
+  section#People
+  {
+    left: 4px;
+    top: 4px;
+    bottom: 4px;
+    right: 60.25%;
+    width: auto;
+    height: auto;
+    display: block;
+    border: solid 1px gray;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+  section#Chat, section#ChatInvite, section#Call
+  {
+    --left: 4px;
+    left: auto;
+    top: 4px;
+    bottom: 4px;
+    right: 25%;
+    width: 35%;
+    height: auto;
+    border: solid 1px gray;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  section#Mail
+  {
+    width: 24.5%;
+    right: 4px;
+    left: auto;
+    top: 4px;
+    height: 96px;
+    border: solid 1px gray;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: none;
+  }
+
+  section#Calls
+  {
+    display: block;
+  }
+  section#Calls
+  {
+    width: 24.5%;
+    right: 4px;
+    left: auto;
+    top: 4px;
+    height: auto;
+    bottom: 50%;
+    border: solid 1px gray;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  .ILINKPRO section#Mail
+  {
+    display: block;
+  }
+  .ILINKPRO section#Mail ul.list ul.list > li
+  {
+    width: 32%;
+    margin-left: 1%;
+    display: inline-block;
+  }
+  .ILINKPRO section#Calls, section#Devices, section#CallSettings
+  {
+    top: 104px;
+  }
+
+  section#People > header > ul:first-of-type, section#Calls > header > ul:first-of-type, section#Chats > header > ul:first-of-type, section#Mail > header > ul:first-of-type
+  {
+    display: none;
+  }
+
+  section#Chats
+  {
+    width: 24.5%;
+    right: 4px;
+    left: auto;
+    top: 50%;
+    margin-top: 4px;
+    bottom: 4px;
+    height: auto;
+    display: block;
+    border: solid 1px gray;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  section#Timeline
+  {
+    display: block;
+  }
+  section#Timeline > header > ul:first-of-type
+  {
+    display: none;
+  }
+
+  section#Timeline, section#TimelineSettings, section#Person, section#Groups, section#GroupEdit, section#Settings, section#Group, 
+  section#Locations, section#Interval, section#Notifications, section#CallPick, section#CallTransfer, section#Destination,
+  section#DevicesCustom, section#DevicesLabels, section#DevicesAV, section#KeyPad, section#Presence, 
+  section#GroupSource, section#GroupDynamic, section#GroupMembers, section#ChatAV,
+  section#Devices, section#CallSettings
+  {
+    width: 35%;
+    right: 25%;
+    left: auto;
+    top: 4px;
+    bottom: 4px;
+    height: auto;
+    border: solid 1px gray;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  section#Call.fullScreen
+  {
+    width: 100%;
+    right: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+  }
+
+  section.content > section.selected
+  {
+    z-index: 2;
+  }
+
+  ul.locations ul.list > li.single
+  {
+    display: inline-block;
+    width: 49%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+  }
+
+  section#People .cardBox ul.people ul.list > li
+  {
+    display: inline-block;
+    width: 24%;
+    min-width: 132px;
+    max-width: 180px;
+    height: 136px;
+    margin-right: 4px;
+    border-radius: 4px;
+    border: solid 1px transparent;
+    border-radius: 6px;
+  }
+
+  section#People .cardBox ul.people ul.list > li > a
+  {
+    background-size: 96px 96px;
+    background-position: 4px 4px;
+    padding: 100px 4px 4px 4px;
+  }
+  section#People .cardBox ul.people ul.list > li > a:before
+  {
+    height: 72px;
+  }
+
+  ul.list > li.chat > div, ul.list > li.dial > div
+  {
+    display: block;
+    width: 32px;
+    -height: 96px;
+    height: auto;
+    border-left: dotted 1px lightGray;
+    border-bottom: dotted 1px lightGray;
+    border-bottom-left-radius: 8px;
+  }
+  ul.list > li > div > a
+  {
+    height: 32px;
+  }
+  ul.list > li.chat.dial 
+  {
+    padding-right: 0px;
+  }
+  ul.list > li.chat, ul.list > li.dial 
+  {
+    padding-right: 0px;
+  }
+  ul.list > li.chat, ul.list > li.dial 
+  {
+    padding-right: 0px;
+  }
+
+  fieldset label
+  {
+    font-size: 14px;
+    font-weight: bolder!important;
+  }
+  select, input
+  {
+    height: 24px!important;
+    font-size: 14px!important;
+  }
+  button, .Chat textarea
+  {
+    font-size: 14px!important;
+  }
+  header > h1
+  {
+    font-size: 16px!important;
+  }
+  ul.popup > li
+  {
+    font-size: 14px;
+    height: 26px;
+  }
+
+  .myself ~ section.cardBox
+  {
+    top: 116px;
+  }
+  .Input a
+  {
+    top: 8px;
+  }
+
+  ul.list
+  {
+    line-height: 16px;
+    font-size: 14px;
+  }
+
+  ul.Chat > li > div > span, ul.Chat > li > div > label
+  {
+    padding-bottom: 0px;
+  }
+
+  ul.people li.group
+  {
+    margin-top: 8px;
+    border-top: solid 1px lightBlue;
+  }
+  ul.people li.pin
+  {
+    margin-top: 0px;
+    border-top: none;
+  }
+}
+
+
+section.password
+{
+  padding: 10px;
+  text-align: left;
+}
+
+section.password h1
+{
+  padding-top: 8px;
+  text-align: center;
+}
+
+section.password h1.user
+{
+  color: red;
+}
+
+section.password div
+{
+  padding: 0px;
+}
+
+section.password div div
+{
+  padding-top: 6px;
+}
+
+section.password div.action
+{
+  text-align: center;
+}
+
+.video > video
+{
+  width:            100%;
+  height:           100%;
+  background-color: #FFF;
+}
+
+.video > video.local
+{
+  width:            25%;
+  height:           25%;
+  background-color: #FFF;
+  position:         absolute;
+  bottom:           10px;
+  left:             10px;
+  z-index:          2;
+  border:           solid 1px lightGray;
+}

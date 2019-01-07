@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Settings of G-calize</title>
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="description" content="hellow G-calize!" id="extDes">
+<link type="text/css" rel="stylesheet" href="options.css">
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="options.js"></script>
+<script type="text/javascript" src="options_i18n.js"></script>
+</head>
+<!--
+
+/*------------------------------------------------
+G-calize : options.html
+Thank you using the Extension
+Copyright (C) Yo Wauke. All Rights Reserved.
+https://plus.google.com/104819699346433230202/
+--------------------------------------------------
+[じーからいず]って読むの。ゆたしくうにげーさびら。
+------------------------------------------------*/
+
+-->
+<body>
+
+<div id="header">
+	<h1 id="ExtName">G-calize</h1><sup id="ver">0.0.0</sup>
+	<ul class="ul_nav" id="hdr_tab">
+		<li i18n="tab_week" class="hdr_tab_li">Day of the week</li>
+		<li i18n="tab_hldy" class="hdr_tab_li">Holiday</li>
+	</ul><!--/.ul_nav-->
+	<button type="button" id="resetZ" i18n="btn_reset" class="red" style="font-size:80%;">Restore to Default</button>
+</div><!--/#header-->
+
+<div id="wrapper">
+	
+	<div class="cont">
+		
+<form id="form1" onsubmit="return false;">
+
+<input type="hidden" name="version" id="version" value="" />
+<input type="color" name="c_bd_tdy" id="c_bd_tdy" value="#333333" style="display:none;" />
+
+<fieldset>
+<legend i18n="week_TODAY">Today</legend>
+<p>
+<span class="labelfor" i18n="txt_color">font color</span><input type="color" name="c_tx_tdy" id="c_tx_tdy" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span><input type="color" name="c_bg_tdy" id="c_bg_tdy" value="" />
+<span class="labelfor mgl20" i18n="enable_c">Enable color</span>:
+<input type="range" name="flg_tdyU" id="flg_tdyU" class="switch" value="1" min="0" max="1">
+</p>
+</fieldset>
+
+<fieldset>
+<legend i18n="week_0">Sunday</legend>
+<p>
+<span class="labelfor" i18n="txt_color">font color</span><input type="color" name="c_tx_0" id="c_tx_0" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span><input type="color" name="c_bg_0" id="c_bg_0" value="" />
+</p>
+</fieldset>
+
+<fieldset>
+<legend i18n="week_1">Monday</legend>
+<p>
+<span class="labelfor" i18n="txt_color">font color</span><input type="color" name="c_tx_1" id="c_tx_1" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span><input type="color" name="c_bg_1" id="c_bg_1" value="" />
+</p>
+</fieldset>
+
+<fieldset>
+<legend i18n="week_2">Tuesday</legend>
+<p>
+<span class="labelfor" i18n="txt_color">font color</span><input type="color" name="c_tx_2" id="c_tx_2" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span><input type="color" name="c_bg_2" id="c_bg_2" value="" />
+</p>
+</fieldset>
+
+<fieldset>
+<legend i18n="week_3">Wednesday</legend>
+<p>
+<span class="labelfor" i18n="txt_color">font color</span><input type="color" name="c_tx_3" id="c_tx_3" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span><input type="color" name="c_bg_3" id="c_bg_3" value="" />
+</p>
+</fieldset>
+
+<fieldset>
+<legend i18n="week_4">Thursday</legend>
+<p>
+<span class="labelfor" i18n="txt_color">font color</span><input type="color" name="c_tx_4" id="c_tx_4" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span><input type="color" name="c_bg_4" id="c_bg_4" value="" />
+</p>
+</fieldset>
+
+<fieldset>
+<legend i18n="week_5">Friday</legend>
+<p>
+<span class="labelfor" i18n="txt_color">font color</span><input type="color" name="c_tx_5" id="c_tx_5" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span><input type="color" name="c_bg_5" id="c_bg_5" value="" />
+</p>
+</fieldset>
+
+<fieldset>
+<legend i18n="week_6">Saturday</legend>
+<p>
+<span class="labelfor" i18n="txt_color">font color</span><input type="color" name="c_tx_6" id="c_tx_6" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span><input type="color" name="c_bg_6" id="c_bg_6" value="" />
+</p>
+</fieldset>
+
+<p><button type="button" id="save1" class="blue" i18n="btn_save">Save</button></p>
+
+</form>
+
+	</div><!--/.cont-->
+	
+	<div class="cont">
+		
+<form id="form2" onsubmit="return false;">
+
+<!--
+
+Mozilla:
+outid3el0qkcrsuf89fltf7a4qbacgt9@import.calendar.google.com
+
+Apple iCal:
+ljlmu8n5vfvhdd49433j5qsqft011slh@import.calendar.google.com
+
+Google(NEW):
+ja.japanese#holiday@group.v.calendar.google.com
+
+Google(OLD):
+japanese__ja@holiday.calendar.google.com
+
+Private Calendar(by Author's)
+c2esdr1t7usr9g51n4b55vkr5s@group.calendar.google.com
+
+-->
+
+<p i18n="">
+NOTE: Holidays are saved in browser and works with <span id="Y_AGO">N</span> years ago to <span id="Y_AFT">N</span> years after.<br />
+then, Once a month automatically ReImport and be auto Update.
+</p>
+
+<fieldset>
+<legend i18n="slc_HDCAL">Select the Holidays Calendar</legend>
+<p>
+<span class="labelfor" style="min-width:150px;" i18n="frm_GOOGLE">by Google's</span>
+<select name="_no_SELECT_HLD" id="SELECT_HLD" style="width:320px;" disabled="disabled">
+<option value="no" selected="selected" i18n="slc_GLIST">Select a Calendar</option>
+</select>
+<button type="button" id="BTN_PLEASEOPENGCAL">Please Open Google Calendar</button>
+<span id="ICON_LOADING" class="_ldg" style="margin-left:10px;" title="Now finding Tab of GoogleCalendar">finding Google Clendar's tab...</span>
+</p>
+<p>
+<span class="labelfor" style="min-width:150px;" i18n="frm_CALID">by Calendar ID</span>
+<input type="text" name="_no_INPUT_CALID" id="INPUT_CALID" value="" style="min-width:412px;" />
+<button type="button" id="BTN_CALIDSELECT" i18n="btn_CIDIN">Select</button>
+</p>
+</fieldset>
+
+<fieldset>
+<legend i18n="E_LOADED">Selected and Imported Calendar</legend>
+<p><span class="labelfor" style="min-width:150px;" i18n="E_cal_NAME">Calendar Name</span>
+<input type="text" name="hld_name" id="hld_name" value="" style="width:412px;" readonly="readonly" /></p>
+
+<p><span class="labelfor" style="min-width:150px;" i18n="E_cal_ID">Calendar ID</span>
+<input type="text" name="hld_cid" id="hld_cid" value="" style="width:412px;" readonly="readonly" /></p>
+
+<p><span class="labelfor" style="min-width:150px;" i18n="E_cal_DATA">Imported Data</span>
+<input type="text" name="hld_info" id="hld_info" value="" style="width:412px;" readonly="readonly" />
+<button type="button" id="BTN_REIMPORT" i18n="btn_reimport">Re Import</button>
+</p>
+
+</fieldset>
+
+<!--
+<fieldset>
+<legend i18n="E_FREQUENCY">Auto-update frequency of the update</legend>
+<p><span class="labelfor" style="min-width:150px;" i18n="E_frequency">frequency of the update</span>
+<input type="text" wau="type:number,min:1,max:30,step:1" name="frequency" id="frequency" value=""/></p>
+</fieldset>
+-->
+<input type="hidden" name="frequency" id="frequency" value="" readonly="readonly" />
+<input type="hidden" name="hld_data" id="hld_data" value="" readonly="readonly" />
+<input type="hidden" name="hld_saved" id="hld_saved" value="" readonly="readonly" />
+
+<fieldset>
+<legend i18n="hld_color">Holiday Color</legend>
+<span class="labelfor" i18n="txt_color">font color</span>
+<input type="color" name="c_tx_h" id="c_tx_h" value="" />
+<span class="labelfor mgl20" i18n="bg_color">background color</span>
+<input type="color" name="c_bg_h" id="c_bg_h" value="" />
+
+<span class="labelfor mgl20" i18n="enable_c">Enable color</span>:
+<input type="range" name="flg_hld" id="flg_hld" class="switch" value="1" min="0" max="1">
+<input type="hidden" name="flg_htxt" id="flg_htxt" value="OFF" />
+</fieldset>
+
+<p><button type="button" id="save2" class="blue" i18n="btn_save">Save</button></p>
+
+</form>
+
+		
+	</div><!--/.cont-->
+	
+</div><!--/#wrapper-->
+
+
+<div id="footer">
+	<p>Author: piayo / <a href="https://plus.google.com/104819699346433230202/about" target="_blank" title="Auther's Google+ Page">Google+</a></p>
+</div><!--/#footer-->
+
+<!--
+<iframe src="https://www.google.com/calendar/hello" onerror="" id="HELLO" name="HELLO" width="0" height="0" border="0"></iframe>
+-->
+
+</body>
+</html>

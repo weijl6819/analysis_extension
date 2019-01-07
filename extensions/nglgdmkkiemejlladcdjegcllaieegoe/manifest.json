@@ -1,0 +1,26 @@
+{
+"update_url":"http://clients2.google.com/service/update2/crx",
+  "name": "Editor Lite",
+  "version": "0.9.9",
+  "description": "Edit HTML easily, right inside your browser.",
+  "options_page": "options.html",
+  "manifest_version": 2,
+  "icons": {
+    "16": "16icon.png",
+    "48": "48icon.png"
+  },
+"permissions": [
+  "unlimited_storage",
+  "tabs"
+],  
+  
+"background": {
+  "page": "background.html"
+},
+"browser_action": {
+  "default_icon": "48icon.png",
+  "default_popup": "index.html"
+}
+  
+
+}

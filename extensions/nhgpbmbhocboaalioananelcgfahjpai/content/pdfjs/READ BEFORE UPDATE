@@ -1,0 +1,28 @@
+After you update the current PDFjs Library (pdfjs-1.10.88-dist), follow the steps:
+1. Copy the file text_select.js from current library to the new library
+
+2. Replace in viewer.html file the line:
+<script src="viewer.js"></script>
+
+with the lines:
+<script src="viewer.js"></script>
+<script src="text_select.js"></script>
+
+3. Search for the rendered method that is called after the pdf is rendered
+(in the current version of the library, the methods is named webViewerPageRendered)
+4. After the lines:
+if (!pageView) {
+  return;
+}
+
+add the lines:
+
+/** call for the fix of the select text in Chrome issue **/
+if (navigator.userAgent.search("Chrome") >= 0) {
+  webViewerSelectStart();
+}
+/** call for the fix of the select text in Chrome issue **/
+
+You're done!
+
+SylvanPaper Dev Team

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-更多</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="__wesketch_export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-更多">
+            <g>
+                <path d="M6,2 C6.55222858,2 7,1.55224886 7,1 C7,0.447751141 6.55222858,-2.72872003e-14 6,-2.72872003e-14 C5.44776001,-2.72872003e-14 5,0.447751141 5,1 C5,1.55224886 5.44774858,2 6,2 Z M6,5 C5.44776001,5 5,5.44776 5,6 C5,6.55225141 5.44776,7 6,7 C6.55222858,7 7,6.55225141 7,6 C7,5.44776 6.55222858,5 6,5 Z M6,10 C5.44776001,10 5,10.4472691 5,11 C5,11.55224 5.44776,12 6,12 C6.55222858,12 7,11.55224 7,11 C6.99998858,10.4472691 6.55222858,10 6,10 Z" id="Shape" fill="#5C5C5C" fill-rule="nonzero"></path>
+                <rect id="12x12" opacity="0.400000006" x="0" y="0" width="12" height="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Secret Revealer - social advanced search engine</title>
+    <link rel="stylesheet" href="css/perfect-scrollbar.min.css" />
+    <link rel="stylesheet" href="css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" href="css/iframe.css" />
+  </head>
+
+  <body>
+    <div id="document-header">
+      <img id="logo" src="img/logo.png" title="Click and go to 'Search Target Profile' tab" class="hastooltip" />
+      <p>Secret Revealer <span id="version">Social Advanced Search Engine v2.0.4</span> <span id="author" title="About the developer..." class="hastooltip link-inverse">by Ideandro</span></p>
+    </div>
+
+    <div id="jssor_1">
+      <!-- Loading Screen -->
+      <div id="loading" data-u="loading">
+        <div id="loading-box-1"></div>
+        <div id="loading-box-gif"></div>
+      </div>
+      <div id="slides" data-u="slides">
+        <div>
+          <div class="slides-box">
+            <div class="slide-header slide-header-1">
+              <p>Search Target Profile</p>
+            </div>
+            <div class="slides-box-content">
+            
+              <div id="forms-box">
+                <!-- Open Current User Profile Friends -->
+                <form id="fbopenfriends-1" >
+                  <input id="fbopenfriends-1_button" value="GO" type="submit" />
+                  <span title="Use this command to search user's friend" class="link-inverse hastooltip">open current user's friends list</span>
+                  <br>
+                  <br>
+                </form>
+              
+                <!-- Account by Email -->
+                <form id="fbemail">
+                  <input id="fbemail_button" value="GO" type="submit" />
+                  <input id="fbemail_field_1" size="25" placeholder="Name or Surname" type="text" title="Email Address" />
+                  <span title="Search Facebook user by email" class="link-inverse hastooltip">search Facebook user by name</span>
+                  <br>
+                </form>
+                
+                <!-- Account by Cell-Working -->
+                <form id="fbcell1">
+                  <input id="fbcell1_button" type="submit" value="GO" />
+                  <input id="fbcell1_field_1" size="1" value="+" type="text" />
+                  <input id="fbcell1_field_2" size="2" value="1" type="text" />
+                  <input id="fbcell1_field_3" size="15" placeholder="Cell Number" type="text" title="Cell Number" />
+                  <span title='Search Facebook user by cell number' class='link-inverse hastooltip'>search Facebook user by cell number</span>
+                  <br>
+                </form>
+                
+                <!-- Account by Cell-Covert-Testing -->
+                <form id="fbcell2">
+                  <input id="fbcell2_button"  type="submit" value="GO" />
+                  <input id="fbcell2_field_1" type="text" size="1" value="+" />
+                  <input id="fbcell2_field_2" type="text" size="2" value="1" />
+                  <input id="fbcell2_field_3" type="text" size="15" placeholder="Cell Number" title="Cell Number" />
+                  <span title='Search Facebook user by covert cell number' class='link-inverse hastooltip'>search Facebook user by covert cell number</span>
+                  <br>
+                  <br>
+               </form>
+
+                <!-- Displays User Number -->
+                <form id="fbuserid">
+                  <input id="fbuserid_button"  type="submit" value="SEARCH" />
+                  <input id="fbuserid_field_1" type="text" size="25" placeholder="Facebook User Name" title="Facebook User Name" />
+                  <span title='Enter Facebook user name to search' class='link-inverse hastooltip'>enter Facebook user name to search</span>
+                  <br>
+                  <label><span id="leave-empty" class="hastooltip link-inverse" title="Leave empty to search current user profile ID">* leave empty to search current user profile ID</span></label>
+                </form>
+              </div>
+              <div id="target">
+                <img src="img/ok.png" />
+                <br>Target found!
+                <br>
+                <br>
+                <!-- Populate All -->
+                <form id="fb1" >
+                  <span class="hastooltip link-inverse" title="This is the Facebook Name of the user">Facebook User Name</span>
+                  <br><div id="fbUserNAME"></div>
+                  <span class="hastooltip link-inverse" title="This is the unique Facebook Profile Number of the user">Facebook User Profile Number (ID)</span>
+                  <br><input id="fb1_field_1" size="25" placeholder="Facebook User Profile Number" type="text" title="Facebook User Profile Number" />
+                  <br><br><input id="fb1_button" value="=> START! <=" type="submit" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <div data-u="thumb">Search Target Profile</div>
+        </div>
+        <div>
+          <div class="slides-box">
+            <div class="slide-header slide-header-2">
+              <p>General Info</p>
+            </div>
+            <div class="slides-box-content">
+
+              <!-- Target User Info -->
+              <div class="target-info">
+                Current target: <span class="target-info-name"></span>, ID:
+                <input class="target-info-id" type="text" value="" />
+              </div>
+            
+              <!-- Places Visited -->
+              <form id="fb2" >
+                <input id="fb2_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb2_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+                <span title='Visited places' class='link-inverse hastooltip'>visited places</span>
+                <br>
+              </form>
+
+              <!-- Recent Places Visited -->
+              <form id="fb3" >
+                <input id="fb3_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb3_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Recently visited places' class='link-inverse hastooltip'>recently visited places</span>
+                <br>
+				      </form>
+
+              <!-- Places Checked-In -->
+              <form id="fb4" >
+                <input id="fb4_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb4_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Checked-in places' class='link-inverse hastooltip'>checked-in places</span>
+                <br>
+				      </form>
+
+              <!-- Places Liked -->
+              <form id="fb5" >
+                <input id="fb5_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb5_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Liked places' class='link-inverse hastooltip'>liked places</span>
+                <br>
+				      </form>
+
+              <!-- Pages Liked -->
+              <form id="fb6" >
+                <input id="fb6_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb6_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Liked pages' class='link-inverse hastooltip'>liked pages</span>
+                <br>
+				      </form>
+              
+              <!-- Photos By User -->
+              <form id="fb7" >
+                <input id="fb7_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb7_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Photos by' class='link-inverse hastooltip'>photos by</span>
+                <br>
+				      </form>
+              
+              <!-- Photos Liked -->
+              <form id="fb8" >
+                <input id="fb8_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb8_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Liked photos' class='link-inverse hastooltip'>liked photos</span>
+                <br>
+				      </form>
+              
+              <!-- Photos Of Tagged -->
+              <form id="fb9" >
+                <input id="fb9_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb9_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Tagged photos-of' class='link-inverse hastooltip'>tagged photos-of</span>
+                <br>
+				      </form>
+              
+              <!-- Photo Comments -->
+              <form id="fb10" >
+                <input id="fb10_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb10_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Commented photo' class='link-inverse hastooltip'>commented photo</span>
+                <br>
+				      </form>
+
+              <!-- Apps Used -->
+              <form id="fb11" >
+                <input id="fb11_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb11_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Used apps' class='link-inverse hastooltip'>used apps</span>
+                <br>
+				      </form>
+
+              <!-- Videos -->
+              <form id="fb12" >
+                <input id="fb12_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb12_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Videos' class='link-inverse hastooltip'>videos</span>
+                <br>
+				      </form>
+
+              <!-- Videos Of User -->
+              <form id="fb13" >
+                <input id="fb13_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb13_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Tagged videos-of' class='link-inverse hastooltip'>tagged videos-of</span>
+                <br>
+				      </form>
+
+              <!-- Videos By User -->
+              <form id="fb14" >
+                <input id="fb14_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb14_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Videos by user' class='link-inverse hastooltip'>videos by user</span>
+                <br>
+				      </form>
+              
+              <!-- Videos Liked -->
+              <form id="fb15" >
+                <input id="fb15_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb15_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Liked videos' class='link-inverse hastooltip'>liked videos</span>
+                <br>
+				      </form>
+              
+              <!-- Video Comments -->
+              <form id="fb16" >
+                <input id="fb16_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb16_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Video comments' class='link-inverse hastooltip'>commented videos</span>
+                <br>
+				      </form>
+              
+              <!-- Future Event Invitations -->
+              <form id="fb17" >
+                <input id="fb17_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb17_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Future events invitations' class='link-inverse hastooltip'>future events invitations</span>
+                <br>
+				      </form>
+              
+              <!-- Events Invited by Year -->
+              <form id="fb18">
+                <input id="fb18_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb18_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+                <input id="fb18_field_2" class="slide-2-field-2" size="5" placeholder="Year" type="text" />
+                <span title='Past events invitations' class='link-inverse hastooltip'>past events invitations</span>
+                <br>
+              </form>
+              
+              <!-- Events Attended by Year -->
+              <form id="fb18b">
+                <input id="fb18b_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb18b_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+                <input id="fb18b_field_2" class="slide-2-field-2" size="5" placeholder="Year" type="text" />
+                <span title='Attended events' class='link-inverse hastooltip'>attended events</span>
+                <br>
+              </form>
+              
+              <!-- Posts by User -->
+              <form id="fb19" >
+                <input id="fb19_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb19_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Posts by' class='link-inverse hastooltip'>posts by</span>
+                <br>
+				      </form>
+              
+              <!-- Posts by Year -->
+              <form id="fb19b">
+                <input id="fb19b_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb19b_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+                <input id="fb19b_field_2" class="slide-2-field-2" size="5" placeholder="Year" type="text" />
+                <span title='Posts by year' class='link-inverse hastooltip'>posts by year</span>
+                <br>
+              </form>
+              
+              <!-- Posts Tagged -->
+              <form id="fb20" >
+                <input id="fb20_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb20_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Tagged posts' class='link-inverse hastooltip'>tagged posts</span>
+                <br>
+				      </form>
+              
+              <!-- Employers -->
+              <form id="fb21" >
+                <input id="fb21_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb21_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Employers' class='link-inverse hastooltip'>employers</span>
+                <br>
+				      </form>
+              
+              <!-- Groups -->
+              <form id="fb22" >
+                <input id="fb22_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb22_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Groups' class='link-inverse hastooltip'>groups</span>
+                <br>
+				      </form>
+              
+              <!-- Co-Workers -->
+              <form id="fb23" >
+                <input id="fb23_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb23_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Co-workers' class='link-inverse hastooltip'>co-workers</span>
+                <br>
+				      </form>
+              
+              <!-- Friends -->
+              <form id="fb24" >
+                <input id="fb24_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb24_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Friends' class='link-inverse hastooltip'>friends</span>
+                <br>
+				      </form>
+              
+              <!-- Followers -->
+              <form id="fb25" >
+                <input id="fb25_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb25_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Followers' class='link-inverse hastooltip'>followers</span>
+                <br>
+				      </form>
+              
+              <!-- Relatives -->
+              <form id="fb26" >
+                <input id="fb26_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb26_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Relatives' class='link-inverse hastooltip'>relatives</span>
+                <br>
+				      </form>
+              
+              <!-- Friends Pages Liked -->
+              <form id="fb27" >
+                <input id="fb27_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fb27_field_1" class="slide-2-field-1" size="25" placeholder="Facebook User Number" type="text" />
+   					    <span title='Liked friends pages' class='link-inverse hastooltip'>liked friends pages</span>
+                <br>
+				      </form>
+              
+              <!-- Open All 25 fields in Windows -->
+              <form id="fball" >
+                <input id="fball_button"  class="slide-2-field-button" value="GO" type="submit" />
+                <input id="fball_field_1" class="slide-2-field-1" placeholder="Facebook User Number" size="25" type="text" />
+                <span title='Opens 25 windows, must allow pop-ups' class='link-inverse hastooltip'>open all *</span>
+                <br>
+                <label>* opens 25 windows, must allow pop-ups</label>
+              </form>
+              
+            </div>
+          </div>
+          <div data-u="thumb">General Info</div>
+        </div>
+        <div>
+          <div class="slides-box">
+            <div class="slide-header slide-header-3">
+              <p>Multiple Target Profiles</p>
+            </div>
+            <div class="slides-box-content">
+            
+              <!-- Target User Info -->
+              <div class="target-info">
+                Current target: <span class="target-info-name"></span>, ID:
+                <input class="target-info-id" type="text" value="" />
+              </div>
+              
+              <!-- Open Current User Profile Friends -->
+              <form id="fbopenfriends-2" >
+                <input id="fbopenfriends-2_button" class="slide-3-field-button" value="GO" type="submit" />
+                <span title="Use this command to search user's friend" class='link-inverse hastooltip'>open current user's friends list</span>
+                <br>
+              </form>
+              
+              <div class="panel-description">              
+                <p>Use this panel to search common informations between two Facebook Users: first search FB User Number 1, then enter in the field FB User Number 2 and press GO.</p>
+              </div>
+              
+              <!-- FB User Number 2 -->
+              <form id="fbcopyuserid2" >
+                <input id="fbcopyuserid2_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fbcopyuserid2_field_1" class="slide-3-field-1" placeholder="FB User Number 2" size="25" type="text" />
+                <span title='Copy FB User Number 2 in all fields below' class='link-inverse hastooltip'> copy FB User Number 2 in all fields below</span>
+                <br>
+              </form>
+              
+              <!-- Common Details -->
+              <form id="fb28" >
+                <input id="fb28_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb28_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb28_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common details' class='link-inverse hastooltip'>common details</span>
+                <br>
+              </form>
+              
+              <!-- Common Places -->
+              <form id="fb29" >
+                <input id="fb29_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb29_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb29_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common places' class='link-inverse hastooltip'>common places</span>
+                <br>
+              </form>
+              
+              <!-- Common Check-Ins -->
+              <form id="fb30" >
+                <input id="fb30_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb30_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb30_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common check-ins' class='link-inverse hastooltip'>common check-ins</span>
+                <br>
+              </form>
+              
+              <!-- Common Likes -->
+              <form id="fb31" >
+                <input id="fb31_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb31_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb31_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common likes' class='link-inverse hastooltip'>common likes</span>
+                <br>
+              </form>
+              
+              <!-- Common Photo Tags -->
+              <form id="fb32" >
+                <input id="fb32_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb32_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb32_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common photo tags' class='link-inverse hastooltip'>common photo tags</span>
+                <br>
+              </form>
+              
+              <!-- Common Photo Likes -->
+              <form id="fb33" >
+                <input id="fb33_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb33_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb33_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common photo likes' class='link-inverse hastooltip'>common photo likes</span>
+                <br>
+              </form>
+              
+              <!-- Common Photo Comments -->
+              <form id="fb34" >
+                <input id="fb34_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb34_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb34_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common photo comments' class='link-inverse hastooltip'>common photo comments</span>
+                <br>
+              </form>
+              
+              <!-- Common Video Tags -->
+              <form id="fb35" >
+                <input id="fb35_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb35_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb35_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common video tags' class='link-inverse hastooltip'>common video tags</span>
+                <br>
+              </form>
+              
+              <!-- Common Video Likes -->
+              <form id="fb36" >
+                <input id="fb36_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb36_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb36_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common video likes' class='link-inverse hastooltip'>common video likes</span>
+                <br>
+              </form>
+              
+              <!-- Common Video Comments -->
+              <form id="fb37" >
+                <input id="fb37_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb37_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb37_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common video comments' class='link-inverse hastooltip'>common video comments</span>
+                <br>
+              </form>
+              
+              <!-- Common Post Comments -->
+              <form id="fb39" >
+                <input id="fb39_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb39_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb39_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common post comments' class='link-inverse hastooltip'>common post comments</span>
+                <br>
+              </form>
+              
+              <!-- Common Groups -->
+              <form id="fb40" >
+                <input id="fb40_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb40_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb40_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Common groups' class='link-inverse hastooltip'>common groups</span>
+                <br>
+              </form>
+            
+              <!-- Common Events -->
+              <form id="fb38" >
+                <input id="fb38_button"  class="slide-3-field-button" value="GO" type="submit" />
+                <input id="fb38_field_1" class="slide-3-field-1" size="13" placeholder="FB User Number 1" type="text" />
+                <input id="fb38_field_2" class="slide-3-field-2" size="13" placeholder="FB User Number 2" type="text" />
+                <span title='Opens 7 windows, must allow pop-ups' class='link-inverse hastooltip'>common events *</span>
+                <br>
+                <label>* opens 7 windows, must allow pop-ups</label>
+              </form>
+              
+            </div>
+          </div>
+          <div data-u="thumb">Multiple Target Profiles</div>
+        </div>
+        <div>
+          <div class="slides-box">
+            <div class="slide-header slide-header-4">
+              <p>Friend's Info</p>
+            </div>          
+            <div class="slides-box-content">
+
+              <!-- Target User Info -->
+              <div class="target-info">
+                Current target: <span class="target-info-name"></span>, ID:
+                <input class="target-info-id" type="text" value="" />
+              </div>
+              
+              <!-- Open Current User Profile Friends -->
+              <form id="fbopenfriends-3" >
+                <input id="fbopenfriends-3_button" class="slide-4-field-button" value="GO" type="submit" />
+                <span title="Use this command to search user's friend" class='link-inverse hastooltip'>open current user's friends list</span>
+                <br>
+                <br>
+              </form>
+              
+              <!-- Friends by Location -->
+              <form id="fb41">
+                <input id="fb41_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb41_field_1" class="slide-4-field-1" size="13" placeholder="Friend User Number" type="text" title="Friend User Number" />
+                <input id="fb41_field_2" class="slide-4-field-2" size="13" placeholder="Location Page ID" type="text" />
+                <span title='Friends by location' class='link-inverse hastooltip'>friends by location</span>
+                <br>
+              </form>
+            
+              <!-- Friends by Likes -->
+              <form id="fb42">
+                <input id="fb42_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb42_field_1" class="slide-4-field-1" size="13" placeholder="Friend User Number" type="text" title="Friend User Number" />
+                <input id="fb42_field_2" class="slide-4-field-2" size="13" placeholder="Likes Page ID" type="text" />
+                <span title='Friends by likes' class='link-inverse hastooltip'>friends by likes</span>
+                <br>
+              </form>
+            
+              <!-- Friends by Employee -->
+              <form id="fb43">
+                <input id="fb43_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb43_field_1" class="slide-4-field-1" size="13" placeholder="Friend User Number" type="text" title="Friend User Number" />
+                <input id="fb43_field_2" class="slide-4-field-2" size="13" placeholder="Employee Page ID" type="text" />
+                <span title='Friends by employee' class='link-inverse hastooltip'>friends by employee</span>
+                <br>
+                <br>
+              </form>
+            
+              <!-- Photos Liked by Friends -->
+              <form id="fb44">
+                <input id="fb44_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb44_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Photos liked by friends' class='link-inverse hastooltip'>photos liked by friends</span>
+                <br>
+              </form>
+            
+              <!-- Photos Comments by Friends -->
+              <form id="fb45">
+                <input id="fb45_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb45_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Photos commented by friends' class='link-inverse hastooltip'>photos commented by friends</span>
+                <br>
+              </form>
+            
+              <!-- Photos of Friends -->
+              <form id="fb46">
+                <input id="fb46_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb46_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Photos of friends' class='link-inverse hastooltip'>photos of friends</span>
+                <br>
+              </form>
+            
+              <!-- Videos liked by Friends -->
+              <form id="fb47">
+                <input id="fb47_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb47_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Videos liked by friends' class='link-inverse hastooltip'>videos liked by friends</span>
+                <br>
+              </form>
+            
+              <!-- Videos Comments by Friends -->
+              <form id="fb48">
+                <input id="fb48_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb48_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Videos commented by friends' class='link-inverse hastooltip'>videos commented by friends</span>
+                <br>
+              </form>
+            
+              <!-- Videos of Friends -->
+              <form id="fb49">
+                <input id="fb49_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb49_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Videos of friends' class='link-inverse hastooltip'>videos of friends</span>
+                <br>
+              </form>
+            
+              <!-- Events Attended by Friends -->
+              <form id="fb50">
+                <input id="fb50_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb50_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Events attended by friends' class='link-inverse hastooltip'>events attended by friends</span>
+                <br>
+              </form>
+            
+              <!-- Apps Used by Friends -->
+              <form id="fb51">
+                <input id="fb51_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb51_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Apps used by friends' class='link-inverse hastooltip'>apps used by friends</span>
+                <br>
+              </form>
+            
+              <!-- Posts by Friends -->
+              <form id="fb52">
+                <input id="fb52_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb52_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Posts by friends' class='link-inverse hastooltip'>posts by friends</span>
+                <br>
+              </form>
+            
+              <!-- Posts Comments by Friends -->
+              <form id="fb53">
+                <input id="fb53_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb53_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Posts commented by friends' class='link-inverse hastooltip'>posts commented by friends</span>
+                <br>
+              </form>
+            
+              <!-- Posts Tagged with Friends -->
+              <form id="fb54">
+                <input id="fb54_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb54_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Posts with tagged friends' class='link-inverse hastooltip'>posts with tagged friends</span>
+                <br>
+              </form>
+            
+              <!-- Check-Ins by Friends -->
+              <form id="fb55">
+                <input id="fb55_button"  class="slide-4-field-button" value="GO" type="submit" />
+                <input id="fb55_field_1" class="slide-4-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <span title='Check-ins by friends' class='link-inverse hastooltip'>check-ins by friends</span>
+                <br>
+              </form>
+            
+            </div>
+          </div>
+          <div data-u="thumb">Friend's Info</div>
+        </div>
+        <div>
+          <div class="slides-box">
+            <div class="slide-header slide-header-5">
+              <p>Additional Information</p>
+            </div>          
+            <div class="slides-box-content">
+
+              <!-- Target User Info -->
+              <div class="target-info">
+                Current target: <span class="target-info-name"></span>, ID:
+                <input class="target-info-id" type="text" value="" />
+              </div>
+              
+              <!-- Open Current User Profile Friends -->
+              <form id="fbopenfriends-4" >
+                <input id="fbopenfriends-4_button" class="slide-5-field-button" value="GO" type="submit" />
+                <span title="Use this command to search user's friend" class='link-inverse hastooltip'>open current user's friends list</span>
+                <br>
+              </form>
+
+              <div class="panel-description">              
+                <p>Use this field to search keywords into user's posts. It's useful too, if you need to find your old posts.</p>
+              </div>
+              
+              <!-- Keyword by User -->
+              <form id="fb56">
+                <input id="fb56_button"  class="slide-5-field-button" value="GO" type="submit" />
+                <input id="fb56_field_1" class="slide-5-field-1" size="13" placeholder="Facebook User Number" type="text" />
+                <input id="fb56_field_2" class="slide-5-field-2" size="13" placeholder="Keywords" type="text" />
+                <span title='Posts by keywords' class='link-inverse hastooltip'>posts by keywords</span>
+                <br>
+              </form>
+
+              <div class="panel-description">              
+                <p>Use this field to get JSON results: useful for developer.</p>
+              </div>
+              
+              <!-- Pipl API Info -->
+              <form id="fb57">
+                <input id="fb57_button"  class="slide-5-field-button" value="GO" type="submit" />
+                <input id="fb57_field_1" class="slide-5-field-2" size="13" placeholder="Facebook User Name" type="text" />
+                <span title='pipl.com api info' class='link-inverse hastooltip'>pipl.com api info</span>
+                <br>
+              </form>
+
+              <div class="panel-description">              
+                <p>Use this field to search on the Internet Archive.</p>
+              </div>
+            
+              <!-- Wayback Archives -->
+              <form id="fb58">
+                <input id="fb58_button"  class="slide-5-field-button" value="GO" type="submit" />
+                <input id="fb58_field_1" class="slide-5-field-1" size="13" placeholder="Facebook User Name" type="text" />
+                <span title='wayback.com archives' class='link-inverse hastooltip'>wayback.com archives</span>
+                <br>
+              </form>
+            
+            </div>
+          </div>
+          <div data-u="thumb">Additional Information</div>
+        </div>
+        <div>
+          <div class="slides-box">
+            <div class="slide-header slide-header-6">
+              <p>Locate Target Profile</p>
+            </div>          
+            <div class="slides-box-content">
+
+              <!-- Target User Info -->
+              <div class="target-info">
+                Current target: <span class="target-info-name"></span>, ID:
+                <input class="target-info-id" type="text" value="" />
+              </div>
+              
+              <!-- Named people -->
+              <form id="fb59">
+                <input id="fb59_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb59_field_1" class="slide-6-field-1" size="13" placeholder="Named people..." type="text" />
+                <span title='Named people...' class='link-inverse hastooltip'>named people</span>
+                <br>
+              </form>
+            
+              <!-- Named people - who live in -->
+              <form id="fb60">
+                <input id="fb60_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb60_field_1" class="slide-6-field-1" size="13" placeholder="Named people..." type="text" />
+                <input id="fb60_field_2" class="slide-6-field-2" size="13" placeholder="who lives in..." type="text" />
+                <br>
+              </form>
+            
+              <!-- Named people - who lived in -->
+              <form id="fb61">
+                <input id="fb61_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb61_field_1" class="slide-6-field-1" size="13" placeholder="Named people..." type="text" />
+                <input id="fb61_field_2" class="slide-6-field-2" size="13" placeholder="who lived in..." type="text" />
+                <br>
+              </form>
+            
+              <!-- Named people - who like -->
+              <form id="fb62">
+                <input id="fb62_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb62_field_1" class="slide-6-field-1" size="13" placeholder="Named people..." type="text" />
+                <input id="fb62_field_2" class="slide-6-field-2" size="13" placeholder="who likes..." type="text" />
+                <br>
+              </form>
+            
+              <!-- Named people - birth year -->
+              <form id="fb63">
+                <input id="fb63_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb63_field_1" class="slide-6-field-1" size="13" placeholder="Named people..." type="text" />
+                <input id="fb63_field_2" class="slide-6-field-2" size="13" placeholder="birth year..." type="text" />
+                <br>
+              </form>
+            
+              <!-- Named people - between age - and age -->
+              <form id="fb64">
+                <input id="fb64_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb64_field_1" class="slide-6-field-1" size="13" placeholder="Named people..." type="text" />
+                <input id="fb64_field_2" class="slide-6-field-2" size="13" placeholder="between age..." type="text" />
+                <input id="fb64_field_3" class="slide-6-field-3" size="13" placeholder="and..." type="text" />
+                <br>
+              </form>
+              <!-- Named people - who work at -->
+              <form id="fb65">
+                <input id="fb65_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb65_field_1" class="slide-6-field-1" size="13" placeholder="Named people..." type="text" />
+                <input id="fb65_field_2" class="slide-6-field-2" size="13" placeholder="who works at..." type="text" />
+                <br>
+              </form>
+            
+              <!-- Named people - who worked at -->
+              <form id="fb66">
+                <input id="fb66_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb66_field_1" class="slide-6-field-1" size="13" placeholder="Named people..." type="text" />
+                <input id="fb66_field_2" class="slide-6-field-2" size="13" placeholder="who worked at..." type="text" />
+                <br>
+                <br>
+              </form>
+            
+              <!-- People who live in -->
+              <form id="fb67">
+                <input id="fb67_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb67_field_1" class="slide-6-field-1" size="13" placeholder="People who live in..." type="text" />
+                <span title='People who live in...' class='link-inverse hastooltip'>people who live in</span>
+                <br>
+              </form>
+            
+              <!-- People who lived in -->
+              <form id="fb68">
+                <input id="fb68_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb68_field_1" class="slide-6-field-1" size="13" placeholder="People who lived in..." type="text" />
+                <span title='People who lived in...' class='link-inverse hastooltip'>people who lived in</span>
+                <br>
+              </form>
+            
+              <!-- People who live in - and Like -->
+              <form id="fb69">
+                <input id="fb69_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb69_field_1" class="slide-6-field-1" size="13" placeholder="People who live in..." type="text" />
+                <input id="fb69_field_2" class="slide-6-field-2" size="13" placeholder="and like..." type="text" />
+                <br>
+              </form>
+            
+              <!-- People who live in - birth year -->
+              <form id="fb70">
+                <input id="fb70_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb70_field_1" class="slide-6-field-1" size="13" placeholder="People who live in..." type="text" />
+                <input id="fb70_field_2" class="slide-6-field-2" size="13" placeholder="birth year..." type="text" />
+                <br>
+              </form>
+            
+              <!-- People who live in - and work at -->
+              <form id="fb71">
+                <input id="fb71_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb71_field_1" class="slide-6-field-1" size="13" placeholder="People who live in..." type="text" />
+                <input id="fb71_field_2" class="slide-6-field-2" size="13" placeholder="and work at..." type="text" />
+                <br>
+              </form>
+            
+              <!-- People who live in - and worked at -->
+              <form id="fb72">
+                <input id="fb72_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb72_field_1" class="slide-6-field-1" size="13" placeholder="People who live in..." type="text" />
+                <input id="fb72_field_2" class="slide-6-field-2" size="13" placeholder="and worked at..." type="text" />
+                <br>
+                <br>
+              </form>
+            
+              <!-- People who like -->
+              <form id="fb73">
+                <input id="fb73_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb73_field_1" class="slide-6-field-1" size="13" placeholder="People who like..." type="text" />
+                <span title='People who like...' class='link-inverse hastooltip'>people who like</span>
+                <br>
+              </form>
+              
+              <!-- People who like - birth year -->
+              <form id="fb74">
+                <input id="fb74_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb74_field_1" class="slide-6-field-1" size="13" placeholder="People who like..." type="text" />
+                <input id="fb74_field_2" class="slide-6-field-2" size="13" placeholder="birth year..." type="text" />
+                <br>
+              </form>
+            
+              <!-- People who like - and work at -->
+              <form id="fb75">
+                <input id="fb75_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb75_field_1" class="slide-6-field-1" size="13" placeholder="People who like..." type="text" />
+                <input id="fb75_field_2" class="slide-6-field-2" size="13" placeholder="and work at..." type="text" />
+                <br>
+              </form>
+            
+              <!-- People who like - and worked at -->
+              <form id="fb76">
+                <input id="fb76_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb76_field_1" class="slide-6-field-1" size="13" placeholder="People who like..." type="text" />
+                <input id="fb76_field_2" class="slide-6-field-2" size="13" placeholder="and worked at..." type="text" />
+                <br>
+                <br>
+              </form>
+            
+              <!-- People who work at -->
+              <form id="fb77">
+                <input id="fb77_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb77_field_1" class="slide-6-field-1" size="13" placeholder="People who work at..." type="text" />
+                <span title='People who work at...' class='link-inverse hastooltip'>people who work at</span>
+                <br>
+              </form>
+            
+              <!-- People who worked at -->
+              <form id="fb78">
+                <input id="fb78_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb78_field_1" class="slide-6-field-1" size="13" placeholder="People who worked at..." type="text" />
+                <span title='People who worked at...' class='link-inverse hastooltip'>people who worked at</span>
+                <br>
+              </form>
+            
+              <!-- School attended -->
+              <form id="fb79">
+                <input id="fb79_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb79_field_1" class="slide-6-field-1" size="13" placeholder="Attended school..." type="text" />
+                <span title='Attended school...' class='link-inverse hastooltip'>attended school</span>
+                <br>
+              </form>
+            
+              <!-- People who visited -->
+              <form id="fb80">
+                <input id="fb80_button"  class="slide-6-field-button" value="GO" type="submit" />
+                <input id="fb80_field_1" class="slide-6-field-1" size="13" placeholder="People who visited..." type="text" />
+                <span title='People who visited...' class='link-inverse hastooltip'>people who visited</span>
+                <br>
+              </form>
+
+            </div>
+          </div>
+          <div data-u="thumb">Locate Target Profile</div>
+        </div>
+        <div>
+          <div class="slides-box">
+            <div class="slide-header slide-header-7">
+              <p>Frequently Asked Questions</p>
+            </div>          
+            <div class="slides-box-content">
+              <div id="accordion">
+                <div class="level">
+                
+                  <a class="opening" href="#">Is Secret Revealer - social advanced search engine free?</a>
+                  <div class="expanded">
+                    <p>Secret Revealer - social advanced search engine has been designed as a free tool that aims to create awareness in society about the erosion of privacy. From the beginning I intended the tool to be used at no cost. If you want to support the development of this Facebook tool, <span id="txt-donate" class="link">please donate</span> &#10084; !</p>
+                  </div><!--/.expanded-->
+                  <a class="opening" href="#">Is this extension affiliated with Facebook?</a>
+                  <div class="expanded">
+                    <p>No, the extension does not affiliated, associated, authorized, endorsed by, or in any way officially connected with Facebook.. It's made from user for users.</p>
+                  </div><!--/.expanded-->
+                  <a class="opening" href="#">What permissions does the extension require?</a>
+                  <div class="expanded">
+                    <p>The extension doesn't need any permissions.</p>
+                  </div><!--/.expanded-->
+                  <a class="opening" href="#">Will you store my data somewhere?</a>
+                  <div class="expanded">
+                    <p>No. Your data are stored locally on your own computer. The extension does not send any data.</p>
+                  </div><!--/.expanded-->
+                  <a class="opening" href="#">Are you using Facebook’s Graph API?</a>
+                  <div class="expanded">
+                    <p>The extension doesn't use Facebook’s API. It looks at the rendered front-end (the DOM) of the Facebook page in your browser – the HTML elements and their content – and with JavaScript it can detect the user profile number and other data.</p>
+                  </div><!--/.expanded-->
+                  <a class="opening" href="#">Will you expand to other browsers?</a>
+                  <div class="expanded">
+                    <p>I believe that user awareness is very important so I hope to have the bandwidth to expand to more browsers. Currently the extension is also available for Google Chrome. If you want to support the development of this Facebook tool, <span id="txt-donate" class="link">please donate</span> &#10084; !</p>
+                  </div><!--/.expanded-->
+                  
+                  <a class="opening" href="#">BASIC TERMS OF USE</a>
+                  <div class="expanded">
+                    <p>This Secret Revealer - social advanced search engine End-User License Agreement (the “EULA” or “Agreement”) is a legal agreement between you and Andrea Millozzi (the “Developer”), the IT-based legal owner of the Developer’s products and services - together with any successor Secret Revealer - social advanced search engine extensions, the “Services” -, and provides the terms and conditions by which you may use the Services, including any associated media, scripts, printed materials, and online or electronic documentation. This EULA supersedes any other agreement or understanding with respect to its subject matter. By downloading, installing and using the Services, you agree to the terms of this EULA. The Secret Revealer - social advanced search engine Product Privacy Statement is subject to and incorporated into this EULA.</p>
+                    <p>The Services are the intellectual property of the Developer and are protected by copyright and trademark laws and international copyright treaties, as well as other intellectual property laws. Intellectual property, includes, but is not limited to computer or software code, scripts, design elements, graphics, interactive features, artwork, text communication, tracker libraries, script libraries, trade Secret, and any other content or work product that may be found in the Services. All trademarks, service marks, and trade names in this site are the marks of the respective owner(s), and any unauthorized use thereof is strictly prohibited.</p>
+                    <div class="level">
+                      <a class="opening" href="#">1. Grant of License</a>
+                      <div class="expanded">
+                        <p>Subject to the terms of this EULA, and in the case of Secret Revealer - social advanced search engine’s Browser Extension, the Developer grants to you a limited, worldwide, non-exclusive, royalty-free, revocable, non-commercial license only to: (i) download the Services to a computer or device via a web browser, (ii) use the Services for your personal use or enjoyment.</p>
+                        <p>Subject to the terms of this EULA, and In the case of Secret Revealer - social advanced search engine’s commercial products, the Developer grants to you a limited, worldwide, non-exclusive, royalty-free, revocable, commercial license only to use the Services for lawful, commercial purposes.</p>
+                        <p>The Developer does not grant you any other rights whatsoever, in either the Secret Revealer - social advanced search engine Browser Extension or its commercial products in relation to the Services. All other rights are expressly reserved by the Developer.</p>
+                      </div>
+                      <a class="opening" href="#">2. Other Limitations and Prohibited Uses</a>
+                      <div class="expanded">
+                        <p>Unless you have express written permission from the Developer, you may not: (i) use the Services in any way that violates this EULA, (ii) distribute the Services or any portion thereof to any third parties, (iii) disassemble or reverse engineer the Services or any part or portion thereof for any purpose, other than for reviewing the code for personal review, (iv) adapt, edit, change, modify, transform, publish, republish, distribute, or redistribute the Services or any elements, portions, or parts thereof, without limitation, in any form or media, (v) use any automated data collection methods, data mining, robots, scraping or any data gathering methods of any kind on the Services, (vi) rent, lease, or lend the Services to any third party, (vii) design, build, or cause to be designed or built any competing or derivative product or service.</p>
+                      </div>
+                      <a class="opening" href="#">3. Support Services</a>
+                      <div class="expanded">
+                        <p>The Developer may provide you with support services, and any supplemental software code provided to you as part of those services shall be considered part of the Services and are subject to the terms and conditions of this EULA. You must comply with all applicable laws regarding use of the Services.</p>
+                      </div>
+                      <a class="opening" href="#">4. Enforcement of Copyright and Protection of Intellectual Property</a>
+                      <div class="expanded">
+                        <p>If the Developer discovers that you have used its Services or other protected intellectual property in contravention of the terms of this EULA, the Developer may, in its sole discretion, revoke this license and bring legal proceedings against you, seeking all available remedies, including monetary damages, injunctive relief, and legal fees and costs. If you become aware of any use of the Services or protected intellectual property that contravenes or may contravene the terms of this EULA, immediately report this by contact the Developer.</p>
+                      </div>
+                      <a class="opening" href="#">5. Termination</a>
+                      <div class="expanded">
+                        <p>Your right to use the Services continues until terminated by the Developer, which may terminate this Agreement and your license to use the Services at any time, without cause, without notice, and for any reason whatsoever. You may terminate this Agreement at any time by uninstalling the Services. This Agreement will automatically terminate if you fail to comply with any of the terms of this EULA. Upon termination, you agree to stop using and to uninstall the Services.</p>
+                      </div>
+                      <a class="opening" href="#">6. No Warranties</a>
+                      <div class="expanded">
+                        <p>The Services are provided “AS IS” without warranty of any kind. The Developer does not warrant or assume responsibility for the accuracy or completeness of any information, text, graphics, links or other items contained within the Services. The Developer makes no warranties respecting any harm that may be caused by the transmission of any kind of computer virus.</p>
+                      </div>
+                      <a class="opening" href="#">7. Limitation of Liability</a>
+                      <div class="expanded">
+                        <p>In no event shall the Developer be liable for any damages (including, without limitation, lost profits, business interruption, or loss of data) rising out of use of or inability to use the Services. Notwithstanding anything to the contrary, in no event will the Developer be liable for indirect, special, incidental, consequential (including lost profit), punitive, exemplary, or other damages based in contract, tort or otherwise. The Developer shall have no liability with respect to the content or operation of the Services.</p>
+                      </div>
+                      <a class="opening" href="#">8. Governing Law and Jurisdiction</a>
+                      <div class="expanded">
+                        <p>You agree that any action at law or in equity arising out of or relating to these Terms of Use shall be filed only in the local courts located in Rome, Italy, and you hereby consent and submit to the personal jurisdiction of such courts for the purposes of litigating any such action.</p>
+                      </div>
+                    </div>
+                  </div><!--/.expanded-->
+                  
+                </div><!--/.level-->
+              </div><!--/#accordion-->
+            </div>
+          </div>
+          <div data-u="thumb">Frequently Asked Questions</div>
+        </div>
+        <div>
+          <div class="slides-box">
+            <div class="slide-header slide-header-8">
+              <p>About Extension</p>
+            </div>          
+            <div class="slides-box-content center">
+              <div id="about-box">
+                <p>Secret Revealer - social advanced search engine has been designed as a free tool that aims to create awareness in society about the erosion of privacy. From the beginning I intended the tool to be used at no cost.</p>
+                <p>If you like my job and find it useful, consider to do a donation to help keep it up-to-date and supported &#10084; !</p>
+                <div id="img-donate" title="Thanks! ♥‿♥"></div>
+                <div id="img-chrome"><span id="link-addon" title="Go to Secret Revealer - Social Advanced Search Engine Chrome Web Extension page" class="link-inverse hastooltip">Go to Secret Revealer Chrome Web Extension page</span></div>
+                <i>Disclaimer: no personal data is stored. This tool does not affiliated, associated, authorized, endorsed by, or in any way officially connected with Facebook.</i>
+              </div>
+            </div>
+          </div>
+          <div data-u="thumb">About Extension</div>
+        </div>
+      </div>
+      
+      <!-- Thumbnail Navigator -->
+      <div class="jssort12" data-u="thumbnavigator">
+        <div id="arrows">
+          <div id="arrow-left" title="previous tab" class="hastooltip"></div>
+          <div id="arrow-right" title="next tab" class="hastooltip"></div>
+        </div>
+        <!-- Thumbnail Item Skin Begin -->
+        <div class="slides" data-u="slides">
+          <div class="p" data-u="prototype">
+            <div class="w">
+              <div class="c" data-u="thumbnailtemplate"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Thumbnail Item Skin End -->
+      </div>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+
+    <div id="wingrip" class="ui-resizable-handle ui-resizable-w hastooltip" title="Drag to change window's width"></div>
+    
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider-22.2.16.mini.CUSTOM.js"></script>
+    <script type="text/javascript" src="js/jq-cling.js"></script>
+    <script type="text/javascript" src="js/iframe.min.js"></script>    
+  </body>
+
+</html>

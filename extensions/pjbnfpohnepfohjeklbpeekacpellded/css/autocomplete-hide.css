@@ -1,0 +1,7 @@
+div.aJS {
+  visibility: hidden;
+}
+
+div#doclist > div input {
+  visibility: hidden;
+}

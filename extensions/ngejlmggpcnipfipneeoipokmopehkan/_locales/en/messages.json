@@ -1,0 +1,12 @@
+{
+  "appName":
+  {
+    "message": "Search Administrator Tab",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc":
+  {
+    "message": "Search Administrator Tab is the simplest way to switch between your favorite search engines, right from the new tab page.",
+    "description": "The description of the application, displayed in the web store."
+  }
+}

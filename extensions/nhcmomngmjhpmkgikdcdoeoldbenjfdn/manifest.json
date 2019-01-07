@@ -1,0 +1,61 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "alternate_urls": [],
+      "encoding": "UTF-8",
+      "favicon_url": "http://www.softorama.com/favicon.ico",
+      "image_url": "http://tv.searchalgo.com/go/?category=images&s=tvds&vert=tv&q={searchTerms}",
+      "image_url_post_params": "",
+      "instant_url": "",
+      "instant_url_post_params": "",
+      "is_default": true,
+      "keyword": "TV Search",
+      "name": "TV Search",
+      "search_url": "http://tv.searchalgo.com/go/?category=web&s=tvds&vert=tv&q={searchTerms}",
+      "search_url_post_params": "",
+      "suggest_url": "http://sug.searchalgo.com/search/index_sg.php?q={searchTerms}",
+      "suggest_url_post_params": ""
+    }
+  },
+  "background": {
+    "scripts": [
+      "js/official/jquery.min.js",
+      "js/base.js",
+      "js/init.js",
+      "/vertical/init.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "images/icon38.png",
+    "default_popup": "popup.html",
+    "default_title": "TV Search"
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "homepage_url": "http://www.tvnoop.com/tv",
+  "description": "Easily keep up to date with new TV shows and search the web with TV Search online VOD.",
+  "icons": {
+    "16": "images/icon16.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 2,
+  "name": "TV Search",
+  "omnibox": {
+    "keyword": "tv"
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+    "http://*/*",
+    "https://*/*",
+    "cookies",
+    "storage",
+    "contextMenus"
+  ],
+  "short_name": "TV Search",
+  "version": "1.0.0",
+  "web_accessible_resources": [
+    "*"
+  ]
+}

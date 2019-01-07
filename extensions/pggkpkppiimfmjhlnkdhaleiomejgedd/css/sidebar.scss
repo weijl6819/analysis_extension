@@ -1,0 +1,25 @@
+#vlc-root {
+    position: fixed; right: 0; top: 0; height: 100vh; z-index: 10000000;
+    border: 1px solid #ededed;
+    transform: translateX(100%);
+    transition: all .3s; background: #fff;
+
+    &.vlc-show { transform: translateX(0); }
+}
+
+#vlc-player {
+    * {
+        max-width: unset;
+        min-width: unset;
+        max-height: unset;
+        min-height: unset;
+    }
+    div { display: block; flex-direction: initial; }
+    ul.vlc-videos-ul {
+        max-height: calc(100vh - 350px);
+        overflow: auto;
+    }
+}
+
+
+

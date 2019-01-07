@@ -1,0 +1,19 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+    <title>Refigure</title>
+    <link rel="stylesheet" href="/popup/popup.css">
+</head>
+<body>
+<nav-bar></nav-bar>
+<div ng-view class="container-fluid"></div>
+<messages></messages>
+<script src="/popup/app.js"></script>
+<script src="/popup/templates.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+﻿.omni ~ .card
+{
+  opacity: 1;
+  transition: all 0.75s ease-in;
+  -webkit-transition: all 0.75s ease-in;
+}
+.omni.show ~ .card
+{
+  opacity: 0;
+}
+.omni.hide ~ .card
+{
+  opacity: 1;
+}
+
+.popup > .menu {
+  -webkit-animation: showMenu 0.25s;
+  animation: showMenu 0.25s;
+  
+}
+.popup.hiding > .menu {
+  overflow: hidden;
+  -webkit-animation: hideMenu 0.5s;
+  animation: hideMenu 0.5s;
+}
+@-webkit-keyframes showMenu {
+  0%    { padding-right:  90%; }
+  100%  { padding-right:  40pt; }
+}
+@keyframes showMenu {
+  0%    { padding-right:  90%; }
+  100%  { padding-right:  40pt; }
+}
+@-webkit-keyframes hideMenu {
+  0%    { padding-right:  40pt; }
+  100%  { padding-right:  90%; }
+}
+@keyframes hideMenu {
+  0%    { padding-right:  40pt; }
+  100%  { padding-right:  90%; }
+}
+
+/* popup */
+.popup > .wrap
+{
+  opacity:    1;
+  overflow: hidden;
+  -webkit-animation: showPop 0.25s;
+  animation: showPop 0.25s;
+}
+@-webkit-keyframes showPop {
+  0%    { padding: 49%; }
+  100%  { padding: 2em;   }
+}
+@keyframes showPop {
+  0%    { padding: 49%; }
+  100%  { padding: 2em;   }
+}
+
+.popup.hiding > .wrap
+{
+  overflow: hidden;
+  -webkit-animation: hidePop 0.5s;
+  animation: hidePop 0.5s;
+}
+@-webkit-keyframes hidePop {
+  0%    { padding: 2em; }
+  100%  { padding: 49%; }
+}
+@keyframes hidePop {
+  0%    { padding: 2em; }
+  100%  { padding: 49%; }
+}
+
+
+.popup > .wrap ~ .bkg {
+  padding: 0;
+  transition: all 0.2s ease-out;
+}
+.popup.hiding > .wrap ~ .bkg {
+  padding: 50%;
+  transition: all 0.2s ease-in;
+}
+
+
+
+
+/*
+.list .status > div:before
+{
+  -webkit-animation: roll 0.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+*/
+
+@-webkit-keyframes roll {
+  0%  { transform:  rotate(0deg); }
+  33% { transform:  rotate(12deg);  }
+  66% { transform:  rotate(24deg);  }
+  100% { transform:  rotate(36deg);  }
+}
+@keyframes roll {
+  0%  { transform:  rotate(0deg); }
+  33% { transform:  rotate(12deg);  }
+  66% { transform:  rotate(24deg);  }
+  100% { transform:  rotate(36deg);  }
+}
+
+.deleting {
+  -webkit-animation: moveout 0.25s;
+  animation: moveout 0.25s;
+  margin-left: 100%;
+  height: 0;
+}
+@-webkit-keyframes moveout {
+  0%   { margin-left:  0; height: 48pt; }
+  50%  { margin-left:  100%; }
+  100%  { height: 0; }
+}
+@keyframes moveout {
+  0%   { margin-left:  0; height: 48pt; }
+  50%  { margin-left:  100%; }
+  100%  { height: 0; }
+}
+
+.list > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: solid 0px transparent;
+  border-bottom: solid 0px transparent;
+  transition: border ease-in .35s;
+}
+.list > li > a:hover, .list > li > a:focus {
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px orange;
+  transition: border ease-out .35s;
+}
+
+/*
+.list.icons.large > li > a {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-top: solid 0px transparent;
+  border-bottom: solid 0px transparent;
+  transition: border,padding ease-in .35s;
+  box-sizing: border-box;
+}
+.list.icons.large > li > a:hover {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px orange;
+  transition: border,padding ease-out .35s;
+}
+*/
+
+.menu > .head a, .top.head a, .head a {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: solid 0px transparent;
+  border-bottom: solid 0px transparent;
+  transition: border ease-in .35s;
+  box-sizing: border-box;
+}
+.menu > .head a:hover, .top.head a:hover, .menu > .head a:focus, .top.head a:focus, .stack > .card > .head a:hover, .stack > .card > .head a:focus {
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px orange;
+  transition: border ease-out .35s;
+}
+.head.back .main > a:after {
+  border-top: solid 0px transparent;
+  border-bottom: solid 0px transparent;
+}
+.head.back .main > a:hover:after {
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px orange;
+}
+
+
+.card.hiding {
+  width: 100%;
+  -webkit-animation: hideToLeft 0.25s;
+  animation: hideToLeft 0.25s;
+}
+.card.showing {
+  width: 100%;
+  -webkit-animation: showFromRight 0.25s;
+  animation: showFromRight 0.25s;
+}
+
+.card.cardLoc.hiding, .card.cardPres.hiding {
+  overflow: hidden;
+  -webkit-animation: hideToTop 0.25s;
+  animation: hideToTop 0.25s;
+}
+.card.cardLoc.showing, .card.cardPres.showing {
+  z-index: 1;
+  overflow: hidden;
+  -webkit-animation: showFromTop 0.25s;
+  animation: showFromTop 0.25s;
+}
+.card.cardLoc.showing  > .view.noflex, .card.cardPres.showing > .view.noflex {
+  overflow: visible;
+}
+
+@-webkit-keyframes hideToLeft {
+  0%    { left:  0; }
+  100%  { left: -100%; }
+}
+@keyframes hideToLeft {
+  0%    { left:  0; }
+  100%  { left: -100%; }
+}
+@-webkit-keyframes showFromRight {
+  0%    { left: 100%; }
+  100%  { left: 0; }
+}
+@keyframes showFromRight {
+  0%    { left: 100%; }
+  100%  { left: 0; }
+}
+@-webkit-keyframes hideToTop {
+  0%    { bottom: 0; }
+  100%  { bottom: 100%; }
+}
+@keyframes hideToTop {
+  0%    { bottom: 0; }
+  100%  { bottom: 100%; }
+}
+@-webkit-keyframes showFromTop {
+  0%    { bottom: 100%; }
+  100%  { bottom: 0; }
+}
+@keyframes showFromTop {
+  0%    { bottom: 100%; }
+  100%  { bottom: 0; }
+}
+
+
+
+li.item-help 
+{
+  -webkit-animation: appear 0.25s;
+  animation: appear 0.25s;
+  min-height: inherit;
+}
+@-webkit-keyframes appear {
+  0%    { max-height: 0; }
+  100%  { max-height: 200px; }
+}
+@keyframes appear {
+  0%    { max-height: 0; }
+  100%  { max-height: 200px; }
+}

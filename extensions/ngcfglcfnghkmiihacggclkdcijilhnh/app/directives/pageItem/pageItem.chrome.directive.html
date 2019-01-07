@@ -1,0 +1,25 @@
+
+<section class="cp-page-item-container md-default-theme" layout="column"
+         ng-mouseenter="homeCtrl.itemHover(note, true)"
+         ng-mouseleave="homeCtrl.itemHover(note, false)">
+  <div class="cp-page-item-body cp-no-border">
+    <div class="cp-page-item-title cp-no-border" ng-click="homeCtrl.enterEditMode(note)">
+      <p>{{note.pageTitle |truncate:60}}</p>
+    </div>
+    <div class="cp-page-item-delete-button-wrapper cp-no-border" ng-show="note.showHidden">
+      <img class="cp-page-item-delete-button" ng-click="homeCtrl.showDeletePageDialog($event, note)" src="../app/icons/delete-x.png">
+    </div>
+  </div>
+
+  <div class="cp-page-item-footer">
+    <div layout="row">
+
+      <div class="cp-page-item-button cp-page-item-date"><p>{{note.modified | date}}</p></div>
+      <!--<div class="cp-page-item-button cp-page-item-date"><p>{{note._id}}</p></div>-->
+      <div class=" cp-no-border cp-page-item-favicon-wrapper" ng-click="homeCtrl.goToPage(note.url)"><img class="cp-page-item-favicon" src={{homeCtrl.getFavicon(note.url)}}> </div>
+
+    </div>
+  </div>
+
+  <hr class="cp-bottom-breaking-line">
+</section>

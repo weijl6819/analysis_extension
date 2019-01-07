@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>DotVPN</title>
+    <link rel="stylesheet" type="text/css" href="/css/app.css"/>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/locations.js"></script>
+    <script src="/js/popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/base.css"/>
+    <script src="/js/scroll.min.js"></script>
+</head>
+<body>
+<div class="layoutUpper fadeIn" id="proxy-control-layout">
+    <div class="content">
+        <span class="logo"></span>
+        <div class="text">
+            <p class="title">Access to <b>Proxy Settings</b></p>
+            <p>Your settings are controlled by <span class="anotherApp"></span></p>
+            <p>DotVPN needs access to proxy<br /> settings to work properly</p>
+        </div>
+        <span class="orangeBtn">Give Access</span>
+    </div>
+</div>
+
+<div class="layoutUpper fadeIn" id="check-conn-layout">
+    <div class="content">
+        <span class="logo"></span>
+        <div class="text">
+            <p class="title">Check your <b>Connection</b></p>
+            <p>To work properly, we need <br />access to the network</p>
+            <p>Please, check your <br />Internet connectio.</p>
+        </div>
+        <span class="loopCheck"></span>
+    </div>
+</div>
+
+<div class="signin fadeIn" id="signin-view">
+    <div class="sign">
+        <div class="navBack fadeIn" id="signin-back-button"></div>
+        <div class="logo" id="signin-logo"></div>
+            <div class="welcome" id="signin-email-box">
+                <div class="title">
+                    <p class="signTitle">Welcome to <b>DotVPN</b></p>
+                    <p>Type your email to create <br />or signin to your account</p>
+                </div>
+                <div class="itop input"><input type="text" id="signin-email" placeholder="Type your email"></div>
+                <div class="orangeBtn" id="signin-email-button">Get Started</div>
+            </div>
+            <div class="signinback" id="signin-password-box">
+                <div class="title">
+                    <p class="signTitle">Welcome back!</p>
+                    <p>Type your password <br />
+                    <span class="extra" id="password-reset-link1">Forgot your password?</span>
+                    </p>
+                </div>
+                <div class="itop input"><input type="password" id="signin-password" placeholder="Your password"></div>
+                <div class="orangeBtn" id="signin-button">Sign In</div>
+            </div>
+            <div class="password" id="signin-password-retry-box">
+                <div class="title">
+                    <p class="signTitle"><b>Incorrect</b> password</p>
+                    <p>Type your password<br />
+                    <span class="extra" id="password-reset-link">Forgot your password?</span>
+                    </p>
+                </div>
+                <div class="itop input"><input type="password" id="signin-retry-password" placeholder="Type again your password"></div>
+                <div class="orangeBtn" id="signin-retry-button">Sign In</div>
+            </div>
+            <div class="activate" id="password-reset-box">
+                <div class="title">
+                    <p class="signTitle">Check your <b>Inbox</b></p>
+                    <p>We sent recovery code to: <br /><span id="password-reset-email"></span></p>
+                </div>
+                <div class="itop input"><input type="text" id="password-reset-code" placeholder="Type 4 digits code"></div>
+                <div class="orangeBtn" id="password-activate-button">Activate</div>
+            </div>
+            <div class="newpassword" id="password-set-box">
+                <div class="title">
+                    <p class="signTitle">Create <b>new password</b></p>
+                    <p>Create your new password <br />to sign in to account</p>
+                </div>
+                <div class="itop input"><input type="password" id="password-set-password" placeholder="Type new password"></div>
+                <div class="orangeBtn" id="password-set-button">Setup &amp; Login</div>
+            </div>
+            <div class="signup" id="signup-step1-box">
+                <div class="title">
+                    <p class="signTitle">Hello!</p>
+                    <p>Create a password for your <br />account to finish</p>
+                </div>
+                <div class="itop input"><input type="password" id="signup-password" placeholder="Create password"></div>
+                <div class="orangeBtn" id="signup-step1-button">Next</div>
+            </div>
+            <div class="loader" id="loader"><span></span></div>
+    </div>
+</div>
+
+
+<div id="main-view">
+<div class="layoutMain layoutScroll fadeIn">
+    <div class="scrollContainer s2">
+        <div class="nav">
+            <span class="navLogo"></span>
+            <span class="navSettings"></span>
+        </div>
+
+        <div class="wrapTop">
+            <div class="note">
+                <div class="text">
+                    <p>Welcome to DotVPN</p>
+                    <p>Just <b>Tap Country</b></p>
+                    <p>to Connect</p> 
+                </div>
+                <div class="break">
+                    <span class="noteBreak"></span>
+                    <span class="noteAva"></span>
+                </div>
+            </div>
+            <div class="fastest">
+                <div class="fastestItem">
+                    <div class="locationImage">
+                        <span class="imageHq"></span>
+                        <span class="flag"></span>
+                        <span class="free">Free</span>
+                    </div>
+                </div>
+                <div class="fastestText">
+                    <p><b>Be in <span></span></b> <span></span></p>
+                    <p>Ping: ~<span></span>ms</p>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapLocal">
+        <div class="locations">
+            <div class="locationsList">
+                <ul>
+                    <li class="region-top-btn active">Top locations</li>
+                    <li class="region-europe-btn">Europe</li>
+                    <li class="region-americas-btn">Americas</li>
+                    <li class="region-asia-btn">Asia</li>
+                    <li class="region-oceania-btn">Oceania</li>
+                    <li class="region-africa-btn">Africa</li>
+                </ul>
+            </div>
+            <div class="switch">
+                <span class="left"></span>
+                <span class="right active"></span>
+            </div>
+        </div>
+        <div class="wrapLocations">
+            <div id="location-template">
+                <div class="location">
+                    <div class="locationPadding">
+                        <div class="locationItem flipItem">
+                            <div class="locationImage opacity">
+                                <span class="imageHq"></span>
+                                <span class="flag"></span>
+                                <span class="free">Free</span>
+                            </div>
+                            <div class="locationImage flipPremium">
+                                <div class="getPremium">
+                                    <p><b>Premium</b></p>
+                                    <p>from $1.60/month</p>
+                                    <span class="btnGet">Start</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="locationText">
+                            <p><b>France</b> <span></span></p>
+                            <p>Ping: ~<span>632</span>ms</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="location-premium-banner">
+                    <div class="location premium-crown">
+                        <div class="locationPadding">
+                            <div class="locationItem">
+                                <div class="locationImage">
+                                </div>
+                            </div>
+                            <div class="locationText">
+                                <p><b>DotVPN Premium</b></p>
+                                <p>from $1.60/month</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="list countries-list">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scrollbar"><span></span></div>
+</div>
+
+
+<div class="connect layoutConnecting layoutNoScroll fadeIn">
+    <div>
+        <div class="connectionBack imageHq">
+            <div class="nav">
+                <span class="navLogo"></span>
+                <span class="navStatus"></span>
+                <span class="flag"></span>
+                <span class="navSettings"></span>
+            </div>
+            <div class="connectionStatus">
+                <div class="connectionTitle">
+                    <p class="connection">Connecting to</p>
+                    <p class="country textBig">Netherlands</p>
+                    <p class="city"><b>Edinburgh</b></p>
+                    <p class="time">Local time <b>23:42</b></p>
+                </div>
+                <div class="connectionDrop">
+                    <div class="connectBtn"><p>Cancel</p></div>
+                </div>
+            </div>
+            <div class="connectionChange">
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="connect layoutConnected layoutNoScroll fade-in">
+    <div>
+        <div class="connectionBack imageHq">
+            <div class="nav">
+                <span class="navLogo"></span>
+                <span class="navStatus fade-in"></span>
+                <span class="flag"></span>
+                <span class="navSettings"></span>
+            </div>
+            <div class="connectionStatus">
+                <div class="connectionTitle fade-in">
+                    <p class="connection">Connected to</p>
+                    <p class="country textBig">Netherlands</p>
+                    <p class="city"><b>Edinburgh</b> with ip <b id="conn-info-node-ip"></b></p>
+                    <p class="time">Local time <b>23:42</b></p>
+                </div>
+                <div class="connectionInfo">
+                    <p class="speed fade-in one">Download speedtest is <span class="spinner"><span class="circle"></span></span><span><b id="conn-info-bw"></b> Mbps</span><br />
+                    and your ping <b id="conn-info-rtt"></b> milliseconds</p>
+                    <p class="during fade-in two">During <b id="conn-time-hours"></b> hours <b id="conn-time-minutes"></b> minutes <b id="conn-time-seconds"></b> seconds<br />
+                    we keep your connection safe</p>
+                    <p class="blocked fade-in three">Blocked <b id="adblock-stat">15</b> advertising and filtered<br />
+                    <b id="trackers-stat">64</b> trackers from spying on your activity</p>
+                </div>
+                <div class="connectionDrop">
+                    <div class="connectBtn"><p>Disconnect</p></div>
+                </div>
+            </div>
+
+            <div class="bubbleConnected fade-in four">
+                <div class="bubbleSpeech">
+                    <p>Too slow speed?<br /><b>Upgrade to Premium</b></p>
+                </div>
+                <span></span>
+            </div>
+            <div class="connectionChange">
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="connect layoutDisconnecting layoutNoScroll">
+    <div>
+        <div class="connectionBack imageHq">
+            <div class="nav">
+                <span class="navLogo"></span>
+                <span class="navStatus"></span>
+                <span class="flag"></span>
+                <span class="navSettings"></span>
+            </div>
+            <div class="connectionStatus">
+                <div class="connectionTitle">
+                    <p class="connection">Disconnecting from</p>
+                    <p class="country textBig"></p>
+                    <p class="city"><b></b></p>
+                    <p class="time">Local time <b></b></p>
+                </div>
+            </div>
+            <div class="bubbleConnected">
+                <div class="bubbleSpeech">
+                    <p>Highest possible speed<br />on <b>Premium account</b></p>
+                </div>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="layoutChange layoutNoScroll">
+    <span class="layoutFade fade-in"></span>
+    <div class="changeBack bottomUp">
+        <div class="connectionChange">
+            <span class="arrow"></span>
+        </div>
+        <div class="locations">
+            <div class="locationsList">
+                <ul>
+                    <li class="region-top-btn active">Top locations</li>
+                    <li class="region-europe-btn">Europe</li>
+                    <li class="region-americas-btn">Americas</li>
+                    <li class="region-asia-btn">Asia</li>
+                    <li class="region-oceania-btn">Oceania</li>
+                    <li class="region-africa-btn">Africa</li>
+                </ul>
+            </div>
+            <div class="switch">
+                <span class="left"></span>
+                <span class="right active"></span>
+            </div>
+        </div>
+
+        <div class="layoutScroll">
+            <div class="scrollContainer">
+                <div class="wrapLocations">
+                    <div class="list countries-list"></div>
+                </div>
+            </div>
+            <div class="scrollbar"><span></span></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="layoutOver layoutNoScroll layoutSettings">
+    <div class="nav" id="settings-back-button">
+        <span class="navBack"></span>
+        <span class="navTitle">Settings</span>
+    </div>
+    <div class="layoutOverScroll">
+        <div class="scrollContainer">
+            <div class="settingsBlock">
+                <span class="settingsTitle">Premium</span>
+                <div class="overListOne">
+                    <div class="item outside" id="get-premium-button" style="display:none">
+                        <span>
+                            <span class="overPremium"></span><b>Get Premium</b>
+                        </span>
+                        <span class="arrow"></span>
+                    </div>
+                    <div class="item outside" id="premium-account-button" style="display:none">
+                        <span>
+                            <span class="overManage"></span>Premium Account
+                        </span>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+                <span class="settingsTitle">Connection</span>
+                <div class="overList">
+                    <div class="item">
+                        <span>Connect On Start</span>
+                        <div class="toggle" id="auto-start-switch">
+                            <div class="switch"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span>Bandwidth Saver</span>
+                        <div class="toggle" id="bandwidth-saver-switch">
+                            <div class="switch"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span>AD Block</span>
+                        <div class="toggle" id="adblock-switch">
+                            <div class="switch"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span>Tracking Protection</span>
+                        <div class="toggle" id="tracking-protection-switch">
+                            <div class="switch"></div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span>Block Analytics</span>
+                        <div class="toggle" id="block-analytics-switch">
+                            <div class="switch"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="settingsTitle">Other</span>
+                <div class="overList">
+                    <div class="item">
+                        <span>Hide Application Icon</span>
+                        <div class="toggle" id="hide-app-icon">
+                            <div class="switch"></div>
+                        </div>
+                    </div>
+                    <div class="item outside" id="policy-button">
+                        <span>Privacy Policy</span>
+                        <span class="arrow"></span>
+                    </div>
+                    <div class="item outside" id="support-button">
+                        <span>Customer Support</span>
+                        <span class="arrow"></span>
+                    </div>
+                    <div class="item outside" id="rate-button">
+                        <span>Rate Our Service</span>
+                        <span class="arrow"></span>
+                    </div>
+                    <div class="item">
+                        <span>App Version</span>
+                        <span class="version"></span>
+                    </div>
+                </div>
+                <span class="settingsGray" id="logout-button">Logout</span>
+            </div>
+        </div>
+        <div class="scrollbar"><span></span></div>
+    </div>
+</div>
+
+<div class="layoutOver layoutNoScroll layoutPrivacy">
+    <div class="nav" id="policy-back-button">
+        <span class="navBack"></span>
+        <span class="navTitle">Privacy Policy</span>
+    </div>
+    <div class="layoutOverScroll">
+        <div class="scrollContainer">
+            <div class="layoutOverText">
+                <p>Please read our Privacy Policy. In this section of our Site, we describe how dotvpn.com (hereinafter - App, Website, DotVPN) handles your personal information, what information about you we collect and store what rules define your interaction with us.</p>
+                <p>The main objective of DotVPN is to ensure your privacy, security and anonymity online. We never represent information about you to the third parties.</p>
+                <p>FOREWORD</p>
+                <p>Site and the services available through it, are under the control of Smart Security Ltd. (the «Company»). Registered office: 18/F., Wanchai Central Building, 89 Lockhart Road, Wanchai, Hong Kong.</p>
+                <p>We are a leading supplier of tools to protect the confidentiality and anonymity in the Internet.</p>
+                <p>The Company undertakes to ensure the protection of your confidential information. Our Privacy Policy explains what information we collect about you, how we use the information we collect about you, how you can let us know if you prefer to limit the use of such information. Policy also establishes a set of procedures used by us to maintain the confidentiality of your information.</p>
+                <p>By providing your information, you consent to use such information in accordance with this privacy policy. If we change our privacy policy, any changes will be posted on this page without prior notice.</p>
+                <p>If you have any questions regarding these terms, please contact us by e-mail (info@dotvpn.com). Our privacy policy (the «Privacy Policy») applies when using our site. Before you start to use our site, carefully read the privacy policy. Starting to use the Website, you automatically accept our privacy policy and agree to comply with its provisions. If you do not agree with our privacy policy, please refrain from using of our Site.</p>
+                <p>THE INFORMATION WE COLLECT</p>
+                <p>In order to provide services through the Site, we may collect personal information that will be used solely for display and personalization user personal cabinet for ease of administration and development services.</p>
+                <p>The company collects and stores the following information about users:</p>
+                <p>• During registration, we will save your email address and password (in encrypted SHA256). We will need your user name and password for access you to the web control panel and to download software DotVPN. We need your email address to reset your password or if you want to receive our newsletter. We use personal information to provide services, which you ask us to provide. Unless you notify us that you do not wish to receive such information, we may occasionally inform you of our products and services. Informing us by email or by phone your personal information, you hereby consent to our use of your information in order to this Policy.</p>
+                <p>• We store your IP address within 24 hours since you last connected. We need your IP-address to prevent spam, fraud or other abuse of our Site and our services.</p>
+                <p>• We store the date of registration of your account to its own statistics, and to provide you in the future with favorable terms of use of the service and loyalty programs, about which you can read in the news section of the Website.</p>
+                <p>• We store information about payment dates of subscription fee for the regulation and control of the timely payment and repayment of debts.</p>
+                <p>• Where appropriate, we may store information on the software version used by the user to ensure compatibility with products and services.</p>
+                <p>• Data obtained during contacts with tech support or leaving comments on our Website. When you leave a comment on our website or contact our technical support service, we can keep your data up to two years if the legal reasons and exceptional circumstances require longer storage.</p>
+                <p>We do not save or store users’ credit card information. Payments by credit cards are processed in real-time by authorized agents. Withdraw funds from the credit card is automatically and instantly. We do not store credit card data and other payment information. If the need to return of funds to the user, it is credited to the user’s credit card through authorized agencies.</p>
+                <p>STORAGE AND USE OF INFORMATION</p>
+                <p>We do not sell or share your personal data, do not provide access to the history of user connections services to third parties. The only exception is decision of the Hong Kong Court with a demand to provide such access to representatives of law.</p>
+                <p>We reserve the right to use the information we collect for the following purposes:</p>
+                <p>We may contact you by e-mail on quality issues or technical problems and other issues related to the Service, and for notification of changes in the composition and properties of services and information.</p>
+                <p>We may contact you to notify you about the expiration of Contract and offer the prolongation of services.</p>
+                <p>With your permission, we may contact you by email for notifications about new DotVPN services and special DotVPN offers.</p>
+                <p>Your personal information that you trust us is stored on servers in Hong Kong. Only authorized DotVPN employees have access thereto, including our representatives located in other countries who can get access to some of the information regarding payment issues and the quality of services, and other information necessary for the development of services and assistance to users in a particular country.</p>
+                <p>We may share the information which is necessary for the implementation of services to third parties only with your permission. If our business will be subject to a merger or acquisition with another company, your information may become available for new business partners and owners. If only the law will not require it, we will not disclose, sell or distribute the information that we provide by users without their consent.</p>
+                <p>PROTECTING OF YOUR INFORMATION</p>
+                <p>All information about customers, including their user names and passwords are stored in encrypted form. Algorithms used by us to protect the information can not be hacked by any of the currently existing methods. Multi-level corporate authentication system that we use ensures that access to your data will be provided only to those employees who are directly involved you acquire services.</p>
+                <p>Among DotVPN company there is a strict data protection system, suggesting heavy fines and even criminal liability for unauthorized access and distribution of our data.</p>
+            </div>
+        </div>
+        <div class="scrollbar"><span></span></div>
+    </div>
+</div>
+
+<div class="layoutOver layoutNoScroll layoutFeedback">
+    <div class="nav" id="support-back-button">
+        <span class="navBack"></span>
+        <span class="navTitle">Contact Our Team</span>
+    </div>
+    <div class="layoutOverScroll">
+        <div class="layoutOverFeedback">
+            <span class="settingsTitle">Subject</span>
+            <input type="text" id="support-popup-subject" placeholder="Type Subject" />
+            <span class="settingsTitle">Message</span>
+            <textarea id="support-popup-text" placeholder="Type your message or questions..."></textarea>
+            <div id="support-popup-send-button" class="orangeBtn"><span></span>Send</div>
+        </div>
+        <div class="layoutOverFeedbackSuccess fadeIn">
+            <span></span>
+            <p class="title">Your message was sent</p>
+            <p>Soon our support team <br />will contact you by email</p>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

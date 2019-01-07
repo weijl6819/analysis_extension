@@ -1,0 +1,134 @@
+{
+	"extTitle": {
+		"message": "Improved Layout for Instagram.com",
+		"description": "Extension Title."
+	},
+	"extDesc": {
+		"message": "The default Instagram.com layout is not optimized for the desktop. This extension improves this.",
+		"description": "Extension description."
+	},
+	"blockPosts": {
+		"message": "Hide Posts from",
+		"description": "Block Posts from Users setting."
+	},
+	"blockStories": {
+		"message": "Hide Stories from",
+		"description": "Block Stories from Users setting."
+	},
+	"night": {
+		"message": "Enable Night Theme",
+		"description": "Night mode setting."
+	},
+	"nightModeStart": {
+		"message": "Night Mode Start Hour",
+		"description": ""
+	},
+	"nightModeStart_help": {
+		"message": "Set this and end to the same number to enable night mode permanently.",
+		"description": ""
+	},
+	"nightModeEnd": {
+		"message": "Night Mode End Hour",
+		"description": ""
+	},
+	"nightModeEnd_help": {
+		"message": "Set this and start to the same number to enable night mode permanently.",
+		"description": ""
+	},
+	"picturesOnly": {
+		"message": "Show pictures only",
+		"description": "setting"
+	},
+	"hideStories": {
+		"message": "Hide all Stories",
+		"description": "setting"
+	},
+	"hideRecommended": {
+		"message": "Hide recommended users",
+		"description": "setting"
+	},
+	"highlightOP": {
+		"message": "Highlight Author in comments",
+		"description": "setting"
+	},
+	"only3Dot": {
+		"message": "Remove all style modifications",
+		"description": "setting"
+	},
+	"rows": {
+		"message": "Posts per row",
+		"description": "setting"
+	},
+	"indicateFollowing": {
+		"message": "Following indicator",
+		"description": "setting"
+	},
+	"noSpaceBetweenPosts": {
+		"message": "No Space between Posts",
+		"description": "setting"
+	},
+	"rowsFourBoxWidth": {
+		"message": "4-Row Posts Width",
+		"description": "setting"
+	},
+	"rowsFourBoxWidth_help": {
+		"message": "Only applies when the 'Posts per row' option is set to 4.",
+		"description": "setting"
+	},
+	"rowsTwoBoxWidth": {
+		"message": "2-Row Posts Width",
+		"description": "setting"
+	},
+	"rowsTwoBoxWidth_help": {
+		"message": "Only applies when the 'Posts per row' option is set to 2.",
+		"description": "setting"
+	},
+	"watchPosts": {
+		"message": "Watch Posts from",
+		"description": "setting"
+	},
+	"watchPosts_help": {
+		"message": "Make sure that the Username is correct (e.g. https://instagram.com/TheUsername works)",
+		"description": "setting"
+	},
+	"watchStories": {
+		"message": "Watch Stories from",
+		"description": "setting"
+	},
+	"watchStories_help": {
+		"message": "Make sure that the Username is correct (e.g. https://instagram.com/TheUsername works)",
+		"description": "setting"
+	},
+	"watchInBackground": {
+		"message": "Watch in Background?",
+		"description": "setting"
+	},
+	"watchInBackground_help": {
+		"message": "When turned off, you're only notified when you open Instagram.com.",
+		"description": "setting"
+	},
+	"watch_openProfile": {
+		"message": "Click to open the profile.",
+		"description": "Text in Notification"
+	},
+	"watch_newPost": {
+		"message": "View the new post by $user$",
+		"description": "Text of the Notification, when the watched User posted a new post",
+		"placeholders": {
+			"user": {
+				"content": "$1",
+				"example": "JacobGross_"
+			}
+		}
+	},
+	"watch_newStory": {
+		"message": "View $user$'s unseen story",
+		"description": "Text of the Notification, when the watched User has an unseen Story",
+		"placeholders": {
+			"user": {
+				"content": "$1",
+				"example": "JacobGross_"
+			}
+		}
+	}
+}

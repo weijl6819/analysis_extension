@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Contacten"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "Toegang tot uw Google-contactpersonen in een popup venster"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Contacten opties"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Grootte van de pop-up venster"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "Breedte"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "Hoogte"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "Besparen"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Bespaard"
+   }
+}

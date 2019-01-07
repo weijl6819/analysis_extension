@@ -1,0 +1,116 @@
+.followr {
+	background: rgba(40,40,40,0.94);
+	position: fixed;
+	z-index: 4000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+	text-align: center;
+	font-size: 22px;
+	color: white;
+	font-weight: 400;
+	font-family: 'Lato';
+}
+
+.followr-wrap {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+.followr-wrap p.state-descript {
+	color: rgb(136, 136, 136);
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.followr-wrap p.state-descript img {
+	margin-right: 10px;
+}
+
+table.buckets {
+	margin: 0 auto;
+	padding: 0;
+}
+
+table.buckets tr {
+	padding: 16px 0;
+	height: 56px;
+	opacity: 0;sdkfj
+			transform: translate3d(0, 14px, 0);
+	-webkit-transform: translate3d(0, 14px, 0);
+	-webkit-transition: all .32s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition: all .32s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition: all .32s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition: all .32s cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+
+	-webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+}
+
+table.buckets tr.show {
+	opacity: 1;
+			transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+table.buckets tr td.query {
+	font-weight: 500;
+	font-family: 'Lato-Bold';
+	color: rgba(255,255,255,0.93);
+	text-align: right;
+	padding: 0 32px 0 0;
+}
+
+table.buckets span.status {
+	background: rgba(20, 20, 20, 0.98);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, .98);
+	display: inline-block;
+	border-radius: 100px;
+	height: 24px;
+	margin: 7px 0 0 0;
+	width: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+table.buckets span.status span {
+	background: #3498db;
+	border-radius: 100px 5px 5px 100px;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	padding: 0 2px;
+	width: 0;
+	position: absolute;
+	-webkit-transition: all .24s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition: all .24s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition: all .24s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition: all .24s cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+
+	-webkit-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+	   -moz-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+		 -o-transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+			transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
+}
+
+table.buckets tr td.statusNum {
+	font-family: 'Lato';
+	text-align: left;
+	padding: 2px 0 0 15px;
+	color: rgba(255,255,255,0.72);
+	font-size: 20px;
+}
+
+#followr-state {
+	font-size: 28px;
+	color: #666;
+	letter-spacing: 3px;
+	word-spacing: 7px;
+	margin: 30px 0 0;
+	display: block;
+}

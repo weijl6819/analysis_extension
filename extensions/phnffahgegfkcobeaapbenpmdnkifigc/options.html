@@ -1,0 +1,148 @@
+<html>
+<head>
+  <title>Header switcher configuration</title>
+  <link rel="stylesheet" type="text/css" href="header.css" />
+  <link rel="stylesheet" type="text/css" href="jquery-ui.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+  <script src="header.js"></script>
+  <script src="jquery.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script src="options.js"></script>
+</head>
+<body>
+<div id="status" class="invisible">
+</div>
+<table id="outer">
+  <tr>
+    <td width="1%">
+      <table id="menu" class="menu">
+        <tr>
+          <td>
+            <table class="logo">
+              <tr>
+                <td rowspan="2">
+                  <img src="header.png" border="0">
+                </td>
+              </tr>
+              <tr>
+                <td class="header">
+                  Header Hacker
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="menuitem custom_switch">
+            Custom Request Headers
+          </td>
+        </tr>
+        <tr>
+          <td class="menuitem preset_switch">
+            Permanent Header Switches
+          </td>
+        </tr>
+        <tr>
+          <td class="menuitem stats invisible">
+            Statistics
+          </td>
+        </tr>
+        <tr>
+          <td class="menuitem about">
+            About
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table id="custom_switch_table" class="menu_controlled">
+        <tr>
+          <td colspan="2">
+            <div class="subheader">Custom Request Headers</div>
+            <div class="helptext">
+              This is the list of changes made to outgoing request headers.
+              When each switch is "on", Chrome will modify the header as you
+              specify -- either by replacing the entire contents of the header,
+              or by adding more text to it.
+              <br><br>
+              You can also use these tokens in your strings to be replaced with
+              random values:
+            </div>
+            <div class="helptext">
+              <b>$RANDOM_NUMBER</b> - inserts a random integer between 0 and 999999999999999.
+            </div>
+            <div class="helptext">
+              <b>$RANDOM_STRING</b> - inserts a string of 10-50 random alphanumeric characters.
+            </div>
+            <div class="helptext">
+              <b>$RANDOM_IP</b> - inserts a random IP address.
+            </div>
+            <div class="helptext">
+              <b>$HOSTNAME</b> - inserts the hostname.
+            </div>            
+            <br>
+            <div id="tablecontainer" class="tablecontainer">
+              <table id="list_table" class="list_table">
+              </table>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+      <table id="about_table" class="menu_controlled">
+        <tr>
+          <td colspan="2" class="tablecontainer">
+            <div class="subheader">About</div><br>
+            <table>
+               <tr>
+                 <td>
+                  <div class="helptext">
+                  Header Hacker is an extension that allows you to modify HTTP
+                  request headers before they are sent to websites.  You can
+                  either change headers on-the-fly with the icon in the upper-right,
+                  or set them to always change for a given site.
+                  </div>
+                  <br>
+                  This extension is built and maintained by <a target="_new" href="https://plus.google.com/105199364823220402760">Glenn Wilson</a>.
+                  <br><br>
+                 </td>
+               </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table id="preset_switch_table" class="menu_controlled">
+        <tr>
+          <td colspan="2">
+            <div class="subheader">Permanent Switch List</div>
+            <div class="helptext">
+            This is the list of header changes that will always be made on the given site.
+            Enter the desired hostname ("www.example.com") and select which header switch to make.
+            </div>            
+            <br><br>
+            <div id="tablecontainer" class="tablecontainer">
+              <table id="list_table" class="list_table">
+              </table>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+      <table id="stats_table" class="menu_controlled">
+        <tr>
+          <td colspan="2">
+            <div class="subheader">Statistics</div>
+            <br><br>
+            <div id="tablecontainer">
+              <table id="stats_table" class="list_table">
+              </table>
+            </div>
+            <br>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

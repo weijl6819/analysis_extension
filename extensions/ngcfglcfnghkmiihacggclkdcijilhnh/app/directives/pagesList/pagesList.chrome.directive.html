@@ -1,0 +1,39 @@
+<md-list class="items-list">
+
+  <div class="cp-no-notes-container flex" ng-if="homeCtrl.notesToShow.length === 0">
+
+    <div class="cp-page-title-wrapper">
+
+      <div ng-if="homeCtrl.isLocationMode" class="cp-no-notes-header-wrapper">
+
+        <div class="cp-toolbar-tool-box cp-toolbar-tool-box-page-favicon">
+          <img class="cp-toolbar-favicon cp-no-border" src={{homeCtrl.getFavicon(homeCtrl.activeTabUrl)}}">
+        </div>
+
+        <div class="cp-page-title-wrapper cp-toolbar-tool-box cp-no-notes-title-wrapper">
+          <p class="cp-no-notes-title cp-page-title">This page has no clips</p>
+        </div>
+
+      </div>
+
+      <div>
+        <div class="cp-no-notes-image"></div>
+        <button class="cp-no-notes-button" ng-click="homeCtrl.create({ isEnterEditMode: true })">Clip This Page</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <md-list-item class="cp-page-item-wrapper" ng-repeat="note in homeCtrl.notesToShow |
+              filter:homeCtrl.searchBarText |
+              filter:homeCtrl.byTagsFilter |
+              orderBy:homeCtrl.notesSortOrder
+              track by $index ">
+
+    <cp-page-item></cp-page-item>
+
+  </md-list-item>
+
+
+</md-list>

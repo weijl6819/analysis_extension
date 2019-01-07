@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta name="http-equiv" content="Content-type: text/html; charset=UTF-8"/>
+		<link rel="shortcut icon" href="/skin/foxsecurity_red_16.png" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="/skin/popup.css" />
+		<script type="text/javascript" src="/content/popup.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/resource/utils.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/resource/i18n.js" charset="utf-8"></script>
+		<script type="text/javascript" src="/resource/prefs.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<table id="s3security-tooltip">
+			<tr valign="top">
+				<td width="32"><div id="s3security-tooltip-icon"></div></td>
+				<td>
+					<div id="s3security-tooltip-head" label="extension_name"></div>
+					<div id="s3security-tooltip-text"></div>
+					<div id="s3security-tooltip-text-2"></div>
+
+					<hr noshade size="1"/>
+					<div id="s3security-main-menu-select-action" label="prompt_select_action"></div>
+
+					<div id="s3security-main-menu-white-black-list" class="s3security-tooltip-action">
+						<div class="s3security-tooltip-action-image"></div>
+						<div id="s3security-main-menu-white-black-list-text"></div>
+					</div>
+
+					<div id="s3security-main-menu-browser" class="s3security-tooltip-action">
+						<div class="s3security-tooltip-action-image"></div>
+						<div id="s3security-main-menu-browser-text" label="prompt_allow_browser"></div>
+					</div>
+					<div id="s3security-main-menu-tab" class="s3security-tooltip-action">
+						<div class="s3security-tooltip-action-image"></div>
+						<div id="s3security-main-menu-tab-text" label="prompt_allow_tab"></div>
+					</div>
+					<div id="s3security-main-menu-deny" class="s3security-tooltip-action">
+						<div class="s3security-tooltip-action-image"></div>
+						<div id="s3security-main-menu-deny-text" label="prompt_deny"></div>
+					</div>
+					<div id="s3security-main-menu-settings" class="s3security-tooltip-action">
+						<div class="s3security-tooltip-action-image"></div>
+						<div id="s3security-tooltip-action-text" label="settings.label"></div>
+					</div>
+
+					<div id="s3security-tooltip-domain-included">
+						<hr noshade size="1"/>
+						<div id="s3security-tooltip-domain-included-head">
+							<table width="100%">
+								<tr>
+									<td><nobr><div label="domain.included.alert.label"></div></nobr></td>
+									<td align="right" style="padding-left: 10px;"><nobr>
+										<div id="subrequest-actions-allow-white" title="security_white_list_menu_add security_black_list_menu_del" class="s3security-tooltip-domain-included-actions"></div>
+										<div id="subrequest-actions-allow-browser" title="prompt_allow_browser" class="s3security-tooltip-domain-included-actions"></div>
+										<div id="subrequest-actions-allow-tab" title="prompt_allow_tab" class="s3security-tooltip-domain-included-actions"></div>
+										<div id="subrequest-actions-deny" title="prompt_deny" class="s3security-tooltip-domain-included-actions"></div>
+										<div id="subrequest-actions-reset" title="prompt_reset" class="s3security-tooltip-domain-included-actions"></div>
+										<div id="subrequest-actions-select-all" title="select_all" class="s3security-tooltip-domain-included-actions"></div>
+									</nobr></td>
+								</tr>
+							</table>
+						</div>
+						<div id="s3security-tooltip-domain-included-list"></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+
+		<div id="s3security-template" style="display: none">
+			<div id="s3security-domain-included" class="s3security-domain-included">
+				<div id="s3security-domain-included-image" class="s3security-domain-included-image"></div>
+				<div id="s3security-domain-included-text"></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+.ts-person-short-info-card .actionwrapper .actions>span {
+  margin-right: 0.5rem;
+}
+.zc-teams-popup-action {
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.75;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+.zc-teams-popup-action:active, .zc-teams-popup-action:hover {
+  opacity: 1;
+}

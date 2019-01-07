@@ -1,0 +1,42 @@
+{
+    "GLOBAL_APP_NAME": {
+        "message": "PageLiner",
+        "description": "Extension name."
+    },
+    "GLOBAL_APP_DESCRIPTION": {
+        "message": "Mettre les lignes supplémentaire dans le site web (p. ex. pour contrôler les points de fuite).",
+        "description": "Extension description."
+    },
+    "POPUP_TOGGLE_HELPLINES": {
+        "message": "afficher/masquer",
+        "description": "Popup action."
+    },
+    "POPUP_NEW_HELPLINE_X": {
+        "message": "vertical",
+        "description": "Popup action."
+    },
+    "POPUP_NEW_HELPLINE_Y": {
+        "message": "horizontal",
+        "description": "Popup action."
+    },
+    "POPUP_CLEAR_ALL_HELPLINES": {
+        "message": "supprimer les lignes supplémentaire",
+        "description": "Popup action."
+    },
+    "POPUP_ALL_HELPLINES_HEADING": {
+        "message": "Tout les lignes supplémentaire",
+        "description": "Popup table head."
+    },
+    "POPUP_ALL_HELPLINES_TABLE_COLOR": {
+        "message": "Couleur",
+        "description": "Popup table colors."
+    },
+    "POPUP_ALL_HELPLINES_TABLE_POSITION": {
+        "message": "Position",
+        "description": "Popup table positions."
+    },
+    "POPUP_DONATE": {
+        "message": "M'acheter une bière",
+        "description": "Donate link."
+    }
+}

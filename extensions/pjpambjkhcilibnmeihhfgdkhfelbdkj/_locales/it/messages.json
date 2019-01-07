@@ -1,0 +1,34 @@
+﻿{
+   "extName": {
+      "description": "The name of this extension.",
+      "message": "Contatti"
+   },
+    "extDesc": {
+      "description": "Description of what this extension does.",
+      "message": "L'accesso contatti Google in una finestra popup"
+   },
+    "optHeader": {
+      "description": "Settings for popup dimensions.",
+      "message": "Contatti opzioni"
+   },
+    "optDesc": {
+      "description": "Size of popup.",
+      "message": "Dimensioni della finestra popup"
+   },
+    "optWidth": {
+      "description": "Width of popup.",
+      "message": "larghezza"
+   },
+    "optHeight": {
+      "description": "Height of popup.",
+      "message": "altezza"
+   },
+    "optSave": {
+      "description": "Save button.",
+      "message": "Conservare"
+   },
+    "optStat": {
+      "description": "Save status.",
+      "message": "Salvato"
+   }
+}

@@ -1,0 +1,126 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy.__product-estimate-annotation, #__wikibuy__ .__wikibuy.__annotation .product-page-annotation {
+  .result-table-tooltip {
+    z-index: 10;
+    min-width: 300px;
+    .primary-btn-large {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .result-list:not(.special-offers) {
+      .list-header, .result-list-item {
+        > :nth-child(3) {
+          display: none !important;
+        }
+      }
+    }
+    .list-header, .result-list-item {
+      display: flex;
+      justify-content: space-between;
+      > :nth-child(2) {
+        flex: 1;
+        width: 70px;
+        flex-shrink: 0;
+      }
+      > :nth-child(3) {
+        display: flex;
+        width: 80px;
+        flex-shrink: 0;
+        margin-left: 15px;
+      }
+      > :first-child {
+        display: flex;
+        width: 100px;
+        flex-shrink: 0;
+        margin-right: 5px;
+      }
+      > :last-child {
+        display: flex;
+        width: 80px !important;
+        flex-shrink: 0;
+        margin-left: 15px;
+      }
+    }
+    .list-header {
+      border-bottom: 1px solid #f4f4f4;
+      margin-bottom: 8px;
+      h3 {
+        font-size: 12px;
+        &.seller {
+          padding-left: 20px;
+        }
+        &.total {
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 10px;
+        }
+      }
+    }
+    .rule {
+      border-bottom: 1px solid #f4f4f4;
+      margin: 10px 0;
+    }
+    .result-list-item {
+      cursor: pointer;
+      &:hover{
+        background-color: #f4f4f4;
+      }
+      h3 {
+        font-size: 14px;
+        &.seller {
+          position: relative;
+          padding-left: 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          &:before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 12px;
+            width: 6px;
+            height: 6px;
+            background-color: @palmetto;
+            border-radius: 3px;
+          }
+          &:not(.verified):before {
+            background-color: #f4f4f4;
+          }
+        }
+        &.total {
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 10px;
+          .defaultBold;
+          .primary-link {
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 12px;
+          }
+          &.primary-btn-large {
+            justify-content: center;
+            min-width: auto;
+            height: 24px;
+            line-height: 22px;
+            width: auto;
+            margin: 0;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            margin-left: 15px;
+            padding: 0;
+            border-radius: 2px;
+          }
+        }
+        &.delivery {
+          display: flex;
+          justify-content: space-between;
+        }
+        &.coupon {
+          height: 18px;
+          display: inline-block;
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+}

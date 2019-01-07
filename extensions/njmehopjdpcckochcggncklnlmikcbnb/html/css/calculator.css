@@ -1,0 +1,88 @@
+#helium-calc-app {
+  width: 450px;
+  background-color: #fff;
+  margin: auto;
+  font: 16px 'Open Sans', "Amazon Ember", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+#helium-calc-app .helium-calc-app-header {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+#helium-calc-app .helium-calc-app-thumb {
+  display: block;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+#helium-calc-app .helium-calc-app-thumb-img {
+  max-height: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+#helium-calc-app .helium-calc-app-title {
+  word-break: break-word;
+  color: #262626;
+  font-weight: normal;
+  margin-left: 1rem;
+}
+
+#helium-calc-app .helium-calc-app-table {
+  background-color: #f7f9fa;
+  border-top: 1px solid #d9e0e7;
+  padding: 10px 20px;
+}
+
+#helium-calc-app .helium-calc-app-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0;
+}
+
+#helium-calc-app .helium-calc-app-row-divider {
+  height: 1px;
+  background-color: #d9e0e7;
+  margin: 6px 0;
+}
+
+#helium-calc-app .helium-calc-app-input {
+  background: white;
+  transition: all .2s ease;
+  padding: 0 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 .2rem;
+  text-align: right;
+  height: 25px !important;
+  line-height: normal;
+  font: inherit;
+  background-color: white;
+  border: 2px solid #d9e0e7;
+  border-radius: 4px;
+  outline: none;
+}
+
+#helium-calc-app .helium-calc-app-input:not(select) {
+  width: 4rem;
+}
+
+#helium-calc-app .helium-calc-app-input:focus {
+  border-color: #2064f5;
+}
+
+#helium-calc-app .helium-calc-app-is-positive {
+  color: #34a855;
+  font-weight: 500;
+}
+
+#helium-calc-app .helium-calc-app-is-negative {
+  color: #f64343;
+  font-weight: 500;
+}

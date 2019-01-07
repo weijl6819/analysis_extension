@@ -1,0 +1,120 @@
+{
+	"extension_name" : "Fox Web Security",
+	"extension_description" : "Защита от «взрослого» содержания (родительский контроль) и от опасных сайтов. Доверьте защиту себя и своих детей профессионалам!",
+	"require_fox_server" : "Для корректной работы необходимо установить Fox Web Security (Служба ДНС-запросов)!",
+	"require_fox_server_2" : "нажмите здесь для установки Fox Web Security (Служба ДНС-запросов)",
+	"notifications_icon" : "skin/foxsecurity_red_80.png",
+
+	"security_infected_alert" : "Этот веб-сайт может нанести вред вашему компьютеру и вашей личной информации (%S)",
+	"security_adult_alert" : "Этот веб-сайт содержит материалы «для взрослых» (%S)",
+	"security_error_alert" : "Не удалось определить безопасность этого сайта",
+	"security_white_alert" : "Этот веб-сайт безопасен",
+	"security_unknown_alert" : "Статус безопасности для этого сайта не определен",
+	"security_disabled_alert" : "Защита отключена!",
+	"security_danger_alert" : "Этот веб-сайт безопасен, но имеет опасное содержимое",
+	"security_white_list_alert" : "Веб-сайт разблокирован пользователем (белый список)",
+	"security_black_list_alert" : "Веб-сайт заблокирован пользователем (черный список)",
+
+	"security_white_list_menu_add" : "Добавить \"%S\" в белый список",
+	"security_white_list_menu_del" : "Удалить \"%S\" из белого списка",
+	"security_black_list_menu_add" : "Добавить \"%S\" в черный список",
+	"security_black_list_menu_del" : "Удалить \"%S\" из черного списка",
+
+	"adult_label" : "%S: для взрослых",
+	"infected_label" : "%S: зараженный",
+	"white_list_label" : "белый список",
+	"black_list_label" : "черный список",
+
+	"page_lock_head_text" : "Посещение этого сайта запрещено.",
+	"page_lock_reason_head_text" : "Причина блокировки:",
+	"page_lock_thanks_text" : "Fox Web Security выражает свою благодарность владельцам DNS-сервисов,<br/>при помощи которых обеспечивается безопасность пользователей!",
+
+	"prompt_select_action" : "Выберите действие:",
+	"prompt_allow_browser" : "Разрешить до закрытия браузера",
+	"prompt_allow_tab" : "Разрешить до закрытия вкладки",
+	"prompt_deny" : "Запретить",
+	"prompt_reset" : "Восстановить значения по умолчанию",
+	"prompt_password" : "Введите пароль:",
+	"prompt_password_error" : "Неправильный пароль, попробуете еще раз?",
+
+	"system_action_locked" : "Это действие было заблокировано Fox Web Security!",
+	"confirm_warning" : "Вы уверены?",
+	"select_all" : "Выбрать всё",
+
+	"settings.label" : "Настройки",
+	"domain.included.alert.label" : "С этого веб-сайта идут опасные запросы:",
+
+	"pref.tab.general.label" : "Защита",
+	"pref.tab.white_list.label" : "Белый список",
+	"pref.tab.black_list.label" : "Черный список",
+	"pref.tab.page_lock.label" : "Страница блокировки (шаблон)",
+	"pref.tab.dns_servers.label" : "DNS-сервера",
+	"pref.tab.statistics.label" : "Статистика",
+	"pref.tab.others.label" : "Разное",
+
+	"pref.security_enabled.label" : "Включить защиту",
+
+	"pref.password_settings.label" : "Защитить паролем:",
+	"pref.password_value.label" : "Пароль:",
+	"pref.password_show.label" : "Показать пароль",
+	"pref.password_save.label" : "Сохранить пароль",
+
+	"pref.security_infected.label" : "Защита от вирусов, мошенников и фишинг-сайтов",
+	"pref.security_adult.label" : "Блокирование контента для взрослых (родительский контроль)",
+
+	"pref.security_alert.label" : "Включить уведомление",
+	"pref.security_action.label" : "Действие для основного запроса:",
+	"pref.security_action.pagelock.label" : "Показать страницу блокировки",
+	"pref.security_action.forbid.label" : "Показать стандартную страницу об ошибке",
+	"pref.security_action.none.label" : "Ничего не делать",
+	"pref.security_closetab.label" : "Запретить создание новых вкладок и окон",
+
+	"pref.security_action_subrequest.label" : "Действие для опасного подзапроса:",
+	"pref.security_action_subrequest.block.label" : "Блокировать запрос",
+	"pref.security_action_subrequest.block_alien_domain.label" : "Блокировать запрос: только если отличается домен от основного запроса",
+	"pref.security_action_subrequest.none.label" : "Ничего не делать",
+
+	"pref.security_action_all.label" : "Действие:",
+
+	"pref.security_white_list_enabled.label" : "Включить использование белого списка",
+	"pref.security_black_list_enabled.label" : "Включить использование черного списка",
+
+	"pref.security_mask.hint" : "Вы можете использовать маску * в начале доменного имени для черного и белого списков",
+	"pref.security_mask.example1" : "*example.com - jycyjrdc-example.com, 651651example.com, example.com, т.д.",
+	"pref.security_mask.example2" : "*.example.com - www.example.com, 123.example.com, т.д. (но без 'example.com' ! )",
+	"pref.security_mask.deny_all" : "* - для запрета всех доменов",
+
+	"pref.pagelock.default.label" : "По умолчанию",
+
+	"pref.dns_servers.test.label" : "Проверить",
+	"pref.dns_servers.test.host.label" : "Домен или IP:",
+	"pref.dns_servers.test.start.label" : "начать проверку",
+
+	"pref.dns_servers.edit.enabled.label" : "Активировано:",
+	"pref.dns_servers.edit.name.label" : "Название:",
+	"pref.dns_servers.edit.dns_ip.label" : "DNS IP:",
+	"pref.dns_servers.edit.response.label" : "Ответ:",
+	"pref.dns_servers.edit.response.adult.label" : "сайты для взрослых:",
+	"pref.dns_servers.edit.response.infected.label" : "опасные сайты:",
+	"pref.dns_servers.edit.response.unknown_host.label" : "неизвестный хост:",
+	"pref.dns_servers.edit.save_check.label" : "проверить и сохранить",
+	"pref.dns_servers.edit.save.label" : "сохранить",
+	"pref.dns_servers.edit.check.label" : "проверить",
+	"pref.dns_servers.edit.close.label" : "закрыть",
+	"pref.dns_servers.edit.delete.label" : "удалить",
+	"pref.dns_servers.edit.hint1.label" : "Список IP можно разделить символами: « , » или « ; ». Пример: 127.0.0.1, 127.0.0.2; 127.0.0.3",
+	"pref.dns_servers.edit.back_to_editing.label" : "вернуться к редактированию",
+	"pref.dns_servers.link.s3blog.label" : "Вы можете использовать любой безопасный DNS! Нажмите здесь для получения подробной информации.",
+
+	"pref.foxdns.text_1.label" : "FoxDNS - это бесплатный сервис для защиты от рекламы, порнографии, вирусов и мошеннических сайтов.",
+	"pref.foxdns.text_2.label" : "Наш DNS создан на основе опыта большинства известных подобных сервисов, поэтому наша защита является совершеннее и наиболее комплексной. Это значит, что вам теперь не надо выбирать какой безопасный DNS использовать - выберите FoxDNS и вы получите максимальную защиту!",
+
+	"pref.show.context_menu.main.label" : "Показать меню в основном контекстном меню",
+	"pref.reset.settings.label" : "Восстановить настройки по умолчанию",
+	"pref.startup.tabs.reload.label" : "Обновить и проверить вкладки при запуске браузера",
+
+	"failed_connection" : "Ошибка подключения!",
+	"dns_not_secure" : "Вероятно DNS-сервис « DNS_NAME » не имеет функционала для защиты пользователей!",
+
+	"pref.settings.saved.label" : "Настройки сохранены"
+}

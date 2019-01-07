@@ -1,0 +1,75 @@
+<div class="top-decor-line"></div>
+
+<!--Spinner-->
+<div ng-if="authCtrl.isShowSpinner" id="cp-spinner-overlay">
+  <h2>Preparing your ClipTo...</h2>
+</div>
+
+<div class="cp-hello-bg">
+  <div class="cp-hello-wrapper">
+
+    <cp-auth-header></cp-auth-header>
+
+    <div class="cp-hello-content">
+
+      <h2 ng-if="authCtrl.userProvidedName">Hi, {{authCtrl.userProvidedName}}</h2>
+      <h1>Sign Up</h1>
+
+      <div class="cp-hello-form-wrapper">
+        <div class="cp-hello-form">
+          <form name="userForm" data-ng-submit="authCtrl.signup()" class="margin-top-15" accept-charset="utf-8">
+
+
+            <div class="form-group">
+              <input lc-focus-me="true" type="email" class="form-control cp-hello-form-input" id="email" name="email"
+                     data-ng-model="authCtrl.credentials.email" placeholder="email">
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control cp-hello-form-input" id="password" name="password"
+                     data-ng-model="authCtrl.credentials.password" placeholder="Password">
+            </div>
+
+            <div class="form-group cp-hello-secondary-action-wrapper" style="height: 40px">
+              <button type="submit" class="cp-hello-primary cp-hello-primary-action btn btn-block pull-right">Join</button>
+            </div>
+
+            <div ng-show="authCtrl.error" class="form-group cp-hello-secondary-action-wrapper cp-hello-secondary-action-wrapper-error">
+              <span>{{authCtrl.error}}</span>
+            </div>
+
+
+            <!--<div class="form-group">or via</div>-->
+
+            <!--<div class="form-group cp-social-login-button" ng-click="authCtrl.goToAuthProvider('facebook')">-->
+            <!--<span class="cp-social-login-icon"><img src="../icons/facebook-3-16.png" ></span>-->
+            <!--<span>Join with Facebook</span>-->
+            <!--</div>-->
+
+            <!--<div class="form-group cp-social-login-button" ng-click="authCtrl.goToAuthProvider('google')">-->
+            <!--<span class="cp-social-login-icon"><img src="../icons/google-plus-3-16.png" ></span>-->
+            <!--<span>Join with Google</span>-->
+            <!--</div>-->
+
+          </form>
+        </div>
+      </div>
+
+      <div class="form-group cp-hello-secondary-action-wrapper" style="margin-top: 10px">
+        <div class="cp-hello-secondary-action">
+          <p>Have An Account?</p>
+          <a ng-click="authCtrl.userSelectedClick({}, 'signin')">Log in</a>
+        </div>
+      </div>
+
+      <div ng-if="authCtrl.userProvidedName" class="form-group cp-hello-secondary-action-wrapper cp-hello-skip-wrapper">
+        <div class="cp-hello-secondary-action cp-white-transparent-button-wrapper">
+          <p>Or would you rather stay logged out?</p>
+          <button type="button" class="cp-button-center btn btn-default" ng-click="authCtrl.skipLogin()">Stay Logged Out</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

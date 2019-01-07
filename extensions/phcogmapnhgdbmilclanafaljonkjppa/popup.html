@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="goalBuddy">
+  <head>
+  	<meta charset="utf-8">
+    <title>Goal Buddy</title>
+  	<!-- Load Bower Scripts -->
+  	<script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  	<script src="bower_components/angular/angular.min.js"></script>
+  	<script src="bower_components/angular-route/angular-route.min.js"></script>
+  	<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+  	<script src="bower_components/angular-moment/angular-moment.min.js"></script>
+  	<!-- Load Workflow Scripts -->
+  	<script src="workflow/app.js"></script>
+		<script src="workflow/controllers.js"></script>
+		<script src="workflow/directives.js"></script>
+		<script src="workflow/filters.js"></script>
+    <script src="workflow/services.js"></script>
+    <script src="workflow/teams.js"></script>
+		<!-- Cascading Style Sheets -->
+		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/custom.css" rel="stylesheet" media="screen">
+    <!-- Polymer Imports -->
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="elements/scorebox-grid.html">
+  </head>
+
+	<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#/scores">Scores</a>
+          <!-- <a class="navbar-brand" href="#/standings">Standings</a> -->
+          <a href="#/settings"><span class="glyphicon glyphicon-cog pull-right settings" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- <center><a href="#/scores"><h3>Goal Buddy</h3></a></center> -->
+
+    <div id="gameData" ng-view></div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  </body>
+</html>

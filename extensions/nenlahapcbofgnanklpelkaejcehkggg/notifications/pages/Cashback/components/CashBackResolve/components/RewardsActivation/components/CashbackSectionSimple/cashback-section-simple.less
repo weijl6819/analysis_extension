@@ -1,0 +1,67 @@
+@import "~less/variables.less";
+#__wikibuy__ .__wikibuy .cashback-notification .simple-section {
+  
+  .activation-test {
+    text-align: center;
+    width: 100%;
+  }
+  @keyframes buttonPulse {
+    0%, 100% {
+      background: #01c049;
+      border: 1px solid transparent;
+      box-shadow: none;
+    }
+    50% {    
+      background-color: #00e76d;
+      border: 1px solid #00e76d;
+      box-shadow: 0px 2px 12px rgba(210, 210, 210, 0.7);
+    }
+  }
+  .button-pulse {
+    animation: buttonPulse 2s 3s ease infinite;
+  }
+
+  .comparison-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+    .competitor, .wb {
+      max-width: 50%;
+      width: 100%;
+      padding: 0 5px;
+      * {
+        color: @palmetto;
+      }
+      .title {
+        border-bottom: 1px solid @palmetto;
+        padding-bottom: 2px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+      }
+      .amount {
+        font-size: 44px;
+        margin: 15px 0 0;
+        width: 100%;
+        text-align: center;
+      }
+      .footer {
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+        h6 {
+          line-height: 15px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+    .competitor {
+      * {
+        color: @silver !important;
+      }
+      .title {
+        border-bottom: 1px solid @silver;
+      }
+    }
+  }
+}

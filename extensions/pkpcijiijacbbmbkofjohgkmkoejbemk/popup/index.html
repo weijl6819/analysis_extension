@@ -1,0 +1,107 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+	<div class="logo-icon">
+		<a target="_blank" id="source-link" href=""><img src="../shared/icons/logo.png"></a>
+	</div>
+	<div class="settings">
+		<button id="settings-button" class="btn-settings"></button>
+	</div>
+	<div class="header-text">
+		<span class="wrapper"></span>
+	</div>
+</header>
+<div>
+	<img id="test">
+</div>
+<div class="feed js-screen serif">
+	<div class="Page-chronology" id="feed-box"></div>
+</div>
+<div class="settings js-screen" id="settings-box" style="display: none;">
+	<h2 class="content-wait" data-inner-text="settingTittle"></h2>
+	<div id="push-mode-block">
+		<span id="most-important" class="content-wait" data-inner-text="mostImportantTittle"></span>
+		<div class="selector active" id="push-mode">
+			<div class="point"></div>
+		</div>
+		<span id="all-news" class="content-wait" data-inner-text="allNewsTittle"></span>
+	</div>
+
+   <div id="push-off-block">
+	   <span id="push-off-title" class="content-wait" data-inner-text="pushOffTitle"></span>
+	   <div id="push-toggle" class="selector">
+		   <div class="point"></div>
+	   </div>
+   </div>
+</div>
+
+<script src="../shared/libs/constants.js"></script>
+<script src="../shared/libs/utils.js"></script>
+<script src="main.js"></script>
+<script src="../shared/vendors/ga_popup.js" async></script>
+
+<script type="tpl" id="tpl">
+<div class="ChronologyItem ChronologyItem--noImage ChronologyItem--news" >
+	<div class="ChronologyItem-info">
+		<div class="ChronologyItem-meta">
+			<span class="MaterialTag MaterialTag--isInChronologyItem MaterialTag--pathless">{{tagTitle}}</span>
+			<span class="NewsTime NewsTime--isInNewsTitle">{{time}}</span>
+			<span class="NewsAuthor">{{author}}</span>
+		</div>
+		<div class="NewsTitle NewsTitle--isInChronologyItem">
+			<span class="NewsTitle-first">
+				<span>{{title}}</span>
+			</span>
+			<span class="NewsTitle-second">
+				{{second_title}}
+			</span>
+		</div>
+	</div>
+	<a target="_blank" class="Link Link--independent" href="{{url}}">
+	</a>
+</div>
+</script>
+
+<script type="tpl" id="tpl-day-separator">
+	<div class="DatedChronology-date">{{text}}</div>
+</script>
+
+<script type="tpl" id="tpl-photo">
+	<div class="ChronologyItem" >
+		<div class="ChronologyItem-image">
+			<div class="ChronologyItemImage" style="background-image:url({{icon}});">
+				<div class="TypeIcon TypeIcon--isInChronologyImage"><i class="Icon Icon--type-{{fun_type}}"></i></div>
+			</div>
+		</div>
+		<div class="ChronologyItem-info">
+			<div class="ChronologyItem-meta">
+				<span class="MaterialTag MaterialTag--isInChronologyItem MaterialTag--pathless">{{tagTitle}}</span>
+				<span class="NewsTime NewsTime--isInNewsTitle">{{time}}</span>
+				<span class="NewsAuthor">{{author}}</span>
+			</div>
+			<div class="NewsTitle NewsTitle--isInChronologyItem">
+				<span class="NewsTitle-first">
+					<span>{{title}}</span>
+				</span>
+				<span class="NewsTitle-second">
+					{{second_title}}
+				</span>
+			</div>
+		</div>
+		<a target="_blank" class="Link Link--independent" href="{{url}}"></a>
+	</div>
+</script>
+
+<script type="tpl" id="tpl-error" style="display: none">
+	<div class="error-block">
+	<h2>{{text}}</h2>
+	<button>{{reload}}</button>
+	</div>
+</script>
+
+</body>
+</html>

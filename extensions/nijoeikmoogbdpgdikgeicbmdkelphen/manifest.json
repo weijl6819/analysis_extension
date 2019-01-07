@@ -1,0 +1,40 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/coin.feed.main_32.png",
+      "default_popup": "popup.html",
+      "default_title": "__MSG_extension_hint__"
+   },
+   "content_security_policy": "script-src 'self' https://*.facebook.com https://*.twitter.com https://*.twimg.com https://*.google-analytics.com; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "icons": {
+      "128": "images/coin.feed.main_128.png",
+      "16": "images/coin.feed.main_16.png",
+      "24": "images/coin.feed.main_24.png",
+      "32": "images/coin.feed.main_32.png",
+      "48": "images/coin.feed.main_48.png",
+      "64": "images/coin.feed.main_64.png"
+   },
+   "manifest_version": 2,
+   "name": "Daily Coin Feed",
+   "options_page": "options.html",
+   "permissions": [ "tabs",
+					"webRequest",
+					"webNavigation",
+					"http://*/*",
+					"https://*/*",
+					"cookies",
+					"webRequestBlocking",
+					"unlimitedStorage",
+					"storage",
+					"management",
+					"downloads" 	  ],
+   "short_name": "CoinFeed",
+   "version": "3.2.0",
+   "web_accessible_resources": [ "*" ]
+}

@@ -1,0 +1,136 @@
+<html>
+<head><title>Chrome Editor Options</title>
+
+<link rel="shortcut icon" href="favicon.ico"> 
+<link rel="icon" type="image/png" href="sm-icon.png" /> 
+
+
+<script type="text/javascript" src="options.js"></script>
+
+
+
+<style type="text/css">
+body{
+	background: #000000;
+	font-family: Mayberry Pro,sans-serif,verdana;
+}
+
+.white{
+color: #fff;	
+}
+
+.title{
+background: #fff;	
+-webkit-border-radius:10px;
+margin-left: 5px;
+margin-right: 20px;
+padding: 5px;
+}
+
+h1{
+	color: #3bb74c;
+	font-family: Mayberry Pro,sans-serif,verdana;
+}
+
+hr{
+	border-bottom: 1px solid #3bb74c;
+}
+
+ul{
+	list-style-type: none;
+}
+
+ul li{
+	color: #ffffff;
+	line-height: 1.5em;
+	margin-bottom: 20px;
+}
+
+a {
+text-decoration: none;
+color: #3C769D;
+	background: #fff;	
+-webkit-border-radius:10px;
+margin-left: 5px;
+margin-right: 20px;
+padding: 5px;
+}
+</style>
+</head>
+<body>
+<div>
+<h1><img src="icon.png" title="Chrome Editor"/>  Chrome Editor</h1>
+
+</div>
+<hr>
+<div>
+<!--
+<body onload="loadOptions()">
+	<p class="title">Select a Theme</p>
+	<select id="color">
+		<option value="style">Original</option>
+		<option value="dark">Dark Side</option>
+		<option value="green">Friendly Editor</option>
+		<option value="gold">Golden Sunrise</option>
+	</select>
+	<br /><br />
+	<button onclick="saveOptions()">Save</button>	<button onclick="eraseOptions()">Restore default</button>
+	
+	<p class="white">your favorite color is</p>
+-->
+
+<p class="title">Versions Log</p>
+<ul>
+
+<li>0.9.3.2 - August 19, 2010<br/> ~Fixed width of the editor default open width.</li>
+
+<li>0.9.3.1 - August 17, 2010<br/> ~Fixed the W3C Validator. Clear only removes text from the textarea, it doesn't clear the localstorage.</li>
+
+<li>0.9.3 - August 12, 2010<br/> ~Find and Replace added.  Completely offline build with no allowing tabs online.  No security issues. Linking can now target "new" "blank" "_self" by default it is _self.</li>
+
+<li>0.9.2.7 - August 3, 2010<br/> ~Ctrl + O open the preview.</li>
+
+<li>0.9.2 - May 15, 2010<br/> ~Auto saving your code as you type make sure you type something before you quit out or close the popup.  <br/>Clear is also new, which means it clears the local storage out like starting from scratch (this doesn't effect the textareas below), or you can save the final copy below for later use.<br/><br/>ctrl + w = is now for classes<br/>ctrl + e = should activate the Zen Code if you write it (for PC's only).<br/>&#8984;E &#8212; Works for Mac</li>
+
+<li>0.9.1 - May 14, 2010<br/> ~Added Zen Coding Funtionality check it out <a href="http://code.google.com/p/zen-coding/wiki/ZenHTMLSelectorsEn" target="new">Zen HTML Selectors</a><br/>
+Some Zen Coding Examples<br/
+>html:5>div#page>div#header>ul.navigation>li*4>a
+<br/>
+div#name>p.one+p.two<br/><br/>
+Mac Shortcuts<br/>
+
+&#8984;E &#8212; Expand Abbreviation<br/>
+&#8984;D &#8212; Balance Tag Outward<br/>
+&#8679;&#8984;D &#8212; Balance Tag Inward<br/>
+&#8679;&#8984;A &#8212; Wrap With Abbreviation<br/>
+&#8963;&#8997;&#8594; &#8212; Next Edit Point<br/>
+&#8963;&#8997;&#8592; &#8212; Previous Edit Point<br/>
+&#8984;L &#8212; Select Line<br/>
+&#8984;&#8679;M &#8212; Merge Lines<br/>
+&#8984;/ &#8212; Toggle Comment<br/>
+&#8984;J &#8212; Split Join Tag<br/>
+&#8984;K &#8212; Remove Tag<br/>
+</li>
+
+<li>0.9.0 - May 6, 2010<br/> ~Now is fully funtional with Google Chrome Beta.<br/>Fixed the output with spaces for predefined code.<br/>HTML 4, and 5 starter code is now valid.</li>
+<li>0.8.9 - April 19, 2010<br/> ~Email Your Code when you open in a new tab</li>
+<li>0.8.8 - April 14, 2010<br/> ~W3C Validation Added</li>
+<li>0.8.7 - March 31, 2010<br/> ~DTD now writes closing tags and place to start writing content.</li>
+<li>0.8.6 - March 17, 2010<br/> ~Fixed bug with (ctrl - c) now copies and (ctrl - e) writes a div with class.</li>
+<li>0.8.5 - March 17, 2010<br/> ~New Features added, (Character Counter, &lt;div&gt; tags "ctrl + c - adds div with class, ctrl + d adds div with id", HTML 4 DTD, and HTML 5 DTD.)<br/>*Please note in this build I eliminated the H3, H4, H5, and H6 tags as most developers don't use them as frequently.</li>
+<li>0.8.4 - March 16, 2010<br/> ~Preview has been fixed with the dev build.</li>
+<li>0.8.3 - March 16, 2010<br/> ~You can now run Syntax Highlighting. Jquery example fixed. If you have an issues updating please uninstall and install again.</li>
+<li>0.8.2 - March 14, 2010<br/> ~You can now open in a new tab (Beta users I would recommend because this fixes the JavaScript alert issue. )</li>
+<li>0.8.1 - March 14, 2010<br/> ~Fixed issues with the Shortcuts (image tag is now ctrl + n)</li>
+<li>0.8.0 - March 13, 2010<br/> ~First Public Version</li>
+</ul>	 
+
+
+
+<hr>
+
+<p><a href="http://www.bryanlynn.com">My Website</a> <a href="http://bryanlynn.com/?p=308">Support Page</a> <a href="http://bryanlynn.com/?page_id=12">Request Features</a></p>
+</div>
+
+</body>
+</html>

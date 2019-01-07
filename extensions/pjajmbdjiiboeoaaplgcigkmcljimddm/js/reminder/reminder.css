@@ -1,0 +1,117 @@
+.reminder{
+	height: 24px;
+	width:	36px;
+	position: relative;
+
+	border:none;
+	background-color: #efefef;
+
+	padding: 0 6px;
+
+	display:inline-block;
+	float:right;
+}
+.reminder_width_156{
+	width:156px;
+}
+.reminder_width_264{
+	width:264px !important;
+}
+/*==================================
+=            Main style            =
+==================================*/
+.reminder{
+	transition-duration:0.1s;
+	opacity:0.25;
+}
+.reminder:hover{
+	opacity:1;
+}
+.reminder *{
+	transition-duration:0.3s;
+	outline: none;
+}
+.reminder:focus{
+	outline: none;
+}
+.reminder *:focus{
+	outline: none;
+}
+.reminder_container{
+
+}
+.reminder_container.selecting .reminder_main{
+	background-color: #DADADA;
+}
+.reminder_container.selecting .reminder_select{
+	height:36px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+	margin-top: -6px;
+	padding-top: 6px;
+	padding-left: 5px;
+	max-width:240px;
+	background-color: #DADADA;
+}
+.reminder_container.selecting .reminder_status{
+}
+.reminder_container.active .reminder_status{
+	background-color: #26C281;
+}
+.reminder_main{
+	position:absolute;
+	top:0; left:0; right:0; bottom:0;
+	cursor:pointer;
+	padding: 0;
+	margin: 0;
+	background-image: url(time.png);
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	background-position: center center;
+	background-color: #efefef;
+	z-index: 100;
+}
+.reminder_status{
+	position:absolute;
+	right:3px; bottom:-1px;
+	display: block;
+	height: 12px; width: 12px;
+	border: 2px solid #efefef;
+	border-radius: 12px;
+	background-color: #868686;
+	cursor:pointer;
+	z-index: 101;
+}
+.reminder_select{
+	position:absolute;
+	top:0; bottom:0; right:0;
+	white-space: nowrap;
+	height:24px;
+	padding-right: 36px;
+	overflow: hidden;
+	max-width:0;
+	
+	background-color: #efefef;
+}
+.reminder_select_time{
+	display:inline-block;
+	height:24px;
+	text-align: center;
+	line-height: 24px;
+	padding: 0 5px 0 2px;
+	cursor:pointer;
+	font-size: 12px;
+	font-weight: normal;
+	vertical-align: top;
+	color:#868686;
+}
+.reminder_select_time:last-of-type{
+	border-right: 1px solid #868686;
+}
+.reminder_select_time.active{
+	color: #26C281;	
+	font-weight: bold;
+	font-size: 13px;
+}
+.reminder_cb{
+	clear: both;
+}

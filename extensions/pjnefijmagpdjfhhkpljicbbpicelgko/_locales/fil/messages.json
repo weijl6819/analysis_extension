@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Gamitin speech recognition sa ANUMANG text box sa ANUMANG website"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

@@ -1,0 +1,165 @@
+@import "~less/variables.less";
+@import "../../less/cleanslate.less";
+#__wikibuy__ .__wikibuy.__product-estimate-annotation {
+  display: flex;
+  &.__onTop {
+    z-index: auto;
+  }
+  &.checkout-page {
+    margin-left: 96px;
+  }
+  &.serp-page {
+    .product-estimate-annotation {
+      margin-bottom: 0;
+    }
+  }
+  &.zappos-product-page {
+
+  }
+  .product-estimate-annotation {
+    .defaultRegular;
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .wikibuy-icon-svg {
+      width: 28px;
+      height: 19px;
+      flex-shrink: 0;
+    }
+    .searching-component {
+      display: flex;
+      align-items: baseline;
+      flex-shrink: 0;
+      h4 {
+        margin-right: 5px;
+        color: #c7c7c7;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+    .wave {
+      display: inline;
+      vertical-align: middle;
+      .dot {
+        display: inline-block;
+        vertical-align: middle;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        margin-right: 2px;
+        background: @gray;
+        animation: wave 0.9s ease infinite;
+        &:nth-child(2) {
+          animation-delay: -0.7s;
+        }
+
+        &:nth-child(3) {
+          animation-delay: -0.5s;
+        }
+      }
+    }
+    @keyframes wave {
+      0%, 60%, 100% {
+        transform: initial;
+      }
+
+      30% {
+        transform: translateY(-5px);
+      }
+    }
+    .finding-more {
+      display: flex;
+      color: @gray;
+      margin: 5px 0 5px 10px;
+      color: @gray;
+      .wave {
+        margin-left: 5px;
+        .dot {
+          background: @gray;
+        }
+      }
+    }
+    .best-price-component {
+      cursor: pointer;
+      h4 {
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+    .wikibuy-savings-component {
+      cursor: pointer;
+      h4 {
+        .defaultBold;
+        color: #FFF;
+        margin-right: 5px;
+        .dollar-sign {
+          font-size: 12px;
+        }
+      }
+    }
+    .savings-button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      padding: 5px;
+      margin-right: 5px;
+      background-color: #f4f4f4;
+      color: #a1a1a1;
+      border-radius: 4px;
+      transition: all 100ms;
+      .wikibuy-icon-svg {
+        margin-right: 5px;
+      }
+      &.searching, &.no-savings {
+        .wikibuy-icon-svg path {
+          fill: #a1a1a1;
+        }
+      }
+      &.savings {
+        background-color: @palmetto;
+        .wikibuy-icon-svg path {
+          fill: #1a8740;
+        }
+      }
+    }
+    .watchlist-button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 30px;
+      padding: 5px;
+      border: 2px solid @palmetto;
+      color: @palmetto;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 100ms;
+      &.disabled {
+        pointer-events: none;
+        border: 2px solid #f4f4f4;
+        background-color: #f4f4f4;
+        color: #a1a1a1;
+        .wikibuy-icon-svg path {
+          fill: #a1a1a1;
+        }
+      }
+      &:hover {
+        &:after {
+          content: 'Add to watchlist';
+          margin: 0 5px;
+        }
+      }
+      &:after {
+        .defaultBold;
+        content: '+';
+        margin-top: -5px;
+      }
+      &.is-watching:after, &.is-watching:hover:after {
+        content: 'View watchlist';
+        margin: 0 5px;
+      }
+      .wikibuy-icon-svg path {
+        fill: @palmetto;
+      }
+    }
+  }
+}

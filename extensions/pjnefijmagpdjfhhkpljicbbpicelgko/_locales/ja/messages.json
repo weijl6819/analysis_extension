@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "任意のウェブサイト上の任意のテキストボックスに音声認識を使用します"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

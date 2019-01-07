@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  box-sizing: border-box; }
+
+::-webkit-scrollbar-button {
+  background-repeat: no-repeat;
+  width: 0;
+  height: 0; }
+
+::-webkit-scrollbar-track {
+  background-color: #ecedee;
+  opacity: .5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #949494;
+  opacity: .5; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2f4050; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; }
+
+#vlc-player .vlc-video-box video.vlc-video {
+  max-height: 295px; }
+
+#vlc-settings-view {
+  overflow: auto;
+  height: 520px; }
+
+/*# sourceMappingURL=popup.css.map */

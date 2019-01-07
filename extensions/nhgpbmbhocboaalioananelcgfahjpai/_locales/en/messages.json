@@ -1,0 +1,512 @@
+{
+    "extName": {
+        "message": "Sylvan Paper",
+        "description": "Extension name."
+    },
+    "extDescription": {
+        "message": "Sylvan Paper is an easy-to-use academic research tool that provides an organizational framework for writing your papers.",
+        "description": "Extension description."
+    },
+    "userNotLoggedIn": {
+        "description": "error user is not logged in",
+        "message": "Please login"
+    },
+   	"projectNotSelected": {
+      	"description": "error no project is selected",
+      	"message": "Please select a project"
+   	},
+   	"noSelection": {
+ 	    "description": "no text selection detected",
+        "message": "No capture text"
+   	},
+   	"selectProject": {
+        "description": "the default text when no project is selected",
+      	"message": "Select a project"
+   	},
+   	"loginFailed": {
+        "description": "error the authentication failed",
+      	"message": "Failed to log in"
+   	},
+    "projectIsCompleted": {
+        "description": "user project is completed or submited",
+        "message": "You cannot add captures to a completed project"
+    },
+    "projectIsCompletedGdocs": {
+        "description": "user project is completed or submited",
+        "message": "You cannot write on a completed project"
+    },
+   	"extensionIsOutOfDate": {
+ 		   "description": "warning extension is out of date",
+    	 "message": "New Toolbar Update Available"
+   	},
+    "selectionExtractFailed": {
+        "description": "error text selection can not be processed",
+        "message": "We cannot save this selection"
+    },
+    "citationSaving": {
+        "description": "notify user about the saving citation process",
+        "message": "Saving your capture"
+    },
+    "citationSavedSuccess": {
+        "description": "notify user for saving his citation",
+        "message": "Your capture has been saved"
+    },
+
+
+    "loginButton": {
+        "description": "login button in the menu",
+        "message": "Log In"
+    },
+    "menuButton": {
+        "description": "menu button when the toolbar is expanded",
+        "message": "Menu"
+    },
+    "createNewPrjButton": {
+        "description": "Menu button - create new project",
+        "message": "Create new project"
+    },
+    "viewPrjButton": {
+        "description": "Menu button - view project",
+        "message": "View project"
+    },
+    "quickViewPrjButton": {
+        "description": "Menu button - quick view project",
+        "message": "Quick view"
+    },
+    "exportWordPrjButton": {
+        "description": "Menu button - export project to word",
+        "message": "Export to Word"
+    },
+    "sendEmailPrjButton": {
+        "description": "Menu button - send email project",
+        "message": "Send via Email"
+    },
+    "writeGdocsButton": {
+        "description": "Menu button - write to google docs",
+        "message": "Write"
+    },
+    "addOfflineCitationButton": {
+        "description": "Menu button - add offline citation",
+        "message": "Add offline capture"
+    },
+    "resyncExtension": {
+        "description": "Menu button - resync extension",
+        "message": "Resync Toolbar"
+    },
+    "settingButton": {
+        "description": "Menu button - settings",
+        "message": "Settings"
+    },
+    "helpButton": {
+        "description": "Menu button - help",
+        "message": "Help"
+    },
+    "logoutButton": {
+        "description": "Menu button - logout",
+        "message": "Logout "
+    },
+    "createNewProjectTitleLabel": {
+        "description": "Create new project panel project title label",
+        "message": "Project Title"
+    },
+    "createNewProjectDescriptioneLabel": {
+        "description": "Create new project panel project description label",
+        "message": "Project Description"
+    },
+    "createNewProjectTitlePlaceholder": {
+        "description": "Create new project panel project title input placeholder",
+        "message": "Click here to add project title"
+    },
+    "createNewProjectDescriptionePlaceholder": {
+        "description": "Create new project panel project description textarea placeholder",
+        "message": "Click here to add a project description"
+    },
+
+    "completnessText": {
+        "description": "Create citation container - credebility meter text",
+        "message": "Completeness"
+    },
+    "meterText": {
+        "description": "Create citation container - credebility meter text",
+        "message": "Meter"
+    },
+    "websiteCitation": {
+        "description": "Create citation container - Website citation",
+        "message": "Website capture"
+    },
+    "journalArticle": {
+        "description": "Create citation container - Journal Article",
+        "message": "Journal/Book capture"
+    },
+    "contentLabel": {
+        "description": "Create citation container - content label",
+        "message": "Content "
+    },
+    "commentsLabel": {
+        "description": "Create citation container - comments label",
+        "message": "Comments "
+    },
+    "commentsLabel": {
+        "description": "Create citation container - comments label",
+        "message": "Comments "
+    },
+    "articleDetailsLabel": {
+        "description": "Create citation container - article details label",
+        "message": "Article Details "
+    },
+    "articleTitleLabel": {
+        "description": "Create citation container - article title label",
+        "message": "Article Title"
+    },
+    "websiteTitleLabel": {
+        "description": "Create citation container - website title label",
+        "message": "Website Title"
+    },
+    "urlLabel": {
+        "description": "Create citation container - url label",
+        "message": "URL"
+    },
+    "pubDateLabel": {
+        "description": "Create citation container - publication date label",
+        "message": "Publication Date"
+    },
+    "publisherLabel": {
+        "description": "Create citation container - publisher label",
+        "message": "Publisher/Sponsor"
+    },
+    "journalTitleLabel": {
+        "description": "Create citation container - journal title label",
+        "message": "Journal Title/Publisher"
+    },
+    "volumeLabel": {
+        "description": "Create citation container - volume number label",
+        "message": "Volume Number"
+    },
+    "issueLabel": {
+        "description": "Create citation container - issue number label",
+        "message": "Issue Number"
+    },
+    "pagesLabel": {
+        "description": "Create citation container - pages label",
+        "message": "Pages"
+    },
+    "authorFirstNameLabel": {
+        "description": "Create citation container - author first name label",
+        "message": "Author First Name"
+    },
+    "authorLastNameLabel": {
+        "description": "Create citation container - author first name label",
+        "message": "Author Last Name"
+    },
+    "addAuthor": {
+        "description": "Create citation container - add author button",
+        "message": "Add Author"
+    },
+    "cancelCitationButton": {
+        "description": "Create citation container - cancel citation button",
+        "message": "Cancel"
+    },
+    "saveCitationButton": {
+        "description": "Create citation container - save citation button",
+        "message": "Save"
+    },
+    "citationPlaceholder": {
+        "description": "Create citation container - citation content placeholder",
+        "message": "Click here to add capture content"
+    },
+    "commentsPlaceholder": {
+        "description": "Create citation container - comments content placeholder",
+        "message": "Click here to add a comment"
+    },
+    "articleTitlePlaceholder": {
+        "description": "Create citation container - article title placeholder",
+        "message": "Click here to add an article title"
+    },
+    "websiteTitlePlaceholder": {
+        "description": "Create citation container - website placeholder",
+        "message": "Click here to add website title"
+    },
+    "urlPlaceholder": {
+        "description": "Create citation container - url placeholder",
+        "message": "Click here to add website url"
+    },
+    "pubDatePlaceholder": {
+        "description": "Create citation container - publication date placeholder",
+        "message": "Click here to add publication date"
+    },
+    "pubSponsorPlaceholder": {
+        "description": "Create citation container - publication sponsor placeholder",
+        "message": "Click here to add publisher/sponsor"
+    },
+    "journalPlaceholder": {
+        "description": "Create citation container - journal placeholder",
+        "message": "Click here to add a journal title"
+    },
+    "volumePlaceholder": {
+        "description": "Create citation container - volume number placeholder",
+        "message": "Click here to add a volume number"
+    },
+    "issuePlaceholder": {
+        "description": "Create citation container - issue number placeholder",
+        "message": "Click here to add a issue number"
+    },
+    "pagePlaceholder": {
+        "description": "Create citation container - pages placeholder",
+        "message": "Click here to add page number"
+    },
+    "authorFirstNamePlaceholder": {
+        "description": "Create citation container - author first name placeholder",
+        "message": "Click here to add author first name"
+    },
+    "authorLastNamePlaceholder": {
+        "description": "Create citation container - author first name placeholder",
+        "message": "Click here to add author last name"
+    },
+    "author": {
+        "description": "Create citation container - author ",
+        "message": "Author "
+    },
+    "firstName": {
+        "description": "Create citation container - first name ",
+        "message": " First Name "
+    },
+    "lastName": {
+        "description": "Create citation container - last name ",
+        "message": " Last Name "
+    },
+    "authorsError": {
+        "description": "Create citation container - error when previous authors are not completed",
+        "message": "Please fill at least one of the previous author fields"
+    },
+    "citationEmptyError": {
+        "description": "Create citation container - error when citation body is empty",
+        "message": "Please add some content for capture"
+    },
+    "citationNoImageError": {
+        "description": "Create citation container - error when image is missing",
+        "message": "Please rescan and select an image"
+    },
+
+    "outlinesTab": {
+        "description": "Quick Panel View - outlines tab text",
+        "message": "Outline"
+    },
+    "citationsTab": {
+        "description": "Quick Panel View - citations tab text",
+        "message": "Captures"
+    },
+    "sourceExpand": {
+        "description": "Quick Panel View - source text",
+        "message": "Source"
+    },
+    "commentsExpand": {
+        "description": "Quick Panel View - comments text",
+        "message": "Comment"
+    },
+    "quickPanelViewBibliography": {
+        "description": "Quick Panel View - bibliography change text",
+        "message": "Bibliography"
+    },
+    "quicPanelViewDirections": {
+        "description": "Quick Panel View - directions text",
+        "message": "Directions"
+    },
+    "quicPanelViewWritingSpace": {
+        "description": "Quick Panel View - directions text",
+        "message": "Writing Space"
+    },
+    "quicPanelViewInstructions": {
+        "description": "Quick Panel View - instructions text",
+        "message": "Instructions"
+    },
+    "quicPanelViewImage": {
+        "description": "Quick Panel View - instructions text",
+        "message": "Image"
+    },
+
+    "captureButtonIframe": {
+        "description": "Capture button inserted into the page",
+        "message": "Capture"
+    },
+
+    "citelighterSettingsTitle": {
+        "description": "The options frame title",
+        "message": "Sylvan Paper Settings"
+    },
+    "optionsGeneral": {
+        "description": "Options Page - general tab text",
+        "message": "General"
+    },
+    "optionsShortcutKeys": {
+        "description": "Options Page - shortcuts keys tab text",
+        "message": "Shortcut Keys"
+    },
+    "optionsGeneralSetting": {
+        "description": "Options Page - general setting heading",
+        "message": "General Settings"
+    },
+    "optionsHideCaptureButton": {
+        "description": "Options Page - hide the Sylvan Paper button in page",
+        "message": "Hide the Capture button in page"
+    },
+    "optionsHideToolbar": {
+        "description": "Options Page - hide the Sylvan Paper toolbar",
+        "message": "Hide the Sylvan Paper Toolbar (note: toolbar will still be active)"
+    },
+    "optionsDisablePdfJs": {
+        "description": "Options Page - disable the pdfjs functionality",
+        "message": "Disable PDFJS Viewer (note: you won't be able to capture from pdf)"
+    },
+    "optionsDisablePdfJsWarning": {
+        "description": "Options Page - disable the pdfjs warning",
+        "message": "Disable PDFJS Warning"
+    },
+    "optionsResetSettings": {
+        "description": "Options Page - reset setting button",
+        "message": "Reset settings"
+    },
+    "optionsKeysConflict": {
+        "description": "Options Page - error when user adds a key twice",
+        "message": "You have selected the same letter for multiple settings. Please choose one letter per setting."
+    },
+    "optionsKeysHeading": {
+        "description": "Options Page - shortcuts heading",
+        "message": "Keyboard Shortcuts"
+    },
+    "optionsCaptureSelection": {
+        "description": "Options Page - capture selection text",
+        "message": "Capture Selection"
+    },
+    "optionsViewProject": {
+        "description": "Options Page - view project text",
+        "message": "View Project"
+    },
+    "optionsExportWord": {
+        "description": "Options Page - export to word text",
+        "message": "Export Project to Word"
+    },
+    "optionsShareViaEmail": {
+        "description": "Options Page - send project via email",
+        "message": "Share Project via Email"
+    },
+    "optionsViewProjectsPage": {
+        "description": "Options Page - view projects page",
+        "message": "View Projects Page"
+    },
+    "optionsGoHome": {
+        "description": "Options Page - go to the Sylvan Paper homepage",
+        "message": "Go to Sylvan Paper Homepage"
+    },
+    "optionsOpenOptionsDialog": {
+        "description": "Options Page - open the options dialog",
+        "message": "Open Settings Dialog"
+    },
+    "optionsViewTutorial": {
+        "description": "Options Page - open the tutorial page",
+        "message": "View Resources Page"
+    },
+    "optionsRefreshToolbar": {
+        "description": "Options Page - refresh toolbar",
+        "message": "Resync Toolbar"
+    },
+    "optionsSignInOut": {
+        "description": "Options Page - sign in / out of the extension",
+        "message": "Sign-in/Out of Sylvan Paper"
+    },
+    "optionsCancelButton": {
+        "description": "Options Page - cancel options",
+        "message": "Cancel"
+    },
+    "optionsSaveButton": {
+        "description": "Options Page - save options",
+        "message": "Save"
+    },
+
+    "notificationWarningTitle": {
+        "description": "Notification Pop-up Text Title",
+        "message": "Sylvan Paper Warning"
+    },
+    "notificationUnhideFirst": {
+        "description": "Notification Pop-up first part of the text",
+        "message": "To unhide the Sylvan Paper toolbar, click the "
+    },
+    "notificationUnhideSecond": {
+        "description": "Notification Pop-up second part of the text",
+        "message": "icon in the upper right-hand corner of your browser."
+    },
+    "notificationDoNotShow": {
+        "description": "Notification label text for checkbox",
+        "message": "Do Not Show Again"
+    },
+    "notificationOkButton": {
+        "description": "Notification ok button",
+        "message": "OK"
+    },
+
+    "sendEmailPageTitle": {
+        "description": "Email Page",
+        "message": "Send via Email"
+    },
+    "emailAdress": {
+        "description": "Email Page email adress label",
+        "message": "Email Adress"
+    },
+    "recepientList": {
+        "description": "Email Page recepient list label",
+        "message": "Recepient List"
+    },
+    "emailAdditionalMessage": {
+        "description": "Email Page additional message label",
+        "message": "Additional Message"
+    },
+    "emailCurrentUserEmail": {
+        "description": "Email Page current user email label",
+        "message": "Your Email"
+    },
+    "emailCancelButton": {
+        "description": "Email Page cancel email button",
+        "message": "Cancel"
+    },
+    "emailSendButton": {
+        "description": "Email Page send email button",
+        "message": "Send"
+    },
+    "emailSendMeACopy": {
+        "description": "Email Page send me a copy label",
+        "message": "Send me a copy"
+    },
+    "emailNotValid": {
+        "description": "Email Page warning for when a email is not valid",
+        "message": "Please enter a valid email"
+    },
+    "emailAlreadyExists": {
+        "description": "Email Page warning for when a email is already in the list",
+        "message": "Email already exists in the list"
+    },
+    "emailListEmpty": {
+        "description": "Email Page warning for when no email is in the list",
+        "message": "Please enter at at least one email"
+    },
+
+    "otherPDFTitle": {
+        "description": "Title of the pdf warning",
+        "message": "Other PDF Viewer Installed !"
+    },
+    "otherPDFWarningMessage": {
+        "description": "The message shown to the user",
+        "message": "You might have another PDF viewer already installed. Please remove or disable it in order to capture captures from PDF's."
+    },
+    "otherPDFWarningFirstButton": {
+        "description": "The first help button on the pdf warning",
+        "message": "Open Plugins Manager"
+    },
+    "otherPDFWarningSecondButton": {
+        "description": "The second help button on the pdf warning",
+        "message": "Learn how to disable chrome pdf viewer"
+    },
+
+    "exportToWordInProgress": {
+        "description": "The message shown on toolbar when exporting project to word",
+        "message": "Exporting project to word in progress ..."
+    }
+}

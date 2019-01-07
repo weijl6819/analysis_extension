@@ -1,0 +1,109 @@
+@font-face {
+    font-family: OpenSans-Light;
+    src: url('./fonts/OpenSans-Light.otf');
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url('./fonts/Roboto-Light.otf');
+}
+
+@font-face {
+    font-family: NotoSans-Bold;
+    src: url('./fonts/NotoSans-Bold.otf');
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #48b8c1;
+    position: relative;
+}
+
+body.green {
+    background-color: #8ac349;
+}
+
+body.red {
+    background-color: #f05555;
+}
+
+body * {
+    box-sizing: inherit;
+}
+
+a, input, select {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+
+.pattern {
+    height: 392px;
+    background: url("../images/clock.png") no-repeat center 70%, url("../images/bg-pattern.png") no-repeat center;
+    background-size: auto, cover;
+}
+
+p {
+    font-family: OpenSans-Light, sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0;
+    padding: 60px 10px 30px;
+}
+
+.button {
+    display: none;
+    width: 78px;
+    height: 36px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-family: NotoSans-Bold, sans-serif;
+    font-size: 14px;
+    line-height: 34px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.button.got-it {
+    background-color: #ffffff;
+    color: #48b8c1;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.7);
+}
+
+.button.finish {
+    width: 130px;
+}
+
+.green .button.finish {
+    display: inline-block;
+}
+
+.red .button:not(.finish) {
+    display: inline-block;
+}
+
+.green .button.got-it {
+    color: #8ac349;
+}
+
+.red .button.got-it {
+    color: #f05555;
+}
+
+.settings {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/settings-icon-large.png") no-repeat center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    z-index: 5;
+}

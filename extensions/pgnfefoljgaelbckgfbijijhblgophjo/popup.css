@@ -1,0 +1,52 @@
+body{
+background-color:#f7f7f7;
+font-size:11px;
+line-height:1.3em;
+width:240px;
+}
+b{
+color:#333;
+font-size:12px;
+margin:0;
+}
+form{
+margin:0;
+padding:0;
+}
+#it{
+border:#999 solid 1px;
+height:15px;
+margin:0;
+padding:0;
+width:188px;
+}
+#is{
+font-size:12px;
+height:18px;
+margin:0 0 0 3px;
+padding:0 5px 0 5px;
+}
+p{
+color:#333;
+margin:1px 0;
+padding:0;
+}
+a{
+color:#0066cc;
+}
+#selOp{
+color:#333;
+font-size:12px;
+font-weight:bold;
+margin-top:5px;
+}
+#selOp a{
+font-size:10px;
+font-weight:normal;
+}
+.selOpL{
+float:left;
+}
+.selOpR{
+float:right;
+}

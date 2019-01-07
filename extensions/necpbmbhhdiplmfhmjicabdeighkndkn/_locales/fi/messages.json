@@ -1,0 +1,10 @@
+{
+  "appDesc": {
+    "description": "Description for the CWS",
+    "message": "Löydä välittömästi vastaavia sivustoja, joita parhaillaan tarkastelet. Tutki nettiä, löydä enemmän."
+  },
+  "appName": {
+    "description": "Title for the CWS",
+    "message": "Similar Sites - Etsi Vastaavia Verkkosivuja"
+  }
+}

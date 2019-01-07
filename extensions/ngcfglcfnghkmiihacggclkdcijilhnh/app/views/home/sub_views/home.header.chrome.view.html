@@ -1,0 +1,50 @@
+
+<!---------------- in case of main content view ----------------->
+<div class="cp-header-display cp-header-display-content" ng-if="homeCtrl.contentToShow == 'content'">
+
+  <div class="cp-clipto-logo cp-no-border">
+    <p>ClipTo</p>
+  </div>
+
+  <div class="cp-greeting cp-no-border" uib-dropdown>
+    <div type="button" uib-dropdown-toggle>
+      <span class="cp-user-name">{{homeCtrl.user.userProvidedName}}</span>
+      <img src="../app/icons/menu-4-16-gray-burger.png" >
+    </div>
+    <ul class="dropdown-menu dropdown-menu-main" uib-dropdown-menu role="menu" aria-labelledby="single-button">
+      <li ng-if="!homeCtrl.user.isAuthenticated && homeCtrl.user.isSkipLogin" role="menuitem" ng-click="homeCtrl.signUpSkippedUser(homeCtrl.user)" ><a href="#">Sign Up</a></li>
+      <!--<li class="divider"></li>-->
+      <li ng-if="homeCtrl.user.isAuthenticated" role="menuitem" ng-click="homeCtrl.signout()" ><a href="#">Sign Out</a></li>
+      <li ng-if="!homeCtrl.user.isAuthenticated && homeCtrl.user.isSkipLogin" role="menuitem" ng-click="homeCtrl.signout()" ><a href="#">Switch Users</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!---------------- in case of note view ----------------->
+
+<div class="cp-header-display cp-header-display-note" ng-if="homeCtrl.contentToShow == 'note'">
+  <div class="cp-note-content-header-1st-row">
+
+
+    <div style="float: left">
+      <button class="cp-note-actions-button cp-back-button cp-no-border" ng-click="homeCtrl.exitEditMode()"><img src="../app/icons/arrow-93-16.png"></button>
+    </div>
+
+    <!--<div>-->
+      <!--<p class="cp-note-actions-button cp-saved-notification cp-hidden cp-no-border"-->
+         <!--ng-class="!!homeCtrl.showSaved ? 'cp-visible': 'cp-hidden'">saved</p>-->
+    <!--</div>-->
+
+    <div style="float: right">
+      <button class="cp-note-actions-button note-actions-button-delete" ng-click="homeCtrl.showDeletePageDialog($event,homeCtrl.activeNote.properties)"><img src="../app/icons/delete.png"></button>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+

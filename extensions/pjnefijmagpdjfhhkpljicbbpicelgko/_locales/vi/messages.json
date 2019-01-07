@@ -1,0 +1,11 @@
+{
+   "desc": {
+      "message": "Sử dụng nhận dạng giọng nói trong bất kỳ hộp văn bản trên bất kỳ trang web"
+   },
+   "name": {
+      "message": "VoiceIn"
+   },
+   "shortName": {
+      "message": "VoiceIn"
+   }
+}

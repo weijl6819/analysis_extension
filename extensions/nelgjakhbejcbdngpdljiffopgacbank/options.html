@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+    	<link rel="stylesheet" type="text/css" href="static/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/weather.css" />
+        <title>Simple Weather</title>
+    </head>
+    <body>
+
+		<div id="loader"></div>
+
+       	<div id="options">
+       		<div id="varos" class="row">
+        		<h2>Options</h2>
+        		<span id="datum"></span>
+        		<a href="popup.html"><img src="static/pic/left.png" /></a>
+        	</div><!-- #varos -->
+        	<div class="settings">
+        		<div class="row">
+        			<h4 class="cf">Celsius or Farenheit:</h4>
+        			<select id="celsiusFarenheit">
+					  <option value="c">Celsius</option>
+					  <option value="f">Farenheit</option>
+					</select>
+        			<input type="button" id="celsiusFarenheitInputOK" value="OK">
+        		</div>
+
+                <hr>                
+        		<div class="row copy">
+        			<p>Made by weart.hu</p>
+        		</div>
+        	</div>
+       	</div>
+
+
+        <script type="text/javascript" src="static/js/jquery.js"></script>
+        <script type="text/javascript" src="static/js/jquery.simpleWeather.js"></script>
+        <script type="text/javascript" src="static/js/weather.js"></script>
+        <script type="text/javascript" src="static/js/options.js"></script>
+    </body>
+</html>

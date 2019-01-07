@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Avenir Next LT Pro Demi";
+		src: url("/assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+}
+
+.fade {
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+
+body {
+  font-family: "Avenir Next LT Pro Demi";
+  font-size: 8px;
+	background-color: #121213;
+  color: #737986;
+  height: 150px;
+  width: 250px;
+  text-align: center;
+	border-radius: 10px;
+	border-width: 0;
+}
+
+#header {
+	/*background-color: #070708;*/
+}
+
+#title {
+	margin: 20px 0px 0px 0px;;
+	font-size: 16px;
+}
+
+.newWorkspaceSubTitle {
+  font-size: 12px;
+  display: block;
+  width: 250px;
+  margin: 0px;
+  padding-top: 14px;
+}
+
+#workspaceName {
+  padding-top: 4px;
+}
+
+.button {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #141518;
+  color: #7E8087;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #131417;
+  color: #A8AAB3;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+#createNewWorkspace {
+	margin: 5px 75px 10px 75px;
+  display: block;
+  height: 40px;
+  width: 100px;
+  font-size: 12px;
+  background-color: #0a0a0b;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  color: #737986;
+	font-family: "Avenir Next LT Pro Demi";
+}
+
+#createNewWorkspace:hover {
+	background-color: #050506;
+	color: #8a92a2;
+}
+
+input {
+	text-align: center;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 2px solid #737986;
+	font-family: "Avenir Next LT Pro Demi";
+  width: 200px;
+  color: #737986;
+	text-transform: uppercase;
+}
+
+#message {
+	margin-top: 55px;
+}
+
+.workspaceError {
+  color: #ff4d4d;
+  text-align: center;
+  font-size: 9px;
+	margin-top: 0px;
+}
+
+.workspaceSuccess {
+  color: #66cc66;
+  text-align: center;
+  font-size: 9px;
+	margin-top: 0px;
+}

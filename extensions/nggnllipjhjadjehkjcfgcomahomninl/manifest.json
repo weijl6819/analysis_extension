@@ -1,0 +1,123 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "PC Protect Safe Site",
+    "author": "SS Protect Ltd",
+    "version": "1.9",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "Security Suite",
+        "default_popup": "assets/html/popup.html",
+        "default_icon": {
+            "16": "/assets/img/_brand/icon16.png",
+            "20": "/assets/img/_brand/icon20.png",
+            "48": "/assets/img/_brand/icon48.png",
+            "80": "/assets/img/_brand/icon80.png",
+            "128": "/assets/img/_brand/icon128.png"
+        },
+        "browser_style": false,
+        "permissions": [
+            "activeTab",
+            "<all_urls>"
+        ]
+    },
+    "icons": {
+        "16": "/assets/img/_brand/icon16.png",
+        "20": "/assets/img/_brand/icon20.png",
+        "48": "/assets/img/_brand/icon48.png",
+        "80": "/assets/img/_brand/icon80.png",
+        "128": "/assets/img/_brand/icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "/assets/js/shared/jquery.min.js",
+                "/assets/js/content_scripts/extension-api-normalizer.js",
+                "/assets/js/content_scripts/stop_google_generating_tracking_links.js",
+                "/assets/js/content_scripts/url-scanner-content-script.js",
+                "/assets/js/content_scripts/password-vault-field-checker.js"
+            ],
+            "css": [
+                "/assets/css/injectable/global/secure-search.min.css",
+                "/assets/css/injectable/_brand/secure-search.min.css"
+            ]
+        },
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "all_frames": true,
+            "js": [
+                "/assets/js/shared/jquery.min.js",
+                "/assets/js/content_scripts/extension-api-normalizer.js",
+                "/assets/js/content_scripts/adguard-content.js"
+            ],
+            "match_about_blank": true,
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "*://my.totalav.com/*",
+                "*://my.scanguard.com/*",
+                "*://my.pcprotect.com/*",
+                "*://my.totalav.qa.ssdev.co/*",
+                "*://my.scanguard.qa.ssdev.co/*",
+                "*://my.pcprotect.qa.ssdev.co/*",
+                "*://my.totalav.uat.ssdev.co/*",
+                "*://my.scanguard.uat.ssdev.co/*",
+                "*://my.pcprotect.uat.ssdev.co/*",
+                "*://my.totalav.local/*",
+                "*://my.scanguard.local/*",
+                "*://my.pcprotect.local/*"
+            ],
+            "js": [
+                "/assets/js/content_scripts/my-adblock-toggle.js",
+                "/assets/js/content_scripts/my-webshield-newtab.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "/assets/img/**/*.png",
+        "/assets/img/**/*.jpg"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "short_name": "Search the web using PC Protect's Safe Site tool",
+    "description": "Safe Site helps block harmful and malicious URLs to improve your internet experience and keep you safe.",
+    "permissions": [
+        "cookies",
+        "storage",
+        "browsingData",
+        "notifications",
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "webNavigation",
+        "downloads",
+        "downloads.open",
+        "proxy",
+        "http://*/*",
+        "https://*/*",
+        "history",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "/assets/js/shared/jquery.min.js",
+            "/assets/js/shared/extension-api-normalizer.js",
+            "/assets/js/background_scripts/message-broker.js",
+            "/assets/js/background_scripts/combined-background.js",
+            "/assets/js/background_scripts/intercept-and-redirect.js",
+            "/assets/js/background_scripts/adguard/adguard-api.js",
+            "/assets/js/extBackgroundApp.min.js"
+        ]
+    },
+    "incognito": "split"
+}

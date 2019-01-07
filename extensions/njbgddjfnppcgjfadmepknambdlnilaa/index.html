@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Daily Price of Gold</title>
+    <script src="scripts.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <style>
+    	body{
+    		font-family: 'Lato', sans-serif;
+    	}
+    	h1{
+    		    font-size: 18px;
+    		    margin: 15px 1px 1px 15px; 
+    	}
+    	p{
+    		margin: 5px 15px 15px 15px; 
+    	}
+    	table { 
+    		border-collapse:collapse;
+    		font-size: 14px;
+    	}
+    	#tbody tr:nth-child(even) {
+		    background-color: #fbfbfb;
+		}
+		#tbody tr:nth-child(odd) {
+		    background-color: #dad8d8;
+		}
+		td, th{
+			padding: 4px 20px;
+			text-align: center;
+		}
+    </style>
+  </head>
+  <body>
+    <h1>Price of Gold</h1> 
+    <p>5 days gold price</p>
+    <table id="prices" >
+    	<thead id="thead"> 
+    		<tr>
+    			<th>DATE</th>
+    			<th>PRICE</th>
+    		</tr>   		
+    	</thead>
+    	<tbody id="tbody"></tbody>
+    </table>
+  </body>
+</html>

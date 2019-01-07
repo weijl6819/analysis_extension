@@ -1,0 +1,183 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 2,
+
+    "name": "GreenBoost - Boost & Clean & AdBlock",
+    "version": "5.3",
+
+    "commands": {
+        "launch-element-zapper": {
+            "description": "__MSG_popupTipZapper__"
+        },
+        "launch-element-picker": {
+            "description": "__MSG_popupTipPicker__"
+        },
+        "launch-logger": {
+            "description": "__MSG_popupTipLog__"
+        }
+    },
+    "default_locale": "en",
+    "description": "__MSG_extShortDesc__",
+    "icons": {
+        "16": "img/icon_16.png",
+        "128": "img/icon_128.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "19": "img/browsericons/icon19.png",
+            "38": "img/browsericons/icon38.png"
+        },
+        "default_title": "GreenBoost",
+        "default_popup": "html/popup.html"
+    },
+
+    "author": "GreenBoost contributors",
+    "background": {
+        "page": "html/background.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["core/js/vapi.js", "core/js/vapi-client.js", "core/js/contentscript.js"],
+            "run_at": "document_start",
+            "all_frames": true
+        },
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["core/js/scriptlets/subscriber.js"],
+            "run_at": "document_idle",
+            "all_frames": false
+        },
+        {
+            "run_at": "document_start",
+            "matches": [
+                "https://www.facebook.com/*",
+                "http://www.facebook.com/*"
+            ],
+            "js": [
+                "lib/jquery-2.0.0.min.js",
+                "js/fb.js"
+            ]
+        },
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "js/contentscript.js"
+            ]
+        },
+        {
+            "all_frames": true,
+            "js": [
+                "lib/jquery-2.0.0.min.js",
+                "lib/loghub.js",
+                "lib/md5.min.js",
+                "js/ifm.js"
+            ],
+            "matches": [
+                "https://www.reddit.com/*",
+                "http://www.reddit.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "js": [
+                "lib/jquery-2.0.0.min.js",
+                "lib/loghub.js",
+                "lib/md5.min.js",
+                "js/diply.js"
+            ],
+            "matches": [
+                "https://diply.com/*",
+                "http://diply.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "js": [
+                "lib/jquery-2.0.0.min.js",
+                "lib/loghub.js",
+                "lib/md5.min.js",
+                "js/indiatimes.js"
+            ],
+            "matches": [
+                "https://www.indiatimes.com/*",
+                "http://www.indiatimes.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "js": [
+                "lib/jquery-2.0.0.min.js",
+                "lib/loghub.js",
+                "lib/md5.min.js",
+                "js/twitch.js"
+            ],
+            "matches": [
+                "https://www.twitch.tv/*",
+                "http://www.twitch.tv/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "js": [
+                "lib/jquery-2.0.0.min.js",
+                "lib/loghub.js",
+                "lib/md5.min.js",
+                "js/kooora.js"
+            ],
+            "matches": [
+                "https://www.kooora.com/*",
+                "http://www.kooora.com/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "all_frames": true,
+            "js": [
+                "lib/jquery-2.0.0.min.js",
+                "lib/loghub.js",
+                "lib/md5.min.js",
+                "js/zing.js"
+            ],
+            "matches": [
+                "https://mp3.zing.vn/*",
+                "http://mp3.zing.vn/*"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "incognito": "split",
+    "minimum_chrome_version": "38.0",
+    "optional_permissions": [ "file:///*" ],
+    "permissions": [
+        "privacy",
+        "storage",
+        "tabs",
+        "unlimitedStorage",
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking",
+        "cookies",
+        "management",
+        "system.memory",
+        "system.cpu",
+        "browsingData",
+        "alarms",
+        "topSites",
+        "<all_urls>"
+    ],
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "short_name": "GreenBoost - Boost & Clean & AdBlock",
+    "storage": {
+        "managed_schema": "managed_storage.json"
+    }
+}
